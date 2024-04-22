@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>exported project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+</head>
+
+<body>
+  <link rel="stylesheet" href="./style.css" />
+  <div>
+    <link href="./index.css" rel="stylesheet" />
+    <div class="home-container">
+      <div class="home-home">
+        <div class="home-banner"><img alt="Rectangle2215" src="public/external/rectangle2215-p8ep-2000w.png"
+            class="home-rectangle2" />
+          <div class="home-group11">
+            <div class="home-frame8"><span class="home-text"><span>Agendar demonstração</span></span><img
+                alt="arrowdownwardalt1613" src="public/external/arrowdownwardalt1613-7ygc.svg"
+                class="home-arrowdownwardalt" /></div><span class="home-text002"><span>Business Process
+                Architecture</span></span><img alt="Vector1612" src="public/external/vector1612-g81g.svg"
+              class="home-vector" /><span class="home-text004"><span>Sua empresa em outro patamar de
+                gestão</span></span><span class="home-text006"><span>Consolidamos nossa expertise e bagagem e
+                desenvolvemos uma
+                plataforma capaz de levar as empresas a outro patamar de
+                gestão e potencializar ganhos de produtividade e
+                eficiência.</span></span>
+          </div>
+        </div>
+        <div class="home-aplataforma">
+          <div class="home-group15"><img alt="IMAGEhttpsapplottiefilescomanimation0342f804e870441246"
+              src="public/external/imagehttpsapplottiefilescomanimation0342f804e870441246-qdrc-500h.png"
+              class="home-imag-ehttpsapplottiefilescomanimation0342f804e87044" />
+            <div class="home-group13"><span class="home-text008"><span class="home-text009">Traz </span><span
+                  class="home-text010">efetividade</span><span class="home-text011"> no </span><span
+                  class="home-text012">desdobramento e na execução da estratégia</span><span>, alinhamento
+                  organizacional e visibilidade dos processos
+                  para diversos fins (compliance, riscos, automação,
+                  etc.).</span></span><img alt="Vector1716" src="public/external/vector1716-a9d8.svg"
+                class="home-vector001" /></div>
+          </div>
+          <div class="home-group14">
+            <div class="home-group12">
+              <div class="home-frame81"><span class="home-text014"><span>Saiba mais</span></span><img
+                  alt="arrowdownwardalt1614" src="public/external/arrowdownwardalt1614-pdqn.svg"
+                  class="home-arrowdownwardalt1" /></div><span class="home-text016"><span>A
+                  plataforma</span></span><span class="home-text018"><span class="home-text019">A </span><span
+                  class="home-text020">My Menthor</span><span class="home-text021"> é uma </span><span
+                  class="home-text022">plataforma SaaS de arquitetura de negócios</span><span class="home-text023"> que
+                </span><span class="home-text024">ajuda a desdobrar a estratégia da empresa</span><span
+                  class="home-text025">
+                  em uma visão orientada por processos ponta a ponta, dando
+                  visibilidade aos processos e alinhando os componentes
+                  organizacionais para </span><span>alcançar seus objetivos de negócio.</span></span><img
+                alt="Vector1614" src="public/external/vector1614-h23c.svg" class="home-vector002" />
+            </div>
+          </div>
+        </div>
+        <div class="home-caractersticas"><img alt="Vector1717" src="public/external/vector1717-0ysi.svg"
+            class="home-vector003" /><span class="home-text027"><span class="home-text028">Trabalhe de forma
+              mais</span><br /><span class="home-text030"></span><span>inteligente e integrada!</span></span>
+          <div class="home-frame49">
+            <div class="home-frame48"><img alt="trackchanges1156" src="public/external/trackchanges1156-tio7.svg"
+                class="home-trackchanges" /><span class="home-text032"><span>Visão Holística e Integrada</span></span>
+            </div><span class="home-text034"><span>Obtenha uma representação verdadeira de como seu negócio
+                funciona. Transforme a visão fragmentada e desconectada em uma
+                base de conhecimento empresarial que traduza a realidade e
+                gere insights para sustentar decisões eficazes.</span></span>
+          </div>
+          <div class="home-frame51">
+            <div class="home-frame481"><img alt="tablechartview1156" src="public/external/tablechartview1156-uwo8.svg"
+                class="home-tablechartview" /><span class="home-text036"><span>Evolução e Sustentabilidade</span></span>
+            </div><span class="home-text038"><span>Transforme sua arquitetura corporativa em um ativo
+                estratégico valioso para gerenciar as mudanças em sua
+                operação, antecipando e adaptando-se aos impactos das
+                transformações do mercado.</span></span>
+          </div>
+          <div class="home-frame52">
+            <div class="home-frame482"><img alt="linkedservices1156" src="public/external/linkedservices1156-nmbo.svg"
+                class="home-linkedservices" /><span class="home-text040"><span>Alinhamento Organizacional</span></span>
+            </div><span class="home-text042"><span>Assegure o desdobramento da estratégia para as demais camadas
+                da organização integrando processos, estrutura, tecnologia,
+                pessoas e demais componentes organizacionais para melhorar o
+                desempenho e os resultados do negócio.</span></span>
+          </div>
+          <div class="home-frame50">
+            <div class="home-frame483"><img alt="designservices1156" src="public/external/designservices1156-po16.svg"
+                class="home-designservices" /><span class="home-text044"><span>Design Organizacional</span></span></div>
+            <span class="home-text046"><span>Repense seu modelo atual e crie uma visão arquitetônica do
+                negócio que agregue mais valor aos clientes e stakeholders.
+                Impulsione o crescimento e a competitividade adotando uma
+                abordagem unificada para compreender, melhorar e transformar
+                sua operação.</span></span>
+          </div>
+          <div class="home-frame82"><span class="home-text048"><span>Agendar demonstração</span></span><img
+              alt="arrowdownwardalt2023" src="public/external/arrowdownwardalt2023-tpir.svg"
+              class="home-arrowdownwardalt2" /></div>
+        </div>
+        <div class="home-aempresa"><img alt="Vector1391" src="public/external/vector1391-4gmi.svg"
+            class="home-vector004" /><span class="home-text050"><span>Rompendo silos e construindo pontes para a
+              efetividade
+              organizacional</span></span><span class="home-text052"><span class="home-text053">A plataforma facilita o
+              repensar da organização</span><span class="home-text054">
+              em todas as camadas, desde o nível estratégico até o
+              operacional,&nbsp;representados pela pirâmide com diversas
+              dimensões.</span><br /><span class="home-text056"></span><br /><span class="home-text058">Ela </span><span
+              class="home-text059">facilita a implementação da estratégia</span><span class="home-text060">
+              ao desdobrá-la em uma perspectiva horizontal para os processos
+              da cadeia de valor, sincronizando os elementos organizacionais
+              em uma visão orientada por processos transversais para </span><span class="home-text061">assegurar a
+              execução eficaz da estratégia.</span><br /><span class="home-text063"></span><span
+              class="home-text064"></span><br /><span class="home-text066">Para tomar decisões de negócio mais
+              inteligentes, é necessário
+              uma </span><span class="home-text067">visão uniforme da operação</span><span class="home-text068">, com
+              uma representação verdadeira de como o negócio funciona e
+              como ele agrega valor aos clientes e stakeholders. A </span><span class="home-text069">My
+              Menthor</span><span class="home-text070"> proporciona uma </span><span class="home-text071">visão do
+              modelo de negócio</span><span class="home-text072">
+              que vai transformar sua compreensão fragmentada do
+              empreendimento em um </span><span>conhecimento uniforme, atuando de forma integrada e promovendo
+              melhorias ou transformações.&nbsp;</span></span>
+          <div class="home-piramide1">
+            <div class="home-group85"><img alt="VectorI139" src="public/external/vectori139-v45o.svg"
+                class="home-vector005" />
+              <div class="home-identidade"><img alt="VectorI139" src="public/external/vectori139-nyh.svg"
+                  class="home-vector006" /><img alt="VectorI139" src="public/external/vectori139-pa3.svg"
+                  class="home-vector007" /><img alt="VectorI139" src="public/external/vectori139-v7b.svg"
+                  class="home-vector008" /><img alt="VectorI139" src="public/external/vectori139-0jv.svg"
+                  class="home-vector009" /><img alt="VectorI139" src="public/external/vectori139-4t8e.svg"
+                  class="home-vector010" /><img alt="VectorI139" src="public/external/vectori139-55cj.svg"
+                  class="home-vector011" /><img alt="VectorI139" src="public/external/vectori139-m6ze.svg"
+                  class="home-vector012" /><img alt="VectorI139" src="public/external/vectori139-kvwm.svg"
+                  class="home-vector013" /><img alt="VectorI139" src="public/external/vectori139-qjwe.svg"
+                  class="home-vector014" /><img alt="VectorI139" src="public/external/vectori139-1rn.svg"
+                  class="home-vector015" /></div>
+            </div>
+            <div class="home-group84"><img alt="VectorI139" src="public/external/vectori139-wkbo.svg"
+                class="home-vector016" />
+              <div class="home-estratgia"><img alt="VectorI139" src="public/external/vectori139-jt.svg"
+                  class="home-vector017" /><img alt="VectorI139" src="public/external/vectori139-fa2w.svg"
+                  class="home-vector018" /><img alt="VectorI139" src="public/external/vectori139-8x68.svg"
+                  class="home-vector019" /><img alt="VectorI139" src="public/external/vectori139-pcck.svg"
+                  class="home-vector020" /><img alt="VectorI139" src="public/external/vectori139-njo.svg"
+                  class="home-vector021" /><img alt="VectorI139" src="public/external/vectori139-nckp.svg"
+                  class="home-vector022" /><img alt="VectorI139" src="public/external/vectori139-ietk.svg"
+                  class="home-vector023" /><img alt="VectorI139" src="public/external/vectori139-1e2mi.svg"
+                  class="home-vector024" /><img alt="VectorI139" src="public/external/vectori139-w7w.svg"
+                  class="home-vector025" /><img alt="VectorI139" src="public/external/vectori139-1jrj.svg"
+                  class="home-vector026" /></div>
+            </div>
+            <div class="home-group83"><img alt="VectorI139" src="public/external/vectori139-coug.svg"
+                class="home-vector027" />
+              <div class="home-modelosde-gesto-governana"><img alt="VectorI139"
+                  src="public/external/vectori139-q5me.svg" class="home-vector028" /><img alt="VectorI139"
+                  src="public/external/vectori139-jug8q.svg" class="home-vector029" /><img alt="VectorI139"
+                  src="public/external/vectori139-iz8h.svg" class="home-vector030" /><img alt="VectorI139"
+                  src="public/external/vectori139-mkyy.svg" class="home-vector031" /><img alt="VectorI139"
+                  src="public/external/vectori139-65yj.svg" class="home-vector032" /><img alt="VectorI139"
+                  src="public/external/vectori139-u6ps.svg" class="home-vector033" /><img alt="VectorI139"
+                  src="public/external/vectori139-x4nb.svg" class="home-vector034" /><img alt="VectorI139"
+                  src="public/external/vectori139-r3ct.svg" class="home-vector035" /><img alt="VectorI139"
+                  src="public/external/vectori139-oo1v.svg" class="home-vector036" /><img alt="VectorI139"
+                  src="public/external/vectori139-gf24.svg" class="home-vector037" /><img alt="VectorI139"
+                  src="public/external/vectori139-tptq.svg" class="home-vector038" /><img alt="VectorI139"
+                  src="public/external/vectori139-w0f.svg" class="home-vector039" /><img alt="VectorI139"
+                  src="public/external/vectori139-0hen.svg" class="home-vector040" /><img alt="VectorI139"
+                  src="public/external/vectori139-pi6i.svg" class="home-vector041" /><img alt="VectorI139"
+                  src="public/external/vectori139-gzqm.svg" class="home-vector042" /><img alt="VectorI139"
+                  src="public/external/vectori139-cpo.svg" class="home-vector043" /><img alt="VectorI139"
+                  src="public/external/vectori139-lycr.svg" class="home-vector044" /><img alt="VectorI139"
+                  src="public/external/vectori139-aor9.svg" class="home-vector045" /><img alt="VectorI139"
+                  src="public/external/vectori139-7jcn.svg" class="home-vector046" /><img alt="VectorI139"
+                  src="public/external/vectori139-r0q.svg" class="home-vector047" /><img alt="VectorI139"
+                  src="public/external/vectori139-a1pd.svg" class="home-vector048" /><img alt="VectorI139"
+                  src="public/external/vectori139-06g.svg" class="home-vector049" /><img alt="VectorI139"
+                  src="public/external/vectori139-cynf.svg" class="home-vector050" /><img alt="VectorI139"
+                  src="public/external/vectori139-5cs.svg" class="home-vector051" /><img alt="VectorI139"
+                  src="public/external/vectori139-hf7l.svg" class="home-vector052" /><img alt="VectorI139"
+                  src="public/external/vectori139-btjs.svg" class="home-vector053" /></div>
+            </div>
+            <div class="home-group82"><img alt="VectorI139" src="public/external/vectori139-xj75.svg"
+                class="home-vector054" />
+              <div class="home-operao-processose-projetos"><img alt="VectorI139"
+                  src="public/external/vectori139-30fe.svg" class="home-vector055" /><img alt="VectorI139"
+                  src="public/external/vectori139-oolr.svg" class="home-vector056" /><img alt="VectorI139"
+                  src="public/external/vectori139-xvdl.svg" class="home-vector057" /><img alt="VectorI139"
+                  src="public/external/vectori139-hz7e.svg" class="home-vector058" /><img alt="VectorI139"
+                  src="public/external/vectori139-gn.svg" class="home-vector059" /><img alt="VectorI139"
+                  src="public/external/vectori139-i3l9.svg" class="home-vector060" /><img alt="VectorI139"
+                  src="public/external/vectori139-jx.svg" class="home-vector061" /><img alt="VectorI139"
+                  src="public/external/vectori139-yoi.svg" class="home-vector062" /><img alt="VectorI139"
+                  src="public/external/vectori139-ex7q.svg" class="home-vector063" /><img alt="VectorI139"
+                  src="public/external/vectori139-r4ed.svg" class="home-vector064" /><img alt="VectorI139"
+                  src="public/external/vectori139-zzo.svg" class="home-vector065" /><img alt="VectorI139"
+                  src="public/external/vectori139-jnhp.svg" class="home-vector066" /><img alt="VectorI139"
+                  src="public/external/vectori139-1hc5.svg" class="home-vector067" /><img alt="VectorI139"
+                  src="public/external/vectori139-se2s.svg" class="home-vector068" /><img alt="VectorI139"
+                  src="public/external/vectori139-zbn1.svg" class="home-vector069" /><img alt="VectorI139"
+                  src="public/external/vectori139-5jja.svg" class="home-vector070" /><img alt="VectorI139"
+                  src="public/external/vectori139-3wj9.svg" class="home-vector071" /><img alt="VectorI139"
+                  src="public/external/vectori139-9w7.svg" class="home-vector072" /><img alt="VectorI139"
+                  src="public/external/vectori139-qfrn.svg" class="home-vector073" /><img alt="VectorI139"
+                  src="public/external/vectori139-m46m.svg" class="home-vector074" /><img alt="VectorI139"
+                  src="public/external/vectori139-0euu.svg" class="home-vector075" /><img alt="VectorI139"
+                  src="public/external/vectori139-vcbp.svg" class="home-vector076" /><img alt="VectorI139"
+                  src="public/external/vectori139-w0n5.svg" class="home-vector077" /><img alt="VectorI139"
+                  src="public/external/vectori139-pdh6.svg" class="home-vector078" /><img alt="VectorI139"
+                  src="public/external/vectori139-g8s.svg" class="home-vector079" /><img alt="VectorI139"
+                  src="public/external/vectori139-z7nc.svg" class="home-vector080" /><img alt="VectorI139"
+                  src="public/external/vectori139-kvvw.svg" class="home-vector081" /><img alt="VectorI139"
+                  src="public/external/vectori139-gjzs.svg" class="home-vector082" /></div>
+            </div>
+            <div class="home-group81"><img alt="VectorI139" src="public/external/vectori139-goj.svg"
+                class="home-vector083" />
+              <div class="home-viabilizadores-pessoas-tecnologia-infraestruturaetc"><img alt="VectorI139"
+                  src="public/external/vectori139-tbc.svg" class="home-vector084" /><img alt="VectorI139"
+                  src="public/external/vectori139-aee5.svg" class="home-vector085" /><img alt="VectorI139"
+                  src="public/external/vectori139-5src.svg" class="home-vector086" /><img alt="VectorI139"
+                  src="public/external/vectori139-aebd.svg" class="home-vector087" /><img alt="VectorI139"
+                  src="public/external/vectori139-abh.svg" class="home-vector088" /><img alt="VectorI139"
+                  src="public/external/vectori139-pksj.svg" class="home-vector089" /><img alt="VectorI139"
+                  src="public/external/vectori139-qanr.svg" class="home-vector090" /><img alt="VectorI139"
+                  src="public/external/vectori139-k6k.svg" class="home-vector091" /><img alt="VectorI139"
+                  src="public/external/vectori139-w12.svg" class="home-vector092" /><img alt="VectorI139"
+                  src="public/external/vectori139-3iqd.svg" class="home-vector093" /><img alt="VectorI139"
+                  src="public/external/vectori139-h4j.svg" class="home-vector094" /><img alt="VectorI139"
+                  src="public/external/vectori139-azym.svg" class="home-vector095" /><img alt="VectorI139"
+                  src="public/external/vectori139-sxb.svg" class="home-vector096" /><img alt="VectorI139"
+                  src="public/external/vectori139-x82k.svg" class="home-vector097" /><img alt="VectorI139"
+                  src="public/external/vectori139-dze9.svg" class="home-vector098" /><img alt="VectorI139"
+                  src="public/external/vectori139-f376.svg" class="home-vector099" /><img alt="VectorI139"
+                  src="public/external/vectori139-p9v8.svg" class="home-vector100" /><img alt="VectorI139"
+                  src="public/external/vectori139-c9ri.svg" class="home-vector101" /><img alt="VectorI139"
+                  src="public/external/vectori139-4h5c.svg" class="home-vector102" /><img alt="VectorI139"
+                  src="public/external/vectori139-fqv.svg" class="home-vector103" /><img alt="VectorI139"
+                  src="public/external/vectori139-sqs.svg" class="home-vector104" /><img alt="VectorI139"
+                  src="public/external/vectori139-to68.svg" class="home-vector105" /><img alt="VectorI139"
+                  src="public/external/vectori139-e8d.svg" class="home-vector106" /><img alt="VectorI139"
+                  src="public/external/vectori139-hlms.svg" class="home-vector107" /><img alt="VectorI139"
+                  src="public/external/vectori139-qx5.svg" class="home-vector108" /><img alt="VectorI139"
+                  src="public/external/vectori139-7g1.svg" class="home-vector109" /><img alt="VectorI139"
+                  src="public/external/vectori139-ildp.svg" class="home-vector110" /><img alt="VectorI139"
+                  src="public/external/vectori139-dled.svg" class="home-vector111" /><img alt="VectorI139"
+                  src="public/external/vectori139-1fz.svg" class="home-vector112" /><img alt="VectorI139"
+                  src="public/external/vectori139-cbx.svg" class="home-vector113" /><img alt="VectorI139"
+                  src="public/external/vectori139-235.svg" class="home-vector114" /><img alt="VectorI139"
+                  src="public/external/vectori139-9ss.svg" class="home-vector115" /><img alt="VectorI139"
+                  src="public/external/vectori139-rxg9.svg" class="home-vector116" /><img alt="VectorI139"
+                  src="public/external/vectori139-11f.svg" class="home-vector117" /><img alt="VectorI139"
+                  src="public/external/vectori139-os39.svg" class="home-vector118" /><img alt="VectorI139"
+                  src="public/external/vectori139-3ep.svg" class="home-vector119" /><img alt="VectorI139"
+                  src="public/external/vectori139-g85q.svg" class="home-vector120" /><img alt="VectorI139"
+                  src="public/external/vectori139-n3n9.svg" class="home-vector121" /><img alt="VectorI139"
+                  src="public/external/vectori139-vnfn.svg" class="home-vector122" /><img alt="VectorI139"
+                  src="public/external/vectori139-l3f.svg" class="home-vector123" /><img alt="VectorI139"
+                  src="public/external/vectori139-pglj.svg" class="home-vector124" /><img alt="VectorI139"
+                  src="public/external/vectori139-mne.svg" class="home-vector125" /><img alt="VectorI139"
+                  src="public/external/vectori139-teg.svg" class="home-vector126" /><img alt="VectorI139"
+                  src="public/external/vectori139-d79m.svg" class="home-vector127" /><img alt="VectorI139"
+                  src="public/external/vectori139-rku.svg" class="home-vector128" /><img alt="VectorI139"
+                  src="public/external/vectori139-rv9f.svg" class="home-vector129" /><img alt="VectorI139"
+                  src="public/external/vectori139-tnpc.svg" class="home-vector130" /><img alt="VectorI139"
+                  src="public/external/vectori139-9kq6.svg" class="home-vector131" /><img alt="VectorI139"
+                  src="public/external/vectori139-lrye.svg" class="home-vector132" /><img alt="VectorI139"
+                  src="public/external/vectori139-zbs.svg" class="home-vector133" /><img alt="VectorI139"
+                  src="public/external/vectori139-bi6l.svg" class="home-vector134" /><img alt="VectorI139"
+                  src="public/external/vectori139-4rxj.svg" class="home-vector135" /><img alt="VectorI139"
+                  src="public/external/vectori139-9ydxi.svg" class="home-vector136" /><img alt="VectorI139"
+                  src="public/external/vectori139-0a9r.svg" class="home-vector137" /></div>
+            </div>
+          </div>
+          <div class="home-frame9"><span class="home-text074"><span>Saiba mais</span></span><img
+              alt="arrowdownwardalt2024" src="public/external/arrowdownwardalt2024-rz4k.svg"
+              class="home-arrowdownwardalt3" /></div>
+        </div>
+        <div class="home-benefcios"><img alt="Vector2027" src="public/external/vector2027-4xb4.svg"
+            class="home-vector138" /><span class="home-text076"><span>Organizar seu negócio pode
+              ser</span><br /><span>mais simples do que você imagina</span></span><span class="home-text080"><span
+              class="home-text081">A My Menthor atua como uma&nbsp;</span><span class="home-text082">mentora
+              digital</span><span class="home-text083"> com </span><span class="home-text084">abordagem centrada no ser
+            </span><span class="home-text085">humano</span><span class="home-text086">
+              — e não em tecnologias disruptivas.</span><br /><span class="home-text088"></span><br /><span
+              class="home-text090">Atua como um </span><span class="home-text091">hub</span><span class="home-text092">
+              de informações</span><span class="home-text093">, </span><span class="home-text094">organizando o
+              conhecimento</span><span> em um repositório único.</span></span><img
+            alt="IMAGEhttpsapplottiefilescomanimationa24eefb077cf481246"
+            src="public/external/imagehttpsapplottiefilescomanimationa24eefb077cf481246-v5x-300w.png"
+            class="home-imag-ehttpsapplottiefilescomanimationa24eefb077cf48" />
+          <div class="home-group30">
+            <div class="home-group19">
+              <div class="home-frame10">
+                <div class="home-frame11"><img alt="checkcircle2028" src="public/external/checkcircle2028-7hlf.svg"
+                    class="home-checkcircle" /><span class="home-text096"><span>Lucros, receita e margem</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="home-group27">
+              <div class="home-frame101">
+                <div class="home-frame111"><img alt="checkcircle2037" src="public/external/checkcircle2037-99vr.svg"
+                    class="home-checkcircle1" /><span class="home-text098"><span>Inovação nos processos</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="home-group28">
+              <div class="home-frame102">
+                <div class="home-frame112"><img alt="checkcircle2038" src="public/external/checkcircle2038-b8xp.svg"
+                    class="home-checkcircle2" /><span class="home-text100"><span>Maturidade e desempenho</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="home-group29">
+              <div class="home-frame103">
+                <div class="home-frame113"><img alt="checkcircle2038" src="public/external/checkcircle2038-phx.svg"
+                    class="home-checkcircle3" /><span class="home-text102"><span>Sustentabilidade</span></span></div>
+              </div>
+            </div>
+            <div class="home-group25">
+              <div class="home-frame104">
+                <div class="home-frame114"><img alt="checkcircle2036" src="public/external/checkcircle2036-xvw.svg"
+                    class="home-checkcircle4" /><span class="home-text104"><span>Qualidade nos produtos e
+                      serviços</span></span></div>
+              </div>
+            </div>
+            <div class="home-group26">
+              <div class="home-frame105">
+                <div class="home-frame115"><img alt="checkcircle2037" src="public/external/checkcircle2037-33ik.svg"
+                    class="home-checkcircle5" /><span class="home-text106"><span>Valor aos clientes e
+                      stakeholders</span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-banner1"><img alt="Rectangle272839" src="public/external/rectangle272839-hpbn-400h.png"
+            class="home-rectangle27" /><img alt="unsplashQ1p7bh3SHj82840"
+            src="public/external/unsplashq1p7bh3shj82840-4gxs-400h.png" class="home-unsplash-q1p7bh3s-hj8" /><img
+            alt="rocketwithtrace2840" src="public/external/rocketwithtrace2840-67m7-400w.png"
+            class="home-rocketwithtrace" /><span class="home-text108"><span class="home-text109">A </span><span
+              class="home-text110">My Menthor</span><span>
+              é a plataforma completa para alavancar o desempenho em sua
+              empresa</span></span><span class="home-text112"><span>Venha acelerar conosco!</span></span>
+          <div class="home-frame83"><span class="home-text114"><span>Fale conosco</span></span><img
+              alt="arrowdownwardalt2841" src="public/external/arrowdownwardalt2841-36so.svg"
+              class="home-arrowdownwardalt4" /></div>
+        </div>
+        <div class="home-recursos"><img alt="Rectangle293241" src="public/external/rectangle293241-vili-1500w.png"
+            class="home-rectangle29" />
+          <div class="home-group35"><span class="home-text116"><span>Recursos</span></span>
+            <div class="home-gif">
+              <div class="home-maskgroup"><img alt="IMAGEhttpsapplottiefilescomanimationf8b4ad7607a44d1246"
+                  src="public/external/imagehttpsapplottiefilescomanimationf8b4ad7607a44d1246-jk56-300h.png"
+                  class="home-imag-ehttpsapplottiefilescomanimationf8b4ad7607a44d" /></div>
+            </div><span class="home-text118"><span>Conheça os recursos disponibilizados para você ficar por
+                dentro dos melhores artigos, eventos e conhecimentos sobre a
+                plataforma.</span></span>
+          </div>
+          <div class="home-group31">
+            <div class="home-group32"><span class="home-text120"><span>Explore insights e dicas de especialistas em
+                  nosso
+                  blog.</span></span><span class="home-text122"><span>Blog da My Menthor</span></span>
+              <div class="home-frame84"><span class="home-text124"><span>Acessar</span></span><img
+                  alt="arrowdownwardalt3242" src="public/external/arrowdownwardalt3242-lfnb.svg"
+                  class="home-arrowdownwardalt5" /></div>
+            </div>
+          </div>
+          <div class="home-group33">
+            <div class="home-group321"><span class="home-text126"><span>Capacite-se e desenvolva habilidades
+                  relacionadas à
+                  arquitetura de negócios.</span></span><span class="home-text128"><span>Academia My
+                  Menthor</span></span></div>
+          </div>
+          <div class="home-group322">
+            <div class="home-group323"><span class="home-text130"><span>Participe de nossos eventos e webinars para se
+                  manter
+                  atualizado sobre nosso ecossistema.</span></span><span class="home-text132"><span>Eventos e
+                  Webinar</span></span>
+              <div class="home-frame85"><span class="home-text134"><span>Acessar</span></span><img
+                  alt="arrowdownwardalt3246" src="public/external/arrowdownwardalt3246-9w5g.svg"
+                  class="home-arrowdownwardalt6" /></div>
+            </div>
+          </div>
+          <div class="home-group34">
+            <div class="home-group324"><span class="home-text136"><span>Acesse nossa base de conhecimento para encontrar
+                  respostas
+                  e soluções para seus desafios empresariais.</span></span><span class="home-text138"><span>Base de
+                  conhecimento</span></span></div>
+          </div><img alt="Vector23246" src="public/external/vector23246-212d.svg" class="home-vector2" /><img
+            alt="Vector33247" src="public/external/vector33247-n7.svg" class="home-vector3" />
+        </div>
+        <div class="home-rodap"><img alt="Rectangle323248" src="public/external/rectangle323248-9vko-500h.png"
+            class="home-rectangle32" /><img alt="logo113248" src="public/external/logo113248-que9-200h.png"
+            class="home-logo11" />
+          <div class="home-frame12"><span class="home-text140"><span>Produto</span></span><span
+              class="home-text142"><span>Sobre a plataforma</span></span><span
+              class="home-text144"><span>Público-alvo</span></span></div>
+          <div class="home-frame14"><span class="home-text146"><span>Stakeholders</span></span><span
+              class="home-text148"><span>Clientes</span></span><span class="home-text150"><span>Histórias de
+                sucesso</span></span><span class="home-text152"><span>Suporte ao cliente</span></span><span
+              class="home-text154"><span>Programa de parceiros</span></span></div>
+          <div class="home-frame15"><span class="home-text156"><span>Recursos</span></span><span
+              class="home-text158"><span>Blog</span></span><span class="home-text160"><span>Eventos e
+                webinar</span></span><span class="home-text162"><span>Academia My Menthor</span></span><span
+              class="home-text164"><span>Base de conhecimento</span></span></div>
+          <div class="home-frame16"><span class="home-text166"><span>Empresa</span></span><span
+              class="home-text168"><span>Sobre nós</span></span><span
+              class="home-text170"><span>Propósito</span></span><span class="home-text172"><span>Fale
+                conosco</span></span></div>
+          <div class="home-frame13"><span class="home-text174"><span>Soluções</span></span><span
+              class="home-text176"><span>Metodologia e funcionalidades</span></span><span
+              class="home-text178"><span>Portfólio de serviços</span></span><span
+              class="home-text180"><span>Pacotes</span></span></div>
+          <div class="home-group40">
+            <div class="home-group36"><span class="home-text182"><span>Termos de serviço</span></span><span
+                class="home-text184"><span>Política de privacidade</span></span><span
+                class="home-text186"><span>Cookies</span></span></div><span class="home-text188"><span>My Menthor
+                Copyright © 2024. Todos os direitos
+                reservados.</span></span>
+            <div class="home-group37"><img alt="arrowdownwardalt3253"
+                src="public/external/arrowdownwardalt3253-ux7b.svg" class="home-arrowdownwardalt7" /></div>
+          </div>
+          <div class="home-group38"><span class="home-text190"><span>suporte@mymenthor.com.br</span></span><img
+              alt="mail3254" src="public/external/mail3254-9pnj.svg" class="home-mail" /></div>
+          <div class="home-frame86"><span class="home-text192"><span>Agendar demonstração</span></span><img
+              alt="arrowdownwardalt3255" src="public/external/arrowdownwardalt3255-crlg.svg"
+              class="home-arrowdownwardalt8" /></div><img alt="Frame173259" src="public/external/frame173259-wlvh.svg"
+            class="home-frame17" />
+        </div>
+        <div class="home-cabealho">
+          <div class="home-group10"><img alt="logo111312" src="public/external/logo111312-go06-200h.png"
+              class="home-logo111" /></div>
+          <div class="home-group9"><img alt="language1071" src="public/external/language1071-wae.svg"
+              class="home-language" />
+            <div class="home-login"><img alt="Rectangle231381" src="public/external/rectangle231381-4dn-200h.png"
+                class="home-rectangle23" />
+              <div class="home-group7"><span class="home-text194"><span>Login</span></span><span
+                  class="home-text196"><span>PT</span></span><img alt="lock1397" src="public/external/lock1397-pmr.svg"
+                  class="home-lock" /></div>
+            </div>
+            <div class="home-group8"><span class="home-text198"><span>suporte@mymenthor.com.br</span></span><img
+                alt="Vector11310" src="public/external/vector11310-oj0y.svg" class="home-vector1" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<style>
+
+</style>
