@@ -24,3 +24,4 @@ You can preview the production build with `npm run preview`.
 
 > Deploy Static website to Hostgator: Run `npm run build`, open the folder `build`, zip everything, go to Hostgator Cpanel, File Manager, upload the zip folder, unzip, delete the .zip, done.# website_my_menthor
 # website_my_menthor
+# website_my_menthor
