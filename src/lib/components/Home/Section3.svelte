@@ -4,7 +4,7 @@
 
 <section class="w-full items-center relative rounded-lg my-20 bg-[#F1F1F9]">
 	<div class="max-w-screen-2xl flex flex-row pt-20">
-		<div class="div1 w-1/2 flex justify-end pr-20 ">
+		<div class="div1 w-1/2 flex justify-end pr-20">
 			<img src={the_platform_png} alt="lottie animation" />
 		</div>
 		<div class="div2 w-1/2">
@@ -46,3 +46,4 @@
 		</a>
 	</div>
 </section>
+<!-- teste -->
