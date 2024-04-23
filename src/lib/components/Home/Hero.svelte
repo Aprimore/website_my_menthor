@@ -18,9 +18,9 @@
 				companies to the next level management and boost productivity and efficiency gains.
 			</p>
 
-			<div class="mt-8 flex flex-wrap justify-center gap-4">
+			<div class="mt-8 flex flex-wrap justify-center gap-4 bg-[#8abb3f]">
 				<a
-					class="btn-demo block w-full rounded-xl bg-red-600 px-10 py-4 text-lg font-medium text-slate-800 focus:ring sm:w-auto z-10 relative"
+					class="btn-demo block w-full rounded-xl px-10 py-4 text-lg font-medium text-slate-800 focus:ring sm:w-auto z-10 relative"
 					href="#"
 				>
 					Schedule a Demo

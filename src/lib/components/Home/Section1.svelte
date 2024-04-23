@@ -20,47 +20,54 @@
 	// });
 </script>
 
-<section class="max-w-screen-xl relative rounded-lg mx-auto mb-[1000px]">
-	<div class="py-20 mt-28">
-		<div
-			class="card1 w-[680px] h-[590px] flex absolute top-0 left-0 flex-start bg-[#F1F1F9] border border-gray-200 shadow rounded-xl"
-		>
-			<div class=" max-w-md p-6 text-gray-900 rounded-lg mt-10 ml-10">
-				<span class="absolute"><img src={linha_v_1_svg} alt="" /></span>
-				<h3 class="ml-6 mb-2 text-lg tracking-tight text-gray-900 Archivo">
-					It brings <strong>effectiveness</strong> to
-					<strong> the deployment and execution of the strategy </strong> , organizational alignment
-					and ​visibility of processes for various purposes ​(compliance, risks, automation, etc.)
-				</h3>
-				<div>
-					<img src={the_platform_png} alt="lottie animation" />
+<section class="max-w-screen-xl relative rounded-lg mx-auto my-12">
+	<div class="py-20 mt-28 relative">
+		<div class="relative">
+			<div
+				class="card1 w-[680px] h-[590px] flex flex-start bg-[#F1F1F9] border border-gray-200 shadow rounded-xl"
+			>
+				<div class=" max-w-md p-6 text-gray-900 rounded-lg mt-10 ml-10">
+					<span class="absolute"><img src={linha_v_1_svg} alt="" /></span>
+					<h3 class="ml-6 mb-2 text-lg tracking-tight text-gray-900 Archivo">
+						It brings <strong>effectiveness</strong> to
+						<strong> the deployment and execution of the strategy </strong> , organizational alignment
+						and ​visibility of processes for various purposes ​(compliance, risks, automation, etc.)
+					</h3>
+					<div>
+						<img src={the_platform_png} alt="lottie animation" />
+					</div>
 				</div>
 			</div>
-		</div>
-		<div
-			class="card1 w-[820px] h-[445px] flex absolute top-[70px] left-[605px] flex-start bg-[#F1F1F9] border border-gray-200 shadow rounded-xl"
-		>
-			<div class=" max-w-2xl p-6 text-gray-900 rounded-lg mt-12 ml-12">
-				<h1 class="Exo text-4xl font-bold relative">
-					The platform
-					<span><img src={linha_h_4_svg} class="z-10 absolute" alt="linha" /></span>
-				</h1>
+			<div
+				class="card1 w-[820px] h-[445px] flex absolute top-[70px] left-[605px] flex-start bg-[#F1F1F9] border border-gray-200 shadow rounded-xl"
+			>
+				<div class=" max-w-2xl p-6 text-gray-900 rounded-lg mt-12 ml-12">
+					<h1 class="Exo text-4xl font-bold relative">
+						The platform
+						<span><img src={linha_h_4_svg} class="z-10 absolute" alt="linha" /></span>
+					</h1>
 
-				<h3 class="mt-10 mb-2 text-gray-900 Archivo text-lg">
-					<strong> My Menthor </strong> is a <strong> SaaS Business Architecture platform </strong>
-					that <strong> helps to unfold the company's strategy </strong> into a vision oriented by
-					end-to-end, providing visibility of processes and aligning organizational components to
-					<strong> achieve business objectives </strong>.
-				</h3>
+					<h3 class="mt-10 mb-2 text-gray-900 Archivo text-lg">
+						<strong> My Menthor </strong> is a
+						<strong> SaaS Business Architecture platform </strong>
+						that <strong> helps to unfold the company's strategy </strong> into a vision oriented by
+						end-to-end, providing visibility of processes and aligning organizational components to
+						<strong> achieve business objectives </strong>.
+					</h3>
 
-				<div class="mt-8 flex flex-wrap gap-4">
-					<a
-						class="btn-demo block w-full rounded-xl px-10 py-4 text-lg font-medium bg-[#8abb3f] text-white focus:ring sm:w-auto z-10 relative"
-						href="#"
-					>
-						Learn More
-						<img src={arrow_right_svg} class="z-10 absolute right-5 bottom-[24px] size-3" alt="" />
-					</a>
+					<div class="mt-8 flex flex-wrap gap-4">
+						<a
+							class="btn-demo block w-full rounded-xl px-10 py-4 text-lg font-medium bg-[#8abb3f] text-white focus:ring sm:w-auto z-10 relative"
+							href="#"
+						>
+							Learn More
+							<img
+								src={arrow_right_svg}
+								class="z-10 absolute right-5 bottom-[24px] size-3"
+								alt=""
+							/>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
