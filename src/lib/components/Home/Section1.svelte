@@ -20,13 +20,16 @@
 	// });
 </script>
 
-<section class="max-w-screen-xl relative rounded-lg mx-auto my-12">
-	<div class="py-20 mt-28 relative">
-		<div class="relative">
+<section class="max-w-screen-xl relative rounded-lg mx-auto my-2 ">
+	<div class="py-20 relative ">
+		<div class="relative ">
 			<div
-				class="card1 w-[680px] h-[590px] flex flex-start bg-[#F1F1F9] border border-gray-200 shadow rounded-xl"
+				class="card1 pr-20 w-[695px] h-[588px] flex justify-center bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl"
 			>
-				<div class=" max-w-md p-6 text-gray-900 rounded-lg mt-10 ml-10">
+				<div
+					class=" max-w-[30rem] 
+				 pt-5 text-gray-900 rounded-lg mt-10 ml-10"
+				>
 					<span class="absolute"><img src={linha_v_1_svg} alt="" /></span>
 					<h3 class="ml-6 mb-2 text-lg tracking-tight text-gray-900 Archivo">
 						It brings <strong>effectiveness</strong> to
@@ -39,7 +42,7 @@
 				</div>
 			</div>
 			<div
-				class="card1 w-[820px] h-[445px] flex absolute top-[70px] left-[605px] flex-start bg-[#F1F1F9] border border-gray-200 shadow rounded-xl"
+				class="card1 w-[816px] h-[447px] flex absolute top-[70px] left-[605px] flex-start bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl "
 			>
 				<div class=" max-w-2xl p-6 text-gray-900 rounded-lg mt-12 ml-12">
 					<h1 class="Exo text-4xl font-bold relative">

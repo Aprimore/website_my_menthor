@@ -2,66 +2,53 @@
 	import { checkmark_svg, linha_h_2_svg, the_platform_png } from '$lib';
 </script>
 
-<section class="w-full items-center relative rounded-lg my-20">
-	<div class="flex max-w-screen-xl border border-black mx-auto">
-		<div class="column1 w-1/2 border">
-			<div class="">
-				<h1 class="max-w-lg text-2xl sm:text-4xl relative Exo font-extrabold text-[#17193B]">
+<section class="w-full items-center relative rounded-lg my-20 pb-10">
+	<div class="flex max-w-screen-2xl mx-auto">
+		<div class=" column1 w-2/3">
+			<div class="ml-14">
+				<h1 class="ml-10 max-w-lg text-2xl sm:text-4xl relative Exo font-extrabold text-[#17193B]">
 					Organizing your business can be simpler than you think
 				</h1>
-				<span class="absolute"><img src={linha_h_2_svg} alt="" /></span>
+				<span class="ml-2 absolute"><img src={linha_h_2_svg} alt="" /></span>
 			</div>
-			<div class="flex flex-row">
-				<div class="col2 mt-28 pl-10 text-lg relative">
-					<div
-						class="h-[73px] bg-[#F1F1F9] border border-[#D4D4ED] flex justify-center items-center"
-					>
+			<div class="flex flex-row ml-6 absolute">
+				<div class="mt-14 pl-10 p-10 text-lg relative space-y-5 max-w-screen-md">
+					<div class="bg-[#F1F1F9] border border-[#D4D4ED] inline-block p-4 min-w-min">
 						<p class="Exo check">Profits, revenue and margin</p>
 					</div>
-
-					<div
-						class="h-[73px] bg-[#F1F1F9] border border-[#D4D4ED] flex justify-center items-center"
-					>
+					<div class="bg-[#F1F1F9] border border-[#D4D4ED] inline-block p-4 min-w-min">
 						<p class="Exo check">Quality of products and services</p>
 					</div>
-					<div
-						class="h-[73px] bg-[#F1F1F9] border border-[#D4D4ED] flex justify-center items-center"
-					>
+					<div class="bg-[#F1F1F9] border border-[#D4D4ED] inline-block p-4 min-w-min">
 						<p class="Exo check">Value to customers and stakeholders</p>
 					</div>
-				</div>
-				<div>
-					<div
-						class="h-[73px] bg-[#F1F1F9] border border-[#D4D4ED] flex justify-center items-center"
-					>
+					<div class="bg-[#F1F1F9] border border-[#D4D4ED] inline-block p-4 min-w-min">
 						<p class="Exo check">Process innovation</p>
 					</div>
-					<div
-						class="h-[73px] bg-[#F1F1F9] border border-[#D4D4ED] flex justify-center items-center"
-					>
+					<div class="bg-[#F1F1F9] border border-[#D4D4ED] inline-block p-4 min-w-min">
 						<p class="Exo check">Maturity and performance</p>
 					</div>
-					<div
-						class="h-[73px] bg-[#F1F1F9] border border-[#D4D4ED] flex justify-center items-center"
-					>
+					<div class="bg-[#F1F1F9] border border-[#D4D4ED] inline-block p-4 min-w-min">
 						<p class="Exo check">Sustainability</p>
 					</div>
 				</div>
+
+				<div class="mt-28 pl-3 text-lg relative space-y-5"></div>
 			</div>
 		</div>
 
-		<div class="column2 w-1/2">
+		<div class="column2 w-[45%]">
 			<div class="col3">
-				<p>
+				<p class="Archivo text-lg">
 					My Menthor acts as a <strong> Digital Mentor </strong> with an
 					<strong> approach centered </strong> on being and not on disruptive technologies.
 				</p>
-				<p>
+				<p class="Archivo text-lg">
 					It acts as an <strong> information </strong> hub, <strong> organizing knowledge </strong> in
 					a single repository.
 				</p>
 			</div>
-			<div class="col4">
+			<div class="col4 mt-5">
 				<!-- <div class="div1 w-1/2 flex justify-end pr-20 "> -->
 				<img src={the_platform_png} alt="lottie animation" />
 				<!-- </div> -->

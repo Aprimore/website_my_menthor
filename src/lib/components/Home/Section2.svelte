@@ -41,7 +41,7 @@
 		>
 			<div class="flex flex-col mx-auto mt-10 items-center p-6 rounded-lg">
 				<h3 class="Exo text-2xl font-bold relative max-w-sm text-[#17193B]">
-					<span class="absolute left-[-45px]"><img src={track_changes_svg} alt="" /></span>
+					<span class="absolute left-[-45px]"><img src={design_services_svg} alt="" /></span>
 
 					Organizational Design
 				</h3>
@@ -60,7 +60,7 @@
 		>
 			<div class="flex flex-col mx-auto mt-10 items-center p-6 rounded-lg">
 				<h3 class="Exo text-2xl font-bold relative max-w-sm text-[#17193B]">
-					<span class="absolute left-[-45px]"><img src={track_changes_svg} alt="" /></span>
+					<span class="absolute left-[-45px]"><img src={table_chart_view_svg} alt="" /></span>
 
 					Evolution and Sustainability
 				</h3>
@@ -76,7 +76,7 @@
 		>
 			<div class="flex flex-col mx-auto mt-10 items-center p-6 rounded-lg">
 				<h3 class="Exo text-2xl font-bold relative max-w-sm text-[#17193B]">
-					<span class="absolute left-[-45px]"><img src={track_changes_svg} alt="" /></span>
+					<span class="absolute left-[-45px]"><img src={linked_services_svg} alt="" /></span>
 
 					Organizational Alignment
 				</h3>

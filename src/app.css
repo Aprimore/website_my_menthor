@@ -11,11 +11,11 @@
 }
 
 @font-face {
-    font-family: 'Exo';
-    font-style: normal;
-    font-weight: 700; 
-    src: url('/fonts/Exo/Exo-Bold.ttf'); 
-    font-display: swap;
+	font-family: 'Exo';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/fonts/Exo/Exo-Bold.ttf');
+	font-display: swap;
 }
 
 @font-face {
@@ -31,9 +31,9 @@
 }
 
 .Archivo {
-    font-family: Archivo, Arial, sans-serif;
+	font-family: Archivo, Arial, sans-serif;
 }
 
 .Exo {
-    font-family: Exo, Arial, sans-serif;
+	font-family: Exo, Arial, sans-serif;
 }

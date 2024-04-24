@@ -1,12 +1,14 @@
 <script lang="ts">
-	import Navbar from './../lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Hero from '$lib/components/Home/Hero.svelte';
 	import Section1 from '$lib/components/Home/Section1.svelte';
 	import Section2 from '$lib/components/Home/Section2.svelte';
 	import Section3 from '$lib/components/Home/Section3.svelte';
-	import Navbar2 from '$lib/components/Navbar2.svelte';
 	import Section4 from '$lib/components/Home/Section4.svelte';
+	import Section5 from '$lib/components/Home/Section5.svelte';
+	import Section6 from '$lib/components/Home/Section6.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
+	import Navbar2 from '$lib/components/Navbar2.svelte';
 </script>
 
 <svelte:head>
@@ -28,14 +30,13 @@
 </svelte:head>
 
 <div>
-	<Navbar />
-	<Navbar2 />
 	<Hero />
 	<Section1 />
 	<Section2 />
 	<Section3 />
 	<Section4 />
-	<Footer />
+	<Section5 />
+	<Section6 />
 </div>
 
 <!-- <style>
