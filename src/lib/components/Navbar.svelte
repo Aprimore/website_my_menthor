@@ -8,26 +8,26 @@
 	>
 		<div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
 			<ul
-				class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100   md:space-x-2 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700"
+				class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 md:space-x-2 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
 			>
 				<li>
 					<a
 						href="#"
-						class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 underline"
+						class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent underline"
 						>suporte@mymenthor.com.br</a
 					>
 				</li>
 				<li>
 					<button
 						type="button"
-						class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+						class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
 						>Login</button
 					>
 				</li>
 				<li>
 					<a
 						href="#"
-						class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+						class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
 						>PT</a
 					>
 				</li>
@@ -40,7 +40,7 @@
 	</div>
 </nav>
 
-<nav class="mt-20 bg-white border-gray-200 dark:bg-gray-900 m-0 p-0"></nav>
+<nav class="mt-20 bg-white border-gray-200 m-0 p-0"></nav>
 
 <style>
 	* {
@@ -48,6 +48,6 @@
 	}
 
 	.navbar {
-		background-color: #D4D4ED;
+		background-color: #d4d4ed;
 	}
 </style>

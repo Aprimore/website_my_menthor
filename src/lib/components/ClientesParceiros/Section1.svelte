@@ -3,45 +3,56 @@
 		arrow_right_svg,
 		clientes_parceiros_3_png,
 		clientes_parceiros_5_png,
-		linha_h_5_svg
+		linha_h_5_svg,
+		linha_h_azul_svg
 	} from '$lib';
 </script>
 
-<section class="w-full items-center relative rounded-lg my-20 bg-[#D4D4ED]">
+<section class="w-full rounded-lg bg-[#D4D4ED]">
 	<div class="h-[649px] flex flex-row pt-20">
-		<div class="w-1/2">
-			<div class="card bg-white">
-				<h1 class="Exo text-2xl sm:text-4xl z-10 relative text-[#17193B] Exo font-extrabold">
-					Partner program
-					<span><img src={linha_h_5_svg} class="z-10 absolute right-0" alt="linha" /></span>
-				</h1>
-				<p class="Archivo text-[#25285F]">
-					Register and discover the benefits of our partner programs programs and how we can work
-					together to achieve exceptional results.
-				</p>
-				<button class=" flex flex-wrap gap-4">
-					<a
-						class="Archivo btn-agendar flex items-center text-base text-[#F1F1F9] py-4 px-10 mt-5 rounded-lg relative"
-						href="#"
-					>
-						Become a partner
-						<img src={arrow_right_svg} class="z-10 absolute right-5 bottom-[22px] size-3" alt="" />
-					</a>
-				</button>
+		<div class="w-1/2 flex justify-center items-center">
+			<div class="card bg-white w-[694px] max-h-[364px] rounded-md relative ml-60 mb-6">
+				<div class="p-16 mx-5 space-y-7">
+					<h1 class="Exo text-3xl sm:text-5xl z-10 text-[#17193B] Exo font-extrabold">
+						Partner program
+						<span><img src={linha_h_azul_svg} class="z-10 right-0" alt="linha" /></span>
+					</h1>
+					<p class="Archivo text-[#25285F] text-lg">
+						Register and discover the benefits of our partner programs programs and how we can work
+						together to achieve exceptional results.
+					</p>
+					<div class="space-x-5">
+						<button
+							class="btn-agendar text-lg text-[#F1F1F9] bg-[#8ABB3F] py-4 px-10 rounded-xl relative"
+						>
+							<a class="Archivo" href="#">
+								Become a partner
+								<img
+									src={arrow_right_svg}
+									class="z-10 absolute right-5 bottom-[22px] size-3"
+									alt=""
+								/>
+							</a>
+						</button>
 
-				<div class="mt-8 flex flex-wrap gap-4">
-					<a
-						class=" Archivo btn-demo block w-full rounded-xl px-10 py-4 text-lg font-medium bg-[#8abb3f] text-[#17193B] border border-[#17193B] focus:ring sm:w-auto z-10 relative"
-						href="#"
-					>
-						Partner Portal
-					</a>
+						<button
+							class="btn-demo rounded-xl px-10 py-4 text-lg bg-white text-[#17193B] border border-[#17193B] relative"
+						>
+							<a class=" Archivo" href="#"> Partner Portal </a>
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="w-1/2">
-			<img src={clientes_parceiros_3_png} alt="" />
-			<img src={clientes_parceiros_5_png} alt="" />
+		<div class="w-1/2 relative border-black">
+			<div class=" relative flex flex-row justify-center items-center h-full">
+				<img
+					src={clientes_parceiros_3_png}
+					class="absolute left-[30px] top-[30px] size-[332px]"
+					alt=""
+				/>
+				<img src={clientes_parceiros_5_png} class="absolute right-[220px] size-[332px]" alt="" />
+			</div>
 		</div>
 	</div>
 </section>

@@ -1,15 +1,15 @@
 <script>
-
-	import { linha_h_1_svg, the_platform_png } from "$lib";
-
+	import Section_Cards from './Section_Cards.svelte';
+	import { linha_h_1_svg, the_platform_png } from '$lib';
 </script>
-<section class="w-full items-center relative rounded-lg my-20 bg-white">
-	<div class="h-[649px] flex flex-row pt-20">
-		<div class="max-w-screen-2xl flex flex-row pt-20">
-			<div class="div1 w-1/2 flex justify-end pr-20">
-				<img src={the_platform_png} alt="lottie animation" />
+
+<section class="w-full bg-white">
+	<div class="">
+		<div class="max-w-screen-2xl mx-auto flex flex-row">
+			<div class=" w-1/2 flex justify-end pr-40">
+				<img src={the_platform_png} class="" alt="lottie animation" />
 			</div>
-			<div class="div2 w-1/2">
+			<div class=" w-1/2">
 				<h1 class="text-2xl sm:text-4xl relative Exo font-extrabold text-[#17193B]">
 					Breaking down silos and building bridges to organizational effectiveness
 				</h1>
@@ -40,3 +40,4 @@
 		</div>
 	</div>
 </section>
+<Section_Cards />
