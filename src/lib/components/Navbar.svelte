@@ -2,14 +2,12 @@
 	import { logo_navbar_svg } from '$lib';
 </script>
 
-<nav class="navbar bg-[#d4d4ed] fixed w-full z-20 top-0 start-0 border-b">
+<nav class="navbar bg-[#d4d4ed] relative w-full z-20 top-0 start-0 border-b">
 	<div
-		class="nav1 bg-transparent max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2.5"
+		class="nav1 bg-transparent max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-2.5"
 	>
-		<div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-			<ul
-				class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 md:space-x-2 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
-			>
+		<div class="flex md:order-2 space-x-3">
+			<ul class="flex p-3 md:p-0 font-medium md:space-x-2 rtl:space-x-reverse m-0 border-0">
 				<!-- <li>
 					<a
 						href="#"
@@ -38,8 +36,6 @@
 		></div>
 	</div>
 </nav>
-
-<nav class="mt-20 bg-white border-gray-200 m-0 p-0"></nav>
 
 <style>
 	.language::before {

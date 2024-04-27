@@ -3,11 +3,11 @@
 </script>
 
 <section class="w-full items-center relative rounded-lg my-20 bg-[#F1F1F9]">
-	<div class="max-w-screen-2xl flex flex-row pt-20 mx-auto">
-		<div class="w-[670px] flex p-16">
+	<div class="max-w-screen-2xl flex flex-col lg:flex-row lg:pt-20 mx-auto items-center">
+		<div class="w-[670px] flex px-24 lg:p-16 max-lg:order-2">
 			<img src={piramide_ingles_svg} class="" alt="" />
 		</div>
-		<div class="w-1/2 space-y-10 mt-16">
+		<div class="max-lg:p-10 lg:w-1/2 space-y-10 mt-8 lg:mt-16 max-lg:order-1">
 			<h1 class="text-2xl sm:text-4xl relative Exo font-extrabold text-[#17193B]">
 				Breaking down silos and building bridges to organizational effectiveness
 			</h1>
@@ -36,7 +36,7 @@
 			</p>
 		</div>
 	</div>
-	<div class="flex justify-center">
+	<div class="flex justify-center mt-8">
 		<button class="border border-[#17193B] rounded-xl mb-20">
 			<a
 				class="Archivo btn-learn bg-[#F1F1F9] block w-full rounded-xl px-10 py-4 text-xl text-[#17193B] focus:ring sm:w-auto z-10 relative"

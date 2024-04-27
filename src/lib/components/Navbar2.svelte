@@ -1,84 +1,87 @@
 <script lang="ts">
 	import { logo_navbar_svg } from '$lib';
+
+	let showMenu = false;
+
+	function toggleNavbar() {
+		showMenu = !showMenu;
+	}
+
+	const hrClass = 'max-sm:block';
+	const navbarLinks = '/';
+	const navbarClasses =
+		'text-[#17193B] py-2 md:px-3 transition-transform transform hover:-translate-y-1 hover:bg-[#20C997] rounded-lg hover:text-[#F1F1F9] Exo ';
 </script>
 
-<nav class="w-full z-20 top-0 start-0">
-	<div class="nav2 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto" id="top">
-		<a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-			<img src={logo_navbar_svg} class="" alt="Flowbite Logo" />
-		</a>
-		<button
-			data-collapse-toggle="navbar-default"
-			type="button"
-			class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-			aria-controls="navbar-default"
-			aria-expanded="false"
+<nav
+	class="relative  max-md:py-3 px-6 py-8 mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full"
+>
+	<div class="flex items-center justify-between">
+		<a
+			class="logoHeader font-bold text-white hover:text-slate-300 transition-transform transform hover:-translate-y-1"
+			href="/game-company/game-landing-page"
 		>
-			<span class="sr-only">Open main menu</span>
-			<svg
-				class="w-5 h-5"
-				aria-hidden="true"
-				xmlns="http://www.w3.org/2000/svg"
-				fill="none"
-				viewBox="0 0 17 14"
+			<img src={logo_navbar_svg} class="" alt="" />
+		</a>
+		<!-- Mobile menu button -->
+		<div class="hamb flex lg:hidden">
+			<button
+				on:click={toggleNavbar}
+				type="button"
+				aria-label="Toggle Navigation"
+				class="text-white hover:text-slate-300 focus:outline-none focus:text-slate-100"
 			>
-				<path
-					stroke="currentColor"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M1 1h15M1 7h15M1 13h15"
-				/>
-			</svg>
-		</button>
-		<div class="hidden w-full md:block md:w-auto" id="navbar-default">
-			<ul
-				class="font-medium text-sm flex flex-col md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-10 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
-			>
-				<li>
-					<a
-						href="/products"
-						class="text-[#17193B] py-2 px-3 block rounded hover:bg-[#20C997] hover:text-[#F1F1F9] text-lg Exo"
-						aria-current="page">Products</a
-					>
-				</li>
-				<li>
-					<a
-						href="/solutions"
-						class="text-[#17193B] py-2 px-3 block rounded hover:bg-[#20C997] hover:text-[#F1F1F9] text-lg Exo"
-						>Solutions</a
-					>
-				</li>
-				<li>
-					<a
-						href="/customers_and_partners"
-						class="text-[#17193B] py-2 px-3 block rounded hover:bg-[#20C997] hover:text-[#F1F1F9] text-lg Exo"
-						>Costumers and Partners</a
-					>
-				</li>
-				<li>
-					<a
-						href="/resources"
-						class="text-[#17193B] py-2 px-3 block rounded hover:bg-[#20C997] hover:text-[#F1F1F9] text-lg Exo"
-						>Resources</a
-					>
-				</li>
-				<li>
-					<a
-						href="/company"
-						class="text-[#17193B] py-2 px-3 block rounded hover:bg-[#20C997] hover:text-[#F1F1F9] text-lg Exo"
-						>Company</a
-					>
-				</li>
-			</ul>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="#17193B"
+					class="w-12 h-12"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+					/>
+				</svg>
+			</button>
 		</div>
+	</div>
+
+	<div
+		class="nav-links whitespace-nowrap mt-8 space-y-4 lg:flex sm:space-y-0 lg:flex-row lg:items-center lg:space-x-3 md:space-x-2 text-center md:mt-0 {showMenu
+			? 'flex'
+			: 'hidden'}"
+	>
+		<a class={navbarClasses} href={navbarLinks}>Home</a>
+		<a class={navbarClasses} href={navbarLinks}>Blog</a>
+		<a href={navbarLinks} class={navbarClasses}>Products</a>
+		<a class={navbarClasses} href={navbarLinks}>Solutions</a>
+		<a class={navbarClasses} href={navbarLinks}>Customers and Partners </a>
+		<a class={navbarClasses} href={navbarLinks}>Resources</a>
+		<a class={navbarClasses} href={navbarLinks}>Company</a>
 	</div>
 </nav>
 
-<!-- <nav class="mt-20 bg-white border-gray-200  m-0 p-0"></nav> -->
-
 <style>
-	* {
-		color: black;
+	.nav-links {
+		font-size: 1.25rem;
+		line-height: 1rem;
+	}
+
+	@media (max-width: 1350px) {
+		.nav-links {
+			font-size: 1rem;
+			line-height: 1rem;
+		}
+	}
+
+	@media (max-width: 1020px) {
+		.nav-links {
+			font-size: 1.25rem;
+			line-height: 1.5rem;
+			flex-direction: column;
+		}
 	}
 </style>

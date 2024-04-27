@@ -11,7 +11,7 @@
 	import Copyright from './Copyright.svelte';
 </script>
 
-<footer class="footer relative z-10">
+<footer class="footer relative">
 	<div class="container mx-auto">
 		<div class="flex flex-row p-12">
 			<div class=" px-4 sm:w-2/3 lg:w-3/12">
@@ -101,6 +101,7 @@
 						</ul>
 					</div>
 				</div>
+				
 				<div class="w-full px-4 sm:w-1/2 lg:w-[22%] pl-8">
 					<div class="w-full mb-10">
 						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">Recursos</h4>
@@ -124,6 +125,7 @@
 						</ul>
 					</div>
 				</div>
+
 				<div class="w-full px-4 sm:w-1/2 lg:w-[22%] relative">
 					<div class="w-full mb-10">
 						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">Empresa</h4>
@@ -159,8 +161,8 @@
 			</div>
 		</div>
 	</div>
+	<Copyright />
 </footer>
-<Copyright />
 
 <style>
 	.footer {

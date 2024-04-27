@@ -3,14 +3,14 @@
 </script>
 
 <header class="hero-section">
-	<div class="mx-auto px-4 lg:flex lg:h-[510px] lg:items-center relative">
+	<div class="mx-auto px-4 flex h-[510px] items-center relative">
 		<div class="mx-auto max-w-5xl text-center z-20">
 			<p class="z-10 relative text-[#FCC614] text-lg Exo tracking-widest">
 				BUSINESS PROCESS ARCHITECTURE
 			</p>
 			<h1 class="text-2xl sm:text-4xl z-10 relative text-white Exo font-extrabold">
 				Your company on another management level
-				<span><img src={linha_h_5_svg} class="z-10 absolute right-0" alt="linha" /></span>
+				<span><img src={linha_h_5_svg} class="z-10 sm:absolute right-0" alt="linha" /></span>
 			</h1>
 
 			<p
@@ -39,7 +39,6 @@
 
 <style>
 	.btn-demo::after {
-		
 		content: url('$lib/assets/svg/arrow_right_2.svg');
 		display: inline-block;
 		/* vertical-align: middle; */
