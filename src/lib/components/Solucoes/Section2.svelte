@@ -1,23 +1,27 @@
 <script>
-	import { linha_h_1_svg, linha_h_4_svg, linha_v_1_svg, portfolio_servicos_png } from '$lib';
+	import {
+		linha_h_1_svg,
+		linha_h_4_svg,
+		linha_h_azul_2_svg,
+		linha_h_azul_3_svg,
+		linha_h_azul_svg,
+		linha_v_1_svg,
+		linha_v_amarela_svg,
+		portfolio_services_ingles_svg,
+		portfolio_servicos_png
+	} from '$lib';
 </script>
 
-<section class="w-full items-center relative rounded-lg mt-20 bg-[#F1F1F9]">
+<section class="w-full items-center relative rounded-lg pb-20 bg-[#F1F1F9]">
 	<div class="max-w-screen-2xl pt-20 flex justify-center mx-auto">
 		<div class="w-1/2 flex flex-col justify-center">
 			<div>
 				<h1 class="text-1xl sm:text-5xl relative Exo font-extrabold text-[#17193B] text-center">
 					Portfolio of services
-					<span><img src={linha_h_4_svg} class="z-10 absolute right-64" alt="linha" /></span>
+					<span><img src={linha_h_azul_3_svg} class="z-10 absolute right-52" alt="linha" /></span>
 				</h1>
 			</div>
-			<img
-				src={portfolio_servicos_png}
-				class=" cover size-[
-                300px
-            ] mx-auto mt-10"
-				alt=""
-			/>
+			<img src={portfolio_services_ingles_svg} class=" cover size-[450px] mx-auto mt-10" alt="" />
 		</div>
 
 		<div class="w-1/2 flex flex-col justify-center">
@@ -41,9 +45,9 @@
 			</div>
 			<div class="max-w-2xl flex flex-col self-center h-[150px] w-[695px] bg-[#17193B] rounded-md">
 				<div class="flex justify-center my-auto relative">
-					<span class="absolute left-16"><img src={linha_v_1_svg} alt="" /></span>
-					<p class="max-w-lg ml-5 mt-3 Archivo text-lg text-[#F1F1F9]">
-						<span class="text-[#FCC614]"> We act as business partners </span>
+					<span class="absolute left-16 top-4"><img src={linha_v_amarela_svg} alt="" /></span>
+					<p class="max-w-lg ml-7 mt-3 Archivo text-lg text-[#F1F1F9]">
+						<span class="text-[#FCC614] "> We act as business partners </span>
 						in management solutions before, during and after implementation, in pursuit of effective
 						results for our clients.
 					</p>

@@ -3,7 +3,7 @@
 </script>
 
 <nav class="w-full z-20 top-0 start-0">
-	<div class="nav2 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+	<div class="nav2 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto" id="top">
 		<a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
 			<img src={logo_navbar_svg} class="" alt="Flowbite Logo" />
 		</a>

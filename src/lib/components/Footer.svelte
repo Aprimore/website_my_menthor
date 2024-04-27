@@ -23,13 +23,14 @@
 							class="inset-0 w-full h-full object-cover size-96"
 						/>
 					</a>
-					<div class="email_link">
-						<a href="#" class="text-[#D4D4ED]">
+
+					<!-- <div class="email_link">
+						<a href="#" class="text-[#D4D4ED] email">
 							<span class="mail-icon"></span>
-							<!-- Add this span for mail icon -->
-							suporte@mymenthor.com.br
+							
+						
 						</a>
-					</div>
+					</div> -->
 
 					<button class=" flex flex-wrap gap-4">
 						<a

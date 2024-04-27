@@ -1,17 +1,17 @@
-<script>
-	import { arrow_right_svg, linha_h_1_svg, the_platform_png } from '$lib';
+<script lang="ts">
+	import { arrow_right_svg, linha_h_1_svg, piramide_ingles_svg, the_platform_png } from '$lib';
 </script>
 
 <section class="w-full items-center relative rounded-lg my-20 bg-[#F1F1F9]">
-	<div class="max-w-screen-2xl flex flex-row pt-20">
-		<div class="div1 w-1/2 flex justify-end pr-20">
-			<img src={the_platform_png} alt="lottie animation" />
+	<div class="max-w-screen-2xl flex flex-row pt-20 mx-auto">
+		<div class="w-[670px] flex p-16">
+			<img src={piramide_ingles_svg} class="" alt="" />
 		</div>
-		<div class="div2 w-1/2">
+		<div class="w-1/2 space-y-10 mt-16">
 			<h1 class="text-2xl sm:text-4xl relative Exo font-extrabold text-[#17193B]">
 				Breaking down silos and building bridges to organizational effectiveness
 			</h1>
-			<span class="absolute"><img src={linha_h_1_svg} alt="" /></span>
+			<span class=""><img src={linha_h_1_svg} alt="" /></span>
 			<p class="mt-14 mb-2 Archivo text-lg text-[#25285F]">
 				<strong> The platform facilitates the rethinking of the organization </strong>
 				at all layers, from the strategic to the operational level, represented by the pyramid with various
@@ -36,13 +36,23 @@
 			</p>
 		</div>
 	</div>
-	<div class="mt-8 flex justify-center gap-4 pb-20">
-		<a
-			class="btn-demo block w-full rounded-xl px-10 py-4 text-lg font-medium text-[#17193B] bg-[#F1F1F9] border border-[#25285F] focus:ring sm:w-auto z-10 relative"
-			href="#"
-		>
-			Learn More
-			<img src={arrow_right_svg} class="z-10 absolute right-5 bottom-[24px] size-3" alt="" />
-		</a>
+	<div class="flex justify-center">
+		<button class="border border-[#17193B] rounded-xl mb-20">
+			<a
+				class="Archivo btn-learn bg-[#F1F1F9] block w-full rounded-xl px-10 py-4 text-xl text-[#17193B] focus:ring sm:w-auto z-10 relative"
+				href="#"
+			>
+				Learn More
+			</a>
+		</button>
 	</div>
 </section>
+
+<style>
+	.btn-learn::after {
+		content: url('$lib/assets/svg/arrow_right_2.svg');
+		display: inline-block;
+		/* vertical-align: middle; */
+		margin-left: 10px;
+	}
+</style>

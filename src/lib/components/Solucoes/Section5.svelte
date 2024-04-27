@@ -1,5 +1,5 @@
 <script>
-	import { checkmark_2_svg, linha_h_1_svg, linha_h_7_svg } from '$lib';
+	import { checkmark_2_svg, linha_h_1_svg, linha_h_2_svg, linha_h_7_svg, linha_h_azul_5_svg } from '$lib';
 </script>
 
 <section class="w-full items-center relative rounded-lg bg-[#F1F1F9] py-20">
@@ -63,7 +63,7 @@
 	<div class="w-[1178px] h-[598px] flex justify-center items-center mx-auto bg-white flex-col mt-8">
 		<div class="flex">
 			<h1 class="text-[#17193B] text-4xl font-bold mb-12 text-center">
-				Platform features<span class=""><img src={linha_h_1_svg} alt="" /></span>
+				Platform features<span class=""><img src={linha_h_azul_5_svg} alt="" /></span>
 			</h1>
 		</div>
 		<div class="pl-20 flex flex-row relative">

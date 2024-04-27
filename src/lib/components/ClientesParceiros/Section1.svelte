@@ -22,21 +22,17 @@
 						together to achieve exceptional results.
 					</p>
 					<div class="space-x-5">
-						<button
-							class="btn-agendar text-lg text-[#F1F1F9] bg-[#8ABB3F] py-4 px-10 rounded-xl relative"
-						>
-							<a class="Archivo" href="#">
-								Become a partner
-								<img
-									src={arrow_right_svg}
-									class="z-10 absolute right-5 bottom-[22px] size-3"
-									alt=""
-								/>
+						<button>
+							<a
+								class="btn-partner bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
+								href="#"
+							>
+								Become a Partner
 							</a>
 						</button>
 
 						<button
-							class="btn-demo rounded-xl px-10 py-4 text-lg bg-white text-[#17193B] border border-[#17193B] relative"
+							class=" rounded-xl px-10 py-4 text-lg bg-white text-[#17193B] border border-[#17193B] relative"
 						>
 							<a class=" Archivo" href="#"> Partner Portal </a>
 						</button>
@@ -56,3 +52,12 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	.btn-partner::after {
+		content: url('$lib/assets/svg/arrow_right_claro.svg');
+		display: inline-block;
+		/* vertical-align: middle; */
+		margin-left: 10px;
+	}
+</style>

@@ -2,7 +2,7 @@
 	import { logo_navbar_svg } from '$lib';
 </script>
 
-<nav class="navbar fixed w-full z-20 top-0 start-0 border-b">
+<nav class="navbar bg-[#d4d4ed] fixed w-full z-20 top-0 start-0 border-b">
 	<div
 		class="nav1 bg-transparent max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2.5"
 	>
@@ -10,24 +10,23 @@
 			<ul
 				class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 md:space-x-2 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
 			>
-				<li>
+				<!-- <li>
 					<a
 						href="#"
 						class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent underline"
-						>suporte@mymenthor.com.br</a
+						></a
 					>
-				</li>
-				<li>
+				</li> -->
+				<li class=" bg-[#d4d4ed]">
 					<button
 						type="button"
-						class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
-						>Login</button
+						class="login Archivo block py-2 px-3 text-[#17193B] rounded bg-[#F1F1F9]">Login</button
 					>
 				</li>
 				<li>
 					<a
 						href="#"
-						class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700"
+						class="language block py-2 px-3 text-[#17193B] rounded md:hover:bg-transparent Archivo"
 						>PT</a
 					>
 				</li>
@@ -43,11 +42,18 @@
 <nav class="mt-20 bg-white border-gray-200 m-0 p-0"></nav>
 
 <style>
-	* {
-		color: black;
+	.language::before {
+		content: url('$lib/assets/svg/globe.svg');
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: -5px;
+		margin-right: 7px; /* Adjust as needed */
 	}
+	.login::before {
+		content: url('$lib/assets/svg/lock.svg');
+		display: inline-block;
+		vertical-align: middle;
 
-	.navbar {
-		background-color: #d4d4ed;
+		margin-right: 5px; /* Adjust as needed */
 	}
 </style>

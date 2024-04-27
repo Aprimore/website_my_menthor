@@ -4,7 +4,7 @@
 		card_travel_svg,
 		chart_svg,
 		conversion_path_svg,
-		design_services_svg,
+		design_service_svg,
 		explore_svg,
 		instant_mix_svg,
 		inventory_svg,

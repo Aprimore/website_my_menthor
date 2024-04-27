@@ -1,16 +1,33 @@
-<script>
+<script lang="ts">
 	import {
 		clientes_parceiros_3_png,
 		linha_h_3_svg,
 		linha_h_5_svg,
 		linha_h_verde_1_svg
 	} from '$lib';
+
+	import animationData from '$lib/assets/lotties/gif-5.json';
+
+	import lottie from 'lottie-web';
+	import { onMount } from 'svelte';
+
+	let animationContainer: HTMLElement;
+
+	onMount(() => {
+		lottie.loadAnimation({
+			container: animationContainer,
+			loop: true,
+			autoplay: true,
+			animationData
+		});
+	});
 </script>
 
 <section class="w-full items-center rounded-lg bg-[#F1F1F9]">
 	<div class="h-[532px] flex flex-row max-w-[1350px] mx-auto">
 		<div class="w-1/2 flex flex-col justify-center">
-			<img class="w-full h-full" src={clientes_parceiros_3_png} alt="" />
+			<div bind:this={animationContainer} />
+			<!-- <img class="w-full h-full" src={clientes_parceiros_3_png} alt="" /> -->
 		</div>
 		<div class="w-1/2 flex flex-col justify-center">
 			<div class="card space-y-10 p-12 bg-[#F1F1F9]">

@@ -1,20 +1,36 @@
-<script>
+<script lang="ts">
 	import { arrow_right_svg, linha_h_7_svg, the_platform_png } from '$lib';
+
+	import animationData from '$lib/assets/lotties/gif-3.json';
+
+	import lottie from 'lottie-web';
+	import { onMount } from 'svelte';
+
+	let animationContainer: HTMLElement;
+
+	onMount(() => {
+		lottie.loadAnimation({
+			container: animationContainer,
+			loop: true,
+			autoplay: true,
+			animationData
+		});
+	});
 </script>
 
 <section class="w-full items-center relative rounded-lg bg-[#F1F1F9] py-28">
-	<div class="flex max-w-[1420px] max-h-[492px] mx-auto bg-white py-5 px-10">
+	<div class="flex max-w-[1420px] h-[500px] mx-auto bg-white py-5 px-10">
 		<div class="w-1/3 flex flex-col justify-center pl-10">
 			<div class="space-y-5">
 				<h1 class="Exo text-3xl font-bold">My Menthor Blog</h1>
 				<p class="Archivo text-lg">Explore insights and expert tips on our blog.</p>
+
 				<button class="min-w-min">
 					<a
-						class="bg-[#D4D4ED] Archivo block w-full rounded-xl px-10 py-3 text-base font-medium text-[#17193B] focus:ring sm:w-auto z-10 relative max-w-max"
+						class="Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
 						href="#"
 					>
 						Access
-						<img src={arrow_right_svg} class="z-10 absolute right-4 bottom-[18px] size-3" alt="" />
 					</a>
 				</button>
 				<span class=""><img class=" mt-5" src={linha_h_7_svg} alt="" /></span>
@@ -26,17 +42,16 @@
 				</p>
 				<button class="min-w-min">
 					<a
-						class="bg-[#D4D4ED] Archivo block w-full rounded-xl px-10 py-3 text-base font-medium text-[#17193B] focus:ring sm:w-auto z-10 relative max-w-max"
+						class="Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
 						href="#"
 					>
 						Access
-						<img src={arrow_right_svg} class="z-10 absolute right-4 bottom-[18px] size-3" alt="" />
 					</a>
 				</button>
 			</div>
 		</div>
 
-		<div class="w-1/3 flex flex-col justify-center ">
+		<div class="w-1/3 flex flex-col justify-center">
 			<div class="space-y-5 h-[174px] relative">
 				<h1 class="Exo text-3xl font-bold">My Menthor Academy</h1>
 				<p class="Archivo text-lg">Train and develop skills related to Business Architecture.</p>
@@ -50,12 +65,11 @@
 				</p>
 			</div>
 		</div>
-		<div class="w-1/3 flex flex-col justify-center relative">
-			<div class="relative">
-				<img class="relative h-52 w-full" src={the_platform_png} alt="" />
-			</div>
-			<div class="bg-[#F1F1F9] flex flex-col justify-center py-14 px-10">
-				<h1 class="Exo text-4xl font-bold">Resources</h1>
+		<div class="bg-[#454AB0] w-1/3 relative flex flex-col justify-center rounded-xl">
+			<div bind:this={animationContainer} class=" absolute -top-14" />
+
+			<div class="bg-[#F1F1F9] flex flex-col justify-center p-10 px-10 z-30 relative mt-auto">
+				<h1 class="Exo text-4xl font-bold bottom-0">Resources</h1>
 				<p class="Archivo text-lg mt-6">
 					Discover the resources available to you stay updated about the best articles, events and
 					knowledge about the platform.
@@ -64,3 +78,12 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	.btn-access::after {
+		content: url('$lib/assets/svg/arrow_right.svg');
+		display: inline-block;
+		/* vertical-align: middle; */
+		margin-left: 10px;
+	}
+</style>

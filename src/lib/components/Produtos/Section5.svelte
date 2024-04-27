@@ -1,5 +1,13 @@
 <script>
-	import { arrow_right_svg, empresa_1_png, linha_h_1_svg } from '$lib';
+	import {
+		analytics_svg,
+		arrow_right_svg,
+		check_list_svg,
+		empresa_1_png,
+		line_graph_svg,
+		linha_h_1_svg,
+		products_1_png
+	} from '$lib';
 </script>
 
 <!-- <section class="w-full items-center relative rounded-lg bg-[#F1F1F9]">
@@ -12,7 +20,7 @@
 		<div class="w-full">
 			<div class="flex flex-row relative">
 				<div class="w-1/2 p-20 flex justify-center pl-52">
-					<img src={empresa_1_png} class="w-[400px]" alt="" />
+					<img src={line_graph_svg} class="w-[400px]" alt="" />
 				</div>
 				<div class="w-1/2 flex justify-center pr-36 relative">
 					<div class="flex flex-col p-20 max-w-max">
@@ -80,14 +88,14 @@
 					</div>
 				</div>
 				<div class="w-1/2 px-20 pb-10 flex justify-center pr-52">
-					<img src={empresa_1_png} class="w-[400px]" alt="" />
+					<img src={analytics_svg} class="w-[400px]" alt="" />
 				</div>
 			</div>
 		</div>
 		<div class="w-full">
 			<div class="flex flex-row relative">
 				<div class="w-1/2 p-20 flex justify-center pl-52">
-					<img src={empresa_1_png} class="w-[400px]" alt="" />
+					<img src={check_list_svg} class="w-[400px]" alt="" />
 				</div>
 				<div class="w-1/2 flex justify-center pr-36 relative">
 					<div class="flex flex-col p-20 max-w-max">
@@ -123,13 +131,14 @@
 		</div>
 	</div>
 	<div class="mt-16 gap-4 mx-auto max-w-max">
-		<a
-			class="btn-demo block w-full rounded-xl px-10 py-4 text-lg font-medium text-[#17193B] bg-[#8ABB3F] focus:ring sm:w-auto z-10 relative Archivo"
-			href="#"
-		>
-			Schedule a Demo
-			<img src={arrow_right_svg} class="z-10 absolute right-5 bottom-[24px] size-3" alt="" />
-		</a>
+		<button>
+			<a
+				class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
+				href="#"
+			>
+				Schedule a Demo
+			</a>
+		</button>
 	</div>
 </section>
 
@@ -138,5 +147,11 @@
 		content: url('$lib/assets/svg/checkmark.svg');
 
 		margin-right: 10px; /* Adjust as needed */
+	}
+	.btn-demo::after {
+		content: url('$lib/assets/svg/arrow_right_2.svg');
+		display: inline-block;
+		/* vertical-align: middle; */
+		margin-left: 10px;
 	}
 </style>

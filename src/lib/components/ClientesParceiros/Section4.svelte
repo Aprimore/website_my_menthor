@@ -22,7 +22,16 @@
 						</strong> and embark on this journey.
 					</p>
 
-					<div class=" flex flex-wrap">
+					<button>
+						<a
+							class="btn-contact bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
+							href="#"
+						>
+							Contact Us
+						</a>
+					</button>
+
+					<!-- <div class=" flex flex-wrap">
 						<a
 							class="Archivo btn-demo block w-full rounded-xl px-10 py-4 text-lg font-medium bg-[#8ABB3F] text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
 							href="#"
@@ -34,9 +43,21 @@
 								alt=""
 							/>
 						</a>
-					</div>
+					</div> -->
+
+
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
+<style>
+	.btn-contact::after {
+		
+		content: url('$lib/assets/svg/arrow_right_claro.svg');
+		display: inline-block;
+		/* vertical-align: middle; */
+		margin-left: 10px;
+	}
+</style>

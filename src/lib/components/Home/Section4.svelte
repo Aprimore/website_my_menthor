@@ -1,5 +1,21 @@
-<script>
+<script lang="ts">
 	import { checkmark_svg, linha_h_2_svg, the_platform_png } from '$lib';
+
+	import animationData from '$lib/assets/lotties/gif-2.json';
+
+	import lottie from 'lottie-web';
+	import { onMount } from 'svelte';
+
+	let animationContainer: HTMLElement;
+
+	onMount(() => {
+		lottie.loadAnimation({
+			container: animationContainer,
+			loop: true,
+			autoplay: true,
+			animationData
+		});
+	});
 </script>
 
 <section class="w-full items-center relative rounded-lg my-20 pb-10">
@@ -12,24 +28,36 @@
 				<span class="ml-2 absolute"><img src={linha_h_2_svg} alt="" /></span>
 			</div>
 			<div class="flex flex-row ml-6 absolute">
-				<div class="mt-14 pl-10 p-10 text-lg relative space-y-5 max-w-screen-md">
-					<div class="bg-[#F1F1F9] border border-[#D4D4ED] inline-block p-4 min-w-min">
-						<p class="Exo check">Profits, revenue and margin</p>
+				<div class="mt-14 pl-10 p-10 text-lg relative space-y-5 max-w-screen-lg">
+					<div
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] inline-block p-6 min-w-min"
+					>
+						<p class="Exo check text-xl">Profits, revenue and margin</p>
 					</div>
-					<div class="bg-[#F1F1F9] border border-[#D4D4ED] inline-block p-4 min-w-min">
-						<p class="Exo check">Quality of products and services</p>
+					<div
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] inline-block p-6 min-w-min"
+					>
+						<p class="Exo check text-xl">Quality of products and services</p>
 					</div>
-					<div class="bg-[#F1F1F9] border border-[#D4D4ED] inline-block p-4 min-w-min">
-						<p class="Exo check">Value to customers and stakeholders</p>
+					<div
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] inline-block p-6 min-w-min"
+					>
+						<p class="Exo check text-xl">Value to customers and stakeholders</p>
 					</div>
-					<div class="bg-[#F1F1F9] border border-[#D4D4ED] inline-block p-4 min-w-min">
-						<p class="Exo check">Process innovation</p>
+					<div
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] inline-block p-6 min-w-min"
+					>
+						<p class="Exo check text-xl">Process innovation</p>
 					</div>
-					<div class="bg-[#F1F1F9] border border-[#D4D4ED] inline-block p-4 min-w-min">
-						<p class="Exo check">Maturity and performance</p>
+					<div
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] inline-block p-6 min-w-min"
+					>
+						<p class="Exo check text-xl">Maturity and performance</p>
 					</div>
-					<div class="bg-[#F1F1F9] border border-[#D4D4ED] inline-block p-4 min-w-min">
-						<p class="Exo check">Sustainability</p>
+					<div
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] inline-block p-6 min-w-min"
+					>
+						<p class="Exo check text-xl">Sustainability</p>
 					</div>
 				</div>
 
@@ -37,38 +65,30 @@
 			</div>
 		</div>
 
-		<div class="column2 w-[45%]">
-			<div class="col3">
-				<p class="Archivo text-lg">
+		<div class=" w-[45%]">
+			<div class=" space-y-5">
+				<p class="Archivo text-xl text-[#25285F]">
 					My Menthor acts as a <strong> Digital Mentor </strong> with an
-					<strong> approach centered </strong> on being and not on disruptive technologies.
+					<strong> approach centered </strong> on <span class="text-[#43ACB5]">being</span> and not on
+					disruptive technologies.
 				</p>
-				<p class="Archivo text-lg">
-					It acts as an <strong> information </strong> hub, <strong> organizing knowledge </strong> in
-					a single repository.
+				<p class="Archivo text-xl text-[#25285F]">
+					It acts as an <strong> information </strong> <span class="text-[#43ACB5]"> hub </span>,
+					<strong> organizing knowledge </strong> in a single repository.
 				</p>
 			</div>
 			<div class="col4 mt-5">
-				<!-- <div class="div1 w-1/2 flex justify-end pr-20 "> -->
-				<img src={the_platform_png} alt="lottie animation" />
-				<!-- </div> -->
+				<div bind:this={animationContainer} />
 			</div>
 		</div>
 	</div>
 </section>
 
 <style>
-	/* p::before {
-		content: url('path_to_your_checkmark_svg_image');
-		position: absolute;
-		left: 0;
-		top: 50%;
-		transform: translateY(-50%);
-	} */
-
 	.check::before {
 		content: url('$lib/assets/svg/checkmark.svg');
-
+		display: inline-block;
 		margin-right: 10px; /* Adjust as needed */
+		vertical-align: middle;
 	}
 </style>

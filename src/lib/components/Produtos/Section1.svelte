@@ -1,5 +1,11 @@
-<script>
-	import { estrela_verde_svg, linha_h_4_svg, linha_v_1_svg, the_platform_png } from '$lib';
+<script lang="ts">
+	import {
+		estrela_verde_svg,
+		linha_h_4_svg,
+		linha_v_1_svg,
+		products_svg,
+		the_platform_png
+	} from '$lib';
 </script>
 
 <section class="w-full bg-white pt-16">
@@ -29,8 +35,8 @@
 				</p>
 			</div>
 		</div>
-		<div class="w-1/2 flex justify-center">
-			<img src={the_platform_png} class="" alt="lottie animation" />
+		<div class="w-1/2 flex justify-center ml-20">
+			<img src={products_svg} alt="" />
 		</div>
 	</div>
 </section>

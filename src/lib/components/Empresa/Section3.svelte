@@ -1,5 +1,21 @@
-<script>
+<script lang="ts">
 	import { arrow_right_svg, clientes_parceiros_3_png } from '$lib';
+
+	import animationData from '$lib/assets/lotties/gif-5.json';
+
+	import lottie from 'lottie-web';
+	import { onMount } from 'svelte';
+
+	let animationContainer: HTMLElement;
+
+	onMount(() => {
+		lottie.loadAnimation({
+			container: animationContainer,
+			loop: true,
+			autoplay: true,
+			animationData
+		});
+	});
 </script>
 
 <!-- <section class="my-20 pb-20 bg-white ">
@@ -11,13 +27,14 @@
 		<div class="w-1/2 items-center flex flex-col justify-center">
 			<div class=" space-y-6 border-black">
 				<h1 class="Exo text-2xl sm:text-5xl z-10 relative text-[#17193B] Exo font-extrabold">
-					Contact us <span class="font-normal"> or </span> schedule a demo!
+					Contact us <span class="font-normal"> or </span> <br /> schedule a demo!
 				</h1>
 				<p class="Archivo text-[#25285F] text-lg">
 					Fill in the form with your details. <br />
 					The My Menthor team will get in touch as soon as possible!
 				</p>
-				<img class="w-[620px]" src={clientes_parceiros_3_png} alt="" />
+				<div bind:this={animationContainer} />
+				<!-- <img class="w-[620px]" src={clientes_parceiros_3_png} alt="" /> -->
 			</div>
 		</div>
 		<div class="w-1/2">

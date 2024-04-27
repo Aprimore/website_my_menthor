@@ -7,7 +7,7 @@
 	onMount(() => {
 		lottie.loadAnimation({
 			container: animationContainer,
-			path: 'https://lottie.host/d68b6649-f8af-499b-a586-287e2e332e2b/J9yfWB9kr4.json'
+			path: 'https://lottie.host/781100bc-85f1-4857-98d0-9b129a535d12/J9yfWB9kr4.json'
 		});
 	});
 </script>

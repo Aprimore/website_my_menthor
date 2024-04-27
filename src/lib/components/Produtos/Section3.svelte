@@ -1,13 +1,13 @@
 <script>
+	import { linha_h_1_svg, piramide_ingles_svg, the_platform_png } from '$lib';
 	import Section_Cards from './Section_Cards.svelte';
-	import { linha_h_1_svg, the_platform_png } from '$lib';
 </script>
 
 <section class="w-full bg-white">
 	<div class="">
 		<div class="max-w-screen-2xl mx-auto flex flex-row">
-			<div class=" w-1/2 flex justify-end pr-40">
-				<img src={the_platform_png} class="" alt="lottie animation" />
+			<div class="w-[670px] flex p-16 relative">
+				<img src={piramide_ingles_svg} class="absolute max-w-[510px] top-0" alt="" />
 			</div>
 			<div class=" w-1/2">
 				<h1 class="text-2xl sm:text-4xl relative Exo font-extrabold text-[#17193B]">

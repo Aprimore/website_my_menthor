@@ -1,20 +1,5 @@
 <script>
-	import {
-		arrow_right_svg,
-		card_travel_svg,
-		chart_svg,
-		conversion_path_svg,
-		design_services_svg,
-		explore_svg,
-		instant_mix_svg,
-		inventory_svg,
-		linha_h_3_svg,
-		linked_services_svg,
-		network_node_svg,
-		notes_svg,
-		table_chart_view_svg,
-		track_changes_svg
-	} from '$lib';
+	import { linha_h_3_svg } from '$lib';
 </script>
 
 <section class=" flex flex-col items-center relative rounded-lg my-12">
