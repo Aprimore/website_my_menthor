@@ -17,7 +17,7 @@
 	} from '$lib';
 </script>
 
-<section class=" relative rounded-lg mt-20">
+<section class=" relative rounded-lg">
 	<div class="w-full flex justify-center space-x-6">
 		<div
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-12 flex items-center"

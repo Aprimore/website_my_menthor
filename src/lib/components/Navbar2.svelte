@@ -8,18 +8,18 @@
 	}
 
 	const hrClass = 'max-sm:block';
-	const navbarLinks = '/';
+
 	const navbarClasses =
 		'text-[#17193B] py-2 md:px-3 transition-transform transform hover:-translate-y-1 hover:bg-[#20C997] rounded-lg hover:text-[#F1F1F9] Exo ';
 </script>
 
 <nav
-	class="relative  max-md:py-3 px-6 py-8 mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full"
+	class="relative max-md:py-3 px-6 py-8 mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full"
 >
 	<div class="flex items-center justify-between">
 		<a
 			class="logoHeader font-bold text-white hover:text-slate-300 transition-transform transform hover:-translate-y-1"
-			href="/game-company/game-landing-page"
+			href="/"
 		>
 			<img src={logo_navbar_svg} class="" alt="" />
 		</a>
@@ -54,13 +54,13 @@
 			? 'flex'
 			: 'hidden'}"
 	>
-		<a class={navbarClasses} href={navbarLinks}>Home</a>
-		<a class={navbarClasses} href={navbarLinks}>Blog</a>
-		<a href={navbarLinks} class={navbarClasses}>Products</a>
-		<a class={navbarClasses} href={navbarLinks}>Solutions</a>
-		<a class={navbarClasses} href={navbarLinks}>Customers and Partners </a>
-		<a class={navbarClasses} href={navbarLinks}>Resources</a>
-		<a class={navbarClasses} href={navbarLinks}>Company</a>
+		<a class={navbarClasses} href="/">Home</a>
+		<a class={navbarClasses} href="/">Blog</a>
+		<a class={navbarClasses} href="/products">Products</a>
+		<a class={navbarClasses} href="/solutions">Solutions</a>
+		<a class={navbarClasses} href="/customers_and_partners">Customers and Partners </a>
+		<a class={navbarClasses} href="/resources">Resources</a>
+		<a class={navbarClasses} href="/company">Company</a>
 	</div>
 </nav>
 

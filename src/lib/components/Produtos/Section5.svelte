@@ -16,112 +16,129 @@
 
 <section class="w-full bg-[#F1F1F9] py-20">
 	<h1 class="text-[#17193B] text-4xl font-bold mb-12 Exo text-center">Platform characteristics</h1>
-	<div class="  flex justify-center items-center mx-auto bg-white flex-col w-[1420px] rounded-md">
-		<div class="w-full">
-			<div class="flex flex-row relative">
-				<div class="w-1/2 p-20 flex justify-center pl-52">
-					<img src={line_graph_svg} class="w-[400px]" alt="" />
+	<div
+		class="flex justify-center items-center mx-auto bg-white flex-col lg:min-w-[1120px] rounded-md"
+	>
+		<div class=" max-md:w-full">
+			<div class="md:flex flex-row relative">
+				<div class="md:w-1/2 mx-auto p-10">
+					<img src={line_graph_svg} class="w-full sm:p-10" alt="" />
 				</div>
-				<div class="w-1/2 flex justify-center pr-36 relative">
-					<div class="flex flex-col p-20 max-w-max">
+				<div class="md:w-1/2 relative my-auto">
+					<div class="lg:p-20 max-md:p-10">
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">Profits, revenue and margin</p>
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								Profits, revenue and margin
+							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">Perenniality</p>
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">Perenniality</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">Sustainability</p>
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">Sustainability</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">Continuity</p>
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">Continuity</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">Competitive advantage</p>
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								Competitive advantage
+							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">Understanding the operation</p>
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								Understanding the operation
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="w-full">
-			<div class="flex flex-row">
-				<div class="w-1/2 flex justify-center pl-20">
-					<div class="flex flex-col px-20 max-w-max">
+
+		<div class=" max-md:w-full">
+			<div class="md:flex flex-row relative">
+				<div class="md:w-1/2 mx-auto p-10 md:order-2">
+					<img src={analytics_svg} class="w-full sm:p-10" alt="" />
+				</div>
+				<div class="md:w-1/2 relative my-auto">
+					<div class="lg:p-20 p-10">
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">Maturity and performance</p>
-						</div>
-						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">Integration of initiatives</p>
-						</div>
-						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">Reduces functional silos</p>
-						</div>
-						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">
-								Visibility of execution capacity
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								Maturity and performance
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								Integration of initiatives
+							</p>
+						</div>
+						<div class="bg-white p-2">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								Reduces functional silos
+							</p>
+						</div>
+						<div class="bg-white p-2">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
 								Visibility of the impact of changes
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">Knowledge retention</p>
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								Knowledge retention
+							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
 								Quality in products and services
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
 								Generating value for stakeholders
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">Customer experience</p>
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								Customer experience
+							</p>
 						</div>
 					</div>
 				</div>
-				<div class="w-1/2 px-20 pb-10 flex justify-center pr-52">
-					<img src={analytics_svg} class="w-[400px]" alt="" />
-				</div>
 			</div>
 		</div>
-		<div class="w-full">
-			<div class="flex flex-row relative">
-				<div class="w-1/2 p-20 flex justify-center pl-52">
-					<img src={check_list_svg} class="w-[400px]" alt="" />
+
+		<div class=" max-md:w-full">
+			<div class="md:flex flex-row relative">
+				<div class="md:w-1/2 mx-auto p-10">
+					<img src={check_list_svg} class="w-full max-sm:p-10" alt="" />
 				</div>
-				<div class="w-1/2 flex justify-center pr-36 relative">
-					<div class="flex flex-col p-20 max-w-max">
+				<div class="md:w-1/2 relative my-auto">
+					<div class="lg:p-20 max-md:p-10">
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">Standardization</p>
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">Standardization</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
 								Efficiency and productivity x effectiveness
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
 								Reduction of costs, deadlines and rework
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">Process innovation</p>
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								Process innovation
+							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
 								Compliance, conformity and risks
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
 								Clarity of roles and responsibilities
 							</p>
 						</div>

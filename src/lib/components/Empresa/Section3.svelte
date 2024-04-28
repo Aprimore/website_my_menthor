@@ -22,27 +22,31 @@
 	<div class="h-[649px] flex flex-row max-w-screen-2xl mx-auto ">
 		<div class="w-1/2 flex flex-col justify-center "> -->
 
-<section class="w-full my-20 bg-white">
-	<div class="flex flex-row max-w-screen-2xl mx-auto">
-		<div class="w-1/2 items-center flex flex-col justify-center">
-			<div class=" space-y-6 border-black">
-				<h1 class="Exo text-2xl sm:text-5xl z-10 relative text-[#17193B] Exo font-extrabold">
+<section class="w-full my-8 lg:my-20 bg-white ">
+	<div class="lg:flex flex-row xl:max-w-screen-2xl mx-auto max-lg:p-5 ">
+		<div class="lg:w-1/2 flex items-center flex-col justify-center ">
+			<div
+				class="space-y-6 lg:p-10 lg:ml-10  max-lg:flex flex-col justify-center items-center"
+			>
+				<h1
+					class="Exo text-4xl md:text-5xl relative text-[#17193B] Exo font-extrabold "
+				>
 					Contact us <span class="font-normal"> or </span> <br /> schedule a demo!
 				</h1>
-				<p class="Archivo text-[#25285F] text-lg">
+				<p class="Archivo text-[#25285F] text-lg ">
 					Fill in the form with your details. <br />
 					The My Menthor team will get in touch as soon as possible!
 				</p>
-				<div bind:this={animationContainer} />
+				<div bind:this={animationContainer} class="max-w-screen-sm" />
 				<!-- <img class="w-[620px]" src={clientes_parceiros_3_png} alt="" /> -->
 			</div>
 		</div>
-		<div class="w-1/2">
-			<div class="flex flex-col md:flex-row justify-between font-sans h-screen">
+		<div class="lg:w-1/2">
+			<div class="flex flex-col md:flex-row justify-between">
 				<div
-					class="w-full bg-second p-8 px-24 bg-[#F1F1F9] rounded-2xl flex flex-col justify-center"
+					class="w-full p-8 px-4 md:px-24 lg:px-12 xl:px-24 bg-[#F1F1F9] rounded-2xl flex flex-col justify-center"
 				>
-					<form action="" class="flex flex-col gap-y-5 pt-5">
+					<form action="" class="flex flex-col gap-y-5 p-1">
 						<label class="block">
 							<span
 								class="Exo font-bold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block"
@@ -119,16 +123,16 @@
 							>
 								Message
 							</span>
-							<input
-								type="text"
-								name="text"
+							<textarea
+								name="message"
 								class="text-base placeholder:text-base p-4 bg-white border placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
 								placeholder="Type your message"
+								rows="3"
 								required
-							/>
+							></textarea>
 						</label>
 
-						<div class=" text-center">
+						<div class=" text-center mt-5">
 							<a
 								class="btn-demo block w-full rounded-xl px-10 py-4 text-xl font-medium text-[#17193B] bg-[#8ABB3F] focus:ring sm:w-auto z-10 relative Archivo"
 								href="#"

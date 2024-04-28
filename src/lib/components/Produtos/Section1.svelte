@@ -9,13 +9,15 @@
 </script>
 
 <section class="w-full bg-white pt-16">
-	<div class="h-[510px] flex max-w-screen-2xl flex-row mx-auto justify-center items-center p-6">
-		<div class="w-1/2 max-w-[600px] space-y-6 relative">
+	<div
+		class="lg:h-[510px] lg:flex lg:max-w-screen-2xl flex-row lg:mx-auto justify-center items-center p-6"
+	>
+		<div class="lg:w-1/2 lg:max-w-[600px] space-y-4 md:space-y-6 relative">
 			<h1 class="Exo text-[#17193B] text-4xl font-bold relative">
 				The platform
 				<span><img src={linha_h_4_svg} class="z-10" alt="linha" /></span>
 			</h1>
-			<p class="text-[#25285F] Archivo text-lg pb-10">
+			<p class="text-[#25285F] Archivo text-lg p-1">
 				<strong> My Menthor </strong> is a
 				<strong> SaaS Business Architecture platform </strong>
 				that <strong> helps to unfold the company's strategy </strong> into a vision oriented by
@@ -23,8 +25,8 @@
 				<strong> achieve business objectives </strong>.
 			</p>
 			<div
-				class="w-full
-				  rounded-md bg-[#25285F] py-10 px-16 relative"
+				class="flex items-center w-full
+				  rounded-md bg-[#25285F] py-6 md:py-10 px-16 relative max-h-[200px]"
 			>
 				<img src={estrela_verde_svg} class="absolute -top-5 -right-5" alt="" />
 				<span class="absolute left-10"><img src={linha_v_1_svg} alt="" /></span>
@@ -35,8 +37,8 @@
 				</p>
 			</div>
 		</div>
-		<div class="w-1/2 flex justify-center ml-20">
-			<img src={products_svg} alt="" />
+		<div class="lg:w-1/2 flex justify-center lg:ml-20 max-md:mt-10">
+			<img src={products_svg} class=" lg:min-w-[650px]" alt="" />
 		</div>
 	</div>
 </section>

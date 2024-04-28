@@ -2,18 +2,29 @@
 	import { arrow_right_svg, clientes_parceiros_4_png, fone_amarelo_svg, linha_h_4_svg } from '$lib';
 </script>
 
-<section class="w-full items-center relative rounded-lg bg-white my-6 pb-12">
-	<div class="h-[550px] pt-32 max-w-screen-2xl mx-auto flex flex-row">
-		<div class="w-1/2 flex justify-center items-center relative">
-			<img src={fone_amarelo_svg} class="absolute -top-10 right-0" alt="" />
-			<img src={clientes_parceiros_4_png} class="" alt="" />
+<section class="w-full items-center relative rounded-lg bg-white md:my-6 md:pb-12">
+	<div class="max-lg:h-[610px] pt-16 lg:pt-32 lg:max-w-screen-2xl mx-auto lg:flex flex-row">
+		<div class="lg:w-2/3 flex max-lg:justify-start justify-center items-center">
+			<div class="relative">
+				<img src={clientes_parceiros_4_png} class="" alt="" />
+				<img
+					src={fone_amarelo_svg}
+					class="absolute max-md:-top-1 max-md:-right-1 -top-5
+					-right-5"
+					alt=""
+				/>
+			</div>
 		</div>
-		<div class="w-1/2 flex justify-center items-center relative z-20">
+		<div class="lg:w-1/3 flex justify-center max-lg:justify-end items-center relative z-20">
 			<div
-				class="card1 w-[816px] h-[332px] bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl mr-52 absolute flex flex-col justify-center items-center"
+				class="card1 xl:w-[816px] md:w-[600px] xl:h-[332px] bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl lg:mr-52 absolute flex flex-col justify-center items-center max-sm:mt-40"
 			>
-				<div class=" max-w-2xl p-6 rounded-lg space-y-6">
-					<h1 class="Exo text-5xl text-[#17193B] font-bold relative">Customer service channel</h1>
+				<div class="lg:max-w-2xl p-6 rounded-lg space-y-6">
+					<h1
+						class="Exo text-3xl md:text-4xl lg:text-5xl text-[#17193B] font-bold relative max-sm:text-nowrap"
+					>
+						Customer service channel
+					</h1>
 
 					<p class="  text-[#25285F] Archivo text-lg">
 						Get in touch today and find out how we can boost your success together. Click on <strong
@@ -44,8 +55,6 @@
 							/>
 						</a>
 					</div> -->
-
-
 				</div>
 			</div>
 		</div>
@@ -54,7 +63,6 @@
 
 <style>
 	.btn-contact::after {
-		
 		content: url('$lib/assets/svg/arrow_right_claro.svg');
 		display: inline-block;
 		/* vertical-align: middle; */

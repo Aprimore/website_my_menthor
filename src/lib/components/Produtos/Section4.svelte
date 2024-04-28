@@ -6,19 +6,15 @@
 		linha_h_amarela2_svg,
 		linha_v_1_svg,
 		linha_v_azul_svg,
-
 		products_1_png,
-
 		products_2_png
-
-
 	} from '$lib';
 </script>
 
 <section class="w-full bg-[#17193B]">
-	<div class=" max-w-screen-2xl mx-auto flex items-center flex-row pt-20">
-		<div class="w-1/2 p-10 space-y-10">
-			<h1 class="Exo text-2xl sm:text-4xl z-10 relative text-[#F1F1F9] Exo font-extrabold">
+	<div class="lg:max-w-screen-2xl mx-auto lg:flex flex-row items-center lg:pt-20 p-10">
+		<div class="lg:w-1/2 lg:p-10 space-y-6 lg:space-y-10 max-lg:mb-10">
+			<h1 class="Exo text-3xl sm:text-4xl z-10 relative text-[#F1F1F9] Exo font-extrabold">
 				Target audience
 				<span><img src={linha_h_amarela2_svg} class="z-10 right-0" alt="linha" /></span>
 			</h1>
@@ -39,16 +35,13 @@
 			</p>
 		</div>
 
-		<div class="w-1/2 flex flex-col justify-center items-center">
-			<img src={products_2_png} alt="" />
+		<div class="lg:w-1/2 flex flex-col justify-center items-center">
+			<img src={products_2_png} class="w-full" alt="" />
 		</div>
 	</div>
 
-	<div class=" max-w-screen-2xl mx-auto flex items-center flex-row">
-		<div class="w-1/2 p-10">
-			<img src={products_1_png} alt="" />
-		</div>
-		<div class="w-1/2 space-y-10 p-10 mb-16 relative">
+	<div class="lg:max-w-screen-2xl mx-auto lg:flex items-center flex-row">
+		<div class="lg:w-1/2 space-y-6 lg:space-y-10 px-10  relative order-1">
 			<p class="text-[#D4D4ED] Archivo text-lg">
 				My Menthor is a business partner for corporate areas that face the challenge of
 				implementing, disseminating and improving various management models in the organization.
@@ -61,24 +54,20 @@
 				consultants who wish to use the platform their clients' projects, ensuring the
 				sustainability of the work and the improvements implemented after the project is completed.
 			</p>
-			<button>
-				<a
-					class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
-					href="#"
-				>
-					Schedule a Demo
-				</a>
-			</button>
-			<!-- <div class="mt-16 flex flex-wrap gap-4">
-				<a
-					class="btn-demo block w-full rounded-xl px-10 py-4 text-lg font-medium text-[#17193B] bg-[#8ABB3F] focus:ring sm:w-auto z-10 relative Archivo"
-					href="#"
-				>
-					Schedule a Demo
-					<img src={arrow_right_svg} class="z-10 absolute right-5 bottom-[24px] size-3" alt="" />
-				</a>
-			</div> -->
 		</div>
+		<div class="lg:w-1/2 flex flex-col items-center p-10 max-lg:order-2">
+			<img src={products_1_png} class="w-full" alt="" />
+		</div>
+	</div>
+	<div>
+		<button class="flex mx-auto pb-10 mt-5">
+			<a
+				class="btn-demo bg-[#8abb3f] rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring relative"
+				href="#"
+			>
+				Schedule a Demo
+			</a>
+		</button>
 	</div>
 </section>
 

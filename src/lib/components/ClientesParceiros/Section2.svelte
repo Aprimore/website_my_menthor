@@ -18,21 +18,34 @@
 	});
 </script>
 
-<section class="w-full rounded-lg bg-[#F1F1F9]">
-	<div class="max-w-screen-2xl mx-auto h-[489px] flex flex-row pt-20">
-		<div class="w-1/2 flex justify-center items-center">
+<section class="w-full rounded-lg bg-[#F1F1F9]  max-lg:pt-10">
+	<div class="lg:max-w-screen-2xl mx-auto lg:h-[489px] flex max-lg:flex-col">
+		<div class="lg:w-1/2 flex justify-center items-center max-lg:order-2">
 			<div class="card">
 				<div bind:this={animationContainer} />
 			</div>
 		</div>
-		<div class="w-1/2 flex justify-center items-center">
-			<div class="card bg-[#F1F1F9] mb-10 max-w-[580px] mr-36">
+		<div class="lg:w-1/2 flex justify-center items-center border-black">
+			<div class="card bg-[#F1F1F9]  lg:max-w-[580px] lg:mr-36">
 				<h1
-					class="Exo text-2xl sm:text-4xl z-10 relative text-[#17193B] font-extrabold mb-8 whitespace-nowrap"
+					class="Exo text-3xl sm:text-4xl relative text-[#17193B] font-extrabold whitespace-nowrap max-lg:text-center mb-5"
 				>
-					<span class="text-[#EB642A]"> Your success</span> is our success
-
-					<span><img src={linha_h_laranja_svg} class="z-10 right-0" alt="linha" /></span>
+					<span class="text-[#EB642A] relative">
+						Your success
+						<img
+							src={linha_h_laranja_svg}
+							class="absolute
+							
+							
+							max-lg:top-9 max-lg:left-3
+							top-11 left-3
+							
+							
+							
+							max-sm:w-52"
+							alt="linha"
+						/>
+					</span> is our success
 				</h1>
 				<p class="Archivo text-[#25285F] text-lg">
 					We are committed to the continued success of our clients, cultivating long-term
