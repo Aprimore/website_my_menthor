@@ -1,5 +1,6 @@
 <script>
 	import { arrow_right_svg, clientes_parceiros_4_png, fone_amarelo_svg, linha_h_4_svg } from '$lib';
+	import { base } from '$app/paths';
 </script>
 
 <section class="w-full items-center relative rounded-lg bg-white md:my-6 md:pb-12">
@@ -39,7 +40,7 @@
 					<button>
 						<a
 							class="btn-contact bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
-							href="/company#contact"
+							href="{base}/company#contact"
 						>
 							Contact Us
 						</a>
@@ -48,7 +49,7 @@
 					<!-- <div class=" flex flex-wrap">
 						<a
 							class="Archivo btn-demo block w-full rounded-xl px-10 py-4 text-lg font-medium bg-[#8ABB3F] text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
-							href="#"
+							href="{base}#"
 						>
 							Contact Us
 							<img

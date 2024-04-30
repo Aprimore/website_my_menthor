@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import {
 		analytics_svg,
 		arrow_right_svg,
@@ -151,7 +152,7 @@
 		<button>
 			<a
 				class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
-				href="/company#contact"
+				href="{base}/company#contact"
 			>
 				Schedule a Demo
 			</a>

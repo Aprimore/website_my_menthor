@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 	import { logo_navbar_svg } from '$lib';
 
@@ -28,7 +29,7 @@
 	<div class="flex items-center justify-between" id={generateDynamicId(currentPage)}>
 		<a
 			class="logoHeader font-bold text-white hover:text-slate-300 transition-transform transform hover:-translate-y-1"
-			href="/"
+			href="{base}/"
 		>
 			<img src={logo_navbar_svg} class="" alt="" />
 		</a>
@@ -63,13 +64,13 @@
 			? 'flex'
 			: 'hidden'}"
 	>
-		<a class={navbarClasses} href="/">Home</a>
-		<a class={navbarClasses} href="/">Blog</a>
-		<a class={navbarClasses} href="/products">Products</a>
-		<a class={navbarClasses} href="/solutions">Solutions</a>
-		<a class={navbarClasses} href="/customers_and_partners">Customers and Partners </a>
-		<a class={navbarClasses} href="/resources">Resources</a>
-		<a class={navbarClasses} href="/company">Company</a>
+		<a class={navbarClasses} href="{base}/">Home</a>
+		<a class={navbarClasses} href="{base}/">Blog</a>
+		<a class={navbarClasses} href="{base}/products">Products</a>
+		<a class={navbarClasses} href="{base}/solutions">Solutions</a>
+		<a class={navbarClasses} href="{base}/customers_and_partners">Customers and Partners </a>
+		<a class={navbarClasses} href="{base}/resources">Resources</a>
+		<a class={navbarClasses} href="{base}/company">Company</a>
 	</div>
 </nav>
 

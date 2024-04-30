@@ -18,7 +18,8 @@ const config = {
 			fallback: '404.html'
 		}),
 		paths: {
-			base: dev ? '' : process.env.BASE_PATH
+			// base: dev ? '' : process.env.BASE_PATH
+			base: process.env.NODE_ENV === 'production' ? '/website_my_menthor' : ''
 		}
 	}
 };

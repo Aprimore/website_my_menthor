@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import {
 		arrow_right_svg,
 		clientes_parceiros_3_png,
@@ -27,7 +28,7 @@
 						<button>
 							<a
 								class="btn-partner bg-[#8abb3f] block w-full rounded-xl px-5 md:px-10 py-4 md:text-lg text-[#F1F1F9] focus:ring sm:w-auto z-10 relative text-nowrap"
-								href="/company#contact"
+								href="{base}/company#contact"
 							>
 								Become a Partner
 							</a>
@@ -36,7 +37,9 @@
 						<button
 							class=" rounded-xl px-10 py-4 md:text-lg bg-white text-[#17193B] border border-[#17193B] relative"
 						>
-							<a class=" Archivo text-nowrap" href="/customers_and_partners"> Partner Portal </a>
+							<a class=" Archivo text-nowrap" href="{base}/customers_and_partners">
+								Partner Portal
+							</a>
 						</button>
 					</div>
 				</div>

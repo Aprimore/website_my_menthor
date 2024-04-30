@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import {
 		arrow_right_svg,
 		linha_h_4_svg,
@@ -64,7 +65,7 @@
 				<div class="mt-8 flex flex-wrap gap-4">
 					<a
 						class="btn-learn block max-w-max rounded-xl px-8 py-4 text-lg font-medium bg-[#8ABB3F] text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
-						href="/products#platform"
+						href="{base}/products#platform"
 					>
 						Learn More
 					</a>

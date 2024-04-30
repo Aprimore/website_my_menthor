@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { arrow_right_svg, linha_h_1_svg, piramide_ingles_svg, the_platform_png } from '$lib';
 </script>
 
@@ -40,7 +41,7 @@
 		<button class="border border-[#17193B] rounded-xl mb-20">
 			<a
 				class="Archivo btn-learn bg-[#F1F1F9] block w-full rounded-xl px-10 py-4 text-xl text-[#17193B] focus:ring sm:w-auto z-10 relative"
-				href="/products#platform"
+				href="{base}/products#platform"
 			>
 				Learn More
 			</a>

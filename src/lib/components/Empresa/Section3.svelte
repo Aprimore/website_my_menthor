@@ -17,6 +17,7 @@
 			animationData
 		});
 	});
+	import { base } from '$app/paths';
 </script>
 
 <!-- <section class="my-20 pb-20 bg-white ">
@@ -137,7 +138,7 @@
 						<div class=" text-center mt-5">
 							<a
 								class="btn-demo block w-full rounded-xl px-10 py-4 text-xl font-medium text-[#17193B] bg-[#8ABB3F] focus:ring sm:w-auto z-10 relative Archivo"
-								href="/company"
+								href="{base}/company"
 							>
 								Send
 								<img
