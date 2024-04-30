@@ -1,10 +1,19 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { logo_navbar_svg } from '$lib';
 
 	let showMenu = false;
 
 	function toggleNavbar() {
 		showMenu = !showMenu;
+	}
+
+	function generateDynamicId(pageName) {
+		return `${pageName}#top`;
+	}
+	let currentPage = '';
+	$: {
+		currentPage = $page.params.page || 'home';
 	}
 
 	const hrClass = 'max-sm:block';
@@ -16,7 +25,7 @@
 <nav
 	class="relative max-md:py-3 px-6 py-8 mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full"
 >
-	<div class="flex items-center justify-between">
+	<div class="flex items-center justify-between" id={generateDynamicId(currentPage)}>
 		<a
 			class="logoHeader font-bold text-white hover:text-slate-300 transition-transform transform hover:-translate-y-1"
 			href="/"

@@ -3,7 +3,7 @@
 </script>
 
 <section class="relative rounded-lg my-12">
-	<div class="max-w-screen-2xl mx-auto max-sm:p-2 space-y-2">
+	<div class="max-w-screen-2xl mx-auto max-sm:p-2 space-y-2" id="modules">
 
 		<div class="p-6 rounded-lg mt-2 text-center max-md:space-y-2">
 			<h1 class="text-4xl sm:text-5xl relative Exo font-extrabold text-[#17193B] text-nowrap">

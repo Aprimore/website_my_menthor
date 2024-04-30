@@ -23,7 +23,7 @@
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-12 flex items-center"
 		>
 			<div class="flex flex-col mx-auto p-6 rounded-lg relative">
-				<h2 class=" title-om Exo text-2xl font-bold relative max-w-sm text-[#17193B]"></h2>
+				<h2 class=" title-om Exo text-2xl font-bold relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					It contains its <strong>own embedded methodology</strong> with an approach to corporate development,
@@ -36,7 +36,7 @@
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-12 flex items-center"
 		>
 			<div class="flex flex-col mx-auto p-6 rounded-lg">
-				<h2 class="title-od Exo text-2xl font-bold relative max-w-sm text-[#17193B]"></h2>
+				<h2 class="title-od Exo text-2xl font-bold relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					<strong>It supports different levels of maturity</strong> and
@@ -50,7 +50,7 @@
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-6 flex items-center"
 		>
 			<div class="flex flex-col mx-auto p-6 rounded-lg">
-				<h2 class="title-sd Exo text-2xl font-bold relative max-w-sm text-[#17193B]"></h2>
+				<h2 class="title-sd Exo text-2xl font-bold relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					Emphasizes BPM as a Management Model, <strong
@@ -63,7 +63,7 @@
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-6 flex items-center"
 		>
 			<div class="flex flex-col mx-auto p-6 rounded-lg">
-				<h2 class="title-ms Exo text-2xl font-bold relative max-w-sm text-[#17193B]"></h2>
+				<h2 class="title-ms Exo text-2xl font-bold relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					<strong>Decomplicates and decentralizes the topic</strong>, so that the business areas

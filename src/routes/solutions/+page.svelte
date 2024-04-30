@@ -4,9 +4,8 @@
 	import Section3 from '$lib/components/Solucoes/Section3.svelte';
 	import Section4 from '$lib/components/Solucoes/Section4.svelte';
 	import Section5 from '$lib/components/Solucoes/Section5.svelte';
-	import type { PageData } from './$types';
-
-	export let data: PageData;
+	// import type { PageData } from './$types';
+	// export let data: PageData;
 </script>
 
 <svelte:head>

@@ -14,7 +14,7 @@
 
 <section class="w-full items-center relative rounded-lg pb-20 bg-[#F1F1F9]">
 	<div class="max-w-screen-2xl pt-20 lg:flex justify-center mx-auto">
-		<div class="lg:w-1/2 flex flex-col justify-center">
+		<div class="lg:w-1/2 flex flex-col justify-center" id="portfolio-services">
 			<div>
 				<h1 class="text-4xl md:text-5xl relative Exo font-extrabold text-[#17193B] text-center">
 					Portfolio of services

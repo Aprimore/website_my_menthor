@@ -3,7 +3,7 @@
 </script>
 
 <section class="my-20 pb-20 bg-white">
-	<div class="lg:h-[649px] lg:flex flex-row xl:max-w-screen-2xl mx-auto max-lg:p-5">
+	<div class="lg:h-[649px] lg:flex flex-row xl:max-w-screen-2xl mx-auto max-lg:p-5" id="about">
 		<div class="lg:w-1/2 flex flex-col justify-center">
 			<div class="lg:max-w-[600px] self-center space-y-8">
 				<h1 class="Exo text-3xl sm:text-4xl z-10 relative text-[#17193B] Exo font-extrabold">

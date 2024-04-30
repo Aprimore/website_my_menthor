@@ -3,7 +3,7 @@
 </script>
 
 <section class="w-full rounded-lg bg-[#17193B]">
-	<div class="py-24 max-w-screen-2xl mx-auto space-y-24">
+	<div class="py-24 max-w-screen-2xl mx-auto space-y-24" id="cases">
 		<div class=" mx-auto">
 			<h1
 				class="Exo mx-auto text-2xl sm:text-5xl z-10 relative text-[#F1F1F9] Exo font-extrabold max-w-max mb-24"

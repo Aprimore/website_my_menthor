@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { arrow_right_svg, clientes_parceiros_3_png } from '$lib';
+	import FormZoho from './../FormZoho.svelte';
 
-	import animationData from '$lib/assets/lotties/gif-5.json';
+	import animationData from '$lib/assets/lotties/gif-7.json';
 
 	import lottie from 'lottie-web';
 	import { onMount } from 'svelte';
@@ -22,22 +23,23 @@
 	<div class="h-[649px] flex flex-row max-w-screen-2xl mx-auto ">
 		<div class="w-1/2 flex flex-col justify-center "> -->
 
-<section class="w-full my-8 lg:my-20 bg-white ">
-	<div class="lg:flex flex-row xl:max-w-screen-2xl mx-auto max-lg:p-5 ">
-		<div class="lg:w-1/2 flex items-center flex-col justify-center ">
+<section class="w-full my-8 lg:my-20 bg-white">
+	<div class="lg:flex flex-row xl:max-w-screen-2xl mx-auto max-lg:p-5" id="contact">
+		<div class="lg:w-1/2 flex items-center flex-col justify-center">
 			<div
-				class="space-y-6 lg:p-10 lg:ml-10  max-lg:flex flex-col justify-center items-center"
+				class="lg:space-y-6 lg:p-10 lg:ml-10 max-lg:flex lg:flex-col max-md:flex-col justify-center items-center w-full h-full"
 			>
-				<h1
-					class="Exo text-4xl md:text-5xl relative text-[#17193B] Exo font-extrabold "
-				>
-					Contact us <span class="font-normal"> or </span> <br /> schedule a demo!
-				</h1>
-				<p class="Archivo text-[#25285F] text-lg ">
-					Fill in the form with your details. <br />
-					The My Menthor team will get in touch as soon as possible!
-				</p>
-				<div bind:this={animationContainer} class="max-w-screen-sm" />
+				<div>
+					<h1 class="Exo text-4xl md:text-5xl relative text-[#17193B] Exo font-extrabold mb-10">
+						Contact us <span class="font-normal"> or </span> <br /> schedule a demo!
+					</h1>
+					<p class="Archivo text-[#25285F] text-lg">
+						Fill in the form with your details. <br />
+						The My Menthor team will get in touch as soon as possible!
+					</p>
+				</div>
+
+				<div bind:this={animationContainer} class="" />
 				<!-- <img class="w-[620px]" src={clientes_parceiros_3_png} alt="" /> -->
 			</div>
 		</div>
@@ -135,7 +137,7 @@
 						<div class=" text-center mt-5">
 							<a
 								class="btn-demo block w-full rounded-xl px-10 py-4 text-xl font-medium text-[#17193B] bg-[#8ABB3F] focus:ring sm:w-auto z-10 relative Archivo"
-								href="#"
+								href="/company"
 							>
 								Send
 								<img
@@ -151,3 +153,5 @@
 		</div>
 	</div>
 </section>
+
+<FormZoho />

@@ -9,7 +9,7 @@
 </script>
 
 <section class="w-full rounded-lg bg-[#D4D4ED]">
-	<div class=" lg:flex flex-row pt-20">
+	<div class=" lg:flex flex-row pt-20" id="clients">
 		<div class="lg:w-1/2 flex justify-center items-center mx-auto">
 			<div class="card bg-white lg:w-[694px] max-h-[364px] rounded-md relative">
 				<div class="p-10 xl:p-16 space-y-7 relative">
@@ -27,7 +27,7 @@
 						<button>
 							<a
 								class="btn-partner bg-[#8abb3f] block w-full rounded-xl px-5 md:px-10 py-4 md:text-lg text-[#F1F1F9] focus:ring sm:w-auto z-10 relative text-nowrap"
-								href="#"
+								href="/company#contact"
 							>
 								Become a Partner
 							</a>
@@ -36,7 +36,7 @@
 						<button
 							class=" rounded-xl px-10 py-4 md:text-lg bg-white text-[#17193B] border border-[#17193B] relative"
 						>
-							<a class=" Archivo text-nowrap" href="#"> Partner Portal </a>
+							<a class=" Archivo text-nowrap" href="/customers_and_partners"> Partner Portal </a>
 						</button>
 					</div>
 				</div>

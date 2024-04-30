@@ -3,7 +3,10 @@
 </script>
 
 <section class="w-full items-center relative rounded-lg bg-white md:my-6 md:pb-12">
-	<div class="max-lg:h-[610px] pt-16 lg:pt-32 lg:max-w-screen-2xl mx-auto lg:flex flex-row">
+	<div
+		class="max-lg:h-[610px] pt-16 lg:pt-32 lg:max-w-screen-2xl mx-auto lg:flex flex-row"
+		id="support"
+	>
 		<div class="lg:w-2/3 flex max-lg:justify-start justify-center items-center">
 			<div class="relative">
 				<img src={clientes_parceiros_4_png} class="" alt="" />
@@ -36,7 +39,7 @@
 					<button>
 						<a
 							class="btn-contact bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
-							href="#"
+							href="/company#contact"
 						>
 							Contact Us
 						</a>

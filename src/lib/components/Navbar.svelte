@@ -10,7 +10,7 @@
 			<ul class="flex p-3 md:p-0 font-medium md:space-x-2 rtl:space-x-reverse m-0 border-0">
 				<!-- <li>
 					<a
-						href="#"
+						href="/"
 						class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent underline"
 						></a
 					>
@@ -23,7 +23,7 @@
 				</li>
 				<li>
 					<a
-						href="#"
+						href="/"
 						class="language block py-2 px-3 text-[#17193B] rounded md:hover:bg-transparent Archivo"
 						>PT</a
 					>

@@ -12,7 +12,7 @@
         "
 		>
 			<li class="">
-				<a href="#" class="">My Menthor Copyright © 2024. All rights reserved. </a>
+				<a href="/" class="">My Menthor Copyright © 2024. All rights reserved. </a>
 			</li>
 		</ul>
 
@@ -21,13 +21,13 @@
             "
 		>
 			<li>
-				<a href="#" class="underline">Terms of Service</a>
+				<a href="/" class="underline">Terms of Service</a>
 			</li>
 			<li>
-				<a href="#" class="underline">Privacy Policy</a>
+				<a href="/" class="underline">Privacy Policy</a>
 			</li>
 			<li>
-				<a href="#" class="text-white underline">Cookies</a>
+				<a href="/" class="text-white underline">Cookies</a>
 			</li>
 		</ul>
 
@@ -37,7 +37,7 @@
 		>
 			<li>
 				<button class="bg-[#D4D4ED] size-[36px] flex justify-center items-center rounded-md">
-					<a href="#top"><img src={arrow_up_svg} class="size-[14px]" alt="" /></a>
+					<a href="/"><img src={arrow_up_svg} class="size-[14px]" alt="" /></a>
 				</button>
 			</li>
 		</ul>

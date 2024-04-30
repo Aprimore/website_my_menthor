@@ -35,7 +35,7 @@
 				<button class="min-w-min">
 					<a
 						class="Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
-						href="#"
+						href="/"
 					>
 						Access
 					</a>
@@ -50,7 +50,7 @@
 				<button class="min-w-min">
 					<a
 						class="Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
-						href="#"
+						href="/"
 					>
 						Access
 					</a>

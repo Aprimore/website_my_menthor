@@ -13,7 +13,7 @@
 
 <section class="w-full bg-[#17193B]">
 	<div class="lg:max-w-screen-2xl mx-auto lg:flex flex-row items-center lg:pt-20 p-10">
-		<div class="lg:w-1/2 lg:p-10 space-y-6 lg:space-y-10 max-lg:mb-10">
+		<div class="lg:w-1/2 lg:p-10 space-y-6 lg:space-y-10 max-lg:mb-10" id="target-audience">
 			<h1 class="Exo text-3xl sm:text-4xl z-10 relative text-[#F1F1F9] Exo font-extrabold">
 				Target audience
 				<span><img src={linha_h_amarela2_svg} class="z-10 right-0" alt="linha" /></span>
@@ -63,7 +63,7 @@
 		<button class="flex mx-auto pb-10 mt-5">
 			<a
 				class="btn-demo bg-[#8abb3f] rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring relative"
-				href="#"
+				href="/company#contact"
 			>
 				Schedule a Demo
 			</a>

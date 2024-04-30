@@ -4,9 +4,8 @@
 	import Section3 from '$lib/components/Produtos/Section3.svelte';
 	import Section4 from '$lib/components/Produtos/Section4.svelte';
 	import Section5 from '$lib/components/Produtos/Section5.svelte';
-	import type { PageData } from './$types';
-
-	export let data: PageData;
+	// import type { PageData } from './$types';
+	// export let data: PageData;
 </script>
 
 

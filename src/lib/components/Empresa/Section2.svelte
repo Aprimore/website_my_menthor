@@ -24,7 +24,7 @@
 </script>
 
 <section class="w-full items-center rounded-lg bg-[#F1F1F9]">
-	<div class="lg:h-[532px] md:flex flex-row max-w-[1350px] mx-auto max-md:p-5">
+	<div class="lg:h-[532px] md:flex flex-row max-w-[1350px] mx-auto max-md:p-5" id="purpose">
 		<div class="md:w-1/2 md:flex flex-col justify-center">
 			<div bind:this={animationContainer} />
 			<!-- <img class="w-full h-full" src={clientes_parceiros_3_png} alt="" /> -->

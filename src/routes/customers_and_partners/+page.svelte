@@ -3,9 +3,8 @@
 	import Section2 from '$lib/components/ClientesParceiros/Section2.svelte';
 	import Section3 from '$lib/components/ClientesParceiros/Section3.svelte';
 	import Section4 from '$lib/components/ClientesParceiros/Section4.svelte';
-	import type { PageData } from './$types';
-
-	export let data: PageData;
+	// import type { PageData } from './$types';
+	// export let data: PageData;
 </script>
 
 <svelte:head>

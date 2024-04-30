@@ -11,7 +11,7 @@
 
 <section class="w-full md:flex relative rounded-lg bg-[#D4D4ED]">
 	<div
-		class="grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-10 mx-auto p-10 max-md:max-w-screen-sm space-x-5"
+		class="grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-10 mx-auto p-10 max-md:max-w-screen-sm space-x-5" id="packages"
 	>
 		<div class="relative">
 			<div class="mt-10 flex justify-center"></div>
