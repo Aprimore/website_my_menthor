@@ -1,5 +1,4 @@
 <script>
-	import { base } from '$app/paths';
 	import {
 		arrow_right_svg,
 		clientes_parceiros_1_png,
@@ -64,7 +63,7 @@
 		<button class="flex mx-auto pb-10 mt-5">
 			<a
 				class="btn-demo bg-[#8abb3f] rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring relative"
-				href="{base}/company#contact"
+				href="/company#contact"
 			>
 				Schedule a Demo
 			</a>

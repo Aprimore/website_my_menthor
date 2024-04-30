@@ -1,6 +1,5 @@
 <script>
 	import { arrow_up_svg } from '$lib';
-	import { base } from '$app/paths';
 </script>
 
 <div class="copyright py-5 bg-blue-800 text-sm">
@@ -13,7 +12,7 @@
         "
 		>
 			<li class="">
-				<a href="{base}/" class="">My Menthor Copyright © 2024. All rights reserved. </a>
+				<a href="/" class="">My Menthor Copyright © 2024. All rights reserved. </a>
 			</li>
 		</ul>
 
@@ -22,13 +21,13 @@
             "
 		>
 			<li>
-				<a href="{base}/" class="underline">Terms of Service</a>
+				<a href="/" class="underline">Terms of Service</a>
 			</li>
 			<li>
-				<a href="{base}/" class="underline">Privacy Policy</a>
+				<a href="/" class="underline">Privacy Policy</a>
 			</li>
 			<li>
-				<a href="{base}/" class="text-white underline">Cookies</a>
+				<a href="/" class="text-white underline">Cookies</a>
 			</li>
 		</ul>
 
@@ -38,7 +37,7 @@
 		>
 			<li>
 				<button class="bg-[#D4D4ED] size-[36px] flex justify-center items-center rounded-md">
-					<a href="{base}/"><img src={arrow_up_svg} class="size-[14px]" alt="" /></a>
+					<a href="/"><img src={arrow_up_svg} class="size-[14px]" alt="" /></a>
 				</button>
 			</li>
 		</ul>

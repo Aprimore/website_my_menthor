@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { base } from '$app/paths';
 	import { arrow_right_svg, linha_h_7_svg, the_platform_png } from '$lib';
 
 	import animationData from '$lib/assets/lotties/gif-3.json';
@@ -29,7 +28,7 @@
 				<button class="min-w-min">
 					<a
 						class="Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
-						href="{base}/"
+						href="/"
 					>
 						Access
 					</a>
@@ -44,7 +43,7 @@
 				<button class="min-w-min">
 					<a
 						class="Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
-						href="{base}/"
+						href="/"
 					>
 						Access
 					</a>

@@ -138,7 +138,7 @@
 						<div class=" text-center mt-5">
 							<a
 								class="btn-demo block w-full rounded-xl px-10 py-4 text-xl font-medium text-[#17193B] bg-[#8ABB3F] focus:ring sm:w-auto z-10 relative Archivo"
-								href="{base}/company"
+								href="/company"
 							>
 								Send
 								<img
