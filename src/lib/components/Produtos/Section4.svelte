@@ -41,7 +41,7 @@
 	</div>
 
 	<div class="lg:max-w-screen-2xl mx-auto lg:flex items-center flex-row">
-		<div class="lg:w-1/2 space-y-6 lg:space-y-10 px-10  relative order-1">
+		<div class="lg:w-1/2 space-y-6 lg:space-y-10 px-10 relative order-1">
 			<p class="text-[#D4D4ED] Archivo text-lg">
 				My Menthor is a business partner for corporate areas that face the challenge of
 				implementing, disseminating and improving various management models in the organization.

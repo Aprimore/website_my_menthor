@@ -1,5 +1,6 @@
 <script>
 	import { arrow_up_svg } from '$lib';
+	import * as m from '$paraglide/messages';
 </script>
 
 <div class="copyright py-5 bg-blue-800 text-sm">
@@ -12,7 +13,7 @@
         "
 		>
 			<li class="">
-				<a href="/" class="">My Menthor Copyright © 2024. All rights reserved. </a>
+				<a href="/" class="">{m.footer_Copyright()}</a>
 			</li>
 		</ul>
 
@@ -21,13 +22,13 @@
             "
 		>
 			<li>
-				<a href="/" class="underline">Terms of Service</a>
+				<a href="/" class="underline">{m.footer_Terms()}</a>
 			</li>
 			<li>
-				<a href="/" class="underline">Privacy Policy</a>
+				<a href="/" class="underline">{m.footer_Privacy()}</a>
 			</li>
 			<li>
-				<a href="/" class="text-white underline">Cookies</a>
+				<a href="/" class="text-white underline">{m.footer_Cookies()}</a>
 			</li>
 		</ul>
 

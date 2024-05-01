@@ -1,20 +1,9 @@
 {
   "name": "my-menthor-website",
   "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "npm run test:integration && npm run test:unit",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --check . && eslint .",
-    "format": "prettier --write .",
-    "test:integration": "playwright test",
-    "test:unit": "vitest"
-  },
   "devDependencies": {
+    "@inlang/paraglide-js": "1.7.2",
+    "@inlang/paraglide-sveltekit": "^0.6.12",
     "@playwright/test": "^1.28.1",
     "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/adapter-static": "^3.0.1",
@@ -27,6 +16,7 @@
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-svelte": "^2.35.1",
+    "gh-pages": "^6.1.1",
     "lottie-web": "^5.12.2",
     "postcss": "^8.4.38",
     "prettier": "^3.1.1",
@@ -38,6 +28,21 @@
     "typescript": "^5.0.0",
     "vite": "^5.0.3",
     "vitest": "^1.2.0"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "paraglide-js compile --project ./project.inlang && vite build",
+    "preview": "vite preview",
+    "test": "npm run test:integration && npm run test:unit",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write .",
+    "test:integration": "playwright test",
+    "test:unit": "vitest",
+    "deploy": "bun run build && bun gh-pages -d build -t true",
+    "postinstall": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide"
   },
   "type": "module"
 }

@@ -10,7 +10,8 @@
 
 <section class="w-full bg-white pt-16">
 	<div
-		class="lg:h-[510px] lg:flex lg:max-w-screen-2xl flex-row lg:mx-auto justify-center items-center p-6" id="platform"
+		class="lg:h-[510px] lg:flex lg:max-w-screen-2xl flex-row lg:mx-auto justify-center items-center p-6"
+		id="platform"
 	>
 		<div class="lg:w-1/2 lg:max-w-[600px] space-y-4 md:space-y-6 relative">
 			<h1 class="Exo text-[#17193B] text-4xl font-bold relative">

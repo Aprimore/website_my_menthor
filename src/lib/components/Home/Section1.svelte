@@ -1,4 +1,5 @@
 <script lang="ts">
+	import * as m from '$paraglide/messages';
 	import {
 		arrow_right_svg,
 		linha_h_4_svg,
@@ -36,9 +37,10 @@
 				>
 					<span class="absolute"><img src={linha_v_1_svg} alt="" /></span>
 					<h3 class="ml-6 mb-2 text-lg tracking-tight text-[#25285F] Archivo leading-tight">
-						It brings <strong>effectiveness</strong> to
+						{m.homepage_section1_desc1()}
+						<!-- It brings <strong>effectiveness</strong> to
 						<strong> the deployment and execution of the strategy </strong> , organizational alignment
-						and ​visibility of processes for various purposes ​(compliance, risks, automation, etc.)
+						and ​visibility of processes for various purposes ​(compliance, risks, automation, etc.) -->
 					</h3>
 					<div bind:this={animationContainer} class="max-lg:max-w-96" />
 				</div>
@@ -49,16 +51,17 @@
 		>
 			<div class="text-[#17193B] rounded-lg p-12 xl:p-16 w-full" id="products-about">
 				<h1 class="Exo text-4xl font-bold relative">
-					The platform
+					{m.homepage_section1_title()}
 					<span><img src={linha_h_4_svg} class="z-10" alt="linha" /></span>
 				</h1>
 
 				<h3 class="mt-10 mb-2 text-[#25285F] Archivo text-lg leading-snug">
-					<strong> My Menthor </strong> is a
+					{m.homepage_section1_desc2()}
+					<!-- <strong> My Menthor </strong> is a
 					<strong> SaaS Business Architecture platform </strong>
 					that <strong> helps to unfold the company's strategy </strong> into a vision oriented by
 					end-to-end, providing visibility of processes and aligning organizational components to
-					<strong> achieve business objectives </strong>.
+					<strong> achieve business objectives </strong>. -->
 				</h3>
 
 				<div class="mt-8 flex flex-wrap gap-4">
@@ -66,7 +69,7 @@
 						class="btn-learn block max-w-max rounded-xl px-8 py-4 text-lg font-medium bg-[#8ABB3F] text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
 						href="/products#platform"
 					>
-						Learn More
+					{m.button_learn_more()}
 					</a>
 				</div>
 			</div>

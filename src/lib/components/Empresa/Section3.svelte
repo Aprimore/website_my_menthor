@@ -17,6 +17,7 @@
 			animationData
 		});
 	});
+	import { base } from '$app/paths';
 </script>
 
 <!-- <section class="my-20 pb-20 bg-white ">

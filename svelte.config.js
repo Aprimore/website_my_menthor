@@ -1,5 +1,7 @@
+// import * as m from "$paraglide/messages"
+
 // import adapter from '@sveltejs/adapter-auto';
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 const dev = process.argv.includes('dev');
@@ -21,8 +23,9 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
-		paths: {
-			base: dev ? '' : process.env.BASE_PATH
+		alias: {
+			//You can call this whatever you want
+			$paraglide: './src/paraglide'
 		}
 	}
 };
