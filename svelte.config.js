@@ -1,3 +1,5 @@
+// import * as m from "$paraglide/messages"
+
 // import adapter from '@sveltejs/adapter-auto';
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
@@ -16,7 +18,11 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter({
 			fallback: '404.html'
-		})
+		}),
+		alias: {
+			//You can call this whatever you want
+			$paraglide: './src/paraglide'
+		}
 	}
 };
 

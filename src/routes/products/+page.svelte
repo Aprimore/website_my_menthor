@@ -8,8 +8,6 @@
 	// export let data: PageData;
 </script>
 
-
-
 <svelte:head>
 	<title>My Menthor | Home</title>
 	<!-- <link rel="canonical" href={SITE_URL} />
@@ -34,7 +32,6 @@
 	<Section3 />
 	<Section4 />
 	<Section5 />
-
 </div>
 
 <!-- <style>

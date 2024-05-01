@@ -1,10 +1,15 @@
 <script lang="ts">
 	import { logo_navbar_svg } from '$lib';
+	import * as m from '$paraglide/messages';
+	import { languageTag, setLanguageTag } from '$paraglide/runtime';
+	import LanguageSwitcher from './LanguageSwitcher.svelte';
 </script>
 
-<button on:click={() setLanguage}></button>
-
 <nav class="navbar bg-[#d4d4ed] relative w-full z-20 top-0 start-0 border-b">
+
+	<LanguageSwitcher />
+
+
 	<div
 		class="nav1 bg-transparent max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-2.5"
 	>

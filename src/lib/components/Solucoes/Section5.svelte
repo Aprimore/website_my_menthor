@@ -10,16 +10,16 @@
 
 <section class="w-full items-center relative rounded-lg bg-[#F1F1F9] py-20">
 	<div class="lg:max-w-[1178px] lg:max-h-[598px] flex items-center mx-auto bg-white flex-col pb-10">
-		<div class=" my-6 ">
+		<div class=" my-6">
 			<h1 class="text-[#17193B] text-3xl max-md:text-center sm:text-4xl font-bold">
 				Platform characteristics
 			</h1>
 			<img src={linha_h_1_svg} class="mx-auto" alt="" />
 		</div>
 
-		<div class="max-sm:p-3 sm:pl-10 md:pl-20 sm:flex flex-row relative ">
-			<div class="flex flex-col sm:w-1/2 ">
-				<div class="bg-white p-2 min-w-min ">
+		<div class="max-sm:p-3 sm:pl-10 md:pl-20 sm:flex flex-row relative">
+			<div class="flex flex-col sm:w-1/2">
+				<div class="bg-white p-2 min-w-min">
 					<p class="Exo check text-[#17193B] text-xl text-no">Dedicated Environment</p>
 				</div>
 				<div class="bg-white p-2 min-w-min">

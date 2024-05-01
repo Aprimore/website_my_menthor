@@ -1,6 +1,17 @@
 <script lang="ts">
+	import LanguageSwitcher from '../LanguageSwitcher.svelte';
+	import { page } from '$app/stores';
 	import { arrow_right_svg, header_hero_png, linha_h_5_svg } from '$lib';
+	import * as m from '$paraglide/messages';
+	import { setLanguageTag } from '$paraglide/runtime';
 </script>
+
+<span>{$page.url.pathname}</span>
+
+
+<p>{m.headerHero()}</p>
+<!-- <button on:click={() => setLanguageTag('en')}> ENGLISH</button>
+<button on:click={() => setLanguageTag('pt-br')}> PORTUGUES</button> -->
 
 <header class="hero-section">
 	<div class="mx-auto px-4 flex h-[510px] items-center relative">

@@ -18,7 +18,7 @@
 	});
 </script>
 
-<section class="w-full items-center relative rounded-lg my-20 ">
+<section class="w-full items-center relative rounded-lg my-20">
 	<div class="flex max-lg:flex-col max-w-screen-2xl mx-auto">
 		<div class="column1 lg:w-2/3">
 			<div class="ml-14">

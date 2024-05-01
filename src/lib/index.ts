@@ -41,8 +41,6 @@ export { default as linha_h_azul4_svg } from './assets/svg/linha_h_azul4.svg';
 export { default as linha_h_verde2_svg } from './assets/svg/linha_h_verde2.svg';
 export { default as linha_h_laranja2_svg } from './assets/svg/linha_h_laranja2.svg';
 
-
-
 export { default as portfolio_services_ingles_svg } from './assets/svg/portfolio_services_ingles.svg';
 
 export { default as gif_1_json } from './assets/lotties/gif-1.json';
