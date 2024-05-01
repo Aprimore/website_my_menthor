@@ -1,15 +1,13 @@
 <script lang="ts">
-	import LanguageSwitcher from '../LanguageSwitcher.svelte';
+	
 	import { page } from '$app/stores';
 	import { arrow_right_svg, header_hero_png, linha_h_5_svg } from '$lib';
 	import * as m from '$paraglide/messages';
-	import { setLanguageTag } from '$paraglide/runtime';
+	
 </script>
 
-<span>{$page.url.pathname}</span>
+<!-- <span>{$page.url.pathname}</span> -->
 
-
-<p>{m.headerHero()}</p>
 <!-- <button on:click={() => setLanguageTag('en')}> ENGLISH</button>
 <button on:click={() => setLanguageTag('pt-br')}> PORTUGUES</button> -->
 
@@ -17,18 +15,17 @@
 	<div class="mx-auto px-4 flex h-[510px] items-center relative">
 		<div class="mx-auto max-w-5xl text-center z-20">
 			<p class="z-10 relative text-[#FCC614] text-lg Exo tracking-widest">
-				BUSINESS PROCESS ARCHITECTURE
+				 {m.homepage_header_business()}
 			</p>
 			<h1 class="text-2xl sm:text-4xl z-10 relative text-white Exo font-extrabold">
-				Your company on another management level
+				{m.homepage_header_yourcompany()}
 				<span><img src={linha_h_5_svg} class="z-10 sm:absolute right-0" alt="linha" /></span>
 			</h1>
 
 			<p
 				class="max-w-xl mt-10 sm:text-xl/relaxed mx-auto z-10 relative mb-8 Archivo text-[#D4D4ED]"
-			>
-				We have consolidated our expertise and background and developed a platform capable of taking
-				companies to the next level management and boost productivity and efficiency gains.
+			>{m.homepage_header_webhave()}
+				
 			</p>
 
 			<button>
@@ -36,7 +33,7 @@
 					class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
 					href="/company#contact"
 				>
-					Schedule a Demo
+					{m.button_schedule_a_demo()}
 				</a>
 			</button>
 			<img

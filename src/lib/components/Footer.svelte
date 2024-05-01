@@ -1,4 +1,5 @@
 <script lang="ts">
+	import * as m from '$paraglide/messages';
 	import {
 		arrow_right_svg,
 		facebook_svg,
@@ -9,6 +10,7 @@
 		youtube_svg
 	} from '$lib';
 	import Copyright from './Copyright.svelte';
+
 </script>
 
 <footer class="footer relative bg-[#17193b] w-full">
@@ -38,7 +40,7 @@
 								class="Exo btn-agendar bg-[#8abb3f] flex items-center text-base text-[#17193B] py-4 px-10 mt-5 rounded-lg relative lg:whitespace-nowrap"
 								href="/company#contact"
 							>
-								Schedule a Demo
+								{m.button_schedule_a_demo()}
 								<img
 									src={arrow_right_svg}
 									class="z-10 absolute right-5 bottom-[22px] size-3"
@@ -51,55 +53,55 @@
 
 				<div class="lg:ml-24 w-full">
 					<div class="w-full mb-10">
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">Product</h4>
+						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">{m.footer_Products()}</h4>
 						<ul class="space-y-3">
 							<li>
-								<a href="/products#platform" class="text-[#D4D4ED] text-sm">About the Platform</a>
+								<a href="/products#platform" class="text-[#D4D4ED] text-sm">{m.footer_About_platform()}</a>
 							</li>
 							<li>
 								<a href="/products#target-audience" class="text-[#D4D4ED] text-sm">
-									Target Audience
+									{m.footer_Target_audience()}
 								</a>
 							</li>
 						</ul>
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5 mt-5">Solutions</h4>
+						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5 mt-5">{m.footer_Stakeholders()}</h4>
 						<ul class="space-y-3">
 							<li>
-								<a href="/solutions#modules" class="text-[#D4D4ED] text-sm"> The Platform </a>
+								<a href="/solutions#modules" class="text-[#D4D4ED] text-sm"> {m.footer_Customers()} </a>
 							</li>
 							<li>
 								<a href="/solutions#portfolio-services" class="text-[#D4D4ED] text-sm">
-									Portfolio of Services
+									{m.footer_Success_stories()}
 								</a>
 							</li>
 							<li>
-								<a href="/solutions#packages" class="text-[#D4D4ED] text-sm">Packages</a>
+								<a href="/solutions#packages" class="text-[#D4D4ED] text-sm">{m.footer_Customer_support()}</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="lg:ml-24 w-full">
 					<div class="w-full mb-10">
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">Stakeholders</h4>
+						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">{m.footer_Partner_Program()}</h4>
 						<ul class="space-y-3">
 							<li>
 								<a href="/customers_and_partners#clients" class="text-[#D4D4ED] text-sm">
-									Clients
+									{m.footer_Resources()}
 								</a>
 							</li>
 							<li>
 								<a href="/customers_and_partners#cases" class="text-[#D4D4ED] text-sm">
-									Success Stories
+									{m.footer_Blog()}
 								</a>
 							</li>
 							<li>
 								<a href="/customers_and_partners#support" class="text-[#D4D4ED] text-sm">
-									Customer Support
+									{m.footer_Events_Webinars()}
 								</a>
 							</li>
 							<li>
 								<a href="/customers_and_partners" class="text-[#D4D4ED] text-sm">
-									Partner Program
+									{m.footer_My_Menthor_Academy()}
 								</a>
 							</li>
 						</ul>
@@ -108,19 +110,19 @@
 
 				<div class="lg:ml-24 w-full">
 					<div class="w-full mb-10">
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">Resources</h4>
+						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">{m.footer_Knowledge_Base()}</h4>
 						<ul class="space-y-3">
 							<li>
-								<a href="/" class="text-[#D4D4ED] text-sm">Blog</a>
+								<a href="/" class="text-[#D4D4ED] text-sm">{m.footer_Our_Company()}</a>
 							</li>
 							<li>
-								<a href="/" class="text-[#D4D4ED] text-sm">Events & Webinar</a>
+								<a href="/" class="text-[#D4D4ED] text-sm">{m.footer_About_us()}</a>
 							</li>
 							<li>
-								<a href="/" class="text-[#D4D4ED] text-sm">My Menthor Academy</a>
+								<a href="/" class="text-[#D4D4ED] text-sm">My {m.footer_Purpose()}</a>
 							</li>
 							<li>
-								<a href="/" class="text-[#D4D4ED] text-sm">Knowledge Base</a>
+								<a href="/" class="text-[#D4D4ED] text-sm">{m.footer_Contact_us()}</a>
 							</li>
 						</ul>
 					</div>
@@ -128,16 +130,16 @@
 
 				<div class="lg:ml-24 w-full relative">
 					<div class="w-full mb-10">
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">Enterprise</h4>
+						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">{m.footer_Solutions()}</h4>
 						<ul class="space-y-3">
 							<li>
-								<a href="/company#about" class="text-[#D4D4ED] text-sm">About Us</a>
+								<a href="/company#about" class="text-[#D4D4ED] text-sm">{m.footer_The_Platform()}</a>
 							</li>
 							<li>
-								<a href="/company#purpose" class="text-[#D4D4ED] text-sm">Purpose</a>
+								<a href="/company#purpose" class="text-[#D4D4ED] text-sm">{m.footer_Service_portfolio()}</a>
 							</li>
 							<li>
-								<a href="/company#contact" class="text-[#D4D4ED] text-sm">Contact Us</a>
+								<a href="/company#contact" class="text-[#D4D4ED] text-sm">{m.footer_Packages()}</a>
 							</li>
 						</ul>
 					</div>

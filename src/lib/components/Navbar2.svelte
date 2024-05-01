@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { logo_navbar_svg } from '$lib';
+	import * as m from '$paraglide/messages';
 
 	let showMenu = false;
 
@@ -63,13 +64,13 @@
 			? 'flex'
 			: 'hidden'}"
 	>
-		<a class={navbarClasses} href="/">Home</a>
-		<a class={navbarClasses} href="/">Blog</a>
-		<a class={navbarClasses} href="/products">Products</a>
-		<a class={navbarClasses} href="/solutions">Solutions</a>
-		<a class={navbarClasses} href="/customers_and_partners">Customers and Partners </a>
-		<a class={navbarClasses} href="/resources">Resources</a>
-		<a class={navbarClasses} href="/company">Company</a>
+		<a class={navbarClasses} href="/">{m.navbar_Home()}</a>
+		<a class={navbarClasses} href="/">{m.navbar_Blog()}</a>
+		<a class={navbarClasses} href="/products">{m.navbar_Products()}</a>
+		<a class={navbarClasses} href="/solutions">{m.navbar_Solutions()}</a>
+		<a class={navbarClasses} href="/customers_and_partners">{m.navbar_Clients_and_Partners()}</a>
+		<a class={navbarClasses} href="/resources">{m.navbar_Resources()}</a>
+		<a class={navbarClasses} href="/company">{m.navbar_Company()}</a>
 	</div>
 </nav>
 

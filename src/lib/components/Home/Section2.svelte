@@ -1,4 +1,5 @@
 <script>
+	import * as m from '$paraglide/messages';
 	import {
 		arrow_right_svg,
 		design_service_svg,
@@ -11,10 +12,10 @@
 
 <section class=" flex flex-col items-center relative rounded-lg my-6 max-w-screen-2xl mx-auto">
 	<div class="p-6 rounded-lg text-center">
-		<h1 class="Exo text-4xl relative mx-auto">Work smarter</h1>
+		<h1 class="Exo text-4xl relative mx-auto">{m.homepage_section2_work()}</h1>
 
 		<h2 class="Exo text-4xl relative font-extrabold text-[#17193B]">
-			and more integrated !
+			{m.homepage_section2_smarter()}
 			<span><img src={linha_h_3_svg} class="z-10 absolute right-10" alt="linha" /></span>
 		</h2>
 	</div>
@@ -26,13 +27,11 @@
 				<h3 class="Exo text-2xl font-bold relative max-w-sm text-[#17193B]">
 					<span class="absolute left-[-45px]"><img src={track_changes_svg} alt="" /></span>
 
-					Holistic and Integrated Vision
+					{m.homepage_section2_holistic()}
 				</h3>
 
 				<h4 class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
-					Get a true representation of how your business works. Transform the fragmented and
-					disconnected view into a knowledge base that translates reality and generates insights to
-					support effective decisions.
+					{m.homepage_section2_getatrue()}
 				</h4>
 			</div>
 		</div>
@@ -43,13 +42,11 @@
 				<h3 class="Exo text-2xl font-bold relative max-w-sm text-[#17193B]">
 					<span class="absolute left-[-45px]"><img src={design_service_svg} alt="" /></span>
 
-					Organizational Design
+					{m.homepage_section2_Organizational()}
 				</h3>
 
 				<h4 class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
-					Rethink your current model and create an architectural vision of the business that adds
-					more value to customers and stakeholders. Drive growth and competitiveness by adopting a
-					unified approach to understand, improve and transform your operation.
+					{m.homepage_section2_Rethink()}
 				</h4>
 			</div>
 		</div>
@@ -61,13 +58,11 @@
 			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 py-10">
 				<h3 class="Exo text-2xl font-bold relative max-w-sm text-[#17193B]">
 					<span class="absolute left-[-45px]"><img src={table_chart_view_svg} alt="" /></span>
-
-					Evolution and Sustainability
+					{m.homepage_section2_Evolution()} 
 				</h3>
 
 				<h4 class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
-					Transform your corporate architecture into a valuable asset to manage changes in your
-					operation, anticipating and adapting to the impacts of market transformations.
+					{m.homepage_section2_Transform()}
 				</h4>
 			</div>
 		</div>
@@ -77,14 +72,11 @@
 			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 lg:mr-20 py-10">
 				<h3 class="Exo text-2xl font-bold relative max-w-sm text-[#17193B]">
 					<span class="absolute left-[-45px]"><img src={linked_services_svg} alt="" /></span>
-
-					Organizational Alignment
+					{m.homepage_section2_Organizational_alignment()}
 				</h3>
 
 				<h4 class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
-					Ensure the deployment of the strategy to the other layers of the organization, integrating
-					processes, structure, technology, people, and other organizational components to improve
-					performance and business results.
+					{m.homepage_section2_Ensure()}
 				</h4>
 			</div>
 		</div>
@@ -95,7 +87,7 @@
 				class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
 				href="/company#contact"
 			>
-				Schedule a Demo
+			{m.button_schedule_a_demo()}
 			</a>
 		</button>
 	</div>
