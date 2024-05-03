@@ -22,7 +22,7 @@
 					class="Archivo btn-learn bg-[#F1F1F9] block max-w-max rounded-xl px-10 py-4 text-xl text-[#17193B] focus:ring sm:w-auto z-10 relative"
 					href="/products#platform"
 				>
-				{m.button_learn_more()}
+					{m.button_learn_more()}
 				</a>
 			</button>
 		</div>

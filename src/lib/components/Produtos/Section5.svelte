@@ -1,4 +1,6 @@
 <script>
+	import * as m from '$paraglide/messages';
+	// {m.xxxxxxxxxxxxxxxxxx()}
 	import {
 		analytics_svg,
 		arrow_right_svg,
@@ -15,7 +17,10 @@
 		<div class="w-1/2 relative p-10 space-y-10"> -->
 
 <section class="w-full bg-[#F1F1F9] py-20">
-	<h1 class="text-[#17193B] text-4xl font-bold mb-12 Exo text-center">Platform characteristics</h1>
+	<h1 class="text-[#17193B] text-4xl font-bold mb-12 Exo text-center">
+		{m.solutions_PlatformCharacteristics()}
+		<!-- Platform characteristics -->
+	</h1>
 	<div
 		class="flex justify-center items-center mx-auto bg-white flex-col lg:min-w-[1120px] rounded-md"
 	>
@@ -28,26 +33,37 @@
 					<div class="lg:p-20 max-md:p-10">
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Profits, revenue and margin
-							</p>
-						</div>
-						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">Perenniality</p>
-						</div>
-						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">Sustainability</p>
-						</div>
-						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">Continuity</p>
-						</div>
-						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Competitive advantage
+								<!-- Profits, revenue and margin -->
+								{m.homepage_section4_Profits()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Understanding the operation
+								<!-- Perenniality  -->
+								{m.produtos_Sustainability_1()}
+							</p>
+						</div>
+						<div class="bg-white p-2">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								<!-- Sustainability -->
+								{m.produtos_Sustainability_2()}
+							</p>
+						</div>
+						<div class="bg-white p-2">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								{m.produtos_Continuity()}
+							</p>
+						</div>
+						<div class="bg-white p-2">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								<!-- Competitive advantage -->
+								{m.produtos_CompetitiveAdvantage()}
+							</p>
+						</div>
+						<div class="bg-white p-2">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								<!-- Understanding the operation -->
+								{m.produtos_UnderstandingTheOperation()}
 							</p>
 						</div>
 					</div>
@@ -64,42 +80,50 @@
 					<div class="lg:p-20 p-10">
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Maturity and performance
+								<!-- Maturity and performance -->
+								{m.produtos_MaturityAndPerformance()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Integration of initiatives
+								<!-- Integration of initiatives -->
+								{m.produtos_IntegrationOfInitiatives()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Reduces functional silos
+								<!-- Reduces functional silos -->
+								{m.produtos_ReducesFunctionalSilos()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Visibility of the impact of changes
+								<!-- Visibility of the impact of changes -->
+								{m.produtos_VisibilityOfTheImpactOfChanges()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Knowledge retention
+								<!-- Knowledge retention -->
+								{m.produtos_KnowledgeRetention()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Quality in products and services
+								<!-- Quality in products and services -->
+								{m.produtos_QualityInProductsAndServices()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Generating value for stakeholders
+								<!-- Generating value for stakeholders -->
+								{m.produtos_GeneratingValueForStakeholders()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Customer experience
+								<!-- Customer experience -->
+								{m.produtos_CustomerExperience()}
 							</p>
 						</div>
 					</div>
@@ -115,31 +139,39 @@
 				<div class="md:w-1/2 relative my-auto">
 					<div class="lg:p-20 max-md:p-10">
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">Standardization</p>
-						</div>
-						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Efficiency and productivity x effectiveness
+								<!-- Standardization -->
+								{m.produtos_Standardization()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Reduction of costs, deadlines and rework
+								<!-- Efficiency and productivity x effectiveness -->
+								{m.produtos_EfficiencyAndProductivityXEffectiveness()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Process innovation
+								<!-- Reduction of costs, deadlines and rework -->
+								{m.produtos_ReductionOfCostsDeadlinesAndRework()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Compliance, conformity and risks
+								<!-- Process innovation -->
+								{m.produtos_ProcessInnovation()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
 							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
-								Clarity of roles and responsibilities
+								<!-- Compliance, conformity and risks -->
+								{m.produtos_ComplianceConformityAndRisks()}
+							</p>
+						</div>
+						<div class="bg-white p-2">
+							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+								<!-- Clarity of roles and responsibilities -->
+								{m.produtos_ClarityOfRolesAndResponsibilities()}
 							</p>
 						</div>
 					</div>
@@ -153,7 +185,8 @@
 				class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
 				href="/company#contact"
 			>
-				Schedule a Demo
+				<!-- Schedule a Demo -->
+				{m.produtos_MyMenthorIs()}
 			</a>
 		</button>
 	</div>

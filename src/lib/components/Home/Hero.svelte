@@ -1,9 +1,7 @@
 <script lang="ts">
-	
 	import { page } from '$app/stores';
 	import { arrow_right_svg, header_hero_png, linha_h_5_svg } from '$lib';
 	import * as m from '$paraglide/messages';
-	
 </script>
 
 <!-- <span>{$page.url.pathname}</span> -->
@@ -15,7 +13,7 @@
 	<div class="mx-auto px-4 flex h-[510px] items-center relative">
 		<div class="mx-auto max-w-5xl text-center z-20">
 			<p class="z-10 relative text-[#FCC614] text-lg Exo tracking-widest">
-				 {m.homepage_header_business()}
+				{m.homepage_header_business()}
 			</p>
 			<h1 class="text-2xl sm:text-4xl z-10 relative text-white Exo font-extrabold">
 				{m.homepage_header_yourcompany()}
@@ -24,8 +22,8 @@
 
 			<p
 				class="max-w-xl mt-10 sm:text-xl/relaxed mx-auto z-10 relative mb-8 Archivo text-[#D4D4ED]"
-			>{m.homepage_header_webhave()}
-				
+			>
+				{m.homepage_header_webhave()}
 			</p>
 
 			<button>

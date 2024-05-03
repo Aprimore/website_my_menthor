@@ -69,7 +69,7 @@
 						class="btn-learn block max-w-max rounded-xl px-8 py-4 text-lg font-medium bg-[#8ABB3F] text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
 						href="/products#platform"
 					>
-					{m.button_learn_more()}
+						{m.button_learn_more()}
 					</a>
 				</div>
 			</div>

@@ -58,7 +58,7 @@
 			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 py-10">
 				<h3 class="Exo text-2xl font-bold relative max-w-sm text-[#17193B]">
 					<span class="absolute left-[-45px]"><img src={table_chart_view_svg} alt="" /></span>
-					{m.homepage_section2_Evolution()} 
+					{m.homepage_section2_Evolution()}
 				</h3>
 
 				<h4 class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
@@ -87,7 +87,7 @@
 				class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
 				href="/company#contact"
 			>
-			{m.button_schedule_a_demo()}
+				{m.button_schedule_a_demo()}
 			</a>
 		</button>
 	</div>

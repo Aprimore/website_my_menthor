@@ -1,4 +1,6 @@
 <script lang="ts">
+	import * as m from '$paraglide/messages';
+	// {m.xxxxxxxxxxxxxxxxxx()}
 	import { arrow_right_svg, clientes_parceiros_3_png } from '$lib';
 	import FormZoho from './../FormZoho.svelte';
 
@@ -32,11 +34,15 @@
 			>
 				<div>
 					<h1 class="Exo text-4xl md:text-5xl relative text-[#17193B] Exo font-extrabold mb-10">
-						Contact us <span class="font-normal"> or </span> <br /> schedule a demo!
+						<!-- Contact us <span class="font-normal"> or </span> <br /> schedule a demo! -->
+						{m.company_ContactUsOr()} <br />
+						{m.company_ScheduleADemo()}
 					</h1>
 					<p class="Archivo text-[#25285F] text-lg">
-						Fill in the form with your details. <br />
-						The My Menthor team will get in touch as soon as possible!
+						<!-- Fill in the form with your details. <br />
+						The My Menthor team will get in touch as soon as possible! -->
+						{m.company_FillInTheForm()} <br />
+						{m.company_FillInTheForm_2()}
 					</p>
 				</div>
 

@@ -5,20 +5,20 @@
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
 </script>
 
-<nav class="navbar bg-[#d4d4ed] relative w-full z-20 top-0 start-0 border-b">	
+<nav class="navbar bg-[#d4d4ed] relative w-full z-20 top-0 start-0 border-b">
 	<div
-	class="nav1 bg-transparent max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-2.5"
+		class="nav1 bg-transparent max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-2.5"
 	>
-	<div class="flex md:order-2 space-x-3">
-		<ul class="flex p-3 md:p-0 font-medium md:space-x-2 rtl:space-x-reverse m-0 border-0">
-			<!-- <li>
+		<div class="flex md:order-2 space-x-3">
+			<ul class="flex p-3 md:p-0 font-medium md:space-x-2 rtl:space-x-reverse m-0 border-0">
+				<!-- <li>
 				<a
 				href="/"
 				class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent underline"
 				></a
 				>
 			</li> -->
-			<LanguageSwitcher />
+				<LanguageSwitcher />
 				<li class=" bg-[#d4d4ed]">
 					<button
 						type="button"

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import * as m from '$paraglide/messages';
+	// {m.xxxxxxxxxxxxxxxxxx()}
 	import {
 		clientes_parceiros_3_png,
 		linha_h_3_svg,
@@ -34,17 +36,21 @@
 				<h1
 					class="Exo text-4xl sm:text-5xl z-10 relative text-[#17193B] Exo font-extrabold max-lg:text-center"
 				>
-					Purpose<img src={linha_h_verde_1_svg} class="max-sm:w-36 max-lg:mx-auto" alt="linha" />
+					<!-- Purpose -->
+					{m.company_Purpose()}
+					<img src={linha_h_verde_1_svg} class="max-sm:w-36 max-lg:mx-auto" alt="linha" />
 				</h1>
 
 				<p class="Archivo text-[#25285F] text-lg">
-					Our purpose is to improve management capacity and boost corporate performance by
+					<!-- Our purpose is to improve management capacity and boost corporate performance by
 					integrating process-oriented organizational components, enhancing strategic execution and
-					maximizing results.
+					maximizing results. -->
+					{m.company_OurPurposeIsToImprove()}
 				</p>
 				<p class="Archivo text-[#25285F] text-lg">
-					We provide software, train and equip clients to transform and properly manage the
-					business, supporting cultural change and highlighting performance gains and results.
+					<!-- We provide software, train and equip clients to transform and properly manage the
+					business, supporting cultural change and highlighting performance gains and results. -->
+					{m.company_WeProvideSoftware()}
 				</p>
 			</div>
 		</div>

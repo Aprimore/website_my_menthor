@@ -1,4 +1,6 @@
 <script>
+	import * as m from '$paraglide/messages';
+	// {m.xxxxxxxxxxxxxxxxxx()}
 	import {
 		arrow_right_svg,
 		card_travel_svg,
@@ -26,9 +28,10 @@
 				<h2 class=" title-om Exo text-2xl font-bold relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
-					It contains its <strong>own embedded methodology</strong> with an approach to corporate development,
+					{m.produtos_ItSupportsDifferentLevelsOfMaturity()}
+					<!-- It contains its <strong>own embedded methodology</strong> with an approach to corporate development,
 					which helps in diagnosis, defining the implementation strategy, and guiding the step-by-step
-					the evolution of organizational maturity.
+					the evolution of organizational maturity. -->
 				</h3>
 			</div>
 		</div>
@@ -39,8 +42,9 @@
 				<h2 class="title-od Exo text-2xl font-bold relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
-					<strong>It supports different levels of maturity</strong> and
-					<strong>deployment strategies</strong> through its modular and flexible approach.
+					{m.produtos_EmphasizesBusinessProcessManagement()}
+					<!-- <strong>It supports different levels of maturity</strong> and
+					<strong>deployment strategies</strong> through its modular and flexible approach. -->
 				</h3>
 			</div>
 		</div>
@@ -53,9 +57,10 @@
 				<h2 class="title-sd Exo text-2xl font-bold relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
-					Emphasizes BPM as a Management Model, <strong
+					{m.produtos_EmphasizesBusinessProcessManagement()}
+					<!-- Emphasizes BPM as a Management Model, <strong
 						>facilitating the structuring, instrumentation and implementation of the topic</strong
-					>, highlighting the results of the various process mapping and improvement initiatives.
+					>, highlighting the results of the various process mapping and improvement initiatives. -->
 				</h3>
 			</div>
 		</div>
@@ -66,9 +71,10 @@
 				<h2 class="title-ms Exo text-2xl font-bold relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
-					<strong>Decomplicates and decentralizes the topic</strong>, so that the business areas
+					{m.produtos_DecompplicatesAndDecentralizesTheTopic()}
+					<!-- <strong>Decomplicates and decentralizes the topic</strong>, so that the business areas
 					take responsibility for their processes and results, with the support of governance
-					mechanisms and integrated into the organizational components and capabilities
+					mechanisms and integrated into the organizational components and capabilities -->
 				</h3>
 			</div>
 		</div>

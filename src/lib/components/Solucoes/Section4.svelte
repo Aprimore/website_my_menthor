@@ -1,4 +1,6 @@
 <script>
+	import * as m from '$paraglide/messages';
+	// {m.xxxxxxxxxxxxxxxxxx()}
 	import { checkmark_2_svg, linha_h_7_svg } from '$lib';
 </script>
 
@@ -9,39 +11,63 @@
 	>
 		<div class="">
 			<div class="rounded-t-lg h-[104px] bg-white flex justify-center items-center">
-				<h1 class="Exo underline text-white text-3xl font-bold">Packages</h1>
-			</div>
-			<div class=" h-[62px] flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">Administrator License</p>
-			</div>
-			<div class=" h-[62px] bg-white flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">User License</p>
-			</div>
-			<div class=" h-[62px] flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">Viewer License</p>
-			</div>
-			<div class=" h-[62px] bg-white flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">Technical Support (8x5)</p>
+				<h1 class="Exo underline text-white text-3xl font-bold">
+					<!-- Packages -->
+					{m.produtos_MyMenthorIs()}
+				</h1>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
 				<p class="text-base Archivo text-[#25285F] font-bold">
-					Framework, Knowledge Base and Online Training
+					<!-- Administrator License -->
+					{m.solutions_AdministratorLicense()}
 				</p>
 			</div>
 			<div class=" h-[62px] bg-white flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">Administrator / Architect (8h)</p>
+				<p class="text-base Archivo text-[#25285F] font-bold">
+					<!-- User License -->
+					{m.solutions_UserLicense()}
+				</p>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
 				<p class="text-base Archivo text-[#25285F] font-bold">
-					Business Diagnosis and Implementation Strategy
+					<!-- Viewer License -->
+					{m.solutions_ViewerLicense()}
 				</p>
 			</div>
 			<div class=" h-[62px] bg-white flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">Customer Success</p>
+				<p class="text-base Archivo text-[#25285F] font-bold">
+					<!-- Technical Support (8x5) -->
+					{m.solutions_TechnicalSupport()}
+				</p>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
 				<p class="text-base Archivo text-[#25285F] font-bold">
-					Ongoing - Mentoring / Consulting (Package of hours)
+					<!-- Framework, Knowledge Base and Online Training -->
+					{m.solutions_FrameworkKnowledgeBaseAndOnlineTraining()}
+				</p>
+			</div>
+			<div class=" h-[62px] bg-white flex items-center border-b">
+				<p class="text-base Archivo text-[#25285F] font-bold">
+					<!-- Administrator / Architect (8h) -->
+					{m.solutions_AdministratorArchitect()}
+				</p>
+			</div>
+			<div class=" h-[62px] flex items-center border-b">
+				<p class="text-base Archivo text-[#25285F] font-bold">
+					<!-- Business Diagnosis and Implementation Strategy -->
+					{m.solutions_BusinessDiagnosisAndImplementationStrategy()}
+				</p>
+			</div>
+			<div class=" h-[62px] bg-white flex items-center border-b">
+				<p class="text-base Archivo text-[#25285F] font-bold">
+					<!-- Customer Success -->
+					{m.solutions_CustomerSuccess()}
+				</p>
+			</div>
+			<div class=" h-[62px] flex items-center border-b">
+				<p class="text-base Archivo text-[#25285F] font-bold">
+					<!-- Ongoing - Mentoring / Consulting (Package of hours) -->
+					{m.solutions_OngoingMentoringConsulting()}
 				</p>
 			</div>
 		</div>
@@ -78,7 +104,10 @@
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">Adicional</p>
+				<p class="text-xl Archivo text-[#25285F] font-bold">
+					<!-- Adicional -->
+					{m.solutions_Additional()}
+				</p>
 			</div>
 		</div>
 		<div class=" border border-gray-200 shadow-md rounded">
@@ -114,7 +143,10 @@
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">Adicional</p>
+				<p class="text-xl Archivo text-[#25285F] font-bold">
+					<!-- Adicional -->
+					{m.produtos_MyMenthorIs()}
+				</p>
 			</div>
 		</div>
 		<div class=" border border-gray-200 shadow-md rounded">
@@ -150,7 +182,10 @@
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">Adicional</p>
+				<p class="text-xl Archivo text-[#25285F] font-bold">
+					<!-- Adicional -->
+					{m.solutions_Additional()}
+				</p>
 			</div>
 		</div>
 		<div class=" border border-gray-200 shadow-md rounded">
@@ -186,7 +221,10 @@
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">Adicional</p>
+				<p class="text-xl Archivo text-[#25285F] font-bold">
+					<!-- Adicional -->
+					{m.solutions_Additional()}
+				</p>
 			</div>
 		</div>
 	</div>
@@ -196,7 +234,8 @@
 				class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
 				href="/company#contact"
 			>
-				Schedule a Demo
+				<!-- Schedule a Demo -->
+				{m.produtos_MyMenthorIs()}
 			</a>
 		</button>
 	</div>

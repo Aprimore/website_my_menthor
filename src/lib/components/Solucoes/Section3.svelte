@@ -1,4 +1,6 @@
 <script>
+	import * as m from '$paraglide/messages';
+	// {m.xxxxxxxxxxxxxxxxxx()}
 	import {
 		linha_h_1_svg,
 		linha_h_7_svg,
@@ -24,9 +26,13 @@
 				>
 					1.
 				</p>
-				<h2 class="Exo font-bold text-3xl text-[#EB642A]">STARTER</h2>
+				<h2 class="Exo font-bold text-3xl text-[#EB642A]">
+					<!-- STARTER -->
+					{m.solutions_STARTER()}
+				</h2>
 				<p class="Archivo text-[#25285F] max-w-[14rem] relative">
-					Ideal for those who want to start with a small team and then expand their use.
+					<!-- Ideal for those who want to start with a small team and then expand their use. -->
+					{m.solutions_IdealForThose()}
 				</p>
 				<span class="max-w-[15rem] absolute bottom-6">
 					<img src={linha_h_laranja2_svg} class=" " alt="" />
@@ -43,9 +49,13 @@
 				>
 					2.
 				</p>
-				<h2 class="Exo font-bold text-3xl text-[#8ABB3F]">BASIC</h2>
+				<h2 class="Exo font-bold text-3xl text-[#8ABB3F]">
+					<!-- BASIC -->
+					{m.solutions_BASIC()}
+				</h2>
 				<p class="Archivo text-[#25285F] max-w-[14rem] relative">
-					The perfect choice for teams with a quick start.
+					<!-- The perfect choice for teams with a quick start. -->
+					{m.solutions_ThePerfectChoice()}
 				</p>
 				<span class="max-w-[15rem] absolute bottom-6">
 					<img src={linha_h_verde2_svg} class="" alt="" />
@@ -62,9 +72,13 @@
 				>
 					3.
 				</p>
-				<h2 class="Exo font-bold text-3xl text-[#454AB0]">PREMIUM</h2>
+				<h2 class="Exo font-bold text-3xl text-[#454AB0]">
+					<!-- PREMIUM -->
+					{m.solutions_PREMIUM()}
+				</h2>
 				<p class="Archivo text-[#25285F] max-w-[14rem] relative">
-					For companies that prefer an integrated start.
+					<!-- For companies that prefer an integrated start. -->
+					{m.solutions_ForCompaniesThatPrefer()}
 				</p>
 				<span class="max-w-[15rem] absolute bottom-6">
 					<img src={linha_h_azul4_svg} class=" " alt="" />
@@ -81,9 +95,13 @@
 				>
 					4.
 				</p>
-				<h2 class="Exo font-bold text-3xl text-[#FCC614]">ENTERPRISE</h2>
+				<h2 class="Exo font-bold text-3xl text-[#FCC614]">
+					<!-- ENTERPRISE -->
+					{m.solutions_ENTERPRISE()}
+				</h2>
 				<p class="Archivo text-[#25285F] max-w-[14rem] relative">
-					Can be customized according to customer's needs.
+					<!-- Can be customized according to customer's needs. -->
+					{m.solutions_CanBeCustomizedAccordingToCustomers()}
 				</p>
 				<span class="max-w-[15rem] absolute bottom-6">
 					<img src={linha_h_amarela3_svg} class=" " alt="" />

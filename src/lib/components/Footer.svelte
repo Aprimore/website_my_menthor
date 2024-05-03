@@ -10,7 +10,6 @@
 		youtube_svg
 	} from '$lib';
 	import Copyright from './Copyright.svelte';
-
 </script>
 
 <footer class="footer relative bg-[#17193b] w-full">
@@ -53,10 +52,14 @@
 
 				<div class="lg:ml-24 w-full">
 					<div class="w-full mb-10">
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">{m.footer_Products()}</h4>
+						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">
+							{m.footer_Products()}
+						</h4>
 						<ul class="space-y-3">
 							<li>
-								<a href="/products#platform" class="text-[#D4D4ED] text-sm">{m.footer_About_platform()}</a>
+								<a href="/products#platform" class="text-[#D4D4ED] text-sm"
+									>{m.footer_About_platform()}</a
+								>
 							</li>
 							<li>
 								<a href="/products#target-audience" class="text-[#D4D4ED] text-sm">
@@ -64,10 +67,14 @@
 								</a>
 							</li>
 						</ul>
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5 mt-5">{m.footer_Stakeholders()}</h4>
+						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5 mt-5">
+							{m.footer_Stakeholders()}
+						</h4>
 						<ul class="space-y-3">
 							<li>
-								<a href="/solutions#modules" class="text-[#D4D4ED] text-sm"> {m.footer_Customers()} </a>
+								<a href="/solutions#modules" class="text-[#D4D4ED] text-sm">
+									{m.footer_Customers()}
+								</a>
 							</li>
 							<li>
 								<a href="/solutions#portfolio-services" class="text-[#D4D4ED] text-sm">
@@ -75,14 +82,18 @@
 								</a>
 							</li>
 							<li>
-								<a href="/solutions#packages" class="text-[#D4D4ED] text-sm">{m.footer_Customer_support()}</a>
+								<a href="/solutions#packages" class="text-[#D4D4ED] text-sm"
+									>{m.footer_Customer_support()}</a
+								>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="lg:ml-24 w-full">
 					<div class="w-full mb-10">
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">{m.footer_Partner_Program()}</h4>
+						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">
+							{m.footer_Partner_Program()}
+						</h4>
 						<ul class="space-y-3">
 							<li>
 								<a href="/customers_and_partners#clients" class="text-[#D4D4ED] text-sm">
@@ -110,7 +121,9 @@
 
 				<div class="lg:ml-24 w-full">
 					<div class="w-full mb-10">
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">{m.footer_Knowledge_Base()}</h4>
+						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">
+							{m.footer_Knowledge_Base()}
+						</h4>
 						<ul class="space-y-3">
 							<li>
 								<a href="/" class="text-[#D4D4ED] text-sm">{m.footer_Our_Company()}</a>
@@ -130,13 +143,18 @@
 
 				<div class="lg:ml-24 w-full relative">
 					<div class="w-full mb-10">
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">{m.footer_Solutions()}</h4>
+						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">
+							{m.footer_Solutions()}
+						</h4>
 						<ul class="space-y-3">
 							<li>
-								<a href="/company#about" class="text-[#D4D4ED] text-sm">{m.footer_The_Platform()}</a>
+								<a href="/company#about" class="text-[#D4D4ED] text-sm">{m.footer_The_Platform()}</a
+								>
 							</li>
 							<li>
-								<a href="/company#purpose" class="text-[#D4D4ED] text-sm">{m.footer_Service_portfolio()}</a>
+								<a href="/company#purpose" class="text-[#D4D4ED] text-sm"
+									>{m.footer_Service_portfolio()}</a
+								>
 							</li>
 							<li>
 								<a href="/company#contact" class="text-[#D4D4ED] text-sm">{m.footer_Packages()}</a>

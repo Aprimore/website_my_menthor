@@ -1,4 +1,6 @@
 <script>
+	import * as m from '$paraglide/messages';
+	// {m.xxxxxxxxxxxxxxxxxx()}
 	import { arrow_right_svg, clientes_parceiros_4_png, fone_amarelo_svg, linha_h_4_svg } from '$lib';
 </script>
 
@@ -26,14 +28,16 @@
 					<h1
 						class="Exo text-3xl md:text-4xl lg:text-5xl text-[#17193B] font-bold relative max-sm:text-nowrap"
 					>
-						Customer service channel
+						<!-- Customer service channel -->
+						{m.clientesP_CustomerServiceChannel()}
 					</h1>
 
 					<p class="  text-[#25285F] Archivo text-lg">
-						Get in touch today and find out how we can boost your success together. Click on <strong
+						<!-- Get in touch today and find out how we can boost your success together. Click on <strong
 						>
 							Contact Us
-						</strong> and embark on this journey.
+						</strong> and embark on this journey. -->
+						{m.clientesP_GetInTouchToday()}
 					</p>
 
 					<button>
@@ -41,7 +45,8 @@
 							class="btn-contact bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
 							href="/company#contact"
 						>
-							Contact Us
+							<!-- Contact Us -->
+							{m.footer_Contact_us()}
 						</a>
 					</button>
 

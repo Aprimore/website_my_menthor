@@ -1,4 +1,6 @@
 <script>
+	import * as m from '$paraglide/messages';
+	// {m.xxxxxxxxxxxxxxxxxx()}
 	import {
 		arrow_right_svg,
 		clientes_parceiros_3_png,
@@ -16,12 +18,14 @@
 					<h1
 						class="Exo text-3xl sm:text-5xl z-10 text-[#17193B] Exo font-extrabold md:text-nowrap"
 					>
-						Partner program
+						<!-- Partner program -->
+						{m.clientesP_PartnerProgram()}
 						<span><img src={linha_h_azul_svg} class="z-10 right-0" alt="linha" /></span>
 					</h1>
 					<p class="Archivo text-[#25285F] text-lg">
-						Register and discover the benefits of our partner programs programs and how we can work
-						together to achieve exceptional results.
+						<!-- Register and discover the benefits of our partner programs programs and how we can work
+						together to achieve exceptional results. -->
+						{m.clientesP_RegisterAndDiscover()}
 					</p>
 					<div class="space-x-5 flex flex-row">
 						<button>
@@ -29,14 +33,18 @@
 								class="btn-partner bg-[#8abb3f] block w-full rounded-xl px-5 md:px-10 py-4 md:text-lg text-[#F1F1F9] focus:ring sm:w-auto z-10 relative text-nowrap"
 								href="/company#contact"
 							>
-								Become a Partner
+								<!-- Become a Partner -->
+								{m.clientesP_PartnerProgram()}
 							</a>
 						</button>
 
 						<button
 							class=" rounded-xl px-10 py-4 md:text-lg bg-white text-[#17193B] border border-[#17193B] relative"
 						>
-							<a class=" Archivo text-nowrap" href="/customers_and_partners"> Partner Portal </a>
+							<a class=" Archivo text-nowrap" href="/customers_and_partners">
+								<!-- Partner Portal  -->
+								{m.clientesP_PartnerProgram()}
+							</a>
 						</button>
 					</div>
 				</div>
