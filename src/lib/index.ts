@@ -32,14 +32,16 @@ export { default as design_service_svg } from './assets/svg/design_service.svg';
 export { default as estrela_verde_svg } from './assets/svg/estrela_verde.svg';
 export { default as line_graph_svg } from './assets/svg/line_graph.svg';
 export { default as linha_h_azul_3_svg } from './assets/svg/linha_h_azul_3.svg';
+export { default as piramid_home_pt_br_svg } from './assets/svg/piramid_home_pt_br.svg';
+export { default as products_s3_bg_radial_svg } from './assets/svg/products_s3_bg_radial.svg';
 
-export { default as linha_v_amarela_svg } from './assets/svg/linha_v_amarela.svg';
 export { default as linha_h_azul_5_svg } from './assets/svg/linha_h_azul_5.svg';
+export { default as linha_v_amarela_svg } from './assets/svg/linha_v_amarela.svg';
 
 export { default as linha_h_amarela3_svg } from './assets/svg/linha_h_amarela3.svg';
 export { default as linha_h_azul4_svg } from './assets/svg/linha_h_azul4.svg';
-export { default as linha_h_verde2_svg } from './assets/svg/linha_h_verde2.svg';
 export { default as linha_h_laranja2_svg } from './assets/svg/linha_h_laranja2.svg';
+export { default as linha_h_verde2_svg } from './assets/svg/linha_h_verde2.svg';
 
 export { default as portfolio_services_ingles_svg } from './assets/svg/portfolio_services_ingles.svg';
 

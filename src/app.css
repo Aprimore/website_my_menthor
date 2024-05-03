@@ -11,10 +11,26 @@
 }
 
 @font-face {
-	font-family: 'Exo';
-	font-style: normal;
+	font-family: 'Exo-Regular';
+	font-style: regular;
+	font-weight: 500;
+	src: url('/fonts/Exo/Exo-VariableFont_wght.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Exo-Semibold';
+	font-style: regular;
+	font-weight: 600;
+	src: url('fonts/Exo/Exo-VariableFont_wght.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Exo-Bold';
+	font-style: regular;
 	font-weight: 700;
-	src: url('/fonts/Exo/Exo-Bold.ttf');
+	src: url('fonts/Exo/Exo-VariableFont_wght.ttf');
 	font-display: swap;
 }
 
@@ -27,13 +43,25 @@
 }
 
 * {
-	font-family: Arial, sans-serif;
+	font-family: Exo, Arial, sans-serif;
 }
 
 .Archivo {
-	font-family: Archivo, Arial, sans-serif;
+	font-family: Archivo, Arial, ssans-serif;
 }
 
 .Exo {
 	font-family: Exo, Arial, sans-serif;
+}
+
+.Exo-Regular {
+	font-family: Exo-Regular, Arial, sans-serif;
+}
+
+.Exo-Bold {
+	font-family: Exo-Bold, Arial, sans-serif;
+}
+
+.Exo-Semibold {
+	font-family: Exo-Semibold, Arial, sans-serif;
 }

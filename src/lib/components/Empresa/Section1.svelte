@@ -8,7 +8,7 @@
 	<div class="lg:h-[649px] lg:flex flex-row xl:max-w-screen-2xl mx-auto max-lg:p-5" id="about">
 		<div class="lg:w-1/2 flex flex-col justify-center">
 			<div class="lg:max-w-[600px] self-center space-y-8">
-				<h1 class="Exo text-3xl sm:text-4xl z-10 relative text-[#17193B] Exo font-extrabold">
+				<h1 class="text-3xl sm:text-4xl z-10 relative text-[#17193B] Exo-Bold">
 					<!-- The company -->
 					{m.company_TheCompany()}
 					<span><img src={linha_h_azul_2_svg} class="z-10 right-0" alt="linha" /></span>

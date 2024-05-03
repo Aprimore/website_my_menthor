@@ -1,7 +1,7 @@
 <script lang="ts">
-	import * as m from '$paraglide/messages';
 	import { arrow_right_svg, linha_h_7_svg, the_platform_png } from '$lib';
 	import animationData from '$lib/assets/lotties/gif-3.json';
+	import * as m from '$paraglide/messages';
 
 	import lottie from 'lottie-web';
 	import { onMount } from 'svelte';
@@ -29,7 +29,7 @@
 				alt=""
 			/>
 			<div class="space-y-5 py-5 relative max-lg:mt-6">
-				<h1 class="Exo text-2xl lg:text-3xl font-bold text-nowrap">
+				<h1 class="Exo-Semibold text-2xl lg:text-3xl text-nowrap">
 					{m.homepage_section_6_My_menthor()}
 				</h1>
 				<p class="Archivo text-lg">{m.homepage_section_6_Explore()}</p>
@@ -37,7 +37,8 @@
 				<button class="min-w-min">
 					<a
 						class="Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
-						href="/"
+						href="http://mymenthor.com/blog"
+						target="_blank"
 					>
 						{m.button_access()}
 					</a>
@@ -45,7 +46,7 @@
 			</div>
 
 			<div class="space-y-5 mt-6 py-5">
-				<h1 class="Exo text-2xl lg:text-3xl font-bold text-nowrap">
+				<h1 class="Exo-Semibold text-2xl lg:text-3xl text-nowrap">
 					{m.homepage_section_6_Events()}
 				</h1>
 				<p class="Archivo text-lg max-w-96">
@@ -54,7 +55,8 @@
 				<button class="min-w-min">
 					<a
 						class="Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
-						href="/"
+						href="http://mymenthor.com/blog"
+						target="_blank"
 					>
 						{m.button_access()}
 					</a>
@@ -69,7 +71,7 @@
 				alt=""
 			/>
 			<div class="space-y-5 relative py-5 max-lg:mt-6" id="bottom-page">
-				<h1 class="Exo text-2xl lg:text-3xl font-bold text-nowrap">
+				<h1 class="Exo-Semibold text-2xl lg:text-3xl text-nowrap">
 					{m.homepage_section_6_My_Menthor_Academy()}
 				</h1>
 				<p class="Archivo text-lg">{m.homepage_section_6_Develop()}</p>
@@ -84,7 +86,7 @@
 				</button>
 			</div>
 			<div class="space-y-5 mt-6 py-5">
-				<h1 class="Exo text-2xl lg:text-3xl font-bold text-nowrap">
+				<h1 class="Exo-Semibold text-2xl lg:text-3xl text-nowrap">
 					{m.homepage_section_6_Knowledge()}
 				</h1>
 				<p class="Archivo text-lg">
@@ -107,7 +109,7 @@
 			<div bind:this={animationContainer} class=" lg:absolute -top-14" />
 
 			<div class="bg-[#F1F1F9] flex flex-col justify-center p-10 px-10 z-30 relative lg:mt-auto">
-				<h1 class="Exo text-4xl font-bold bottom-0 text-nowrap">
+				<h1 class="Exo-Semibold text-4xl bottom-0 text-nowrap">
 					{m.homepage_section_6_Resources()}
 				</h1>
 				<p class="Archivo text-lg mt-6">

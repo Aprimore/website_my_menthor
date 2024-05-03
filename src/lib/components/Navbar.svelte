@@ -18,18 +18,23 @@
 				></a
 				>
 			</li> -->
-				<LanguageSwitcher />
+
 				<li class=" bg-[#d4d4ed]">
-					<button
-						type="button"
-						class="login Archivo block py-2 px-3 text-[#17193B] rounded bg-[#F1F1F9]">Login</button
+					<a
+						class="login Archivo block py-2 px-3 text-[#17193B] rounded bg-[#F1F1F9]"
+						href="http://mymenthor.com.br/"
+						target="_blank">Login</a
 					>
 				</li>
-				<li>
-					<a
+				<li class=" bg-[#F1F1F9] px-2">
+					<!-- <a
 						href="/"
 						class="language block py-2 px-3 text-[#17193B] rounded md:hover:bg-transparent Archivo"
 						>PT</a
+
+						> -->
+					<span class="language block text-[#17193B] rounded md:hover:bg-transparent Archivo"
+						><LanguageSwitcher /></span
 					>
 				</li>
 			</ul>

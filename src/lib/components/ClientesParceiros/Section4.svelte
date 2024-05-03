@@ -26,7 +26,7 @@
 			>
 				<div class="lg:max-w-2xl p-6 rounded-lg space-y-6">
 					<h1
-						class="Exo text-3xl md:text-4xl lg:text-5xl text-[#17193B] font-bold relative max-sm:text-nowrap"
+						class="Exo-Bold text-3xl md:text-4xl lg:text-5xl text-[#17193B] relative max-sm:text-nowrap"
 					>
 						<!-- Customer service channel -->
 						{m.clientesP_CustomerServiceChannel()}

@@ -17,7 +17,7 @@
 		<div class="w-1/2 relative p-10 space-y-10"> -->
 
 <section class="w-full bg-[#F1F1F9] py-20">
-	<h1 class="text-[#17193B] text-4xl font-bold mb-12 Exo text-center">
+	<h1 class="text-[#17193B] text-4xl mb-12 Exo-Bold text-center">
 		{m.solutions_PlatformCharacteristics()}
 		<!-- Platform characteristics -->
 	</h1>
@@ -32,36 +32,36 @@
 				<div class="md:w-1/2 relative my-auto">
 					<div class="lg:p-20 max-md:p-10">
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Profits, revenue and margin -->
 								{m.homepage_section4_Profits()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Perenniality  -->
 								{m.produtos_Sustainability_1()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Sustainability -->
 								{m.produtos_Sustainability_2()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								{m.produtos_Continuity()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Competitive advantage -->
 								{m.produtos_CompetitiveAdvantage()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Understanding the operation -->
 								{m.produtos_UnderstandingTheOperation()}
 							</p>
@@ -79,49 +79,49 @@
 				<div class="md:w-1/2 relative my-auto">
 					<div class="lg:p-20 p-10">
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Maturity and performance -->
 								{m.produtos_MaturityAndPerformance()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Integration of initiatives -->
 								{m.produtos_IntegrationOfInitiatives()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Reduces functional silos -->
 								{m.produtos_ReducesFunctionalSilos()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Visibility of the impact of changes -->
 								{m.produtos_VisibilityOfTheImpactOfChanges()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Knowledge retention -->
 								{m.produtos_KnowledgeRetention()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Quality in products and services -->
 								{m.produtos_QualityInProductsAndServices()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Generating value for stakeholders -->
 								{m.produtos_GeneratingValueForStakeholders()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Customer experience -->
 								{m.produtos_CustomerExperience()}
 							</p>
@@ -139,37 +139,37 @@
 				<div class="md:w-1/2 relative my-auto">
 					<div class="lg:p-20 max-md:p-10">
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Standardization -->
 								{m.produtos_Standardization()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Efficiency and productivity x effectiveness -->
 								{m.produtos_EfficiencyAndProductivityXEffectiveness()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Reduction of costs, deadlines and rework -->
 								{m.produtos_ReductionOfCostsDeadlinesAndRework()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Process innovation -->
 								{m.produtos_ProcessInnovation()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Compliance, conformity and risks -->
 								{m.produtos_ComplianceConformityAndRisks()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo check text-[#17193B] font-bold text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Clarity of roles and responsibilities -->
 								{m.produtos_ClarityOfRolesAndResponsibilities()}
 							</p>

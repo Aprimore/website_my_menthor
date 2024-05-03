@@ -1,6 +1,6 @@
 <script lang="ts">
-	import * as m from '$paraglide/messages';
 	import { checkmark_svg, linha_h_2_svg, the_platform_png } from '$lib';
+	import * as m from '$paraglide/messages';
 
 	import animationData from '$lib/assets/lotties/gif-2.json';
 
@@ -24,7 +24,7 @@
 		<div class="column1 lg:w-2/3">
 			<div class="ml-14">
 				<h1 class="ml-10 max-w-lg text-2xl sm:text-4xl relative Exo font-extrabold text-[#17193B]">
-					{m.homepage_section4_Organizing()} <br />
+					{m.homepage_section4_Organizing()}
 					{m.homepage_section4_simpler()}
 				</h1>
 				<span class="ml-2 absolute"><img src={linha_h_2_svg} alt="" /></span>
@@ -34,32 +34,38 @@
 					<div
 						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
 					>
-						<p class="Exo check text-base xl:text-xl">{m.homepage_section4_Profits()}</p>
+						<p class="Exo-Semibold check text-base xl:text-xl">
+							{m.homepage_section4_Profits()}
+						</p>
 					</div>
 					<div
 						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
 					>
-						<p class="Exo check text-base xl:text-xl">{m.homepage_section4_Quality()}</p>
+						<p class="Exo-Semibold check text-base xl:text-xl font-bold">
+							{m.homepage_section4_Quality()}
+						</p>
 					</div>
 					<div
 						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
 					>
-						<p class="Exo check text-base xl:text-xl">{m.homepage_section4_Value()}</p>
+						<p class="Exo-Semibold check text-base xl:text-xl">{m.homepage_section4_Value()}</p>
 					</div>
 					<div
 						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
 					>
-						<p class="Exo check text-base xl:text-xl">{m.homepage_section4_Process()}</p>
+						<p class="Exo-Semibold check text-base xl:text-xl">{m.homepage_section4_Process()}</p>
 					</div>
 					<div
 						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
 					>
-						<p class="Exo check text-base xl:text-xl">{m.homepage_section4_Maturity()}</p>
+						<p class="Exo-Semibold check text-base xl:text-xl">{m.homepage_section4_Maturity()}</p>
 					</div>
 					<div
 						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
 					>
-						<p class="Exo check text-base md:text-xl">{m.homepage_section4_Sustainability()}</p>
+						<p class="Exo-Semibold check text-base md:text-xl">
+							{m.homepage_section4_Sustainability()}
+						</p>
 					</div>
 				</div>
 

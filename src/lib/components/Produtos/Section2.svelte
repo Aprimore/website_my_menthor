@@ -23,7 +23,7 @@
 <section class="w-full relative rounded-lg bg-[#F1F1F9]">
 	<div class="lg:h-[634px] lg:max-w-screen-2xl mx-auto lg:flex items-center flex-row lg:my-16">
 		<div class="lg:w-1/2 relative lg:pl-12 max-lg:flex max-lg:flex-col items-center">
-			<h1 class="Exo text-[#17193B] text-4xl font-bold relative lg:ml-10 mt-12">
+			<h1 class="Exo-Bold text-[#17193B] text-4xl font-bold relative lg:ml-10 mt-12">
 				{m.produtos_WhatIs()}
 				{m.produtos_BusinessArchitectureSoftware()}
 				<!-- What is <span class="text-[#454AB0]">Business <br /> Architecture Software?</span> -->

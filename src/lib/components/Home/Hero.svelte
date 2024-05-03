@@ -15,7 +15,7 @@
 			<p class="z-10 relative text-[#FCC614] text-lg Exo tracking-widest">
 				{m.homepage_header_business()}
 			</p>
-			<h1 class="text-2xl sm:text-4xl z-10 relative text-white Exo font-extrabold">
+			<h1 class="text-2xl sm:text-4xl z-10 relative text-white Exo-Bold">
 				{m.homepage_header_yourcompany()}
 				<span><img src={linha_h_5_svg} class="z-10 sm:absolute right-0" alt="linha" /></span>
 			</h1>

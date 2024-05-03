@@ -30,7 +30,7 @@
 		<div class="lg:w-1/2 flex justify-center items-center border-black">
 			<div class="card bg-[#F1F1F9] lg:max-w-[580px] lg:mr-36">
 				<h1
-					class="Exo text-3xl sm:text-4xl relative text-[#17193B] font-extrabold whitespace-nowrap max-lg:text-center mb-5"
+					class="Exo-Bold text-3xl sm:text-4xl relative text-[#17193B] whitespace-nowrap max-lg:text-center mb-5"
 				>
 					<span class="text-[#EB642A] relative">
 						<!-- Your success -->

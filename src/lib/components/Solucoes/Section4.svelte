@@ -11,61 +11,61 @@
 	>
 		<div class="">
 			<div class="rounded-t-lg h-[104px] bg-white flex justify-center items-center">
-				<h1 class="Exo underline text-white text-3xl font-bold">
+				<h1 class="Exo-Bold underline text-white text-3xl">
 					<!-- Packages -->
 					{m.produtos_MyMenthorIs()}
 				</h1>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">
+				<p class="text-base Archivo text-[#25285F]">
 					<!-- Administrator License -->
 					{m.solutions_AdministratorLicense()}
 				</p>
 			</div>
 			<div class=" h-[62px] bg-white flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">
+				<p class="text-base Archivo text-[#25285F]">
 					<!-- User License -->
 					{m.solutions_UserLicense()}
 				</p>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">
+				<p class="text-base Archivo text-[#25285F]">
 					<!-- Viewer License -->
 					{m.solutions_ViewerLicense()}
 				</p>
 			</div>
 			<div class=" h-[62px] bg-white flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">
+				<p class="text-base Archivo text-[#25285F]">
 					<!-- Technical Support (8x5) -->
 					{m.solutions_TechnicalSupport()}
 				</p>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">
+				<p class="text-base Archivo text-[#25285F]">
 					<!-- Framework, Knowledge Base and Online Training -->
 					{m.solutions_FrameworkKnowledgeBaseAndOnlineTraining()}
 				</p>
 			</div>
 			<div class=" h-[62px] bg-white flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">
+				<p class="text-base Archivo text-[#25285F]">
 					<!-- Administrator / Architect (8h) -->
 					{m.solutions_AdministratorArchitect()}
 				</p>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">
+				<p class="text-base Archivo text-[#25285F]">
 					<!-- Business Diagnosis and Implementation Strategy -->
 					{m.solutions_BusinessDiagnosisAndImplementationStrategy()}
 				</p>
 			</div>
 			<div class=" h-[62px] bg-white flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">
+				<p class="text-base Archivo text-[#25285F]">
 					<!-- Customer Success -->
 					{m.solutions_CustomerSuccess()}
 				</p>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] font-bold">
+				<p class="text-base Archivo text-[#25285F]">
 					<!-- Ongoing - Mentoring / Consulting (Package of hours) -->
 					{m.solutions_OngoingMentoringConsulting()}
 				</p>
@@ -73,38 +73,38 @@
 		</div>
 		<div class=" border border-gray-200 shadow-md rounded">
 			<div class="rounded-t-lg h-[104px] bg-[#EB642A] flex justify-center items-center">
-				<h1 class="Exo underline text-[#F1F1F9] text-3xl font-bold">STARTER</h1>
+				<h1 class="Exo-Bold underline text-[#F1F1F9] text-3xl">STARTER</h1>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">1</p>
+				<p class="text-xl Archivo text-[#25285F]">1</p>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">2</p>
+				<p class="text-xl Archivo text-[#25285F]">2</p>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">5</p>
+				<p class="text-xl Archivo text-[#25285F]">5</p>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">4 Tickets</p>
+				<p class="text-xl Archivo text-[#25285F]">4 Tickets</p>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">5</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">6</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">6</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">7</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">8</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">
+				<p class="text-xl Archivo text-[#25285F]">
 					<!-- Adicional -->
 					{m.solutions_Additional()}
 				</p>
@@ -112,38 +112,38 @@
 		</div>
 		<div class=" border border-gray-200 shadow-md rounded">
 			<div class="rounded-t-lg h-[104px] bg-[#8ABB3F] flex justify-center items-center">
-				<h1 class="Exo underline text-[#F1F1F9] text-3xl font-bold">BASIC</h1>
+				<h1 class="Exo-Bold underline text-[#F1F1F9] text-3xl">BASIC</h1>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">1</p>
+				<p class="text-xl Archivo text-[#25285F]">1</p>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">5</p>
+				<p class="text-xl Archivo text-[#25285F]">5</p>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">25</p>
+				<p class="text-xl Archivo text-[#25285F]">25</p>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">8 Tickets</p>
+				<p class="text-xl Archivo text-[#25285F]">8 Tickets</p>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">5</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">6</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">6</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">7</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">8</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">
+				<p class="text-xl Archivo text-[#25285F]">
 					<!-- Adicional -->
 					{m.produtos_MyMenthorIs()}
 				</p>
@@ -151,38 +151,38 @@
 		</div>
 		<div class=" border border-gray-200 shadow-md rounded">
 			<div class="rounded-t-lg h-[104px] bg-[#454AB0] flex justify-center items-center">
-				<h1 class="Exo underline text-[#F1F1F9] text-3xl font-bold">PREMIUM</h1>
+				<h1 class="Exo-Bold underline text-[#F1F1F9] text-3xl">PREMIUM</h1>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">1</p>
+				<p class="text-xl Archivo text-[#25285F]">1</p>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">10</p>
+				<p class="text-xl Archivo text-[#25285F]">10</p>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">50</p>
+				<p class="text-xl Archivo text-[#25285F]">50</p>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">12 Tickets</p>
+				<p class="text-xl Archivo text-[#25285F]">12 Tickets</p>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">5</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">6</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">6</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">7</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">8</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">
+				<p class="text-xl Archivo text-[#25285F]">
 					<!-- Adicional -->
 					{m.solutions_Additional()}
 				</p>
@@ -190,38 +190,38 @@
 		</div>
 		<div class=" border border-gray-200 shadow-md rounded">
 			<div class="rounded-t-lg h-[104px] bg-[#FCC614] flex justify-center items-center">
-				<h1 class="Exo underline text-[#17193B] text-3xl font-bold">ENTERPRISE</h1>
+				<h1 class="Exo-Bold underline text-[#17193B] text-3xl">ENTERPRISE</h1>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">1</p>
+				<p class="text-xl Archivo text-[#25285F]">1</p>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">TBD</p>
+				<p class="text-xl Archivo text-[#25285F]">TBD</p>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">TBD</p>
+				<p class="text-xl Archivo text-[#25285F]">TBD</p>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">TBD</p>
+				<p class="text-xl Archivo text-[#25285F]">TBD</p>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">5</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">6</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">6</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">7</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<!-- <p class="text-xl Archivo text-[#25285F] font-bold">8</p> -->
+				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->
 				<img src={checkmark_2_svg} alt="" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F] font-bold">
+				<p class="text-xl Archivo text-[#25285F]">
 					<!-- Adicional -->
 					{m.solutions_Additional()}
 				</p>

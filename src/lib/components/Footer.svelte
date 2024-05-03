@@ -1,5 +1,4 @@
 <script lang="ts">
-	import * as m from '$paraglide/messages';
 	import {
 		arrow_right_svg,
 		facebook_svg,
@@ -9,6 +8,7 @@
 		mail_svg,
 		youtube_svg
 	} from '$lib';
+	import * as m from '$paraglide/messages';
 	import Copyright from './Copyright.svelte';
 </script>
 
@@ -52,7 +52,7 @@
 
 				<div class="lg:ml-24 w-full">
 					<div class="w-full mb-10">
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">
+						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 							{m.footer_Products()}
 						</h4>
 						<ul class="space-y-3">
@@ -67,7 +67,7 @@
 								</a>
 							</li>
 						</ul>
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5 mt-5">
+						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5 mt-5">
 							{m.footer_Stakeholders()}
 						</h4>
 						<ul class="space-y-3">
@@ -91,7 +91,7 @@
 				</div>
 				<div class="lg:ml-24 w-full">
 					<div class="w-full mb-10">
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">
+						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 							{m.footer_Partner_Program()}
 						</h4>
 						<ul class="space-y-3">
@@ -121,7 +121,7 @@
 
 				<div class="lg:ml-24 w-full">
 					<div class="w-full mb-10">
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">
+						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 							{m.footer_Knowledge_Base()}
 						</h4>
 						<ul class="space-y-3">
@@ -143,7 +143,7 @@
 
 				<div class="lg:ml-24 w-full relative">
 					<div class="w-full mb-10">
-						<h4 class="text-lg font-semibold text-dark dark:text-white mb-5">
+						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 							{m.footer_Solutions()}
 						</h4>
 						<ul class="space-y-3">

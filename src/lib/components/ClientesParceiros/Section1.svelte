@@ -15,9 +15,7 @@
 		<div class="lg:w-1/2 flex justify-center items-center mx-auto">
 			<div class="card bg-white lg:w-[694px] max-h-[364px] rounded-md relative">
 				<div class="p-10 xl:p-16 space-y-7 relative">
-					<h1
-						class="Exo text-3xl sm:text-5xl z-10 text-[#17193B] Exo font-extrabold md:text-nowrap"
-					>
+					<h1 class="text-3xl sm:text-5xl z-10 text-[#17193B] Exo-Bold md:text-nowrap">
 						<!-- Partner program -->
 						{m.clientesP_PartnerProgram()}
 						<span><img src={linha_h_azul_svg} class="z-10 right-0" alt="linha" /></span>

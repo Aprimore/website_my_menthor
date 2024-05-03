@@ -19,6 +19,7 @@
 			animationData
 		});
 	});
+
 	import { base } from '$app/paths';
 </script>
 
@@ -33,7 +34,7 @@
 				class="lg:space-y-6 lg:p-10 lg:ml-10 max-lg:flex lg:flex-col max-md:flex-col justify-center items-center w-full h-full"
 			>
 				<div>
-					<h1 class="Exo text-4xl md:text-5xl relative text-[#17193B] Exo font-extrabold mb-10">
+					<h1 class="text-4xl md:text-5xl relative text-[#17193B] Exo-Bold mb-10">
 						<!-- Contact us <span class="font-normal"> or </span> <br /> schedule a demo! -->
 						{m.company_ContactUsOr()} <br />
 						{m.company_ScheduleADemo()}
@@ -58,7 +59,7 @@
 					<form action="" class="flex flex-col gap-y-5 p-1">
 						<label class="block">
 							<span
-								class="Exo font-bold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block"
+								class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block"
 							>
 								Full name
 							</span>
@@ -72,7 +73,7 @@
 						</label>
 						<label class="block">
 							<span
-								class="Exo font-bold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block"
+								class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block"
 							>
 								E-mail
 							</span>
@@ -86,7 +87,7 @@
 						</label>
 						<label class="block">
 							<span
-								class="Exo font-bold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block"
+								class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block"
 							>
 								Phone
 							</span>
@@ -100,7 +101,7 @@
 						</label>
 						<label class="block">
 							<span
-								class="Exo font-bold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block"
+								class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block"
 							>
 								Company
 							</span>
@@ -114,7 +115,7 @@
 						</label>
 						<label class="block">
 							<span
-								class="Exo font-bold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block"
+								class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block"
 							>
 								Role
 							</span>
@@ -128,7 +129,7 @@
 						</label>
 						<label class="block">
 							<span
-								class="Exo font-bold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block"
+								class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block"
 							>
 								Message
 							</span>

@@ -7,7 +7,7 @@
 <section class="relative rounded-lg my-12">
 	<div class="max-w-screen-2xl mx-auto max-sm:p-2 space-y-2" id="modules">
 		<div class="p-6 rounded-lg mt-2 text-center max-md:space-y-2">
-			<h1 class="text-4xl sm:text-5xl relative Exo font-extrabold text-[#17193B] text-nowrap">
+			<h1 class="text-4xl sm:text-5xl relative Exo-Bold text-[#17193B] text-nowrap">
 				<!-- Platform Modules -->
 				{m.solutions_PlatformModules()}
 			</h1>
@@ -19,7 +19,7 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg relative">
-					<h2 class=" title-om Exo text-2xl font-bold relative max-w-sm text-[#17193B] text-nowrap">
+					<h2 class=" title-om Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
 						<!-- Organizational Maturity -->
 						{m.solutions_OrganizationalMaturity()}
 					</h2>
@@ -35,7 +35,7 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-od Exo text-2xl font-bold relative max-w-sm text-[#17193B] text-nowrap">
+					<h2 class="title-od Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
 						<!-- Organizational Design -->
 						{m.solutions_OrganizationalDesign()}
 					</h2>
@@ -54,7 +54,7 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-sd Exo text-2xl font-bold relative max-w-sm text-[#17193B] text-nowrap">
+					<h2 class="title-sd Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
 						<!-- Strategy deployment -->
 						{m.solutions_StrategyDeployment()}
 					</h2>
@@ -70,7 +70,7 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-ms Exo text-2xl font-bold relative max-w-sm text-[#17193B] text-nowrap">
+					<h2 class="title-ms Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
 						<!-- Measurement System -->
 						{m.solutions_MeasurementSystem()}
 					</h2>
@@ -89,7 +89,7 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-pm Exo text-2xl font-bold relative max-w-sm text-[#17193B] text-nowrap">
+					<h2 class="title-pm Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
 						<!-- Process Management -->
 						{m.solutions_ProcessManagement_1()}
 					</h2>
@@ -106,7 +106,7 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-ac Exo text-2xl font-bold relative max-w-sm text-[#17193B] text-nowrap">
+					<h2 class="title-ac Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
 						<!-- Architecture components -->
 						{m.solutions_ArchitectureComponents()}
 					</h2>
@@ -125,7 +125,7 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-pm2 Exo text-2xl font-bold relative max-w-sm text-[#17193B] text-nowrap">
+					<h2 class="title-pm2 Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
 						<!-- Process Management -->
 						{m.solutions_ProcessManagement_2()}
 					</h2>
@@ -140,7 +140,7 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-cm Exo text-2xl font-bold relative max-w-sm text-[#17193B] text-nowrap">
+					<h2 class="title-cm Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
 						<!-- Change Management -->
 						{m.solutions_ChangeManagement()}
 					</h2>

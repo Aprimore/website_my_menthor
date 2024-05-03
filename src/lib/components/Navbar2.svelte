@@ -24,11 +24,11 @@
 </script>
 
 <nav
-	class="relative max-md:py-3 px-6 py-8 mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full"
+	class="bg-[#F1F1F9] bg-opacity-80 relative max-md:py-3 px-6 py-8 mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full"
 >
 	<div class="flex items-center justify-between" id={generateDynamicId(currentPage)}>
 		<a
-			class="logoHeader font-bold text-white hover:text-slate-300 transition-transform transform hover:-translate-y-1"
+			class="logoHeader text-white hover:text-slate-300 transition-transform transform hover:-translate-y-1"
 			href="/"
 		>
 			<img src={logo_navbar_svg} class="" alt="" />
@@ -60,16 +60,16 @@
 	</div>
 
 	<div
-		class="nav-links whitespace-nowrap mt-8 space-y-4 lg:flex sm:space-y-0 lg:flex-row lg:items-center lg:space-x-3 md:space-x-2 text-center md:mt-0 {showMenu
+		class=" nav-links whitespace-nowrap mt-8 space-y-4 lg:flex sm:space-y-0 lg:flex-row lg:items-center lg:space-x-3 md:space-x-2 text-center md:mt-0 {showMenu
 			? 'flex'
 			: 'hidden'}"
 	>
 		<a class={navbarClasses} href="/">{m.navbar_Home()}</a>
-		<a class={navbarClasses} href="/">{m.navbar_Blog()}</a>
 		<a class={navbarClasses} href="/products">{m.navbar_Products()}</a>
 		<a class={navbarClasses} href="/solutions">{m.navbar_Solutions()}</a>
 		<a class={navbarClasses} href="/customers_and_partners">{m.navbar_Clients_and_Partners()}</a>
 		<a class={navbarClasses} href="/resources">{m.navbar_Resources()}</a>
+		<a class={navbarClasses} href="/">{m.navbar_Blog()}</a>
 		<a class={navbarClasses} href="/company">{m.navbar_Company()}</a>
 	</div>
 </nav>

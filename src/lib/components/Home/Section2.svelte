@@ -24,7 +24,7 @@
 			class="card1 max-w-[574px] max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-12"
 		>
 			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 lg:mr-20 py-10">
-				<h3 class="Exo text-2xl font-bold relative max-w-sm text-[#17193B]">
+				<h3 class="Exo-Semibold text-2xl  relative max-w-sm text-[#17193B]">
 					<span class="absolute left-[-45px]"><img src={track_changes_svg} alt="" /></span>
 
 					{m.homepage_section2_holistic()}
@@ -39,7 +39,7 @@
 			class="card1 max-w-[574px] max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg sm:mt-12 mt-4"
 		>
 			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 lg:mr-20 py-10">
-				<h3 class="Exo text-2xl font-bold relative max-w-sm text-[#17193B]">
+				<h3 class="Exo-Semibold text-2xl  relative max-w-sm text-[#17193B]">
 					<span class="absolute left-[-45px]"><img src={design_service_svg} alt="" /></span>
 
 					{m.homepage_section2_Organizational()}
@@ -56,7 +56,7 @@
 			class="card1 max-w-[574px] max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg sm:mt-6"
 		>
 			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 py-10">
-				<h3 class="Exo text-2xl font-bold relative max-w-sm text-[#17193B]">
+				<h3 class="Exo-Semibold text-2xl  relative max-w-sm text-[#17193B]">
 					<span class="absolute left-[-45px]"><img src={table_chart_view_svg} alt="" /></span>
 					{m.homepage_section2_Evolution()}
 				</h3>
@@ -70,7 +70,7 @@
 			class="card1 max-w-[574px] max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg sm:mt-6 mt-4"
 		>
 			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 lg:mr-20 py-10">
-				<h3 class="Exo text-2xl font-bold relative max-w-sm text-[#17193B]">
+				<h3 class="Exo-Semibold text-2xl  relative max-w-sm text-[#17193B]">
 					<span class="absolute left-[-45px]"><img src={linked_services_svg} alt="" /></span>
 					{m.homepage_section2_Organizational_alignment()}
 				</h3>

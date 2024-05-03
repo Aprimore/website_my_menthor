@@ -18,12 +18,15 @@
 	 * @type {Record<import("$paraglide/runtime").AvailableLanguageTag, string>}
 	 */
 	const labels = {
-		en: 'English',
-		'pt-br': 'Brasileiro'
+		en: '🇺🇸 EN',
+		'pt-br': '🇧🇷 PT-BR'
 	};
 </script>
 
-<select on:change={(e) => switchToLanguage(/** @type {any} */ (e).target.value)}>
+<select
+	class="relative h-[2.5rem] bg-[#F1F1F9]"
+	on:change={(e) => switchToLanguage(/** @type {any} */ (e).target.value)}
+>
 	{#each availableLanguageTags as langTag}
 		<option value={langTag} selected={languageTag() === langTag}>{labels[langTag]}</option>
 	{/each}

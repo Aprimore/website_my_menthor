@@ -19,13 +19,13 @@
 	} from '$lib';
 </script>
 
-<section class=" relative rounded-lg">
+<section class="relative rounded-lg">
 	<div class="w-full flex justify-center space-x-6">
 		<div
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-12 flex items-center"
 		>
 			<div class="flex flex-col mx-auto p-6 rounded-lg relative">
-				<h2 class=" title-om Exo text-2xl font-bold relative max-w-sm text-transparent">.</h2>
+				<h2 class=" title-om Exo text-2xl  relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					{m.produtos_ItSupportsDifferentLevelsOfMaturity()}
@@ -39,7 +39,7 @@
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-12 flex items-center"
 		>
 			<div class="flex flex-col mx-auto p-6 rounded-lg">
-				<h2 class="title-od Exo text-2xl font-bold relative max-w-sm text-transparent">.</h2>
+				<h2 class="title-od Exo text-2xl  relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					{m.produtos_EmphasizesBusinessProcessManagement()}
@@ -54,7 +54,7 @@
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-6 flex items-center"
 		>
 			<div class="flex flex-col mx-auto p-6 rounded-lg">
-				<h2 class="title-sd Exo text-2xl font-bold relative max-w-sm text-transparent">.</h2>
+				<h2 class="title-sd Exo text-2xl  relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					{m.produtos_EmphasizesBusinessProcessManagement()}
@@ -68,7 +68,7 @@
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-6 flex items-center"
 		>
 			<div class="flex flex-col mx-auto p-6 rounded-lg">
-				<h2 class="title-ms Exo text-2xl font-bold relative max-w-sm text-transparent">.</h2>
+				<h2 class="title-ms Exo text-2xl  relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					{m.produtos_DecompplicatesAndDecentralizesTheTopic()}

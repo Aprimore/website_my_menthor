@@ -16,17 +16,12 @@
 		id="platform"
 	>
 		<div class="lg:w-1/2 lg:max-w-[600px] space-y-4 md:space-y-6 relative">
-			<h1 class="Exo text-[#17193B] text-4xl font-bold relative">
+			<h1 class="Exo-Bold text-[#17193B] text-4xl font-bold relative">
 				{m.produtos_MyMenthorIs()}
 				<span><img src={linha_h_4_svg} class="z-10" alt="linha" /></span>
 			</h1>
 			<p class="text-[#25285F] Archivo text-lg p-1">
 				{m.produtos_BusinessArchitecturePlatform()}
-				<!-- <strong> My Menthor </strong> is a
-				<strong> SaaS Business Architecture platform </strong>
-				that <strong> helps to unfold the company's strategy </strong> into a vision oriented by
-				end-to-end, providing visibility of processes and aligning organizational components to
-				<strong> achieve business objectives </strong>. -->
 			</p>
 			<div
 				class="flex items-center w-full

@@ -34,7 +34,7 @@
 		<div class="md:w-1/2 flex flex-col justify-center">
 			<div class="card space-y-10 p-5 md:p-12 bg-[#F1F1F9]">
 				<h1
-					class="Exo text-4xl sm:text-5xl z-10 relative text-[#17193B] Exo font-extrabold max-lg:text-center"
+					class="Exo text-4xl sm:text-5xl z-10 relative text-[#17193B] Exo-Bold max-lg:text-center"
 				>
 					<!-- Purpose -->
 					{m.company_Purpose()}
