@@ -50,7 +50,7 @@
 			class="mt-5 lg:mt-24 right-0 flex lg:absolute card1 bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl xl:max-w-screen-md max-w-[600px] self-center"
 		>
 			<div class="text-[#17193B] rounded-lg p-12 xl:p-16 w-full" id="products-about">
-				<h1 class="Exo text-4xl font-bold relative">
+				<h1 class="Exo-Bold text-4xl  relative">
 					{m.homepage_section1_title()}
 					<span><img src={linha_h_4_svg} class="z-10" alt="linha" /></span>
 				</h1>

@@ -69,7 +69,7 @@
 		<a class={navbarClasses} href="/solutions">{m.navbar_Solutions()}</a>
 		<a class={navbarClasses} href="/customers_and_partners">{m.navbar_Clients_and_Partners()}</a>
 		<a class={navbarClasses} href="/resources">{m.navbar_Resources()}</a>
-		<a class={navbarClasses} href="/">{m.navbar_Blog()}</a>
+		<a class={navbarClasses} href="http://mymenthor.com/blog" target="_blank">{m.navbar_Blog()}</a>
 		<a class={navbarClasses} href="/company">{m.navbar_Company()}</a>
 	</div>
 </nav>

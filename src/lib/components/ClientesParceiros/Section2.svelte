@@ -32,7 +32,7 @@
 				<h1
 					class="Exo-Bold text-3xl sm:text-4xl relative text-[#17193B] whitespace-nowrap max-lg:text-center mb-5"
 				>
-					<span class="text-[#EB642A] relative">
+					<span class="text-[#EB642A] relative Exo-Bold">
 						<!-- Your success -->
 						{m.clientesP_YourSuccessIsOurSuccess()}
 						<img

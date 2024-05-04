@@ -22,7 +22,7 @@
 	font-family: 'Exo-Semibold';
 	font-style: regular;
 	font-weight: 600;
-	src: url('fonts/Exo/Exo-VariableFont_wght.ttf');
+	src: url('/fonts/Exo/Exo-VariableFont_wght.ttf');
 	font-display: swap;
 }
 
@@ -30,7 +30,7 @@
 	font-family: 'Exo-Bold';
 	font-style: regular;
 	font-weight: 700;
-	src: url('fonts/Exo/Exo-VariableFont_wght.ttf');
+	src: url('/fonts/Exo/Exo-VariableFont_wght.ttf');
 	font-display: swap;
 }
 
@@ -43,7 +43,7 @@
 }
 
 * {
-	font-family: Exo, Arial, sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 .Archivo {

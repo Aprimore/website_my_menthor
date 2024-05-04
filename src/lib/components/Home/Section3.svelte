@@ -9,7 +9,7 @@
 			<img src={piramid_home_pt_br_svg} class="" alt="" />
 		</div>
 		<div class="max-lg:p-10 lg:w-1/2 space-y-10 mt-8 lg:mt-16 max-lg:order-1">
-			<h1 class="text-2xl sm:text-4xl relative Exo font-extrabold text-[#17193B]">
+			<h1 class="text-2xl sm:text-4xl relative Exo-Bold text-[#17193B]">
 				{m.homepage_section3_Breaking()}
 			</h1>
 			<span class=""><img src={linha_h_1_svg} alt="" /></span>

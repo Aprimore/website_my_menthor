@@ -23,7 +23,7 @@
 	<div class="flex max-lg:flex-col max-w-screen-2xl mx-auto">
 		<div class="column1 lg:w-2/3">
 			<div class="ml-14">
-				<h1 class="ml-10 max-w-lg text-2xl sm:text-4xl relative Exo font-extrabold text-[#17193B]">
+				<h1 class="ml-10 max-w-lg text-2xl sm:text-4xl relative Exo-Bold text-[#17193B]">
 					{m.homepage_section4_Organizing()}
 					{m.homepage_section4_simpler()}
 				</h1>

@@ -9,8 +9,8 @@
 			<img src={rocket_png} class="z-20 mt-2 relative max-lg:max-w-64" alt="" />
 		</div>
 		<div class="lg:w-1/2 relative z-20 space-y-6 lg:max-w-screen-md flex flex-col justify-center">
-			<h1 class="text-[#FCC614] Exo text-2xl">{m.homepage_section_5_Come()}</h1>
-			<h3 class="text-[#F1F1F9] Exo text-3xl font-bold">
+			<h1 class="text-[#FCC614] Exo-Semibold text-2xl">{m.homepage_section_5_Come()}</h1>
+			<h3 class="text-[#F1F1F9] Exo-Semibold text-3xl font-bold">
 				{m.homepage_section_5_My_Menthor()}
 
 				<!-- <span class="text-[#FCC614]"> My Menthor </span> is the complete plataform to your company's
