@@ -1,6 +1,5 @@
 <script>
 	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
 	import {
 		arrow_right_svg,
 		clientes_parceiros_1_png,
@@ -27,14 +26,11 @@
 					<span><img src={linha_h_amarela2_svg} class="z-10 right-0" alt="linha" /></span>
 				</h1>
 				<p class="text-[#D4D4ED] Archivo text-lg">
-					<!-- The platform is aimed at companies wishing to implement, sustain or leverage management,
-							regardless of their level of maturity. -->
+					<!-- The platform is aimed at companies wishing to implement, sustain or leverage management, regardless of their level of maturity. -->
 					{m.produtos_ThePlatformIsAimedAtCompanies()}
 				</p>
 				<p class="text-[#D4D4ED] Archivo text-lg">
-					<!-- We develop and empower people and organizations through their executives, managers, owners,
-								custodians and process executors, empowering and engage them to improve the performance of
-								their processes and consequently the organization's results. -->
+					<!-- We develop and empower people and organizations through their executives, managers, owners, custodians and process executors, empowering and engage them to improve the performance of their processes and consequently the organization's results. -->
 					{m.produtos_WeDevelopAndEmpowerPeopleAndOrganizations()}
 				</p>
 				<p class="text-[#D4D4ED] Archivo text-lg">

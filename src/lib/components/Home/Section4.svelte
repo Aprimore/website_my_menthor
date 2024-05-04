@@ -76,13 +76,13 @@
 		<div class="mx-16 lg:w-[45%] flex flex-col self-center">
 			<div class=" space-y-5">
 				<p class="Archivo text-xl text-[#25285F]">
-					{m.homepage_section4_My_Menthor()}
+					{@html m.homepage_section4_My_Menthor()}
 					<!-- My Menthor acts as a  Digital Mentor  with an
 					 approach centered  on <span class="text-[#43ACB5]">being</span> and not on
 					disruptive technologies. -->
 				</p>
 				<p class="Archivo text-xl text-[#25285F]">
-					{m.homepage_section4_It_acts_as()}
+					{@html m.homepage_section4_It_acts_as()}
 
 					<!-- It acts as an  information  <span class="text-[#43ACB5]"> hub </span>,
 					 organizing knowledge  in a single repository. -->

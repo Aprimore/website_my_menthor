@@ -1,6 +1,5 @@
 <script>
 	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
 	import { linha_h_3_svg } from '$lib';
 </script>
 
@@ -76,8 +75,7 @@
 					</h2>
 
 					<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
-						<!-- Facilitates the mapping of strategy indicators, processes and projects, guiding them in
-						an end-to-end vision. -->
+						<!-- Facilitates the mapping of strategy indicators, processes and projects, guiding them in an end-to-end vision. -->
 						{m.solutions_FacilitatesTheMapping()}
 					</h3>
 				</div>
@@ -112,8 +110,7 @@
 					</h2>
 
 					<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
-						<!-- Facilitates synchronization between components (Organizational Structure, Risks and
-						Controls, People, Technology and other corporate capabilities). -->
+						<!-- Facilitates synchronization between components (Organizational Structure, Risks and Controls, People, Technology and other corporate capabilities). -->
 						{m.solutions_FacilitatesSynchronizationBetweenComponents()}
 					</h3>
 				</div>

@@ -1,6 +1,5 @@
 <script lang="ts">
 	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
 	import { arrow_right_svg, linha_h_7_svg, the_platform_png } from '$lib';
 
 	import animationData from '$lib/assets/lotties/gif-3.json';

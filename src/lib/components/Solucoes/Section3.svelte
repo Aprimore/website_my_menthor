@@ -1,6 +1,5 @@
 <script>
 	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
 	import {
 		linha_h_1_svg,
 		linha_h_7_svg,
@@ -110,5 +109,3 @@
 		</div>
 	</div>
 </section>
-
-<!-- flex items-center mx-auto text-center space-x-7  -->

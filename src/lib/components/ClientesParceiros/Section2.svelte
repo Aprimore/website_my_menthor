@@ -1,9 +1,7 @@
 <script lang="ts">
 	import { clientes_parceiros_2_png, linha_h_5_svg, linha_h_laranja_svg } from '$lib';
 	import * as m from '$paraglide/messages';
-
 	import animationData from '$lib/assets/lotties/gif-6.json';
-
 	import lottie from 'lottie-web';
 	import { onMount } from 'svelte';
 

@@ -31,7 +31,7 @@
 				</h3>
 
 				<h4 class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
-					{m.homepage_section2_getatrue()}
+					{@html m.homepage_section2_getatrue()}
 				</h4>
 			</div>
 		</div>

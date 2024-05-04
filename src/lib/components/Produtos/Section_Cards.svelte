@@ -28,7 +28,7 @@
 				<h2 class=" title-om Exo text-2xl  relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
-					{m.produtos_ItSupportsDifferentLevelsOfMaturity()}
+					{@html m.produtos_ItSupportsDifferentLevelsOfMaturity()}
 					<!-- It contains its own embedded methodology with an approach to corporate development,
 					which helps in diagnosis, defining the implementation strategy, and guiding the step-by-step
 					the evolution of organizational maturity. -->
@@ -42,7 +42,7 @@
 				<h2 class="title-od Exo text-2xl  relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
-					{m.produtos_EmphasizesBusinessProcessManagement()}
+					{@html m.produtos_EmphasizesBusinessProcessManagement()}
 					<!-- It supports different levels of maturity and
 					deployment strategies through its modular and flexible approach. -->
 				</h3>
@@ -57,7 +57,7 @@
 				<h2 class="title-sd Exo text-2xl  relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
-					{m.produtos_EmphasizesBusinessProcessManagement()}
+					{@html m.produtos_EmphasizesBusinessProcessManagement()}
 					<!-- Emphasizes BPM as a Management Model, facilitating the structuring, instrumentation and implementation of the topic, highlighting the results of the various process mapping and improvement initiatives. -->
 				</h3>
 			</div>
@@ -69,7 +69,7 @@
 				<h2 class="title-ms Exo text-2xl  relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
-					{m.produtos_DecompplicatesAndDecentralizesTheTopic()}
+					{@html m.produtos_DecompplicatesAndDecentralizesTheTopic()}
 					<!-- Decomplicates and decentralizes the topic, so that the business areas
 					take responsibility for their processes and results, with the support of governance
 					mechanisms and integrated into the organizational components and capabilities -->

@@ -14,20 +14,20 @@
 			</h1>
 			<span class=""><img src={linha_h_1_svg} alt="" /></span>
 			<p class="mt-14 mb-2 Archivo text-lg text-[#25285F]">
-				{m.homepage_section3_The_platform()}
+				{@html m.homepage_section3_The_platform()}
 				<!--  The platform facilitates the rethinking of the organization 
 				at all layers, from the strategic to the operational level, represented by the pyramid with various
 				dimensions. -->
 			</p>
 			<p class="mt-5 mb-2 Archivo text-lg text-[#25285F]">
-				{m.homepage_section3_It_facilitates()}
+				{@html m.homepage_section3_It_facilitates()}
 				<!-- It  facilitates the implementation of the strategy  by deploying it in a
 				horizontal perspective for the processes of the value chain, synchronizing the
 				organizational elements in a vision oriented by cross-cutting processes to
 				 ensure effective strategy execution  . -->
 			</p>
 			<p class="mt-5 mb-2 Archivo text-lg text-[#25285F]">
-				{m.homepage_section3_To_make_smarter()}
+				{@html m.homepage_section3_To_make_smarter()}
 				<!-- To make smarter business decisions, you need a 
 					uniform view of the operation
 				, with a true representation of how the business works and how it adds value to

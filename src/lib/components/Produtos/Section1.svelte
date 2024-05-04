@@ -1,6 +1,5 @@
 <script lang="ts">
 	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
 	import {
 		estrela_verde_svg,
 		linha_h_4_svg,
@@ -30,7 +29,7 @@
 				<img src={estrela_verde_svg} class="absolute -top-5 -right-5" alt="" />
 				<span class="absolute left-10"><img src={linha_v_1_svg} alt="" /></span>
 				<p class=" text-lg leading-tight text-[#F1F1F9] Archivo">
-					{m.produtos_DeploymentAndExecutionOfStrategy()}
+					{@html m.produtos_DeploymentAndExecutionOfStrategy()}
 
 					<!-- It brings effectiveness to the deployment and execution of the strategy, organizational alignment and ​visibility of processes for various purposes ​(compliance, risks, automation, etc.) -->
 				</p>

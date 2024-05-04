@@ -1,6 +1,5 @@
 <script>
-	import * as m from '$paraglide/messages';
-	
+	import * as m from '$paraglide/messages';	
 	import {
 		arrow_right_svg,
 		clientes_parceiros_3_png,
@@ -21,8 +20,7 @@
 						<span><img src={linha_h_azul_svg} class="z-10 right-0" alt="linha" /></span>
 					</h1>
 					<p class="Archivo text-[#25285F] text-lg">
-						<!-- Register and discover the benefits of our partner programs programs and how we can work
-						together to achieve exceptional results. -->
+						<!-- Register and discover the benefits of our partner programs programs and how we can work together to achieve exceptional results. -->
 						{m.clientesP_RegisterAndDiscover()}
 					</p>
 					<div class="space-x-5 flex flex-row">

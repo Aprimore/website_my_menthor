@@ -1,6 +1,5 @@
 <script>
 	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
 	import { arrow_right_svg, clientes_parceiros_4_png, fone_amarelo_svg, linha_h_4_svg } from '$lib';
 </script>
 
@@ -34,9 +33,8 @@
 
 					<p class="  text-[#25285F] Archivo text-lg">
 						<!-- Get in touch today and find out how we can boost your success together. Click on 
-							Contact Us
-						 and embark on this journey. -->
-						{m.clientesP_GetInTouchToday()}
+							Contact Us and embark on this journey. -->
+						{@html m.clientesP_GetInTouchToday()}
 					</p>
 
 					<button>

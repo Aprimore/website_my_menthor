@@ -54,7 +54,7 @@
 				</h1>
 
 				<h3 class="mt-10 mb-2 text-[#25285F] Archivo text-lg leading-snug">
-					{m.homepage_section1_desc2()}
+					{@html m.homepage_section1_desc2()}
 					<!--  My Menthor is a SaaS Business Architecture platform that  helps to unfold the company's strategy  into a vision oriented by end-to-end, providing visibility of processes and aligning organizational components to achieve business objectives. -->
 				</h3>
 
