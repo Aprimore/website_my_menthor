@@ -10,18 +10,20 @@
 	import * as m from '$paraglide/messages';
 </script>
 
-<section class=" flex flex-col items-center relative rounded-lg my-6 max-w-screen-2xl mx-auto">
+<section
+	class="flex flex-col items-center relative rounded-lg my-6 max-w-screen-2xl mx-auto max-md:p-2"
+>
 	<div class="p-6 rounded-lg text-center">
 		<h1 class="Exo-Bold text-4xl relative mx-auto">{m.homepage_section2_work()}</h1>
 
 		<h2 class="Exo-Bold text-4xl relative text-[#17193B]">
 			{m.homepage_section2_smarter()}
-			<span><img src={linha_h_3_svg} class="z-10 absolute right-10" alt="linha" /></span>
+			<span><img src={linha_h_3_svg} class="z-10 max-sm:max-w-72 mx-auto" alt="linha" /></span>
 		</h2>
 	</div>
-	<div class="w-full flex max-md:flex-col justify-end sm:space-x-6 mt-4">
+	<div class="w-full flex max-md:flex-col justify-end md:space-x-6 max-sm:mt-3 mt-4">
 		<div
-			class="card1 max-w-[574px] max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-12"
+			class="md:max-w-[574px] md:max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-12"
 		>
 			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 lg:mr-20 py-10">
 				<h3 class="Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
@@ -36,7 +38,7 @@
 			</div>
 		</div>
 		<div
-			class="card1 max-w-[574px] max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg sm:mt-12 mt-4"
+			class="md:max-w-[574px] md:max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg sm:mt-12 max-sm:mt-3 mt-4"
 		>
 			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 lg:mr-20 py-10">
 				<h3 class="Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
@@ -51,9 +53,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="w-full flex max-md:flex-col sm:space-x-6 mt-4">
+	<div class="w-full flex max-md:flex-col md:space-x-6 max-sm:mt-3 mt-4">
 		<div
-			class="card1 max-w-[574px] max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg sm:mt-6"
+			class="md:max-w-[574px] md:max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg sm:mt-6"
 		>
 			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 py-10">
 				<h3 class="Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
@@ -67,7 +69,7 @@
 			</div>
 		</div>
 		<div
-			class="card1 max-w-[574px] max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg sm:mt-6 mt-4"
+			class="md:max-w-[574px] md:max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg sm:mt-6 max-sm:mt-3 mt-4"
 		>
 			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 lg:mr-20 py-10">
 				<h3 class="Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">

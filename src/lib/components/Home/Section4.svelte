@@ -19,61 +19,63 @@
 	});
 </script>
 
-<section class="w-full items-center relative rounded-lg my-20">
+<section class="w-full items-center relative rounded-lg sm:my-20 max-md:p-2">
 	<div class="flex max-lg:flex-col max-w-screen-2xl mx-auto">
-		<div class="column1 lg:w-2/3">
-			<div class="ml-14">
-				<h1 class="ml-10 max-w-lg text-2xl sm:text-4xl relative Exo-Bold text-[#17193B]">
+		<div class="lg:w-2/3 my-5">
+			<div class="sm:ml-14">
+				<h1 class="max-md:text-center sm:ml-10 md:max-w-lg text-4xl relative Exo-Bold text-[#17193B]">
 					{m.homepage_section4_Organizing()}
 					{m.homepage_section4_simpler()}
 				</h1>
 				<span class="ml-2 absolute"><img src={linha_h_2_svg} alt="" /></span>
 			</div>
-			<div class="flex flex-row ml-6 xl:absolute">
-				<div class="mt-14 pl-10 p-10 text-lg relative space-y-5 max-w-screen-lg">
+			<div class="md:ml-6 xl:absolute">
+				<div
+					class="max-sm:mt-6 lg:mt-14 px-auto p-10 max-md:p-2 text-lg relative space-y-5 md:max-w-screen-lg"
+				>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 md:min-w-min"
 					>
-						<p class="Exo-Semibold check text-base xl:text-xl">
+						<p class="Exo-Semibold check xl:text-xl">
 							{m.homepage_section4_Profits()}
 						</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 md:min-w-min"
 					>
-						<p class="Exo-Semibold check text-base xl:text-xl font-bold">
+						<p class="Exo-Semibold check xl:text-xl">
 							{m.homepage_section4_Quality()}
 						</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 md:min-w-min"
 					>
-						<p class="Exo-Semibold check text-base xl:text-xl">{m.homepage_section4_Value()}</p>
+						<p class="Exo-Semibold check xl:text-xl">{m.homepage_section4_Value()}</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 md:min-w-min"
 					>
-						<p class="Exo-Semibold check text-base xl:text-xl">{m.homepage_section4_Process()}</p>
+						<p class="Exo-Semibold check xl:text-xl">{m.homepage_section4_Process()}</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 md:min-w-min"
 					>
-						<p class="Exo-Semibold check text-base xl:text-xl">{m.homepage_section4_Maturity()}</p>
+						<p class="Exo-Semibold check xl:text-xl">{m.homepage_section4_Maturity()}</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 md:min-w-min"
 					>
-						<p class="Exo-Semibold check text-base md:text-xl">
+						<p class="Exo-Semibold check xl:text-xl">
 							{m.homepage_section4_Sustainability()}
 						</p>
 					</div>
 				</div>
 
-				<div class="mt-28 pl-3 text-lg relative space-y-5"></div>
+				<!-- <div class="mt-28 pl-3 text-lg relative space-y-5"></div> -->
 			</div>
 		</div>
 
-		<div class="mx-16 lg:w-[45%] flex flex-col self-center">
+		<div class="mx-3 md:mx-16 lg:w-[45%] flex flex-col self-center">
 			<div class=" space-y-5">
 				<p class="Archivo text-xl text-[#25285F]">
 					{@html m.homepage_section4_My_Menthor()}

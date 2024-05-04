@@ -9,18 +9,18 @@
 	} from '$lib';
 </script>
 
-<section class="w-full bg-white pt-16">
+<section class="w-full bg-white md:mt-16 mt-4">
 	<div
 		class="lg:h-[510px] lg:flex lg:max-w-screen-2xl flex-row lg:mx-auto justify-center items-center p-6"
 		id="platform"
 	>
 		<div class="lg:w-1/2 lg:max-w-[600px] space-y-4 md:space-y-6 relative">
-			<h1 class="Exo-Bold text-[#17193B] text-4xl font-bold relative">
+			<h1 class="Exo-Bold text-[#17193B] text-4xl font-bold relative max-sm:text-center">
 				{m.produtos_MyMenthorIs()}
-				<span><img src={linha_h_4_svg} class="z-10" alt="linha" /></span>
+				<span><img src={linha_h_4_svg} class="z-10 max-sm:mx-auto" alt="linha" /></span>
 			</h1>
 			<p class="text-[#25285F] Archivo text-lg p-1">
-				{m.produtos_BusinessArchitecturePlatform()}
+				{@html m.produtos_BusinessArchitecturePlatform()}
 			</p>
 			<div
 				class="flex items-center w-full

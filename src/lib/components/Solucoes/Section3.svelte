@@ -12,13 +12,13 @@
 
 <section class="w-full md:flex relative rounded-lg bg-[#D4D4ED]">
 	<div
-		class="grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-10 mx-auto p-10 max-md:max-w-screen-sm space-x-5"
+		class="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 py-5 mx-auto "
 		id="packages"
 	>
-		<div class="relative">
+		<div class="relative max-sm:p-2">
 			<div class="mt-10 flex justify-center"></div>
 			<div
-				class=" md:w-[333px] h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
+				class=" sm:w-[333px] h-[214px] bg-white flex flex-col justify-center items-center border border-gray-300 shadow-sm "
 			>
 				<p
 					class="Exo text-4xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED]  absolute top-1.5"
@@ -38,10 +38,10 @@
 				</span>
 			</div>
 		</div>
-		<div class="relative">
+		<div class="relative max-sm:p-2">
 			<div class="mt-10 flex justify-center"></div>
 			<div
-				class=" md:w-[333px] h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
+				class=" sm:w-[333px] h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
 			>
 				<p
 					class="Exo text-4xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED]  absolute top-1.5"
@@ -61,10 +61,10 @@
 				</span>
 			</div>
 		</div>
-		<div class="relative">
+		<div class="relative max-sm:p-2">
 			<div class="mt-10 flex justify-center"></div>
 			<div
-				class=" md:w-[333px] h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
+				class=" sm:w-[333px] h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
 			>
 				<p
 					class="Exo text-4xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED]  absolute top-1.5"
@@ -84,10 +84,10 @@
 				</span>
 			</div>
 		</div>
-		<div class="relative">
+		<div class="relative max-sm:p-2">
 			<div class="mt-10 flex justify-center"></div>
 			<div
-				class=" md:w-[333px] h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
+				class=" sm:w-[333px] h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
 			>
 				<p
 					class="Exo text-4xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED]  absolute top-1.5"

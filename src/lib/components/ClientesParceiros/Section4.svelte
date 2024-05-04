@@ -3,7 +3,7 @@
 	import { arrow_right_svg, clientes_parceiros_4_png, fone_amarelo_svg, linha_h_4_svg } from '$lib';
 </script>
 
-<section class="w-full items-center relative rounded-lg bg-white md:my-6 md:pb-12">
+<section class="w-full items-center relative rounded-lg bg-white md:my-6 md:pb-12 p-3">
 	<div
 		class="max-lg:h-[610px] pt-16 lg:pt-32 lg:max-w-screen-2xl mx-auto lg:flex flex-row"
 		id="support"
@@ -19,13 +19,13 @@
 				/>
 			</div>
 		</div>
-		<div class="lg:w-1/3 flex justify-center max-lg:justify-end items-center relative z-20">
+		<div class="lg:w-1/3 flex justify-center max-lg:justify-end items-center relative z-20 mr-auto">
 			<div
-				class="card1 xl:w-[816px] md:w-[600px] xl:h-[332px] bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl lg:mr-52 absolute flex flex-col justify-center items-center max-sm:mt-40"
+				class="card1 xl:w-[716px] lg:w-[600px] xl:h-[332px] max-lg:max-w-[700px] bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl lg:mr-72 absolute flex flex-col justify-center items-center max-sm:mt-40"
 			>
 				<div class="lg:max-w-2xl p-6 rounded-lg space-y-6">
 					<h1
-						class="Exo-Bold text-3xl md:text-4xl lg:text-5xl text-[#17193B] relative max-sm:text-nowrap"
+						class="Exo-Bold text-3xl md:text-4xl lg:text-5xl text-[#17193B] relative"
 					>
 						<!-- Customer service channel -->
 						{m.clientesP_CustomerServiceChannel()}

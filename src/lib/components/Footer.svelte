@@ -13,9 +13,11 @@
 </script>
 
 <footer class="footer relative bg-[#17193b] w-full">
-	<div class="container mx-auto">
-		<div class=" p-12">
-			<div class="grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-20 mx-auto p-6">
+	<div class="lg:container mx-auto max-sm:flex justify-center">
+		<div class=" lg:p-12">
+			<div
+				class="grid xl:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-5 md:gap-10 lg:gap-20 mx-auto p-3 sm:p-6"
+			>
 				<div class="mx-auto">
 					<div class="w-full mb-10">
 						<a href="/" class="mb-6 inline-block max-w-[250px]">
@@ -36,7 +38,7 @@
 
 						<button class=" flex flex-wrap gap-4">
 							<a
-								class="Exo btn-agendar bg-[#8abb3f] flex items-center text-base text-[#17193B] py-4 px-10 mt-5 rounded-lg relative lg:whitespace-nowrap"
+								class="Exo btn-agendar bg-[#8abb3f] flex items-center text-base text-[#17193B] py-4 px-10 mt-5 rounded-lg relative max-lg:whitespace-nowrap lg:whitespace-nowrap"
 								href="/company#contact"
 							>
 								{m.button_schedule_a_demo()}
@@ -50,7 +52,7 @@
 					</div>
 				</div>
 
-				<div class="lg:ml-24 w-full">
+				<div class="lg:ml-12 w-full">
 					<div class="w-full mb-10">
 						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 							{m.footer_Products()}
@@ -89,7 +91,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="lg:ml-24 w-full">
+				<div class="lg:ml-12 w-full">
 					<div class="w-full mb-10">
 						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 							{m.footer_Partner_Program()}
@@ -119,7 +121,7 @@
 					</div>
 				</div>
 
-				<div class="lg:ml-24 w-full">
+				<div class="lg:ml-12 w-full">
 					<div class="w-full mb-10">
 						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 							{m.footer_Knowledge_Base()}
@@ -141,7 +143,7 @@
 					</div>
 				</div>
 
-				<div class="lg:ml-24 w-full relative">
+				<div class="lg:ml-12 w-full relative">
 					<div class="w-full mb-10">
 						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 							{m.footer_Solutions()}
@@ -161,7 +163,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="md:absolute bottom-0">
+					<div class="xl:absolute bottom-0 right-5 mr-5">
 						<div class="flex space-x-7">
 							<a href="/" class="flex items-center justify-center w-8 h-8" target="_blank">
 								<img src={youtube_svg} alt="" />
@@ -181,7 +183,7 @@
 			</div>
 		</div>
 	</div>
-	<Copyright />
+	<!-- <Copyright /> -->
 </footer>
 
 <!-- <style>

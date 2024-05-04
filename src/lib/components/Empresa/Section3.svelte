@@ -1,6 +1,5 @@
 <script lang="ts">
 	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
 	import { arrow_right_svg, clientes_parceiros_3_png } from '$lib';
 	import FormZoho from './../FormZoho.svelte';
 

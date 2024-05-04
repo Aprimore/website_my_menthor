@@ -6,7 +6,7 @@
 <section class="w-full my-20 relative rounded-lg">
 	<!-- flex flex-row justify-center lg:space-x-2 xl:space-x-4 -->
 	<div
-		class="grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 max-w-screen-2xl mx-auto xl:space-x-5"
+		class="grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 max-w-screen-2xl mx-auto xl:space-x-5 p-3"
 	>
 		<div class="">
 			<div class="rounded-t-lg h-[104px] bg-white flex justify-center items-center">
@@ -16,7 +16,7 @@
 				</h1>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F]">
+				<p class="text-base Archivo text-[#25285F] ">
 					<!-- Administrator License -->
 					{m.solutions_AdministratorLicense()}
 				</p>

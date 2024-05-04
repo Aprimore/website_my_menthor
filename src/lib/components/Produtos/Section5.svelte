@@ -29,7 +29,7 @@
 					<img src={line_graph_svg} class="w-full sm:p-10" alt="" />
 				</div>
 				<div class="md:w-1/2 relative my-auto">
-					<div class="lg:p-20 max-md:p-10">
+					<div class="lg:p-20 max-sm:p-3 max-md:p-10">
 						<div class="bg-white p-2">
 							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Profits, revenue and margin -->
@@ -76,7 +76,7 @@
 					<img src={analytics_svg} class="w-full sm:p-10" alt="" />
 				</div>
 				<div class="md:w-1/2 relative my-auto">
-					<div class="lg:p-20 p-10">
+					<div class="lg:p-20 max-sm:p-3 p-10">
 						<div class="bg-white p-2">
 							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
 								<!-- Maturity and performance -->
@@ -136,39 +136,39 @@
 					<img src={check_list_svg} class="w-full max-sm:p-10" alt="" />
 				</div>
 				<div class="md:w-1/2 relative my-auto">
-					<div class="lg:p-20 max-md:p-10">
+					<div class="lg:p-20 max-sm:p-3 max-md:p-10">
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl">
 								<!-- Standardization -->
 								{m.produtos_Standardization()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl">
 								<!-- Efficiency and productivity x effectiveness -->
 								{m.produtos_EfficiencyAndProductivityXEffectiveness()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl">
 								<!-- Reduction of costs, deadlines and rework -->
 								{m.produtos_ReductionOfCostsDeadlinesAndRework()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl">
 								<!-- Process innovation -->
 								{m.produtos_ProcessInnovation()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl">
 								<!-- Compliance, conformity and risks -->
 								{m.produtos_ComplianceConformityAndRisks()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B]  text-xl">
 								<!-- Clarity of roles and responsibilities -->
 								{m.produtos_ClarityOfRolesAndResponsibilities()}
 							</p>

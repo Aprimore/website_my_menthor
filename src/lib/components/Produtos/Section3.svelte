@@ -1,16 +1,22 @@
 <script lang="ts">
+	import {
+		arrow_right_svg,
+		linha_h_1_svg,
+		piramid_home_pt_br_svg,
+		piramide_ingles_svg,
+		the_platform_png
+	} from '$lib';
 	import * as m from '$paraglide/messages';
-	import { arrow_right_svg, linha_h_1_svg, piramid_home_pt_br_svg, piramide_ingles_svg, the_platform_png } from '$lib';
 	import Section_Cards from './Section_Cards.svelte';
 </script>
 
 <section class="w-full items-center relative rounded-lg bg-white mb-10">
-	<div class="lg:max-w-screen-2xl flex flex-col lg:flex-row mx-auto items-center">
-		<div class="w-[670px] flex px-24 lg:p-16 max-lg:order-2">
-			<img src={piramid_home_pt_br_svg} class="" alt="" />
+	<div class="lg:max-w-screen-2xl flex flex-col lg:flex-row lg:mx-auto lg:items-center ">
+		<div class="lg:w-[670px] flex  xl:p-16 max-lg:order-2 max-lg:mx-auto">
+			<img src={piramid_home_pt_br_svg} class="w-full max-sm:mb-10" alt="" />
 		</div>
-		<div class="max-lg:p-10 lg:w-1/2 space-y-10 mt-8 lg:mt-16 max-lg:order-1">
-			<h1 class="text-2xl sm:text-4xl relative Exo-Bold text-[#17193B]">
+		<div class="max-lg:p-5 lg:w-1/2 space-y-10 mt-8 lg:mt-16 max-lg:order-1">
+			<h1 class="text-4xl relative Exo-Bold text-[#17193B] max-sm:text-center">
 				{m.produtos_BreakingDownSilosAndBuildingBridges()}
 				<!-- Breaking down silos and building bridges to organizational effectiveness -->
 			</h1>
@@ -34,5 +40,5 @@
 			</p>
 		</div>
 	</div>
-	<Section_Cards />
+	<!-- <Section_Cards /> -->
 </section>

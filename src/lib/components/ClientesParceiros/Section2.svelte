@@ -17,21 +17,21 @@
 	});
 </script>
 
-<section class="w-full rounded-lg bg-[#F1F1F9] max-lg:pt-10">
+<section class="w-full rounded-lg bg-[#F1F1F9] max-lg:mt-10">
 	<div class="lg:max-w-screen-2xl mx-auto lg:h-[489px] flex max-lg:flex-col">
 		<div class="lg:w-1/2 flex justify-center items-center max-lg:order-2">
 			<div class="card">
 				<div bind:this={animationContainer} />
 			</div>
 		</div>
-		<div class="lg:w-1/2 flex justify-center items-center border-black">
+		<div class="lg:w-1/2 flex justify-center items-center border-black p-5">
 			<div class="card bg-[#F1F1F9] lg:max-w-[580px] lg:mr-36">
 				<h1
-					class="Exo-Bold text-3xl sm:text-4xl relative text-[#17193B] whitespace-nowrap max-lg:text-center mb-5"
+					class="Exo-Bold text-4xl relative text-[#17193B] max-lg:text-center mb-5"
 				>
 					<span class="text-[#EB642A] relative Exo-Bold">
 						<!-- Your success -->
-						{m.clientesP_YourSuccessIsOurSuccess()}
+						{@html m.clientesP_YourSuccessIsOurSuccess()}
 						<img
 							src={linha_h_laranja_svg}
 							class="absolute
@@ -43,7 +43,7 @@
 					</span>
 					<!-- is our success -->				
 				</h1>
-				<p class="Archivo text-[#25285F] text-lg">
+				<p class="Archivo text-[#25285F] text-lg p-3">
 					<!-- We are committed to the continued success of our clients, cultivating long-term relationships with a focus on results. -->
 					{m.clientesP_WeAreCommittedToTheContinuedSuccess()}
 				</p>
