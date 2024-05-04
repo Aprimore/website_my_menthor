@@ -1,6 +1,6 @@
 <script>
 	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
+	
 	import {
 		arrow_right_svg,
 		clientes_parceiros_3_png,
@@ -16,7 +16,7 @@
 			<div class="card bg-white lg:w-[694px] max-h-[364px] rounded-md relative">
 				<div class="p-10 xl:p-16 space-y-7 relative">
 					<h1 class="text-3xl sm:text-5xl z-10 text-[#17193B] Exo-Bold md:text-nowrap">
-						<!-- Partner program -->
+						
 						{m.clientesP_PartnerProgram()}
 						<span><img src={linha_h_azul_svg} class="z-10 right-0" alt="linha" /></span>
 					</h1>

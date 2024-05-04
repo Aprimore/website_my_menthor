@@ -32,9 +32,7 @@
 				<p class=" text-lg leading-tight text-[#F1F1F9] Archivo">
 					{m.produtos_DeploymentAndExecutionOfStrategy()}
 
-					<!-- It brings <strong>effectiveness</strong> to
-					<strong> the deployment and execution of the strategy </strong> , organizational alignment
-					and ​visibility of processes for various purposes ​(compliance, risks, automation, etc.) -->
+					<!-- It brings effectiveness to the deployment and execution of the strategy, organizational alignment and ​visibility of processes for various purposes ​(compliance, risks, automation, etc.) -->
 				</p>
 			</div>
 		</div>

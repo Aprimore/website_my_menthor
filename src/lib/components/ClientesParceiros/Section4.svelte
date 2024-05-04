@@ -33,10 +33,9 @@
 					</h1>
 
 					<p class="  text-[#25285F] Archivo text-lg">
-						<!-- Get in touch today and find out how we can boost your success together. Click on <strong
-						>
+						<!-- Get in touch today and find out how we can boost your success together. Click on 
 							Contact Us
-						</strong> and embark on this journey. -->
+						 and embark on this journey. -->
 						{m.clientesP_GetInTouchToday()}
 					</p>
 

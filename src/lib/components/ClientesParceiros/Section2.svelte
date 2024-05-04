@@ -1,7 +1,6 @@
 <script lang="ts">
-	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
 	import { clientes_parceiros_2_png, linha_h_5_svg, linha_h_laranja_svg } from '$lib';
+	import * as m from '$paraglide/messages';
 
 	import animationData from '$lib/assets/lotties/gif-6.json';
 
@@ -44,12 +43,10 @@
 							alt="linha"
 						/>
 					</span>
-					<!-- is our success -->
-					<!-- {m.clientesP_YourSuccessIsOurSuccess()} -->
+					<!-- is our success -->				
 				</h1>
 				<p class="Archivo text-[#25285F] text-lg">
-					<!-- We are committed to the continued success of our clients, cultivating long-term
-					relationships with a focus on results. -->
+					<!-- We are committed to the continued success of our clients, cultivating long-term relationships with a focus on results. -->
 					{m.clientesP_WeAreCommittedToTheContinuedSuccess()}
 				</p>
 			</div>

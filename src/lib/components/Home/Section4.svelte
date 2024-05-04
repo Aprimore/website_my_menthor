@@ -77,15 +77,15 @@
 			<div class=" space-y-5">
 				<p class="Archivo text-xl text-[#25285F]">
 					{m.homepage_section4_My_Menthor()}
-					<!-- My Menthor acts as a <strong> Digital Mentor </strong> with an
-					<strong> approach centered </strong> on <span class="text-[#43ACB5]">being</span> and not on
+					<!-- My Menthor acts as a  Digital Mentor  with an
+					 approach centered  on <span class="text-[#43ACB5]">being</span> and not on
 					disruptive technologies. -->
 				</p>
 				<p class="Archivo text-xl text-[#25285F]">
 					{m.homepage_section4_It_acts_as()}
 
-					<!-- It acts as an <strong> information </strong> <span class="text-[#43ACB5]"> hub </span>,
-					<strong> organizing knowledge </strong> in a single repository. -->
+					<!-- It acts as an  information  <span class="text-[#43ACB5]"> hub </span>,
+					 organizing knowledge  in a single repository. -->
 				</p>
 			</div>
 			<div class="col4 mt-5 max-lg:mt-10 md:px-40 lg:px-0">

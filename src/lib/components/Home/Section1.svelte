@@ -1,5 +1,4 @@
 <script lang="ts">
-	import * as m from '$paraglide/messages';
 	import {
 		arrow_right_svg,
 		linha_h_4_svg,
@@ -7,6 +6,7 @@
 		linha_v_2_svg,
 		the_platform_png
 	} from '$lib';
+	import * as m from '$paraglide/messages';
 
 	import animationData from '$lib/assets/lotties/gif-1.json';
 
@@ -37,11 +37,9 @@
 				>
 					<span class="absolute"><img src={linha_v_1_svg} alt="" /></span>
 					<h3 class="ml-6 mb-2 text-lg tracking-tight text-[#25285F] Archivo leading-tight">
-						{m.homepage_section1_desc1()}
-						<!-- It brings <strong>effectiveness</strong> to
-						<strong> the deployment and execution of the strategy </strong> , organizational alignment
-						and ​visibility of processes for various purposes ​(compliance, risks, automation, etc.) -->
+						{@html m.homepage_section1_desc1()}
 					</h3>
+					<!--  -->
 					<div bind:this={animationContainer} class="max-lg:max-w-96" />
 				</div>
 			</div>
@@ -50,18 +48,14 @@
 			class="mt-5 lg:mt-24 right-0 flex lg:absolute card1 bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl xl:max-w-screen-md max-w-[600px] self-center"
 		>
 			<div class="text-[#17193B] rounded-lg p-12 xl:p-16 w-full" id="products-about">
-				<h1 class="Exo-Bold text-4xl  relative">
+				<h1 class="Exo-Bold text-4xl relative">
 					{m.homepage_section1_title()}
 					<span><img src={linha_h_4_svg} class="z-10" alt="linha" /></span>
 				</h1>
 
 				<h3 class="mt-10 mb-2 text-[#25285F] Archivo text-lg leading-snug">
 					{m.homepage_section1_desc2()}
-					<!-- <strong> My Menthor </strong> is a
-					<strong> SaaS Business Architecture platform </strong>
-					that <strong> helps to unfold the company's strategy </strong> into a vision oriented by
-					end-to-end, providing visibility of processes and aligning organizational components to
-					<strong> achieve business objectives </strong>. -->
+					<!--  My Menthor is a SaaS Business Architecture platform that  helps to unfold the company's strategy  into a vision oriented by end-to-end, providing visibility of processes and aligning organizational components to achieve business objectives. -->
 				</h3>
 
 				<div class="mt-8 flex flex-wrap gap-4">

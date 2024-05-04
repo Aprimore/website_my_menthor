@@ -35,7 +35,7 @@
 					{m.solutions_WeCarryOutAssessment()}
 				</p>
 				<p class="mb-8 Archivo text-lg text-[#25285F]">
-					<!-- In <strong> addition to the software </strong>, we also offer mentoring and consultancy
+					<!-- In addition to the software, we also offer mentoring and consultancy
 					services to ensure the client's success, monitoring their progress and boosting their
 					results. We also guarantee continuous availability of the platform and specialized
 					technical support. -->

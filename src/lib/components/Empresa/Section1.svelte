@@ -14,35 +14,19 @@
 					<span><img src={linha_h_azul_2_svg} class="z-10 right-0" alt="linha" /></span>
 				</h1>
 				<p class="Archivo text-[#25285F] text-lg leading-snug">
-					<!-- My Menthor is a product developed by <strong>
-						APRIMORE Consultoria em Gestão Empresarial,</strong
-					>
-					based in
-					<strong>Brazil</strong>, and <strong> TOPTIER Business Group,</strong> based in the
-					<strong> USA </strong>. -->
+					<!-- My Menthor is a product developed by APRIMORE Consultoria em Gestão Empresarial, based in Brazil, and TOPTIER Business Group, based in the USA . -->
 					{m.company_AMyMenthorIsTheResult()}
 				</p>
 				<p class="Archivo text-[#25285F] text-lg leading-snug">
-					<!-- It is the result of <strong
-						>more than 20 years' experience in organizational management</strong
-					>, with origins in <strong> consultancy specializing </strong> in
-					<strong>Management (BPM)</strong> and expanded to Business Architecture. -->
+					<!-- It is the result of more than 20 years' experience in organizational management, with origins in consultancy specializing in Management (BPM) and expanded to Business Architecture. -->
 					{m.company_ItIsAProductDeveloped()}
 				</p>
 				<p class="Archivo text-[#25285F] text-lg leading-snug">
-					<!-- On this journey, we identified a gap in the market: the architecture tools available on
-					the market were not simple enough to enable different areas of a company to work together
-					to organize the business components around the strategy. This required very technical
-					knowledge of notations and diagrams, which made it difficult to sharing with the business
-					areas. -->
+					<!-- On this journey, we identified a gap in the market: the architecture tools available on the market were not simple enough to enable different areas of a company to work together to organize the business components around the strategy. This required very technical knowledge of notations and diagrams, which made it difficult to sharing with the business areas. -->
 					{m.company_OnThisJourneyWeIdentified()}
 				</p>
 				<p class="Archivo text-[#25285F] text-lg leading-snug">
-					<!-- That's when <strong> we developed a solution capable of helping organizations </strong> in
-					the process of implementing, sustaining and evolving the Business Architecture. We believe
-					that our platform has the
-					<strong> real potential to take organizations to a new level of management </strong>,
-					providing effective <strong> value for customers and stakeholders </strong>. -->
+					<!-- That's when  we developed a solution capable of helping organizations in the process of implementing, sustaining and evolving the Business Architecture. We believe that our platform has the real potential to take organizations to a new level of management, providing effective  value for customers and stakeholders. -->
 					{m.company_ThatsWhenWeDevelopedASolution()}
 				</p>
 			</div>

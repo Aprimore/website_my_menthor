@@ -1,6 +1,5 @@
 <script>
 	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
 	import {
 		clientes_parceiros_1_png,
 		linha_h_5_svg,
