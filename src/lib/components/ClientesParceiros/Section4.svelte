@@ -1,6 +1,6 @@
 <script>
 	import * as m from '$paraglide/messages';
-	import { arrow_right_svg, clientes_parceiros_4_png, fone_amarelo_svg, linha_h_4_svg } from '$lib';
+	import { arrow_right_svg, clientes_parceiros_4_webp, fone_amarelo_svg } from '$lib';
 </script>
 
 <section class="w-full items-center relative rounded-lg bg-white md:my-6 md:pb-12 p-3">
@@ -10,7 +10,7 @@
 	>
 		<div class="lg:w-2/3 flex max-lg:justify-start justify-center items-center">
 			<div class="relative">
-				<img src={clientes_parceiros_4_png} class="" alt="" />
+				<img src={clientes_parceiros_4_webp} class="" alt="" />
 				<img
 					src={fone_amarelo_svg}
 					class="absolute max-md:-top-1 max-md:-right-1 -top-5
@@ -24,9 +24,7 @@
 				class="card1 xl:w-[716px] lg:w-[600px] xl:h-[332px] max-lg:max-w-[700px] bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl lg:mr-72 absolute flex flex-col justify-center items-center max-sm:mt-40"
 			>
 				<div class="lg:max-w-2xl p-6 rounded-lg space-y-6">
-					<h1
-						class="Exo-Bold text-3xl md:text-4xl lg:text-5xl text-[#17193B] relative"
-					>
+					<h1 class="Exo-Bold text-3xl md:text-4xl lg:text-5xl text-[#17193B] relative">
 						<!-- Customer service channel -->
 						{m.clientesP_CustomerServiceChannel()}
 					</h1>

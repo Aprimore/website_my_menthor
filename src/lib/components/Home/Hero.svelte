@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { arrow_right_svg, header_hero_png, linha_h_5_svg } from '$lib';
+	import { arrow_right_svg, header_hero_webp, linha_h_amarela4_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 </script>
 
@@ -17,7 +17,7 @@
 			</p>
 			<h1 class="text-2xl sm:text-4xl z-10 relative text-white Exo-Bold">
 				{m.homepage_header_yourcompany()}
-				<span><img src={linha_h_5_svg} class="z-10 sm:absolute right-0" alt="linha" /></span>
+				<span><img src={linha_h_amarela4_svg} class="z-10 sm:absolute right-0" alt="linha" /></span>
 			</h1>
 
 			<p
@@ -35,7 +35,7 @@
 				</a>
 			</button>
 			<img
-				src={header_hero_png}
+				src={header_hero_webp}
 				alt="Hero Header"
 				class="absolute inset-0 w-full h-full object-cover"
 			/>

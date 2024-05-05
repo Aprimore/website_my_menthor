@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { checkmark_svg, linha_h_2_svg, the_platform_png } from '$lib';
+	import { checkmark_svg, linha_h_azul_6_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 
 	import animationData from '$lib/assets/lotties/gif-2.json';
@@ -23,11 +23,13 @@
 	<div class="flex max-lg:flex-col max-w-screen-2xl mx-auto">
 		<div class="lg:w-2/3 my-5">
 			<div class="sm:ml-14">
-				<h1 class="max-md:text-center sm:ml-10 md:max-w-lg text-4xl relative Exo-Bold text-[#17193B]">
+				<h1
+					class="max-md:text-center sm:ml-10 md:max-w-lg text-4xl relative Exo-Bold text-[#17193B]"
+				>
 					{m.homepage_section4_Organizing()}
 					{m.homepage_section4_simpler()}
 				</h1>
-				<span class="ml-2 absolute"><img src={linha_h_2_svg} alt="" /></span>
+				<span class="ml-2 absolute"><img src={linha_h_azul_6_svg} alt="" /></span>
 			</div>
 			<div class="md:ml-6 xl:absolute">
 				<div

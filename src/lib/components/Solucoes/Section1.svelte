@@ -1,6 +1,6 @@
 <script>
+	import { linha_h_verde2_svg, linha_h_verde_1_svg, linha_h_verde_3_svg } from '$lib';
 	import * as m from '$paraglide/messages';
-	import { linha_h_3_svg } from '$lib';
 </script>
 
 <section class="relative rounded-lg md:my-16 mt-4">
@@ -10,7 +10,7 @@
 				<!-- Platform Modules -->
 				{m.solutions_PlatformModules()}
 			</h1>
-			<img src={linha_h_3_svg} class="right-5 mx-auto max-sm:max-w-xs" alt="linha" />
+			<img src={linha_h_verde_3_svg} class="right-5 mx-auto max-sm:max-w-xs" alt="linha" />
 		</div>
 
 		<div class="max-md:max-w-[650px] mx-auto md:flex justify-end md:space-x-6 max-md:space-y-2">

@@ -1,14 +1,11 @@
 <script>
-	import * as m from '$paraglide/messages';
 	import {
-		analytics_svg,
+		analytics_illustration_svg,
 		arrow_right_svg,
-		check_list_svg,
-		empresa_1_png,
-		line_graph_svg,
-		linha_h_1_svg,
-		products_1_png
+		check_list_illustration_svg,
+		line_graph_illustration_svg
 	} from '$lib';
+	import * as m from '$paraglide/messages';
 </script>
 
 <!-- <section class="w-full items-center relative rounded-lg bg-[#F1F1F9]">
@@ -26,41 +23,41 @@
 		<div class=" max-md:w-full">
 			<div class="md:flex flex-row relative">
 				<div class="md:w-1/2 mx-auto p-10">
-					<img src={line_graph_svg} class="w-full sm:p-10" alt="" />
+					<img src={line_graph_illustration_svg} class="w-full sm:p-10" alt="" />
 				</div>
 				<div class="md:w-1/2 relative my-auto">
 					<div class="lg:p-20 max-sm:p-3 max-md:p-10">
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								<!-- Profits, revenue and margin -->
 								{m.homepage_section4_Profits()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								<!-- Perenniality  -->
 								{m.produtos_Sustainability_1()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								<!-- Sustainability -->
 								{m.produtos_Sustainability_2()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								{m.produtos_Continuity()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								<!-- Competitive advantage -->
 								{m.produtos_CompetitiveAdvantage()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								<!-- Understanding the operation -->
 								{m.produtos_UnderstandingTheOperation()}
 							</p>
@@ -73,54 +70,54 @@
 		<div class=" max-md:w-full">
 			<div class="md:flex flex-row relative">
 				<div class="md:w-1/2 mx-auto p-10 md:order-2">
-					<img src={analytics_svg} class="w-full sm:p-10" alt="" />
+					<img src={analytics_illustration_svg} class="w-full sm:p-10" alt="" />
 				</div>
 				<div class="md:w-1/2 relative my-auto">
 					<div class="lg:p-20 max-sm:p-3 p-10">
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								<!-- Maturity and performance -->
 								{m.produtos_MaturityAndPerformance()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								<!-- Integration of initiatives -->
 								{m.produtos_IntegrationOfInitiatives()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								<!-- Reduces functional silos -->
 								{m.produtos_ReducesFunctionalSilos()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								<!-- Visibility of the impact of changes -->
 								{m.produtos_VisibilityOfTheImpactOfChanges()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								<!-- Knowledge retention -->
 								{m.produtos_KnowledgeRetention()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								<!-- Quality in products and services -->
 								{m.produtos_QualityInProductsAndServices()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								<!-- Generating value for stakeholders -->
 								{m.produtos_GeneratingValueForStakeholders()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl text-nowrap">
+							<p class="Exo-Semibold check text-[#17193B] text-xl text-nowrap">
 								<!-- Customer experience -->
 								{m.produtos_CustomerExperience()}
 							</p>
@@ -133,42 +130,42 @@
 		<div class=" max-md:w-full">
 			<div class="md:flex flex-row relative">
 				<div class="md:w-1/2 mx-auto p-10">
-					<img src={check_list_svg} class="w-full max-sm:p-10" alt="" />
+					<img src={check_list_illustration_svg} class="w-full max-sm:p-10" alt="" />
 				</div>
 				<div class="md:w-1/2 relative my-auto">
 					<div class="lg:p-20 max-sm:p-3 max-md:p-10">
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl">
+							<p class="Exo-Semibold check text-[#17193B] text-xl">
 								<!-- Standardization -->
 								{m.produtos_Standardization()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl">
+							<p class="Exo-Semibold check text-[#17193B] text-xl">
 								<!-- Efficiency and productivity x effectiveness -->
 								{m.produtos_EfficiencyAndProductivityXEffectiveness()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl">
+							<p class="Exo-Semibold check text-[#17193B] text-xl">
 								<!-- Reduction of costs, deadlines and rework -->
 								{m.produtos_ReductionOfCostsDeadlinesAndRework()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl">
+							<p class="Exo-Semibold check text-[#17193B] text-xl">
 								<!-- Process innovation -->
 								{m.produtos_ProcessInnovation()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl">
+							<p class="Exo-Semibold check text-[#17193B] text-xl">
 								<!-- Compliance, conformity and risks -->
 								{m.produtos_ComplianceConformityAndRisks()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
-							<p class="Exo-Semibold check text-[#17193B]  text-xl">
+							<p class="Exo-Semibold check text-[#17193B] text-xl">
 								<!-- Clarity of roles and responsibilities -->
 								{m.produtos_ClarityOfRolesAndResponsibilities()}
 							</p>

@@ -1,6 +1,6 @@
 <script>
 	import * as m from '$paraglide/messages';
-	import { checkmark_2_svg, linha_h_7_svg } from '$lib';
+	import { checkmark_2_svg } from '$lib';
 </script>
 
 <section class="w-full my-20 relative rounded-lg">
@@ -16,7 +16,7 @@
 				</h1>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
-				<p class="text-base Archivo text-[#25285F] ">
+				<p class="text-base Archivo text-[#25285F]">
 					<!-- Administrator License -->
 					{m.solutions_AdministratorLicense()}
 				</p>

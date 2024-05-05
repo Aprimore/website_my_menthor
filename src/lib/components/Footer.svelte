@@ -4,7 +4,7 @@
 		facebook_svg,
 		instagram_svg,
 		linkedin_svg,
-		logo_footer_png,
+		logo_footer_webp,
 		mail_svg,
 		youtube_svg
 	} from '$lib';
@@ -22,7 +22,7 @@
 					<div class="w-full mb-10">
 						<a href="/" class="mb-6 inline-block max-w-[250px]">
 							<img
-								src={logo_footer_png}
+								src={logo_footer_webp}
 								alt="logo"
 								class="inset-0 w-full h-full object-cover size-96"
 							/>

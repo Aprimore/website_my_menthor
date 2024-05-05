@@ -1,18 +1,12 @@
 <script lang="ts">
-	import {
-		arrow_right_svg,
-		linha_h_1_svg,
-		piramid_home_pt_br_svg,
-		piramide_ingles_svg,
-		the_platform_png
-	} from '$lib';
+	import { arrow_right_svg, linha_h_azul_2_svg, piramid_home_pt_br_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 	import Section_Cards from './Section_Cards.svelte';
 </script>
 
 <section class="w-full items-center relative rounded-lg bg-white mb-10">
-	<div class="lg:max-w-screen-2xl flex flex-col lg:flex-row lg:mx-auto lg:items-center ">
-		<div class="lg:w-[670px] flex  xl:p-16 max-lg:order-2 max-lg:mx-auto">
+	<div class="lg:max-w-screen-2xl flex flex-col lg:flex-row lg:mx-auto lg:items-center">
+		<div class="lg:w-[670px] flex xl:p-16 max-lg:order-2 max-lg:mx-auto">
 			<img src={piramid_home_pt_br_svg} class="w-full max-sm:mb-10" alt="" />
 		</div>
 		<div class="max-lg:p-5 lg:w-1/2 space-y-10 mt-8 lg:mt-16 max-lg:order-1">
@@ -20,7 +14,7 @@
 				{m.produtos_BreakingDownSilosAndBuildingBridges()}
 				<!-- Breaking down silos and building bridges to organizational effectiveness -->
 			</h1>
-			<span class=""><img src={linha_h_1_svg} alt="" /></span>
+			<span class=""><img src={linha_h_azul_2_svg} alt="" /></span>
 			<p class="mt-14 mb-2 Archivo text-lg text-[#25285F]">
 				{@html m.produtos_ThePlatformMakesItEasier()}
 				<!--  The platform facilitates the rethinking of the organization at all layers, from the strategic to the operational level, represented by the pyramid with various

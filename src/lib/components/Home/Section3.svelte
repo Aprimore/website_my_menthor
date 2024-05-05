@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { arrow_right_svg, linha_h_1_svg, piramid_home_pt_br_svg, the_platform_png } from '$lib';
+	import { arrow_right_svg, linha_h_azul2_svg, piramid_home_pt_br_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 </script>
 
@@ -14,7 +14,7 @@
 			<h1 class="text-4xl sm:text-4xl relative Exo-Bold text-[#17193B]">
 				{m.homepage_section3_Breaking()}
 			</h1>
-			<span class=""><img src={linha_h_1_svg} alt="" /></span>
+			<span class=""><img src={linha_h_azul2_svg} alt="" /></span>
 			<p class="mt-14 mb-2 Archivo text-lg text-[#25285F]">
 				{@html m.homepage_section3_The_platform()}
 				<!--  The platform facilitates the rethinking of the organization 

@@ -1,13 +1,11 @@
 <script>
 	import {
 		arrow_right_svg,
-		clientes_parceiros_1_png,
-		linha_h_5_svg,
+		clientes_parceiros_1_webp,
 		linha_h_amarela2_svg,
-		linha_v_1_svg,
 		linha_v_azul_svg,
-		products_1_png,
-		products_2_png,
+		products_1_webp,
+		products_2_webp,
 		products_s3_bg_radial_svg
 	} from '$lib';
 	import * as m from '$paraglide/messages';
@@ -17,6 +15,7 @@
 	<img
 		src={products_s3_bg_radial_svg}
 		class="absolute top-0 left-0 w-full h-full object-cover -z-20 bg-image3 border-yellow-500"
+		alt="radial effect"
 	/>
 	<div class="w-full h-full relative">
 		<div class="lg:max-w-screen-2xl mx-auto lg:flex flex-row items-center lg:pt-20 max-lg:p-5 p-10">
@@ -43,7 +42,7 @@
 			</div>
 
 			<div class="lg:w-1/2 flex flex-col justify-center items-center">
-				<img src={products_2_png} class="w-full" alt="" />
+				<img src={products_2_webp} class="w-full" alt="" />
 			</div>
 		</div>
 
@@ -56,7 +55,9 @@
 							controls, quality, information technology, human resources, PMO and sustainability. -->
 					{m.produtos_MyMenthorIsABusinessPartnerForCorporateAreas()}
 				</p>
-				<span class="absolute left-3 max-lg:hidden"><img src={linha_v_azul_svg} class="" alt="" /></span>
+				<span class="absolute left-3 max-lg:hidden"
+					><img src={linha_v_azul_svg} class="" alt="" /></span
+				>
 				<p class="text-[#D4D4ED] Archivo text-lg">
 					<!-- My Menthor is also a strategic partner for management consultancies and independent
 								consultants who wish to use the platform their clients' projects, ensuring the
@@ -65,7 +66,7 @@
 				</p>
 			</div>
 			<div class="lg:w-1/2 flex flex-col items-center p-5 lg:p-10 max-lg:order-2">
-				<img src={products_1_png} class="w-full" alt="" />
+				<img src={products_1_webp} class="w-full" alt="" />
 			</div>
 		</div>
 		<div>

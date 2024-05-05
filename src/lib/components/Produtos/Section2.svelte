@@ -1,7 +1,6 @@
 <script lang="ts">
 	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
-	import { empresa_1_png } from '$lib';
+	import { empresa_1_webp } from '$lib';
 
 	import animationData from '$lib/assets/lotties/gif-4.json';
 
@@ -23,13 +22,15 @@
 <section class="w-full relative rounded-lg bg-[#F1F1F9]">
 	<div class="lg:h-[634px] lg:max-w-screen-2xl mx-auto lg:flex items-center flex-row lg:my-16">
 		<div class="lg:w-1/2 relative lg:pl-12 max-lg:flex max-lg:flex-col items-center">
-			<h1 class="Exo-Bold text-[#17193B] text-4xl font-bold relative lg:ml-10 mt-12 max-sm:text-center">
+			<h1
+				class="Exo-Bold text-[#17193B] text-4xl font-bold relative lg:ml-10 mt-12 max-sm:text-center"
+			>
 				{m.produtos_WhatIs()}
 				{m.produtos_BusinessArchitectureSoftware()}
 				<!-- What is <span class="text-[#454AB0]">Business <br /> Architecture Software?</span> -->
 			</h1>
 			<div bind:this={animationContainer} class="lg:w-[533px] lg:h-[400px]" />
-			<!-- <img src={empresa_1_png} class="w-[533px] h-[300px]" alt="" /> -->
+			<!-- <img src={empresa_1_webp} class="w-[533px] h-[300px]" alt="" /> -->
 		</div>
 		<div class="lg:w-1/2 relative p-5 lg:p-10">
 			<p class="mt-10 mb-2 text-[#25285F] Archivo text-lg">

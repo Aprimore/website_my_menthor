@@ -10,7 +10,6 @@
 		explore_svg,
 		instant_mix_svg,
 		inventory_svg,
-		linha_h_3_svg,
 		linked_services_svg,
 		network_node_svg,
 		notes_svg,
@@ -25,7 +24,7 @@
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-12 flex items-center"
 		>
 			<div class="flex flex-col mx-auto p-6 rounded-lg relative">
-				<h2 class=" title-om Exo text-2xl  relative max-w-sm text-transparent">.</h2>
+				<h2 class=" title-om Exo text-2xl relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					{@html m.produtos_ItSupportsDifferentLevelsOfMaturity()}
@@ -39,7 +38,7 @@
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-12 flex items-center"
 		>
 			<div class="flex flex-col mx-auto p-6 rounded-lg">
-				<h2 class="title-od Exo text-2xl  relative max-w-sm text-transparent">.</h2>
+				<h2 class="title-od Exo text-2xl relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					{@html m.produtos_EmphasizesBusinessProcessManagement()}
@@ -54,7 +53,7 @@
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-6 flex items-center"
 		>
 			<div class="flex flex-col mx-auto p-6 rounded-lg">
-				<h2 class="title-sd Exo text-2xl  relative max-w-sm text-transparent">.</h2>
+				<h2 class="title-sd Exo text-2xl relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					{@html m.produtos_EmphasizesBusinessProcessManagement()}
@@ -66,7 +65,7 @@
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-6 flex items-center"
 		>
 			<div class="flex flex-col mx-auto p-6 rounded-lg">
-				<h2 class="title-ms Exo text-2xl  relative max-w-sm text-transparent">.</h2>
+				<h2 class="title-ms Exo text-2xl relative max-w-sm text-transparent">.</h2>
 
 				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					{@html m.produtos_DecompplicatesAndDecentralizesTheTopic()}

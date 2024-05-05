@@ -1,9 +1,8 @@
 <script>
 	import {
 		arrow_right_svg,
-		clientes_parceiros_3_png,
-		clientes_parceiros_5_png,
-		linha_h_5_svg,
+		clientes_parceiros_3_webp,
+		clientes_parceiros_5_webp,
 		linha_h_azul_svg
 	} from '$lib';
 	import * as m from '$paraglide/messages';
@@ -16,7 +15,13 @@
 				<div class="p-10 max-sm:p-3 xl:p-16 space-y-7 relative">
 					<h1 class="text-4xl sm:text-5xl z-10 text-[#17193B] Exo-Bold max-sm:text-center">
 						{m.clientesP_PartnerProgram()}
-						<span><img src={linha_h_azul_svg} class="z-10 max-sm:mx-auto max-sm:max-w-72" alt="linha" /></span>
+						<span
+							><img
+								src={linha_h_azul_svg}
+								class="z-10 max-sm:mx-auto max-sm:max-w-72"
+								alt="linha"
+							/></span
+						>
 					</h1>
 					<p class="Archivo text-[#25285F] text-lg">
 						<!-- Register and discover the benefits of our partner programs programs and how we can work together to achieve exceptional results. -->
@@ -47,8 +52,8 @@
 		</div>
 		<div class="lg:w-1/2 lg:flex">
 			<div class="flex flex-row justify-center items-center">
-				<img src={clientes_parceiros_3_png} class="w-full mt-8 md:mb-16 mr-5" alt="" />
-				<img src={clientes_parceiros_5_png} class="w-full mb-8 md:mt-16" alt="" />
+				<img src={clientes_parceiros_3_webp} class="w-full mt-8 md:mb-16 mr-5" alt="" />
+				<img src={clientes_parceiros_5_webp} class="w-full mb-8 md:mt-16" alt="" />
 			</div>
 		</div>
 	</div>

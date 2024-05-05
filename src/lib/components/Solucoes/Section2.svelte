@@ -1,16 +1,12 @@
 <script>
-	import * as m from '$paraglide/messages';
 	import {
-		linha_h_1_svg,
-		linha_h_4_svg,
 		linha_h_azul_2_svg,
 		linha_h_azul_3_svg,
 		linha_h_azul_svg,
-		linha_v_1_svg,
 		linha_v_amarela_svg,
-		portfolio_services_ingles_svg,
-		portfolio_servicos_png
+		piramid_home_pt_br_svg
 	} from '$lib';
+	import * as m from '$paraglide/messages';
 </script>
 
 <section class="w-full items-center relative rounded-lg pb-20 bg-[#F1F1F9]">
@@ -23,7 +19,7 @@
 				</h1>
 			</div>
 			<img src={linha_h_azul_3_svg} class="max-md:max-w-[320px] mx-auto" alt="linha" />
-			<img src={portfolio_services_ingles_svg} class=" max-w-[450px] mx-auto mt-10" alt="" />
+			<img src={piramid_home_pt_br_svg} class=" max-w-[450px] mx-auto mt-10" alt="" />
 		</div>
 
 		<div class="lg:w-1/2 flex flex-col justify-center">
@@ -49,7 +45,7 @@
 				</p>
 			</div>
 			<div
-				class="lg:max-w-2xl flex flex-col lg:self-center min-h-[150px]   bg-[#17193B] rounded-md px-10 max-sm:p-5 mx-10 max-lg:mx-5"
+				class="lg:max-w-2xl flex flex-col lg:self-center min-h-[150px] bg-[#17193B] rounded-md px-10 max-sm:p-5 mx-10 max-lg:mx-5"
 			>
 				<div class="flex justify-center my-auto relative">
 					<span class="absolute left-0 top-4"><img src={linha_v_amarela_svg} alt="" /></span>

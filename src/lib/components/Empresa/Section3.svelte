@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as m from '$paraglide/messages';
-	import { arrow_right_svg, clientes_parceiros_3_png } from '$lib';
+	import { arrow_right_svg, clientes_parceiros_3_webp } from '$lib';
 	import FormZoho from './../FormZoho.svelte';
 
 	import animationData from '$lib/assets/lotties/gif-7.json';
@@ -47,7 +47,7 @@
 				</div>
 
 				<div bind:this={animationContainer} class="" />
-				<!-- <img class="w-[620px]" src={clientes_parceiros_3_png} alt="" /> -->
+				<!-- <img class="w-[620px]" src={clientes_parceiros_3_webp} alt="" /> -->
 			</div>
 		</div>
 		<div class="lg:w-1/2">

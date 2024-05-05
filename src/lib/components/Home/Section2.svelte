@@ -2,7 +2,7 @@
 	import {
 		arrow_right_svg,
 		design_service_svg,
-		linha_h_3_svg,
+		linha_h_verde_3_svg,
 		linked_services_svg,
 		table_chart_view_svg,
 		track_changes_svg
@@ -18,7 +18,8 @@
 
 		<h2 class="Exo-Bold text-4xl relative text-[#17193B]">
 			{m.homepage_section2_smarter()}
-			<span><img src={linha_h_3_svg} class="z-10 max-sm:max-w-72 mx-auto" alt="linha" /></span>
+			<span><img src={linha_h_verde_3_svg} class="z-10 max-sm:max-w-72 mx-auto" alt="linha" /></span
+			>
 		</h2>
 	</div>
 	<div class="w-full flex max-md:flex-col justify-end md:space-x-6 max-sm:mt-3 mt-4">

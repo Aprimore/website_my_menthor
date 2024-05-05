@@ -1,10 +1,5 @@
 <script>
-	import {
-		clientes_parceiros_1_png,
-		linha_h_5_svg,
-		linha_h_amarela_svg,
-		products_s3_bg_radial_svg
-	} from '$lib';
+	import { clientes_parceiros_1_webp, linha_h_amarela_svg, products_s3_bg_radial_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 </script>
 
@@ -12,6 +7,7 @@
 	<img
 		src={products_s3_bg_radial_svg}
 		class="absolute top-0 left-0 w-full h-full object-cover -z-20"
+		alt="radial effect"
 	/>
 	<div class="w-full h-full relative">
 		<div class="py-24 max-w-screen-2xl mx-auto space-y-24" id="cases">
@@ -30,9 +26,9 @@
 					>
 				</h1>
 				<div class="flex lg:flex-row flex-col justify-center items-center p-3">
-					<div class="lg:w-1/2 lg:mt-auto ">
-						<div class=" xl:ml-16 rounded-lg ">
-							<img src={clientes_parceiros_1_png} class="w-full xl:max-w-[604px]" alt="" />
+					<div class="lg:w-1/2 lg:mt-auto">
+						<div class=" xl:ml-16 rounded-lg">
+							<img src={clientes_parceiros_1_webp} class="w-full xl:max-w-[604px]" alt="" />
 						</div>
 					</div>
 					<div
@@ -54,23 +50,10 @@
 				</div>
 			</div>
 			<div class=" mx-auto">
-				<h1
-					class="Exo mx-auto text-4xl sm:text-5xl max-sm:text-center z-10 relative text-[#F1F1F9] Exo-Bold max-w-max mb-24"
-				>
-					<!-- Partner program -->
-					{m.clientesP_SuccessHistories()}
-					<span
-						><img
-							src={linha_h_amarela_svg}
-							class="z-10 max-sm:mx-auto max-sm:max-w-72"
-							alt="linha"
-						/></span
-					>
-				</h1>
 				<div class="flex lg:flex-row flex-col justify-center items-center p-3">
-					<div class="lg:w-1/2 lg:mt-auto ">
-						<div class=" xl:ml-16 rounded-lg ">
-							<img src={clientes_parceiros_1_png} class="w-full xl:max-w-[604px]" alt="" />
+					<div class="lg:w-1/2 lg:mt-auto">
+						<div class=" xl:ml-16 rounded-lg">
+							<img src={clientes_parceiros_1_webp} class="w-full xl:max-w-[604px]" alt="" />
 						</div>
 					</div>
 					<div
@@ -92,23 +75,10 @@
 				</div>
 			</div>
 			<div class=" mx-auto">
-				<h1
-					class="Exo mx-auto text-4xl sm:text-5xl max-sm:text-center z-10 relative text-[#F1F1F9] Exo-Bold max-w-max mb-24"
-				>
-					<!-- Partner program -->
-					{m.clientesP_SuccessHistories()}
-					<span
-						><img
-							src={linha_h_amarela_svg}
-							class="z-10 max-sm:mx-auto max-sm:max-w-72"
-							alt="linha"
-						/></span
-					>
-				</h1>
 				<div class="flex lg:flex-row flex-col justify-center items-center p-3">
-					<div class="lg:w-1/2 lg:mt-auto ">
-						<div class=" xl:ml-16 rounded-lg ">
-							<img src={clientes_parceiros_1_png} class="w-full xl:max-w-[604px]" alt="" />
+					<div class="lg:w-1/2 lg:mt-auto">
+						<div class=" xl:ml-16 rounded-lg">
+							<img src={clientes_parceiros_1_webp} class="w-full xl:max-w-[604px]" alt="" />
 						</div>
 					</div>
 					<div
@@ -129,7 +99,6 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
 	</div>
 </section>

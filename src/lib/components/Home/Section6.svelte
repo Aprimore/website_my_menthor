@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { arrow_right_svg, linha_h_7_svg, the_platform_png } from '$lib';
+	import { arrow_right_svg, linha_h_cinza_svg } from '$lib';
 	import animationData from '$lib/assets/lotties/gif-3.json';
 	import * as m from '$paraglide/messages';
 
@@ -43,7 +43,7 @@
 		>
 			<img
 				class="absolute bottom-0 h-screen/2 max-w-xs h-full max-lg:hidden"
-				src={linha_h_7_svg}
+				src={linha_h_cinza_svg}
 				alt=""
 			/>
 			<div class="space-y-5 py-5 relative md:mt-6 lg:mt-0">
@@ -87,7 +87,7 @@
 		>
 			<img
 				class="absolute bottom-0 h-screen/2 max-w-xs h-full max-lg:hidden"
-				src={linha_h_7_svg}
+				src={linha_h_cinza_svg}
 				alt=""
 			/>
 			<div class="space-y-5 relative sm:py-5 md:mt-6 lg:mt-0 max-md:mb-10" id="bottom-page">

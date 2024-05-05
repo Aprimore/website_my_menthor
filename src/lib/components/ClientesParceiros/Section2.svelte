@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { clientes_parceiros_2_png, linha_h_5_svg, linha_h_laranja_svg } from '$lib';
+	import { linha_h_laranja_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 	import animationData from '$lib/assets/lotties/gif-6.json';
 	import lottie from 'lottie-web';
@@ -26,9 +26,7 @@
 		</div>
 		<div class="lg:w-1/2 flex justify-center items-center border-black p-5">
 			<div class="card bg-[#F1F1F9] lg:max-w-[580px] lg:mr-36">
-				<h1
-					class="Exo-Bold text-4xl relative text-[#17193B] max-lg:text-center mb-5"
-				>
+				<h1 class="Exo-Bold text-4xl relative text-[#17193B] max-lg:text-center mb-5">
 					<span class="text-[#EB642A] relative Exo-Bold">
 						<!-- Your success -->
 						{@html m.clientesP_YourSuccessIsOurSuccess()}
@@ -41,7 +39,7 @@
 							alt="linha"
 						/>
 					</span>
-					<!-- is our success -->				
+					<!-- is our success -->
 				</h1>
 				<p class="Archivo text-[#25285F] text-lg p-3">
 					<!-- We are committed to the continued success of our clients, cultivating long-term relationships with a focus on results. -->

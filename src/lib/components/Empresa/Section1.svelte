@@ -1,6 +1,6 @@
 <script>
 	import * as m from '$paraglide/messages';
-	import { empresa_1_png, linha_h_azul_2_svg, linha_h_azul_svg } from '$lib';
+	import { empresa_1_webp, linha_h_azul_2_svg, linha_h_azul_svg } from '$lib';
 </script>
 
 <section class="mt-4 lg:my-16 pb-20 bg-white">
@@ -31,7 +31,7 @@
 			</div>
 		</div>
 		<div class="lg:w-1/2 lg:p-4 mt-3 relative lg:my-auto">
-			<img src={empresa_1_png} class=" mx-auto rounded-lg" alt="" />
+			<img src={empresa_1_webp} class=" mx-auto rounded-lg" alt="" />
 		</div>
 	</div>
 </section>

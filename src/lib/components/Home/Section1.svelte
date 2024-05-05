@@ -1,11 +1,5 @@
 <script lang="ts">
-	import {
-		arrow_right_svg,
-		linha_h_4_svg,
-		linha_v_1_svg,
-		linha_v_2_svg,
-		the_platform_png
-	} from '$lib';
+	import { arrow_right_svg, linha_h_azul_4_svg, linha_v_1_verde_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 
 	import animationData from '$lib/assets/lotties/gif-1.json';
@@ -35,7 +29,7 @@
 					class="max-w-[600px] lg:max-w-[695px] max-h-[520px] lg:max-h-[570px]
 				  text-[#17193B] rounded-lg py-10 xl:py-14 px-5 lg:px-16 relative"
 				>
-					<span class="absolute"><img src={linha_v_1_svg} alt="" /></span>
+					<span class="absolute"><img src={linha_v_1_verde_svg} alt="" /></span>
 					<h3 class="ml-6 mb-2 text-lg tracking-tight text-[#25285F] Archivo leading-tight">
 						{@html m.homepage_section1_desc1()}
 					</h3>
@@ -50,7 +44,7 @@
 			<div class="text-[#17193B] rounded-lg max-md:p-5 p-12 xl:p-16 w-full" id="products-about">
 				<h1 class="max-sm:text-center Exo-Bold text-4xl relative">
 					{m.homepage_section1_title()}
-					<span><img src={linha_h_4_svg} class="z-10 max-sm:mx-auto" alt="linha" /></span>
+					<span><img src={linha_h_azul_4_svg} class="z-10 max-sm:mx-auto" alt="linha" /></span>
 				</h1>
 
 				<h3 class="mt-10 mb-2 text-[#25285F] Archivo text-lg leading-snug">

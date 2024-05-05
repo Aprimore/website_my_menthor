@@ -1,11 +1,6 @@
 <script lang="ts">
 	import * as m from '$paraglide/messages';
-	import {
-		clientes_parceiros_3_png,
-		linha_h_3_svg,
-		linha_h_5_svg,
-		linha_h_verde_1_svg
-	} from '$lib';
+	import { clientes_parceiros_3_webp, linha_h_verde_1_svg } from '$lib';
 
 	import animationData from '$lib/assets/lotties/gif-5.json';
 
@@ -28,7 +23,7 @@
 	<div class="lg:h-[532px] md:flex flex-row max-w-[1350px] mx-auto max-md:p-5" id="purpose">
 		<div class="md:w-1/2 md:flex flex-col justify-center">
 			<div bind:this={animationContainer} />
-			<!-- <img class="w-full h-full" src={clientes_parceiros_3_png} alt="" /> -->
+			<!-- <img class="w-full h-full" src={clientes_parceiros_3_webp} alt="" /> -->
 		</div>
 		<div class="md:w-1/2 flex flex-col justify-center">
 			<div class="card space-y-10 p-5 md:p-12 bg-[#F1F1F9]">
