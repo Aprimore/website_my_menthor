@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @font-face {
+	font-family: 'Exo';
+	src: url('/fonts/Exo/Exo-VariableFont_wght.ttf') format('truetype');
+	font-weight: 400 600 700;
+	font-style: normal;
+	font-display: swap;
+}
+
 @font-face {
+	font-family: 'Archivo';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/Archivo/Archivo-VariableFont_wdth,wght.ttf') format('truetype');
+	font-display: swap;
+} */
+
+/* @font-face {
 	font-family: 'Exo';
 	font-style: regular;
 	font-weight: 400;
@@ -34,34 +50,4 @@
 	font-display: swap;
 }
 
-@font-face {
-	font-family: 'Archivo';
-	font-style: regular;
-	font-weight: 400;
-	src: url('/fonts/Archivo/Archivo-VariableFont_wdth,wght.ttf');
-	font-display: swap;
-}
-
-* {
-	font-family: Arial, sans-serif;
-}
-
-.Archivo {
-	font-family: Archivo, Arial, ssans-serif;
-}
-
-.Exo {
-	font-family: Exo, Arial, sans-serif;
-}
-
-.Exo-Regular {
-	font-family: Exo-Regular, Arial, sans-serif;
-}
-
-.Exo-Bold {
-	font-family: Exo-Bold, Arial, sans-serif;
-}
-
-.Exo-Semibold {
-	font-family: Exo-Semibold, Arial, sans-serif;
-}
+*/

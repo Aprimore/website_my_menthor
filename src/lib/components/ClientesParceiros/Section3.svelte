@@ -34,10 +34,10 @@
 					<div
 						class="lg:w-1/2 lg:mt-auto flex flex-col justify-center space-y-8 xl:px-10 lg:mr-4 md:px-3"
 					>
-						<h1 class="text-[#FCC614] Exo-Bold max-lg:text-center text-4xl max-md:mt-7">
+						<h2 class="text-[#FCC614] Exo-Bold max-lg:text-center text-4xl max-md:mt-7">
 							<!-- Case -->
 							{m.clientesP_Case()}
-						</h1>
+						</h2>
 						<p class="text-[#D4D4ED] Archivo lg:max-w-screen-md text-xl md:px-1">
 							<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat ligula et mollis fringilla. Nunc mollis, odio eget consectetur rhoncus, nisl mauris blandit ante, non pretium turpis ligula a magna. Nam faucibus volutpat orci, at sagittis lacus dignissim sed. Curabitur id ex quis est vulputate vestibulum. -->
 							{m.clientesP_LoremIpsumDolorSitAmet()}
@@ -59,10 +59,10 @@
 					<div
 						class="lg:w-1/2 lg:mt-auto flex flex-col justify-center space-y-8 xl:px-10 lg:mr-4 md:px-3"
 					>
-						<h1 class="text-[#FCC614] Exo-Bold max-lg:text-center text-4xl max-md:mt-7">
+						<h2 class="text-[#FCC614] Exo-Bold max-lg:text-center text-4xl max-md:mt-7">
 							<!-- Case -->
 							{m.clientesP_Case()}
-						</h1>
+						</h2>
 						<p class="text-[#D4D4ED] Archivo lg:max-w-screen-md text-xl md:px-1">
 							<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat ligula et mollis fringilla. Nunc mollis, odio eget consectetur rhoncus, nisl mauris blandit ante, non pretium turpis ligula a magna. Nam faucibus volutpat orci, at sagittis lacus dignissim sed. Curabitur id ex quis est vulputate vestibulum. -->
 							{m.clientesP_LoremIpsumDolorSitAmet()}
@@ -84,10 +84,10 @@
 					<div
 						class="lg:w-1/2 lg:mt-auto flex flex-col justify-center space-y-8 xl:px-10 lg:mr-4 md:px-3"
 					>
-						<h1 class="text-[#FCC614] Exo-Bold max-lg:text-center text-4xl max-md:mt-7">
+						<h2 class="text-[#FCC614] Exo-Bold max-lg:text-center text-4xl max-md:mt-7">
 							<!-- Case -->
 							{m.clientesP_Case()}
-						</h1>
+						</h2>
 						<p class="text-[#D4D4ED] Archivo lg:max-w-screen-md text-xl md:px-1">
 							<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat ligula et mollis fringilla. Nunc mollis, odio eget consectetur rhoncus, nisl mauris blandit ante, non pretium turpis ligula a magna. Nam faucibus volutpat orci, at sagittis lacus dignissim sed. Curabitur id ex quis est vulputate vestibulum. -->
 							{m.clientesP_LoremIpsumDolorSitAmet()}

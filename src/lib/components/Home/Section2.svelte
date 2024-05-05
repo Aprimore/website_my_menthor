@@ -33,9 +33,9 @@
 					{m.homepage_section2_holistic()}
 				</h3>
 
-				<h4 class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
+				<p class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
 					{@html m.homepage_section2_getatrue()}
-				</h4>
+				</p>
 			</div>
 		</div>
 		<div
@@ -48,9 +48,9 @@
 					{m.homepage_section2_Organizational()}
 				</h3>
 
-				<h4 class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
+				<p class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
 					{m.homepage_section2_Rethink()}
-				</h4>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -64,9 +64,9 @@
 					{m.homepage_section2_Evolution()}
 				</h3>
 
-				<h4 class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
+				<p class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
 					{m.homepage_section2_Transform()}
-				</h4>
+				</p>
 			</div>
 		</div>
 		<div
@@ -78,9 +78,9 @@
 					{m.homepage_section2_Organizational_alignment()}
 				</h3>
 
-				<h4 class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
+				<p class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
 					{m.homepage_section2_Ensure()}
-				</h4>
+				</p>
 			</div>
 		</div>
 	</div>

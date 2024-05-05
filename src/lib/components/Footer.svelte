@@ -12,7 +12,7 @@
 	import Copyright from './Copyright.svelte';
 </script>
 
-<footer class="footer relative bg-[#17193b] w-full">
+<footer class="footer relative bg-[#17193b] w-full Exo">
 	<div class="lg:container mx-auto max-sm:flex justify-center">
 		<div class=" lg:p-12">
 			<div
@@ -165,16 +165,36 @@
 					</div>
 					<div class="xl:absolute bottom-0 right-5 mr-5">
 						<div class="flex space-x-7">
-							<a href="/" class="flex items-center justify-center w-8 h-8" target="_blank">
+							<a
+								href="/"
+								class="flex items-center justify-center w-8 h-8"
+								aria-label="Youtube"
+								target="_blank"
+							>
 								<img src={youtube_svg} alt="" />
 							</a>
-							<a href="/" class="flex items-center justify-center w-8 h-8" target="_blank">
+							<a
+								href="/"
+								class="flex items-center justify-center w-8 h-8"
+								aria-label="Linkedin"
+								target="_blank"
+							>
 								<img src={linkedin_svg} alt="" />
 							</a>
-							<a href="/" class="flex items-center justify-center w-8 h-8" target="_blank">
+							<a
+								href="/"
+								class="flex items-center justify-center w-8 h-8"
+								aria-label="Facebook"
+								target="_blank"
+							>
 								<img src={facebook_svg} alt="" />
 							</a>
-							<a href="/" class="flex items-center justify-center w-8 h-8" target="_blank">
+							<a
+								href="/"
+								class="flex items-center justify-center w-8 h-8"
+								aria-label="Instagram"
+								target="_blank"
+							>
 								<img src={instagram_svg} alt="" />
 							</a>
 						</div>
@@ -183,7 +203,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- <Copyright /> -->
+	<Copyright />
 </footer>
 
 <!-- <style>

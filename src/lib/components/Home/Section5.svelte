@@ -10,17 +10,18 @@
 		</div>
 		<div class="md:w-1/2 relative z-20 space-y-6 md:max-w-screen-md flex flex-col justify-center">
 			<h1 class="text-[#FCC614] Exo-Semibold text-2xl">{m.homepage_section_5_Come()}</h1>
-			<h3 class="text-[#F1F1F9] Exo-Semibold text-3xl font-bold">
+			<p class="text-[#F1F1F9] Exo-Semibold text-3xl font-bold">
 				{m.homepage_section_5_My_Menthor()}
 
 				<!-- <span class="text-[#FCC614]"> My Menthor </span> is the complete plataform to your company's
 				performance -->
-			</h3>
+			</p>
 
 			<button class="border md:border-[#17193B] border-none rounded-xl mb-20">
 				<a
 					class="Archivo btn-learn bg-[#F1F1F9] block max-w-max rounded-xl px-10 py-4 text-xl text-[#17193B] focus:ring sm:w-auto z-10 relative"
 					href="/products#platform"
+					aria-label="Learn More about the platform"
 				>
 					{m.button_learn_more()}
 				</a>

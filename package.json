@@ -44,5 +44,10 @@
 		"deploy": "bun run build && bun gh-pages -d build -t true",
 		"postinstall": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@fontsource-variable/archivo": "^5.0.19",
+		"@fontsource-variable/exo": "^5.0.19",
+		"install": "^0.13.0"
+	}
 }

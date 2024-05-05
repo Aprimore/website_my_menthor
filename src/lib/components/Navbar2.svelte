@@ -29,6 +29,7 @@
 	<div class="flex items-center justify-between" id={generateDynamicId(currentPage)}>
 		<a
 			class="logoHeader text-white hover:text-slate-300 transition-transform transform hover:-translate-y-1"
+			aria-label="My Menthor"
 			href="/"
 		>
 			<img src={logo_navbar_svg} class="" alt="" />

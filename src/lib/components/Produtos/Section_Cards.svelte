@@ -1,6 +1,5 @@
 <script>
 	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
 	import {
 		arrow_right_svg,
 		card_travel_svg,
@@ -24,14 +23,14 @@
 			class="card1 w-[574px] h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-12 flex items-center"
 		>
 			<div class="flex flex-col mx-auto p-6 rounded-lg relative">
-				<h2 class=" title-om Exo text-2xl relative max-w-sm text-transparent">.</h2>
+				<h1 class=" title-om Exo text-2xl relative max-w-sm text-transparent">.</h1>
 
-				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
+				<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					{@html m.produtos_ItSupportsDifferentLevelsOfMaturity()}
 					<!-- It contains its own embedded methodology with an approach to corporate development,
 					which helps in diagnosis, defining the implementation strategy, and guiding the step-by-step
 					the evolution of organizational maturity. -->
-				</h3>
+				</p>
 			</div>
 		</div>
 		<div
@@ -40,11 +39,11 @@
 			<div class="flex flex-col mx-auto p-6 rounded-lg">
 				<h2 class="title-od Exo text-2xl relative max-w-sm text-transparent">.</h2>
 
-				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
+				<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					{@html m.produtos_EmphasizesBusinessProcessManagement()}
 					<!-- It supports different levels of maturity and
 					deployment strategies through its modular and flexible approach. -->
-				</h3>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -55,10 +54,10 @@
 			<div class="flex flex-col mx-auto p-6 rounded-lg">
 				<h2 class="title-sd Exo text-2xl relative max-w-sm text-transparent">.</h2>
 
-				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
+				<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					{@html m.produtos_EmphasizesBusinessProcessManagement()}
 					<!-- Emphasizes BPM as a Management Model, facilitating the structuring, instrumentation and implementation of the topic, highlighting the results of the various process mapping and improvement initiatives. -->
-				</h3>
+				</p>
 			</div>
 		</div>
 		<div
@@ -67,12 +66,12 @@
 			<div class="flex flex-col mx-auto p-6 rounded-lg">
 				<h2 class="title-ms Exo text-2xl relative max-w-sm text-transparent">.</h2>
 
-				<h3 class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
+				<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 					{@html m.produtos_DecompplicatesAndDecentralizesTheTopic()}
 					<!-- Decomplicates and decentralizes the topic, so that the business areas
 					take responsibility for their processes and results, with the support of governance
 					mechanisms and integrated into the organizational components and capabilities -->
-				</h3>
+				</p>
 			</div>
 		</div>
 	</div>

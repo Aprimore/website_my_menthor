@@ -30,9 +30,9 @@
 				  text-[#17193B] rounded-lg py-10 xl:py-14 px-5 lg:px-16 relative"
 				>
 					<span class="absolute"><img src={linha_v_1_verde_svg} alt="" /></span>
-					<h3 class="ml-6 mb-2 text-lg tracking-tight text-[#25285F] Archivo leading-tight">
+					<h1 class="ml-6 mb-2 text-lg tracking-tight text-[#25285F] Archivo leading-tight">
 						{@html m.homepage_section1_desc1()}
-					</h3>
+					</h1>
 					<!--  -->
 					<div bind:this={animationContainer} class="max-lg:max-w-96" />
 				</div>
@@ -42,20 +42,21 @@
 			class="mt-5 lg:mt-24 right-0 flex lg:absolute bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl xl:max-w-screen-md max-w-[600px] self-center"
 		>
 			<div class="text-[#17193B] rounded-lg max-md:p-5 p-12 xl:p-16 w-full" id="products-about">
-				<h1 class="max-sm:text-center Exo-Bold text-4xl relative">
+				<h2 class="max-sm:text-center Exo-Bold text-4xl relative">
 					{m.homepage_section1_title()}
 					<span><img src={linha_h_azul_4_svg} class="z-10 max-sm:mx-auto" alt="linha" /></span>
-				</h1>
+				</h2>
 
-				<h3 class="mt-10 mb-2 text-[#25285F] Archivo text-lg leading-snug">
+				<p class="mt-10 mb-2 text-[#25285F] Archivo text-lg leading-snug">
 					{@html m.homepage_section1_desc2()}
 					<!--  My Menthor is a SaaS Business Architecture platform that  helps to unfold the company's strategy  into a vision oriented by end-to-end, providing visibility of processes and aligning organizational components to achieve business objectives. -->
-				</h3>
+				</p>
 
 				<div class="mt-8 flex flex-wrap gap-4">
 					<a
-						class="btn-learn block max-w-max rounded-xl px-8 py-4 text-lg bg-[#8ABB3F] text-[#F1F1F9] focus:ring sm:w-auto z-10 relative max-sm:mx-auto"
+						class="Exo btn-learn block max-w-max rounded-xl px-8 py-4 text-lg bg-[#8ABB3F] text-[#F1F1F9] focus:ring sm:w-auto z-10 relative max-sm:mx-auto"
 						href="/products#platform"
+						aria-label="View Products"
 					>
 						{m.button_learn_more()}
 					</a>

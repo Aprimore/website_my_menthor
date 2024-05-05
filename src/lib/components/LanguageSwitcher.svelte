@@ -25,6 +25,7 @@
 
 <select
 	class="relative h-[2.5rem] bg-[#F1F1F9]"
+	aria-label="Select Language"
 	on:change={(e) => switchToLanguage(/** @type {any} */ (e).target.value)}
 >
 	{#each availableLanguageTags as langTag}
