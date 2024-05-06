@@ -1,8 +1,9 @@
 <script lang="ts">
+	import * as m from '$lib/paraglide/messages';
 	import { arrow_right_svg, linha_h_azul2_svg, piramid_home_pt_br_svg } from '$lib';
-	import * as m from '$paraglide/messages';
 </script>
 
+{#if m}
 <section class="sm:bg-[#F1F1F9] w-full items-center relative rounded-lg sm:my-20 max-sm:p-2">
 	<div
 		class="max-sm:bg-[#F1F1F9] md:max-w-screen-2xl flex flex-col lg:flex-row lg:pt-20 mx-auto items-center rounded-lg"
@@ -48,12 +49,17 @@
 				class="Archivo btn-learn bg-[#F1F1F9] block w-full rounded-xl px-10 py-4 text-xl text-[#17193B] focus:ring sm:w-auto z-10 relative"
 				href="/products#platform"
 				aria-label="Learn More about Products"
+				title="Learn More about Products"
 			>
 				{m.button_learn_more()}
 			</a>
 		</button>
 	</div>
 </section>
+{:else}
+  <!-- Placeholder while translations are loading -->
+  <div>Loading...</div>
+{/if}
 
 <style>
 	.btn-learn::after {

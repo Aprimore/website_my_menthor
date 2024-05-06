@@ -1,15 +1,14 @@
 <script lang="ts">
+	import * as m from '$lib/paraglide/messages';
 	import { arrow_up_svg } from '$lib';
-	import * as m from '$paraglide/messages';
 </script>
-
-<div class="copyright py-5 bg-blue-800 text-sm">
+{#if m}
+<div class="copyright p-5 bg-blue-800 text-sm  w-full">
 	<div
-		class="font-medium flex flex-row items-center p-4 md:p-0 mt-4 border border-red rounded-lg md:space-x-52 md:mt-0 md:border-0 w-full
-        "
+		class="grid md:grid-cols-3 grid-cols-1 gap-5 md:gap-10 mx-auto "
 	>
 		<ul
-			class="flex justify-end w-[30%]
+			class=" max-w-[90%]
         "
 		>
 			<li class="">
@@ -18,7 +17,7 @@
 		</ul>
 
 		<ul
-			class="flex justify-start space-x-10 w-[30%]
+			class="flex max-md:flex-col md:justify-around gap-5 md:gap-10 md:ml-auto  md:min-w-96 max-w-[90%]
             "
 		>
 			<li>
@@ -39,10 +38,9 @@
 		</ul>
 
 		<ul
-			class="flex justify-center w-[10%]
-            "
+			class="max-md:absolute right-2 flex  max-w-min ml-auto mb-auto "
 		>
-			<li>
+			<li class=" ">
 				<button class="bg-[#D4D4ED] size-[36px] flex justify-center items-center rounded-md Exo">
 					<a href="/"
 						><img
@@ -57,7 +55,10 @@
 		</ul>
 	</div>
 </div>
-
+{:else}
+  <!-- Placeholder while translations are loading -->
+  <div>Loading...</div>
+{/if}
 <style>
 	.copyright {
 		background-color: #25285f;

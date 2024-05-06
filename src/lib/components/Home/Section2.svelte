@@ -1,4 +1,5 @@
 <script lang="ts">
+	import * as m from '$lib/paraglide/messages';
 	import {
 		arrow_right_svg,
 		design_service_svg,
@@ -7,9 +8,10 @@
 		table_chart_view_svg,
 		track_changes_svg
 	} from '$lib';
-	import * as m from '$paraglide/messages';
 </script>
 
+
+{#if m}
 <section
 	class="flex flex-col items-center relative rounded-lg my-6 max-w-screen-2xl mx-auto max-md:p-2"
 >
@@ -95,6 +97,11 @@
 		</button>
 	</div>
 </section>
+
+{:else}
+  <!-- Placeholder while translations are loading -->
+  <div>Loading...</div>
+{/if}
 
 <style>
 	.btn-demo::after {

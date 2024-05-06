@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as m from '$paraglide/messages';
+	import * as m from '$lib/paraglide/messages';
 	import { checkmark_2_svg } from '$lib';
 </script>
 

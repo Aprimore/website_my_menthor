@@ -5,7 +5,7 @@
 		check_list_illustration_svg,
 		line_graph_illustration_svg
 	} from '$lib';
-	import * as m from '$paraglide/messages';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
 <!-- <section class="w-full items-center relative rounded-lg bg-[#F1F1F9]">

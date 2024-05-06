@@ -1,10 +1,11 @@
 <script lang="ts">
+	import * as m from '$lib/paraglide/messages';
 	import { logo_navbar_svg } from '$lib';
-	import * as m from '$paraglide/messages';
-	import { languageTag, setLanguageTag } from '$paraglide/runtime';
+	import { languageTag, setLanguageTag } from '$lib/paraglide/runtime';
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
 </script>
 
+{#if m}
 <nav class="navbar bg-[#d4d4ed] relative w-full z-20 top-0 start-0 border-b">
 	<div
 		class="nav1 bg-transparent max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-2.5"
@@ -45,6 +46,10 @@
 		></div>
 	</div>
 </nav>
+{:else}
+  <!-- Placeholder while translations are loading -->
+  <div>Loading...</div>
+{/if}
 
 <style>
 	.language::before {

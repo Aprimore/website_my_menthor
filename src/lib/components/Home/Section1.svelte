@@ -1,6 +1,6 @@
 <script lang="ts">
+	import * as m from '$lib/paraglide/messages';
 	import { arrow_right_svg, linha_h_azul_4_svg, linha_v_1_verde_svg } from '$lib';
-	import * as m from '$paraglide/messages';
 
 	import { onMount } from 'svelte';
 	import animationData from '$lib/assets/lotties/gif-1.json';
@@ -23,21 +23,9 @@
 		'snapshot',
 		'zoom',
 		'info'
-	];
-
-	//   let animationContainer: HTMLElement;
-
-	//   import lottie from 'lottie-web';
-	// 	onMount(() => {
-	// 		lottie.loadAnimation({
-	// 			container: animationContainer,
-	// 			loop: true,
-	// 			autoplay: true,
-	// 			animationData
-	// 		});
-	// 	});
+	];	
 </script>
-
+{#if m}
 <section class="max-w-screen-xl relative rounded-lg mx-auto my-2 max-sm:p-2">
 	<div class="md:py-5 lg:py-20 relative flex flex-col">
 		<div class="flex flex-col lg:w-1/2 relative items-center">
@@ -88,7 +76,8 @@
 					<a
 						class="Exo btn-learn block max-w-max rounded-xl px-8 py-4 text-lg bg-[#8ABB3F] text-[#F1F1F9] focus:ring sm:w-auto z-10 relative max-sm:mx-auto"
 						href="/products#platform"
-						aria-label="View Products"
+						aria-label="Learn more about the platform"
+						title="Learn more about the platform"
 					>
 						{m.button_learn_more()}
 					</a>
@@ -97,6 +86,11 @@
 		</div>
 	</div>
 </section>
+
+{:else}
+  <!-- Placeholder while translations are loading -->
+  <div>Loading...</div>
+{/if}
 
 <style>
 	.btn-learn::after {

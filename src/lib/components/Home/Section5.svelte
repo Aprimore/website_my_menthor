@@ -1,8 +1,8 @@
 <script lang="ts">
+	import * as m from '$lib/paraglide/messages';
 	import { arrow_right_svg, earth_webp, rocket_webp } from '$lib';
-	import * as m from '$paraglide/messages';
 </script>
-
+{#if m}
 <section class="w-full items-center relative rounded-lg md:mt-20">
 	<div class="mx-auto px-4 md:flex md:h-[330px] md:items-center relative">
 		<div class="md:w-1/2 relative z-10 flex justify-center">
@@ -22,6 +22,7 @@
 					class="Archivo btn-learn bg-[#F1F1F9] block max-w-max rounded-xl px-10 py-4 text-xl text-[#17193B] focus:ring sm:w-auto z-10 relative"
 					href="/products#platform"
 					aria-label="Learn More about the platform"
+					title="Learn more about the platform"
 				>
 					{m.button_learn_more()}
 				</a>
@@ -38,7 +39,10 @@
 		</div>
 	</div>
 </section>
-
+{:else}
+  <!-- Placeholder while translations are loading -->
+  <div>Loading...</div>
+{/if}
 <style>
 	.btn-learn::after {
 		content: url('$lib/assets/svg/arrow_right_2.svg');

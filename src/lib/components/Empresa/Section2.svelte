@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as m from '$paraglide/messages';
+	import * as m from '$lib/paraglide/messages';
 	import { clientes_parceiros_3_webp, linha_h_verde_1_svg } from '$lib';
 	import { onMount } from 'svelte';
 	import animationData from '$lib/assets/lotties/gif-5.json';

@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { checkmark_svg, linha_h_azul_6_svg } from '$lib';
-	import * as m from '$paraglide/messages';
-
+	import * as m from '$lib/paraglide/messages';
 	import { onMount } from 'svelte';
 	import animationData from '$lib/assets/lotties/gif-2.json';
 
@@ -24,21 +23,8 @@
 		'zoom',
 		'info'
 	];
-	// import lottie from 'lottie-web';
-	// import { onMount } from 'svelte';
-
-	// let animationContainer: HTMLElement;
-
-	// onMount(() => {
-	// 	lottie.loadAnimation({
-	// 		container: animationContainer,
-	// 		loop: true,
-	// 		autoplay: true,
-	// 		animationData
-	// 	});
-	// });
 </script>
-
+{#if m}
 <section class="w-full items-center relative rounded-lg sm:my-20 max-md:p-2">
 	<div class="flex max-lg:flex-col max-w-screen-2xl mx-auto">
 		<div class="lg:w-2/3 my-5">
@@ -130,7 +116,10 @@
 		</div>
 	</div>
 </section>
-
+{:else}
+  <!-- Placeholder while translations are loading -->
+  <div>Loading...</div>
+{/if}
 <style>
 	.check::before {
 		content: url('$lib/assets/svg/checkmark.svg');

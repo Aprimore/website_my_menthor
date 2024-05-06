@@ -14,6 +14,7 @@ export { default as earth_webp } from './assets/images/earth.webp';
 export { default as empresa_1_webp } from './assets/images/empresa_1.webp';
 export { default as header_hero_webp } from './assets/images/header_hero.webp';
 export { default as logo_footer_webp } from './assets/images/logo_footer.webp';
+export { default as og_image_webp } from './assets/images/og_image.webp';
 export { default as products_1_webp } from './assets/images/products_1.webp';
 export { default as products_2_webp } from './assets/images/products_2.webp';
 export { default as rocket_webp } from './assets/images/rocket.webp';

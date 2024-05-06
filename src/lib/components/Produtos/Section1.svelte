@@ -5,7 +5,7 @@
 		linha_v_amarela_svg,
 		products_frame_svg
 	} from '$lib';
-	import * as m from '$paraglide/messages';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
 <section class="w-full bg-white md:mt-16 mt-4">

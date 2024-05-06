@@ -1,4 +1,5 @@
 <script lang="ts">
+	import * as m from '$lib/paraglide/messages';
 	import {
 		arrow_right_svg,
 		facebook_svg,
@@ -8,10 +9,10 @@
 		mail_svg,
 		youtube_svg
 	} from '$lib';
-	import * as m from '$paraglide/messages';
 	import Copyright from './Copyright.svelte';
 </script>
 
+{#if m}
 <footer class="footer relative bg-[#17193b] w-full Exo">
 	<div class="lg:container mx-auto max-sm:flex justify-center">
 		<div class=" lg:p-12">
@@ -54,24 +55,24 @@
 
 				<div class="lg:ml-12 w-full">
 					<div class="w-full mb-10">
-						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
+						<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 							{m.footer_Products()}
-						</h4>
+						</p>
 						<ul class="space-y-3">
 							<li>
-								<a href="/products#platform" class="text-[#D4D4ED] text-sm"
+								<a href="/products#platform" title="Learn more about our company" class="text-[#D4D4ED] text-sm"
 									>{m.footer_About_platform()}</a
 								>
 							</li>
 							<li>
-								<a href="/products#target-audience" class="text-[#D4D4ED] text-sm">
+								<a href="/products#target-audience" title="Learn more about our company" class="text-[#D4D4ED] text-sm">
 									{m.footer_Target_audience()}
 								</a>
 							</li>
 						</ul>
-						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5 mt-5">
+						<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5 mt-5">
 							{m.footer_Stakeholders()}
-						</h4>
+						</p>
 						<ul class="space-y-3">
 							<li>
 								<a href="/solutions#modules" class="text-[#D4D4ED] text-sm">
@@ -93,9 +94,9 @@
 				</div>
 				<div class="lg:ml-12 w-full">
 					<div class="w-full mb-10">
-						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
+						<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 							{m.footer_Partner_Program()}
-						</h4>
+						</p>
 						<ul class="space-y-3">
 							<li>
 								<a href="/customers_and_partners#clients" class="text-[#D4D4ED] text-sm">
@@ -123,9 +124,9 @@
 
 				<div class="lg:ml-12 w-full">
 					<div class="w-full mb-10">
-						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
+						<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 							{m.footer_Knowledge_Base()}
-						</h4>
+						</p>
 						<ul class="space-y-3">
 							<li>
 								<a href="/" class="text-[#D4D4ED] text-sm">{m.footer_Our_Company()}</a>
@@ -145,9 +146,9 @@
 
 				<div class="lg:ml-12 w-full relative">
 					<div class="w-full mb-10">
-						<h4 class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
+						<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 							{m.footer_Solutions()}
-						</h4>
+						</p>
 						<ul class="space-y-3">
 							<li>
 								<a href="/company#about" class="text-[#D4D4ED] text-sm">{m.footer_The_Platform()}</a
@@ -205,7 +206,10 @@
 	</div>
 	<Copyright />
 </footer>
-
+{:else}
+  <!-- Placeholder while translations are loading -->
+  <div>Loading...</div>
+{/if}
 <!-- <style>
 	.email_link::before {
 		content: url('$lib/assets/svg/mail.svg');

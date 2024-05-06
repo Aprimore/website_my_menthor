@@ -1,7 +1,7 @@
 <script lang="ts">
+	import * as m from '$lib/paraglide/messages';
 	import { page } from '$app/stores';
 	import { logo_navbar_svg } from '$lib';
-	import * as m from '$paraglide/messages';
 
 	let showMenu = false;
 
@@ -22,7 +22,7 @@
 	const navbarClasses =
 		'text-[#17193B] py-2 md:px-3 transition-transform transform hover:-translate-y-1 hover:bg-[#20C997] rounded-lg hover:text-[#F1F1F9] Exo ';
 </script>
-
+{#if m}
 <nav
 	class="bg-[#F1F1F9] bg-opacity-80 relative max-md:py-3 px-6 py-8 mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full"
 >
@@ -74,6 +74,10 @@
 		<a class={navbarClasses} href="/company">{m.navbar_Company()}</a>
 	</div>
 </nav>
+{:else}
+  <!-- Placeholder while translations are loading -->
+  <div>Loading...</div>
+{/if}
 
 <style>
 	.nav-links {

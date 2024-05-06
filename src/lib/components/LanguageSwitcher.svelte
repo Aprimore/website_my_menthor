@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { i18n } from '$lib/i18n';
-	import { availableLanguageTags, languageTag } from '$paraglide/runtime';
+	import { availableLanguageTags, languageTag } from '$lib/paraglide/runtime';
 	import { get } from 'svelte/store';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 
 	/**
-	 * @param { import("$paraglide/runtime").AvailableLanguageTag } newLanguage
+	 * @param { import("$lib/paraglide/runtime").AvailableLanguageTag } newLanguage
 	 */
 	function switchToLanguage(newLanguage) {
 		const canonicalPath = i18n.route(get(page).url.pathname);
@@ -15,7 +15,7 @@
 	}
 
 	/**
-	 * @type {Record<import("$paraglide/runtime").AvailableLanguageTag, string>}
+	 * @type {Record<import("$lib/paraglide/runtime").AvailableLanguageTag, string>}
 	 */
 	const labels = {
 		en: '🇺🇸 EN',

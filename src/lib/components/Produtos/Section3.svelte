@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { arrow_right_svg, linha_h_azul_2_svg, piramid_home_pt_br_svg } from '$lib';
-	import * as m from '$paraglide/messages';
+	import * as m from '$lib/paraglide/messages';
 	import Section_Cards from './Section_Cards.svelte';
 </script>
 

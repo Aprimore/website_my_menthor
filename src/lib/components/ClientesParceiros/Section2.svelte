@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { linha_h_laranja_svg } from '$lib';
-	import * as m from '$paraglide/messages';
+	import * as m from '$lib/paraglide/messages';
 	import { onMount } from 'svelte';
 	import animationData from '$lib/assets/lotties/gif-6.json';
 

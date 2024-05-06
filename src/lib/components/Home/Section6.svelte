@@ -1,6 +1,6 @@
 <script lang="ts">
+	import * as m from '$lib/paraglide/messages';
 	import { arrow_right_svg, linha_h_cinza_svg } from '$lib';
-	import * as m from '$paraglide/messages';
 	import animationData from '$lib/assets/lotties/gif-3.json';
 	import { onMount } from 'svelte';
 
@@ -24,21 +24,10 @@
 		'info'
 	];
 
-	// import lottie from 'lottie-web';
-	// import { onMount } from 'svelte';
-
-	// let animationContainer: HTMLElement;
-
-	// onMount(() => {
-	// 	lottie.loadAnimation({
-	// 		container: animationContainer,
-	// 		loop: true,
-	// 		autoplay: true,
-	// 		animationData
-	// 	});
-	// });
+	
 </script>
 
+{#if m}
 <section
 	class="resources_section w-full items-center relative sm:rounded-lg lg:bg-[#F1F1F9] sm:py-14 md:py-28"
 >
@@ -157,7 +146,10 @@
 		</div>
 	</div>
 </section>
-
+{:else}
+  <!-- Placeholder while translations are loading -->
+  <div>Loading...</div>
+{/if}
 <style>
 	.btn-access::after {
 		content: url('$lib/assets/svg/arrow_right.svg');

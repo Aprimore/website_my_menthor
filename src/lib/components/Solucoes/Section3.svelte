@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as m from '$paraglide/messages';
+	import * as m from '$lib/paraglide/messages';
 	import {
 		linha_h_amarela3_svg,
 		linha_h_azul4_svg,

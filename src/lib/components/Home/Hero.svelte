@@ -1,14 +1,14 @@
 <script lang="ts">
+	import * as m from '$lib/paraglide/messages';	
 	import { page } from '$app/stores';
 	import { arrow_right_svg, header_hero_webp, linha_h_amarela4_svg } from '$lib';
-	import * as m from '$paraglide/messages';
 </script>
 
 <!-- <span>{$page.url.pathname}</span> -->
-
 <!-- <button on:click={() => setLanguageTag('en')}> ENGLISH</button>
 <button on:click={() => setLanguageTag('pt-br')}> PORTUGUES</button> -->
 
+{#if m}
 <header class="hero-section">
 	<div class="mx-auto px-4 flex h-[510px] items-center relative">
 		<div class="mx-auto max-w-5xl text-center z-20">
@@ -42,6 +42,10 @@
 		</div>
 	</div>
 </header>
+{:else}
+  <!-- Placeholder while translations are loading -->
+  <div>Loading...</div>
+{/if}
 
 <style>
 	.btn-demo::after {

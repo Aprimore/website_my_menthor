@@ -6,7 +6,7 @@
 		linha_v_amarela_svg,
 		piramid_home_pt_br_svg
 	} from '$lib';
-	import * as m from '$paraglide/messages';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
 <section class="w-full items-center relative rounded-lg pb-20 bg-[#F1F1F9]">
