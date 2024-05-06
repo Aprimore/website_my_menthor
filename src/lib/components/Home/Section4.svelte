@@ -2,21 +2,41 @@
 	import { checkmark_svg, linha_h_azul_6_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 
+	import { onMount } from 'svelte';
 	import animationData from '$lib/assets/lotties/gif-2.json';
 
-	import lottie from 'lottie-web';
-	import { onMount } from 'svelte';
-
-	let animationContainer: HTMLElement;
-
-	onMount(() => {
-		lottie.loadAnimation({
-			container: animationContainer,
-			loop: true,
-			autoplay: true,
-			animationData
-		});
+	let LottiePlayer;
+	onMount(async () => {
+		const module = await import('@lottiefiles/svelte-lottie-player');
+		LottiePlayer = module.LottiePlayer;
 	});
+	let controlsLayout = [
+		'previousFrame',
+		'playpause',
+		'stop',
+		'nextFrame',
+		'progress',
+		'frame',
+		'loop',
+		'spacer',
+		'background',
+		'snapshot',
+		'zoom',
+		'info'
+	];
+	// import lottie from 'lottie-web';
+	// import { onMount } from 'svelte';
+
+	// let animationContainer: HTMLElement;
+
+	// onMount(() => {
+	// 	lottie.loadAnimation({
+	// 		container: animationContainer,
+	// 		loop: true,
+	// 		autoplay: true,
+	// 		animationData
+	// 	});
+	// });
 </script>
 
 <section class="w-full items-center relative rounded-lg sm:my-20 max-md:p-2">
@@ -93,7 +113,19 @@
 				</p>
 			</div>
 			<div class="col4 mt-5 max-lg:mt-10 md:px-40 lg:px-0">
-				<div bind:this={animationContainer} />
+				<!-- <div bind:this={animationContainer} /> -->
+				{#if LottiePlayer}
+					<LottiePlayer
+						src={animationData}
+						autoplay={true}
+						loop={true}
+						renderer="svg"
+						background="transparent"
+						height={470}
+						width={470}
+						{controlsLayout}
+					/>
+				{/if}
 			</div>
 		</div>
 	</div>

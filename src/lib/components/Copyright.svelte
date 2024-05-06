@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { arrow_up_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 </script>
@@ -43,8 +43,15 @@
             "
 		>
 			<li>
-				<button class="bg-[#D4D4ED] size-[36px] flex justify-center items-center rounded-md">
-					<a href="/"><img src={arrow_up_svg} alt="arrow top" class="size-[14px]" aria-label="top button" /></a>
+				<button class="bg-[#D4D4ED] size-[36px] flex justify-center items-center rounded-md Exo">
+					<a href="/"
+						><img
+							src={arrow_up_svg}
+							alt="arrow top"
+							class="size-[14px]"
+							aria-label="top button"
+						/></a
+					>
 				</button>
 			</li>
 		</ul>

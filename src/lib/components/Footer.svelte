@@ -36,9 +36,9 @@
 						</a>
 					</div> -->
 
-						<button class=" flex flex-wrap gap-4">
+						<button class=" flex flex-wrap gap-4 Exo">
 							<a
-								class="Exo btn-agendar bg-[#8abb3f] flex items-center text-base text-[#17193B] py-4 px-10 mt-5 rounded-lg relative max-lg:whitespace-nowrap lg:whitespace-nowrap"
+								class="btn-agendar bg-[#8abb3f] flex items-center text-base text-[#17193B] py-4 px-10 mt-5 rounded-lg relative max-lg:whitespace-nowrap lg:whitespace-nowrap"
 								href="/company#contact"
 							>
 								{m.button_schedule_a_demo()}

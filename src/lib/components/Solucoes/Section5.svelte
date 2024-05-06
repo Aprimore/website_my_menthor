@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import * as m from '$paraglide/messages';
 	import { checkmark_2_svg, linha_h_azul_5_svg } from '$lib';
 </script>

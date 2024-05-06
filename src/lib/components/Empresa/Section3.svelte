@@ -2,24 +2,40 @@
 	import * as m from '$paraglide/messages';
 	import { arrow_right_svg, clientes_parceiros_3_webp } from '$lib';
 	import FormZoho from './../FormZoho.svelte';
-
+	// import { base } from '$app/paths';
+	import { onMount } from 'svelte';
 	import animationData from '$lib/assets/lotties/gif-7.json';
 
-	import lottie from 'lottie-web';
-	import { onMount } from 'svelte';
-
-	let animationContainer: HTMLElement;
-
-	onMount(() => {
-		lottie.loadAnimation({
-			container: animationContainer,
-			loop: true,
-			autoplay: true,
-			animationData
-		});
+	let LottiePlayer;
+	onMount(async () => {
+		const module = await import('@lottiefiles/svelte-lottie-player');
+		LottiePlayer = module.LottiePlayer;
 	});
+	let controlsLayout = [
+		'previousFrame',
+		'playpause',
+		'stop',
+		'nextFrame',
+		'progress',
+		'frame',
+		'loop',
+		'spacer',
+		'background',
+		'snapshot',
+		'zoom',
+		'info'
+	];
 
-	import { base } from '$app/paths';
+	// import lottie from 'lottie-web';
+	// let animationContainer: HTMLElement;
+	// onMount(() => {
+	// 	lottie.loadAnimation({
+	// 		container: animationContainer,
+	// 		loop: true,
+	// 		autoplay: true,
+	// 		animationData
+	// 	});
+	// });
 </script>
 
 <!-- <section class="my-20 pb-20 bg-white ">
@@ -46,7 +62,19 @@
 					</p>
 				</div>
 
-				<div bind:this={animationContainer} class="" />
+				<!-- <div bind:this={animationContainer} class="" /> -->
+				{#if LottiePlayer}
+					<LottiePlayer
+						src={animationData}
+						autoplay={true}
+						loop={true}
+						renderer="svg"
+						background="transparent"
+						height={470}
+						width={470}
+						{controlsLayout}
+					/>
+				{/if}
 				<!-- <img class="w-[620px]" src={clientes_parceiros_3_webp} alt="" /> -->
 			</div>
 		</div>

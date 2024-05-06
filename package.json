@@ -17,7 +17,6 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
 		"gh-pages": "^6.1.1",
-		"lottie-web": "^5.12.2",
 		"postcss": "^8.4.38",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
@@ -48,6 +47,7 @@
 	"dependencies": {
 		"@fontsource-variable/archivo": "^5.0.19",
 		"@fontsource-variable/exo": "^5.0.19",
+		"@lottiefiles/svelte-lottie-player": "^0.3.1",
 		"install": "^0.13.0"
 	}
 }

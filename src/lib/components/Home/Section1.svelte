@@ -2,21 +2,40 @@
 	import { arrow_right_svg, linha_h_azul_4_svg, linha_v_1_verde_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 
+	import { onMount } from 'svelte';
 	import animationData from '$lib/assets/lotties/gif-1.json';
 
-	import lottie from 'lottie-web';
-	import { onMount } from 'svelte';
-
-	let animationContainer: HTMLElement;
-
-	onMount(() => {
-		lottie.loadAnimation({
-			container: animationContainer,
-			loop: true,
-			autoplay: true,
-			animationData
-		});
+	let LottiePlayer;
+	onMount(async () => {
+		const module = await import('@lottiefiles/svelte-lottie-player');
+		LottiePlayer = module.LottiePlayer;
 	});
+	let controlsLayout = [
+		'previousFrame',
+		'playpause',
+		'stop',
+		'nextFrame',
+		'progress',
+		'frame',
+		'loop',
+		'spacer',
+		'background',
+		'snapshot',
+		'zoom',
+		'info'
+	];
+
+	//   let animationContainer: HTMLElement;
+
+	//   import lottie from 'lottie-web';
+	// 	onMount(() => {
+	// 		lottie.loadAnimation({
+	// 			container: animationContainer,
+	// 			loop: true,
+	// 			autoplay: true,
+	// 			animationData
+	// 		});
+	// 	});
 </script>
 
 <section class="max-w-screen-xl relative rounded-lg mx-auto my-2 max-sm:p-2">
@@ -34,7 +53,20 @@
 						{@html m.homepage_section1_desc1()}
 					</h1>
 					<!--  -->
-					<div bind:this={animationContainer} class="max-lg:max-w-96" />
+					<!-- <div bind:this={animationContainer} class="max-lg:max-w-96" /> -->
+
+					{#if LottiePlayer}
+					<LottiePlayer
+						src={animationData}
+						autoplay={true}
+						loop={true}
+						renderer="svg"
+						background="transparent"
+						height={470}
+						width={470}
+						{controlsLayout}
+					/>
+				{/if}
 				</div>
 			</div>
 		</div>

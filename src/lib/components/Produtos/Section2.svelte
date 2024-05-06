@@ -2,21 +2,42 @@
 	import * as m from '$paraglide/messages';
 	import { empresa_1_webp } from '$lib';
 
+	import { onMount } from 'svelte';
 	import animationData from '$lib/assets/lotties/gif-4.json';
 
-	import lottie from 'lottie-web';
-	import { onMount } from 'svelte';
-
-	let animationContainer: HTMLElement;
-
-	onMount(() => {
-		lottie.loadAnimation({
-			container: animationContainer,
-			loop: true,
-			autoplay: true,
-			animationData
-		});
+	let LottiePlayer;
+	onMount(async () => {
+		const module = await import('@lottiefiles/svelte-lottie-player');
+		LottiePlayer = module.LottiePlayer;
 	});
+	let controlsLayout = [
+		'previousFrame',
+		'playpause',
+		'stop',
+		'nextFrame',
+		'progress',
+		'frame',
+		'loop',
+		'spacer',
+		'background',
+		'snapshot',
+		'zoom',
+		'info'
+	];
+
+	// import lottie from 'lottie-web';
+	// import { onMount } from 'svelte';
+
+	// let animationContainer: HTMLElement;
+
+	// onMount(() => {
+	// 	lottie.loadAnimation({
+	// 		container: animationContainer,
+	// 		loop: true,
+	// 		autoplay: true,
+	// 		animationData
+	// 	});
+	// });
 </script>
 
 <section class="w-full relative rounded-lg bg-[#F1F1F9]">
@@ -29,7 +50,20 @@
 				{m.produtos_BusinessArchitectureSoftware()}
 				<!-- What is <span class="text-[#454AB0]">Business <br /> Architecture Software?</span> -->
 			</h1>
-			<div bind:this={animationContainer} class="lg:w-[533px] lg:h-[400px]" />
+			<!-- <div bind:this={animationContainer} class="lg:w-[533px] lg:h-[400px]" /> -->
+			{#if LottiePlayer}
+			<LottiePlayer
+				src={animationData}
+				autoplay={true}
+				loop={true}
+				renderer="svg"
+				background="transparent"
+				height={470}
+				width={470}
+				{controlsLayout}
+			/>
+		{/if}
+
 			<!-- <img src={empresa_1_webp} class="w-[533px] h-[300px]" alt="" /> -->
 		</div>
 		<div class="lg:w-1/2 relative p-5 lg:p-10">

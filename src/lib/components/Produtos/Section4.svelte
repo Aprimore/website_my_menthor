@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import {
 		arrow_right_svg,
 		clientes_parceiros_1_webp,
@@ -70,7 +70,7 @@
 			</div>
 		</div>
 		<div>
-			<button class="flex mx-auto pb-10 mt-5">
+			<button class="flex mx-auto pb-10 mt-5 Exo">
 				<a
 					class="btn-demo bg-[#8abb3f] rounded-xl px-5 lg:px-10 py-4 text-lg text-[#17193B] focus:ring relative"
 					href="/company#contact"

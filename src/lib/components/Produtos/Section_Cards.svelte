@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import * as m from '$paraglide/messages';
 	import {
 		arrow_right_svg,

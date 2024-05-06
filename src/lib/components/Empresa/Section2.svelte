@@ -1,28 +1,60 @@
 <script lang="ts">
 	import * as m from '$paraglide/messages';
 	import { clientes_parceiros_3_webp, linha_h_verde_1_svg } from '$lib';
-
+	import { onMount } from 'svelte';
 	import animationData from '$lib/assets/lotties/gif-5.json';
 
-	import lottie from 'lottie-web';
-	import { onMount } from 'svelte';
-
-	let animationContainer: HTMLElement;
-
-	onMount(() => {
-		lottie.loadAnimation({
-			container: animationContainer,
-			loop: true,
-			autoplay: true,
-			animationData
-		});
+	let LottiePlayer;
+	onMount(async () => {
+		const module = await import('@lottiefiles/svelte-lottie-player');
+		LottiePlayer = module.LottiePlayer;
 	});
+	let controlsLayout = [
+		'previousFrame',
+		'playpause',
+		'stop',
+		'nextFrame',
+		'progress',
+		'frame',
+		'loop',
+		'spacer',
+		'background',
+		'snapshot',
+		'zoom',
+		'info'
+	];
+
+	// import lottie from 'lottie-web';
+	// import { onMount } from 'svelte';
+
+	// let animationContainer: HTMLElement;
+
+	// onMount(() => {
+	// 	lottie.loadAnimation({
+	// 		container: animationContainer,
+	// 		loop: true,
+	// 		autoplay: true,
+	// 		animationData
+	// 	});
+	// });
 </script>
 
 <section class="w-full items-center rounded-lg bg-[#F1F1F9]">
 	<div class="lg:h-[532px] md:flex flex-row max-w-[1350px] mx-auto max-md:p-5" id="purpose">
 		<div class="md:w-1/2 md:flex flex-col justify-center">
-			<div bind:this={animationContainer} />
+			<!-- <div bind:this={animationContainer} /> -->
+			{#if LottiePlayer}
+			<LottiePlayer
+				src={animationData}
+				autoplay={true}
+				loop={true}
+				renderer="svg"
+				background="transparent"
+				height={470}
+				width={470}
+				{controlsLayout}
+			/>
+		{/if}
 			<!-- <img class="w-full h-full" src={clientes_parceiros_3_webp} alt="" /> -->
 		</div>
 		<div class="md:w-1/2 flex flex-col justify-center">

@@ -35,7 +35,7 @@
 			<img src={logo_navbar_svg} class="" alt="" />
 		</a>
 		<!-- Mobile menu button -->
-		<div class="hamb flex lg:hidden">
+		<div class="hamb flex lg:hidden Exo">
 			<button
 				on:click={toggleNavbar}
 				type="button"

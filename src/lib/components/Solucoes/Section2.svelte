@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import {
 		linha_h_azul_2_svg,
 		linha_h_azul_3_svg,

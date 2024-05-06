@@ -1,21 +1,42 @@
 <script lang="ts">
 	import { arrow_right_svg, linha_h_cinza_svg } from '$lib';
-	import animationData from '$lib/assets/lotties/gif-3.json';
 	import * as m from '$paraglide/messages';
-
-	import lottie from 'lottie-web';
+	import animationData from '$lib/assets/lotties/gif-3.json';
 	import { onMount } from 'svelte';
 
-	let animationContainer: HTMLElement;
-
-	onMount(() => {
-		lottie.loadAnimation({
-			container: animationContainer,
-			loop: true,
-			autoplay: true,
-			animationData
-		});
+	let LottiePlayer;
+	onMount(async () => {
+		const module = await import('@lottiefiles/svelte-lottie-player');
+		LottiePlayer = module.LottiePlayer;
 	});
+	let controlsLayout = [
+		'previousFrame',
+		'playpause',
+		'stop',
+		'nextFrame',
+		'progress',
+		'frame',
+		'loop',
+		'spacer',
+		'background',
+		'snapshot',
+		'zoom',
+		'info'
+	];
+
+	// import lottie from 'lottie-web';
+	// import { onMount } from 'svelte';
+
+	// let animationContainer: HTMLElement;
+
+	// onMount(() => {
+	// 	lottie.loadAnimation({
+	// 		container: animationContainer,
+	// 		loop: true,
+	// 		autoplay: true,
+	// 		animationData
+	// 	});
+	// });
 </script>
 
 <section
@@ -25,7 +46,19 @@
 		<div
 			class="bg-[#454AB0] order-2 lg:w-1/3 relative flex max-sm:flex-col lg:flex-col justify-center sm:rounded-xl"
 		>
-			<div bind:this={animationContainer} class=" lg:absolute -top-14" />
+			<!-- <div bind:this={animationContainer} class=" lg:absolute -top-14" /> -->
+			{#if LottiePlayer}
+			<LottiePlayer
+				src={animationData}
+				autoplay={true}
+				loop={true}
+				renderer="svg"
+				background="transparent"
+				height={470}
+				width={470}
+				{controlsLayout}
+			/>
+		{/if}
 
 			<div
 				class="bg-[#F1F1F9] flex flex-col justify-center max-sm:p-3 p-10 px-10 z-30 relative lg:mt-auto"
@@ -52,7 +85,7 @@
 				</h1>
 				<p class="Archivo max-w-96 text-lg">{m.homepage_section_6_Explore()}</p>
 
-				<button class="min-w-min">
+				<button class="min-w-min Exo">
 					<a
 						class="Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
 						href="http://mymenthor.com/blog"

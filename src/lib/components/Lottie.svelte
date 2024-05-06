@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import lottie from 'lottie-web';
 	import { onMount } from 'svelte';
 
@@ -14,4 +14,4 @@
 
 <section class="jsonAnimation">
 	<div bind:this={animationContainer}></div>
-</section>
+</section> -->

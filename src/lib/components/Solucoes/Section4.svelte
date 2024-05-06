@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import * as m from '$paraglide/messages';
 	import { checkmark_2_svg } from '$lib';
 </script>
@@ -228,7 +228,7 @@
 		</div>
 	</div>
 	<div class="flex justify-center my-20">
-		<button>
+		<button class="Exo">
 			<a
 				class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
 				href="/company#contact"

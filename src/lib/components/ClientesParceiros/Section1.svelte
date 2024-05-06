@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import {
 		arrow_right_svg,
 		clientes_parceiros_3_webp,
@@ -8,7 +8,7 @@
 	import * as m from '$paraglide/messages';
 </script>
 
-<section class="w-full rounded-lg bg-[#D4D4ED] mt-4 lg:my-16">
+<section class="w-full rounded-lg bg-[#D4D4ED] lg:py-16">
 	<div class=" lg:flex flex-row pt-20" id="clients">
 		<div class="lg:w-1/2 flex justify-center items-center mx-auto">
 			<div class="card bg-white lg:w-[694px] max-h-[364px] rounded-md relative">
@@ -28,7 +28,7 @@
 						{m.clientesP_RegisterAndDiscover()}
 					</p>
 					<div class="space-x-5 flex flex-row">
-						<button>
+						<button class="Exo">
 							<a
 								class="btn-partner bg-[#8abb3f] block w-full rounded-xl px-5 md:px-10 py-4 md:text-lg text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
 								href="/company#contact"

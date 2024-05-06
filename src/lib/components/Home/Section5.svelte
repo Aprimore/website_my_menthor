@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { arrow_right_svg, earth_webp, rocket_webp } from '$lib';
 	import * as m from '$paraglide/messages';
 </script>
@@ -17,7 +17,7 @@
 				performance -->
 			</p>
 
-			<button class="border md:border-[#17193B] border-none rounded-xl mb-20">
+			<button class="border md:border-[#17193B] border-none rounded-xl mb-20 Exo">
 				<a
 					class="Archivo btn-learn bg-[#F1F1F9] block max-w-max rounded-xl px-10 py-4 text-xl text-[#17193B] focus:ring sm:w-auto z-10 relative"
 					href="/products#platform"

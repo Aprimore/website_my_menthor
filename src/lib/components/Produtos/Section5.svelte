@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import {
 		analytics_illustration_svg,
 		arrow_right_svg,
@@ -176,7 +176,7 @@
 		</div>
 	</div>
 	<div class="mt-16 gap-4 mx-auto max-w-max">
-		<button>
+		<button class="Exo">
 			<a
 				class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
 				href="/company#contact"

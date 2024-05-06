@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import * as m from '$paraglide/messages';
 	import { arrow_right_svg, clientes_parceiros_4_webp, fone_amarelo_svg } from '$lib';
 </script>
@@ -35,7 +35,7 @@
 						{@html m.clientesP_GetInTouchToday()}
 					</p>
 
-					<button>
+					<button class="Exo">
 						<a
 							class="btn-contact bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
 							href="/company#contact"
