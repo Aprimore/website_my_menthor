@@ -23,20 +23,6 @@
 		'zoom',
 		'info'
 	];
-
-	// import lottie from 'lottie-web';
-	// import { onMount } from 'svelte';
-
-	// let animationContainer: HTMLElement;
-
-	// onMount(() => {
-	// 	lottie.loadAnimation({
-	// 		container: animationContainer,
-	// 		loop: true,
-	// 		autoplay: true,
-	// 		animationData
-	// 	});
-	// });
 </script>
 
 <section class="w-full rounded-lg bg-[#F1F1F9] max-lg:mt-10">
@@ -84,9 +70,3 @@
 		</div>
 	</div>
 </section>
-
-<style>
-	.yc {
-		color: white;
-	}
-</style>

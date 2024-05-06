@@ -1,13 +1,13 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
+	import '../app.css';
+	import { i18n } from '$lib/i18n.js';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Navbar2 from '$lib/components/Navbar2.svelte';
-	import { i18n } from '$lib/i18n.js';
 	import '@fontsource-variable/archivo';
 	import '@fontsource-variable/exo';
-	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
-	import '../app.css';
+	import { page } from '$app/stores';
 </script>
 
 <svelte:head>

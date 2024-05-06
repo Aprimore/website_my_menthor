@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
-	import { page } from '$app/stores';
 	import { i18n } from '$lib/i18n';
 	import { availableLanguageTags, languageTag } from '$paraglide/runtime';
 	import { get } from 'svelte/store';
+	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
 
 	/**
 	 * @param { import("$paraglide/runtime").AvailableLanguageTag } newLanguage
