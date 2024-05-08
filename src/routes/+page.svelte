@@ -1,4 +1,5 @@
 <script lang="ts">
+	import og_image from '$lib/assets/images/og_image.webp';
 	import Footer from '$lib/components/Footer.svelte';
 	import Hero from '$lib/components/Home/Hero.svelte';
 	import Section1 from '$lib/components/Home/Section1.svelte';
@@ -9,10 +10,7 @@
 	import Section6 from '$lib/components/Home/Section6.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Navbar2 from '$lib/components/Navbar2.svelte';
-	import og_image from '$lib/assets/images/og_image.webp';
 </script>
-
-
 
 <div>
 	<Hero />

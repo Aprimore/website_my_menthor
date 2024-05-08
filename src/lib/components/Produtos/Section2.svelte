@@ -1,9 +1,9 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages';
 	import { empresa_1_webp } from '$lib';
+	import * as m from '$lib/paraglide/messages';
 
-	import { onMount } from 'svelte';
 	import animationData from '$lib/assets/lotties/gif-4.json';
+	import { onMount } from 'svelte';
 
 	let LottiePlayer;
 	onMount(async () => {
@@ -52,21 +52,19 @@
 			</h1>
 			<!-- <div bind:this={animationContainer} class="lg:w-[533px] lg:h-[400px]" /> -->
 			{#if LottiePlayer}
-			<LottiePlayer
-				src={animationData}
-				autoplay={true}
-				loop={true}
-				renderer="svg"
-				background="transparent"
-				height={470}
-				width={470}
-				{controlsLayout}
-			/>
-		{/if}
+				<LottiePlayer
+					src={animationData}
+					autoplay={true}
+					loop={true}
+					renderer="svg"
+					background="transparent"
+					{controlsLayout}
+				/>
+			{/if}
 
 			<!-- <img src={empresa_1_webp} class="w-[533px] h-[300px]" alt="" /> -->
 		</div>
-		<div class="lg:w-1/2 relative p-5 lg:p-10">
+		<div class="lg:w-1/2 relative px-5 lg:p-10 pb-5">
 			<p class="mt-10 mb-2 text-[#25285F] Archivo text-lg">
 				{@html m.produtos_ItIsAManagementTool()}
 				<!-- It is a management tool that uses an architectural approach to analyze and

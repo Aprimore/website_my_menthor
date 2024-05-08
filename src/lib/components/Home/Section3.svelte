@@ -6,10 +6,10 @@
 {#if m}
 <section class="sm:bg-[#F1F1F9] w-full items-center relative rounded-lg sm:my-20 max-sm:p-2">
 	<div
-		class="max-sm:bg-[#F1F1F9] md:max-w-screen-2xl flex flex-col lg:flex-row lg:pt-20 mx-auto items-center rounded-lg"
+		class="max-sm:bg-[#F1F1F9] md:max-w-screen-2xl flex flex-col lg:flex-row lg:pt-20 mx-auto items-center rounded-lg "
 	>
-		<div class="flex xl:p-16 max-lg:order-2">
-			<img src={piramid_home_pt_br_svg} class="w-full max-sm:mb-10" alt="" />
+		<div class="flex xl:p-16 max-lg:order-2 px-5 mx-5">
+			<img src={piramid_home_pt_br_svg} class="w-full max-sm:mb-10 " alt="" />
 		</div>
 		<div class="max-lg:p-5 lg:w-1/2 space-y-10 mt-8 lg:mt-16 max-lg:order-1">
 			<h1 class="text-4xl sm:text-4xl relative Exo-Bold text-[#17193B]">

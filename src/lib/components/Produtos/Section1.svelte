@@ -34,8 +34,8 @@
 				</p>
 			</div>
 		</div>
-		<div class="lg:w-1/2 flex justify-center lg:ml-20 max-md:mt-10">
-			<img src={products_frame_svg} class=" lg:min-w-[650px]" alt="" />
+		<div class="lg:w-1/2 flex justify-center lg:ml-20 max-md:mt-10 w-full">
+			<img src={products_frame_svg} class="  max-w-ull" alt="" />
 		</div>
 	</div>
 </section>
