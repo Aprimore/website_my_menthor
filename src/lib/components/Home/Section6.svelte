@@ -27,56 +27,27 @@
 
 {#if m}
 	<section
-		class="resources_section w-full items-center relative sm:rounded-lg lg:bg-[#F1F1F9] sm:py-14 md:py-28 sm:p-1"
+		class="resources_section w-full relative sm:rounded-lg lg:bg-[#F1F1F9] sm:py-14 md:py-28 justify-center mx-auto"
+		id="bottom-page"
 	>
-		<div class="lg:flex md:max-w-[1420px] md:h-[500px] mx-auto bg-white">
-			<div
-				class="bg-[#454AB0] order-2 lg:w-1/3 relative flex max-md:flex-col lg:flex-col justify-center mx-auto sm:rounded-xl max-w-[850px]"
-			>
-				<div class="lg:absolute xl:top-0 xl:right-0 top-0 right-0 mx-auto max-w-max">
-					{#if LottiePlayer}
-						<LottiePlayer
-							src={animationData}
-							autoplay={true}
-							loop={true}
-							renderer="svg"
-							background="transparent"
-							width={400}
-							height={300}
-							{controlsLayout}
-						/>
-					{/if}
-				</div>
-				<!-- <div bind:this={animationContainer} class=" lg:absolute -top-14" /> -->
-
-				<div
-					class="bg-[#F1F1F9] flex flex-col justify-center mx-auto max-sm:p-3 p-10 px-10 z-30 relative lg:mt-auto w-full"
-				>
-					<h1 class="Exo-Bold text-4xl bottom-0 text-nowrap max-md:px-3 max-md:mt-3 max-md:mx-auto">
-						{m.homepage_section_6_Resources()}
-					</h1>
-					<p class="Archivo text-lg mt-6 max-md:px-3 max-md:mb-3 max-md:mx-auto">
-						{m.homepage_section_6_Discover_the_resources()}
-					</p>
-				</div>
-			</div>
-			<div
-				class="md:space-x-10 lg:space-x-0 lg:w-1/3 flex lg:flex-col max-md:flex-col max-md:text-center justify-center sm:p-3 lg:p-12 p-3 w-full"
-			>
-				<img
-					class="absolute bottom-0 h-screen/2 max-w-xs h-full max-lg:hidden"
+		<div
+			class="bg-white grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-w-7xl m-auto sm:rounded-lg"
+		>
+			<div class=" lg:flex lg:flex-col max-md:flex-col max-md:text-center justify-center p-3">
+				<!-- <img
+					class="absolute bottom-0 h-screen/2 h-full max-lg:hidden"
 					src={linha_h_cinza_svg}
 					alt=""
-				/>
+				/> -->
 				<div class="space-y-5 py-5 relative md:mt-6 lg:mt-0">
-					<h1 class="Exo-Bold text-3xl text-nowrap">
+					<h1 class="Exo-Bold text-3xl">
 						{m.homepage_section_6_My_menthor()}
 					</h1>
-					<p class="Archivo md:max-w-96 text-lg">{m.homepage_section_6_Explore()}</p>
+					<p class="Archivo text-lg">{m.homepage_section_6_Explore()}</p>
 
 					<button class="min-w-min Exo">
 						<a
-							class="Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
+							class=" Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
 							href="http://mymenthor.com/blog"
 							target="_blank"
 						>
@@ -86,15 +57,15 @@
 				</div>
 
 				<div class="space-y-5 md:mt-6 sm:py-5 max-sm:mt-5">
-					<h1 class="Exo-Bold text-3xl text-nowrap">
+					<h1 class="Exo-Bold text-3xl">
 						{m.homepage_section_6_Events()}
 					</h1>
-					<p class="Archivo text-lg md:max-w-96">
+					<p class="Archivo text-lg">
 						{m.homepage_section_6_Take_part()}
 					</p>
 					<button class="min-w-min">
 						<a
-							class="Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
+							class=" Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
 							href="http://mymenthor.com/blog"
 							target="_blank"
 						>
@@ -105,18 +76,18 @@
 			</div>
 
 			<div
-				class="md:space-x-10 lg:space-x-0 lg:w-1/3 flex lg:flex-col max-md:flex-col max-md:text-center justify-center sm:p-3 lg:p-12 p-3 max-sm:mt-5"
+				class="lg:flex lg:flex-col max-md:flex-col max-md:text-center justify-center p-3 max-sm:mt-5"
 			>
-				<img
-					class="absolute bottom-0 h-screen/2 max-w-xs h-full max-lg:hidden"
+				<!-- <img
+					class="absolute bottom-0 h-screen/2 h-full max-lg:hidden"
 					src={linha_h_cinza_svg}
 					alt=""
-				/>
-				<div class="space-y-5 relative sm:py-5 md:mt-6 lg:mt-0 max-md:mb-10" id="bottom-page">
-					<h1 class="Exo-Bold text-3xl text-nowrap">
+				/> -->
+				<div class="space-y-5 relative sm:py-5 md:mt-6 lg:mt-0 max-md:mb-10">
+					<h1 class="Exo-Bold text-3xl">
 						{m.homepage_section_6_My_Menthor_Academy()}
 					</h1>
-					<p class="Archivo md:max-w-96 text-lg">{m.homepage_section_6_Develop()}</p>
+					<p class="Archivo text-lg">{m.homepage_section_6_Develop()}</p>
 
 					<button class="min-w-min btn-invisible max-md:hidden">
 						<a
@@ -128,10 +99,10 @@
 					</button>
 				</div>
 				<div class="space-y-5 md:mt-6 sm:py-5 max-md:mb-10">
-					<h1 class="Exo-Bold text-3xl text-nowrap">
+					<h1 class="Exo-Bold text-3xl">
 						{m.homepage_section_6_Knowledge()}
 					</h1>
-					<p class="Archivo md:max-w-96 text-lg">
+					<p class="Archivo text-lg">
 						{m.homepage_section_6_Access_our()}
 					</p>
 					<button class="min-w-min btn-invisible max-md:hidden">
@@ -142,6 +113,32 @@
 							{m.button_access()}
 						</a>
 					</button>
+				</div>
+			</div>
+
+			<div class="lg:flex lg:flex-col sm:rounded-xl bg-[#454AB0] max-xs:px-0">
+				<div class=" px-1 p-5 h-1/2 max-sm:px-10">
+					{#if LottiePlayer}
+						<LottiePlayer
+							src={animationData}
+							autoplay={true}
+							loop={true}
+							renderer="svg"
+							background="transparent"
+							{controlsLayout}
+						/>
+					{/if}
+				</div>
+
+				<!-- <div bind:this={animationContainer} class=" lg:absolute -top-14" /> -->
+				<!-- <div class="divider relative h-full"></div> -->
+				<div class="bg-[#F1F1F9] py-16 px-5 relative w-full h-1/2 mt-auto max-sm:p-10">
+					<h1 class="Exo-Bold text-4xl bottom-0 max-md:px-3 max-md:mt-3 max-md:mx-auto">
+						{m.homepage_section_6_Resources()}
+					</h1>
+					<p class="Archivo text-lg mt-6 max-md:px-3 max-md:mb-3 max-md:mx-auto">
+						{m.homepage_section_6_Discover_the_resources()}
+					</p>
 				</div>
 			</div>
 		</div>
@@ -163,9 +160,9 @@
 		cursor: default; /* Set cursor to default */
 	}
 
-	@media screen and (min-width: 760px) and (max-width: 1023px) {
+	/* @media screen and (min-width: 760px) and (max-width: 1023px) {
 		.resources_section {
 			margin-bottom: 500px;
 		}
-	}
+	} */
 </style>

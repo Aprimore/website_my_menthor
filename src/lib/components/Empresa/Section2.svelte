@@ -1,8 +1,8 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages';
 	import { clientes_parceiros_3_webp, linha_h_verde_1_svg } from '$lib';
-	import { onMount } from 'svelte';
 	import animationData from '$lib/assets/lotties/gif-5.json';
+	import * as m from '$lib/paraglide/messages';
+	import { onMount } from 'svelte';
 
 	let LottiePlayer;
 	onMount(async () => {
@@ -41,20 +41,18 @@
 
 <section class="w-full items-center rounded-lg bg-[#F1F1F9]">
 	<div class="lg:h-[532px] md:flex flex-row max-w-[1350px] mx-auto max-md:p-5" id="purpose">
-		<div class="md:w-1/2 md:flex flex-col justify-center">
+		<div class="md:w-1/2 md:flex flex-col justify-center md:p-5">
 			<!-- <div bind:this={animationContainer} /> -->
 			{#if LottiePlayer}
-			<LottiePlayer
-				src={animationData}
-				autoplay={true}
-				loop={true}
-				renderer="svg"
-				background="transparent"
-				height={470}
-				width={470}
-				{controlsLayout}
-			/>
-		{/if}
+				<LottiePlayer
+					src={animationData}
+					autoplay={true}
+					loop={true}
+					renderer="svg"
+					background="transparent"
+					{controlsLayout}
+				/>
+			{/if}
 			<!-- <img class="w-full h-full" src={clientes_parceiros_3_webp} alt="" /> -->
 		</div>
 		<div class="md:w-1/2 flex flex-col justify-center">

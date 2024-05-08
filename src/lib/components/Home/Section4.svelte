@@ -99,9 +99,9 @@
 					 organizing knowledge  in a single repository. -->
 					</p>
 				</div>
-				<div class="col4 mt-5 max-lg:mt-10 md:px-40 lg:px-0 ">
+				<div class="col4 mt-5 max-lg:mt-10 md:px-40 lg:px-0">
 					<!-- <div bind:this={animationContainer} /> -->
-					<div class="w-full  mx-auto ">
+					<div class="w-full mx-auto">
 						{#if LottiePlayer}
 							<LottiePlayer
 								src={animationData}

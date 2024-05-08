@@ -64,7 +64,7 @@
 
 			<!-- <img src={empresa_1_webp} class="w-[533px] h-[300px]" alt="" /> -->
 		</div>
-		<div class="lg:w-1/2 relative px-5 lg:p-10 pb-5">
+		<div class="lg:w-1/2 relative px-5 lg:p-5 pb-5">
 			<p class="mt-10 mb-2 text-[#25285F] Archivo text-lg">
 				{@html m.produtos_ItIsAManagementTool()}
 				<!-- It is a management tool that uses an architectural approach to analyze and

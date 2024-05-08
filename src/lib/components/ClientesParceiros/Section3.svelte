@@ -3,14 +3,14 @@
 	import * as m from '$lib/paraglide/messages';
 </script>
 
-<section class="relative w-full h-full">
+<section class="relative w-full h-full" id="cases">
 	<img
 		src={products_s3_bg_radial_svg}
 		class="absolute top-0 left-0 w-full h-full object-cover -z-20"
 		alt="radial effect"
 	/>
 	<div class="w-full h-full relative">
-		<div class="py-24 max-w-screen-2xl mx-auto space-y-24" id="cases">
+		<div class="py-24 max-w-screen-2xl mx-auto space-y-24">
 			<div class=" mx-auto">
 				<h1
 					class="Exo mx-auto text-4xl sm:text-5xl max-sm:text-center z-10 relative text-[#F1F1F9] Exo-Bold max-w-max mb-24"

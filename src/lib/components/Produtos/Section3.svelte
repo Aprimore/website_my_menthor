@@ -5,13 +5,13 @@
 </script>
 
 <section class="w-full items-center relative rounded-lg bg-white mb-10">
-	<div class="lg:max-w-screen-2xl flex flex-col lg:flex-row lg:mx-auto lg:items-center">
-		<div class="lg:w-[670px] max-w-full flex lg:p-16 P-8 max-lg:order-2 max-lg:mx-auto">
-			<img
-				src={piramid_home_pt_br_svg}
-				class="max-sm:px-5 max-w-full md:w-full max-sm:mb-10"
-				alt=""
-			/>
+	<div
+		class="lg:max-w-screen-2xl flex flex-col lg:flex-row lg:mx-auto lg:items-center justify-center"
+	>
+		<div
+			class="lg:max-w-[580px] w-full flex lg:justify-end justify-center max-lg:order-2 max-lg:mx-auto mt-auto"
+		>
+			<img src={piramid_home_pt_br_svg} class="max-sm:px-5 lg:w-full max-sm:mb-10" alt="" />
 		</div>
 		<div class="max-lg:p-5 lg:w-1/2 space-y-10 mt-8 lg:mt-16 max-lg:order-1">
 			<h1 class="text-4xl relative Exo-Bold text-[#17193B] max-sm:text-center">

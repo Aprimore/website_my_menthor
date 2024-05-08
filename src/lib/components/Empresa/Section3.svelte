@@ -1,10 +1,10 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages';
 	import { arrow_right_svg, clientes_parceiros_3_webp } from '$lib';
+	import * as m from '$lib/paraglide/messages';
 	import FormZoho from './../FormZoho.svelte';
 	// import { base } from '$app/paths';
-	import { onMount } from 'svelte';
 	import animationData from '$lib/assets/lotties/gif-7.json';
+	import { onMount } from 'svelte';
 
 	let LottiePlayer;
 	onMount(async () => {
@@ -51,34 +51,34 @@
 				<div>
 					<h1 class="text-4xl md:text-5xl relative text-[#17193B] Exo-Bold mb-10">
 						<!-- Contact us <span class="font-normal"> or </span> <br /> schedule a demo! -->
-						{m.company_ContactUsOr()} <br />
+						{m.company_ContactUsOr()}
 						{m.company_ScheduleADemo()}
 					</h1>
 					<p class="Archivo text-[#25285F] text-lg">
 						<!-- Fill in the form with your details. <br />
 						The My Menthor team will get in touch as soon as possible! -->
-						{m.company_FillInTheForm()} <br />
+						{m.company_FillInTheForm()}
 						{m.company_FillInTheForm_2()}
 					</p>
 				</div>
 
 				<!-- <div bind:this={animationContainer} class="" /> -->
-				{#if LottiePlayer}
-					<LottiePlayer
-						src={animationData}
-						autoplay={true}
-						loop={true}
-						renderer="svg"
-						background="transparent"
-						height={470}
-						width={470}
-						{controlsLayout}
-					/>
-				{/if}
-				<!-- <img class="w-[620px]" src={clientes_parceiros_3_webp} alt="" /> -->
+				<div class="p-1">
+					{#if LottiePlayer}
+						<LottiePlayer
+							src={animationData}
+							autoplay={true}
+							loop={true}
+							renderer="svg"
+							background="transparent"
+							{controlsLayout}
+						/>
+					{/if}
+					<!-- <img class="w-[620px]" src={clientes_parceiros_3_webp} alt="" /> -->
+				</div>
 			</div>
 		</div>
-		<div class="lg:w-1/2">
+		<div class="lg:w-1/2 Exo">
 			<div class="flex flex-col md:flex-row justify-between">
 				<div
 					class="w-full p-8 px-4 md:px-24 lg:px-12 xl:px-24 bg-[#F1F1F9] rounded-2xl flex flex-col justify-center"

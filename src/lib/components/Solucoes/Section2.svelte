@@ -9,17 +9,19 @@
 	import * as m from '$lib/paraglide/messages';
 </script>
 
-<section class="w-full items-center relative rounded-lg pb-20 bg-[#F1F1F9]">
+<section class="w-full items-center relative rounded-lg pb-20 bg-[#F1F1F9]" id="portfolio-services">
 	<div class="max-w-screen-2xl pt-20 lg:flex justify-center mx-auto">
-		<div class="lg:w-1/2 flex flex-col justify-center" id="portfolio-services">
-			<div>
+		<div class="lg:w-1/2 flex flex-col justify-center">
+			<div class="">
 				<h1 class="text-4xl md:text-5xl relative Exo-Bold text-[#17193B] text-center">
 					<!-- Portfolio of services -->
 					{m.solutions_PortfolioOfServices()}
+					<img src={linha_h_azul_3_svg} class="max-md:max-w-[320px] mx-auto" alt="linha" />
 				</h1>
 			</div>
-			<img src={linha_h_azul_3_svg} class="max-md:max-w-[320px] mx-auto" alt="linha" />
-			<img src={piramid_home_pt_br_svg} class=" max-w-[450px] mx-auto mt-10" alt="" />
+			<div class=" relative w-full h-full flex justify-center lg:justify-end lg:align-end">
+				<img src={piramid_home_pt_br_svg} class="px-3 max-w-[99%]" alt="" />
+			</div>
 		</div>
 
 		<div class="lg:w-1/2 flex flex-col justify-center">

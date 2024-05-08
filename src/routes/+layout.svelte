@@ -9,8 +9,7 @@
 	import Navbar2 from '$lib/components/Navbar2.svelte';
 	import { page } from '$app/stores';
 	import og_image from '$lib/assets/images/og_image.webp';
-	import {		
-		
+	import {
 		OG_IMAGE_HEIGHT,
 		OG_IMAGE_WIDTH,
 		SITE_DESCRIPTION,
@@ -39,16 +38,16 @@
 </svelte:head>
 
 {#if ParaglideJS}
-<ParaglideJS {i18n}>
-	<main class="relative">
-		<Navbar />
-		<Navbar2 />
-		<slot />
-		<Footer />
-	</main>
-</ParaglideJS>
+	<ParaglideJS {i18n}>
+		<main class="relative">
+			<Navbar />
+			<Navbar2 />
+			<slot />
+			<Footer />
+		</main>
+	</ParaglideJS>
 {:else}
-  <div>Loading...</div>
+	<div>Loading...</div>
 {/if}
 
 <style>

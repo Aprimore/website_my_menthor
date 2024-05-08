@@ -1,19 +1,22 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages';
 	import {
 		linha_h_amarela3_svg,
 		linha_h_azul4_svg,
 		linha_h_laranja2_svg,
 		linha_h_verde2_svg
 	} from '$lib';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
 <section class="w-full md:flex relative rounded-lg bg-[#D4D4ED]">
-	<div class="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 py-5 mx-auto" id="packages">
+	<div
+		class="w-full grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3 mx-auto sm:p-4"
+		id="packages"
+	>
 		<div class="relative max-sm:p-2">
 			<div class="mt-10 flex justify-center"></div>
 			<div
-				class=" sm:w-[333px] h-[214px] bg-white flex flex-col justify-center items-center border border-gray-300 shadow-sm"
+				class=" h-[214px] bg-white flex flex-col justify-center items-center border border-gray-300 shadow-sm"
 			>
 				<p
 					class="Exo text-4xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED] absolute top-1.5"
@@ -36,7 +39,7 @@
 		<div class="relative max-sm:p-2">
 			<div class="mt-10 flex justify-center"></div>
 			<div
-				class=" sm:w-[333px] h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
+				class="  h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
 			>
 				<p
 					class="Exo text-4xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED] absolute top-1.5"
@@ -59,7 +62,7 @@
 		<div class="relative max-sm:p-2">
 			<div class="mt-10 flex justify-center"></div>
 			<div
-				class=" sm:w-[333px] h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
+				class="  h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
 			>
 				<p
 					class="Exo text-4xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED] absolute top-1.5"
@@ -82,7 +85,7 @@
 		<div class="relative max-sm:p-2">
 			<div class="mt-10 flex justify-center"></div>
 			<div
-				class=" sm:w-[333px] h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
+				class="  h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
 			>
 				<p
 					class="Exo text-4xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED] absolute top-1.5"

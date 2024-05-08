@@ -1,15 +1,15 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages';
 	import {
 		arrow_right_svg,
 		clientes_parceiros_3_webp,
 		clientes_parceiros_5_webp,
 		linha_h_azul_svg
 	} from '$lib';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
-<section class="w-full rounded-lg bg-[#D4D4ED] lg:py-16">
-	<div class=" lg:flex flex-row pt-20" id="clients">
+<section class="w-full rounded-lg bg-[#D4D4ED] lg:py-16" id="clients">
+	<div class=" lg:flex flex-row pt-20">
 		<div class="lg:w-1/2 flex justify-center items-center mx-auto">
 			<div class="card bg-white lg:w-[694px] max-h-[364px] rounded-md relative">
 				<div class="p-10 max-sm:p-3 xl:p-16 space-y-7 relative">
