@@ -1,9 +1,9 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
 	import { i18n } from '$lib/i18n';
 	import { availableLanguageTags, languageTag } from '$lib/paraglide/runtime';
 	import { get } from 'svelte/store';
-	import { goto } from '$app/navigation';
-	import { page } from '$app/stores';
 
 	/**
 	 * @param { import("$lib/paraglide/runtime").AvailableLanguageTag } newLanguage
@@ -24,7 +24,7 @@
 </script>
 
 <select
-	class="relative h-[2.5rem] bg-[#F1F1F9]"
+	class="relative h-[2.5rem] bg-[#F1F1F9] rounded-lg"
 	aria-label="Select Language"
 	on:change={(e) => switchToLanguage(/** @type {any} */ (e).target.value)}
 >

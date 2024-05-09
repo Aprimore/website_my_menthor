@@ -1,5 +1,4 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages';
 	import {
 		arrow_right_svg,
 		facebook_svg,
@@ -9,23 +8,24 @@
 		mail_svg,
 		youtube_svg
 	} from '$lib';
+	import * as m from '$lib/paraglide/messages';
 	import Copyright from './Copyright.svelte';
 </script>
 
 {#if m}
-	<footer class="footer relative bg-[#17193b] w-full Exo">
-		<div class="lg:container mx-auto max-sm:flex justify-center">
-			<div class=" lg:p-12">
+	<footer class="footer relative bg-[#17193b] Exo">
+		<div class=" max-sm:flex justify-center">
+			<div class=" lg:p-12 max-md:flex justify-center p-5">
 				<div
-					class="grid xl:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-5 md:gap-10 lg:gap-20 mx-auto p-3 sm:p-6"
+					class="grid xl:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-2 md:gap-3 lg:gap-4 p-3 sm:p-6"
 				>
-					<div class="mx-auto">
-						<div class="w-full mb-10">
+					<div class="footer1 xl:col-span-2 md:col-span-2 col-span-2 max-md:flex justify-center">
+						<div class=" ">
 							<a href="/" class="mb-6 inline-block max-w-[250px]">
 								<img
 									src={logo_footer_webp}
 									alt="logo"
-									class="inset-0 w-full h-full object-cover size-96"
+									class="inset-0 h-full object-cover size-96 transition-transform transform hover:-translate-y-1"
 								/>
 							</a>
 
@@ -37,24 +37,19 @@
 						</a>
 					</div> -->
 
-							<button class=" flex flex-wrap gap-4 Exo">
+							<button class="flex flex-wrap Exo">
 								<a
-									class="btn-agendar bg-[#8abb3f] flex items-center text-base text-[#17193B] py-4 px-10 mt-5 rounded-lg relative max-lg:whitespace-nowrap lg:whitespace-nowrap"
+									class="btn-agendar w-full bg-[#8abb3f] text-[#17193B] py-4 px-10 rounded-lg relative transition-transform transform hover:-translate-y-1"
 									href="/company#contact"
 								>
 									{m.button_schedule_a_demo()}
-									<img
-										src={arrow_right_svg}
-										class="z-10 absolute right-5 bottom-[22px] size-3"
-										alt=""
-									/>
 								</a>
 							</button>
 						</div>
 					</div>
 
-					<div class="lg:ml-12 w-full">
-						<div class="w-full mb-10">
+					<div class="footer2 col-span-1 max-md:mt-10">
+						<div class=" mb-10">
 							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 								{m.footer_Products()}
 							</p>
@@ -63,14 +58,14 @@
 									<a
 										href="/products#platform"
 										title="Learn more about our company"
-										class="text-[#D4D4ED] text-sm">{m.footer_About_platform()}</a
+										class="text-[#D4D4ED] text-sm hover:text-white">{m.footer_About_platform()}</a
 									>
 								</li>
 								<li>
 									<a
 										href="/products#target-audience"
 										title="Learn more about our company"
-										class="text-[#D4D4ED] text-sm"
+										class="text-[#D4D4ED] text-sm hover:text-white"
 									>
 										{m.footer_Target_audience()}
 									</a>
@@ -81,46 +76,58 @@
 							</p>
 							<ul class="space-y-3">
 								<li>
-									<a href="/solutions#modules" class="text-[#D4D4ED] text-sm">
+									<a href="/solutions#modules" class="text-[#D4D4ED] text-sm hover:text-white">
 										{m.footer_Customers()}
 									</a>
 								</li>
 								<li>
-									<a href="/solutions#portfolio-services" class="text-[#D4D4ED] text-sm">
+									<a
+										href="/solutions#portfolio-services"
+										class="text-[#D4D4ED] text-sm hover:text-white"
+									>
 										{m.footer_Success_stories()}
 									</a>
 								</li>
 								<li>
-									<a href="/solutions#packages" class="text-[#D4D4ED] text-sm"
+									<a href="/solutions#packages" class="text-[#D4D4ED] text-sm hover:text-white"
 										>{m.footer_Customer_support()}</a
 									>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="lg:ml-12 w-full">
-						<div class="w-full mb-10">
+					<div class="footer3 col-span-1 max-md:mt-10">
+						<div class=" mb-10">
 							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 								{m.footer_Partner_Program()}
 							</p>
 							<ul class="space-y-3">
 								<li>
-									<a href="/customers_and_partners#clients" class="text-[#D4D4ED] text-sm">
+									<a
+										href="/customers_and_partners#clients"
+										class="text-[#D4D4ED] text-sm hover:text-white"
+									>
 										{m.footer_Resources()}
 									</a>
 								</li>
 								<li>
-									<a href="/customers_and_partners#cases" class="text-[#D4D4ED] text-sm">
+									<a
+										href="/customers_and_partners#cases"
+										class="text-[#D4D4ED] text-sm hover:text-white"
+									>
 										{m.footer_Blog()}
 									</a>
 								</li>
 								<li>
-									<a href="/customers_and_partners#support" class="text-[#D4D4ED] text-sm">
+									<a
+										href="/customers_and_partners#support"
+										class="text-[#D4D4ED] text-sm hover:text-white"
+									>
 										{m.footer_Events_Webinars()}
 									</a>
 								</li>
 								<li>
-									<a href="/customers_and_partners" class="text-[#D4D4ED] text-sm">
+									<a href="/customers_and_partners" class="text-[#D4D4ED] text-sm hover:text-white">
 										{m.footer_My_Menthor_Academy()}
 									</a>
 								</li>
@@ -128,46 +135,55 @@
 						</div>
 					</div>
 
-					<div class="lg:ml-12 w-full">
-						<div class="w-full mb-10">
+					<div class="footer4 col-span-1">
+						<div class=" mb-10">
 							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 								{m.footer_Knowledge_Base()}
 							</p>
 							<ul class="space-y-3">
 								<li>
-									<a href="/" class="text-[#D4D4ED] text-sm">{m.footer_Our_Company()}</a>
+									<a href="/" class="text-[#D4D4ED] text-sm hover:text-white"
+										>{m.footer_Our_Company()}</a
+									>
 								</li>
 								<li>
-									<a href="/" class="text-[#D4D4ED] text-sm">{m.footer_About_us()}</a>
+									<a href="/" class="text-[#D4D4ED] text-sm hover:text-white"
+										>{m.footer_About_us()}</a
+									>
 								</li>
 								<li>
-									<a href="/" class="text-[#D4D4ED] text-sm">My {m.footer_Purpose()}</a>
+									<a href="/" class="text-[#D4D4ED] text-sm hover:text-white"
+										>My {m.footer_Purpose()}</a
+									>
 								</li>
 								<li>
-									<a href="/" class="text-[#D4D4ED] text-sm">{m.footer_Contact_us()}</a>
+									<a href="/" class="text-[#D4D4ED] text-sm hover:text-white"
+										>{m.footer_Contact_us()}</a
+									>
 								</li>
 							</ul>
 						</div>
 					</div>
 
-					<div class="lg:ml-12 w-full relative">
-						<div class="w-full mb-10">
+					<div class="footer5 col-span-1 relative">
+						<div class=" mb-10">
 							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 								{m.footer_Solutions()}
 							</p>
 							<ul class="space-y-3">
 								<li>
-									<a href="/company#about" class="text-[#D4D4ED] text-sm"
+									<a href="/company#about" class="text-[#D4D4ED] text-sm hover:text-white"
 										>{m.footer_The_Platform()}</a
 									>
 								</li>
 								<li>
-									<a href="/company#purpose" class="text-[#D4D4ED] text-sm"
+									<a href="/company#purpose" class="text-[#D4D4ED] text-sm hover:text-white"
 										>{m.footer_Service_portfolio()}</a
 									>
 								</li>
 								<li>
-									<a href="/company#contact" class="text-[#D4D4ED] text-sm">{m.footer_Packages()}</a
+									<a href="/company#contact" class="text-[#D4D4ED] text-sm hover:text-white"
+										>{m.footer_Packages()}</a
 									>
 								</li>
 							</ul>
@@ -180,7 +196,11 @@
 									aria-label="Youtube"
 									target="_blank"
 								>
-									<img src={youtube_svg} alt="" />
+									<img
+										src={youtube_svg}
+										class="transition-transform duration-200 transform hover:scale-110"
+										alt=""
+									/>
 								</a>
 								<a
 									href="/"
@@ -188,7 +208,11 @@
 									aria-label="Linkedin"
 									target="_blank"
 								>
-									<img src={linkedin_svg} alt="" />
+									<img
+										src={linkedin_svg}
+										class="transition-transform duration-200 transform hover:scale-110"
+										alt=""
+									/>
 								</a>
 								<a
 									href="/"
@@ -196,7 +220,11 @@
 									aria-label="Facebook"
 									target="_blank"
 								>
-									<img src={facebook_svg} alt="" />
+									<img
+										src={facebook_svg}
+										class="transition-transform duration-200 transform hover:scale-110"
+										alt=""
+									/>
 								</a>
 								<a
 									href="/"
@@ -204,7 +232,11 @@
 									aria-label="Instagram"
 									target="_blank"
 								>
-									<img src={instagram_svg} alt="" />
+									<img
+										src={instagram_svg}
+										class="transition-transform duration-200 transform hover:scale-110"
+										alt=""
+									/>
 								</a>
 							</div>
 						</div>
@@ -218,9 +250,14 @@
 	<!-- Placeholder while translations are loading -->
 	<div>Loading...</div>
 {/if}
-<!-- <style>
-	.email_link::before {
-		content: url('$lib/assets/svg/mail.svg');
-		margin-right: 10px; /* Adjust as needed */
+
+<style>
+	.btn-agendar::after {
+		content: url('$lib/assets/svg/arrow_right.svg');
+		display: inline-block;
+		/* margin-right: 10px;  */
+		margin-left: 10px;
+		margin-bottom: 2px;
+		vertical-align: middle;
 	}
-</style> -->
+</style>
