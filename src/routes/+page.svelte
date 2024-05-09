@@ -12,6 +12,7 @@
 	import Navbar2 from '$lib/components/Navbar2.svelte';
 </script>
 
+
 <div>
 	<Hero />
 	<Section1 />
