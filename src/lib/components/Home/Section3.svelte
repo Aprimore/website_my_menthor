@@ -1,6 +1,6 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages';
 	import { arrow_right_svg, linha_h_azul2_svg, piramid_home_pt_br_svg } from '$lib';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
 {#if m}
@@ -9,13 +9,28 @@
 			class="max-sm:bg-[#F1F1F9] md:max-w-screen-2xl flex flex-col lg:flex-row lg:pt-20 mx-auto items-center rounded-lg"
 		>
 			<div class="flex xl:p-16 max-lg:order-2 px-5 mx-5">
-				<img src={piramid_home_pt_br_svg} class="w-full max-sm:mb-10" alt="" />
+				<img
+					src={piramid_home_pt_br_svg}
+					class="w-full max-sm:mb-10"
+					alt="Pyramid Chart"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class="max-lg:p-5 lg:w-1/2 space-y-10 mt-8 lg:mt-16 max-lg:order-1">
 				<h1 class="text-4xl sm:text-4xl relative Exo-Bold text-[#17193B]">
 					{m.homepage_section3_Breaking()}
 				</h1>
-				<span class=""><img src={linha_h_azul2_svg} alt="" /></span>
+				<span
+					><img
+						src={linha_h_azul2_svg}
+						alt="linha"
+						loading="lazy"
+						decoding="sync"
+						fetchpriority="low"
+					/></span
+				>
 				<p class="mt-14 mb-2 Archivo text-lg text-[#25285F]">
 					{@html m.homepage_section3_The_platform()}
 					<!--  The platform facilitates the rethinking of the organization 

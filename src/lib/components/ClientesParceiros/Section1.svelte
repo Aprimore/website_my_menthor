@@ -52,8 +52,22 @@
 		</div>
 		<div class="lg:w-1/2 lg:flex">
 			<div class="flex flex-row justify-center items-center">
-				<img src={clientes_parceiros_3_webp} class="w-full mt-8 md:mb-16 mr-5" alt="" />
-				<img src={clientes_parceiros_5_webp} class="w-full mb-8 md:mt-16" alt="" />
+				<img
+					src={clientes_parceiros_3_webp}
+					class="w-full mt-8 md:mb-16 mr-5"
+					alt="Webp Vector"
+					loading="eager"
+					decoding="async"
+					fetchpriority="high"
+				/>
+				<img
+					src={clientes_parceiros_5_webp}
+					class="w-full mb-8 md:mt-16"
+					alt="Webp Vector"
+					loading="eager"
+					decoding="async"
+					fetchpriority="high"
+				/>
 			</div>
 		</div>
 	</div>

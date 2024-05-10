@@ -1,6 +1,6 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages';
 	import { empresa_1_webp, linha_h_azul_2_svg, linha_h_azul_svg } from '$lib';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
 <section class="mt-4 lg:my-16 pb-20 bg-white">
@@ -10,7 +10,16 @@
 				<h1 class="text-4xl sm:text-5xl max-sm:text-center z-10 relative text-[#17193B] Exo-Bold">
 					<!-- The company -->
 					{m.company_TheCompany()}
-					<span><img src={linha_h_azul_2_svg} class="z-10 max-sm:mx-auto" alt="linha" /></span>
+					<span
+						><img
+							src={linha_h_azul_2_svg}
+							class="z-10 max-sm:mx-auto"
+							alt="linha"
+							loading="eager"
+							decoding="async"
+							fetchpriority="high"
+						/></span
+					>
 				</h1>
 				<p class="Archivo text-[#25285F] text-lg leading-snug">
 					<!-- My Menthor is a product developed by APRIMORE Consultoria em Gestão Empresarial, based in Brazil, and TOPTIER Business Group, based in the USA . -->
@@ -31,7 +40,14 @@
 			</div>
 		</div>
 		<div class="lg:w-1/2 lg:p-4 mt-3 relative lg:my-auto">
-			<img src={empresa_1_webp} class=" mx-auto rounded-lg" alt="" />
+			<img
+				src={empresa_1_webp}
+				class=" mx-auto rounded-lg"
+				alt="Webp Vector"
+				loading="eager"
+				decoding="async"
+				fetchpriority="high"
+			/>
 		</div>
 	</div>
 </section>

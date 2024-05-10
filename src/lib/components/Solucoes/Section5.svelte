@@ -1,6 +1,6 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages';
 	import { checkmark_2_svg, linha_h_azul_5_svg } from '$lib';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
 <section class="w-full items-center relative rounded-lg bg-[#F1F1F9] py-20">
@@ -10,7 +10,14 @@
 				<!-- Platform characteristics -->
 				{m.solutions_PlatformCharacteristics()}
 			</h1>
-			<img src={linha_h_azul_5_svg} class="mx-auto" alt="" />
+			<img
+				src={linha_h_azul_5_svg}
+				class="mx-auto"
+				alt="linha"
+				loading="lazy"
+				decoding="sync"
+				fetchpriority="low"
+			/>
 		</div>
 
 		<div class="max-sm:p-3 sm:pl-10 md:pl-20 sm:flex flex-row relative">
@@ -107,7 +114,14 @@
 				<!-- Platform features -->
 				{m.solutions_PlatformFeatures()}
 			</h1>
-			<img src={linha_h_azul_5_svg} class="mx-auto max-w-80" alt="" />
+			<img
+				src={linha_h_azul_5_svg}
+				class="mx-auto max-w-80"
+				alt="linha"
+				loading="lazy"
+				decoding="sync"
+				fetchpriority="low"
+			/>
 		</div>
 
 		<div class="max-sm:p-3 sm:pl-10 md:pl-20 sm:flex flex-row relative">

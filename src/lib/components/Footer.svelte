@@ -23,6 +23,9 @@
 						<div class=" ">
 							<a href="/" class="mb-6 inline-block max-w-[250px]">
 								<img
+									loading="lazy"
+									decoding="sync"
+									fetchpriority="low"
 									src={logo_footer_webp}
 									alt="logo"
 									class="inset-0 h-full object-cover size-96 transition-transform transform hover:-translate-y-1"
@@ -197,6 +200,9 @@
 									target="_blank"
 								>
 									<img
+										loading="lazy"
+										decoding="sync"
+										fetchpriority="low"
 										src={youtube_svg}
 										class="transition-transform duration-200 transform hover:scale-110"
 										alt=""
@@ -209,6 +215,9 @@
 									target="_blank"
 								>
 									<img
+										loading="lazy"
+										decoding="sync"
+										fetchpriority="low"
 										src={linkedin_svg}
 										class="transition-transform duration-200 transform hover:scale-110"
 										alt=""
@@ -221,6 +230,9 @@
 									target="_blank"
 								>
 									<img
+										loading="lazy"
+										decoding="sync"
+										fetchpriority="low"
 										src={facebook_svg}
 										class="transition-transform duration-200 transform hover:scale-110"
 										alt=""
@@ -233,6 +245,9 @@
 									target="_blank"
 								>
 									<img
+										loading="lazy"
+										decoding="sync"
+										fetchpriority="low"
 										src={instagram_svg}
 										class="transition-transform duration-200 transform hover:scale-110"
 										alt=""

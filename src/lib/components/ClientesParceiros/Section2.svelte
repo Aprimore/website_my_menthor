@@ -57,6 +57,9 @@
 							top-11 left-0
 							max-sm:w-52"
 							alt="linha"
+							loading="lazy"
+							decoding="sync"
+							fetchpriority="low"
 						/>
 					</span>
 					{@html m.clientesP_IsOurSuccess()}

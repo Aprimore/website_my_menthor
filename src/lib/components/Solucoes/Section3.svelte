@@ -32,7 +32,13 @@
 					{m.solutions_IdealForThose()}
 				</p>
 				<span class="max-w-[15rem] absolute bottom-6">
-					<img src={linha_h_laranja2_svg} class=" " alt="" />
+					<img
+						src={linha_h_laranja2_svg}
+						alt="linha"
+						loading="lazy"
+						decoding="sync"
+						fetchpriority="low"
+					/>
 				</span>
 			</div>
 		</div>
@@ -55,7 +61,13 @@
 					{m.solutions_ThePerfectChoice()}
 				</p>
 				<span class="max-w-[15rem] absolute bottom-6">
-					<img src={linha_h_verde2_svg} class="" alt="" />
+					<img
+						src={linha_h_verde2_svg}
+						alt="linha"
+						loading="lazy"
+						decoding="sync"
+						fetchpriority="low"
+					/>
 				</span>
 			</div>
 		</div>
@@ -78,7 +90,13 @@
 					{m.solutions_ForCompaniesThatPrefer()}
 				</p>
 				<span class="max-w-[15rem] absolute bottom-6">
-					<img src={linha_h_azul4_svg} class=" " alt="" />
+					<img
+						src={linha_h_azul4_svg}
+						alt="linha"
+						loading="lazy"
+						decoding="sync"
+						fetchpriority="low"
+					/>
 				</span>
 			</div>
 		</div>
@@ -101,7 +119,13 @@
 					{m.solutions_CanBeCustomizedAccordingToCustomers()}
 				</p>
 				<span class="max-w-[15rem] absolute bottom-6">
-					<img src={linha_h_amarela3_svg} class=" " alt="" />
+					<img
+						src={linha_h_amarela3_svg}
+						alt="linha"
+						loading="lazy"
+						decoding="sync"
+						fetchpriority="low"
+					/>
 				</span>
 			</div>
 		</div>

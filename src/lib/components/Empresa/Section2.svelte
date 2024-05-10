@@ -23,20 +23,6 @@
 		'zoom',
 		'info'
 	];
-
-	// import lottie from 'lottie-web';
-	// import { onMount } from 'svelte';
-
-	// let animationContainer: HTMLElement;
-
-	// onMount(() => {
-	// 	lottie.loadAnimation({
-	// 		container: animationContainer,
-	// 		loop: true,
-	// 		autoplay: true,
-	// 		animationData
-	// 	});
-	// });
 </script>
 
 <section class="w-full items-center rounded-lg bg-[#F1F1F9]">
@@ -53,7 +39,6 @@
 					{controlsLayout}
 				/>
 			{/if}
-			<!-- <img class="w-full h-full" src={clientes_parceiros_3_webp} alt="" /> -->
 		</div>
 		<div class="md:w-1/2 flex flex-col justify-center">
 			<div class="card space-y-10 p-5 md:p-12 bg-[#F1F1F9]">
@@ -62,7 +47,14 @@
 				>
 					<!-- Purpose -->
 					{m.company_Purpose()}
-					<img src={linha_h_verde_1_svg} class="max-sm:w-36 max-lg:mx-auto" alt="linha" />
+					<img
+						src={linha_h_verde_1_svg}
+						class="max-sm:w-36 max-lg:mx-auto"
+						alt="linha"
+						loading="lazy"
+						decoding="sync"
+						fetchpriority="low"
+					/>
 				</h1>
 
 				<p class="Archivo text-[#25285F] text-lg">

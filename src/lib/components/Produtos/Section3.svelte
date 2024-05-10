@@ -2,7 +2,6 @@
 	import { arrow_right_svg, linha_h_azul_2_svg, piramid_home_pt_br_svg } from '$lib';
 	import * as m from '$lib/paraglide/messages';
 	import Section_Cards from './Section_Cards.svelte';
-	
 </script>
 
 <section class="w-full items-center relative rounded-lg bg-white mb-10">
@@ -12,7 +11,7 @@
 		<div
 			class="lg:max-w-[580px] w-full flex lg:justify-end justify-center max-lg:order-2 max-lg:mx-auto mt-auto"
 		>
-			<img src={piramid_home_pt_br_svg} class="max-sm:px-5 lg:w-full max-sm:mb-10" alt="" />
+			<img src={piramid_home_pt_br_svg} class="max-sm:px-5 lg:w-full max-sm:mb-10" alt="Pyramid Chart" loading="lazy"/>
 		</div>
 		<div class="max-lg:p-5 lg:w-1/2 space-y-10 mt-8 lg:mt-16 max-lg:order-1">
 			<h1 class="text-4xl relative Exo-Bold text-[#17193B] max-sm:text-center">
@@ -39,7 +38,6 @@
 			</p>
 		</div>
 	</div>
-
 
 	<Section_Cards />
 </section>

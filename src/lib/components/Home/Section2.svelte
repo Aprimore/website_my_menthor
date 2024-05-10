@@ -1,5 +1,4 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages';
 	import {
 		arrow_right_svg,
 		design_service_svg,
@@ -8,6 +7,7 @@
 		table_chart_view_svg,
 		track_changes_svg
 	} from '$lib';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
 {#if m}
@@ -20,7 +20,14 @@
 			<h2 class="Exo-Bold text-4xl relative text-[#17193B]">
 				{m.homepage_section2_smarter()}
 				<span
-					><img src={linha_h_verde_3_svg} class="z-10 max-sm:max-w-72 mx-auto" alt="linha" /></span
+					><img
+						src={linha_h_verde_3_svg}
+						class="z-10 max-sm:max-w-72 mx-auto"
+						alt="linha"
+						loading="lazy"
+						decoding="sync"
+						fetchpriority="low"
+					/></span
 				>
 			</h2>
 		</div>
@@ -30,7 +37,15 @@
 			>
 				<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 lg:mr-20 py-10">
 					<h3 class="Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
-						<span class="absolute left-[-45px]"><img src={track_changes_svg} alt="" /></span>
+						<span class="absolute left-[-45px]"
+							><img
+								src={track_changes_svg}
+								alt="linha"
+								loading="lazy"
+								decoding="sync"
+								fetchpriority="low"
+							/></span
+						>
 
 						{m.homepage_section2_holistic()}
 					</h3>
@@ -45,7 +60,15 @@
 			>
 				<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 lg:mr-20 py-10">
 					<h3 class="Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
-						<span class="absolute left-[-45px]"><img src={design_service_svg} alt="" /></span>
+						<span class="absolute left-[-45px]"
+							><img
+								src={design_service_svg}
+								alt="Svg Icon"
+								loading="lazy"
+								decoding="sync"
+								fetchpriority="low"
+							/></span
+						>
 
 						{m.homepage_section2_Organizational()}
 					</h3>
@@ -62,7 +85,15 @@
 			>
 				<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 py-10">
 					<h3 class="Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
-						<span class="absolute left-[-45px]"><img src={table_chart_view_svg} alt="" /></span>
+						<span class="absolute left-[-45px]"
+							><img
+								src={table_chart_view_svg}
+								alt="Svg Icon"
+								loading="lazy"
+								decoding="sync"
+								fetchpriority="low"
+							/></span
+						>
 						{m.homepage_section2_Evolution()}
 					</h3>
 
@@ -76,7 +107,15 @@
 			>
 				<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 lg:mr-20 py-10">
 					<h3 class="Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
-						<span class="absolute left-[-45px]"><img src={linked_services_svg} alt="" /></span>
+						<span class="absolute left-[-45px]"
+							><img
+								src={linked_services_svg}
+								alt="Svg Icon"
+								loading="lazy"
+								decoding="sync"
+								fetchpriority="low"
+							/></span
+						>
 						{m.homepage_section2_Organizational_alignment()}
 					</h3>
 

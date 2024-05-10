@@ -10,7 +10,14 @@
 				<!-- Platform Modules -->
 				{m.solutions_PlatformModules()}
 			</h1>
-			<img src={linha_h_verde_3_svg} class="right-5 mx-auto max-sm:max-w-xs" alt="linha" />
+			<img
+				src={linha_h_verde_3_svg}
+				class="right-5 mx-auto max-sm:max-w-xs"
+				alt="linha"
+				loading="eager"
+				decoding="sync"
+				fetchpriority="high"
+			/>
 		</div>
 
 		<div class="max-md:max-w-[650px] mx-auto md:flex justify-end md:space-x-6 max-md:space-y-2">

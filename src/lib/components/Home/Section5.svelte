@@ -1,13 +1,20 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages';
 	import { arrow_right_svg, earth_webp, rocket_webp } from '$lib';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
 {#if m}
 	<section class="w-full items-center relative rounded-lg md:mt-20">
 		<div class="mx-auto px-4 md:flex md:h-[330px] md:items-center relative">
 			<div class="md:w-1/2 relative z-10 flex justify-center">
-				<img src={rocket_webp} class="z-20 mt-2 relative max-md:max-w-64" alt="" />
+				<img
+					src={rocket_webp}
+					class="z-20 mt-2 relative max-md:max-w-64"
+					alt="Rocket"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class="md:w-1/2 relative z-20 space-y-6 md:max-w-screen-md flex flex-col justify-center">
 				<h1 class="text-[#FCC614] Exo-Semibold text-2xl">{m.homepage_section_5_Come()}</h1>
@@ -33,6 +40,9 @@
 		<div class="mt-8 flex">
 			<div class="bg-gradient-to-r from-[#000000] via-transparent to-transparent">
 				<img
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
 					src={earth_webp}
 					alt="Hero Header"
 					class="absolute inset-0 w-full h-full object-cover bg-gradient-to-r from-[#010101] via-transparent to-transparent"

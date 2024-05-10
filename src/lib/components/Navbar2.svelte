@@ -1,7 +1,7 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages';
 	import { page } from '$app/stores';
 	import { logo_navbar_svg } from '$lib';
+	import * as m from '$lib/paraglide/messages';
 
 	let showMenu = false;
 
@@ -33,7 +33,13 @@
 				aria-label="My Menthor"
 				href="/"
 			>
-				<img src={logo_navbar_svg} class="" alt="" />
+				<img
+					src={logo_navbar_svg}
+					alt="Logo MyMenthor"
+					loading="eager"
+					decoding="async"
+					fetchpriority="high"
+				/>
 			</a>
 			<!-- Mobile menu button -->
 			<div class="hamb flex lg:hidden Exo">

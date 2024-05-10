@@ -10,12 +10,21 @@
 	>
 		<div class="lg:w-2/3 flex max-lg:justify-start justify-center items-center">
 			<div class="relative">
-				<img src={clientes_parceiros_4_webp} class="" alt="" />
+				<img
+					src={clientes_parceiros_4_webp}
+					alt="Webp Vector"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 				<img
 					src={fone_amarelo_svg}
 					class="absolute max-md:top-3 max-md:right-3 -top-5
 					-right-5"
-					alt=""
+					alt="phone icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
 				/>
 			</div>
 		</div>
@@ -44,20 +53,6 @@
 							{m.footer_Contact_us()}
 						</a>
 					</button>
-
-					<!-- <div class=" flex flex-wrap">
-						<a
-							class="Archivo btn-demo block w-full rounded-xl px-10 py-4 text-lg font-medium bg-[#8ABB3F] text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
-							href="#"
-						>
-							Contact Us
-							<img
-								src={arrow_right_svg}
-								class="z-10 absolute right-5 bottom-[24px] size-3"
-								alt=""
-							/>
-						</a>
-					</div> -->
 				</div>
 			</div>
 		</div>

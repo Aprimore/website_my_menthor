@@ -8,6 +8,9 @@
 		src={products_s3_bg_radial_svg}
 		class="absolute top-0 left-0 w-full h-full object-cover -z-20"
 		alt="radial effect"
+		loading="lazy"
+		decoding="sync"
+		fetchpriority="low"
 	/>
 	<div class="w-full h-full relative">
 		<div class="py-24 max-w-screen-2xl mx-auto space-y-24">
@@ -22,13 +25,23 @@
 							src={linha_h_amarela_svg}
 							class="z-10 max-sm:mx-auto max-sm:max-w-72"
 							alt="linha"
+							loading="lazy"
+							decoding="sync"
+							fetchpriority="low"
 						/></span
 					>
 				</h1>
 				<div class="flex lg:flex-row flex-col justify-center items-center p-3">
 					<div class="lg:w-1/2 lg:mt-auto">
 						<div class=" xl:ml-16 rounded-lg">
-							<img src={clientes_parceiros_1_webp} class="w-full xl:max-w-[604px]" alt="" />
+							<img
+								src={clientes_parceiros_1_webp}
+								class="w-full xl:max-w-[604px]"
+								alt="Webp Vector"
+								loading="lazy"
+								decoding="sync"
+								fetchpriority="low"
+							/>
 						</div>
 					</div>
 					<div
@@ -53,7 +66,14 @@
 				<div class="flex lg:flex-row flex-col justify-center items-center p-3">
 					<div class="lg:w-1/2 lg:mt-auto">
 						<div class=" xl:ml-16 rounded-lg">
-							<img src={clientes_parceiros_1_webp} class="w-full xl:max-w-[604px]" alt="" />
+							<img
+								src={clientes_parceiros_1_webp}
+								class="w-full xl:max-w-[604px]"
+								alt="Webp Vector"
+								loading="lazy"
+								decoding="sync"
+								fetchpriority="low"
+							/>
 						</div>
 					</div>
 					<div
@@ -78,7 +98,14 @@
 				<div class="flex lg:flex-row flex-col justify-center items-center p-3">
 					<div class="lg:w-1/2 lg:mt-auto">
 						<div class=" xl:ml-16 rounded-lg">
-							<img src={clientes_parceiros_1_webp} class="w-full xl:max-w-[604px]" alt="" />
+							<img
+								src={clientes_parceiros_1_webp}
+								class="w-full xl:max-w-[604px]"
+								alt="Webp Vector"
+								loading="lazy"
+								decoding="sync"
+								fetchpriority="low"
+							/>
 						</div>
 					</div>
 					<div

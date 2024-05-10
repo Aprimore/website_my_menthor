@@ -35,11 +35,11 @@
 
 		// Prepare form data to send to Zoho CRM endpoint
 		const formData = new FormData();
-		// formData.append('xnQsjsdp', '0afeca1a83d2be29cad9dc2d8a37e8f3d35be7978017274f40bbc07d1f169340');
-		// formData.append(
-		// 	'xmIwtLD',
-		// 	'5a87345b8b9b1b951b64a0c913eb4b4cb6cafd7e1f4b8519f9a87df2f28179339608b7c95a65f83b6f01fd5ba9569924'
-		// );
+		formData.append('xnQsjsdp', '0afeca1a83d2be29cad9dc2d8a37e8f3d35be7978017274f40bbc07d1f169340');
+		formData.append(
+			'xmIwtLD',
+			'5a87345b8b9b1b951b64a0c913eb4b4cb6cafd7e1f4b8519f9a87df2f28179339608b7c95a65f83b6f01fd5ba9569924'
+		);
 		formData.append('actionType', 'TGVhZHM=');
 		formData.append('returnURL', 'null');
 		formData.append('LEADCF8', areaOfInterest);
@@ -216,7 +216,3 @@
 		>
 	</div>
 </form>
-
-<style>
-	/* Move CSS styles from the original form here */
-</style>

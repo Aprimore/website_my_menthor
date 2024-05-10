@@ -1,6 +1,6 @@
 <script lang="ts">
-	import * as m from '$lib/paraglide/messages';
 	import { checkmark_2_svg } from '$lib';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
 <section class="w-full my-20 relative rounded-lg">
@@ -88,19 +88,43 @@
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">6</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<p class="text-xl Archivo text-[#25285F]">
@@ -127,19 +151,43 @@
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">6</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<p class="text-xl Archivo text-[#25285F]">
@@ -166,19 +214,43 @@
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">6</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<p class="text-xl Archivo text-[#25285F]">
@@ -205,19 +277,43 @@
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">6</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->
-				<img src={checkmark_2_svg} alt="" />
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<p class="text-xl Archivo text-[#25285F]">

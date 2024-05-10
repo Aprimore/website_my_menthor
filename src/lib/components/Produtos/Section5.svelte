@@ -24,7 +24,10 @@
 					<img
 						src={line_graph_illustration_svg}
 						class="p-5 lg:p-10 w-full max-md:max-w-md max-md:mx-auto"
-						alt=""
+						alt="Svg Icon"
+						loading="lazy"
+						decoding="sync"
+						fetchpriority="low"
 					/>
 				</div>
 				<div class="md:w-1/2 relative my-auto">
@@ -75,7 +78,10 @@
 					<img
 						src={analytics_illustration_svg}
 						class="p-5 lg:p-10 w-full max-md:max-w-md max-md:mx-auto"
-						alt=""
+						alt="Svg Icon"
+						loading="lazy"
+						decoding="sync"
+						fetchpriority="low"
 					/>
 				</div>
 				<div class="md:w-1/2 relative my-auto">
@@ -139,7 +145,10 @@
 					<img
 						src={check_list_illustration_svg}
 						class="p-5 lg:p-10 w-full max-w-md max-md:mx-auto"
-						alt=""
+						alt="Svg Icon"
+						loading="lazy"
+						decoding="sync"
+						fetchpriority="low"
 					/>
 				</div>
 				<div class="mdmd:w-1/2 relative my-auto">

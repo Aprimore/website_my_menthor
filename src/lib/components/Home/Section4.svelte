@@ -36,7 +36,15 @@
 						{m.homepage_section4_Organizing()}
 						{m.homepage_section4_simpler()}
 					</h1>
-					<span class="ml-2 absolute"><img src={linha_h_azul_6_svg} alt="" /></span>
+					<span class="ml-2 absolute"
+						><img
+							src={linha_h_azul_6_svg}
+							alt="linha"
+							loading="lazy"
+							decoding="sync"
+							fetchpriority="low"
+						/></span
+					>
 				</div>
 				<div class="md:ml-6 xl:absolute">
 					<div

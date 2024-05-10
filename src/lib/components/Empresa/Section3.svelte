@@ -25,22 +25,7 @@
 		'zoom',
 		'info'
 	];
-
-	// import lottie from 'lottie-web';
-	// let animationContainer: HTMLElement;
-	// onMount(() => {
-	// 	lottie.loadAnimation({
-	// 		container: animationContainer,
-	// 		loop: true,
-	// 		autoplay: true,
-	// 		animationData
-	// 	});
-	// });
 </script>
-
-<!-- <section class="my-20 pb-20 bg-white ">
-	<div class="h-[649px] flex flex-row max-w-screen-2xl mx-auto ">
-		<div class="w-1/2 flex flex-col justify-center "> -->
 
 <section class="w-full my-8 lg:my-20 bg-white">
 	<div class="lg:flex flex-row xl:max-w-screen-2xl mx-auto max-lg:p-5" id="contact">
@@ -74,7 +59,6 @@
 							{controlsLayout}
 						/>
 					{/if}
-					<!-- <img class="w-[620px]" src={clientes_parceiros_3_webp} alt="" /> -->
 				</div>
 			</div>
 		</div>

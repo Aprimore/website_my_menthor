@@ -34,11 +34,6 @@
 			class="bg-white grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-w-7xl m-auto sm:rounded-lg p-6"
 		>
 			<div class=" lg:flex lg:flex-col max-md:flex-col max-md:text-center justify-center p-3">
-				<!-- <img
-					class="absolute bottom-0 h-screen/2 h-full max-lg:hidden"
-					src={linha_h_cinza_svg}
-					alt=""
-				/> -->
 				<div class="space-y-5 py-5 relative md:mt-6 lg:mt-0">
 					<h1 class="Exo-Bold text-3xl">
 						{m.homepage_section_6_My_menthor()}
@@ -78,11 +73,6 @@
 			<div
 				class="lg:flex lg:flex-col max-md:flex-col max-md:text-center justify-center p-3 max-sm:mt-5"
 			>
-				<!-- <img
-					class="absolute bottom-0 h-screen/2 h-full max-lg:hidden"
-					src={linha_h_cinza_svg}
-					alt=""
-				/> -->
 				<div class="space-y-5 relative sm:py-5 md:mt-6 lg:mt-0 max-md:mb-10">
 					<h1 class="Exo-Bold text-3xl">
 						{m.homepage_section_6_My_Menthor_Academy()}

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
 	import { i18n } from '$lib/i18n.js';
-	import '../app.css';
+	import '../app.postcss';
 	import '@fontsource-variable/archivo';
 	import '@fontsource-variable/exo';
 	import Footer from '$lib/components/Footer.svelte';
