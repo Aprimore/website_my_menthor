@@ -28,7 +28,7 @@
 									fetchpriority="low"
 									src={logo_footer_webp}
 									alt="logo"
-									class="inset-0 h-full object-cover size-96 transition-transform transform hover:-translate-y-1"
+									class="aspect-video transition-transform transform hover:-translate-y-1"
 								/>
 							</a>
 
