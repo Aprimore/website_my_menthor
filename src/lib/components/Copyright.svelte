@@ -57,7 +57,7 @@
 								src={arrow_up_svg}
 								alt="arrow top"
 								class="size-[14px]"
-								aria-label="top button"							
+								aria-label="top button"
 								decoding="sync"
 								fetchpriority="low"
 							/></a

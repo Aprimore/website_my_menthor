@@ -46,7 +46,6 @@
 					{controlsLayout}
 				/>
 			{/if}
-
 		</div>
 		<div class="lg:w-1/2 relative px-5 lg:p-5 pb-5">
 			<p class="mt-10 mb-2 text-[#25285F] Archivo text-lg">

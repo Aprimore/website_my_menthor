@@ -1,48 +1,48 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import { arrow_right_svg, header_hero_webp, linha_h_amarela4_svg } from '$lib';
+	// import { page } from '$app/stores';
+	import {
+		header_hero_1_webp,
+		header_hero_2_webp,
+		header_hero_3_webp,
+		header_hero_webp
+	} from '$lib';
 	import * as m from '$lib/paraglide/messages';
 </script>
 
 <header class="hero-section">
 	<div class="mx-auto px-4 flex h-[510px] items-center relative">
 		<div class="mx-auto max-w-5xl text-center z-20">
-			<p class="z-10 relative text-[#FCC614] text-lg Exo tracking-widest">
+			<p class=" text-[#FCC614] text-lg Exo tracking-widest">
 				{m.homepage_header_business()}
 			</p>
-			<h1 class="text-2xl sm:text-4xl z-10 relative text-white Exo-Bold">
+
+			<h1 class="text-2xl sm:text-4xl text-white Exo-Bold yellow-underline">
 				{m.homepage_header_yourcompany()}
-				<span
-					><img
-						src={linha_h_amarela4_svg}
-						class="z-10 sm:absolute right-0"
-						alt="linha"
-						loading="eager"
-						decoding="async"
-						fetchpriority="high"
-					/></span
-				>
 			</h1>
 
-			<p
-				class="max-w-xl mt-10 sm:text-xl/relaxed mx-auto z-10 relative mb-8 Archivo text-[#D4D4ED]"
-			>
+			<p class="max-w-xl mt-10 sm:text-xl/relaxed mx-auto mb-8 Archivo text-[#D4D4ED]">
 				{m.homepage_header_webhave()}
 			</p>
 
 			<button class="Exo">
 				<a
-					class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
+					class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto"
 					href="/company#contact"
 				>
 					{m.button_schedule_a_demo()}
 				</a>
 			</button>
+
 			<img
-				src={header_hero_webp}
+				srcset="
+				{header_hero_1_webp} 300w,
+				{header_hero_2_webp} 700w,
+				{header_hero_3_webp} 900w,
+				{header_hero_webp} 1200w
+				"
+				sizes="(max-width: 500px) 100vw, 70vw"
 				alt="Hero Header"
-				class="absolute inset-0 w-full h-full object-cover"
-				role="presentation"
+				class="absolute inset-0 w-full h-full object-cover -z-10"
 				decoding="async"
 				fetchpriority="high"
 				loading="eager"
@@ -57,5 +57,18 @@
 		display: inline-block;
 		/* vertical-align: middle; */
 		margin-left: 10px;
+	}
+
+	h1.yellow-underline {
+		content: '';
+		background-image: url('$lib/assets/svg/linha_h_amarela4.svg');
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		padding-bottom: 10px;
+	}
+	@media (max-width: 709px) {
+		h1.yellow-underline {
+			background-size: 100% auto;
+		}
 	}
 </style>

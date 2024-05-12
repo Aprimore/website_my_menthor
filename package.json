@@ -16,10 +16,10 @@
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
-		"gh-pages": "^6.1.1",
 		"postcss": "^8.4.38",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
+		"sass": "^1.77.1",
 		"svelte": "^4.2.7",
 		"svelte-carousel": "^1.0.25",
 		"svelte-check": "^3.6.0",
@@ -41,7 +41,6 @@
 		"format": "prettier --write .",
 		"test:integration": "playwright test",
 		"test:unit": "vitest",
-		"deploy": "bun run build && bun gh-pages -d build -t true",
 		"postinstall": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide"
 	},
 	"type": "module",
@@ -49,6 +48,7 @@
 		"@fontsource-variable/archivo": "^5.0.19",
 		"@fontsource-variable/exo": "^5.0.19",
 		"@lottiefiles/svelte-lottie-player": "^0.3.1",
-		"install": "^0.13.0"
+		"install": "^0.13.0",
+		"svelte-tel-input": "^3.3.9"
 	}
 }
