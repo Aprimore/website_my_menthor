@@ -28,7 +28,7 @@
 {#if m}
 	<section
 		class="resources_section w-full relative sm:rounded-lg lg:bg-[#D4D4ED] sm:py-14 justify-center mx-auto"
-		id="bottom-page"
+		id="resources"
 	>
 		<div
 			class="bg-white grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-w-7xl m-auto sm:rounded-lg p-6"
@@ -82,7 +82,7 @@
 					<button class="min-w-min btn-invisible max-md:hidden">
 						<a
 							class="Archivo bg-[#FFFFFF] block w-full rounded-xl px-6 py-4 text-[#FFFFFF] sm:w-auto z-10 relative btn-invisible"
-							href="#bottom-page"
+							href="#"
 						>
 							{m.button_access()}
 						</a>
@@ -98,7 +98,7 @@
 					<button class="min-w-min btn-invisible max-md:hidden">
 						<a
 							class="btn-invisible Archivo bg-[#FFFFFF] block w-full rounded-xl px-6 py-4 text-[#FFFFFF] sm:w-auto z-10 relative"
-							href="#bottom-page"
+							href="#"
 						>
 							{m.button_access()}
 						</a>

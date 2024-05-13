@@ -39,7 +39,7 @@
 					loading="eager"
 					decoding="async"
 					fetchpriority="high"
-					class="aspect-video"
+					class="aspect-video w-[235px] h-[132px]"
 				/>
 			</a>
 			<!-- Mobile menu button -->

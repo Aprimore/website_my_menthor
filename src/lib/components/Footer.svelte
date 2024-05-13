@@ -79,21 +79,25 @@
 							</p>
 							<ul class="space-y-3">
 								<li>
-									<a href="/solutions#modules" class="text-[#D4D4ED] text-sm hover:text-white">
+									<a
+										href="/customers_and_partners#clients"
+										class="text-[#D4D4ED] text-sm hover:text-white"
+									>
 										{m.footer_Customers()}
 									</a>
 								</li>
 								<li>
 									<a
-										href="/solutions#portfolio-services"
+										href="/customers_and_partners#cases"
 										class="text-[#D4D4ED] text-sm hover:text-white"
 									>
 										{m.footer_Success_stories()}
 									</a>
 								</li>
 								<li>
-									<a href="/solutions#packages" class="text-[#D4D4ED] text-sm hover:text-white"
-										>{m.footer_Customer_support()}</a
+									<a
+										href="/customers_and_partners#support"
+										class="text-[#D4D4ED] text-sm hover:text-white">{m.footer_Customer_support()}</a
 									>
 								</li>
 							</ul>
@@ -106,31 +110,22 @@
 							</p>
 							<ul class="space-y-3">
 								<li>
-									<a
-										href="/customers_and_partners#clients"
-										class="text-[#D4D4ED] text-sm hover:text-white"
-									>
+									<a href="/resources#resources" class="text-[#D4D4ED] text-sm hover:text-white">
 										{m.footer_Resources()}
 									</a>
 								</li>
 								<li>
-									<a
-										href="/customers_and_partners#cases"
-										class="text-[#D4D4ED] text-sm hover:text-white"
-									>
+									<a href="/resources#resources" class="text-[#D4D4ED] text-sm hover:text-white">
 										{m.footer_Blog()}
 									</a>
 								</li>
 								<li>
-									<a
-										href="/customers_and_partners#support"
-										class="text-[#D4D4ED] text-sm hover:text-white"
-									>
+									<a href="/resources#resources" class="text-[#D4D4ED] text-sm hover:text-white">
 										{m.footer_Events_Webinars()}
 									</a>
 								</li>
 								<li>
-									<a href="/customers_and_partners" class="text-[#D4D4ED] text-sm hover:text-white">
+									<a href="/resources#resources" class="text-[#D4D4ED] text-sm hover:text-white">
 										{m.footer_My_Menthor_Academy()}
 									</a>
 								</li>
@@ -145,22 +140,22 @@
 							</p>
 							<ul class="space-y-3">
 								<li>
-									<a href="/" class="text-[#D4D4ED] text-sm hover:text-white"
+									<a href="/company#about" class="text-[#D4D4ED] text-sm hover:text-white"
 										>{m.footer_Our_Company()}</a
 									>
 								</li>
 								<li>
-									<a href="/" class="text-[#D4D4ED] text-sm hover:text-white"
+									<a href="/company#about" class="text-[#D4D4ED] text-sm hover:text-white"
 										>{m.footer_About_us()}</a
 									>
 								</li>
 								<li>
-									<a href="/" class="text-[#D4D4ED] text-sm hover:text-white"
+									<a href="/company#purpose" class="text-[#D4D4ED] text-sm hover:text-white"
 										>My {m.footer_Purpose()}</a
 									>
 								</li>
 								<li>
-									<a href="/" class="text-[#D4D4ED] text-sm hover:text-white"
+									<a href="/company#contact" class="text-[#D4D4ED] text-sm hover:text-white"
 										>{m.footer_Contact_us()}</a
 									>
 								</li>
@@ -175,17 +170,19 @@
 							</p>
 							<ul class="space-y-3">
 								<li>
-									<a href="/company#about" class="text-[#D4D4ED] text-sm hover:text-white"
+									<a href="/solutions#modules" class="text-[#D4D4ED] text-sm hover:text-white"
 										>{m.footer_The_Platform()}</a
 									>
 								</li>
 								<li>
-									<a href="/company#purpose" class="text-[#D4D4ED] text-sm hover:text-white"
+									<a
+										href="/solutions#portfolio-services"
+										class="text-[#D4D4ED] text-sm hover:text-white"
 										>{m.footer_Service_portfolio()}</a
 									>
 								</li>
 								<li>
-									<a href="/company#contact" class="text-[#D4D4ED] text-sm hover:text-white"
+									<a href="/solutions#packages" class="text-[#D4D4ED] text-sm hover:text-white"
 										>{m.footer_Packages()}</a
 									>
 								</li>
