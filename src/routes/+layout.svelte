@@ -1,14 +1,10 @@
 <script lang="ts">
-	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
-	import { i18n } from '$lib/i18n.js';
-	import '../app.postcss';
-	import '@fontsource-variable/archivo';
-	import '@fontsource-variable/exo';
+	import { page } from '$app/stores';
+	import og_image from '$lib/assets/images/og_image.webp';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Navbar2 from '$lib/components/Navbar2.svelte';
-	import { page } from '$app/stores';
-	import og_image from '$lib/assets/images/og_image.webp';
+	import { i18n } from '$lib/i18n.js';
 	import {
 		OG_IMAGE_HEIGHT,
 		OG_IMAGE_WIDTH,
@@ -16,6 +12,10 @@
 		SITE_TITLE,
 		SITE_URL
 	} from '$lib/siteConfig';
+	import '@fontsource-variable/archivo';
+	import '@fontsource-variable/exo';
+	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
+	import '../app.postcss';
 </script>
 
 <svelte:head>

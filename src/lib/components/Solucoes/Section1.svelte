@@ -6,7 +6,7 @@
 <section class="relative rounded-lg md:my-16 mt-4">
 	<div class="max-w-screen-2xl mx-auto max-sm:p-2 space-y-2" id="modules">
 		<div class="p-6 rounded-lg mt-2 text-center max-md:space-y-2">
-			<h1 class="text-4xl sm:text-5xl relative Exo-Bold text-[#17193B] text-nowrap">
+			<h1 class="text-4xl sm:text-5xl relative Exo-Bold text-[#17193B] text-nowrap" rel="prefetch">
 				<!-- Platform Modules -->
 				{m.solutions_PlatformModules()}
 			</h1>
@@ -25,12 +25,15 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg relative">
-					<h2 class=" title-om Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
+					<h2
+						class=" title-om Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap"
+						rel="prefetch"
+					>
 						<!-- Organizational Maturity -->
 						{m.solutions_OrganizationalMaturity()}
 					</h2>
 
-					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
+					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]" rel="prefetch">
 						<!-- My Menthor provides functionality for and helps identify the best approach and
 						implementation strategy. -->
 						{m.solutions_MyMenthorProvidesFunctionality()}
@@ -41,12 +44,15 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-od Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
+					<h2
+						class="title-od Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap"
+						rel="prefetch"
+					>
 						<!-- Organizational Design -->
 						{m.solutions_OrganizationalDesign()}
 					</h2>
 
-					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
+					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]" rel="prefetch">
 						<!-- Facilitates the rethinking of the main aspects of business identity, future vision and
 						strategy, to guide the other organizational layers. -->
 						{m.solutions_FacilitatesRethinkingOfMainAspects()}
@@ -60,12 +66,15 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-sd Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
+					<h2
+						class="title-sd Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap"
+						rel="prefetch"
+					>
 						<!-- Strategy deployment -->
 						{m.solutions_StrategyDeployment()}
 					</h2>
 
-					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
+					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]" rel="prefetch">
 						<!-- Guides the deployment of the strategy for the processes of the value chain, taking into
 						account the synergy with the functional vision. -->
 						{m.solutions_GuidesTheDeployment()}
@@ -76,12 +85,15 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-ms Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
+					<h2
+						class="title-ms Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap"
+						rel="prefetch"
+					>
 						<!-- Measurement System -->
 						{m.solutions_MeasurementSystem()}
 					</h2>
 
-					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
+					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]" rel="prefetch">
 						<!-- Facilitates the mapping of strategy indicators, processes and projects, guiding them in an end-to-end vision. -->
 						{m.solutions_FacilitatesTheMapping()}
 					</p>
@@ -94,12 +106,15 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-pm Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
+					<h2
+						class="title-pm Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap"
+						rel="prefetch"
+					>
 						<!-- Process Management -->
 						{m.solutions_ProcessManagement_1()}
 					</h2>
 
-					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
+					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]" rel="prefetch">
 						<!-- Supports the complete cycle of implementation, support and governance of Business
 						Process Management, from maturity assessment, value chain design design, process
 						prioritization, transformation or improvement and architectural governance. -->
@@ -111,12 +126,15 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-ac Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
+					<h2
+						class="title-ac Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap"
+						rel="prefetch"
+					>
 						<!-- Architecture components -->
 						{m.solutions_ArchitectureComponents()}
 					</h2>
 
-					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
+					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]" rel="prefetch">
 						<!-- Facilitates synchronization between components (Organizational Structure, Risks and Controls, People, Technology and other corporate capabilities). -->
 						{m.solutions_FacilitatesSynchronizationBetweenComponents()}
 					</p>
@@ -129,12 +147,15 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-pm2 Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
+					<h2
+						class="title-pm2 Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap"
+						rel="prefetch"
+					>
 						<!-- Process Management -->
 						{m.solutions_ProcessManagement_2()}
 					</h2>
 
-					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
+					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]" rel="prefetch">
 						<!-- Facilitates AS IS and TO BE mapping, analysis of improvements and routine management. -->
 						{m.solutions_FacilitatesASISAndTOBEMapping()}
 					</p>
@@ -144,12 +165,15 @@
 				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
-					<h2 class="title-cm Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap">
+					<h2
+						class="title-cm Exo-Semibold text-2xl relative max-w-sm text-[#17193B] text-nowrap"
+						rel="prefetch"
+					>
 						<!-- Change Management -->
 						{m.solutions_ChangeManagement()}
 					</h2>
 
-					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
+					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]" rel="prefetch">
 						<!-- Facilitating changes in organizational initiatives, projects and day-to-day changes. -->
 						{m.solutions_FacilitatingChangesIn()}
 					</p>

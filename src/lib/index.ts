@@ -11,6 +11,7 @@ export { default as clientes_parceiros_3_webp } from './assets/images/clientes_p
 export { default as clientes_parceiros_4_webp } from './assets/images/clientes_parceiros_4.webp';
 export { default as clientes_parceiros_5_webp } from './assets/images/clientes_parceiros_5.webp';
 export { default as earth_webp } from './assets/images/earth.webp';
+export { default as earth_2_webp } from './assets/images/earth2.webp';
 export { default as empresa_1_webp } from './assets/images/empresa_1.webp';
 export { default as header_hero_webp } from './assets/images/header_hero.webp';
 export { default as header_hero_1_webp } from './assets/images/header_hero_1.webp';
@@ -35,8 +36,10 @@ export { default as conversion_path_svg } from './assets/svg/conversion_path.svg
 export { default as design_service_svg } from './assets/svg/design_service.svg';
 export { default as estrela_verde_svg } from './assets/svg/estrela_verde.svg';
 export { default as linha_h_cinza_svg } from './assets/svg/linha_h_cinza.svg';
+export { default as rocket_svg } from './assets/svg/rocket.svg';
 
 export { default as linha_h_azul_3_svg } from './assets/svg/linha_h_azul_3.svg';
+export { default as piramid_home_en_svg } from './assets/svg/piramid_home_en.svg';
 export { default as piramid_home_pt_br_svg } from './assets/svg/piramid_home_pt_br.svg';
 export { default as products_frame_svg } from './assets/svg/products_frame.svg';
 export { default as products_s3_bg_radial_svg } from './assets/svg/products_s3_bg_radial.svg';

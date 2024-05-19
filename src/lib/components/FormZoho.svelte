@@ -54,7 +54,7 @@
 		formData.append('LEADCF3', position);
 		formData.append('LEADCF5', message);
 		// Add additional form fields as needed
-		console.log(formData);
+		// console.log(formData);
 
 		try {
 			// Send form data to Zoho CRM endpoint using fetch
@@ -66,7 +66,7 @@
 			// Check if the request was successful
 			if (response.ok) {
 				// Handle successful form submission
-				console.log('Form submitted successfully:', response);
+				// console.log('Form submitted successfully:', response);
 				alert('Form submitted successfully!');
 			} else {
 				// Handle HTTP error

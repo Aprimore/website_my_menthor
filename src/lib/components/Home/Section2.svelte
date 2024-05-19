@@ -3,21 +3,21 @@
 </script>
 
 <section
-	class="flex flex-col items-center relative rounded-lg my-6 max-w-screen-2xl mx-auto max-md:p-2"
+	class="flex flex-col items-center relative rounded-lg my-6 max-w-screen-2xl mx-auto max-md:p-2 "
 >
 	<div class="p-6 rounded-lg text-center">
-		<h1 class="Exo-Bold text-4xl relative mx-auto">{m.homepage_section2_work()}</h1>
+		<h1 class="Exo text-4xl relative mx-auto">{m.homepage_section2_work()}</h1>
 
 		<h2 class="Exo-Bold text-4xl relative text-[#17193B] green-underline">
 			{m.homepage_section2_smarter()}
 		</h2>
 	</div>
-	<div class="w-full flex max-md:flex-col justify-end md:space-x-6 max-sm:mt-3 mt-4">
+	<div class="w-full flex max-sm:flex-col lg:justify-end sm:space-x-3 md:space-x-6 max-sm:mt-3">
 		<div
-			class="md:max-w-[574px] md:max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-12"
+			class="sm:w-1/2 md:max-w-[574px] md:max-h-[331px] bg-[#F1F1F9] bg-opacity-50 rounded-lg mt-12 border border-gray-300"
 		>
-			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 lg:mr-20 py-10">
-				<h3 class="title-hi Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
+			<div class="flex flex-col rounded-lg xl:px-20 xl:py-16 lg:px-10 lg:py-8 p-5">
+				<h3 class="title-hi Exo-Semibold text-2xl relative text-[#17193B]">
 					{m.homepage_section2_holistic()}
 				</h3>
 
@@ -27,9 +27,9 @@
 			</div>
 		</div>
 		<div
-			class="md:max-w-[574px] md:max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg sm:mt-12 max-sm:mt-3 mt-4"
+			class="sm:w-1/2 md:max-w-[574px] md:max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg sm:mt-12 max-sm:mt-3"
 		>
-			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 lg:mr-20 py-10">
+			<div class="flex flex-col rounded-lg xl:px-20 xl:py-16 lg:px-10 lg:py-8 p-5">
 				<h3 class="title-od Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
 					{m.homepage_section2_Organizational()}
 				</h3>
@@ -40,11 +40,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="w-full flex max-md:flex-col md:space-x-6 max-sm:mt-3 mt-4">
+	<div class="w-full flex max-sm:flex-col sm:space-x-3 md:space-x-6">
 		<div
-			class="md:max-w-[574px] md:max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg sm:mt-6"
+			class="sm:w-1/2 md:max-w-[574px] md:max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-3 md:mt-6"
 		>
-			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 py-10">
+			<div class="flex flex-col rounded-lg xl:px-20 xl:py-16 lg:px-10 lg:py-8 p-5">
 				<h3 class="title-es Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
 					{m.homepage_section2_Evolution()}
 				</h3>
@@ -55,9 +55,9 @@
 			</div>
 		</div>
 		<div
-			class="md:max-w-[574px] md:max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg sm:mt-6 max-sm:mt-3 mt-4"
+			class="sm:w-1/2 md:max-w-[574px] md:max-h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg mt-3 md:mt-6"
 		>
-			<div class="flex flex-col items-center rounded-lg p-20 md:p-12 lg:p-16 lg:mr-20 py-10">
+			<div class="flex flex-col rounded-lg xl:px-20 xl:py-16 lg:px-10 lg:py-8 p-5">
 				<h3 class="title-oa Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
 					{m.homepage_section2_Organizational_alignment()}
 				</h3>

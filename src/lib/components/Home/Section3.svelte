@@ -1,6 +1,12 @@
 <script lang="ts">
-	import { piramid_home_pt_br_svg } from '$lib';
+	import { page } from '$app/stores';
+	import { piramid_home_en_svg, piramid_home_pt_br_svg } from '$lib';
 	import * as m from '$lib/paraglide/messages';
+	// export let data;
+
+	// console.log('DATA URKL', data.url);
+	// Define a variable to hold the selected SVG based on the lang prop
+	// let piramid_home_svg = lang === 'pt-br' ? piramid_home_pt_br_svg : piramid_home_en_svg;
 </script>
 
 {#if m}
@@ -11,7 +17,7 @@
 			<div class="flex xl:p-16 max-lg:order-2 px-5 mx-5">
 				<img
 					src={piramid_home_pt_br_svg}
-					class="w-full max-sm:mb-10"
+					class="w-full max-sm:mb-10 mt-14"
 					alt="Pyramid Chart"
 					loading="lazy"
 					decoding="sync"

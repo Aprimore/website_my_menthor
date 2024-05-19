@@ -10,13 +10,15 @@
 	import Section6 from '$lib/components/Home/Section6.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Navbar2 from '$lib/components/Navbar2.svelte';
+
+	export let data;
 </script>
 
 <div>
 	<Hero />
 	<Section1 />
 	<Section2 />
-	<Section3 />
+	<Section3 {data} />
 	<Section4 />
 	<Section5 />
 	<Section6 />

@@ -27,16 +27,16 @@
 </script>
 
 <section class="lg:max-w-screen-xl relative rounded-lg mx-auto my-2 max-sm:p-2">
-	<div class="md:py-5 lg:py-20 relative flex flex-col">
+	<div class="md:py-5 lg:py-20 relative flex flex-col sm:p-3">
 		<div class="flex flex-col lg:w-1/2 relative sm:items-center max-lg:order-1 mt-3">
 			<div
-				class="flex justify-center bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl relative max-w-[600px]"
+				class="flex justify-center bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl relative max-w-[650px] w-full lg:pr-20"
 			>
 				<div
-					class="max-w-full lg:max-w-[695px] max-h-[520px] lg:max-h-[570px]
+					class="xl:max-w-[695px] max-h-[520px] xl:max-h-[570px]
 				  text-[#17193B] rounded-lg py-10 xl:py-14 px-5 lg:px-16 relative"
 				>
-					<span class="absolute max-sm:hidden"
+					<span class="absolute max-sm:hidden ml-5"
 						><img
 							src={linha_v_1_verde_svg}
 							alt="linha"
@@ -45,7 +45,9 @@
 							fetchpriority="high"
 						/></span
 					>
-					<h1 class="ml-6 mb-2 text-lg tracking-tight text-[#25285F] Archivo leading-tight">
+					<h1
+						class="ml-12 mb-2 text-lg tracking-tight text-[#25285F] Archivo leading-tight max-w-[550px]"
+					>
 						{@html m.homepage_section1_desc1()}
 					</h1>
 
@@ -67,7 +69,7 @@
 			</div>
 		</div>
 		<div
-			class="mt-5 lg:mt-24 right-0 flex lg:absolute bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl xl:max-w-screen-md max-w-[600px] self-center"
+			class="mt-5 lg:mt-24 right-0 flex lg:absolute bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl xl:max-w-screen-md max-w-[650px] lg:max-w-[580px] w-full self-center"
 		>
 			<div class="text-[#17193B] rounded-lg max-md:p-5 p-12 xl:p-16 w-full" id="products-about">
 				<h2 class="max-sm:text-center Exo-Bold text-4xl relative blue-underline">
@@ -100,7 +102,7 @@
 		content: url('$lib/assets/svg/arrow_right_claro.svg');
 		display: inline-block;
 		/* vertical-align: middle; */
-		margin-left: 10px;
+		margin-left: 20px;
 	}
 
 	h2.blue-underline {

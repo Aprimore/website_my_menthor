@@ -24,52 +24,50 @@
 	];
 </script>
 
-<section class="w-full items-center relative rounded-lg sm:my-20 max-md:p-2">
-	<div class="flex max-lg:flex-col max-w-screen-2xl mx-auto xl:pb-10">
-		<div class="lg:w-2/3 my-5">
-			<div class="sm:ml-14">
+<section class="w-full items-center relative rounded-lg sm:my-20 max-md:p-2 pb-8">
+	<div class="flex max-lg:flex-col max-w-screen-2xl mx-auto xl:pb-10 relative">
+		<div class="lg:w-2/3 relative">
+			<div class="lg:ml-3 lg:pt-3">
 				<h2
-					class="max-md:text-center sm:ml-10 md:max-w-lg text-4xl relative Exo-Bold text-[#17193B] blue-underline"
+					class="max-md:text-center md:ml-10 md:max-w-lg text-4xl relative Exo-Bold text-[#17193B] blue-underline"
 				>
 					{m.homepage_section4_Organizing()}
 					{m.homepage_section4_simpler()}
 				</h2>
 			</div>
-			<div class="md:ml-6 xl:absolute">
-				<div
-					class="max-sm:mt-6 lg:mt-14 px-auto p-10 max-md:p-2 relative space-y-5 md:max-w-screen-lg"
-				>
+			<div class="lg:ml-6 xl:absolute lg:mt-36 relative">
+				<div class="max-sm:mt-6 px-auto p-5 max-md:p-2 relative space-y-1 md:max-w-screen-lg">
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 md:min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
 					>
 						<p class="Exo-Semibold check xl:text-xl">
 							{m.homepage_section4_Profits()}
 						</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 md:min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
 					>
 						<p class="Exo-Semibold check xl:text-xl">
 							{m.homepage_section4_Quality()}
 						</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 md:min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
 					>
 						<p class="Exo-Semibold check xl:text-xl">{m.homepage_section4_Value()}</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 md:min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
 					>
 						<p class="Exo-Semibold check xl:text-xl">{m.homepage_section4_Process()}</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 md:min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
 					>
 						<p class="Exo-Semibold check xl:text-xl">{m.homepage_section4_Maturity()}</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 md:min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
 					>
 						<p class="Exo-Semibold check xl:text-xl">
 							{m.homepage_section4_Sustainability()}
@@ -79,8 +77,8 @@
 			</div>
 		</div>
 
-		<div class="mx-3 md:mx-16 lg:w-[45%] flex flex-col self-center">
-			<div class=" space-y-5">
+		<div class="md:mx-3 xl:mx-16 lg:w-[45%] flex flex-col self-center mb-auto pb-auto p-3">
+			<div class="space-y-5">
 				<p class="Archivo text-xl text-[#25285F]">
 					{@html m.homepage_section4_My_Menthor()}
 					<!-- My Menthor acts as a  Digital Mentor  with an
@@ -103,8 +101,6 @@
 							loop={true}
 							renderer="svg"
 							background="transparent"
-							height={300}
-							width={350}
 							{controlsLayout}
 						/>
 					{/if}
@@ -118,7 +114,8 @@
 	.check::before {
 		content: url('$lib/assets/svg/checkmark.svg');
 		display: inline-block;
-		margin-right: 10px; /* Adjust as needed */
+		margin-right: 10px;
+		margin-top: 5px;
 		vertical-align: middle;
 	}
 

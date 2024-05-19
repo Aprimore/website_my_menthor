@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { earth_webp, rocket_webp } from '$lib';
+	import { earth_2_webp, rocket_svg } from '$lib';
 	import * as m from '$lib/paraglide/messages';
 </script>
 
@@ -7,7 +7,7 @@
 	<div class="mx-auto px-4 md:flex md:h-[330px] md:items-center relative">
 		<div class="md:w-1/2 relative z-10 flex justify-center">
 			<img
-				src={rocket_webp}
+				src={rocket_svg}
 				class="z-20 mt-2 relative max-md:max-w-64"
 				alt="Rocket"
 				loading="lazy"
@@ -42,7 +42,7 @@
 				loading="lazy"
 				decoding="sync"
 				fetchpriority="low"
-				src={earth_webp}
+				src={earth_2_webp}
 				alt="Hero Header"
 				class="absolute inset-0 w-full h-full object-cover bg-gradient-to-r from-[#010101] via-transparent to-transparent"
 			/>
