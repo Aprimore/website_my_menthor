@@ -3,18 +3,69 @@
 	import * as m from '$lib/paraglide/messages';
 	import Carousel from 'svelte-carousel';
 
-	let carousel; // for calling methods of the carousel instance
+	let activeDot = 'dot-1'; // Initialize active dot to 'dot-1'
 
-	const handleNextClick = () => {
+	let carousel;
+	const goToNextPage = () => {
+		activeDot = 'dot-1';
 		carousel.goToNext();
 	};
+
+	function goToPrevPage() {
+		activeDot = 'dot-2';
+		carousel.goToPrev();
+	}
 </script>
 
 <section class="relative rounded-lg w-full p-12">
 	<div class="max-w-fit lg:max-w-screen-xl mx-auto">
 		{#if browser}
-			<Carousel bind:this={carousel}>
-				<div class="w-full flex flex-col md:flex-row md:justify-center md:space-x-6">
+			<Carousel
+				bind:this={carousel}
+				let:showPrevPage
+				let:showNextPage
+				let:currentPageIndex
+				let:pagesCount
+				let:showPage
+			>
+				<!-- <button
+						symbol={pageIndex + 1}
+						active={currentPageIndex === pageIndex}
+						on:click={() => showPage(pageIndex)}
+					></button> -->
+				<!-- <div slot="dots" class="flex gap-3">
+					<button on:click={goToPrevPage} class="dot-1 size-3 bg-[#25285F] rounded-full"></button>
+					<button on:click={goToNextPage} class="dot-2 size-3 bg-[#25285F] rounded-full"></button>
+				</div> -->
+				<div slot="dots" class="flex gap-3">
+					<button
+						on:click={goToPrevPage}
+						class:active={activeDot === 'dot-1'}
+						class="border border-black dot-1 size-3 bg-{activeDot === 'dot-1'
+							? '#25285F'
+							: 'gray'} rounded-full"
+					></button>
+					<button
+						on:click={goToNextPage}
+						class:active={activeDot === 'dot-2'}
+						class="border border-black dot-2 size-3 bg-{activeDot === 'dot-2'
+							? '#25285F'
+							: 'gray'} rounded-full"
+					></button>
+				</div>
+
+				<!-- -->
+				<!-- =========================== BUTTONS -->
+
+				<button on:click={goToPrevPage} slot="prev" class=" w-10 h-10 nav-button m-auto">
+					<i class="arrow-right"></i>
+				</button>
+				<button on:click={goToNextPage} slot="next" class=" w-10 h-10 nav-button m-auto">
+					<i class="arrow-left"></i>
+				</button>
+
+				<!-- =========================== BUTTONS -->
+				<div class="w-full flex flex-col md:flex-row md:justify-center md:space-x-6 mb-6">
 					<div
 						class="max-sm:h-1/2 card1 bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg flex items-center"
 					>
@@ -103,4 +154,40 @@
 	.title-od::before {
 		content: url('$lib/assets/svg/cog.svg');
 	}
+
+	.arrow-right::before {
+		content: url('$lib/assets/svg/arrow_downward_alt.svg');
+		display: inline-block;
+		margin-top: 10px;
+		position: relative;
+		filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5)); /* Drop shadow */
+	}
+
+	.arrow-left::before {
+		content: url('$lib/assets/svg/arrow_downward_alt.svg');
+		display: inline-block;
+		transform: rotate(180deg); /* Rotate 180 degrees to the left */
+		position: relative;
+		filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5)); /* Drop shadow */
+	}
+
+	/* .sc-carousel-dot, .sc-carousel-dot__dot_active {
+		opacity: 0;
+		height: 500px;
+		width: 500px;
+	}
+	.sc-carousel-dot, .sc-carousel-dot__dot_active{
+		background-color: blue;
+		border-radius: 50%;
+		display: inline-block;
+		opacity: 0.5;
+		transition:
+			opacity 100ms ease,
+			height var(--sc-dot-size-animation-time) ease,
+			width var(--sc-dot-size-animation-time) ease;
+		cursor: pointer;
+		-webkit-tap-highlight-color: transparent;
+		height: var(--sc-dot-size);
+		width: var(--sc-dot-size);
+	} */
 </style>

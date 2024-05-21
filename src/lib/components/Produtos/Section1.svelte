@@ -19,7 +19,7 @@
 				<span
 					><img
 						src={linha_h_azul_4_svg}
-						class="z-10 max-sm:mx-auto"
+						class="z-10 max-sm:mx-auto w-56"
 						alt="linha"
 						loading="eager"
 						decoding="async"

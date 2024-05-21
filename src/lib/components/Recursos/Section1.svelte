@@ -27,11 +27,11 @@
 
 {#if m}
 	<section
-		class="resources_section w-full relative sm:rounded-lg lg:bg-[#D4D4ED] sm:py-14 justify-center mx-auto"
-		id="resources"
+		class="resources_section w-full relative sm:rounded-lg lg:bg-[#F1F1F9] sm:py-14 md:py-28 justify-center mx-auto"
+		id="bottom-page"
 	>
 		<div
-			class="bg-white grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-w-7xl m-auto sm:rounded-lg p-6"
+			class="bg-white grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-w-7xl m-auto sm:rounded-lg lg:px-10 lg:py-6"
 		>
 			<div class=" lg:flex lg:flex-col max-md:flex-col max-md:text-center justify-center p-3">
 				<div class="space-y-5 py-5 relative md:mt-6 lg:mt-0">
@@ -106,23 +106,25 @@
 				</div>
 			</div>
 
-			<div class="lg:flex lg:flex-col sm:rounded-xl bg-[#454AB0] max-xs:px-0">
-				<div class=" px-1 p-5 h-1/2 max-sm:px-10">
-					{#if LottiePlayer}
-						<LottiePlayer
-							src={animationData}
-							autoplay={true}
-							loop={true}
-							renderer="svg"
-							background="transparent"
-							{controlsLayout}
-						/>
-					{/if}
+			<div class="lg:flex lg:flex-col sm:rounded-xl max-xs:px-0 relative top-0 -mb-10">
+				<div class="bg-[#454AB0] max-h-[265px]">
+					<div class=" px-1 p-5 h-1/2 max-sm:px-10 relative -top-12 size-full">
+						{#if LottiePlayer}
+							<LottiePlayer
+								src={animationData}
+								autoplay={true}
+								loop={true}
+								renderer="svg"
+								background="transparent"
+								{controlsLayout}
+							/>
+						{/if}
+					</div>
 				</div>
 
 				<!-- <div bind:this={animationContainer} class=" lg:absolute -top-14" /> -->
 				<!-- <div class="divider relative h-full"></div> -->
-				<div class="bg-[#F1F1F9] py-16 px-5 relative w-full h-1/2 mt-auto max-sm:p-10">
+				<div class="bg-[#F1F1F9] py-8 px-5 w-full h-1/2 mt-auto max-sm:p-10 relative -top-12">
 					<h1 class="Exo-Bold text-4xl bottom-0 max-md:px-3 max-md:mt-3 max-md:mx-auto">
 						{m.homepage_section_6_Resources()}
 					</h1>

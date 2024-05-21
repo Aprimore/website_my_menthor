@@ -1,9 +1,10 @@
 import type { PageLoad } from './$types';
 
-export const load = (async ( params ) => {
+export const load = (async (params) => {
 	// console.log(params);
-	return { 
-	slug: params };
+	return {
+		slug: params
+	};
 }) satisfies PageLoad;
 
 // import type { PageServerLoad } from './$types';

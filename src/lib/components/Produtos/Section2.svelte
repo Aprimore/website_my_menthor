@@ -26,26 +26,31 @@
 	];
 </script>
 
-<section class="w-full relative rounded-lg bg-[#F1F1F9]">
-	<div class="lg:h-[634px] lg:max-w-screen-2xl mx-auto lg:flex items-center flex-row lg:my-16">
+<section class="w-full relative rounded-lg bg-[#F1F1F9] bg-opacity-50">
+	<div class="lg:h-[634px] lg:max-w-screen-2xl mx-auto lg:flex items-center flex-row">
 		<div class="lg:w-1/2 relative lg:pl-12 max-lg:flex max-lg:flex-col items-center">
 			<h1
-				class="Exo-Bold text-[#17193B] text-4xl font-bold relative lg:ml-10 mt-12 max-sm:text-center"
+				class="Exo-Bold text-[#454AB0] text-4xl lg:text-[2.5rem] font-bold relative lg:ml-20 mt-12 max-sm:text-center max-w-lg leading-normal text-center"
 			>
-				{m.produtos_WhatIs()}
+				<span class="font-normal text-[#17193B]">
+					{m.produtos_WhatIs()}
+				</span>
 				{m.produtos_BusinessArchitectureSoftware()}
 				<!-- What is <span class="text-[#454AB0]">Business <br /> Architecture Software?</span> -->
 			</h1>
-			{#if LottiePlayer}
-				<LottiePlayer
-					src={animationData}
-					autoplay={true}
-					loop={true}
-					renderer="svg"
-					background="transparent"
-					{controlsLayout}
-				/>
-			{/if}
+
+			<div class=" relative max-w-[600px]">
+				{#if LottiePlayer}
+					<LottiePlayer
+						src={animationData}
+						autoplay={true}
+						loop={true}
+						renderer="svg"
+						background="transparent"
+						{controlsLayout}
+					/>
+				{/if}
+			</div>
 		</div>
 		<div class="lg:w-1/2 relative px-5 lg:p-5 pb-5">
 			<p class="mt-10 mb-2 text-[#25285F] Archivo text-lg">

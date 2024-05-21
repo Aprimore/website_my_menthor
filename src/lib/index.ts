@@ -20,8 +20,8 @@ export { default as header_hero_3_webp } from './assets/images/header_hero_3.web
 
 export { default as logo_footer_webp } from './assets/images/logo_footer.webp';
 export { default as og_image_webp } from './assets/images/og_image.webp';
-export { default as products_1_webp } from './assets/images/products_1.webp';
-export { default as products_2_webp } from './assets/images/products_2.webp';
+export { default as products_1_webp } from './assets/images/products_1_webp.png';
+export { default as products_2_webp } from './assets/images/products_2_webp.png';
 export { default as rocket_webp } from './assets/images/rocket.webp';
 export { default as ads_click_svg } from './assets/svg/ads_click.svg';
 export { default as arrow_right_svg } from './assets/svg/arrow_right.svg';
