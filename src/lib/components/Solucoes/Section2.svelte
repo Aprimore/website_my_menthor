@@ -4,9 +4,20 @@
 		linha_h_azul_3_svg,
 		linha_h_azul_svg,
 		linha_v_amarela_svg,
-		piramid_home_pt_br_svg
+		portfolio_services_ingles_svg,
+		portfolio_services_portugues_svg
 	} from '$lib';
 	import * as m from '$lib/paraglide/messages';
+
+	export let data;
+
+	console.log(data.url);
+	const parts = data.url.split('/');
+	const extracted = `${parts[1]}`;
+	console.log(extracted);
+
+	const selectedImage =
+		extracted === 'pt-br' ? portfolio_services_portugues_svg : portfolio_services_ingles_svg;
 </script>
 
 <section class="w-full items-center relative rounded-lg pb-20 bg-[#F1F1F9]" id="portfolio-services">
@@ -17,7 +28,7 @@
 					{m.solutions_PortfolioOfServices()}
 					<img
 						src={linha_h_azul_3_svg}
-						class="max-md:max-w-[320px] mx-auto"
+						class="max-md:max-w-[210px] mx-auto"
 						alt="linha"
 						loading="lazy"
 						decoding="sync"
@@ -25,10 +36,10 @@
 					/>
 				</h1>
 			</div>
-			<div class=" relative w-full h-full flex justify-center lg:justify-end lg:align-end">
+			<div class=" relative w-full h-full flex justify-center lg:p-5 max-md:p-3 max-w-2xl min-w-xl self-center">
 				<img
-					src={piramid_home_pt_br_svg}
-					class="px-3 max-w-[99%]"
+					src={selectedImage}
+					class="px-3 w-full h-full max-lg:my-10 "
 					alt="Pyramid Chart"
 					loading="lazy"
 					decoding="sync"
@@ -38,7 +49,7 @@
 		</div>
 
 		<div class="lg:w-1/2 flex flex-col justify-center">
-			<div class="lg:max-w-2xl flex flex-col self-center max-lg:p-5 p-10">
+			<div class="flex flex-col self-end max-lg:p-5 p-10">
 				<p class="mb-8 Archivo text-lg text-[#25285F]">
 					<!-- We carry out assessment, implementation consultancy and setup and we help our clients
 					develop a strategy and roadmap for implementation roadmap. -->
@@ -59,25 +70,27 @@
 					{m.solutions_WeAimForCustomer()}
 				</p>
 			</div>
-			<div
-				class="lg:max-w-2xl flex flex-col lg:self-center min-h-[150px] bg-[#17193B] rounded-md px-10 max-sm:p-5 mx-10 max-lg:mx-5"
-			>
-				<div class="flex justify-center my-auto relative">
-					<span class="absolute left-0 top-4"
-						><img
-							src={linha_v_amarela_svg}
-							alt="linha"
-							loading="lazy"
-							decoding="sync"
-							fetchpriority="low"
-						/></span
-					>
-					<p class="lg:max-w-lg ml-7 mt-3 Archivo text-lg text-[#F1F1F9]">
-						<!-- <span class="text-[#FCC614]"> We act as business partners </span>
+			<div class="px- lg:px-10">
+				<div
+					class=" flex flex-col lg:self-end mr-5 min-h-[150px] bg-[#17193B] rounded-md max-sm:p-5 max-lg:mx-5 p-10 lg:max-w-[525px] xl:max-w-[710px]"
+				>
+					<div class="flex justify-center my-auto relative">
+						<span class="absolute left-3 mt-3"
+							><img
+								src={linha_v_amarela_svg}
+								alt="linha"
+								loading="lazy"
+								decoding="sync"
+								fetchpriority="low"
+							/></span
+						>
+						<p class=" ml-10 mt-3 Archivo text-lg text-[#F1F1F9]">
+							<!-- <span class="text-[#FCC614]"> We act as business partners </span>
 						in management solutions before, during and after implementation, in pursuit of effective
 						results for our clients. -->
-						{@html m.solutions_WeActAsBusinessPartners()}
-					</p>
+							{@html m.solutions_WeActAsBusinessPartners()}
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>

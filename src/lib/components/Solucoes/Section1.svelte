@@ -63,7 +63,7 @@
 
 		<div class=" max-md:max-w-[650px] mx-auto md:flex justify-start md:space-x-6 max-md:space-y-2">
 			<div
-				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
+				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-3 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
 					<h2
@@ -82,7 +82,7 @@
 				</div>
 			</div>
 			<div
-				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
+				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-3 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
 					<h2
@@ -103,7 +103,7 @@
 
 		<div class=" max-md:max-w-[650px] mx-auto md:flex justify-end md:space-x-6 max-md:space-y-2">
 			<div
-				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
+				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-3 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
 					<h2
@@ -123,7 +123,7 @@
 				</div>
 			</div>
 			<div
-				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
+				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-3 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
 					<h2
@@ -144,7 +144,7 @@
 
 		<div class=" max-md:max-w-[650px] mx-auto md:flex justify-start md:space-x-6 max-md:space-y-2">
 			<div
-				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
+				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-3 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
 					<h2
@@ -162,7 +162,7 @@
 				</div>
 			</div>
 			<div
-				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-12 flex items-center"
+				class="card1 h-[250px] md:h-[331px] bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg md:mt-3 flex items-center"
 			>
 				<div class="px-5 lg:px-10 xl:px-20 flex flex-col mx-auto p-6 rounded-lg">
 					<h2

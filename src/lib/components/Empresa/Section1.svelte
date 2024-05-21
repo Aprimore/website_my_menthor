@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { empresa_1_webp, linha_h_azul_2_svg, linha_h_azul_svg } from '$lib';
+	import { empresa_1_png, linha_h_azul_2_svg, linha_h_azul_svg } from '$lib';
 	import * as m from '$lib/paraglide/messages';
 </script>
 
 <section class="mt-4 lg:my-16 pb-20 bg-white">
 	<div class="lg:h-[649px] lg:flex flex-row xl:max-w-screen-2xl mx-auto max-lg:p-5" id="about">
 		<div class="lg:w-1/2 flex flex-col justify-center">
-			<div class="lg:max-w-[600px] self-center space-y-8">
+			<div class="lg:max-w-[600px] self-center space-y-6 mt-12">
 				<h1 class="text-4xl sm:text-5xl max-sm:text-center z-10 relative text-[#17193B] Exo-Bold">
 					<!-- The company -->
 					{m.company_TheCompany()}
@@ -41,7 +41,7 @@
 		</div>
 		<div class="lg:w-1/2 lg:p-4 mt-3 relative lg:my-auto">
 			<img
-				src={empresa_1_webp}
+				src={empresa_1_png}
 				class=" mx-auto rounded-lg"
 				alt="Webp Vector"
 				loading="eager"

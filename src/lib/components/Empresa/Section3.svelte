@@ -65,7 +65,7 @@
 		<div class="lg:w-1/2 Exo">
 			<div class="flex flex-col md:flex-row justify-between">
 				<div
-					class="w-full p-8 px-4 md:px-24 lg:px-12 xl:px-24 bg-[#F1F1F9] rounded-2xl flex flex-col justify-center"
+					class="w-full p-8 px-4 md:px-16 lg:px-12 xl:px-16 bg-[#F1F1F9] rounded-2xl flex flex-col justify-center"
 				>
 					<FormZoho />
 				</div>

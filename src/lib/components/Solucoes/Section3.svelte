@@ -8,9 +8,9 @@
 	import * as m from '$lib/paraglide/messages';
 </script>
 
-<section class="w-full md:flex relative rounded-lg bg-[#D4D4ED]">
+<section class="w-full relative rounded-lg bg-[#D4D4ED]">
 	<div
-		class="w-full grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3 mx-auto sm:p-4"
+		class="max-w-screen-2xl grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3 mx-auto sm:p-4"
 		id="packages"
 	>
 		<div class="relative max-sm:p-2">

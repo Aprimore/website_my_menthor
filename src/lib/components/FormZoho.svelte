@@ -110,31 +110,6 @@
 		<input type="text" style="display:none;" name="returnURL" value="null" />
 		<!-- Convert form fields to use Svelte's reactive variables -->
 
-		<label for="LEADCF8" class="block"
-			><span class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block">
-				{m.form_areaOfInterest()}
-			</span>
-			<select
-				id="LEADCF8"
-				name="LEADCF8"
-				bind:value={areaOfInterest}
-				class="text-md p-4 bg-white border placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
-			>
-				<option value="-None-">-None-</option>
-				<!-- <option value="" disabled selected class="Exo-Semibold text-md text-gray-500"
-				>{m.form_selectPlaceholder()}</option
-			> -->
-				<option selected value="Request a Demo" class="Exo-Semibold text-md"
-					>{m.form_requestAdemo()}
-				</option>
-				<option value="Interested in Partnership" class="Exo-Semibold text-md"
-					>{m.form_requestAcallback()}
-				</option>
-				<option value="Request a Callback" class="Exo-Semibold text-md"
-					>{m.form_interestedInPartnership()}
-				</option>
-			</select>
-		</label>
 		<label class="block">
 			<span class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block">
 				{m.form_fullname()}
@@ -149,6 +124,32 @@
 				required
 			/>
 		</label>
+		<label for="LEADCF8" class="block"
+			><span class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block">
+				{m.form_areaOfInterest()}
+			</span>
+			<select
+				id="LEADCF8"
+				name="LEADCF8"
+				bind:value={areaOfInterest}
+				class="text-md p-4 bg-white border placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+			>
+				<option selected value="-None-">-None-</option>
+				<!-- <option value="" disabled selected class="Exo-Semibold text-md text-gray-500"
+				>{m.form_selectPlaceholder()}</option
+			> -->
+				<option value="Request a Demo" class="Exo-Semibold text-md"
+					>{m.form_requestAdemo()}
+				</option>
+				<option value="Interested in Partnership" class="Exo-Semibold text-md"
+					>{m.form_requestAcallback()}
+				</option>
+				<option value="Request a Callback" class="Exo-Semibold text-md"
+					>{m.form_interestedInPartnership()}
+				</option>
+			</select>
+		</label>
+
 		<label class="block">
 			<span class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block">
 				{m.form_email()}

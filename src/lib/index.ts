@@ -12,6 +12,7 @@ export { default as clientes_parceiros_4_webp } from './assets/images/clientes_p
 export { default as clientes_parceiros_5_webp } from './assets/images/clientes_parceiros_5.webp';
 export { default as earth_webp } from './assets/images/earth.webp';
 export { default as earth_2_webp } from './assets/images/earth2.webp';
+export { default as empresa_1_png } from './assets/images/empresa_1.png';
 export { default as empresa_1_webp } from './assets/images/empresa_1.webp';
 export { default as header_hero_webp } from './assets/images/header_hero.webp';
 export { default as header_hero_1_webp } from './assets/images/header_hero_1.webp';
@@ -57,6 +58,7 @@ export { default as linha_h_verde2_svg } from './assets/svg/linha_h_verde2.svg';
 export { default as linha_h_verde_3_svg } from './assets/svg/linha_h_verde_3.svg';
 
 export { default as portfolio_services_ingles_svg } from './assets/svg/portfolio_services_ingles.svg';
+export { default as portfolio_services_portugues_svg } from './assets/svg/portfolio_services_portugues.svg';
 
 export { default as analytics_illustration_svg } from './assets/svg/analytics_illustration.svg';
 export { default as check_list_illustration_svg } from './assets/svg/check_list_illustration.svg';

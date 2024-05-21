@@ -210,7 +210,7 @@
 <style>
 	.check::before {
 		content: url('$lib/assets/svg/checkmark.svg');
-
+		vertical-align: sub;
 		margin-right: 10px; /* Adjust as needed */
 	}
 	.btn-demo::after {
