@@ -34,7 +34,7 @@
 			class="bg-white grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-w-7xl m-auto sm:rounded-lg lg:px-10 lg:py-6"
 		>
 			<div class=" lg:flex lg:flex-col max-md:flex-col max-md:text-center justify-center p-3">
-				<div class="space-y-5 py-5 relative md:mt-6 lg:mt-0">
+				<div class="space-y-5 py-5 relative md:mt-6 lg:mt-0 max-h-[188px]">
 					<h1 class="Exo-Bold text-3xl">
 						{m.homepage_section_6_My_menthor()}
 					</h1>
@@ -51,7 +51,7 @@
 					</button>
 				</div>
 
-				<div class="space-y-5 md:mt-6 sm:py-5 max-sm:mt-5">
+				<div class="space-y-5 md:mt-6 sm:py-5 max-sm:mt-5 max-h-[188px]">
 					<h1 class="Exo-Bold text-3xl">
 						{m.homepage_section_6_Events()}
 					</h1>
@@ -73,7 +73,7 @@
 			<div
 				class="lg:flex lg:flex-col max-md:flex-col max-md:text-center justify-center p-3 max-sm:mt-5"
 			>
-				<div class="space-y-5 relative sm:py-5 md:mt-6 lg:mt-0 max-md:mb-10">
+				<div class="space-y-5 relative sm:py-5 md:mt-6 lg:mt-0 max-md:mb-10 max-h-[188px]">
 					<h1 class="Exo-Bold text-3xl">
 						{m.homepage_section_6_My_Menthor_Academy()}
 					</h1>
@@ -81,14 +81,14 @@
 
 					<button class="min-w-min btn-invisible max-md:hidden">
 						<a
-							class="Archivo bg-[#FFFFFF] block w-full rounded-xl px-6 py-4 text-[#FFFFFF] sm:w-auto z-10 relative btn-invisible"
+							class="Archivo bg-transparent block w-full rounded-xl px-6 py-4 text-transparent sm:w-auto z-10 relative btn-invisible"
 							href="#"
 						>
 							{m.button_access()}
 						</a>
 					</button>
 				</div>
-				<div class="space-y-5 md:mt-6 sm:py-5 max-md:mb-10">
+				<div class="space-y-5 md:mt-6 sm:py-5 max-md:mb-10 max-h-[188px]">
 					<h1 class="Exo-Bold text-3xl">
 						{m.homepage_section_6_Knowledge()}
 					</h1>
@@ -97,7 +97,7 @@
 					</p>
 					<button class="min-w-min btn-invisible max-md:hidden">
 						<a
-							class="btn-invisible Archivo bg-[#FFFFFF] block w-full rounded-xl px-6 py-4 text-[#FFFFFF] sm:w-auto z-10 relative"
+							class="btn-invisible Archivo bg-transparent block w-full rounded-xl px-6 py-4 text-transparent sm:w-auto z-10 relative"
 							href="#"
 						>
 							{m.button_access()}

@@ -72,7 +72,7 @@
 			class="mt-5 lg:mt-24 right-0 flex lg:absolute bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl xl:max-w-screen-md max-w-[650px] lg:max-w-[580px] w-full self-center"
 		>
 			<div class="text-[#17193B] rounded-lg max-md:p-5 p-12 xl:p-16 w-full" id="products-about">
-				<h2 class="max-sm:text-center Exo-Bold text-4xl relative blue-underline">
+				<h2 class="max-sm:text-center Exo-Bold text-4xl relative blue-underline w-fit">
 					{m.homepage_section1_title()}
 				</h2>
 

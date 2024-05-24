@@ -4,11 +4,8 @@
 </script>
 
 <section class="cap w-full items-center relative rounded-lg bg-white md:my-6 md:pb-12 sm:p-3">
-	<div
-		class="max-lg:h-[610px] pt-16 lg:pt-32 lg:max-w-screen-2xl mx-auto lg:flex flex-row"
-		id="support"
-	>
-		<div class="lg:w-2/3 flex max-lg:justify-start justify-center items-center">
+	<div class="max-lg:h-[610px] lg:max-w-screen-2xl mx-auto lg:flex flex-row lg:p-10" id="support">
+		<div class="lg:w-2/3 flex max-lg:justify-start justify-start">
 			<div class="relative">
 				<img
 					src={clientes_parceiros_4_webp}
@@ -28,11 +25,11 @@
 				/>
 			</div>
 		</div>
-		<div class="lg:w-1/3 flex justify-center max-lg:justify-end items-center relative z-20 mr-auto">
+		<div class="lg:w-1/3 flex justify-center max-lg:justify-end items-center relative z-20">
 			<div
 				class="card1 xl:w-[716px] lg:w-[600px] xl:h-[332px] max-lg:max-w-[700px] bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl lg:mr-72 absolute max-md:top-0 flex flex-col justify-center items-center"
 			>
-				<div class="lg:max-w-2xl p-6 rounded-lg space-y-6">
+				<div class=" p-6 rounded-lg space-y-6 relative">
 					<h1 class="Exo-Bold text-3xl md:text-4xl lg:text-5xl text-[#17193B] relative">
 						<!-- Customer service channel -->
 						{m.clientesP_CustomerServiceChannel()}

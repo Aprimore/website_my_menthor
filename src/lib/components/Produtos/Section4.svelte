@@ -23,18 +23,10 @@
 	<div class="w-full h-full relative">
 		<div class="lg:max-w-screen-2xl mx-auto lg:flex flex-row items-center lg:pt-20 max-lg:p-5 p-10">
 			<div class="lg:w-1/2 lg:p-10 space-y-6 lg:space-y-10 max-lg:mb-10" id="target-audience">
-				<h1 class="Exo-Bold text-4xl z-10 relative text-[#F1F1F9] max-lg:text-center">
+				<h1
+					class="yellow-underline Exo-Bold text-4xl z-10 relative text-[#F1F1F9] max-lg:text-center w-fit"
+				>
 					{m.produtos_TargetAudience()}
-					<span
-						><img
-							src={linha_h_amarela2_svg}
-							class="z-10 max-lg:mx-auto"
-							alt="linha"
-							loading="lazy"
-							decoding="sync"
-							fetchpriority="low"
-						/></span
-					>
 				</h1>
 				<p class="text-[#D4D4ED] Archivo text-lg">
 					<!-- The platform is aimed at companies wishing to implement, sustain or leverage management, regardless of their level of maturity. -->
@@ -121,5 +113,19 @@
 		display: inline-block;
 		/* vertical-align: middle; */
 		margin-left: 10px;
+	}
+	h1.yellow-underline {
+		content: '';
+		background-image: url('$lib/assets/svg/linha_h_amarela2.svg');
+		background-repeat: no-repeat;
+		background-position: bottom;
+		padding-bottom: 10px;
+		background-size: 100% auto; /* Adjust background size */
+	}
+
+	@media (max-width: 709px) {
+		h1.yellow-underline {
+			background-size: 100% auto;
+		}
 	}
 </style>

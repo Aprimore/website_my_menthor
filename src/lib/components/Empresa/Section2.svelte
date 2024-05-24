@@ -43,18 +43,10 @@
 		<div class="md:w-1/2 flex flex-col justify-center">
 			<div class="card space-y-10 p-5 md:p-12 bg-[#F1F1F9]">
 				<h1
-					class="Exo text-4xl sm:text-5xl z-10 relative text-[#17193B] Exo-Bold max-lg:text-center"
+					class="green-underline Exo text-4xl sm:text-5xl z-10 relative text-[#17193B] Exo-Bold max-lg:text-center w-fit"
 				>
 					<!-- Purpose -->
 					{m.company_Purpose()}
-					<img
-						src={linha_h_verde_1_svg}
-						class="max-sm:w-36 max-lg:mx-auto"
-						alt="linha"
-						loading="lazy"
-						decoding="sync"
-						fetchpriority="low"
-					/>
 				</h1>
 
 				<p class="Archivo text-[#25285F] text-lg">
@@ -72,3 +64,20 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	h1.green-underline {
+		content: '';
+		background-image: url('$lib/assets/svg/linha_h_verde_1.svg');
+		background-repeat: no-repeat;
+		background-position: bottom;
+		padding-bottom: 10px;
+		background-size: 100% auto; /* Adjust background size */
+	}
+
+	@media (max-width: 709px) {
+		h1.green-underline {
+			background-size: 100% auto;
+		}
+	}
+</style>

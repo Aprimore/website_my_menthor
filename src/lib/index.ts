@@ -7,9 +7,11 @@ export { default as gif_5_json } from './assets/lotties/gif-5.json';
 export { default as gif_6_json } from './assets/lotties/gif-6.json';
 
 export { default as clientes_parceiros_1_webp } from './assets/images/clientes_parceiros_1.webp';
+export { default as clientes_parceiros_3_png } from './assets/images/clientes_parceiros_3.png';
 export { default as clientes_parceiros_3_webp } from './assets/images/clientes_parceiros_3.webp';
 export { default as clientes_parceiros_4_webp } from './assets/images/clientes_parceiros_4.webp';
 export { default as clientes_parceiros_5_webp } from './assets/images/clientes_parceiros_5.webp';
+export { default as clientes_parceiros_5_png } from './assets/images/clientes_parceiros_5.png';
 export { default as earth_webp } from './assets/images/earth.webp';
 export { default as earth_2_webp } from './assets/images/earth2.webp';
 export { default as empresa_1_png } from './assets/images/empresa_1.png';

@@ -1,29 +1,24 @@
 <script lang="ts">
 	import {
 		arrow_right_svg,
-		clientes_parceiros_3_webp,
-		clientes_parceiros_5_webp,
+		clientes_parceiros_3_png,
+		clientes_parceiros_5_png,
 		linha_h_azul_svg
 	} from '$lib';
 	import * as m from '$lib/paraglide/messages';
 </script>
 
 <section class="w-full rounded-lg bg-[#D4D4ED] lg:py-16" id="clients">
-	<div class=" lg:flex flex-row pt-20">
-		<div class="lg:w-1/2 flex justify-center items-center mx-auto">
-			<div class="card bg-white lg:w-[694px] max-h-[364px] rounded-md relative">
-				<div class="p-10 max-sm:p-3 xl:p-16 space-y-7 relative">
-					<h1 class="text-4xl sm:text-5xl z-10 text-[#17193B] Exo-Bold max-sm:text-center">
+	<div class=" lg:flex flex-row pt-20 p-5">
+		<div class="lg:w-1/2 flex justify-end items-center mx-auto lg:mr-10">
+			<div class="card bg-white lg:max-w-[794px] rounded-md">
+				<div class="p-10 max-sm:p-3 xl:p-20 space-y-7">
+					<h1
+						class="blue-underline text-4xl sm:text-5xl z-10 text-[#17193B] Exo-Bold max-sm:text-center max-w-fit"
+					>
 						{m.clientesP_PartnerProgram()}
-						<span
-							><img
-								src={linha_h_azul_svg}
-								class="z-10 max-sm:mx-auto max-sm:max-w-72"
-								alt="linha"
-							/></span
-						>
 					</h1>
-					<p class="Archivo text-[#25285F] text-lg">
+					<p class="Archivo text-[#25285F] text-xl">
 						<!-- Register and discover the benefits of our partner programs programs and how we can work together to achieve exceptional results. -->
 						{m.clientesP_RegisterAndDiscover()}
 					</p>
@@ -43,26 +38,26 @@
 						>
 							<a class=" Archivo" href="/customers_and_partners">
 								<!-- Partner Portal  -->
-								{m.clientesP_PartnerProgram()}
+								{m.button_portal()}
 							</a>
 						</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="lg:w-1/2 lg:flex">
+		<div class="lg:w-1/2 lg:flex max-lg:mt-20">
 			<div class="flex flex-row justify-center items-center">
 				<img
-					src={clientes_parceiros_3_webp}
-					class="w-full mt-8 md:mb-16 mr-5"
+					src={clientes_parceiros_3_png}
+					class="w-full max-w-[338px] -mt-32 md:mb-16 mr-5"
 					alt="Webp Vector"
 					loading="eager"
 					decoding="async"
 					fetchpriority="high"
 				/>
 				<img
-					src={clientes_parceiros_5_webp}
-					class="w-full mb-8 md:mt-16"
+					src={clientes_parceiros_5_png}
+					class="w-full max-w-[338px] md:mt-16"
 					alt="Webp Vector"
 					loading="eager"
 					decoding="async"
@@ -79,5 +74,20 @@
 		display: inline-block;
 		/* vertical-align: middle; */
 		margin-left: 10px;
+	}
+
+	h1.blue-underline {
+		content: '';
+		background-image: url('$lib/assets/svg/linha_h_azul.svg');
+		background-repeat: no-repeat;
+		background-position: bottom;
+		padding-bottom: 10px;
+		background-size: 100% auto; /* Adjust background size */
+	}
+
+	@media (max-width: 709px) {
+		h1.blue-underline {
+			background-size: 100% auto;
+		}
 	}
 </style>

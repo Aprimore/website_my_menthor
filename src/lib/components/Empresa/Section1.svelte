@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { empresa_1_png, linha_h_azul_2_svg, linha_h_azul_svg } from '$lib';
+	import { empresa_1_png } from '$lib';
 	import * as m from '$lib/paraglide/messages';
 </script>
 
@@ -7,19 +7,11 @@
 	<div class="lg:h-[649px] lg:flex flex-row xl:max-w-screen-2xl mx-auto max-lg:p-5" id="about">
 		<div class="lg:w-1/2 flex flex-col justify-center">
 			<div class="lg:max-w-[600px] self-center space-y-6 mt-12">
-				<h1 class="text-4xl sm:text-5xl max-sm:text-center z-10 relative text-[#17193B] Exo-Bold">
+				<h1
+					class="blue-underline text-4xl sm:text-5xl max-sm:text-center z-10 relative text-[#17193B] Exo-Bold w-fit"
+				>
 					<!-- The company -->
 					{m.company_TheCompany()}
-					<span
-						><img
-							src={linha_h_azul_2_svg}
-							class="z-10 max-sm:mx-auto"
-							alt="linha"
-							loading="eager"
-							decoding="async"
-							fetchpriority="high"
-						/></span
-					>
 				</h1>
 				<p class="Archivo text-[#25285F] text-lg leading-snug">
 					<!-- My Menthor is a product developed by APRIMORE Consultoria em Gestão Empresarial, based in Brazil, and TOPTIER Business Group, based in the USA . -->
@@ -51,3 +43,20 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	h1.blue-underline {
+		content: '';
+		background-image: url('$lib/assets/svg/linha_h_azul_2.svg');
+		background-repeat: no-repeat;
+		background-position: bottom;
+		padding-bottom: 10px;
+		background-size: 100% auto; /* Adjust background size */
+	}
+
+	@media (max-width: 709px) {
+		h1.blue-underline {
+			background-size: 100% auto;
+		}
+	}
+</style>

@@ -16,11 +16,11 @@
 		<div class="py-24 max-w-screen-2xl mx-auto space-y-24">
 			<div class=" mx-auto">
 				<h1
-					class="Exo mx-auto text-4xl sm:text-5xl max-sm:text-center z-10 relative text-[#F1F1F9] Exo-Bold max-w-max mb-24"
+					class="yellow-underline Exo mx-auto text-4xl sm:text-5xl max-sm:text-center z-10 relative text-[#F1F1F9] Exo-Bold max-w-max mb-24"
 				>
 					<!-- Partner program -->
 					{m.clientesP_SuccessHistories()}
-					<span
+					<!-- <span
 						><img
 							src={linha_h_amarela_svg}
 							class="z-10 max-sm:mx-auto max-sm:max-w-72"
@@ -29,7 +29,7 @@
 							decoding="sync"
 							fetchpriority="low"
 						/></span
-					>
+					> -->
 				</h1>
 				<div class="flex lg:flex-row flex-col justify-center items-center p-3">
 					<div class="lg:w-1/2 lg:mt-auto">
@@ -129,3 +129,20 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	h1.yellow-underline {
+		content: '';
+		background-image: url('$lib/assets/svg/linha_h_amarela.svg');
+		background-repeat: no-repeat;
+		background-position: bottom;
+		padding-bottom: 20px;
+		background-size: 100% auto; /* Adjust background size */
+	}
+
+	@media (max-width: 709px) {
+		h1.yellow-underline {
+			background-size: 100% auto;
+		}
+	}
+</style>

@@ -2,6 +2,7 @@
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"BUTTONS": "========================================== BUTTONS SECTION ==========================================",
 	"button_learn_more": "Saiba mais",
+	"button_portal": "Portal de Parceiros",
 	"button_access": "Acesse",
 	"button_schedule_a_demo": "Agendar demonstração",
 	"NAVBAR": "========================================== NAVBAR SECTION ==========================================",

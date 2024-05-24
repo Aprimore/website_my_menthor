@@ -81,7 +81,7 @@
 
 					<button class="min-w-min btn-invisible max-md:hidden">
 						<a
-							class="Archivo bg-[#FFFFFF] block w-full rounded-xl px-6 py-4 text-[#FFFFFF] sm:w-auto z-10 relative btn-invisible"
+							class="Archivo bg-transparent block w-full rounded-xl px-6 py-4 text-transparent sm:w-auto z-10 relative btn-invisible"
 							href="#"
 						>
 							{m.button_access()}
@@ -97,7 +97,7 @@
 					</p>
 					<button class="min-w-min btn-invisible max-md:hidden">
 						<a
-							class="btn-invisible Archivo bg-[#FFFFFF] block w-full rounded-xl px-6 py-4 text-[#FFFFFF] sm:w-auto z-10 relative"
+							class="btn-invisible Archivo bg-transparent block w-full rounded-xl px-6 py-4 text-transparent sm:w-auto z-10 relative"
 							href="#"
 						>
 							{m.button_access()}

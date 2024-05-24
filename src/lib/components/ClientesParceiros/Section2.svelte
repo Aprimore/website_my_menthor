@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { linha_h_laranja_svg } from '$lib';
 	import animationData from '$lib/assets/lotties/gif-6.json';
 	import * as m from '$lib/paraglide/messages';
 	import { onMount } from 'svelte';
@@ -26,7 +25,7 @@
 </script>
 
 <section class="w-full rounded-lg bg-[#F1F1F9] max-lg:mt-10">
-	<div class="lg:max-w-screen-2xl mx-auto lg:h-[489px] flex max-lg:flex-col">
+	<div class="lg:max-w-screen-2xl mx-auto xl:max-h-[420px] flex max-lg:flex-col">
 		<div class="lg:w-1/2 flex justify-center items-center max-lg:order-2">
 			<div class="card relative">
 				<!-- <div bind:this={animationContainer} /> -->
@@ -37,30 +36,28 @@
 						loop={true}
 						renderer="svg"
 						background="transparent"
-						height={470}
-						width={400}
 						{controlsLayout}
 					/>
 				{/if}
 			</div>
 		</div>
-		<div class="lg:w-1/2 flex justify-center items-center border-black p-5">
+		<div class="lg:w-1/2 flex justify-center items-center p-5 relative">
 			<div class="card bg-[#F1F1F9] lg:max-w-[580px] lg:mr-36">
-				<h1 class="Exo-Bold text-4xl relative text-[#17193B] max-lg:text-center mb-5">
+				<h1 class=" Exo-Bold text-[2.8rem] text-[#17193B] max-lg:text-center mb-5 xl:text-nowrap">
 					<!-- Your success -->
-					<span class="text-[#EB642A] relative Exo-Bold">
+					<span class="text-[#EB642A] relative Exo-Bold orange-underline">
 						{@html m.clientesP_YourSuccessIsOurSuccess()}
-						<img
+						<!-- <img
 							src={linha_h_laranja_svg}
 							class="absolute
 							max-lg:top-9 max-lg:left-3
-							top-11 left-0
+							top-12 left-0
 							max-sm:w-52"
 							alt="linha"
 							loading="lazy"
 							decoding="sync"
 							fetchpriority="low"
-						/>
+						/> -->
 					</span>
 					{@html m.clientesP_IsOurSuccess()}
 					<!-- is our success -->
@@ -73,3 +70,20 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	span.orange-underline {
+		content: '';
+		background-image: url('$lib/assets/svg/linha_h_laranja.svg');
+		background-repeat: no-repeat;
+		background-position: bottom;
+		padding-bottom: 10px;
+		background-size: 100% auto; /* Adjust background size */
+	}
+
+	@media (max-width: 709px) {
+		span.orange-underline {
+			background-size: 100% auto;
+		}
+	}
+</style>
