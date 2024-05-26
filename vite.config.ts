@@ -1,6 +1,8 @@
+import { join } from 'path';
 import { paraglide } from '@inlang/paraglide-sveltekit/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vitest/config';
+import { partytownVite } from '@builder.io/partytown/utils';
 
 export default defineConfig({
 	plugins: [
@@ -8,7 +10,10 @@ export default defineConfig({
 			project: './project.inlang',
 			outdir: './src/lib/paraglide'
 		}),
-		sveltekit()
+		sveltekit(),
+		partytownVite({
+            dest: join(__dirname, 'static', '~partytown'),
+        }),
 	],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']

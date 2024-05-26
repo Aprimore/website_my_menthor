@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { empresa_1_png } from '$lib';
+	import { empresa_1_webp } from '$lib';
 	import * as m from '$lib/paraglide/messages';
 </script>
 
@@ -33,7 +33,7 @@
 		</div>
 		<div class="lg:w-1/2 lg:p-4 mt-3 relative lg:my-auto">
 			<img
-				src={empresa_1_png}
+				src={empresa_1_webp}
 				class=" mx-auto rounded-lg"
 				alt="Webp Vector"
 				loading="eager"

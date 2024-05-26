@@ -12,6 +12,7 @@
 		SITE_TITLE,
 		SITE_URL
 	} from '$lib/siteConfig';
+	import { partytownSnippet } from '@builder.io/partytown/integration';
 	import '@fontsource-variable/archivo';
 	import '@fontsource-variable/exo';
 	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
@@ -19,13 +20,43 @@
 </script>
 
 <svelte:head>
+	<script>
+		// Forward the necessary functions to the web worker layer
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-WSRLN9FV');
+		partytown = {
+			forward: ['dataLayer.push', 'gtag']
+		};
+	</script>
+
+	{@html '<script>' + partytownSnippet() + '</script>'}
+
+	<script
+		type="text/partytown"
+		src="https://www.googletagmanager.com/gtag/js?id=G-ZX7H2KPXNZ"
+	></script>
+	<script type="text/partytown">
+		window.dataLayer = window.dataLayer || [];
+		window.gtag = function () {
+			dataLayer.push(arguments);
+		};
+		gtag('js', new Date());
+		gtag('config', 'G-ZX7H2KPXNZ');
+	</script>
+
 	<title>{$page.data.post?.title || 'My Menthor | Home'}</title>
-	{#if $page.path !== '/'}
-		<!-- Check if the current page is not the homepage -->
+	{#if $page.path && $page.path !== '/'}
 		<link rel="canonical" href={SITE_URL + $page.path} />
 	{/if}
-	<title>My Menthor | Home</title>
-	<link rel="canonical" href={SITE_URL} />
+	<!-- <link rel="canonical" href={SITE_URL} /> -->
 	<meta property="og:url" content={SITE_URL} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={SITE_TITLE} />

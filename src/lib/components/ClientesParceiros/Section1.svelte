@@ -1,8 +1,8 @@
 <script lang="ts">
 	import {
 		arrow_right_svg,
-		clientes_parceiros_3_png,
-		clientes_parceiros_5_png,
+		clientes_parceiros_3_webp,
+		clientes_parceiros_5_webp,
 		linha_h_azul_svg
 	} from '$lib';
 	import * as m from '$lib/paraglide/messages';
@@ -48,7 +48,7 @@
 		<div class="lg:w-1/2 lg:flex max-lg:mt-20">
 			<div class="flex flex-row justify-center items-center">
 				<img
-					src={clientes_parceiros_3_png}
+					src={clientes_parceiros_3_webp}
 					class="w-full max-w-[338px] -mt-32 md:mb-16 mr-5"
 					alt="Webp Vector"
 					loading="eager"
@@ -56,7 +56,7 @@
 					fetchpriority="high"
 				/>
 				<img
-					src={clientes_parceiros_5_png}
+					src={clientes_parceiros_5_webp}
 					class="w-full max-w-[338px] md:mt-16"
 					alt="Webp Vector"
 					loading="eager"
