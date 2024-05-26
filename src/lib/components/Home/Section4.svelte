@@ -3,7 +3,7 @@
 	import * as m from '$lib/paraglide/messages';
 	import { onMount } from 'svelte';
 
-	let LottiePlayer;
+	let LottiePlayer: any;
 	onMount(async () => {
 		const module = await import('@lottiefiles/svelte-lottie-player');
 		LottiePlayer = module.LottiePlayer;

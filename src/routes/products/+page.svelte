@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>My Menthor | Home</title>
+	<!-- <title>My Menthor | Home</title> -->
 	<!-- <link rel="canonical" href={SITE_URL} />
 	<meta property="og:url" content={SITE_URL} />
 	<meta property="og:type" content="article" />

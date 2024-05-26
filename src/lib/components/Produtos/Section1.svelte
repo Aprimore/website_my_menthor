@@ -32,7 +32,7 @@
 			</p>
 			<div
 				class="flex items-center w-full
-				  rounded-md bg-[#25285F] py-6 md:py-10 px-16 relative max-h-[200px]"
+				  rounded-md bg-[#25285F] py-6 md:py-10 sm:px-16 p-3 relative sm:max-h-[200px]"
 			>
 				<img
 					src={estrela_verde_svg}
@@ -42,7 +42,7 @@
 					decoding="async"
 					fetchpriority="high"
 				/>
-				<span class="absolute left-10"
+				<span class="absolute left-10 max-sm:hidden"
 					><img
 						src={linha_v_amarela_svg}
 						alt="linha"

@@ -9,7 +9,7 @@
 	export let clickOutside = true;
 	export let closeOnClick = true;
 	export let disabled = false;
-	export let detailedValue = null;
+	export let detailedValue: any = null;
 	export let value = '';
 	export let searchPlaceholder = 'Search';
 
@@ -22,13 +22,13 @@
 	$: selectedCountryDialCode =
 		normalizedCountries.find((el) => el.iso2 === selectedCountry)?.dialCode || null;
 
-	const toggleDropDown = (e) => {
+	const toggleDropDown = (e: any) => {
 		e?.preventDefault();
 		if (disabled) return;
 		isOpen = !isOpen;
 	};
 
-	const closeDropdown = (e) => {
+	const closeDropdown = (e: any) => {
 		if (isOpen) {
 			e?.preventDefault();
 			isOpen = false;
@@ -36,22 +36,22 @@
 		}
 	};
 
-	const selectClick = () => {
-		if (closeOnClick) closeDropdown();
+	const selectClick = (e: any) => {
+		if (closeOnClick) closeDropdown(e);
 	};
 
-	const closeOnClickOutside = () => {
+	const closeOnClickOutside = (e: any) => {
 		if (clickOutside) {
-			closeDropdown();
+			closeDropdown(e);
 		}
 	};
 
-	const sortCountries = (countries, text) => {
+	const sortCountries = (countries: any, text: any) => {
 		const normalizedText = text.trim().toLowerCase();
 		if (!normalizedText) {
-			return countries.sort((a, b) => a.label.localeCompare(b.label));
+			return countries.sort((a: any, b: any) => a.label.localeCompare(b.label));
 		}
-		return countries.sort((a, b) => {
+		return countries.sort((a: any, b: any) => {
 			const aNameLower = a.name.toLowerCase();
 			const bNameLower = b.name.toLowerCase();
 			const aStartsWith = aNameLower.startsWith(normalizedText);
@@ -69,7 +69,7 @@
 		});
 	};
 
-	const handleSelect = (countryName, val, e?) => {
+	const handleSelect = (countryName: any, val: any, e?: any) => {
 		// console.log(val, e);
 		selectedCountryStore.set(countryName);
 
@@ -91,8 +91,8 @@
 
 	const dispatch = createEventDispatcher();
 
-	const onChange = (selectedCountry) => {
-		dispatch('change', { option: selectedCountry });
+	const onChange = (selectedCountry: any) => {
+		dispatch('change', { option: selectedCountry as any });
 	};
 </script>
 

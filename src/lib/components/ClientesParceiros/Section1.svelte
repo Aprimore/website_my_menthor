@@ -22,8 +22,8 @@
 						<!-- Register and discover the benefits of our partner programs programs and how we can work together to achieve exceptional results. -->
 						{m.clientesP_RegisterAndDiscover()}
 					</p>
-					<div class="space-x-5 flex flex-row">
-						<button class="Exo">
+					<div class="sm:space-x-5 sm:flex flex-row max-sm:space-y-3">
+						<button class="Exo max-sm:w-full">
 							<a
 								class="btn-partner bg-[#8abb3f] block w-full rounded-xl px-5 md:px-10 py-4 md:text-lg text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
 								href="/company#contact"
@@ -34,7 +34,7 @@
 						</button>
 
 						<button
-							class=" rounded-xl px-10 py-4 md:text-lg bg-white text-[#17193B] border border-[#17193B] relative"
+							class=" rounded-xl px-10 py-4 md:text-lg bg-white text-[#17193B] border border-[#17193B] relative max-sm:w-full"
 						>
 							<a class=" Archivo" href="/customers_and_partners">
 								<!-- Partner Portal  -->

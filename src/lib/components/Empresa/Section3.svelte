@@ -6,7 +6,7 @@
 	import animationData from '$lib/assets/lotties/gif-7.json';
 	import { onMount } from 'svelte';
 
-	let LottiePlayer;
+	let LottiePlayer: any;
 	onMount(async () => {
 		const module = await import('@lottiefiles/svelte-lottie-player');
 		LottiePlayer = module.LottiePlayer;

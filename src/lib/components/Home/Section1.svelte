@@ -5,7 +5,7 @@
 	import animationData from '$lib/assets/lotties/gif-1.json';
 	import { onMount } from 'svelte';
 
-	let LottiePlayer;
+	let LottiePlayer: any;
 	onMount(async () => {
 		const module = await import('@lottiefiles/svelte-lottie-player');
 		LottiePlayer = module.LottiePlayer;
@@ -30,13 +30,13 @@
 	<div class="md:py-5 lg:py-20 relative flex flex-col sm:p-3">
 		<div class="flex flex-col lg:w-1/2 relative sm:items-center max-lg:order-1 mt-3">
 			<div
-				class="flex justify-center bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl relative max-w-[650px] w-full lg:pr-20"
+				class="flex justify-center bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl relative xl:max-w-[650px] lg:pr-20"
 			>
 				<div
-					class="xl:max-w-[695px] max-h-[520px] xl:max-h-[570px]
+					class="xl:max-w-[695px] lg:max-h-[520px] xl:max-h-[570px]
 				  text-[#17193B] rounded-lg py-10 xl:py-14 px-5 lg:px-16 relative"
 				>
-					<span class="absolute max-sm:hidden ml-5"
+					<span class="absolute max-md:hidden ml-5"
 						><img
 							src={linha_v_1_verde_svg}
 							alt="linha"
@@ -46,12 +46,12 @@
 						/></span
 					>
 					<h1
-						class="ml-12 mb-2 text-lg tracking-tight text-[#25285F] Archivo leading-tight max-w-[550px]"
+						class="md:ml-12 mb-2 text-lg tracking-tight text-[#25285F] Archivo leading-tight max-w-[550px]"
 					>
 						{@html m.homepage_section1_desc1()}
 					</h1>
 
-					<div class="relative w-full flex juftify-center align-center">
+					<div class="relative w-full flex juftify-center align-center max-w-xl">
 						{#if LottiePlayer}
 							<LottiePlayer
 								src={animationData}
@@ -59,8 +59,6 @@
 								loop={true}
 								renderer="svg"
 								background="transparent"
-								height={420}
-								width={420}
 								{controlsLayout}
 							/>
 						{/if}

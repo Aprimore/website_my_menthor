@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 	import * as m from '$lib/paraglide/messages';
 	import { onMount } from 'svelte';
 	import { selectedCountryStore } from './../../stores.js';
 	import TelInputComponent from './TelInputComponent.svelte';
 
-	let selectedCountry;
+	let selectedCountry: any;
 	selectedCountryStore.subscribe((value) => {
 		// console.log('FORM ZOHO sc', value);
 		selectedCountry = value;
@@ -27,7 +27,7 @@
 	let position = '';
 	let message = '';
 
-	const handleSubmit = async (event) => {
+	const handleSubmit = async (event: any) => {
 		event.preventDefault();
 
 		// Perform any necessary form validation

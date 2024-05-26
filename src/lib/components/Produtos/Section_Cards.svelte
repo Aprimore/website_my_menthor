@@ -1,11 +1,11 @@
-<script>
+<script lang="ts">
 	import { browser } from '$app/environment';
 	import * as m from '$lib/paraglide/messages';
 	import Carousel from 'svelte-carousel';
 
 	let activeDot = 'dot-1'; // Initialize active dot to 'dot-1'
 
-	let carousel;
+	let carousel: any;
 	const goToNextPage = () => {
 		activeDot = 'dot-1';
 		carousel.goToNext();

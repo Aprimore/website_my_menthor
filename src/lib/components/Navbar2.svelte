@@ -9,7 +9,7 @@
 		showMenu = !showMenu;
 	}
 
-	function generateDynamicId(pageName) {
+	function generateDynamicId(pageName: any) {
 		return `${pageName}#top`;
 	}
 

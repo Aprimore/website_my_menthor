@@ -77,8 +77,9 @@
 					class=" flex flex-col lg:self-end mr-5 min-h-[150px] bg-[#17193B] rounded-md max-sm:p-5 max-lg:mx-5 p-10 lg:max-w-[525px] xl:max-w-[710px]"
 				>
 					<div class="flex justify-center my-auto relative">
-						<span class="absolute left-3 mt-3"
+						<span class="absolute left-3 mt-3 max-sm:hidden"
 							><img
+								class="max-sm:hidden"
 								src={linha_v_amarela_svg}
 								alt="linha"
 								loading="lazy"
@@ -86,7 +87,7 @@
 								fetchpriority="low"
 							/></span
 						>
-						<p class=" ml-10 mt-3 Archivo text-lg text-[#F1F1F9]">
+						<p class="sm:ml-10 sm:mt-3 Archivo text-lg text-[#F1F1F9]">
 							<!-- <span class="text-[#FCC614]"> We act as business partners </span>
 						in management solutions before, during and after implementation, in pursuit of effective
 						results for our clients. -->

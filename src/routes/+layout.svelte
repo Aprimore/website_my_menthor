@@ -19,7 +19,11 @@
 </script>
 
 <svelte:head>
-	<title>{$page.data.post?.title}</title>
+	<title>{$page.data.post?.title || 'My Menthor | Home'}</title>
+	{#if $page.path !== '/'}
+		<!-- Check if the current page is not the homepage -->
+		<link rel="canonical" href={SITE_URL + $page.path} />
+	{/if}
 	<title>My Menthor | Home</title>
 	<link rel="canonical" href={SITE_URL} />
 	<meta property="og:url" content={SITE_URL} />

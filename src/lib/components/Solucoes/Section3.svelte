@@ -118,8 +118,9 @@
 					<!-- Can be customized according to customer's needs. -->
 					{m.solutions_CanBeCustomizedAccordingToCustomers()}
 				</p>
-				<span class="max-w-[15rem] absolute bottom-6">
+				<span class="max-w-[15rem] absolute bottom-6 max-sm:hidden">
 					<img
+						class="max-sm:hidden"
 						src={linha_h_amarela3_svg}
 						alt="linha"
 						loading="lazy"
