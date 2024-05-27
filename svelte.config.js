@@ -3,6 +3,7 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 // const dev = process.argv.includes('dev');
+const dev = process.env.NODE_ENV === 'development';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -17,14 +18,19 @@ const config = {
 		prerender: {
 			handleMissingId: 'warn' // or 'ignore' to completely suppress the error
 		},
-		adapter: adapter(),
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: null, // No fallback needed for static sites
+			precompress: false,
+			strict: true
+		}),
 		files: {
 			serviceWorker: 'src/service-worker.js'
 		},
 		paths: {
 			base: '', // Set this to '' if your site is at the root of the domain
-			assets: '', // Set this if your assets are served from a different URL
-			relative: false
+			assets: '' // Set this if your assets are served from a different URL
 		},
 
 		alias: {
