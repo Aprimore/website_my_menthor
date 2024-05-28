@@ -26,15 +26,15 @@
 	];
 </script>
 
-<section class="lg:max-w-screen-xl relative rounded-lg mx-auto my-2 max-sm:p-2">
-	<div class="md:py-5 lg:py-20 relative flex flex-col sm:p-3">
+<section class="lg:max-w-screen-xl relative rounded-lg mx-auto my-2 max-sm:p-2 container">
+	<div class="md:py-5 lg:py-6 xl:py-20 relative flex flex-col sm:p-3">
 		<div class="flex flex-col lg:w-1/2 relative sm:items-center max-lg:order-1 mt-3">
 			<div
-				class="flex justify-center bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl relative xl:max-w-[650px] lg:pr-20"
+				class="flex justify-center bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl relative lg:pr-20 max-h-[580px] md:max-h-[580px] lg:max-h-[520px] xl:max-h-[570px]"
 			>
 				<div
-					class="xl:max-w-[695px] lg:max-h-[520px] xl:max-h-[570px]
-				  text-[#17193B] rounded-lg py-10 xl:py-14 px-5 lg:px-16 relative"
+					class="
+				  text-[#17193B] rounded-lg xl:py-10 xl:px-5 p-5 relative"
 				>
 					<span class="absolute max-md:hidden ml-5"
 						><img
@@ -51,7 +51,9 @@
 						{@html m.homepage_section1_desc1()}
 					</h1>
 
-					<div class="relative w-full flex juftify-center align-center max-w-xl">
+					<div
+						class="relative w-full flex justify-center align-center max-w-xl sm:bottom-10"
+					>
 						{#if LottiePlayer}
 							<LottiePlayer
 								src={animationData}

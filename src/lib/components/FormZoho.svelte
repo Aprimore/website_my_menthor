@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { isProfessionalEmail } from '$lib/emailValidator';
 	import * as m from '$lib/paraglide/messages';
 	import { onMount } from 'svelte';
 	import { selectedCountryStore } from './../../stores.js';
@@ -26,9 +27,22 @@
 	let company = '';
 	let position = '';
 	let message = '';
+	// ---------------------
+	let errorMessage = '';
 
 	const handleSubmit = async (event: any) => {
 		event.preventDefault();
+
+		// Perform any necessary form validation
+		if (!fullName || !email || !message) {
+			alert('Please fill in all required fields.');
+			return;
+		}
+
+		if (!isProfessionalEmail(email)) {
+			errorMessage = 'Please use a professional email address.';
+			return;
+		}
 
 		// Perform any necessary form validation
 		if (!fullName || !email || !message) {
@@ -65,16 +79,13 @@
 
 			// Check if the request was successful
 			if (response.ok) {
-				// Handle successful form submission
 				// console.log('Form submitted successfully:', response);
 				alert('Form submitted successfully!');
 			} else {
-				// Handle HTTP error
-				console.error('HTTP error:', response.status);
+				// console.error('HTTP error:', response.status);
 				alert('An error occurred while submitting the form. Please try again later.');
 			}
 		} catch (error) {
-			// Handle fetch error
 			console.error('Fetch error:', error);
 			alert('An error occurred while submitting the form. Please try again later.');
 		}
@@ -163,6 +174,10 @@
 				required
 			/>
 		</label>
+
+		{#if errorMessage}
+			<p style="color: red;">{errorMessage}</p>
+		{/if}
 
 		<label class="hidden blockd">
 			<span

@@ -49,7 +49,9 @@
     "@fontsource-variable/archivo": "^5.0.19",
     "@fontsource-variable/exo": "^5.0.19",
     "@lottiefiles/svelte-lottie-player": "^0.3.1",
+    "@types/validator": "^13.11.10",
     "install": "^0.13.0",
-    "svelte-tel-input": "^3.3.9"
+    "svelte-tel-input": "^3.3.9",
+    "validator": "^13.12.0"
   }
 }
