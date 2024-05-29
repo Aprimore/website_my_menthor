@@ -14,7 +14,7 @@
 			<div class="card bg-white lg:max-w-[794px] rounded-md">
 				<div class="p-10 max-sm:p-3 xl:p-20 space-y-7">
 					<h1
-						class="blue-underline text-4xl sm:text-5xl z-10 text-[#17193B] Exo-Bold max-sm:text-center max-w-fit"
+						class="blue-underline xl:text-4xl text-3xl sm:text-5xl z-10 text-[#17193B] Exo-Bold max-sm:text-center max-w-fit"
 					>
 						{m.clientesP_PartnerProgram()}
 					</h1>

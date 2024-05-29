@@ -1,8 +1,8 @@
-import { join } from 'path';
+import { partytownVite } from '@builder.io/partytown/utils';
 import { paraglide } from '@inlang/paraglide-sveltekit/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
+import { join } from 'path';
 import { defineConfig } from 'vitest/config';
-import { partytownVite } from '@builder.io/partytown/utils';
 
 export default defineConfig({
 	plugins: [
@@ -12,9 +12,16 @@ export default defineConfig({
 		}),
 		sveltekit(),
 		partytownVite({
-            dest: join(__dirname, 'static', '~partytown'),
-        }),
+			dest: join(__dirname, 'static', '~partytown')
+		})
 	],
+	build: {
+		rollupOptions: {
+			input: {
+				'service-worker': './src/service-worker.js' // Include service worker file here
+			}
+		}
+	},
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	},

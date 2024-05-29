@@ -30,7 +30,7 @@
 				class="card1 xl:w-[716px] lg:w-[600px] xl:h-[332px] max-lg:max-w-[700px] bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl lg:mr-72 absolute max-md:top-0 flex flex-col justify-center items-center"
 			>
 				<div class=" p-6 rounded-lg space-y-6 relative">
-					<h1 class="Exo-Bold text-3xl md:text-4xl lg:text-5xl text-[#17193B] relative">
+					<h1 class="Exo-Bold md:text-4xl text-3xl lg:text-5xl text-[#17193B] relative">
 						<!-- Customer service channel -->
 						{m.clientesP_CustomerServiceChannel()}
 					</h1>

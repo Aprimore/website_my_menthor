@@ -24,7 +24,7 @@
 		<div class="lg:max-w-screen-2xl mx-auto lg:flex flex-row items-center lg:pt-20 max-lg:p-5 p-10">
 			<div class="lg:w-1/2 lg:p-10 space-y-6 lg:space-y-10 max-lg:mb-10" id="target-audience">
 				<h1
-					class="yellow-underline Exo-Bold text-4xl z-10 relative text-[#F1F1F9] max-lg:text-center w-fit"
+					class="yellow-underline Exo-Bold xl:text-4xl text-3xl z-10 relative text-[#F1F1F9] max-lg:text-center w-fit"
 				>
 					{m.produtos_TargetAudience()}
 				</h1>

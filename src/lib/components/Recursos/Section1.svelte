@@ -125,7 +125,7 @@
 				<div
 					class="bg-[#F1F1F9] sm:py-8 sm:px-5 w-full sm:h-1/2 mt-auto max-sm:p-3 relative -top-12"
 				>
-					<h1 class="Exo-Bold text-4xl bottom-0 max-md:px-3 max-md:mt-3 max-md:mx-auto">
+					<h1 class="Exo-Bold xl:text-4xl text-3xl bottom-0 max-md:px-3 max-md:mt-3 max-md:mx-auto">
 						{m.homepage_section_6_Resources()}
 					</h1>
 					<p class="Archivo text-lg mt-6 max-md:px-3 max-md:mb-3 max-md:mx-auto">

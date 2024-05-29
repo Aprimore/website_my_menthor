@@ -29,7 +29,7 @@
 		<div class="lg:w-2/3 relative">
 			<div class="lg:ml-3 lg:pt-3">
 				<h2
-					class="max-md:text-center md:ml-10 md:max-w-lg text-4xl relative Exo-Bold text-[#17193B] blue-underline"
+					class="max-md:text-center md:ml-10 md:max-w-lg xl:text-4xl text-3xl relative Exo-Bold text-[#17193B] blue-underline"
 				>
 					{m.homepage_section4_Organizing()}
 					{m.homepage_section4_simpler()}

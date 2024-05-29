@@ -6,7 +6,7 @@
 <section class="w-full items-center relative rounded-lg bg-[#F1F1F9] py-20">
 	<div class="lg:max-w-[1178px] lg:max-h-[598px] flex items-center mx-auto bg-white flex-col pb-10">
 		<div class=" my-6">
-			<h1 class="text-[#17193B] text-3xl max-md:text-center sm:text-4xl Exo-Bold">
+			<h1 class="text-[#17193B] max-md:text-center xl:text-4xl text-3xl Exo-Bold">
 				<!-- Platform characteristics -->
 				{m.solutions_PlatformCharacteristics()}
 			</h1>
@@ -110,7 +110,7 @@
 		class="lg:max-w-[1178px] lg:max-h-[598px] flex items-center mx-auto bg-white flex-col pb-10 mt-8"
 	>
 		<div class=" my-6">
-			<h1 class="text-[#17193B] text-3xl sm:text-4xl text-center Exo-Bold">
+			<h1 class="text-[#17193B] xl:text-4xl text-3xl text-center Exo-Bold">
 				<!-- Platform features -->
 				{m.solutions_PlatformFeatures()}
 			</h1>

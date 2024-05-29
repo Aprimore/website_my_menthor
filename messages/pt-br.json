@@ -50,6 +50,7 @@
 	"form_company": "Empresa",
 	"form_role": "Função",
 	"form_message": "Mensagem",
+	"form_profissionalEmailAddress": "Por favor, use um endereço de e-mail profissional",
 	"ph_fullname": "Escreva o seu nome completo",
 	"ph_email": "empresa@email.com.br",
 	"ph_phone": "+00 (00) 0000 0000",

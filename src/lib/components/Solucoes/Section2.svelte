@@ -24,7 +24,7 @@
 	<div class="max-w-screen-2xl pt-20 lg:flex justify-center mx-auto">
 		<div class="lg:w-1/2 flex flex-col justify-center">
 			<div class="">
-				<h1 class="text-4xl md:text-5xl relative Exo-Bold text-[#17193B] text-center">
+				<h1 class="xl:text-4xl text-3xl md:text-5xl relative Exo-Bold text-[#17193B] text-center">
 					{m.solutions_PortfolioOfServices()}
 					<img
 						src={linha_h_azul_3_svg}

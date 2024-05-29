@@ -20,8 +20,8 @@
 </script>
 
 <svelte:head>
+	<!-- Google Tag Manager -->
 	<script>
-		// Forward the necessary functions to the web worker layer
 		(function (w, d, s, l, i) {
 			w[l] = w[l] || [];
 			w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
@@ -37,8 +37,6 @@
 		};
 	</script>
 
-	{@html '<script>' + partytownSnippet() + '</script>'}
-
 	<script
 		type="text/partytown"
 		src="https://www.googletagmanager.com/gtag/js?id=G-ZX7H2KPXNZ"
@@ -52,11 +50,22 @@
 		gtag('config', 'G-ZX7H2KPXNZ');
 	</script>
 
+	<!-- Partytown Integration for ParaglideJS -->
+	{@html '<script>' + partytownSnippet() + '</script>'}
+	<script type="text/partytown" src="/src/lib/i18n.js"></script>
+	<script type="text/partytown">
+		// Initialize ParaglideJS
+		const initializeParaglideJS = () => {
+			ParaglideJS.init({ i18n });
+		};
+		// Run initialization
+		initializeParaglideJS();
+	</script>
+
 	<title>{$page.data.post?.title || 'My Menthor | Home'}</title>
 	{#if $page.path && $page.path !== '/'}
 		<link rel="canonical" href={SITE_URL + $page.path} />
 	{/if}
-	<!-- <link rel="canonical" href={SITE_URL} /> -->
 	<meta property="og:url" content={SITE_URL} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={SITE_TITLE} />
@@ -66,24 +75,23 @@
 	<meta property="og:image:width" content={OG_IMAGE_WIDTH} />
 	<meta property="og:image:height" content={OG_IMAGE_HEIGHT} />
 	<meta name="twitter:image" content={og_image} />
-	<meta name="twitter:card" content="My Menthor | Your company on another management level" />
-	<!-- <meta name="twitter:creator" content={'@' + MY_TWITTER_HANDLE} /> -->
+	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={SITE_TITLE} />
 	<meta name="twitter:description" content={SITE_DESCRIPTION} />
 </svelte:head>
 
-{#if ParaglideJS}
-	<ParaglideJS {i18n}>
-		<main class="relative">
+<main class="relative">
+	{#if ParaglideJS}
+		<ParaglideJS {i18n}>
 			<Navbar />
 			<Navbar2 />
 			<slot />
 			<Footer />
-		</main>
-	</ParaglideJS>
-{:else}
-	<div>Loading...</div>
-{/if}
+		</ParaglideJS>
+	{:else}
+		<div>Loading...</div>
+	{/if}
+</main>
 
 <style>
 	:global(html) {

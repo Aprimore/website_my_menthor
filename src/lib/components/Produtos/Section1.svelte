@@ -13,8 +13,10 @@
 		class="lg:h-[510px] lg:flex lg:max-w-screen-2xl flex-row lg:mx-auto justify-center items-center p-6"
 		id="platform"
 	>
-		<div class="lg:w-1/2 lg:max-w-[600px] space-y-4 md:space-y-6 relative">
-			<h1 class="Exo-Bold text-[#17193B] text-4xl font-bold relative max-sm:text-center">
+		<div class="lg:w-1/2 lg:max-w-[40%] space-y-4 md:space-y-6 relative">
+			<h1
+				class="Exo-Bold text-[#17193B] xl:text-4xl text-3xl font-bold relative max-sm:text-center"
+			>
 				{m.produtos_MyMenthorIs()}
 				<span
 					><img

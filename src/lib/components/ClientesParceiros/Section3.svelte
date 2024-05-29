@@ -16,7 +16,7 @@
 		<div class="py-24 max-w-screen-2xl mx-auto space-y-24">
 			<div class=" mx-auto">
 				<h1
-					class="yellow-underline Exo mx-auto text-4xl sm:text-5xl max-sm:text-center z-10 relative text-[#F1F1F9] Exo-Bold max-w-max mb-24"
+					class="yellow-underline Exo mx-auto xl:text-4xl text-3xl sm:text-5xl max-sm:text-center z-10 relative text-[#F1F1F9] Exo-Bold max-w-max mb-24"
 				>
 					<!-- Partner program -->
 					{m.clientesP_SuccessHistories()}
@@ -47,7 +47,7 @@
 					<div
 						class="lg:w-1/2 lg:mt-auto flex flex-col justify-center space-y-8 xl:px-10 lg:mr-4 md:px-3"
 					>
-						<h2 class="text-[#FCC614] Exo-Bold max-lg:text-center text-4xl max-md:mt-7">
+						<h2 class="text-[#FCC614] Exo-Bold max-lg:text-center xl:text-4xl text-3xl max-md:mt-7">
 							<!-- Case -->
 							{m.clientesP_Case()}
 						</h2>
@@ -79,7 +79,7 @@
 					<div
 						class="lg:w-1/2 lg:mt-auto flex flex-col justify-center space-y-8 xl:px-10 lg:mr-4 md:px-3"
 					>
-						<h2 class="text-[#FCC614] Exo-Bold max-lg:text-center text-4xl max-md:mt-7">
+						<h2 class="text-[#FCC614] Exo-Bold max-lg:text-center xl:text-4xl text-3xl max-md:mt-7">
 							<!-- Case -->
 							{m.clientesP_Case()}
 						</h2>
@@ -111,7 +111,7 @@
 					<div
 						class="lg:w-1/2 lg:mt-auto flex flex-col justify-center space-y-8 xl:px-10 lg:mr-4 md:px-3"
 					>
-						<h2 class="text-[#FCC614] Exo-Bold max-lg:text-center text-4xl max-md:mt-7">
+						<h2 class="text-[#FCC614] Exo-Bold max-lg:text-center xl:text-4xl text-3xl max-md:mt-7">
 							<!-- Case -->
 							{m.clientesP_Case()}
 						</h2>

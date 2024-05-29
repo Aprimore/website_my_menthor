@@ -19,7 +19,7 @@
 				class=" h-[214px] bg-white flex flex-col justify-center items-center border border-gray-300 shadow-sm"
 			>
 				<p
-					class="Exo text-4xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED] absolute top-1.5"
+					class="Exo xl:text-4xl text-3xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED] absolute top-1.5"
 				>
 					1.
 				</p>
@@ -48,7 +48,7 @@
 				class="  h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
 			>
 				<p
-					class="Exo text-4xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED] absolute top-1.5"
+					class="Exo xl:text-4xl text-3xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED] absolute top-1.5"
 				>
 					2.
 				</p>
@@ -77,7 +77,7 @@
 				class="  h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
 			>
 				<p
-					class="Exo text-4xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED] absolute top-1.5"
+					class="Exo xl:text-4xl text-3xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED] absolute top-1.5"
 				>
 					3.
 				</p>
@@ -106,7 +106,7 @@
 				class="  h-[214px] bg-white flex flex-col justify-center items-center space-y-2 border border-gray-300 shadow-sm"
 			>
 				<p
-					class="Exo text-4xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED] absolute top-1.5"
+					class="Exo xl:text-4xl text-3xl border border-gray-300 shadow-sm size-[4rem] flex justify-center items-center rounded-full bg-white text-[#D4D4ED] absolute top-1.5"
 				>
 					4.
 				</p>

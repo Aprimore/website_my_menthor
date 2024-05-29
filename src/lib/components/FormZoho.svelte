@@ -1,9 +1,9 @@
 <script lang="ts">
+	import TelInputComponent from '$lib/components/TelInputComponent.svelte';
 	import { isProfessionalEmail } from '$lib/emailValidator';
 	import * as m from '$lib/paraglide/messages';
 	import { onMount } from 'svelte';
 	import { selectedCountryStore } from './../../stores.js';
-	import TelInputComponent from './TelInputComponent.svelte';
 
 	let selectedCountry: any;
 	selectedCountryStore.subscribe((value) => {
@@ -38,9 +38,10 @@
 			alert('Please fill in all required fields.');
 			return;
 		}
-
+// Por favor, use um endereço de e-mail profissional
 		if (!isProfessionalEmail(email)) {
-			errorMessage = 'Please use a professional email address.';
+			alert(`${m.form_profissionalEmailAddress()}`);
+			// alert('Please use a professional email address.');
 			return;
 		}
 
@@ -71,13 +72,11 @@
 		// console.log(formData);
 
 		try {
-			// Send form data to Zoho CRM endpoint using fetch
 			const response = await fetch('https://crm.zoho.com/crm/WebToLeadForm', {
 				method: 'POST',
 				body: formData
 			});
 
-			// Check if the request was successful
 			if (response.ok) {
 				// console.log('Form submitted successfully:', response);
 				alert('Form submitted successfully!');

@@ -8,7 +8,7 @@
 		<div class="lg:w-1/2 flex flex-col justify-center">
 			<div class="lg:max-w-[600px] self-center space-y-6 mt-12">
 				<h1
-					class="blue-underline text-4xl sm:text-5xl max-sm:text-center z-10 relative text-[#17193B] Exo-Bold w-fit"
+					class="blue-underline xl:text-4xl text-3xl max-sm:text-center z-10 relative text-[#17193B] Exo-Bold w-fit"
 				>
 					<!-- The company -->
 					{m.company_TheCompany()}

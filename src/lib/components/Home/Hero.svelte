@@ -16,7 +16,7 @@
 				{m.homepage_header_business()}
 			</p>
 
-			<h1 class="text-2xl sm:text-4xl text-white Exo-Bold yellow-underline">
+			<h1 class="text-2xl sm:text-3xl text-white Exo-Bold yellow-underline">
 				{m.homepage_header_yourcompany()}
 			</h1>
 

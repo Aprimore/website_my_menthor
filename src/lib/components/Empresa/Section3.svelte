@@ -34,7 +34,7 @@
 				class="lg:space-y-6 lg:p-10 lg:ml-10 max-lg:flex lg:flex-col max-md:flex-col justify-center items-center w-full h-full"
 			>
 				<div>
-					<h1 class="text-4xl md:text-5xl relative text-[#17193B] Exo-Semibold mb-10">
+					<h1 class="xl:text-4xl text-3xl relative text-[#17193B] Exo-Semibold mb-10">
 						<!-- Contact us <span class="font-normal"> or </span> <br /> schedule a demo! -->
 						{@html m.company_ContactUsOr()}
 						{@html m.company_ScheduleADemo()}

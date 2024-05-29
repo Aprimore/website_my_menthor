@@ -43,7 +43,7 @@
 		<div class="md:w-1/2 flex flex-col justify-center">
 			<div class="card space-y-10 p-5 md:p-12 bg-[#F1F1F9]">
 				<h1
-					class="green-underline Exo text-4xl sm:text-5xl z-10 relative text-[#17193B] Exo-Bold max-lg:text-center w-fit"
+					class="green-underline Exo xl:text-4xl text-3xl sm:text-5xl z-10 relative text-[#17193B] Exo-Bold max-lg:text-center w-fit"
 				>
 					<!-- Purpose -->
 					{m.company_Purpose()}

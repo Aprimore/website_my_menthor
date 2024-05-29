@@ -6,7 +6,7 @@
 <section class="relative rounded-lg md:my-16 mt-4">
 	<div class="max-w-screen-2xl mx-auto max-sm:p-2 space-y-2" id="modules">
 		<div class="p-6 rounded-lg mt-2 text-center max-md:space-y-2">
-			<h1 class="text-4xl sm:text-5xl relative Exo-Bold text-[#17193B] sm:text-nowrap">
+			<h1 class="xl:text-4xl text-3xl sm:text-5xl relative Exo-Bold text-[#17193B] sm:text-nowrap">
 				<!-- Platform Modules -->
 				{m.solutions_PlatformModules()}
 			</h1>

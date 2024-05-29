@@ -13,7 +13,7 @@
 		<div class="w-1/2 relative p-5 lg:p-10 space-y-10"> -->
 
 <section class="w-full bg-[#F1F1F9] py-20">
-	<h1 class="text-[#17193B] text-4xl mb-12 Exo-Bold text-center">
+	<h1 class="text-[#17193B] xl:text-4xl text-3xl mb-12 Exo-Bold text-center">
 		{m.solutions_PlatformCharacteristics()}
 		<!-- Platform characteristics -->
 	</h1>

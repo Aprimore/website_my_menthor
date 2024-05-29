@@ -76,13 +76,13 @@
 			? 'flex'
 			: 'hidden'}"
 	>
-		<a class={navbarClasses} href="/">{m.navbar_Home()}</a>
-		<a class={navbarClasses} href="/products">{m.navbar_Products()}</a>
-		<a class={navbarClasses} href="/solutions">{m.navbar_Solutions()}</a>
-		<a class={navbarClasses} href="/customers_and_partners">{m.navbar_Clients_and_Partners()}</a>
-		<a class={navbarClasses} href="/resources">{m.navbar_Resources()}</a>
-		<a class={navbarClasses} href="http://mymenthor.com/blog" target="_blank">{m.navbar_Blog()}</a>
-		<a class={navbarClasses} href="/company">{m.navbar_Company()}</a>
+		<a class={navbarClasses} on:click={toggleNavbar} href="/">{m.navbar_Home()}</a>
+		<a class={navbarClasses} on:click={toggleNavbar} href="/products">{m.navbar_Products()}</a>
+		<a class={navbarClasses} on:click={toggleNavbar} href="/solutions">{m.navbar_Solutions()}</a>
+		<a class={navbarClasses} on:click={toggleNavbar} href="/customers_and_partners">{m.navbar_Clients_and_Partners()}</a>
+		<a class={navbarClasses} on:click={toggleNavbar} href="/resources">{m.navbar_Resources()}</a>
+		<a class={navbarClasses} on:click={toggleNavbar} href="http://mymenthor.com/blog" target="_blank">{m.navbar_Blog()}</a>
+		<a class={navbarClasses} on:click={toggleNavbar} href="/company">{m.navbar_Company()}</a>
 	</div>
 </nav>
 

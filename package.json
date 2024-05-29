@@ -51,6 +51,7 @@
     "@lottiefiles/svelte-lottie-player": "^0.3.1",
     "@types/validator": "^13.11.10",
     "install": "^0.13.0",
+    "svelte-preprocess": "^5.1.4",
     "svelte-tel-input": "^3.3.9",
     "validator": "^13.12.0"
   }

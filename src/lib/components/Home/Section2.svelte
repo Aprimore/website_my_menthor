@@ -6,9 +6,9 @@
 	class="flex flex-col items-center relative rounded-lg my-6 max-w-screen-2xl mx-auto max-md:p-2"
 >
 	<div class="p-6 rounded-lg text-center">
-		<h1 class="Exo text-4xl relative mx-auto">{m.homepage_section2_work()}</h1>
+		<h1 class="Exo xl:text-4xl text-3xl relative mx-auto">{m.homepage_section2_work()}</h1>
 
-		<h2 class="Exo-Bold text-4xl relative text-[#17193B] green-underline">
+		<h2 class="Exo-Bold xl:text-4xl text-3xl relative text-[#17193B] green-underline">
 			{m.homepage_section2_smarter()}
 		</h2>
 	</div>
