@@ -24,7 +24,7 @@
 					fetchpriority="low"
 				/>
 			</div>
-			<div class="max-lg:p-5 lg:w-1/2 space-y-10 mt-8 lg:mt-16 max-lg:order-1">
+			<div class="max-lg:p-5 lg:w-1/2 space-y-6 mt-8 lg:mt-16 max-lg:order-1">
 				<h2
 					class="xl:text-4xl sm:xl:text-4xl text-3xl relative Exo-Bold text-[#17193B] blue-underline"
 				>

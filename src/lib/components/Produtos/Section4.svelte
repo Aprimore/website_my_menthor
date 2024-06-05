@@ -96,11 +96,11 @@
 		<div>
 			<button class="flex mx-auto pb-10 mt-5 Exo">
 				<a
-					class="btn-demo bg-[#8abb3f] rounded-xl px-5 lg:px-10 py-4 text-lg text-[#17193B] focus:ring relative"
+					class="btn-contact bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#F1F1F9] focus:ring sm:w-auto z-10 relative"
 					href="/company#contact"
 				>
-					<!-- Schedule a Demo -->
-					{m.produtos_MyMenthorIs()}
+					<!-- Contact Us -->
+					{m.footer_Contact_us()}
 				</a>
 			</button>
 		</div>

@@ -46,7 +46,7 @@
 						/></span
 					>
 					<h1
-						class="md:ml-12 mb-2 text-lg tracking-tight text-[#25285F] Archivo leading-tight max-w-[550px]"
+						class="md:ml-12 mb-2 text-lg tracking-tight text-[#25285F] Archivo leading-tight max-w-[350px]"
 					>
 						{@html m.homepage_section1_desc1()}
 					</h1>

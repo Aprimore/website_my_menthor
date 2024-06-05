@@ -195,15 +195,14 @@
 		</div>
 	</div>
 	<div class="mt-16 gap-4 mx-auto max-w-max">
-		<button class="Exo">
-			<a
-				class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
-				href="/company#contact"
-			>
-				<!-- Schedule a Demo -->
-				{m.produtos_MyMenthorIs()}
-			</a>
-		</button>
+	<button class="flex flex-wrap Exo">
+								<a
+									class="btn-agendar w-full bg-[#8abb3f] text-[#17193B] py-4 px-10 rounded-lg relative transition-transform transform hover:-translate-y-1"
+									href="/company#contact"
+								>
+									{m.button_schedule_a_demo()}
+								</a>
+							</button>
 	</div>
 </section>
 

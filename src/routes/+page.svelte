@@ -21,7 +21,7 @@
 	<Section3 {data} />
 	<Section4 />
 	<Section5 />
-	<Section6 />
+	<div class="bg-[#F1F1F9] h-36"></div>
 </div>
 
 <!-- <style>

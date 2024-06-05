@@ -38,7 +38,7 @@
 			alert('Please fill in all required fields.');
 			return;
 		}
-// Por favor, use um endereço de e-mail profissional
+		// Por favor, use um endereço de e-mail profissional
 		if (!isProfessionalEmail(email)) {
 			alert(`${m.form_profissionalEmailAddress()}`);
 			// alert('Please use a professional email address.');
@@ -64,14 +64,14 @@
 		formData.append('Last Name', fullName);
 		formData.append('Email', email);
 		formData.append('Country', selectedCountry);
-		formData.append('Phone', phone);
+		formData.append('Mobile', phone);
 		formData.append('Company', company);
 		formData.append('LEADCF3', position);
 		formData.append('LEADCF5', message);
 		// Add additional form fields as needed
-		// console.log(formData);
-
-		try {
+		console.log(formData);
+		
+		try {	
 			const response = await fetch('https://crm.zoho.com/crm/WebToLeadForm', {
 				method: 'POST',
 				body: formData
@@ -252,12 +252,12 @@
 				class="btn-demo block flex-1 rounded-xl p-3 text-xl font-medium text-[#ffffff] bg-[#8ABB3F] hover:bg-[#85b43e] focus:ring sm:w-auto z-10 relative Archivo"
 				>{m.zoho_btn_send()}</button
 			>
-			<button
+			<!-- <button
 				type="reset"
 				name="reset"
 				class="btn-demo block flex-1 rounded-xl p-3 text-xl font-medium text-[#17193B] bg-[#ffffff] hover:bg-gray-100 focus:ring sm:w-auto z-10 relative Archivo"
 				>{m.zoho_btn_clear()}</button
-			>
+			> -->
 		</div>
 		<!-- <script
 			id="wf_anal"

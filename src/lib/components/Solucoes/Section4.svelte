@@ -84,7 +84,14 @@
 				<p class="text-xl Archivo text-[#25285F]">5</p>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F]">4 Tickets</p>
+				<!-- <p class="text-xl Archivo text-[#25285F]">4 Tickets</p> -->
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
@@ -147,7 +154,14 @@
 				<p class="text-xl Archivo text-[#25285F]">25</p>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F]">8 Tickets</p>
+				<!-- <p class="text-xl Archivo text-[#25285F]">8 Tickets</p> -->
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
@@ -192,7 +206,8 @@
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<p class="text-xl Archivo text-[#25285F]">
 					<!-- Adicional -->
-					{m.produtos_MyMenthorIs()}
+					<!-- {m.produtos_MyMenthorIs()} -->
+					{m.solutions_Additional()}
 				</p>
 			</div>
 		</div>
@@ -210,7 +225,14 @@
 				<p class="text-xl Archivo text-[#25285F]">50</p>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F]">12 Tickets</p>
+				<!-- <p class="text-xl Archivo text-[#25285F]">12 Tickets</p> -->
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
@@ -273,7 +295,14 @@
 				<p class="text-xl Archivo text-[#25285F]">TBD</p>
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
-				<p class="text-xl Archivo text-[#25285F]">TBD</p>
+				<!-- <p class="text-xl Archivo text-[#25285F]">TBD</p> -->
+				<img
+					src={checkmark_2_svg}
+					alt="Checkmark Icon"
+					loading="lazy"
+					decoding="sync"
+					fetchpriority="low"
+				/>
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
