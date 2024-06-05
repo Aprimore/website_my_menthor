@@ -3,9 +3,9 @@
 	import * as m from '$lib/paraglide/messages';
 </script>
 
-<div class="div1"></div>
+<!-- <div class="div1"></div>
 <div class="div2"></div>
-<div class="div3"></div>
+<div class="div3"></div> -->
 
 {#if m}
 	<div class="copyright p-5 bg-blue-800 text-sm">

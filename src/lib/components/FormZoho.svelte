@@ -70,23 +70,31 @@
 		formData.append('LEADCF5', message);
 		// Add additional form fields as needed
 		console.log(formData);
-		
-		try {	
+
+		try {
 			const response = await fetch('https://crm.zoho.com/crm/WebToLeadForm', {
 				method: 'POST',
 				body: formData
 			});
 
 			if (response.ok) {
+				areaOfInterest = '';
+				fullName = '';
+				email = '';
+				country = 'United States';
+				phone = '';
+				company = '';
+				position = '';
+				message = '';
 				// console.log('Form submitted successfully:', response);
-				alert('Form submitted successfully!');
+				alert(`${m.form_submit_success()}`);
 			} else {
 				// console.error('HTTP error:', response.status);
-				alert('An error occurred while submitting the form. Please try again later.');
+				alert(`${m.form_submit_error()}`);
 			}
 		} catch (error) {
 			console.error('Fetch error:', error);
-			alert('An error occurred while submitting the form. Please try again later.');
+			alert(`${m.form_submit_error()}`);
 		}
 	};
 </script>
@@ -106,7 +114,7 @@
 			type="text"
 			style="display:none;"
 			name="xnQsjsdp"
-			value="0afeca1a83d2be29cad9dc2d8a37e8f3d35be7978017274f40bbc07d1f169340"
+			value="2881cbb79ac3eb1a026c8673ec449830c1973a1255cf88cb1a9309eed99d23b4"
 		/>
 
 		<input type="hidden" name="zc_gad" id="zc_gad" value="" />
@@ -114,7 +122,7 @@
 			type="text"
 			style="display:none;"
 			name="xmIwtLD"
-			value="5a87345b8b9b1b951b64a0c913eb4b4cb6cafd7e1f4b8519f9a87df2f28179339608b7c95a65f83b6f01fd5ba9569924"
+			value="f88f60bd9c8b8609b49132ee09cc50fafaad885567dcb6add9a6965e39b7c4a39739ba2fc4dea3cb997bc4b1fd4e3d7c"
 		/>
 		<input type="text" style="display:none;" name="actionType" value="TGVhZHM=" />
 		<input type="text" style="display:none;" name="returnURL" value="null" />
@@ -198,7 +206,7 @@
 			<span class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block">
 				{m.form_phone()}
 			</span>
-			<TelInputComponent bind:value={phone} id="Phone" name="Phone" />
+			<TelInputComponent bind:value={phone} id="Mobile" name="Mobile" />
 		</label>
 
 		<label class="block">

@@ -74,7 +74,34 @@
 									</a>
 								</li>
 							</ul>
-							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5 mt-5">
+
+							<p class="text-[#F1F1F9] text-lg Exo-Semibold my-5">
+								{m.footer_Solutions()}
+							</p>
+							<ul class="space-y-3">
+								<li>
+									<a href="/solutions#modules" class="text-[#D4D4ED] text-sm hover:text-white"
+										>{m.footer_The_Platform()}</a
+									>
+								</li>
+								<li>
+									<a
+										href="/solutions#portfolio-services"
+										class="text-[#D4D4ED] text-sm hover:text-white"
+										>{m.footer_Service_portfolio()}</a
+									>
+								</li>
+								<li>
+									<a href="/solutions#packages" class="text-[#D4D4ED] text-sm hover:text-white"
+										>{m.footer_Packages()}</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer3 col-span-1 max-md:mt-10">
+						<div class=" mb-10">
+							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 								{m.footer_Stakeholders()}
 							</p>
 							<ul class="space-y-3">
@@ -103,7 +130,8 @@
 							</ul>
 						</div>
 					</div>
-					<div class="footer3 col-span-1 max-md:mt-10">
+
+					<div class="footer4 col-span-1">
 						<div class=" mb-10">
 							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 								{m.footer_Partner_Program()}
@@ -133,7 +161,7 @@
 						</div>
 					</div>
 
-					<div class="footer4 col-span-1">
+					<div class="footer5 col-span-1 relative">
 						<div class=" mb-10">
 							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
 								{m.footer_Knowledge_Base()}
@@ -157,33 +185,6 @@
 								<li>
 									<a href="/company#contact" class="text-[#D4D4ED] text-sm hover:text-white"
 										>{m.footer_Contact_us()}</a
-									>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="footer5 col-span-1 relative">
-						<div class=" mb-10">
-							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
-								{m.footer_Solutions()}
-							</p>
-							<ul class="space-y-3">
-								<li>
-									<a href="/solutions#modules" class="text-[#D4D4ED] text-sm hover:text-white"
-										>{m.footer_The_Platform()}</a
-									>
-								</li>
-								<li>
-									<a
-										href="/solutions#portfolio-services"
-										class="text-[#D4D4ED] text-sm hover:text-white"
-										>{m.footer_Service_portfolio()}</a
-									>
-								</li>
-								<li>
-									<a href="/solutions#packages" class="text-[#D4D4ED] text-sm hover:text-white"
-										>{m.footer_Packages()}</a
 									>
 								</li>
 							</ul>

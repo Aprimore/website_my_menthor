@@ -51,6 +51,8 @@
 	"form_role": "Função",
 	"form_message": "Mensagem",
 	"form_profissionalEmailAddress": "Por favor, use um endereço de e-mail profissional",
+	"form_submit_error": "Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.",
+	"form_submit_success": "Formulário enviado com sucesso!",
 	"ph_fullname": "Escreva o seu nome completo",
 	"ph_email": "empresa@email.com.br",
 	"ph_phone": "+00 (00) 0000 0000",

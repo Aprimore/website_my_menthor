@@ -51,6 +51,10 @@
 	"form_role": "Role",
 	"form_message": "Message",
 	"form_profissionalEmailAddress": "Please use a professional email address.",
+
+	"form_submit_error": "An error occurred while submitting the form. Please try again later.",
+	"form_submit_success": "Form submitted successfully!",
+
 	"ph_fullname": "Type your full name",
 	"ph_email": "company@email.com",
 	"ph_phone": "+00 (00) 0000 0000",
