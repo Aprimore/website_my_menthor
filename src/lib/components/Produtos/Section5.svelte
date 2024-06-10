@@ -35,7 +35,7 @@
 						<div class="bg-white p-2">
 							<p class="Exo-Semibold check text-[#17193B] text-xl">
 								<!-- Profits, revenue and margin -->
-								{m.homepage_section4_Profits()}
+								{m.produtos_ProfitsRevenueAndMargin()}
 							</p>
 						</div>
 						<div class="bg-white p-2">
@@ -167,6 +167,12 @@
 						</div>
 						<div class="bg-white p-2">
 							<p class="Exo-Semibold check text-[#17193B] text-xl">
+								<!-- Efficiency and productivity x effectiveness -->
+								{m.produtos_EmpowermentAccountability()}
+							</p>
+						</div>
+						<div class="bg-white p-2">
+							<p class="Exo-Semibold check text-[#17193B] text-xl">
 								<!-- Reduction of costs, deadlines and rework -->
 								{m.produtos_ReductionOfCostsDeadlinesAndRework()}
 							</p>
@@ -195,14 +201,14 @@
 		</div>
 	</div>
 	<div class="mt-16 gap-4 mx-auto max-w-max">
-	<button class="flex flex-wrap Exo">
-								<a
-									class="btn-agendar w-full bg-[#8abb3f] text-[#17193B] py-4 px-10 rounded-lg relative transition-transform transform hover:-translate-y-1"
-									href="/company#contact"
-								>
-									{m.button_schedule_a_demo()}
-								</a>
-							</button>
+		<button class="flex flex-wrap Exo">
+			<a
+				class="btn-agendar w-full bg-[#8abb3f] text-[#17193B] py-4 px-10 rounded-lg relative transition-transform transform hover:-translate-y-1"
+				href="/company#contact"
+			>
+				{m.button_schedule_a_demo()}
+			</a>
+		</button>
 	</div>
 </section>
 

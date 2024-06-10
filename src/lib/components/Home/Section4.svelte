@@ -44,18 +44,18 @@
 							{m.homepage_section4_Profits()}
 						</p>
 					</div>
-					<div
+					<!-- <div
 						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
 					>
 						<p class="Exo-Semibold check xl:text-xl">
-							{m.homepage_section4_Quality()}
+							.
 						</p>
 					</div>
 					<div
 						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
 					>
-						<p class="Exo-Semibold check xl:text-xl">{m.homepage_section4_Value()}</p>
-					</div>
+						<p class="Exo-Semibold check xl:text-xl">.</p>
+					</div> -->
 					<div
 						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
 					>

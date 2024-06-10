@@ -36,7 +36,7 @@
 						<button
 							class=" rounded-xl px-10 py-4 md:text-lg bg-white text-[#17193B] border border-[#17193B] relative max-sm:w-full"
 						>
-							<a class=" Archivo" href="/customers_and_partners">
+							<a class="Archivo" href="https://www.mmtrainingportal.com/">
 								<!-- Partner Portal  -->
 								{m.button_portal()}
 							</a>

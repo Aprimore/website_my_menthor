@@ -127,21 +127,22 @@
 										class="text-[#D4D4ED] text-sm hover:text-white">{m.footer_Customer_support()}</a
 									>
 								</li>
+								<li>
+									<a
+										href="/customers_and_partners#support"
+										class="text-[#D4D4ED] text-sm hover:text-white">{m.footer_Partner_Program()}</a
+									>
+								</li>
 							</ul>
 						</div>
 					</div>
 
 					<div class="footer4 col-span-1">
 						<div class=" mb-10">
-							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
-								{m.footer_Partner_Program()}
-							</p>
 							<ul class="space-y-3">
-								<li>
-									<a href="/resources#resources" class="text-[#D4D4ED] text-sm hover:text-white">
-										{m.footer_Resources()}
-									</a>
-								</li>
+								<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
+									{m.footer_Resources()}
+								</p>
 								<li>
 									<a href="/resources#resources" class="text-[#D4D4ED] text-sm hover:text-white">
 										{m.footer_Blog()}
@@ -164,14 +165,9 @@
 					<div class="footer5 col-span-1 relative">
 						<div class=" mb-10">
 							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
-								{m.footer_Knowledge_Base()}
+								{m.footer_Our_Company()}
 							</p>
 							<ul class="space-y-3">
-								<li>
-									<a href="/company#about" class="text-[#D4D4ED] text-sm hover:text-white"
-										>{m.footer_Our_Company()}</a
-									>
-								</li>
 								<li>
 									<a href="/company#about" class="text-[#D4D4ED] text-sm hover:text-white"
 										>{m.footer_About_us()}</a

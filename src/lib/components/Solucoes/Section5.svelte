@@ -58,20 +58,18 @@
 						{m.solutions_StorageSpacePerUser()}
 					</p>
 				</div>
-				<div class="bg-white p-2 min-w-min">
+				<!-- <div class="bg-white p-2 min-w-min">
 					<p class="Exo-Regular check text-[#17193B] text-xl">
-						<!-- Supportd Browsers: Google Chrome, Mozilla Firefox, Safari and Microsoft Edge -->
 						{m.solutions_SupportedBrowsers()}
 					</p>
-				</div>
+				</div> -->
 			</div>
 			<div class="flex flex-col sm:w-1/2 space-y-4">
-				<div class="bg-white p-2 min-w-min">
+				<!-- <div class="bg-white p-2 min-w-min">
 					<p class="Exo-Regular check text-[#17193B] text-xl">
-						<!-- System Versions -->
 						{m.solutions_SystemVersions()}
 					</p>
-				</div>
+				</div> -->
 				<div class="bg-white p-2 min-w-min">
 					<p class="Exo-Regular check text-[#17193B] text-xl">
 						<!-- Change History -->
@@ -90,18 +88,16 @@
 						{m.solutions_PortugueseAndEnglish()}
 					</p>
 				</div>
-				<div class="bg-white p-2 min-w-min">
+				<!-- <div class="bg-white p-2 min-w-min">
 					<p class="Exo-Regular check text-[#17193B] text-xl">
-						<!-- Single Repository -->
 						{m.solutions_SingleRepository()}
 					</p>
-				</div>
-				<div class="bg-white p-2 min-w-min">
+				</div> -->
+				<!-- <div class="bg-white p-2 min-w-min">
 					<p class="Exo-Regular check text-[#17193B] text-xl">
-						<!-- Data Import/Export -->
 						{m.solutions_DataImportExport()}
 					</p>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>

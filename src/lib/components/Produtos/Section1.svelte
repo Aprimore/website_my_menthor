@@ -10,7 +10,7 @@
 
 <section class="w-full bg-white md:mt-16 mt-4">
 	<div
-		class="lg:h-[510px] lg:flex lg:max-w-screen-2xl flex-row lg:mx-auto justify-center items-center p-6"
+		class="lg:min-h-[31rem] lg:max-w-[92rem] lg:flex flex-row lg:mx-auto justify-center items-center p-6"
 		id="platform"
 	>
 		<div class="lg:w-1/2 lg:max-w-[40%] space-y-4 md:space-y-6 relative">
