@@ -32,7 +32,7 @@
 				<div class=" p-6 rounded-lg space-y-6 relative">
 					<h1 class="Exo-Bold md:text-4xl text-3xl lg:text-5xl text-[#17193B] relative">
 						<!-- Customer service channel -->
-						{m.clientesP_CustomerServiceChannel()}
+						{@html m.clientesP_CustomerServiceChannel()}
 					</h1>
 
 					<p class="  text-[#25285F] Archivo text-lg">
@@ -47,7 +47,7 @@
 							href="/company#contact"
 						>
 							<!-- Contact Us -->
-							{m.footer_Contact_us()}
+							{@html m.footer_Contact_us()}
 						</a>
 					</button>
 				</div>

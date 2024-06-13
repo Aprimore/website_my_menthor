@@ -12,61 +12,61 @@
 			<div class="rounded-t-lg h-[104px] bg-white flex justify-center items-center">
 				<h1 class="Exo-Bold underline text-white text-3xl">
 					<!-- Packages -->
-					{m.produtos_MyMenthorIs()}
+					{@html m.produtos_MyMenthorIs()}
 				</h1>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
 				<p class="text-base Archivo text-[#25285F]">
 					<!-- Administrator License -->
-					{m.solutions_AdministratorLicense()}
+					{@html m.solutions_AdministratorLicense()}
 				</p>
 			</div>
 			<div class=" h-[62px] bg-white flex items-center border-b">
 				<p class="text-base Archivo text-[#25285F]">
 					<!-- User License -->
-					{m.solutions_UserLicense()}
+					{@html m.solutions_UserLicense()}
 				</p>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
 				<p class="text-base Archivo text-[#25285F]">
 					<!-- Viewer License -->
-					{m.solutions_ViewerLicense()}
+					{@html m.solutions_ViewerLicense()}
 				</p>
 			</div>
 			<div class=" h-[62px] bg-white flex items-center border-b">
 				<p class="text-base Archivo text-[#25285F]">
 					<!-- Technical Support (8x5) -->
-					{m.solutions_TechnicalSupport()}
+					{@html m.solutions_TechnicalSupport()}
 				</p>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
 				<p class="text-base Archivo text-[#25285F]">
 					<!-- Framework, Knowledge Base and Online Training -->
-					{m.solutions_FrameworkKnowledgeBaseAndOnlineTraining()}
+					{@html m.solutions_FrameworkKnowledgeBaseAndOnlineTraining()}
 				</p>
 			</div>
 			<div class=" h-[62px] bg-white flex items-center border-b">
 				<p class="text-base Archivo text-[#25285F]">
 					<!-- Administrator / Architect (8h) -->
-					{m.solutions_AdministratorArchitect()}
+					{@html m.solutions_AdministratorArchitect()}
 				</p>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
 				<p class="text-base Archivo text-[#25285F]">
 					<!-- Business Diagnosis and Implementation Strategy -->
-					{m.solutions_BusinessDiagnosisAndImplementationStrategy()}
+					{@html m.solutions_BusinessDiagnosisAndImplementationStrategy()}
 				</p>
 			</div>
 			<div class=" h-[62px] bg-white flex items-center border-b">
 				<p class="text-base Archivo text-[#25285F]">
 					<!-- Customer Success -->
-					{m.solutions_CustomerSuccess()}
+					{@html m.solutions_CustomerSuccess()}
 				</p>
 			</div>
 			<div class=" h-[62px] flex items-center border-b">
 				<p class="text-base Archivo text-[#25285F]">
 					<!-- Ongoing - Mentoring / Consulting (Package of hours) -->
-					{m.solutions_OngoingMentoringConsulting()}
+					{@html m.solutions_OngoingMentoringConsulting()}
 				</p>
 			</div>
 		</div>
@@ -136,7 +136,7 @@
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<p class="text-xl Archivo text-[#25285F]">
 					<!-- Adicional -->
-					{m.solutions_Additional()}
+					{@html m.solutions_Additional()}
 				</p>
 			</div>
 		</div>
@@ -206,8 +206,8 @@
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<p class="text-xl Archivo text-[#25285F]">
 					<!-- Adicional -->
-					<!-- {m.produtos_MyMenthorIs()} -->
-					{m.solutions_Additional()}
+					<!-- {@html m.produtos_MyMenthorIs()} -->
+					{@html m.solutions_Additional()}
 				</p>
 			</div>
 		</div>
@@ -277,7 +277,7 @@
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<p class="text-xl Archivo text-[#25285F]">
 					<!-- Adicional -->
-					{m.solutions_Additional()}
+					{@html m.solutions_Additional()}
 				</p>
 			</div>
 		</div>
@@ -347,7 +347,7 @@
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<p class="text-xl Archivo text-[#25285F]">
 					<!-- Adicional -->
-					{m.solutions_Additional()}
+					{@html m.solutions_Additional()}
 				</p>
 			</div>
 		</div>
@@ -356,10 +356,10 @@
 		<button class="Exo">
 			<a
 				class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
-				href="/products#platform"
+				href="/company/#contact"
 			>
 				<!-- Schedule a Demo -->
-				{m.footer_Contact_us()}
+				{@html m.footer_Contact_us()}
 			</a>
 		</button>
 	</div>

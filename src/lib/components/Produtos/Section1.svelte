@@ -17,7 +17,7 @@
 			<h1
 				class="Exo-Bold text-[#17193B] xl:text-4xl text-3xl font-bold relative max-sm:text-center"
 			>
-				{m.produtos_MyMenthorIs()}
+				{@html m.produtos_MyMenthorIs()}
 				<span
 					><img
 						src={linha_h_azul_4_svg}

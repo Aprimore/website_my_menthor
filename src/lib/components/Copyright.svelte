@@ -15,7 +15,7 @@
         "
 			>
 				<li class=" ">
-					<a href="/" class="">{m.footer_Copyright()}</a>
+					<a href="/" class="">{@html m.footer_Copyright()}</a>
 				</li>
 			</ul>
 
@@ -27,21 +27,21 @@
 					<a
 						href="/"
 						class="underline text-[#D4D4ED] hover:text-white"
-						style="min-width: 48px; min-height: 48px;">{m.footer_Terms()}</a
+						style="min-width: 48px; min-height: 48px;">{@html m.footer_Terms()}</a
 					>
 				</li>
 				<li>
 					<a
 						href="/"
 						class="underline text-[#D4D4ED] hover:text-white"
-						style="min-width: 48px; min-height: 48px;">{m.footer_Privacy()}</a
+						style="min-width: 48px; min-height: 48px;">{@html m.footer_Privacy()}</a
 					>
 				</li>
 				<li>
 					<a
 						href="/"
 						class=" underline text-[#D4D4ED] hover:text-white"
-						style="min-width: 48px; min-height: 48px;">{m.footer_Cookies()}</a
+						style="min-width: 48px; min-height: 48px;">{@html m.footer_Cookies()}</a
 					>
 				</li>
 			</ul>

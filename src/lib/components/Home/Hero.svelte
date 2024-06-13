@@ -13,15 +13,15 @@
 	<div class="mx-auto px-4 flex h-[510px] items-center relative">
 		<div class="mx-auto max-w-5xl text-center z-20">
 			<p class=" text-[#FCC614] text-lg Exo tracking-widest">
-				{m.homepage_header_business()}
+				{@html m.homepage_header_business()}
 			</p>
 
 			<h1 class="text-2xl sm:text-3xl text-white Exo-Bold yellow-underline">
-				{m.homepage_header_yourcompany()}
+				{@html m.homepage_header_yourcompany()}
 			</h1>
 
 			<p class="max-w-xl mt-10 sm:text-xl/relaxed mx-auto mb-8 Archivo text-[#D4D4ED]">
-				{m.homepage_header_webhave()}
+				{@html m.homepage_header_webhave()}
 			</p>
 
 			<button class="Exo">
@@ -29,7 +29,7 @@
 					class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto"
 					href="/company#contact"
 				>
-					{m.button_schedule_a_demo()}
+					{@html m.button_schedule_a_demo()}
 				</a>
 			</button>
 

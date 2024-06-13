@@ -3,7 +3,7 @@
 	import * as m from '$lib/paraglide/messages';
 </script>
 
-<section class="w-full items-center relative rounded-lg md:mt-20">
+<section class="w-full items-center relative rounded-lg">
 	<div class="mx-auto px-4 md:flex md:h-[330px] md:items-center relative">
 		<div class="md:w-1/2 relative z-10 flex justify-center">
 			<img
@@ -16,9 +16,9 @@
 			/>
 		</div>
 		<div class="md:w-1/2 relative z-20 space-y-6 md:max-w-screen-md flex flex-col justify-center">
-			<h1 class="text-[#FCC614] Exo-Semibold text-2xl">{m.homepage_section_5_Come()}</h1>
+			<h1 class="text-[#FCC614] Exo-Semibold text-2xl">{@html m.homepage_section_5_Come()}</h1>
 			<p class="text-[#F1F1F9] Exo-Semibold text-3xl font-bold">
-				{m.homepage_section_5_My_Menthor()}
+				{@html m.homepage_section_5_My_Menthor()}
 
 				<!-- <span class="text-[#FCC614]"> My Menthor </span> is the complete plataform to your company's
 				performance -->
@@ -31,7 +31,7 @@
 					aria-label="Learn More about the platform"
 					title="Learn more about the platform"
 				>
-					{m.button_learn_more()}
+					{@html m.button_learn_more()}
 				</a>
 			</button>
 		</div>

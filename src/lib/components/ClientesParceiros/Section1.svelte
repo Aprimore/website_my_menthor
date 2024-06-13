@@ -16,11 +16,11 @@
 					<h1
 						class="blue-underline xl:text-4xl text-3xl sm:text-5xl z-10 text-[#17193B] Exo-Bold max-sm:text-center max-w-fit"
 					>
-						{m.clientesP_PartnerProgram()}
+						{@html m.clientesP_PartnerProgram()}
 					</h1>
 					<p class="Archivo text-[#25285F] text-xl">
 						<!-- Register and discover the benefits of our partner programs programs and how we can work together to achieve exceptional results. -->
-						{m.clientesP_RegisterAndDiscover()}
+						{@html m.clientesP_RegisterAndDiscover()}
 					</p>
 					<div class="sm:space-x-5 sm:flex flex-row max-sm:space-y-3">
 						<button class="Exo max-sm:w-full">
@@ -29,7 +29,7 @@
 								href="/company#contact"
 							>
 								<!-- Become a Partner -->
-								{m.clientesP_PartnerProgram()}
+								{@html m.clientesP_PartnerProgram()}
 							</a>
 						</button>
 
@@ -38,7 +38,7 @@
 						>
 							<a class="Archivo" href="https://www.mmtrainingportal.com/">
 								<!-- Partner Portal  -->
-								{m.button_portal()}
+								{@html m.button_portal()}
 							</a>
 						</button>
 					</div>

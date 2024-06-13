@@ -6,10 +6,10 @@
 	class="flex flex-col items-center relative rounded-lg my-6 max-w-screen-2xl mx-auto max-md:p-2"
 >
 	<div class="p-6 rounded-lg text-center">
-		<h1 class="Exo xl:text-4xl text-3xl relative mx-auto">{m.homepage_section2_work()}</h1>
+		<h1 class="Exo xl:text-4xl text-3xl relative mx-auto">{@html m.homepage_section2_work()}</h1>
 
 		<h2 class="Exo-Bold xl:text-4xl text-3xl relative text-[#17193B] green-underline">
-			{m.homepage_section2_smarter()}
+			{@html m.homepage_section2_smarter()}
 		</h2>
 	</div>
 	<div class="w-full flex max-sm:flex-col lg:justify-end sm:space-x-3 md:space-x-6 max-sm:mt-3">
@@ -18,7 +18,7 @@
 		>
 			<div class="flex flex-col rounded-lg xl:px-20 xl:py-16 lg:px-10 lg:py-8 p-5">
 				<h3 class="title-hi Exo-Semibold text-2xl relative text-[#17193B]">
-					{m.homepage_section2_holistic()}
+					{@html m.homepage_section2_holistic()}
 				</h3>
 
 				<p class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
@@ -31,11 +31,11 @@
 		>
 			<div class="flex flex-col rounded-lg xl:px-20 xl:py-16 lg:px-10 lg:py-8 p-5">
 				<h3 class="title-od Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
-					{m.homepage_section2_Organizational()}
+					{@html m.homepage_section2_Organizational()}
 				</h3>
 
 				<p class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
-					{m.homepage_section2_Rethink()}
+					{@html m.homepage_section2_Rethink()}
 				</p>
 			</div>
 		</div>
@@ -46,11 +46,11 @@
 		>
 			<div class="flex flex-col rounded-lg xl:px-20 xl:py-16 lg:px-10 lg:py-8 p-5">
 				<h3 class="title-es Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
-					{m.homepage_section2_Evolution()}
+					{@html m.homepage_section2_Evolution()}
 				</h3>
 
 				<p class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
-					{m.homepage_section2_Transform()}
+					{@html m.homepage_section2_Transform()}
 				</p>
 			</div>
 		</div>
@@ -59,11 +59,11 @@
 		>
 			<div class="flex flex-col rounded-lg xl:px-20 xl:py-16 lg:px-10 lg:py-8 p-5">
 				<h3 class="title-oa Exo-Semibold text-2xl relative max-w-sm text-[#17193B]">
-					{m.homepage_section2_Organizational_alignment()}
+					{@html m.homepage_section2_Organizational_alignment()}
 				</h3>
 
 				<p class=" mt-5 mb-2 Archivo text-base text-[#25285F]">
-					{m.homepage_section2_Ensure()}
+					{@html m.homepage_section2_Ensure()}
 				</p>
 			</div>
 		</div>
@@ -74,7 +74,7 @@
 				class="btn-demo bg-[#8abb3f] block w-full rounded-xl px-10 py-4 text-lg text-[#17193B] focus:ring sm:w-auto z-10 relative"
 				href="/company#contact"
 			>
-				{m.button_schedule_a_demo()}
+				{@html m.button_schedule_a_demo()}
 			</a>
 		</button>
 	</div>

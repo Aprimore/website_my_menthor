@@ -25,7 +25,7 @@
 		<div class="lg:w-1/2 flex flex-col justify-center">
 			<div class="">
 				<h1 class="xl:text-4xl text-3xl md:text-5xl relative Exo-Bold text-[#17193B] text-center">
-					{m.solutions_PortfolioOfServices()}
+					{@html m.solutions_PortfolioOfServices()}
 					<img
 						src={linha_h_azul_3_svg}
 						class="max-md:max-w-[210px] mx-auto"
@@ -69,7 +69,7 @@
 					offering step-by-step implementation journey, guidance to achieve results, through
 					knowledge base, targeted training and regular follow-up. Our aim is to ensure that each
 					client achieves their objectives and extracts maximum value from our platform. -->
-					{m.solutions_WeAimForCustomer()}
+					{@html m.solutions_WeAimForCustomer()}
 				</p>
 			</div>
 			<div class="px- lg:px-10">

@@ -25,11 +25,11 @@
 				</p>
 				<h2 class="Exo-Semibold text-3xl text-[#EB642A]">
 					<!-- STARTER -->
-					{m.solutions_STARTER()}
+					{@html m.solutions_STARTER()}
 				</h2>
 				<p class="Archivo text-[#25285F] max-w-[14rem] relative text-center">
 					<!-- Ideal for those who want to start with a small team and then expand their use. -->
-					{m.solutions_IdealForThose()}
+					{@html m.solutions_IdealForThose()}
 				</p>
 				<span class="max-w-[15rem] absolute bottom-6">
 					<img
@@ -54,11 +54,11 @@
 				</p>
 				<h2 class="Exo-Semibold text-3xl text-[#8ABB3F]">
 					<!-- BASIC -->
-					{m.solutions_BASIC()}
+					{@html m.solutions_BASIC()}
 				</h2>
 				<p class="Archivo text-[#25285F] max-w-[14rem] relative text-center">
 					<!-- The perfect choice for teams with a quick start. -->
-					{m.solutions_ThePerfectChoice()}
+					{@html m.solutions_ThePerfectChoice()}
 				</p>
 				<span class="max-w-[15rem] absolute bottom-6">
 					<img
@@ -83,11 +83,11 @@
 				</p>
 				<h2 class="Exo-Semibold text-3xl text-[#454AB0]">
 					<!-- PREMIUM -->
-					{m.solutions_PREMIUM()}
+					{@html m.solutions_PREMIUM()}
 				</h2>
 				<p class="Archivo text-[#25285F] max-w-[14rem] relative text-center">
 					<!-- For companies that prefer an integrated start. -->
-					{m.solutions_ForCompaniesThatPrefer()}
+					{@html m.solutions_ForCompaniesThatPrefer()}
 				</p>
 				<span class="max-w-[15rem] absolute bottom-6">
 					<img
@@ -112,11 +112,11 @@
 				</p>
 				<h2 class="Exo-Semibold text-3xl text-[#FCC614]">
 					<!-- ENTERPRISE -->
-					{m.solutions_ENTERPRISE()}
+					{@html m.solutions_ENTERPRISE()}
 				</h2>
 				<p class="Archivo text-[#25285F] max-w-[14rem] relative text-center">
 					<!-- Can be customized according to customer's needs. -->
-					{m.solutions_CanBeCustomizedAccordingToCustomers()}
+					{@html m.solutions_CanBeCustomizedAccordingToCustomers()}
 				</p>
 				<span class="max-w-[15rem] absolute bottom-6 max-sm:hidden">
 					<img

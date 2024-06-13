@@ -42,8 +42,8 @@
 					<p class="Archivo text-[#25285F] text-lg">
 						<!-- Fill in the form with your details. <br />
 						The My Menthor team will get in touch as soon as possible! -->
-						{m.company_FillInTheForm()}
-						{m.company_FillInTheForm_2()}
+						{@html m.company_FillInTheForm()}
+						{@html m.company_FillInTheForm_2()}
 					</p>
 				</div>
 

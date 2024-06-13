@@ -24,53 +24,56 @@
 	];
 </script>
 
-<section class="w-full items-center relative rounded-lg sm:my-20 max-md:p-2 pb-8">
-	<div class="flex max-lg:flex-col max-w-screen-2xl mx-auto xl:pb-10 relative">
+<section class="w-full items-center relative rounded-lg sm:mt-16 max-md:p-2">
+	<div class="flex max-lg:flex-col max-w-[1400px] mx-auto relative">
 		<div class="lg:w-2/3 relative">
 			<div class="lg:ml-3 lg:pt-3">
 				<h2
 					class="max-md:text-center md:ml-10 md:max-w-lg xl:text-4xl text-3xl relative Exo-Bold text-[#17193B] blue-underline"
 				>
-					{m.homepage_section4_Organizing()}
-					{m.homepage_section4_simpler()}
+					{@html m.homepage_section4_Organizing()}
+					{@html m.homepage_section4_simpler()}
 				</h2>
 			</div>
-			<div class="lg:ml-6 xl:absolute lg:mt-36 relative">
-				<div class="max-sm:mt-6 px-auto p-5 max-md:p-2 relative space-y-1 md:max-w-screen-lg">
+			<div class="lg:ml-6 xl:absolute mt-10 relative">
+				<div
+					class="max-sm:mt-6 px-auto p-5 max-md:p-2 relative space-y-1 md:max-w-screen-md flex flex-col
+					"
+				>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 max-w-max"
 					>
 						<p class="Exo-Semibold check xl:text-xl">
-							{m.homepage_section4_Profits()}
+							{@html m.homepage_section4_Profits()}
 						</p>
 					</div>
 					<!-- <div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 max-w-max "
 					>
 						<p class="Exo-Semibold check xl:text-xl">
 							.
 						</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 max-w-max "
 					>
 						<p class="Exo-Semibold check xl:text-xl">.</p>
 					</div> -->
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 max-w-max"
 					>
-						<p class="Exo-Semibold check xl:text-xl">{m.homepage_section4_Process()}</p>
+						<p class="Exo-Semibold check xl:text-xl">{@html m.homepage_section4_Process()}</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 max-w-max"
 					>
-						<p class="Exo-Semibold check xl:text-xl">{m.homepage_section4_Maturity()}</p>
+						<p class="Exo-Semibold check xl:text-xl">{@html m.homepage_section4_Maturity()}</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 md:min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 max-w-max"
 					>
 						<p class="Exo-Semibold check xl:text-xl">
-							{m.homepage_section4_Sustainability()}
+							{@html m.homepage_section4_Sustainability()}
 						</p>
 					</div>
 				</div>

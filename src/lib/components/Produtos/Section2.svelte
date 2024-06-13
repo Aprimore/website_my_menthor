@@ -33,9 +33,9 @@
 				class="Exo-Bold text-[#454AB0] xl:text-4xl text-3xl lg:text-[2.5rem] font-bold relative lg:ml-20 mt-12 max-sm:text-center max-w-lg leading-normal text-center"
 			>
 				<span class="font-normal text-[#17193B]">
-					{m.produtos_WhatIs()}
+					{@html m.produtos_WhatIs()}
 				</span>
-				{m.produtos_BusinessArchitectureSoftware()}
+				{@html m.produtos_BusinessArchitectureSoftware()}
 				<!-- What is <span class="text-[#454AB0]">Business <br /> Architecture Software?</span> -->
 			</h1>
 

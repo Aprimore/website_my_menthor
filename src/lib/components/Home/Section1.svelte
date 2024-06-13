@@ -71,7 +71,7 @@
 		>
 			<div class="text-[#17193B] rounded-lg max-md:p-5 p-12 xl:p-16 w-full" id="products-about">
 				<h2 class="max-sm:text-center Exo-Bold xl:text-4xl text-3xl relative blue-underline w-fit">
-					{m.homepage_section1_title()}
+					{@html m.homepage_section1_title()}
 				</h2>
 
 				<p class="mt-10 mb-2 text-[#25285F] Archivo text-lg leading-snug">
@@ -86,7 +86,7 @@
 						aria-label="Learn more about the platform"
 						title="Learn more about the platform"
 					>
-						{m.button_learn_more()}
+						{@html m.button_learn_more()}
 					</a>
 				</div>
 			</div>

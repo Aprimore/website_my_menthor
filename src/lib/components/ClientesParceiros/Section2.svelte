@@ -64,7 +64,7 @@
 				</h1>
 				<p class="Archivo text-[#25285F] text-lg p-3">
 					<!-- We are committed to the continued success of our clients, cultivating long-term relationships with a focus on results. -->
-					{m.clientesP_WeAreCommittedToTheContinuedSuccess()}
+					{@html m.clientesP_WeAreCommittedToTheContinuedSuccess()}
 				</p>
 			</div>
 		</div>

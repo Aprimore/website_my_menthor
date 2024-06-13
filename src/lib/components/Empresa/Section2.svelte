@@ -46,19 +46,19 @@
 					class="green-underline Exo xl:text-4xl text-3xl sm:text-5xl z-10 relative text-[#17193B] Exo-Bold max-lg:text-center w-fit"
 				>
 					<!-- Purpose -->
-					{m.company_Purpose()}
+					{@html m.company_Purpose()}
 				</h1>
 
 				<p class="Archivo text-[#25285F] text-lg">
 					<!-- Our purpose is to improve management capacity and boost corporate performance by
 					integrating process-oriented organizational components, enhancing strategic execution and
 					maximizing results. -->
-					{m.company_OurPurposeIsToImprove()}
+					{@html m.company_OurPurposeIsToImprove()}
 				</p>
 				<p class="Archivo text-[#25285F] text-lg">
 					<!-- We provide software, train and equip clients to transform and properly manage the
 					business, supporting cultural change and highlighting performance gains and results. -->
-					{m.company_WeProvideSoftware()}
+					<!-- {@html m.company_WeProvideSoftware()} -->
 				</p>
 			</div>
 		</div>

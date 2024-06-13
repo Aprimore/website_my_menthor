@@ -45,7 +45,7 @@
 									class="btn-agendar w-full bg-[#8abb3f] text-[#17193B] py-4 px-10 rounded-lg relative transition-transform transform hover:-translate-y-1"
 									href="/company#contact"
 								>
-									{m.button_schedule_a_demo()}
+									{@html m.button_schedule_a_demo()}
 								</a>
 							</button>
 						</div>
@@ -54,14 +54,15 @@
 					<div class="footer2 col-span-1 max-md:mt-10">
 						<div class=" mb-10">
 							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
-								{m.footer_Products()}
+								{@html m.footer_Products()}
 							</p>
 							<ul class="space-y-3">
 								<li>
 									<a
 										href="/products#platform"
 										title="Learn more about our company"
-										class="text-[#D4D4ED] text-sm hover:text-white">{m.footer_About_platform()}</a
+										class="text-[#D4D4ED] text-sm hover:text-white"
+										>{@html m.footer_About_platform()}</a
 									>
 								</li>
 								<li>
@@ -70,30 +71,30 @@
 										title="Learn more about our company"
 										class="text-[#D4D4ED] text-sm hover:text-white"
 									>
-										{m.footer_Target_audience()}
+										{@html m.footer_Target_audience()}
 									</a>
 								</li>
 							</ul>
 
 							<p class="text-[#F1F1F9] text-lg Exo-Semibold my-5">
-								{m.footer_Solutions()}
+								{@html m.footer_Solutions()}
 							</p>
 							<ul class="space-y-3">
 								<li>
 									<a href="/solutions#modules" class="text-[#D4D4ED] text-sm hover:text-white"
-										>{m.footer_The_Platform()}</a
+										>{@html m.footer_The_Platform()}</a
 									>
 								</li>
 								<li>
 									<a
 										href="/solutions#portfolio-services"
 										class="text-[#D4D4ED] text-sm hover:text-white"
-										>{m.footer_Service_portfolio()}</a
+										>{@html m.footer_Service_portfolio()}</a
 									>
 								</li>
 								<li>
 									<a href="/solutions#packages" class="text-[#D4D4ED] text-sm hover:text-white"
-										>{m.footer_Packages()}</a
+										>{@html m.footer_Packages()}</a
 									>
 								</li>
 							</ul>
@@ -102,35 +103,37 @@
 					<div class="footer3 col-span-1 max-md:mt-10">
 						<div class=" mb-10">
 							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
-								{m.footer_Stakeholders()}
+								{@html m.footer_Stakeholders()}
 							</p>
 							<ul class="space-y-3">
-								<li>
+								<!-- <li>
 									<a
-										href="/customers_and_partners#clients"
+										href="/customers_and_partners#support"
 										class="text-[#D4D4ED] text-sm hover:text-white"
 									>
-										{m.footer_Customers()}
+										{@html m.footer_Customers()}
 									</a>
-								</li>
+								</li> -->
 								<li>
 									<a
 										href="/customers_and_partners#cases"
 										class="text-[#D4D4ED] text-sm hover:text-white"
 									>
-										{m.footer_Success_stories()}
+										{@html m.footer_Success_stories()}
 									</a>
 								</li>
 								<li>
 									<a
 										href="/customers_and_partners#support"
-										class="text-[#D4D4ED] text-sm hover:text-white">{m.footer_Customer_support()}</a
+										class="text-[#D4D4ED] text-sm hover:text-white"
+										>{@html m.footer_Customer_support()}</a
 									>
 								</li>
 								<li>
 									<a
-										href="/customers_and_partners#support"
-										class="text-[#D4D4ED] text-sm hover:text-white">{m.footer_Partner_Program()}</a
+										href="/customers_and_partners#clients"
+										class="text-[#D4D4ED] text-sm hover:text-white"
+										>{@html m.footer_Partner_Program()}</a
 									>
 								</li>
 							</ul>
@@ -141,21 +144,21 @@
 						<div class=" mb-10">
 							<ul class="space-y-3">
 								<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
-									{m.footer_Resources()}
+									{@html m.footer_Resources()}
 								</p>
 								<li>
 									<a href="/resources#resources" class="text-[#D4D4ED] text-sm hover:text-white">
-										{m.footer_Blog()}
+										{@html m.footer_Blog()}
 									</a>
 								</li>
 								<li>
 									<a href="/resources#resources" class="text-[#D4D4ED] text-sm hover:text-white">
-										{m.footer_Events_Webinars()}
+										{@html m.footer_Events_Webinars()}
 									</a>
 								</li>
 								<li>
 									<a href="/resources#resources" class="text-[#D4D4ED] text-sm hover:text-white">
-										{m.footer_My_Menthor_Academy()}
+										{@html m.footer_My_Menthor_Academy()}
 									</a>
 								</li>
 							</ul>
@@ -165,22 +168,22 @@
 					<div class="footer5 col-span-1 relative">
 						<div class=" mb-10">
 							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
-								{m.footer_Our_Company()}
+								{@html m.footer_Our_Company()}
 							</p>
 							<ul class="space-y-3">
 								<li>
 									<a href="/company#about" class="text-[#D4D4ED] text-sm hover:text-white"
-										>{m.footer_About_us()}</a
+										>{@html m.footer_About_us()}</a
 									>
 								</li>
 								<li>
 									<a href="/company#purpose" class="text-[#D4D4ED] text-sm hover:text-white"
-										>My {m.footer_Purpose()}</a
+										>{@html m.footer_Purpose()}</a
 									>
 								</li>
 								<li>
 									<a href="/company#contact" class="text-[#D4D4ED] text-sm hover:text-white"
-										>{m.footer_Contact_us()}</a
+										>{@html m.footer_Contact_us()}</a
 									>
 								</li>
 							</ul>

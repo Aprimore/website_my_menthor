@@ -28,7 +28,7 @@
 				<h2
 					class="xl:text-4xl sm:xl:text-4xl text-3xl relative Exo-Bold text-[#17193B] blue-underline"
 				>
-					{m.homepage_section3_Breaking()}
+					{@html m.homepage_section3_Breaking()}
 				</h2>
 
 				<p class="mt-14 mb-2 Archivo text-lg text-[#25285F]">
@@ -66,7 +66,7 @@
 					aria-label="Learn More about Products"
 					title="Learn More about Products"
 				>
-					{m.button_learn_more()}
+					{@html m.button_learn_more()}
 				</a>
 			</button>
 		</div>

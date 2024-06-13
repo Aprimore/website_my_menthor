@@ -103,7 +103,7 @@
 							<h2 class="title-sd Exo text-2xl max-w-sm text-transparent">.</h2>
 
 							<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
-								{@html m.produtos_EmphasizesBusinessProcessManagement()}
+								{@html m.produtos_ItContainsItsOwnEmbeddedMethodology()}
 								<!-- Emphasizes BPM as a Management Model, facilitating the structuring, instrumentation and implementation of the topic, highlighting the results of the various process mapping and improvement initiatives. -->
 							</p>
 						</div>

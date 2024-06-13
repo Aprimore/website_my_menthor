@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
@@ -18,60 +17,6 @@
 	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
 	import '../app.postcss';
 	import og_image from '../lib/assets/images/og_image.webp';
-
-	// Initialize isMobile
-	let isMobile = false;
-
-	// Function to load Google Tag Manager script
-	function loadGTM() {
-		return new Promise((resolve, reject) => {
-			(function (w, d, s, l, i) {
-				w[l] = w[l] || [];
-				w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s),
-					dl = l != 'dataLayer' ? '&l=' + l : '';
-				j.async = true;
-				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-				j.onload = resolve;
-				j.onerror = reject;
-				f.parentNode.insertBefore(j, f);
-			})(window, document, 'script', 'dataLayer', 'GTM-WSRLN9FV');
-		});
-	}
-
-	// Function to initialize ParaglideJS
-	function initializeParaglide() {
-		return new Promise((resolve) => {
-			const script = document.createElement('script');
-			script.type = 'text/partytown';
-			script.src = '/src/lib/i18n.js';
-			script.async = true; // Load asynchronously
-			script.onload = () => {
-				ParaglideJS.init({ i18n });
-				resolve();
-			};
-			document.body.appendChild(script);
-		});
-	}
-
-	onMount(() => {
-		// Check if the code is running in the browser
-		if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
-			// Detect if the device is mobile
-			isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-			// Run all async tasks in parallel
-			Promise.all([
-				loadGTM(),
-				isMobile ? Promise.resolve() : initializeParaglide() // Skip ParaglideJS on mobile
-			]).then(() => {
-				console.log('Scripts loaded and initializations complete');
-			}).catch((error) => {
-				console.error('An error occurred while loading scripts', error);
-			});
-		}
-	});
 </script>
 
 <svelte:head>
@@ -95,9 +40,8 @@
 	<script
 		type="text/partytown"
 		src="https://www.googletagmanager.com/gtag/js?id=G-ZX7H2KPXNZ"
-		async
 	></script>
-	<script type="text/partytown" async>
+	<script type="text/partytown">
 		window.dataLayer = window.dataLayer || [];
 		window.gtag = function () {
 			dataLayer.push(arguments);
@@ -107,9 +51,9 @@
 	</script>
 
 	<!-- Partytown Integration for ParaglideJS -->
-	{@html '<script async>' + partytownSnippet() + '</script>'}
-	<script type="text/partytown" src="/src/lib/i18n.js" async></script>
-	<script type="text/partytown" async>
+	{@html '<script>' + partytownSnippet() + '</script>'}
+	<script type="text/partytown" src="/src/lib/i18n.js"></script>
+	<script type="text/partytown">
 		// Initialize ParaglideJS
 		const initializeParaglideJS = () => {
 			ParaglideJS.init({ i18n });
@@ -137,7 +81,7 @@
 </svelte:head>
 
 <main class="relative">
-	{#if !isMobile || ParaglideJS}
+	{#if ParaglideJS}
 		<ParaglideJS {i18n}>
 			<Navbar />
 			<Navbar2 />

@@ -8,7 +8,7 @@
 		<div class="p-6 rounded-lg mt-2 text-center max-md:space-y-2">
 			<h1 class="xl:text-4xl text-3xl sm:text-5xl relative Exo-Bold text-[#17193B] sm:text-nowrap">
 				<!-- Platform Modules -->
-				{m.solutions_PlatformModules()}
+				{@html m.solutions_PlatformModules()}
 			</h1>
 			<img
 				src={linha_h_verde_3_svg}
@@ -29,13 +29,13 @@
 						class=" title-om Exo-Semibold text-2xl relative max-w-sm text-[#17193B] sm:text-nowrap"
 					>
 						<!-- Organizational Maturity -->
-						{m.solutions_OrganizationalMaturity()}
+						{@html m.solutions_OrganizationalMaturity()}
 					</h2>
 
 					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 						<!-- My Menthor provides functionality for and helps identify the best approach and
 						implementation strategy. -->
-						{m.solutions_MyMenthorProvidesFunctionality()}
+						{@html m.solutions_MyMenthorProvidesFunctionality()}
 					</p>
 				</div>
 			</div>
@@ -47,13 +47,13 @@
 						class="title-od Exo-Semibold text-2xl relative max-w-sm text-[#17193B] sm:text-nowrap"
 					>
 						<!-- Organizational Design -->
-						{m.solutions_OrganizationalDesign()}
+						{@html m.solutions_OrganizationalDesign()}
 					</h2>
 
 					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 						<!-- Facilitates the rethinking of the main aspects of business identity, future vision and
 						strategy, to guide the other organizational layers. -->
-						{m.solutions_FacilitatesRethinkingOfMainAspects()}
+						{@html m.solutions_FacilitatesRethinkingOfMainAspects()}
 					</p>
 				</div>
 			</div>
@@ -68,13 +68,13 @@
 						class="title-sd Exo-Semibold text-2xl relative max-w-sm text-[#17193B] sm:text-nowrap"
 					>
 						<!-- Strategy deployment -->
-						{m.solutions_StrategyDeployment()}
+						{@html m.solutions_StrategyDeployment()}
 					</h2>
 
 					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 						<!-- Guides the deployment of the strategy for the processes of the value chain, taking into
 						account the synergy with the functional vision. -->
-						{m.solutions_GuidesTheDeployment()}
+						{@html m.solutions_GuidesTheDeployment()}
 					</p>
 				</div>
 			</div>
@@ -86,12 +86,12 @@
 						class="title-ms Exo-Semibold text-2xl relative max-w-sm text-[#17193B] sm:text-nowrap"
 					>
 						<!-- Measurement System -->
-						{m.solutions_MeasurementSystem()}
+						{@html m.solutions_MeasurementSystem()}
 					</h2>
 
 					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 						<!-- Facilitates the mapping of strategy indicators, processes and projects, guiding them in an end-to-end vision. -->
-						{m.solutions_FacilitatesTheMapping()}
+						{@html m.solutions_FacilitatesTheMapping()}
 					</p>
 				</div>
 			</div>
@@ -106,14 +106,14 @@
 						class="title-pm Exo-Semibold text-2xl relative max-w-sm text-[#17193B] sm:text-nowrap"
 					>
 						<!-- Process Management -->
-						{m.solutions_ProcessManagement_1()}
+						{@html m.solutions_ProcessManagement_1()}
 					</h2>
 
 					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 						<!-- Supports the complete cycle of implementation, support and governance of Business
 						Process Management, from maturity assessment, value chain design design, process
 						prioritization, transformation or improvement and architectural governance. -->
-						{m.solutions_SupportsTheCompleteCycle()}
+						{@html m.solutions_SupportsTheCompleteCycle()}
 					</p>
 				</div>
 			</div>
@@ -125,12 +125,12 @@
 						class="title-ac Exo-Semibold text-2xl relative max-w-sm text-[#17193B] sm:text-nowrap"
 					>
 						<!-- Architecture components -->
-						{m.solutions_ArchitectureComponents()}
+						{@html m.solutions_ArchitectureComponents()}
 					</h2>
 
 					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 						<!-- Facilitates synchronization between components (Organizational Structure, Risks and Controls, People, Technology and other corporate capabilities). -->
-						{m.solutions_FacilitatesSynchronizationBetweenComponents()}
+						{@html m.solutions_FacilitatesSynchronizationBetweenComponents()}
 					</p>
 				</div>
 			</div>
@@ -145,12 +145,12 @@
 						class="title-pm2 Exo-Semibold text-2xl relative max-w-sm text-[#17193B] sm:text-nowrap"
 					>
 						<!-- Process Management -->
-						{m.solutions_ProcessManagement_2()}
+						{@html m.solutions_ProcessManagement_2()}
 					</h2>
 
 					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 						<!-- Facilitates AS IS and TO BE mapping, analysis of improvements and routine management. -->
-						{m.solutions_FacilitatesASISAndTOBEMapping()}
+						{@html m.solutions_FacilitatesASISAndTOBEMapping()}
 					</p>
 				</div>
 			</div>
@@ -162,12 +162,12 @@
 						class="title-cm Exo-Semibold text-2xl relative max-w-sm text-[#17193B] sm:text-nowrap"
 					>
 						<!-- Change Management -->
-						{m.solutions_ChangeManagement()}
+						{@html m.solutions_ChangeManagement()}
 					</h2>
 
 					<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 						<!-- Facilitating changes in organizational initiatives, projects and day-to-day changes. -->
-						{m.solutions_FacilitatingChangesIn()}
+						{@html m.solutions_FacilitatingChangesIn()}
 					</p>
 				</div>
 			</div>

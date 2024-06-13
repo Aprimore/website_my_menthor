@@ -19,7 +19,7 @@
 					class="yellow-underline Exo mx-auto xl:text-4xl text-3xl sm:text-5xl max-sm:text-center z-10 relative text-[#F1F1F9] Exo-Bold max-w-max mb-24"
 				>
 					<!-- Partner program -->
-					{m.clientesP_SuccessHistories()}
+					{@html m.clientesP_SuccessHistories()}
 					<!-- <span
 						><img
 							src={linha_h_amarela_svg}
@@ -49,15 +49,15 @@
 					>
 						<h2 class="text-[#FCC614] Exo-Bold max-lg:text-center xl:text-4xl text-3xl max-md:mt-7">
 							<!-- Case -->
-							{m.clientesP_Case()}
+							{@html m.clientesP_Case()}
 						</h2>
 						<p class="text-[#D4D4ED] Archivo lg:max-w-screen-md text-xl md:px-1">
 							<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat ligula et mollis fringilla. Nunc mollis, odio eget consectetur rhoncus, nisl mauris blandit ante, non pretium turpis ligula a magna. Nam faucibus volutpat orci, at sagittis lacus dignissim sed. Curabitur id ex quis est vulputate vestibulum. -->
-							{m.clientesP_LoremIpsumDolorSitAmet()}
+							{@html m.clientesP_LoremIpsumDolorSitAmet()}
 						</p>
 						<p class="text-[#D4D4ED] Archivo lg:max-w-screen-md text-xl md:px-1">
 							<!-- Donec sodales dui sapien, ut euismod felis imperdiet ac. Vestibulum nulla ipsum, tincidunt eu porttitor aliquam, malesuada eget leo. Quisque sed quam ut est finibus maximus non quis elit. Fusce et luctus enim, ac gravida sem. Donec interdum lectus tortor, in ullamcorper lacus rhoncus sit amet. -->
-							{m.clientesP_DonecSodalesDuiSapien()}
+							{@html m.clientesP_DonecSodalesDuiSapien()}
 						</p>
 					</div>
 				</div>
@@ -81,15 +81,15 @@
 					>
 						<h2 class="text-[#FCC614] Exo-Bold max-lg:text-center xl:text-4xl text-3xl max-md:mt-7">
 							<!-- Case -->
-							{m.clientesP_Case()}
+							{@html m.clientesP_Case()}
 						</h2>
 						<p class="text-[#D4D4ED] Archivo lg:max-w-screen-md text-xl md:px-1">
 							<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat ligula et mollis fringilla. Nunc mollis, odio eget consectetur rhoncus, nisl mauris blandit ante, non pretium turpis ligula a magna. Nam faucibus volutpat orci, at sagittis lacus dignissim sed. Curabitur id ex quis est vulputate vestibulum. -->
-							{m.clientesP_LoremIpsumDolorSitAmet()}
+							{@html m.clientesP_LoremIpsumDolorSitAmet()}
 						</p>
 						<p class="text-[#D4D4ED] Archivo lg:max-w-screen-md text-xl md:px-1">
 							<!-- Donec sodales dui sapien, ut euismod felis imperdiet ac. Vestibulum nulla ipsum, tincidunt eu porttitor aliquam, malesuada eget leo. Quisque sed quam ut est finibus maximus non quis elit. Fusce et luctus enim, ac gravida sem. Donec interdum lectus tortor, in ullamcorper lacus rhoncus sit amet. -->
-							{m.clientesP_DonecSodalesDuiSapien()}
+							{@html m.clientesP_DonecSodalesDuiSapien()}
 						</p>
 					</div>
 				</div>
@@ -113,15 +113,15 @@
 					>
 						<h2 class="text-[#FCC614] Exo-Bold max-lg:text-center xl:text-4xl text-3xl max-md:mt-7">
 							<!-- Case -->
-							{m.clientesP_Case()}
+							{@html m.clientesP_Case()}
 						</h2>
 						<p class="text-[#D4D4ED] Archivo lg:max-w-screen-md text-xl md:px-1">
 							<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat ligula et mollis fringilla. Nunc mollis, odio eget consectetur rhoncus, nisl mauris blandit ante, non pretium turpis ligula a magna. Nam faucibus volutpat orci, at sagittis lacus dignissim sed. Curabitur id ex quis est vulputate vestibulum. -->
-							{m.clientesP_LoremIpsumDolorSitAmet()}
+							{@html m.clientesP_LoremIpsumDolorSitAmet()}
 						</p>
 						<p class="text-[#D4D4ED] Archivo lg:max-w-screen-md text-xl md:px-1">
 							<!-- Donec sodales dui sapien, ut euismod felis imperdiet ac. Vestibulum nulla ipsum, tincidunt eu porttitor aliquam, malesuada eget leo. Quisque sed quam ut est finibus maximus non quis elit. Fusce et luctus enim, ac gravida sem. Donec interdum lectus tortor, in ullamcorper lacus rhoncus sit amet. -->
-							{m.clientesP_DonecSodalesDuiSapien()}
+							{@html m.clientesP_DonecSodalesDuiSapien()}
 						</p>
 					</div>
 				</div>

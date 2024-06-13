@@ -154,7 +154,7 @@
 			>
 				<option selected value="-None-">-None-</option>
 				<!-- <option value="" disabled selected class="Exo-Semibold text-md text-gray-500"
-				>{m.form_selectPlaceholder()}</option
+				>{ m.form_selectPlaceholder()}</option
 			> -->
 				<option value="Request a Demo" class="Exo-Semibold text-md"
 					>{m.form_requestAdemo()}
@@ -264,7 +264,7 @@
 				type="reset"
 				name="reset"
 				class="btn-demo block flex-1 rounded-xl p-3 text-xl font-medium text-[#17193B] bg-[#ffffff] hover:bg-gray-100 focus:ring sm:w-auto z-10 relative Archivo"
-				>{m.zoho_btn_clear()}</button
+				>{ m.zoho_btn_clear()}</button
 			> -->
 		</div>
 		<!-- <script
