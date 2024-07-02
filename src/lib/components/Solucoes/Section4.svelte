@@ -115,13 +115,13 @@
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
-				<img
+				<!-- <img
 					src={checkmark_2_svg}
 					alt="Checkmark Icon"
 					loading="lazy"
 					decoding="sync"
 					fetchpriority="low"
-				/>
+				/> -->
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->
@@ -185,13 +185,13 @@
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
-				<img
+				<!-- <img
 					src={checkmark_2_svg}
 					alt="Checkmark Icon"
 					loading="lazy"
 					decoding="sync"
 					fetchpriority="low"
-				/>
+				/> -->
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->

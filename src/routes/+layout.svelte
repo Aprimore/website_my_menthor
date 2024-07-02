@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
+	import CookieConsent from '$lib/components/CookieConsent.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Navbar2 from '$lib/components/Navbar2.svelte';
@@ -12,10 +12,8 @@
 		SITE_TITLE,
 		SITE_URL
 	} from '$lib/siteConfig';
-	import { partytownSnippet } from '@builder.io/partytown/integration';
-	import '@fontsource-variable/archivo';
-	import '@fontsource-variable/exo';
 	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
+	import { onMount } from 'svelte';
 	import '../app.postcss';
 	import og_image from '../lib/assets/images/og_image.webp';
 
@@ -63,61 +61,29 @@
 
 			// Run all async tasks in parallel
 			Promise.all([
-				loadGTM(),
 				isMobile ? Promise.resolve() : initializeParaglide() // Skip ParaglideJS on mobile
-			]).then(() => {
-				console.log('Scripts loaded and initializations complete');
-			}).catch((error) => {
-				console.error('An error occurred while loading scripts', error);
-			});
+			])
+				.then(() => {
+					console.log('Non-essential scripts loaded');
+				})
+				.catch((error) => {
+					console.error('An error occurred while loading non-essential scripts', error);
+				});
 		}
 	});
+
+	// Handling cookie consent
+	let cookieConsentAccepted = false;
+
+	function handleCookieConsent() {
+		cookieConsentAccepted = true;
+		// Load essential scripts after consent
+		loadGTM(); // Reload GTM scripts after consent
+		initializeParaglide(); // Initialize ParaglideJS after consent
+	}
 </script>
 
 <svelte:head>
-	<!-- Google Tag Manager -->
-	<script>
-		(function (w, d, s, l, i) {
-			w[l] = w[l] || [];
-			w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-			var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s),
-				dl = l != 'dataLayer' ? '&l=' + l : '';
-			j.async = true;
-			j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-			f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-WSRLN9FV');
-		partytown = {
-			forward: ['dataLayer.push', 'gtag']
-		};
-	</script>
-
-	<script
-		type="text/partytown"
-		src="https://www.googletagmanager.com/gtag/js?id=G-ZX7H2KPXNZ"
-		async
-	></script>
-	<script type="text/partytown" async>
-		window.dataLayer = window.dataLayer || [];
-		window.gtag = function () {
-			dataLayer.push(arguments);
-		};
-		gtag('js', new Date());
-		gtag('config', 'G-ZX7H2KPXNZ');
-	</script>
-
-	<!-- Partytown Integration for ParaglideJS -->
-	{@html '<script async>' + partytownSnippet() + '</script>'}
-	<script type="text/partytown" src="/src/lib/i18n.js" async></script>
-	<script type="text/partytown" async>
-		// Initialize ParaglideJS
-		const initializeParaglideJS = () => {
-			ParaglideJS.init({ i18n });
-		};
-		// Run initialization
-		initializeParaglideJS();
-	</script>
-
 	<title>{$page.data.post?.title || 'My Menthor | Home'}</title>
 	{#if $page.path && $page.path !== '/'}
 		<link rel="canonical" href={SITE_URL + $page.path} />
@@ -137,7 +103,7 @@
 </svelte:head>
 
 <main class="relative">
-	{#if !isMobile || ParaglideJS}
+	{#if ParaglideJS}
 		<ParaglideJS {i18n}>
 			<Navbar />
 			<Navbar2 />
@@ -147,6 +113,7 @@
 	{:else}
 		<div>Loading...</div>
 	{/if}
+	<CookieConsent bind:accepted={cookieConsentAccepted} on:accept={handleCookieConsent} />
 </main>
 
 <style>

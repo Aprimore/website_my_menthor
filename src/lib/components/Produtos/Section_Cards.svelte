@@ -17,7 +17,7 @@
 	}
 </script>
 
-<section class="relative rounded-lg w-full p-12">
+<section class="caroussel relative rounded-lg w-full p-12">
 	<div class="max-w-fit lg:max-w-screen-xl mx-auto">
 		{#if browser}
 			<Carousel
@@ -131,6 +131,19 @@
 </section>
 
 <style>
+	/* Zoom responsiveness */
+	@media only screen and (max-width: 1400px) {
+		.caroussel {
+			zoom: 127%;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.caroussel {
+			zoom: 100%;
+		}
+	}
+
 	.title-om::before,
 	.title-ms::before,
 	.title-sd::before,

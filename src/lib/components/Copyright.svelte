@@ -8,7 +8,7 @@
 <div class="div3"></div> -->
 
 {#if m}
-	<div class="copyright p-5 bg-blue-800 text-sm">
+	<div class="copyright p-5 bg-blue-800 text-sm copyright-component">
 		<div class="gridFooter max-md:text-center max-md:space-y-5">
 			<ul
 				class="col-span-1
@@ -25,21 +25,24 @@
 			>
 				<li>
 					<a
-						href="/"
+						href="/terms-of-service"
+						target="_blank"
 						class="underline text-[#D4D4ED] hover:text-white"
 						style="min-width: 48px; min-height: 48px;">{@html m.footer_Terms()}</a
 					>
 				</li>
 				<li>
 					<a
-						href="/"
+						href="/privacy-policy"
+						target="_blank"
 						class="underline text-[#D4D4ED] hover:text-white"
 						style="min-width: 48px; min-height: 48px;">{@html m.footer_Privacy()}</a
 					>
 				</li>
 				<li>
 					<a
-						href="/"
+						href="/cookies"
+						target="_blank"
 						class=" underline text-[#D4D4ED] hover:text-white"
 						style="min-width: 48px; min-height: 48px;">{@html m.footer_Cookies()}</a
 					>
@@ -73,6 +76,18 @@
 {/if}
 
 <style>
+	@media only screen and (max-width: 1400px) {
+		.copyright-component {
+			zoom: 127%;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.copyright-component {
+			zoom: 100%;
+		}
+	}
+
 	.copyright {
 		background-color: #25285f;
 	}

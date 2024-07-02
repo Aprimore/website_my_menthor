@@ -13,7 +13,7 @@
 </script>
 
 {#if m}
-	<footer class="footer relative bg-[#17193b] Exo">
+	<footer class="footer relative bg-[#17193b] Exo footer-component">
 		<div class=" max-sm:flex justify-center">
 			<div class=" lg:p-12 max-md:flex justify-center p-5">
 				<div
@@ -264,6 +264,17 @@
 {/if}
 
 <style>
+	@media only screen and (max-width: 1400px) {
+		.footer-component {
+			zoom: 127%;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.footer-component {
+			zoom: 100%;
+		}
+	}
 	.btn-agendar::after {
 		content: url('$lib/assets/svg/arrow_right.svg');
 		display: inline-block;

@@ -26,15 +26,15 @@
 	];
 </script>
 
-<section class="lg:max-w-screen-xl relative rounded-lg mx-auto my-2 max-sm:p-2 container">
-	<div class="md:py-5 lg:py-6 xl:py-20 relative flex flex-col sm:p-3">
+<section class="lg:max-w-[80rem] relative rounded-lg mx-auto my-2 max-sm:p-2 container">
+	<div class="md:py-5 lg:py-6 xl:py-16 relative flex flex-col sm:p-3">
 		<div class="flex flex-col lg:w-1/2 relative sm:items-center max-lg:order-1 mt-3">
 			<div
-				class="flex justify-center bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl relative lg:pr-20 max-h-[580px] md:max-h-[580px] lg:max-h-[520px] xl:max-h-[570px]"
+				class="flex justify-center bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl relative lg:pr-[1.25rem] max-h-[36.25rem] md:max-h-[36.25rem] lg:max-h-[32.5rem] xl:max-h-[35rem]"
 			>
 				<div
 					class="
-				  text-[#17193B] rounded-lg xl:py-10 xl:px-5 p-5 relative"
+				  text-[#17193B] rounded-lg xl:py-10 xl:px-8 p-5 relative"
 				>
 					<span class="absolute max-md:hidden ml-5"
 						><img
@@ -46,7 +46,7 @@
 						/></span
 					>
 					<h1
-						class="md:ml-12 mb-2 text-lg tracking-tight text-[#25285F] Archivo leading-tight max-w-[350px]"
+						class="md:ml-12 mb-2 text-lg tracking-tight text-[#25285F] Archivo leading-tight max-w-[25rem]"
 					>
 						{@html m.homepage_section1_desc1()}
 					</h1>
@@ -67,7 +67,7 @@
 			</div>
 		</div>
 		<div
-			class="mt-5 lg:mt-24 right-0 flex lg:absolute bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl xl:max-w-screen-md max-w-[650px] lg:max-w-[580px] w-full self-center"
+			class="mt-5 lg:mt-24 right-0 flex lg:absolute bg-[#F1F1F9] border border-gray-300 rounded-xl shadow-xl max-w-[47rem] w-full self-center"
 		>
 			<div class="text-[#17193B] rounded-lg max-md:p-5 p-12 xl:p-16 w-full" id="products-about">
 				<h2 class="max-sm:text-center Exo-Bold xl:text-4xl text-3xl relative blue-underline w-fit">

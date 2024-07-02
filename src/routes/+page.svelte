@@ -12,6 +12,14 @@
 	import Navbar2 from '$lib/components/Navbar2.svelte';
 
 	export let data;
+
+	import config from '$lib/cookieconsent-config';
+	import * as CookieConsent from 'vanilla-cookieconsent';
+
+	const resetPlugin = () => {
+		CookieConsent.reset(true);
+		CookieConsent.run(config);
+	};
 </script>
 
 <div>

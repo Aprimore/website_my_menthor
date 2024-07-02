@@ -56,7 +56,9 @@
 			</div>
 		</div>
 	</section>
-	<Section_Cards />
+	<div class="caroussel">
+		<Section_Cards />
+	</div>
 {:else}
 	<!-- Placeholder while translations are loading -->
 	<div>Loading...</div>

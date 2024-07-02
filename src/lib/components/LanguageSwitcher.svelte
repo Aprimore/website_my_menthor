@@ -18,8 +18,8 @@
 	 * @type {Record<import("$lib/paraglide/runtime").AvailableLanguageTag, string>}
 	 */
 	const labels = {
-		en: '🇺🇸 EN',
-		'pt-br': '🇧🇷 PT-BR'
+		en: '\u{1F1FA}\u{1F1F8} EN', // 🇺🇸 EN
+		'pt-br': '\u{1F1E7}\u{1F1F7} PT-BR' // 🇧🇷 PT-BR
 	};
 </script>
 

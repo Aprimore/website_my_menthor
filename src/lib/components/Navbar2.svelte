@@ -18,14 +18,14 @@
 		currentPage = $page.params.page || 'home';
 	}
 
-	const hrClass = 'max-sm:block';
+	const hrClass = 'max-sm:block ';
 
 	const navbarClasses =
-		'text-base text-[#17193B] py-2 md:px-3 transition-transform transform hover:-translate-y-1 hover:bg-[#20C997] rounded-lg hover:text-[#F1F1F9] Exo bg-[#F1F1F9]';
+		' bg-opacity-0 text-base text-[#17193B] py-2 md:px-3 transition-transform transform hover:-translate-y-1 hover:bg-[#20C997] rounded-lg hover:text-[#F1F1F9] Exo bg-[#F1F1F9]';
 </script>
 
 <nav
-	class=" bg-[#F1F1F9] bg-opacity-80 relative mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full max-h-[115px]"
+	class=" bg-[#F1F1F9] bg-opacity-80 relative mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full max-h-[115px] nav-component"
 >
 	<div class="lg:flex items-center max-lg:justify-between m-auto max-xl:px-4">
 		<div
@@ -76,7 +76,7 @@
 
 		<div
 			id="nav-links"
-			class="bg-[#F1F1F9] max-md:py-2 nav-links whitespace-nowrap space-y-4 lg:flex lg:space-y-0 lg:flex-row lg:items-center lg:space-x-3 md:space-x-2 text-center md:mt-0 {showMenu
+			class="w-full max-lg:bg-[#F1F1F9] max-md:py-2 nav-links whitespace-nowrap space-y-4 lg:flex lg:space-y-0 lg:flex-row lg:items-center lg:space-x-3 md:space-x-2 text-center md:mt-0 {showMenu
 				? 'flex'
 				: 'hidden'}"
 		>
@@ -106,6 +106,17 @@
 </nav>
 
 <style>
+	@media only screen and (max-width: 1400px) {
+		.nav-component {
+			zoom: 127%;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.nav-component {
+			zoom: 100%;
+		}
+	}
 	.nav-links {
 		font-size: 1.25rem;
 		line-height: 1rem;
