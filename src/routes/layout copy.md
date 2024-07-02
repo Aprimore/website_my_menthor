@@ -12,55 +12,30 @@
 		SITE_TITLE,
 		SITE_URL
 	} from '$lib/siteConfig';
-	import { partytownSnippet } from '@builder.io/partytown/integration';
-	import '@fontsource-variable/archivo';
-	import '@fontsource-variable/exo';
 	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
 	import { onMount } from 'svelte';
 	import '../app.postcss';
 	import og_image from '../lib/assets/images/og_image.webp';
 
-	let gtmLoaded = false;
+	// Initialize isMobile
 	let isMobile = false;
 
 	// Function to load Google Tag Manager script
 	function loadGTM() {
-		if (gtmLoaded) return;
-		gtmLoaded = true;
-		const script = document.createElement('script');
-		script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-WSRLN9FV';
-		script.async = true;
-		document.head.appendChild(script);
-
-		// return new Promise((resolve, reject) => {
-		// 	(function (w, d, s, l, i) {
-		// 		w[l] = w[l] || [];
-		// 		w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-		// 		var f = d.getElementsByTagName(s)[0],
-		// 			j = d.createElement(s),
-		// 			dl = l != 'dataLayer' ? '&l=' + l : '';
-		// 		j.async = true;
-		// 		j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-		// 		j.onload = resolve;
-		// 		j.onerror = reject;
-		// 		f.parentNode.insertBefore(j, f);
-		// 	})(window, document, 'script', 'dataLayer', 'GTM-WSRLN9FV');
-		// });
-	}
-
-	function loadGtag() {
-		const script = document.createElement('script');
-		script.src = 'https://www.googletagmanager.com/gtag/js?id=G-ZX7H2KPXNZ';
-		script.async = true;
-		document.head.appendChild(script);
-		script.onload = () => {
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
-			gtag('config', 'G-ZX7H2KPXNZ');
-		};
+		return new Promise((resolve, reject) => {
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				j.onload = resolve;
+				j.onerror = reject;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-WSRLN9FV');
+		});
 	}
 
 	// Function to initialize ParaglideJS
@@ -79,13 +54,6 @@
 	}
 
 	onMount(() => {
-		window.addEventListener('cookieconsent:accept', () => {
-			loadGTM();
-			loadGtag();
-		});
-	});
-
-	onMount(() => {
 		// Check if the code is running in the browser
 		if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
 			// Detect if the device is mobile
@@ -93,65 +61,29 @@
 
 			// Run all async tasks in parallel
 			Promise.all([
-				loadGTM(),
 				isMobile ? Promise.resolve() : initializeParaglide() // Skip ParaglideJS on mobile
 			])
 				.then(() => {
-					console.log('Scripts loaded and initializations complete');
+					console.log('Non-essential scripts loaded');
 				})
 				.catch((error) => {
-					console.error('An error occurred while loading scripts', error);
+					console.error('An error occurred while loading non-essential scripts', error);
 				});
 		}
 	});
+
+	// Handling cookie consent
+	let cookieConsentAccepted = false;
+
+	function handleCookieConsent() {
+		cookieConsentAccepted = true;
+		// Load essential scripts after consent
+		loadGTM(); // Reload GTM scripts after consent
+		initializeParaglide(); // Initialize ParaglideJS after consent
+	}
 </script>
 
 <svelte:head>
-	<!-- Google Tag Manager -->
-	<script>
-		(function (w, d, s, l, i) {
-			w[l] = w[l] || [];
-			w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-			var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s),
-				dl = l != 'dataLayer' ? '&l=' + l : '';
-			j.async = true;
-			j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-			f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-WSRLN9FV');
-		partytown = {
-			forward: ['dataLayer.push', 'gtag']
-		};
-
-		
-	</script>
-
-	<script
-		type="text/partytown"
-		src="https://www.googletagmanager.com/gtag/js?id=G-ZX7H2KPXNZ"
-		async
-	></script>
-	<script type="text/partytown" async>
-		window.dataLayer = window.dataLayer || [];
-		window.gtag = function () {
-			dataLayer.push(arguments);
-		};
-		gtag('js', new Date());
-		gtag('config', 'G-ZX7H2KPXNZ');
-	</script>
-
-	<!-- Partytown Integration for ParaglideJS -->
-	{@html '<script async>' + partytownSnippet() + '</script>'}
-	<script type="text/partytown" src="/src/lib/i18n.js" async></script>
-	<script type="text/partytown" async>
-		// Initialize ParaglideJS
-		const initializeParaglideJS = () => {
-			ParaglideJS.init({ i18n });
-		};
-		// Run initialization
-		initializeParaglideJS();
-	</script>
-
 	<title>{$page.data.post?.title || 'My Menthor | Home'}</title>
 	{#if $page.path && $page.path !== '/'}
 		<link rel="canonical" href={SITE_URL + $page.path} />
@@ -171,8 +103,7 @@
 </svelte:head>
 
 <main class="relative">
-	<CookieConsent />
-	{#if !isMobile || ParaglideJS}
+	{#if ParaglideJS}
 		<ParaglideJS {i18n}>
 			<Navbar />
 			<Navbar2 />
@@ -182,6 +113,7 @@
 	{:else}
 		<div>Loading...</div>
 	{/if}
+	<CookieConsent bind:accepted={cookieConsentAccepted} on:accept={handleCookieConsent} />
 </main>
 
 <style>
@@ -211,23 +143,5 @@
 	:global(.Exo-Bold) {
 		font-family: 'Exo Variable', sans-serif;
 		font-weight: 700; /* Set font weight */
-	}
-	/* Zoom responsiveness */
-	@media only screen and (min-width: 600px) {
-		:global(html) {
-			zoom: 0.8;
-		}
-	}
-
-	@media only screen and (min-width: 1000x) {
-		:global(html) {
-			zoom: 0.9;
-		}
-	}
-
-	@media only screen and (min-width: 1400px) {
-		:global(html) {
-			zoom: 1;
-		}
 	}
 </style>
