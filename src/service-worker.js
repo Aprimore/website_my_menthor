@@ -28,6 +28,11 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
 	const { request } = event;
 
+	// GTM cache
+	if (request.url.includes('googletagmanager.com')) {
+		return event.respondWith(fetch(request));
+	}
+
 	event.respondWith(
 		caches.match(request).then((response) => {
 			if (response) {

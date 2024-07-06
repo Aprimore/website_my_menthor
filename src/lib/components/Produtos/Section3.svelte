@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import { piramid_home_en_svg, piramid_home_pt_br_svg } from '$lib';
 	import * as m from '$lib/paraglide/messages';
+	import LoadingSpinner from '../LoadingSpinner.svelte';
 	import Section_Cards from './Section_Cards.svelte';
 	// export let data;
 
@@ -10,7 +11,6 @@
 	// let piramid_home_svg = lang === 'pt-br' ? piramid_home_pt_br_svg : piramid_home_en_svg;
 </script>
 
-{#if m}
 	<section class=" w-full items-center relative rounded-lg max-sm:p-2">
 		<div class=" md:max-w-screen-2xl flex flex-col lg:flex-row mx-auto items-center rounded-lg">
 			<div class="flex xl:p-16 max-lg:order-2 px-5 mx-5">
@@ -59,10 +59,6 @@
 	<div class="caroussel">
 		<Section_Cards />
 	</div>
-{:else}
-	<!-- Placeholder while translations are loading -->
-	<div>Loading...</div>
-{/if}
 
 <style>
 	h2.blue-underline {

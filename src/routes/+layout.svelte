@@ -1,9 +1,12 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import CookieConsent from '$lib/components/CookieConsent.svelte';
+	// import CookieConsent from '$lib/components/CookieConsent.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Navbar2 from '$lib/components/Navbar2.svelte';
+	// import { getPageTitle } from '$lib/functions/pageTitle';
+	import CookieConsent from '$lib/components/CookieConsent.svelte';
+	import { getPageTitle } from '$lib/functions/pageTitle';
 	import { i18n } from '$lib/i18n.js';
 	import {
 		OG_IMAGE_HEIGHT,
@@ -12,22 +15,47 @@
 		SITE_TITLE,
 		SITE_URL
 	} from '$lib/siteConfig';
+	import '@fontsource-variable/archivo';
+	import '@fontsource-variable/exo';
 	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
 	import { onMount } from 'svelte';
 	import '../app.postcss';
 	import og_image from '../lib/assets/images/og_image.webp';
+	import LoadingSpinner from './../lib/components/LoadingSpinner.svelte';
+
+	// let isLoading = true;
+	// onMount(async () => {
+	// 	isLoading = false;
+	// });
 
 	// Initialize isMobile
-	let isMobile = false;
+	// let isMobile = false;
+	// onMount(() => {
+	// 	// Check if the code is running in the browser
+	// 	if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
+	// 		// Detect if the device is mobile
+	// 		isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-	// Function to load Google Tag Manager script
-	function loadGTM() {
+	// 		// Run all async tasks in parallel
+	// 		Promise.all([isMobile ? Promise.resolve() : initializeParaglide()])
+	// 			.then(() => {
+	// 				console.log('.');
+	// 			})
+	// 			.catch((error) => {
+	// 				console.error('An error occurred while loading non-essential scripts', error);
+	// 			});
+	// 	}
+	// });
+
+	// initializeParaglide();
+
+	export function loadGTM() {
 		return new Promise((resolve, reject) => {
 			(function (w, d, s, l, i) {
 				w[l] = w[l] || [];
 				w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
 				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s),
+					j = d.createElement(s) as HTMLScriptElement,
 					dl = l != 'dataLayer' ? '&l=' + l : '';
 				j.async = true;
 				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
@@ -38,56 +66,24 @@
 		});
 	}
 
-	// Function to initialize ParaglideJS
-	function initializeParaglide() {
-		return new Promise((resolve) => {
-			const script = document.createElement('script');
-			script.type = 'text/partytown';
-			script.src = '/src/lib/i18n.js';
-			script.async = true; // Load asynchronously
-			script.onload = () => {
-				ParaglideJS.init({ i18n });
-				resolve();
-			};
-			document.body.appendChild(script);
-		});
-	}
-
-	onMount(() => {
-		// Check if the code is running in the browser
-		if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
-			// Detect if the device is mobile
-			isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-			// Run all async tasks in parallel
-			Promise.all([
-				isMobile ? Promise.resolve() : initializeParaglide() // Skip ParaglideJS on mobile
-			])
-				.then(() => {
-					console.log('Non-essential scripts loaded');
-				})
-				.catch((error) => {
-					console.error('An error occurred while loading non-essential scripts', error);
-				});
-		}
-	});
-
 	// Handling cookie consent
-	let cookieConsentAccepted = false;
+	// let cookieConsentAccepted = false;
 
-	function handleCookieConsent() {
-		cookieConsentAccepted = true;
-		// Load essential scripts after consent
-		loadGTM(); // Reload GTM scripts after consent
-		initializeParaglide(); // Initialize ParaglideJS after consent
-	}
+	// function handleCookieConsent() {
+	// 	cookieConsentAccepted = true;
+	// 	loadGTM();
+	// }
+
+	let pagePath = $page.url.pathname;
+	$: pagePath = $page.url.pathname;
 </script>
 
 <svelte:head>
-	<title>{$page.data.post?.title || 'My Menthor | Home'}</title>
-	{#if $page.path && $page.path !== '/'}
-		<link rel="canonical" href={SITE_URL + $page.path} />
-	{/if}
+	<!-- <title>{$page.data.post?.title || 'My Menthor | Home'}</title> -->
+	<title>{getPageTitle(pagePath)}</title>
+	<!-- {#if pagePath && pagePath !== '/'}
+	{/if} -->
+	<link rel="canonical" href={SITE_URL + pagePath} />
 	<meta property="og:url" content={SITE_URL} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={SITE_TITLE} />
@@ -103,20 +99,35 @@
 </svelte:head>
 
 <main class="relative">
-	{#if ParaglideJS}
-		<ParaglideJS {i18n}>
-			<Navbar />
-			<Navbar2 />
-			<slot />
-			<Footer />
-		</ParaglideJS>
-	{:else}
-		<div>Loading...</div>
-	{/if}
-	<CookieConsent bind:accepted={cookieConsentAccepted} on:accept={handleCookieConsent} />
+	<!-- {#if isLoading} -->
+	<!-- <div class="shell"> -->
+	<!-- <div class=""></div> -->
+	<!-- <p>...</p> -->
+	<!-- <LoadingSpinner /> -->
+	<!-- </div> -->
+	<!-- {:else} -->
+	<!-- Conteúdo real do seu site -->
+	<ParaglideJS {i18n}>
+		<Navbar />
+		<Navbar2 />
+		<slot />
+		<Footer />
+	</ParaglideJS>
+	<CookieConsent />
+	<!-- {/if} -->
 </main>
 
 <style>
+	:global(.shell) {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+
 	:global(html) {
 		font-family: 'Exo Variable, sans-serif;';
 	}

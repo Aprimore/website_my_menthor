@@ -3,6 +3,7 @@
 	import animationData from '$lib/assets/lotties/gif-3.json';
 	import * as m from '$lib/paraglide/messages';
 	import { onMount } from 'svelte';
+	import LoadingSpinner from '../LoadingSpinner.svelte';
 
 	let LottiePlayer: any;
 	onMount(async () => {
@@ -25,7 +26,6 @@
 	];
 </script>
 
-{#if m}
 	<section
 		class="resources_section w-full relative sm:rounded-lg lg:bg-[#F1F1F9] sm:py-14 md:py-28 justify-center mx-auto"
 		id="bottom-page"
@@ -135,10 +135,6 @@
 			</div>
 		</div>
 	</section>
-{:else}
-	<!-- Placeholder while translations are loading -->
-	<div>Loading...</div>
-{/if}
 
 <style>
 	.btn-access::after {

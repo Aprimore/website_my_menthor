@@ -3,7 +3,7 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 // const dev = process.argv.includes('dev');
-const dev = process.env.NODE_ENV === 'development';
+// const dev = process.env.NODE_ENV === 'development';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -21,13 +21,13 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: null, // No fallback needed for static sites
+			fallback: undefined, // No fallback needed for static sites
 			precompress: false,
 			strict: true
 		}),
-		files: {
-			serviceWorker: 'src/service-worker.js'
-		},
+		// files: {
+		// 	serviceWorker: 'src/service-worker.js'
+		// },
 		paths: {
 			base: '', // Set this to '' if your site is at the root of the domain
 			assets: '' // Set this if your assets are served from a different URL
@@ -35,17 +35,10 @@ const config = {
 
 		alias: {
 			//You can call this whatever you want
-			$paraglide: './src/lib/paraglide'
+			$paraglide: './src/paraglide'
+			// $paraglide: './src/lib/paraglide'
 		}
 	}
 };
-
-// adapter: adapter({
-// 			pages: 'build',
-// 			assets: 'build',
-// 			fallback: undefined,
-// 			precompress: false,
-// 			strict: true
-// 		}),
 
 export default config;

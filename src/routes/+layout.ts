@@ -1,8 +1,9 @@
 export const prerender = true;
 export const trailingSlash = 'always';
 
-export const load = async ({ url }: any) => {
+export const load = async ({ url, params }: any) => {
 	return {
-		url: url.pathname
+		url: url,
+		slug: params
 	};
 };

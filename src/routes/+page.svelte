@@ -13,13 +13,13 @@
 
 	export let data;
 
-	import config from '$lib/cookieconsent-config';
-	import * as CookieConsent from 'vanilla-cookieconsent';
+	// import config from '$lib/functions/cookieconsent-config.js';
+	// import * as CookieConsent from 'vanilla-cookieconsent';
 
-	const resetPlugin = () => {
-		CookieConsent.reset(true);
-		CookieConsent.run(config);
-	};
+	// const resetPlugin = () => {
+	// 	CookieConsent.reset(true);
+	// 	CookieConsent.run(config);
+	// };
 </script>
 
 <div>
@@ -31,7 +31,3 @@
 	<Section5 />
 	<div class="bg-[#F1F1F9] h-20"></div>
 </div>
-
-<!-- <style>
-
-</style> -->

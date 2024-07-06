@@ -10,11 +10,10 @@
 	import * as m from '$lib/paraglide/messages';
 
 	export let data;
-
+	// console.log(data.url.pathname);
 	// console.log(data.url);
-	const parts = data.url.split('/');
+	const parts = data.url.pathname.split('/');
 	const extracted = `${parts[1]}`;
-	// console.log(extracted);
 
 	const selectedImage =
 		extracted === 'pt-br' ? portfolio_services_portugues_svg : portfolio_services_ingles_svg;

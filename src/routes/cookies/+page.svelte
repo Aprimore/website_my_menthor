@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { piramid_home_en_svg, piramid_home_pt_br_svg } from '$lib';
+	import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 	import * as m from '$lib/paraglide/messages';
 	// export let data;
 
@@ -9,10 +10,9 @@
 	// let piramid_home_svg = lang === 'pt-br' ? piramid_home_pt_br_svg : piramid_home_en_svg;
 </script>
 
-{#if m}
-	<section class="sm:bg-[#F1F1F9] w-full items-center relative rounded-lg max-sm:p-2 border py-5">
+	<section class="sm:bg-[#F1F1F9] w-full items-center relative rounded-lg max-sm:p-2 py-5 Exo">
 		<div
-			class="max-sm:bg-[#F1F1F9] md:max-w-screen-2xl flex flex-col lg:flex-row mx-auto items-center rounded-lg border"
+			class="max-sm:bg-[#F1F1F9] md:max-w-screen-2xl flex flex-col lg:flex-row mx-auto items-center rounded-lg"
 		>
 			<div class="max-lg:p-5 lg:w-2/3 space-y-6 mt-8 lg:mt-16 max-lg:order-1 mx-auto">
 				<h1
@@ -124,7 +124,4 @@
 			</div>
 		</div>
 	</section>
-{:else}
-	<!-- Placeholder while translations are loading -->
-	<div>Loading...</div>
-{/if}
+
