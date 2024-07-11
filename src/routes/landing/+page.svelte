@@ -17,7 +17,7 @@
 	import TelInputComponent from '$lib/components/TelInputComponent.svelte';
 	import { isProfessionalEmail } from '$lib/functions/emailValidator.js';
 	import { onMount } from 'svelte';
-	import { selectedCountryStore } from './../../stores.js';
+	import { selectedCountryStore } from '$lib/stores.js';
 
 	let selectedCountry: any;
 	selectedCountryStore.subscribe((value) => {

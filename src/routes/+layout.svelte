@@ -118,6 +118,24 @@
 </main>
 
 <style>
+	/* Zoom responsiveness */
+	@media only screen and (min-width: 600px) {
+		:global(html) {
+			zoom: 0.8;
+		}
+	}
+
+	@media only screen and (min-width: 1000x) {
+		:global(html) {
+			zoom: 0.9;
+		}
+	}
+
+	@media only screen and (min-width: 1400px) {
+		:global(html) {
+			zoom: 1;
+		}
+	}
 	:global(.shell) {
 		position: relative;
 		width: 100%;

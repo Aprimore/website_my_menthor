@@ -10,8 +10,13 @@
 	import Section6 from '$lib/components/Home/Section6.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Navbar2 from '$lib/components/Navbar2.svelte';
+	import PopupForm from './../lib/components/Home/PopupForm.svelte';
 
 	export let data;
+
+	let isLandingPage = true;
+
+	let isOpen = true;
 
 	// import config from '$lib/functions/cookieconsent-config.js';
 	// import * as CookieConsent from 'vanilla-cookieconsent';
@@ -23,6 +28,7 @@
 </script>
 
 <div>
+	<PopupForm isOpen={isLandingPage} />
 	<Hero />
 	<Section1 />
 	<Section2 />

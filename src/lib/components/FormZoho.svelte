@@ -3,7 +3,7 @@
 	import { isProfessionalEmail } from '$lib/functions/emailValidator.js';
 	import * as m from '$lib/paraglide/messages';
 	import { onMount } from 'svelte';
-	import { selectedCountryStore } from './../../stores.js';
+	import { selectedCountryStore } from '$lib/stores.js';
 
 	let selectedCountry: any;
 	selectedCountryStore.subscribe((value) => {
