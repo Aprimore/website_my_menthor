@@ -24,19 +24,9 @@ const WPQL_QUERY = {
 
 export const load: PageLoad = async () => {
 	const endpoint = `${import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL}`;
-	// console.log(endpoint);
-	// console.log('endpoint: ', endpoint);
+	// const endpoint = `https://mymenthor.com/blog/wp-json/wp/v2/posts`;
 
 	try {
-		// fetch(endpoint, {
-		// 	method: 'POST',
-		// 	headers: {
-		// 		'Content-Type': 'application/json'
-		// 	},
-		// 	body: JSON.stringify(WPQL_QUERY)
-		// })
-		// 	.then((res) => res.json())
-		// 	.then((res) => console.log(res.data.posts.nodes));
 		const response = await fetch(endpoint, {
 			method: 'POST',
 			headers: {
@@ -46,11 +36,10 @@ export const load: PageLoad = async () => {
 		});
 
 		const posts = await response.json();
-		// console.log(posts);
+		console.log(posts.data.posts.nodes);
 		return { posts }; // Return the posts data
 	} catch (error) {
 		console.error('Error fetching posts:', error);
 		return {}; // Return an empty object in case of error
 	}
 };
-

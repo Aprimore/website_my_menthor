@@ -28,7 +28,7 @@ const query = gql`
 // { setHeaders }
 export const load: PageLoad = async () => {
 	// const endpoint = `${import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL}`;
-	const endpoint = `https://mymenthor.com/blog/api/graphql`;
+	const endpoint = `https://mymenthor.com/blog/graphql`;
 	// console.log('endpoint: ', endpoint);
 
 	const client = new GraphQLClient(endpoint);

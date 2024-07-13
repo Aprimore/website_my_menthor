@@ -26,7 +26,7 @@ const config = {
 			strict: true
 		}),
 		// env: {
-		// 	VITE_PUBLIC_WORDPRESS_API_URL: 'https://mymenthor.com/blog/api/graphql'
+		// 	VITE_PUBLIC_WORDPRESS_API_URL: 'https://mymenthor.com/blog/graphql'
 		// },
 
 		// files: {
