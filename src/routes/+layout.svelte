@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	// import CookieConsent from '$lib/components/CookieConsent.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Navbar2 from '$lib/components/Navbar2.svelte';
@@ -22,6 +21,14 @@
 	import '../app.postcss';
 	import og_image from '../lib/assets/images/og_image.webp';
 	import LoadingSpinner from './../lib/components/LoadingSpinner.svelte';
+
+	let isCookieConsentAccepted = false;
+	let showPopup = false;
+
+	function handleCookieConsent() {
+		isCookieConsentAccepted = true;
+		showPopup = true;
+	}
 
 	// let isLoading = true;
 	// onMount(async () => {
@@ -48,23 +55,6 @@
 	// });
 
 	// initializeParaglide();
-
-	export function loadGTM() {
-		return new Promise((resolve, reject) => {
-			(function (w, d, s, l, i) {
-				w[l] = w[l] || [];
-				w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s) as HTMLScriptElement,
-					dl = l != 'dataLayer' ? '&l=' + l : '';
-				j.async = true;
-				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-				j.onload = resolve;
-				j.onerror = reject;
-				f.parentNode.insertBefore(j, f);
-			})(window, document, 'script', 'dataLayer', 'GTM-WSRLN9FV');
-		});
-	}
 
 	// Handling cookie consent
 	// let cookieConsentAccepted = false;
@@ -113,7 +103,7 @@
 		<slot />
 		<Footer />
 	</ParaglideJS>
-	<CookieConsent />
+	<CookieConsent on:consentAccepted={handleCookieConsent} />
 	<!-- {/if} -->
 </main>
 

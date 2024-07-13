@@ -3,11 +3,6 @@
 	import { piramid_home_en_svg, piramid_home_pt_br_svg } from '$lib';
 	import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 	import * as m from '$lib/paraglide/messages';
-	// export let data;
-
-	// console.log('DATA URKL', data.url);
-	// Define a variable to hold the selected SVG based on the lang prop
-	// let piramid_home_svg = lang === 'pt-br' ? piramid_home_pt_br_svg : piramid_home_en_svg;
 </script>
 
 <section class="sm:bg-[#F1F1F9] w-full items-center relative rounded-lg max-sm:p-2 py-5">

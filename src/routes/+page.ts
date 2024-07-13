@@ -1,11 +1,13 @@
-import type { PageLoad } from './$types';
+// import type { PageLoad } from './$types';
+export const prerender = true;
 
-export const load = (async (params) => {
-	return {
-		slug: params
-	};
-}) satisfies PageLoad;
+// export const load = (async (params) => {
+// 	return {
+// 		slug: params
+// 	};
+// }) satisfies PageLoad;
 
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 // import type { PageServerLoad } from './$types';
 
 // export const load = (async ({ setHeaders }) => {

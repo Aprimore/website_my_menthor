@@ -21,10 +21,14 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: undefined, // No fallback needed for static sites
+			fallback: 'index.html',
 			precompress: false,
 			strict: true
 		}),
+		// env: {
+		// 	VITE_PUBLIC_WORDPRESS_API_URL: 'https://mymenthor.com/blog/api/graphql'
+		// },
+
 		// files: {
 		// 	serviceWorker: 'src/service-worker.js'
 		// },

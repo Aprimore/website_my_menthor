@@ -1,39 +1,21 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import {
-		ebook_cover_en,
-		ebook_cover_pt,
-		piramid_home_en_svg,
-		piramid_home_pt_br_svg
-	} from '$lib';
+	import { ebook_cover_en2, ebook_cover_pt2 } from '$lib';
 	import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 	import * as m from '$lib/paraglide/messages';
-	// export let data;
-
-	// console.log('DATA URKL', data.url);
-	// Define a variable to hold the selected SVG based on the lang prop
-	// let piramid_home_svg = lang === 'pt-br' ? piramid_home_pt_br_svg : piramid_home_en_svg;
-
-	import TelInputComponent from '$lib/components/TelInputComponent.svelte';
+	import TelInputComponent from '$lib/components/TelInputComponentFormLanding.svelte';
 	import { isProfessionalEmail } from '$lib/functions/emailValidator.js';
 	import { selectedCountryStore } from '$lib/stores.js';
 	import { onMount } from 'svelte';
+	import { get } from 'svelte/store';
 
 	let selectedCountry: any;
 	selectedCountryStore.subscribe((value) => {
-		// console.log('FORM ZOHO sc', value);
 		selectedCountry = value;
 	});
 
 	export const isFormLanding = true;
 
-	// onMount(() => {
-	// 	const unsubscribe = selectedCountryStore.subscribe((value) => {
-	// 		paisSelecionado = value;
-	// 	});
-
-	// 	return unsubscribe;
-	// });
 
 	// let areaOfInterest = '';
 	let fullName = '';
@@ -85,63 +67,30 @@
 		formData.append('LEADCF3', position);
 		// formData.append('LEADCF5', message);
 		// Add additional form fields as needed
-		console.log(formData);
 
-		try {
-			const response = await fetch('https://crm.zoho.com/crm/WebToLeadForm', {
-				method: 'POST',
-				body: formData
-			});
-
-			if (response.ok) {
-				// areaOfInterest = '';
-				fullName = '';
-				email = '';
-				country = 'United States';
-				phone = '';
-				company = '';
-				position = '';
-				// message = '';
-				// console.log('Form submitted successfully:', response);
-				alert(`${m.form_submit_success()}`);
-			} else {
-				// console.error('HTTP error:', response.status);
-				alert(`${m.form_submit_error()}`);
-			}
-		} catch (error) {
-			console.error('Fetch error:', error);
-			alert(`${m.form_submit_error()}`);
-		}
+		alert(`${m.form_submit_success()}`);
 	};
+	const pathUrl = get(page).url.pathname;
+	const selectedImage = pathUrl === '/' ? ebook_cover_en2 : ebook_cover_pt2;
 </script>
 
 <section class="bg-[#F1F1F9] w-full items-center relative rounded-l-lg Exo">
-	<div class="flex flex-col-reverse sm:flex-row rounded-l-lg relative">
-		<div
-			class="sm:w-1/2 relative flex justify-end items-center rounded-l-lg bookbg2 max-sm:h-[80vh]"
-		>
-			<!-- <div
-				class="bg-[#992066]  relative right-0 max-h-[90%] max-w-[450px] m-auto flex xl:mr-6"
-			> -->
-			<div class="relative right-0 m-auto xl:mr-6 sm:p-3 h-[50vh]">
-				<h1 class="text-transparent">
+	<div class="flex flex-col-reverse sm:flex-row rounded-l-lg max-w-screen-md max-sm:max-w-sm">
+		<div class="sm:w-1/2 flex justify-end items-center rounded-l-lg bookbg2">
+			<div class=" m-auto sm:p-1">
+				<!-- <h1 class="text-transparent pointer-events-none">
 					Sustaining: Transformation through business architecture by My Menthor
-				</h1>
-				<!-- <img
-					src={ebook_cover_en}
-					alt=""
-					class=" transform -rotate-[20deg]
-	  border-yellow-400 max-w-[90%] p-20 h-full max-sm:hidden opacity-0"
-				/> -->
+				</h1> -->
+				<img src={selectedImage} alt="ebook cover" class=" transform -rotate-[1deg] top-0" />
 			</div>
 		</div>
 
 		<div
-			class="bookbg sm:w-1/2 w-full h-full md:mx-auto
-        flex items-center justify-center sm:rounded-r-lg max-sm:absolute"
+			class="bookbg sm:w-1/2 w-full h-full
+         sm:rounded-r-lg"
 		>
-			<div class="w-full h-full max-sm:hidden bg-[#ABAEBC] px-8">
-				<h1 class="text-xl md:text-2xl font-bold leading-tight py-7 text-[#fff]">
+			<div class="w-full max-sm:hidden bg-[#ABAEBC] px-8">
+				<h1 class="text-xl font-bold leading-tight py-5 text-[#fff]">
 					{m.form_title_landing()}
 				</h1>
 				<div id="crmWebToEntityForm" class="relative bottom-0">
@@ -151,7 +100,7 @@
 						id="webform5699482000001517009"
 						name="WebToLeads5699482000001517009"
 						method="POST"
-						class="flex flex-col md:gap-y-5 p-1"
+						class="flex flex-col md:gap-y-3 p-1"
 						accept-charset="UTF-8"
 						on:submit={handleSubmit}
 					>
@@ -174,13 +123,13 @@
 						<!-- Convert form fields to use Svelte's reactive variables -->
 
 						<label class="block">
-							<span class="Exo-Semibold text-[#fff] text-xl after:content-['*'] after:ml-0.5 block">
+							<span class="Exo-Semibold text-[#fff] text-lg after:content-['*'] after:ml-0.5 block">
 								{m.form_fullname()}
 							</span>
 							<input
 								id="Last_Name"
 								name="Last Name"
-								class="text-md p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+								class="text-sm p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
 								type="text"
 								bind:value={fullName}
 								placeholder={m.ph_fullname()}
@@ -189,11 +138,11 @@
 						</label>
 
 						<label class="block">
-							<span class="Exo-Semibold text-[#fff] text-xl after:content-['*'] after:ml-0.5 block">
+							<span class="Exo-Semibold text-[#fff] text-lg after:content-['*'] after:ml-0.5 block">
 								{m.form_email()}
 							</span>
 							<input
-								class="text-md p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+								class="text-sm p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
 								type="email"
 								inputmode="email"
 								bind:value={email}
@@ -208,12 +157,12 @@
 
 						<label class="hidden blockd">
 							<span
-								class="hidden Exo-Semibold text-[#fff] text-xl after:content-['*'] after:ml-0.5 blockd"
+								class="hidden Exo-Semibold text-[#fff] text-lg after:content-['*'] after:ml-0.5 blockd"
 							>
 								Country
 							</span>
 							<input
-								class="hidden text-md p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 blockd w-full rounded-md focus:ring-1"
+								class="hidden text-sm p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 blockd w-full rounded-md focus:ring-1"
 								type="text"
 								placeholder="Country"
 								id="Country"
@@ -224,7 +173,7 @@
 
 						<label class="block">
 							<span
-								class="bg-transparent Exo-Semibold text-[#fff] text-xl after:content-['*'] after:ml-0.5 block"
+								class="bg-transparent Exo-Semibold text-[#fff] text-lg after:content-['*'] after:ml-0.5 block"
 							>
 								{m.form_phone()}
 							</span>
@@ -232,26 +181,26 @@
 						</label>
 
 						<label class="block">
-							<span class="Exo-Semibold text-[#fff] text-xl after:content-['*'] after:ml-0.5 block">
+							<span class="Exo-Semibold text-[#fff] text-lg after:content-['*'] after:ml-0.5 block">
 								{m.form_company()}
 							</span>
 							<input
 								id="Company"
 								name="Company"
-								class="text-md p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+								class="text-sm p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
 								type="text"
 								bind:value={company}
 								placeholder={m.ph_company()}
 							/>
 						</label>
 						<label class="block">
-							<span class="Exo-Semibold text-[#fff] text-xl after:content-['*'] after:ml-0.5 block">
+							<span class="Exo-Semibold text-[#fff] text-lg after:content-['*'] after:ml-0.5 block">
 								{m.form_role()}
 							</span>
 							<input
 								id="LEADCF3"
 								name="LEADCF3"
-								class="text-md p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+								class="text-sm p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
 								type="text"
 								bind:value={position}
 								placeholder={m.ph_role()}
@@ -259,7 +208,7 @@
 						</label>
 						<!-- <label class="block">
 							<span
-								class="Exo-Semibold text-[#fff] text-xl after:content-['*'] after:ml-0.5 block"
+								class="Exo-Semibold text-[#fff] text-lg after:content-['*'] after:ml-0.5 block"
 							>
 								{m.form_message()}
 							</span>
@@ -268,7 +217,7 @@
 								name="LEADCF5"
 								bind:value={message}
 								placeholder={m.ph_message()}
-								class="text-md p-3 bg-transparent border placeholder-white  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1 max-h-96"
+								class="text-sm p-3 bg-transparent border placeholder-white  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1 max-h-96"
 								rows="5"
 								cols="50"
 								required
@@ -281,7 +230,7 @@
 							<button
 								id="formsubmit"
 								type="submit"
-								class="btn-demo block rounded-xl p-3 text-xl font-medium bg-[#fff] text-[#ABAEBC] hover:text-[#52535a] focus:ring sm:w-auto z-10 relative Archivo ml-auto"
+								class="btn-demo block rounded-xl p-1.5 text-lg font-medium bg-[#fff] text-[#ABAEBC] hover:text-[#52535a] focus:ring sm:w-auto z-10 Archivo ml-auto"
 								>{m.zoho_btn_ebook()}</button
 							>
 						</div>
@@ -289,21 +238,21 @@
 				</div>
 			</div>
 
-			<div class="w-full h-full summary-details sm:hidden">
+			<div class="w-full summary-details sm:hidden absolute">
 				<details class="sm:hidden">
 					<summary
 						class="flex rounded-t-lg text-white bg-[#ABAEBC] cursor-pointer hover:bg-[#8a8c97]"
 					>
-						<h1 class="text-xl font-bold leading-tight p-6 m-0">
+						<h1 class="text-md font-bold leading-tight p-6 m-0">
 							Click here to {m.form_title_landing()}
 						</h1>
 					</summary>
 
 					<div
-						class=" bg-[#ABAEBC] w-full h-full px-5
-        flex items-center justify-center rounded-b-lg"
+						class=" bg-[#ABAEBC] w-full px-5
+                      flex items-center justify-center rounded-b-lg"
 					>
-						<div id="crmWebToEntityForm" class="relative bottom-0">
+						<div id="crmWebToEntityForm" class=" bottom-0">
 							<form
 								onSubmit="javascript:document.charset=`UTF-8`;"
 								action="https://crm.zoho.com/crm/WebToLeadForm"
@@ -341,7 +290,7 @@
 									<input
 										id="Last_Name"
 										name="Last Name"
-										class="text-md p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+										class="text-sm p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
 										type="text"
 										bind:value={fullName}
 										placeholder={m.ph_fullname()}
@@ -356,7 +305,7 @@
 										{m.form_email()}
 									</span>
 									<input
-										class="text-md p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+										class="text-sm p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
 										type="email"
 										inputmode="email"
 										bind:value={email}
@@ -376,7 +325,7 @@
 										Country
 									</span>
 									<input
-										class="hidden text-md p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 blockd w-full rounded-md focus:ring-1"
+										class="hidden text-sm p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 blockd w-full rounded-md focus:ring-1"
 										type="text"
 										placeholder="Country"
 										id="Country"
@@ -387,7 +336,7 @@
 
 								<label class="block">
 									<span
-										class="bg-transparent Exo-Semibold text-[#fff] text-xl after:content-['*'] after:ml-0.5 block"
+										class="bg-transparent Exo-Semibold text-[#fff] text-lg after:content-['*'] after:ml-0.5 block"
 									>
 										{m.form_phone()}
 									</span>
@@ -403,7 +352,7 @@
 									<input
 										id="Company"
 										name="Company"
-										class="text-md p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+										class="text-sm p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
 										type="text"
 										bind:value={company}
 										placeholder={m.ph_company()}
@@ -418,7 +367,7 @@
 									<input
 										id="LEADCF3"
 										name="LEADCF3"
-										class="text-md p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+										class="text-sm p-3 bg-transparent border placeholder-white focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
 										type="text"
 										bind:value={position}
 										placeholder={m.ph_role()}
@@ -435,7 +384,7 @@
 								name="LEADCF5"
 								bind:value={message}
 								placeholder={m.ph_message()}
-								class="text-md p-3 bg-transparent border placeholder-white  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1 max-h-96"
+								class="text-sm p-3 bg-transparent border placeholder-white  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1 max-h-96"
 								rows="5"
 								cols="50"
 								required
@@ -444,11 +393,11 @@
 								<!-- Add additional form fields as needed -->
 
 								<!-- Add form submission buttons download-->
-								<div class=" text-center flex p-1 gap-3">
+								<div class=" text-center flex p-3 gap-3">
 									<button
 										id="formsubmit"
 										type="submit"
-										class="btn-demo block rounded-xl p-3 text-xl font-medium bg-[#fff] text-[#ABAEBC] hover:text-[#52535a] focus:ring sm:w-auto z-10 relative Archivo ml-auto"
+										class="btn-demo block rounded-xl p-2 text-xl font-medium bg-[#fff] text-[#ABAEBC] hover:text-[#52535a] focus:ring sm:w-auto z-10 Archivo ml-auto"
 										>{m.zoho_btn_ebook()}</button
 									>
 								</div>
@@ -486,8 +435,8 @@
 
 	.bookbg2 {
 		background-image: url('$lib/assets/images/ebook_cover_en.webp');
+		zoom: 1;
 		/* background-color: #abaebc; */
-		zoom: 0.9;
 		background-repeat: no-repeat;
 		background-position: center bottom;
 		background-size: cover;

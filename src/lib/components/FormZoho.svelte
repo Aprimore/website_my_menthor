@@ -7,7 +7,6 @@
 
 	let selectedCountry: any;
 	selectedCountryStore.subscribe((value) => {
-		// console.log('FORM ZOHO sc', value);
 		selectedCountry = value;
 	});
 
@@ -69,7 +68,7 @@
 		formData.append('LEADCF3', position);
 		formData.append('LEADCF5', message);
 		// Add additional form fields as needed
-		console.log(formData);
+		// console.log(formData);
 
 		try {
 			const response = await fetch('https://crm.zoho.com/crm/WebToLeadForm', {

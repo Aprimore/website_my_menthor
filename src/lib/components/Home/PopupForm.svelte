@@ -1,12 +1,23 @@
-<script>
+<script lang="ts">
 	import FormLanding from './FormLanding.svelte';
 	export let isOpen;
+	let cookieConsent = false;
+
+	import { cookieConsentVisible } from '$lib/stores/cookieConsent.ts';
+	cookieConsentVisible.subscribe((value) => {
+		cookieConsent = value;
+		if (cookieConsent == true) {
+			cookieConsent = true;
+		}
+	});
 
 	function closePopup() {
 		isOpen = false;
 	}
 
 	function handleClickOutside(event) {
+		if (!cookieConsent) return;
+
 		const popupForm = document.querySelector('.popup-form');
 		if (!popupForm.contains(event.target)) {
 			isOpen = false;
@@ -15,7 +26,6 @@
 
 	async function handleSubmit(event) {
 		event.preventDefault(); // Prevent default form submission
-
 		closePopup();
 	}
 </script>

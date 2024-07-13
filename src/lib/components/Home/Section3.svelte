@@ -2,12 +2,11 @@
 	import { page } from '$app/stores';
 	import { piramid_home_en_svg, piramid_home_pt_br_svg } from '$lib';
 	import * as m from '$lib/paraglide/messages';
+	import { get } from 'svelte/store';
 	import LoadingSpinner from '../LoadingSpinner.svelte';
-	// export let data;
 
-	// console.log('DATA URKL', data.url);
-	// Define a variable to hold the selected SVG based on the lang prop
-	// let piramid_home_svg = lang === 'pt-br' ? piramid_home_pt_br_svg : piramid_home_en_svg;
+	const pathUrl = get(page).url.pathname;
+	const selectedImage = pathUrl === '/' ? piramid_home_en_svg : piramid_home_pt_br_svg;
 </script>
 
 <section class="sm:bg-[#F1F1F9] w-full items-center relative rounded-lg max-sm:p-2">
@@ -16,7 +15,7 @@
 	>
 		<div class="flex xl:p-16 max-lg:order-2 px-5 mx-5">
 			<img
-				src={piramid_home_pt_br_svg}
+				src={selectedImage}
 				class="w-full max-sm:mb-10 mt-14"
 				alt="Pyramid Chart"
 				loading="lazy"

@@ -109,9 +109,8 @@
 		<button
 			id="states-button"
 			data-dropdown-toggle="dropdown-states"
-			class="{isFormLanding
-				? 'bg-[#ABAEBC]'
-				: 'bg-gray-100'} relative flex-shrink-0 overflow-hidden z-10 whitespace-nowrap inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500
+			class="bg-[#ABAEBC]
+				relative flex-shrink-0 overflow-hidden z-10 whitespace-nowrap inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500
 			  border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:outline-none"
 			type="button"
 			role="combobox"
@@ -127,10 +126,7 @@
 					<span class="flag flag-{selectedCountry.toLowerCase()} flex-shrink-0 mr-3" />
 					<span
 						class=" 
-					
-					{isFormLanding ? 'text-white' : 'text-gray-600'}
-					
-					
+				text-white
 					">+{selectedCountryDialCode}</span
 					>
 				</div>
@@ -212,10 +208,8 @@
 		bind:valid
 		{options}
 		required={true}
-		class="text-md p-4 {isFormLanding
-			? 'bg-[#ABAEBC]'
-			: 'bg-white'} border text-[#17193B]  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1  {isFormLanding
-			? 'placeholder-white'
-			: 'placeholder-slate-400'}"
+		class="text-md p-4
+			 bg-[#ABAEBC]
+			 border text-[#17193B]  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1 placeholder-white }"
 	/>
 </div>

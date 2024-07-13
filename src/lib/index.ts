@@ -1,4 +1,5 @@
 // place files you want to import through the `$lib` alias in this folder.
+export { default as book_shelf } from './assets/images/book_shelf.webp';
 export { default as clientes_parceiros_1_webp } from './assets/images/clientes_parceiros_1.webp';
 export { default as clientes_parceiros_3_webp } from './assets/images/clientes_parceiros_3.webp';
 export { default as clientes_parceiros_4_webp } from './assets/images/clientes_parceiros_4.webp';
@@ -6,8 +7,9 @@ export { default as clientes_parceiros_5_webp } from './assets/images/clientes_p
 export { default as earth_webp } from './assets/images/earth.webp';
 export { default as earth_2_webp } from './assets/images/earth2.webp';
 export { default as ebook_cover_en } from './assets/images/ebook_cover_en.webp';
+export { default as ebook_cover_en2 } from './assets/images/ebook_cover_en2.webp';
 export { default as ebook_cover_pt } from './assets/images/ebook_cover_pt.webp';
-export { default as book_shelf } from './assets/images/book_shelf.webp';
+export { default as ebook_cover_pt2 } from './assets/images/ebook_cover_pt2.webp';
 export { default as empresa_1_webp } from './assets/images/empresa_1.webp';
 export { default as header_hero_webp } from './assets/images/header_hero.webp';
 export { default as header_hero_1_webp } from './assets/images/header_hero_1.webp';

@@ -4,14 +4,11 @@
 	import Section3 from '$lib/components/Solucoes/Section3.svelte';
 	import Section4 from '$lib/components/Solucoes/Section4.svelte';
 	import Section5 from '$lib/components/Solucoes/Section5.svelte';
-
-	export let data;
-	// console.log(data);
 </script>
 
 <div>
 	<Section1 />
-	<Section2 {data} />
+	<Section2 />
 	<Section3 />
 	<Section4 />
 	<Section5 />

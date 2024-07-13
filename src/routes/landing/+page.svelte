@@ -10,28 +10,15 @@
 	import * as m from '$lib/paraglide/messages';
 	// export let data;
 
-	// console.log('DATA URKL', data.url);
-	// Define a variable to hold the selected SVG based on the lang prop
-	// let piramid_home_svg = lang === 'pt-br' ? piramid_home_pt_br_svg : piramid_home_en_svg;
-
 	import TelInputComponent from '$lib/components/TelInputComponent.svelte';
 	import { isProfessionalEmail } from '$lib/functions/emailValidator.js';
-	import { onMount } from 'svelte';
 	import { selectedCountryStore } from '$lib/stores.js';
+	import { onMount } from 'svelte';
 
 	let selectedCountry: any;
 	selectedCountryStore.subscribe((value) => {
-		// console.log('FORM ZOHO sc', value);
 		selectedCountry = value;
 	});
-
-	// onMount(() => {
-	// 	const unsubscribe = selectedCountryStore.subscribe((value) => {
-	// 		paisSelecionado = value;
-	// 	});
-
-	// 	return unsubscribe;
-	// });
 
 	// let areaOfInterest = '';
 	let fullName = '';
@@ -83,7 +70,6 @@
 		formData.append('LEADCF3', position);
 		// formData.append('LEADCF5', message);
 		// Add additional form fields as needed
-		console.log(formData);
 
 		try {
 			const response = await fetch('https://crm.zoho.com/crm/WebToLeadForm', {

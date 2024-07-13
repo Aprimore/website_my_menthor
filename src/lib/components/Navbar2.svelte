@@ -93,6 +93,8 @@
 			<a class={navbarClasses} on:click={toggleNavbar} href="/resources"
 				>{@html m.navbar_Resources()}</a
 			>
+			<!-- -->
+			<!-- href="http://mymenthor.com/blog" -->
 			<a
 				class={navbarClasses}
 				on:click={toggleNavbar}

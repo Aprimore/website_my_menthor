@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import {
 		linha_h_azul_2_svg,
 		linha_h_azul_3_svg,
@@ -8,15 +9,10 @@
 		portfolio_services_portugues_svg
 	} from '$lib';
 	import * as m from '$lib/paraglide/messages';
+	import { get } from 'svelte/store';
 
-	export let data;
-	// console.log(data.url.pathname);
-	// console.log(data.url);
-	const parts = data.url.pathname.split('/');
-	const extracted = `${parts[1]}`;
-
-	const selectedImage =
-		extracted === 'pt-br' ? portfolio_services_portugues_svg : portfolio_services_ingles_svg;
+	const pathUrl = get(page).url.pathname.startsWith('/pt-br');
+	const selectedImage = pathUrl ? portfolio_services_portugues_svg : portfolio_services_ingles_svg;
 </script>
 
 <section class="w-full items-center relative rounded-lg pb-20 bg-[#F1F1F9]" id="portfolio-services">
