@@ -25,9 +25,6 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
-		// env: {
-		// 	VITE_PUBLIC_WORDPRESS_API_URL: 'https://mymenthor.com/blog/graphql'
-		// },
 
 		// files: {
 		// 	serviceWorker: 'src/service-worker.js'

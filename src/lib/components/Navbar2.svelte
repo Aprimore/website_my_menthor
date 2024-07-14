@@ -93,14 +93,7 @@
 			<a class={navbarClasses} on:click={toggleNavbar} href="/resources"
 				>{@html m.navbar_Resources()}</a
 			>
-			<!-- -->
-			<!-- href="http://mymenthor.com/blog" -->
-			<a
-				class={navbarClasses}
-				on:click={toggleNavbar}
-				href="http://mymenthor.com/blog"
-				target="_blank">{@html m.navbar_Blog()}</a
-			>
+			<a class={navbarClasses} on:click={toggleNavbar} href="/v1/blog">{@html m.navbar_Blog()}</a>
 			<a class={navbarClasses} on:click={toggleNavbar} href="/company">{@html m.navbar_Company()}</a
 			>
 		</div>

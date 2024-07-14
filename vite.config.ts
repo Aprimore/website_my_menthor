@@ -11,7 +11,7 @@ export default defineConfig({
 			// outdir: './src/lib/paraglide'
 			outdir: './src/paraglide'
 		}),
-		sveltekit(),
+		sveltekit()
 		// partytownVite({
 		// 	dest: join(__dirname, 'static', '~partytown')
 		// })

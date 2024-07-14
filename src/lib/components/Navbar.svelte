@@ -7,10 +7,10 @@
 </script>
 
 <nav class="navbar bg-[#d4d4ed] relative w-full z-20 top-0 start-0 border-b">
-	<button class="absolute text-transparent cursor-pointer max-md:hidden">
-		<a class="absolute text-transparent cursor-pointer max-md:hidden" href="/blogtest">adsadas</a>
+	<!-- <button class="absolute text-transparent cursor-pointer max-md:hidden">
+		<a class="absolute text-transparent cursor-pointer max-md:hidden" href="/blog">111111</a>
 		dsa</button
-	>
+	> -->
 	<div
 		class="nav1 bg-transparent max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-2.5 p-1"
 	>
