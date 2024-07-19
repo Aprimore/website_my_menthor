@@ -1,12 +1,15 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	export let data: PageData;
+
+	const posts = data.posts.map((post) => post.node);
+	console.log(posts);
 </script>
 
 <section class="blog-list sm:bg-[#F1F1F9] w-full relative rounded-lg max-sm:p-2 py-5 Exo">
 	<div class="max-sm:bg-[#F1F1F9] max-w-screen-2xl mx-auto flex-col lg:flex-row rounded-lg p-4">
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
-			{#each data.posts as post}
+			{#each posts as post}
 				<a
 					href={`/v1/blog/${post.databaseId}/${post.slug}`}
 					class="border rounded-lg overflow-hidden hover:shadow-lg"

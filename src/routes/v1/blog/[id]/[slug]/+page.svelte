@@ -15,7 +15,7 @@
 	<div
 		class="max-sm:bg-[#F1F1F9] md:max-w-screen-2xl flex flex-col lg:flex-row mx-auto items-center rounded-lg"
 	>
-		<div class="max-lg:p-5 lg:w-2/3 space-y-6 mt-8 lg:mt-16 max-lg:order-1 mx-auto">
+		<div class="max-lg:p-5 space-y-6 mt-8 lg:mt-16 max-lg:order-1 mx-auto">
 			{#if data.post}
 				<article class="prose lg:prose-xl">
 					<h1 class="text-4xl font-bold mb-8">{data.post.title}</h1>

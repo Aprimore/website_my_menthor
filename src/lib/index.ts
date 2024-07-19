@@ -10,6 +10,8 @@ export { default as ebook_cover_en } from './assets/images/ebook_cover_en.webp';
 export { default as ebook_cover_en2 } from './assets/images/ebook_cover_en2.webp';
 export { default as ebook_cover_pt } from './assets/images/ebook_cover_pt.webp';
 export { default as ebook_cover_pt2 } from './assets/images/ebook_cover_pt2.webp';
+export { default as ebook_cover_pt_3 } from './assets/images/ebook_cover_pt_3.webp';
+export { default as ebook_cover_en_3 } from './assets/images/ebook_cover_en_3.webp';
 export { default as empresa_1_webp } from './assets/images/empresa_1.webp';
 export { default as header_hero_webp } from './assets/images/header_hero.webp';
 export { default as header_hero_1_webp } from './assets/images/header_hero_1.webp';

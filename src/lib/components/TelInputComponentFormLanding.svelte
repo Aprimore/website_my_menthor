@@ -111,7 +111,7 @@
 			data-dropdown-toggle="dropdown-states"
 			class="bg-[#ABAEBC]
 				relative flex-shrink-0 overflow-hidden z-10 whitespace-nowrap inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500
-			  border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:outline-none"
+			  border border-gray-300 rounded-l-lg hover:bg-[#989aa7] focus:outline-none"
 			type="button"
 			role="combobox"
 			aria-controls="dropdown-countries"
@@ -122,7 +122,7 @@
 			{#if selectedCountry && selectedCountry !== null}
 				<!-- class="text-md p-4 bg-white border placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1" -->
 
-				<div class="inline-flex items-center text-left">
+				<div class="inline-flex items-center text-left ">
 					<span class="flag flag-{selectedCountry.toLowerCase()} flex-shrink-0 mr-3" />
 					<span
 						class=" 
@@ -150,7 +150,7 @@
 		{#if isOpen}
 			<div
 				id="dropdown-countries "
-				class="absolute z-10 max-w-fit bg-white rounded divide-y divide-gray-100 shadow overflow-hidden translate-y-11"
+				class="absolute z-10 max-w-fit bg-[#ABAEBC] rounded divide-y divide-gray-100 shadow overflow-hidden translate-y-11"
 				data-popper-reference-hidden=""
 				data-popper-escaped=""
 				data-popper-placement="bottom"
@@ -166,7 +166,7 @@
 					<input
 						aria-autocomplete="list"
 						type="text"
-						class="px-4 py-2 text-[#17193B] focus:outline-none w-full sticky top-0 text-xl"
+						class="px-4 py-2 text-[#17193B] focus:outline-none w-full sticky top-0 text-xl bg-[#ABAEBC] placeholder-white"
 						bind:value={searchText}
 						placeholder={searchPlaceholder}
 					/>
@@ -176,7 +176,7 @@
 							<button
 								value={country.iso2}
 								type="button"
-								class="inline-flex py-2 px-4 w-full text-sm hover:bg-gray-100
+								class="inline-flex py-2 px-4 w-full text-sm hover:bg-[#989aa7]
                              active:bg-gray-800 overflow-hidden
                             {isActive
 									? 'bg-gray-600 '
@@ -186,11 +186,11 @@
 								}}
 							>
 								<div
-									class="inline-flex items-center text-left Exo text-[#17193B] text-md after:ml-0.5"
+									class="inline-flex items-center text-left Exo text-[#fff] text-md after:ml-0.5"
 								>
 									<span class="flag flag-{country.iso2.toLowerCase()} flex-shrink-0 mr-3" />
-									<span class="mr-2 Exo-Semibold text-[#17193B] after:ml-0.5">{country.name}</span>
-									<span class="text-gray-500">+{country.dialCode}</span>
+									<span class="mr-2 Exo-Semibold text-[#fff] after:ml-0.5">{country.name}</span>
+									<span class="text-gray-200">+{country.dialCode}</span>
 								</div>
 							</button>
 						</div>

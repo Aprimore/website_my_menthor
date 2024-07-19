@@ -1,0 +1,50 @@
+import fs from 'fs';
+import nodemailer from 'nodemailer';
+import path from 'path';
+
+export async function post({ request }) {
+	const { email } = await request.json();
+
+	// Read the PDF file from the filesystem
+	const pdfPath = path.resolve('src/routes/Ebook_EN.pdf');
+	const pdfData = fs.readFileSync(pdfPath);
+
+	// Create a transporter object using SMTP transport
+	let transporter = nodemailer.createTransport({
+		service: 'gmail',
+		auth: {
+			user: process.env.EMAIL_USER,
+			pass: process.env.EMAIL_PASS
+		}
+	});
+
+	// Setup email data with unicode symbols
+	let mailOptions = {
+		from: process.env.EMAIL_USER, // sender address
+		to: email, // list of receivers
+		subject: 'Your Ebook', // Subject line
+		text: 'Please find the attached Ebook.', // plain text body
+		attachments: [
+			{
+				filename: 'Ebook_EN.pdf',
+				content: pdfData,
+				contentType: 'application/pdf'
+			}
+		]
+	};
+
+	// Send mail with defined transport object
+	try {
+		await transporter.sendMail(mailOptions);
+		return {
+			status: 200,
+			body: { success: true }
+		};
+	} catch (error) {
+		console.error('Error sending email:', error);
+		return {
+			status: 500,
+			body: { success: false, error: 'Failed to send email' }
+		};
+	}
+}

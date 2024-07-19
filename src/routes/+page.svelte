@@ -27,9 +27,9 @@
 
 <div>
 	<!-- <PopupForm isOpen={isLandingPage} /> -->
-	{#if isOpen && consentVisible}
-		<PopupForm {isOpen} {consentVisible} />
-	{/if}
+	<!-- {#if isOpen && consentVisible} -->
+	<!-- <PopupForm {isOpen} {consentVisible} /> -->
+	<!-- {/if} -->
 	<Hero />
 	<Section1 />
 	<Section2 />
