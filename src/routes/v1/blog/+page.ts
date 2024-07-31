@@ -63,7 +63,7 @@ export const load: PageLoad = async ({ params, url }) => {
 
 		const { data } = await response.json();
 		const sanitizedPosts = data.posts.edges.map((post) => sanitizePost(post));
-		console.log(sanitizedPosts);
+		// console.log(sanitizedPosts);
 		return { posts: sanitizedPosts };
 	} catch (error) {
 		console.error('Error fetching posts:', error);

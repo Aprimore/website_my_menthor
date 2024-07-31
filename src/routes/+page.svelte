@@ -1,6 +1,8 @@
 <script lang="ts">
 	import og_image from '$lib/assets/images/og_image.webp';
 	import Footer from '$lib/components/Footer.svelte';
+	import FormLanding from '$lib/components/Home/FormLanding.svelte';
+	import Formtest from '$lib/components/Home/formtest.svelte';
 	import Hero from '$lib/components/Home/Hero.svelte';
 	import PopupForm from '$lib/components/Home/PopupForm.svelte';
 	import Section1 from '$lib/components/Home/Section1.svelte';
@@ -13,7 +15,7 @@
 	import Navbar2 from '$lib/components/Navbar2.svelte';
 	import { cookieConsentVisible } from '$lib/stores/cookieConsent.js';
 	import { onDestroy } from 'svelte';
-
+	export let form;
 	let isOpen = false;
 	let consentVisible = false;
 
@@ -27,9 +29,10 @@
 
 <div>
 	<!-- <PopupForm isOpen={isLandingPage} /> -->
-	<!-- {#if isOpen && consentVisible} -->
-	<!-- <PopupForm {isOpen} {consentVisible} /> -->
-	<!-- {/if} -->
+	<!-- <Formtest /> -->
+	<!-- {#if isOpen && consentVisible}
+		<PopupForm {isOpen} {consentVisible} {form} />
+	{/if} -->
 	<Hero />
 	<Section1 />
 	<Section2 />

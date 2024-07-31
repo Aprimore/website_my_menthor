@@ -166,7 +166,7 @@
 					<input
 						aria-autocomplete="list"
 						type="text"
-						class="px-4 py-2 text-[#17193B] focus:outline-none w-full sticky top-0 text-xl bg-[#ABAEBC] placeholder-white"
+						class="px-4 py-2 text-[#fff] focus:outline-none w-full sticky top-0 text-xl bg-[#ABAEBC] placeholder-white"
 						bind:value={searchText}
 						placeholder={searchPlaceholder}
 					/>
@@ -180,7 +180,7 @@
                              active:bg-gray-800 overflow-hidden
                             {isActive
 									? 'bg-gray-600 '
-									: ' '} Exo-Semibold text-[#17193B] after:ml-0.5"
+									: ' '} Exo-Semibold text-[#fff] after:ml-0.5"
 								on:click={(e) => {
 									handleSelect(country.name, country.iso2, e);
 								}}
@@ -210,6 +210,6 @@
 		required={true}
 		class="text-md p-4
 			 bg-[#ABAEBC]
-			 border text-[#17193B]  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1 placeholder-white }"
+			 border text-[#fff]  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1 placeholder-white }"
 	/>
 </div>
