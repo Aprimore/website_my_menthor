@@ -51,6 +51,7 @@
     "@fontsource-variable/archivo": "^5.0.19",
     "@fontsource-variable/exo": "^5.0.19",
     "@lottiefiles/svelte-lottie-player": "^0.3.1",
+    "@sveltejs/adapter-cloudflare": "^1.0.0-next.45",
     "@types/validator": "^13.11.10",
     "aws-sdk": "^2.1664.0",
     "dotenv": "^16.4.5",
