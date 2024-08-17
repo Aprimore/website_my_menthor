@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { arrow_up_svg } from '$lib';
 	import * as m from '$lib/paraglide/messages';
+	import CookieConsent from './CookieConsent.svelte';
 	import LoadingSpinner from './LoadingSpinner.svelte';
 </script>
 
@@ -8,13 +9,13 @@
 <div class="div2"></div>
 <div class="div3"></div> -->
 
-<div class="copyright p-5 bg-blue-800 text-sm copyright-component">
+<div class="copyright p-5 text-sm copyright-component">
 	<div class="gridFooter max-md:text-center max-md:space-y-5">
 		<ul
 			class="col-span-1
         "
 		>
-			<li class=" ">
+			<li class=" text-[#D4D4ED]">
 				<a href="/" class="">{@html m.footer_Copyright()}</a>
 			</li>
 		</ul>
@@ -86,9 +87,6 @@
 
 	.copyright {
 		background-color: #25285f;
-	}
-	* {
-		color: #f1f1f9;
 	}
 
 	.gridFooter {

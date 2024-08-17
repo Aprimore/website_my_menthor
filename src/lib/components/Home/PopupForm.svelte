@@ -1,7 +1,9 @@
 <script lang="ts">
 	import FormLanding from './FormLanding.svelte';
 	export let isOpen;
+	import * as m from '$lib/paraglide/messages';
 	let cookieConsent = false;
+	let doNotShowAgain = false; 
 
 	import { cookieConsentVisible } from '$lib/stores/cookieConsent.ts';
 	cookieConsentVisible.subscribe((value) => {
@@ -13,6 +15,9 @@
 
 	function closePopup() {
 		isOpen = false;
+		if (doNotShowAgain) {
+			localStorage.setItem('popupDismissed', 'true');
+		}
 	}
 
 	function handleClickOutside(event) {
@@ -20,7 +25,7 @@
 
 		const popupForm = document.querySelector('.popup-form');
 		if (!popupForm.contains(event.target)) {
-			isOpen = false;
+			closePopup();
 		}
 	}
 
@@ -42,6 +47,10 @@
 		>
 			X
 		</button>
-		<FormLanding />
+		<FormLanding {closePopup} />
+		<div class="mt-1 flex items-center justify-end px-2 Archivo">
+			<input type="checkbox" id="doNotShowAgain" bind:checked={doNotShowAgain} class="mr-2" />
+			<label for="doNotShowAgain">{m.do_not_show_again()}</label>
+		</div>
 	</div>
 </div>

@@ -14,25 +14,39 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Navbar2 from '$lib/components/Navbar2.svelte';
 	import { cookieConsentVisible } from '$lib/stores/cookieConsent.js';
-	import { onDestroy } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 	export let form;
 	let isOpen = false;
 	let consentVisible = false;
 
-	cookieConsentVisible.subscribe((value) => {
-		consentVisible = !value;
-		if (consentVisible) {
-			isOpen = !value;
-		}
+	// export let url;
+	// export let slug;
+	// export let params;
+
+	// console.log(url, slug, params);
+
+	onMount(() => {
+		cookieConsentVisible.subscribe((value) => {
+			consentVisible = !value;
+			if (consentVisible) {
+				// Only check localStorage in the browser
+				if (typeof window !== 'undefined') {
+					const popupDismissed = localStorage.getItem('popupDismissed');
+					if (!popupDismissed) {
+						isOpen = true;
+					}
+				}
+			}
+		});
 	});
 </script>
 
 <div>
 	<!-- <PopupForm isOpen={isLandingPage} /> -->
 	<!-- <Formtest /> -->
-	<!-- {#if isOpen && consentVisible}
+	{#if isOpen && consentVisible}
 		<PopupForm {isOpen} {consentVisible} {form} />
-	{/if} -->
+	{/if}
 	<Hero />
 	<Section1 />
 	<Section2 />

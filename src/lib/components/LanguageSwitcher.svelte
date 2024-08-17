@@ -23,7 +23,7 @@
 	};
 </script>
 
-<select
+<!-- <select
 	class="relative h-[2.5rem] bg-[#F1F1F9] rounded-lg"
 	aria-label="Select Language"
 	on:change={(e) => switchToLanguage(/** @type {any} */ (e).target.value)}
@@ -31,4 +31,16 @@
 	{#each availableLanguageTags as langTag}
 		<option value={langTag} selected={languageTag() === langTag}>{labels[langTag]}</option>
 	{/each}
-</select>
+</select> -->
+
+<div class="language-buttons">
+	{#each availableLanguageTags as langTag}
+		<button
+			class="relative h-[2.5rem] bg-[#F1F1F9] hover:bg-[#D4D4ED] rounded m-2 p-2"
+			on:click={() => switchToLanguage(langTag)}
+			aria-pressed={languageTag() === langTag}
+		>
+			{labels[langTag]}
+		</button>
+	{/each}
+</div>

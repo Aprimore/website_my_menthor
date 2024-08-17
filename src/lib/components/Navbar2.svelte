@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { logo_navbar_svg } from '$lib';
 	import * as m from '$lib/paraglide/messages';
@@ -16,6 +17,16 @@
 	let currentPage = '';
 	$: {
 		currentPage = $page.params.page || 'home';
+	}
+
+	function resetPopupAndNavigate() {
+		if (typeof window !== 'undefined') {
+			localStorage.removeItem('popupDismissed');
+		}
+		// Navigate to the homepage
+		goto('/').then(() => {
+			window.location.reload();
+		});
 	}
 
 	const hrClass = 'max-sm:block ';
@@ -93,9 +104,15 @@
 			<a class={navbarClasses} on:click={toggleNavbar} href="/resources"
 				>{@html m.navbar_Resources()}</a
 			>
-			<a class={navbarClasses} on:click={toggleNavbar} href="/v1/blog">{@html m.navbar_Blog()}</a>
+			<a
+				class={navbarClasses}
+				on:click={toggleNavbar}
+				href="/v1/blog"
+				data-sveltekit-preload-data="tap">{@html m.navbar_Blog()}</a
+			>
 			<a class={navbarClasses} on:click={toggleNavbar} href="/company">{@html m.navbar_Company()}</a
 			>
+			<button class={navbarClasses} on:click={resetPopupAndNavigate}>E-book</button>
 		</div>
 	</div>
 </nav>

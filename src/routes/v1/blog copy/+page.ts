@@ -43,8 +43,8 @@ const WPQL_QUERY = (language) => ({
 
 const sanitizePost = (post) => {
 	return {
-		...post.node, // Ensure you're accessing the `node` property here
-		title: post.node.title // Example sanitization
+		...post,
+		title: xss.escapeHtml(post.node.title)
 	};
 };
 
@@ -71,34 +71,47 @@ const sanitizePost = (post) => {
 // }
 // };
 
-export const load = (async ({ fetch, url }) => {
+export const load = (async ({ fetch, params, url }) => {
 	const endpoint = `${import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL}`;
-	const language = url.pathname === '/pt-br/v1/blog/' ? 'PT' : 'EN';
-
-	// Create a promise for the fetch request
-	const promise = fetch(endpoint, {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json'
-		},
-		body: JSON.stringify(WPQL_QUERY(language))
-	})
-		.then(async (res) => {
-			if (!res.ok) throw new Error('Failed to fetch data');
-			const { data } = await res.json(); // Destructure `data` from the response
-			console.log(res);
-			console.log(data.posts.edges);
-			const sanitizedPosts = data.posts.edges.map((post) => sanitizePost(post));
-			return sanitizedPosts;
+	let language;
+	language = url.pathname === '/pt-br/v1/blog/' ? 'PT' : 'EN';
+	const promise = new Promise((resolve, reject) => {
+		fetch(endpoint, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(WPQL_QUERY(language))
 		})
-		.catch((err) => {
-			console.error('Fetch error:', err);
-			return [];
-		});
+			// .then((res) => {
+			// 	console.log( promise);
+			// 	// const { data } = await res.json();
+			// 	// const sanitizedPosts = data.posts.edges.map((post) => sanitizePost(post));
+			// 	// console.log(data);
+			// 	// return { posts: sanitizedPosts };
+			// 	resolve(res.json());
+			// })
+			// .catch((err) => {
+			// 	reject(err);
+			// 	return { posts: [] };
+			// });
+			.then(async (res) => {
+				if (!res.ok) throw new Error('Failed to fetch data');
+				const data = res.json();
+				// const sanitizedPosts = await data.posts.edges.map((post) => sanitizePost(post));
+				console.log(data);
+				// console.log(sanitizedPosts);
+				return data;
+			})
+			.catch((err) => {
+				console.error('Fetch error:', err);
+				return { posts: [] };
+			});
+	});
 
-	// Return the streamed promise for the `+page.svelte` to consume
 	return {
 		streamed: {
+			// await the promise if running on server
 			lazyCritical: browser ? promise : await promise
 		}
 	};

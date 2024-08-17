@@ -102,8 +102,8 @@
 		<Navbar2 />
 		<slot />
 		<Footer />
-	</ParaglideJS>
 	<CookieConsent on:consentAccepted={handleCookieConsent} />
+	</ParaglideJS>
 	<!-- {/if} -->
 </main>
 

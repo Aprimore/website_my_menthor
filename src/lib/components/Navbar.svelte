@@ -8,7 +8,7 @@
 
 <nav class="navbar bg-[#d4d4ed] relative w-full z-20 top-0 start-0 border-b">
 	<!-- <button class="absolute text-transparent cursor-pointer max-md:hidden">
-		<a class="absolute text-transparent cursor-pointer max-md:hidden" href="/blog">111111</a>
+		<a class="absolute text-transparent cursor-pointer max-md:hidden" href="/blog"></a>
 		dsa</button
 	> -->
 	<div
@@ -26,14 +26,14 @@
 				>
 			</li> -->
 
-				<li class=" bg-[#d4d4ed]">
+				<li class="bg-[#d4d4ed] rounded">
 					<a
-						class="login Archivo block py-2 px-3 text-[#17193B] rounded bg-[#F1F1F9]"
+						class="login Archivo block py-4 px-3 text-[#17193B] rounded bg-[#F1F1F9]"
 						href="https://www.mymenthor.com.br/"
 						target="_blank">Login</a
 					>
 				</li>
-				<li class=" bg-[#F1F1F9] px-2">
+				<li class=" bg-[#F1F1F9] px-1 rounded">
 					<!-- <a
 						href="/"
 						class="language block py-2 px-3 text-[#17193B] rounded md:hover:bg-transparent Archivo"
@@ -51,17 +51,17 @@
 </nav>
 
 <style>
-	.language::before {
+	/* .language::before {
 		content: url('$lib/assets/svg/globe.svg');
 		display: inline-block;
 		vertical-align: middle;
 		margin-bottom: -5px;
-		margin-right: 7px; /* Adjust as needed */
-	}
+		margin-right: 7px; 
+	} */
 	.login::before {
 		content: url('$lib/assets/svg/lock.svg');
 		display: inline-block;
 		vertical-align: middle;
-		margin-right: 5px; /* Adjust as needed */
+		margin-right: 5px;
 	}
 </style>
