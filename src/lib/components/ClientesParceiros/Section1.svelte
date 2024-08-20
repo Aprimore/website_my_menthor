@@ -52,7 +52,6 @@
 					class="w-full max-w-[338px] -mt-32 md:mb-16 mr-5"
 					alt="Webp Vector"
 					loading="eager"
-					decoding="async"
 					fetchpriority="high"
 				/>
 				<img
@@ -60,7 +59,6 @@
 					class="w-full max-w-[338px] md:mt-16"
 					alt="Webp Vector"
 					loading="eager"
-					decoding="async"
 					fetchpriority="high"
 				/>
 			</div>

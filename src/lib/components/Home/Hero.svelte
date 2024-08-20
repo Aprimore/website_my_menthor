@@ -10,7 +10,7 @@
 </script>
 
 <header class="hero-section">
-	<div class="mx-auto px-4 flex h-[510px] items-center relative">
+	<div class="mx-auto px-4 flex h-[510px] max-sm:h-[600px] items-center relative">
 		<div class="mx-auto max-w-5xl text-center z-20">
 			<p class=" text-[#FCC614] text-lg Exo tracking-widest">
 				{@html m.homepage_header_business()}
@@ -43,7 +43,6 @@
 				sizes="(max-width: 500px) 100vw, 70vw"
 				alt="Hero Header"
 				class="absolute inset-0 w-full h-full object-cover -z-10"
-				decoding="async"
 				fetchpriority="high"
 				loading="eager"
 			/>

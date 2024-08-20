@@ -15,14 +15,14 @@
 	import Navbar2 from '$lib/components/Navbar2.svelte';
 	import { cookieConsentVisible } from '$lib/stores/cookieConsent.js';
 	import { onDestroy, onMount } from 'svelte';
+	import { tweened } from 'svelte/motion';
+	import { fade } from 'svelte/transition';
 	export let form;
 	let isOpen = false;
 	let consentVisible = false;
-
 	// export let url;
 	// export let slug;
 	// export let params;
-
 	// console.log(url, slug, params);
 
 	onMount(() => {
@@ -41,11 +41,13 @@
 	});
 </script>
 
-<div>
+<div class="fade-in">
 	<!-- <PopupForm isOpen={isLandingPage} /> -->
 	<!-- <Formtest /> -->
 	{#if isOpen && consentVisible}
-		<PopupForm {isOpen} {consentVisible} {form} />
+		<div in:fade={{ duration: 200, delay: 1000 }}>
+			<PopupForm {isOpen} {consentVisible} {form} />
+		</div>
 	{/if}
 	<Hero />
 	<Section1 />

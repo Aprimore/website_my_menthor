@@ -33,7 +33,6 @@
 				class=" mx-auto rounded-lg"
 				alt="Webp Vector"
 				loading="eager"
-				decoding="async"
 				fetchpriority="high"
 			/>
 		</div>

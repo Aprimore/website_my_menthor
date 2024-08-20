@@ -38,9 +38,9 @@
 		}
 		// Por favor, use um endereço de e-mail profissional
 		// if (!isProfessionalEmail(email)) {
-			// alert(`${m.form_profissionalEmailAddress()}`);
-			// alert('Please use a professional email address.');
-			// return;
+		// alert(`${m.form_profissionalEmailAddress()}`);
+		// alert('Please use a professional email address.');
+		// return;
 		// }
 		// validation
 		if (!fullName || !email) {
@@ -63,9 +63,15 @@
 		formData.append('Mobile', phone);
 		formData.append('Company', company);
 		formData.append('LEADCF3', position);
-		formData.append('LEADCF23', '-None-');
+		if (!isPtBr) {
+			formData.append('LEADCF23', 'Sustaining Transformation through Business Architecture');
+		} else {
+			formData.append('LEADCF23', 'Sustentando a Transformação');
+		}
+		// formData.append('LEADCF23', '-None-');
+		// formData.append('LEADCF23', 'Sustaining&#x20;Transformation&#x20;through&#x20;Business&#x20;Architecture');
 
-		// console.log(formData);
+		console.log(formData);
 
 		try {
 			const response = await fetch('https://crm.zoho.com/crm/WebToLeadForm', {
@@ -242,7 +248,7 @@
 							/>
 						</label>
 						<!-- hidden -->
-						<label class=" ">
+						<label class="hidden">
 							<div class="zcwf_col_lab" style="font-size:12px; font-family: Arial;">
 								<label for="LEADCF23">Formul&aacute;rio</label>
 							</div>
@@ -257,7 +263,7 @@
 									</option>
 
 									<option
-										value="Sustentando&#x20;a&#x20;through&#x20;Transformação"
+										value="Sustentando&#x20;a&#x20;Transforma&ccedil;&atilde;o"
 										selected={isPtBr}
 									>
 										Sustentando a Transformação
@@ -442,7 +448,7 @@
 											</option>
 
 											<option
-												value="Sustentando&#x20;a&#x20;through&#x20;Transformação"
+												value="Sustentando&#x20;a&#x20;Transforma&ccedil;&atilde;o"
 												selected={isPtBr}
 											>
 												Sustentando a Transformação

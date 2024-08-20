@@ -1,10 +1,14 @@
 <script lang="ts">
+	import { onNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Navbar2 from '$lib/components/Navbar2.svelte';
+	import ViewTransition from '$lib/components/navigation.svelte';
+	import { fade } from 'svelte/transition';
 	// import { getPageTitle } from '$lib/functions/pageTitle';
 	import CookieConsent from '$lib/components/CookieConsent.svelte';
+	import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 	import { getPageTitle } from '$lib/functions/pageTitle';
 	import { i18n } from '$lib/i18n.js';
 	import {
@@ -20,7 +24,6 @@
 	import { onMount } from 'svelte';
 	import '../app.postcss';
 	import og_image from '../lib/assets/images/og_image.webp';
-	import LoadingSpinner from './../lib/components/LoadingSpinner.svelte';
 
 	let isCookieConsentAccepted = false;
 	let showPopup = false;
@@ -30,10 +33,10 @@
 		showPopup = true;
 	}
 
-	// let isLoading = true;
-	// onMount(async () => {
-	// 	isLoading = false;
-	// });
+	let isLoading = true;
+	onMount(async () => {
+		isLoading = false;
+	});
 
 	// Initialize isMobile
 	// let isMobile = false;
@@ -63,7 +66,6 @@
 	// 	cookieConsentAccepted = true;
 	// 	loadGTM();
 	// }
-
 	let pagePath = $page.url.pathname;
 	$: pagePath = $page.url.pathname;
 </script>
@@ -88,24 +90,26 @@
 	<meta name="twitter:description" content={SITE_DESCRIPTION} />
 </svelte:head>
 
-<main class="relative">
-	<!-- {#if isLoading} -->
-	<!-- <div class="shell"> -->
-	<!-- <div class=""></div> -->
-	<!-- <p>...</p> -->
-	<!-- <LoadingSpinner /> -->
-	<!-- </div> -->
-	<!-- {:else} -->
-	<!-- Conteúdo real do seu site -->
-	<ParaglideJS {i18n}>
-		<Navbar />
-		<Navbar2 />
-		<slot />
-		<Footer />
-	<CookieConsent on:consentAccepted={handleCookieConsent} />
-	</ParaglideJS>
-	<!-- {/if} -->
-</main>
+<ViewTransition />
+{#if !isLoading}
+	<div class="app relative" in:fade={{ duration: 300, delay: 10 }}>
+		<!-- {#if isLoading} -->
+		<!-- <div class="shell"> -->
+		<!-- <div class=""></div> -->
+		<!-- <p>...</p> -->
+		<!-- </div> -->
+		<!-- Conteúdo real do seu site -->
+		<ParaglideJS {i18n}>
+			<Navbar />
+			<Navbar2 />
+			<main>
+				<slot />
+			</main>
+			<Footer />
+			<CookieConsent on:consentAccepted={handleCookieConsent} />
+		</ParaglideJS>
+	</div>
+{/if}
 
 <style>
 	/* Zoom responsiveness */

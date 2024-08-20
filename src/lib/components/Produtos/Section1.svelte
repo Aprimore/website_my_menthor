@@ -24,7 +24,6 @@
 						class="z-10 max-sm:mx-auto w-56"
 						alt="linha"
 						loading="eager"
-						decoding="async"
 						fetchpriority="high"
 					/></span
 				>
@@ -41,7 +40,6 @@
 					class="absolute -top-5 -right-5"
 					alt="star"
 					loading="eager"
-					decoding="async"
 					fetchpriority="high"
 				/>
 				<span class="absolute left-10 max-sm:hidden"
@@ -49,7 +47,6 @@
 						src={linha_v_amarela_svg}
 						alt="linha"
 						loading="eager"
-						decoding="async"
 						fetchpriority="high"
 					/></span
 				>
@@ -66,7 +63,6 @@
 				class="max-w-ull"
 				alt="Svg Icon"
 				loading="eager"
-				decoding="async"
 				fetchpriority="high"
 			/>
 		</div>

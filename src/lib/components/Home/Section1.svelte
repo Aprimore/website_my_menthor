@@ -41,7 +41,6 @@
 							src={linha_v_1_verde_svg}
 							alt="linha"
 							loading="eager"
-							decoding="async"
 							fetchpriority="high"
 						/></span
 					>

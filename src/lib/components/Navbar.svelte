@@ -2,17 +2,21 @@
 	import { logo_navbar_svg } from '$lib';
 	import * as m from '$lib/paraglide/messages';
 	import { languageTag, setLanguageTag } from '$lib/paraglide/runtime';
+	import { fade } from 'svelte/transition';
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
 	import LoadingSpinner from './LoadingSpinner.svelte';
 </script>
 
-<nav class="navbar bg-[#d4d4ed] relative w-full z-20 top-0 start-0 border-b">
+<nav
+	class=" navbar bg-[#d4d4ed] relative w-full z-20 top-0 start-0 border-b"
+	in:fade={{ duration: 300, delay: 10 }}
+>
 	<!-- <button class="absolute text-transparent cursor-pointer max-md:hidden">
 		<a class="absolute text-transparent cursor-pointer max-md:hidden" href="/blog"></a>
 		dsa</button
 	> -->
 	<div
-		class="nav1 bg-transparent max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-2.5 p-1"
+		class=" nav1 bg-transparent max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-2.5 p-1"
 	>
 		<div class="flex order-2 space-x-3">
 			<ul
@@ -58,6 +62,7 @@
 		margin-bottom: -5px;
 		margin-right: 7px; 
 	} */
+
 	.login::before {
 		content: url('$lib/assets/svg/lock.svg');
 		display: inline-block;

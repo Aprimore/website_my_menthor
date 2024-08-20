@@ -3,6 +3,7 @@
 	import { page } from '$app/stores';
 	import { logo_navbar_svg } from '$lib';
 	import * as m from '$lib/paraglide/messages';
+	import { fade } from 'svelte/transition';
 
 	let showMenu = false;
 
@@ -37,6 +38,7 @@
 
 <nav
 	class=" bg-[#F1F1F9] bg-opacity-80 relative mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full max-h-[115px] nav-component"
+	in:fade={{ duration: 300, delay: 10 }}
 >
 	<div class="lg:flex items-center max-lg:justify-between m-auto max-xl:px-4">
 		<div
@@ -52,7 +54,6 @@
 					src={logo_navbar_svg}
 					alt="Logo MyMenthor"
 					loading="eager"
-					decoding="async"
 					fetchpriority="high"
 					class="aspect-video mr-48"
 				/>
