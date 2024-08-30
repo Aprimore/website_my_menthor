@@ -36,6 +36,10 @@
 		' bg-opacity-0 text-base text-[#17193B] py-2 md:px-3 transition-transform transform hover:-translate-y-1 hover:bg-[#20C997] rounded-lg hover:text-[#F1F1F9] Exo bg-[#F1F1F9]';
 </script>
 
+<svelte:head>
+	<link rel="preload" as="image" href={logo_navbar_svg} />
+</svelte:head>
+
 <nav
 	class=" bg-[#F1F1F9] bg-opacity-80 relative mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full max-h-[115px] nav-component"
 	in:fade={{ duration: 300, delay: 10 }}

@@ -9,3 +9,4 @@ export function isProfessionalEmail(email: string): boolean {
 	const domain = email.split('@')[1];
 	return !freeEmailDomains.includes(domain);
 }
+

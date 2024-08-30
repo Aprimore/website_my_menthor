@@ -21,7 +21,6 @@
 		'spacer',
 		'background',
 		'snapshot',
-		'zoom',
 		'info'
 	];
 </script>
@@ -50,7 +49,9 @@
 						{@html m.homepage_section1_desc1()}
 					</h1>
 
-					<div class="relative w-full flex justify-center align-center max-w-xl sm:bottom-10">
+					<div
+						class="relative w-full flex justify-center align-center max-w-xl sm:bottom-10 no-zoom"
+					>
 						{#if LottiePlayer}
 							<LottiePlayer
 								src={animationData}
@@ -80,7 +81,7 @@
 
 				<div class="mt-8 flex flex-wrap gap-4">
 					<a
-						class="Exo btn-learn block max-w-max rounded-xl px-8 py-4 text-lg bg-[#8ABB3F] text-[#F1F1F9] focus:ring sm:w-auto z-10 relative max-sm:mx-auto"
+						class="Exo btn-learn block max-w-max rounded-xl px-8 py-4 text-lg bg-[#7fad3b] text-[#fff] focus:ring sm:w-auto z-10 relative max-sm:mx-auto"
 						href="/products#platform"
 						aria-label="Learn more about the platform"
 						title="Learn more about the platform"

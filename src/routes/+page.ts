@@ -1,8 +1,6 @@
-// export const prerender = false;
-
+export const prerender = true;
 
 // import type { PageLoad } from './$types';
-
 // export const load = (async (params) => {
 // 	return {
 // 		slug: params

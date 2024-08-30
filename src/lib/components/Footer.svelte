@@ -52,11 +52,11 @@
 
 				<div class="footer2 col-span-1 max-md:mt-10">
 					<div class=" mb-10">
-						<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
-							{@html m.footer_Products()}
-						</p>
 						<ul class="space-y-3">
 							<li>
+								<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
+									{@html m.footer_Products()}
+								</p>
 								<a
 									href="/products#platform"
 									title="Learn more about our company"
@@ -75,11 +75,11 @@
 							</li>
 						</ul>
 
-						<p class="text-[#F1F1F9] text-lg Exo-Semibold my-5">
-							{@html m.footer_Solutions()}
-						</p>
 						<ul class="space-y-3">
 							<li>
+								<p class="text-[#F1F1F9] text-lg Exo-Semibold my-5">
+									{@html m.footer_Solutions()}
+								</p>
 								<a href="/solutions#modules" class="text-[#D4D4ED] text-sm hover:text-white"
 									>{@html m.footer_The_Platform()}</a
 								>
@@ -101,9 +101,6 @@
 				</div>
 				<div class="footer3 col-span-1 max-md:mt-10">
 					<div class=" mb-10">
-						<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
-							{@html m.footer_Stakeholders()}
-						</p>
 						<ul class="space-y-3">
 							<!-- <li>
 									<a
@@ -114,6 +111,9 @@
 									</a>
 								</li> -->
 							<li>
+								<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
+									{@html m.footer_Stakeholders()}
+								</p>
 								<a
 									href="/customers_and_partners#cases"
 									class="text-[#D4D4ED] text-sm hover:text-white"
@@ -142,10 +142,10 @@
 				<div class="footer4 col-span-1">
 					<div class=" mb-10">
 						<ul class="space-y-3">
-							<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
-								{@html m.footer_Resources()}
-							</p>
 							<li>
+								<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
+									{@html m.footer_Resources()}
+								</p>
 								<a href="/resources#resources" class="text-[#D4D4ED] text-sm hover:text-white">
 									{@html m.footer_Blog()}
 								</a>
@@ -166,11 +166,11 @@
 
 				<div class="footer5 col-span-1 relative">
 					<div class=" mb-10">
-						<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
-							{@html m.footer_Our_Company()}
-						</p>
 						<ul class="space-y-3">
 							<li>
+								<p class="text-[#F1F1F9] text-lg Exo-Semibold mb-5">
+									{@html m.footer_Our_Company()}
+								</p>
 								<a href="/company#about" class="text-[#D4D4ED] text-sm hover:text-white"
 									>{@html m.footer_About_us()}</a
 								>

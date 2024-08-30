@@ -1,6 +1,7 @@
 //@ts-nocheck
 // [postid]/+page.ts
 // Import the environment variable
+export const prerender = false;
 import type { Load } from '@sveltejs/kit';
 import xss from 'xss';
 

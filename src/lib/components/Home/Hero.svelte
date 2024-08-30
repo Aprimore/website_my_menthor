@@ -7,7 +7,15 @@
 		header_hero_webp
 	} from '$lib';
 	import * as m from '$lib/paraglide/messages';
+	import { onMount } from 'svelte';
 </script>
+
+<svelte:head>
+	<link rel="preload" as="image" href={header_hero_1_webp} />
+	<link rel="preload" as="image" href={header_hero_2_webp} />
+	<link rel="preload" as="image" href={header_hero_3_webp} />
+	<link rel="preload" as="image" href={header_hero_webp} />
+</svelte:head>
 
 <header class="hero-section">
 	<div class="mx-auto px-4 flex h-[510px] max-sm:h-[600px] items-center relative">

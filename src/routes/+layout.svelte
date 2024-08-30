@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { i18n } from '$lib/i18n.js';
+	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
 	import { onNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
 	import Footer from '$lib/components/Footer.svelte';
@@ -10,7 +12,7 @@
 	import CookieConsent from '$lib/components/CookieConsent.svelte';
 	import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 	import { getPageTitle } from '$lib/functions/pageTitle';
-	import { i18n } from '$lib/i18n.js';
+
 	import {
 		OG_IMAGE_HEIGHT,
 		OG_IMAGE_WIDTH,
@@ -20,7 +22,7 @@
 	} from '$lib/siteConfig';
 	import '@fontsource-variable/archivo';
 	import '@fontsource-variable/exo';
-	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
+
 	import { onMount } from 'svelte';
 	import '../app.postcss';
 	import og_image from '../lib/assets/images/og_image.webp';
@@ -92,7 +94,7 @@
 
 <ViewTransition />
 {#if !isLoading}
-	<div class="app relative" in:fade={{ duration: 300, delay: 10 }}>
+	<div class="app relative" in:fade={{ duration: 200, delay: 10 }}>
 		<!-- {#if isLoading} -->
 		<!-- <div class="shell"> -->
 		<!-- <div class=""></div> -->
@@ -130,15 +132,16 @@
 			zoom: 1;
 		}
 	}
-	:global(.shell) {
-		position: relative;
-		width: 100%;
-		height: 100vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		overflow: hidden;
-	}
+
+	/* :global(.shell) { */
+	/* position: relative; */
+	/* width: 100%; */
+	/* height: 100vh; */
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: center; */
+	/* overflow: hidden; */
+	/* } */
 
 	:global(html) {
 		font-family: 'Exo Variable, sans-serif;';

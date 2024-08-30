@@ -47,6 +47,8 @@ export { default as facebook_svg } from './assets/svg/facebook.svg';
 export { default as fone_amarelo_svg } from './assets/svg/fone_amarelo.svg';
 export { default as globe_svg } from './assets/svg/globe.svg';
 export { default as headphones_svg } from './assets/svg/headphones.svg';
+export { default as brazil_svg } from './assets/svg/brazil.svg';
+export { default as usa_svg } from './assets/svg/usa.svg';
 export { default as instagram_svg } from './assets/svg/instagram.svg';
 export { default as instant_mix_svg } from './assets/svg/instant_mix.svg';
 export { default as inventory_svg } from './assets/svg/inventory.svg';
