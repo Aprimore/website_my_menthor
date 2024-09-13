@@ -158,9 +158,9 @@
 		content: url('$lib/assets/svg/notes.svg');
 	}
 
-	.title-ms::before {
+	/* .title-ms::before {
 		content: url('$lib/assets/svg/ads_click.svg');
-	}
+	} */
 	.title-sd::before {
 		content: url('$lib/assets/svg/map.svg');
 	}

@@ -28,7 +28,6 @@ export { default as gif_3_json } from './assets/lotties/gif-3.json';
 export { default as gif_4_json } from './assets/lotties/gif-4.json';
 export { default as gif_5_json } from './assets/lotties/gif-5.json';
 export { default as gif_6_json } from './assets/lotties/gif-6.json';
-export { default as ads_click_svg } from './assets/svg/ads_click.svg';
 export { default as analytics_illustration_svg } from './assets/svg/analytics_illustration.svg';
 export { default as arrow_right_svg } from './assets/svg/arrow_right.svg';
 export { default as arrow_right_2_svg } from './assets/svg/arrow_right_2.svg';

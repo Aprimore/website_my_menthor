@@ -22,6 +22,15 @@
 	// export let params;
 	// console.log(url, slug, params);
 
+	import {
+		OG_IMAGE_HEIGHT,
+		OG_IMAGE_WIDTH,
+		SITE_DESCRIPTION,
+		SITE_TITLE,
+		SITE_URL
+	} from '$lib/siteConfig';
+	import { page } from '$app/stores';
+
 	onMount(() => {
 		cookieConsentVisible.subscribe((value) => {
 			consentVisible = !value;
@@ -36,7 +45,26 @@
 			}
 		});
 	});
+
+	let pagePath = $page.url.pathname;
+	$: pagePath = $page.url.pathname;
 </script>
+
+<svelte:head>
+	<link rel="canonical" href={SITE_URL + pagePath} />
+	<meta property="og:url" content={SITE_URL} />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content={SITE_TITLE} />
+	<meta name="description" content={SITE_DESCRIPTION} />
+	<meta property="og:description" content={SITE_DESCRIPTION} />
+	<meta property="og:image" content={og_image} />
+	<meta property="og:image:width" content={OG_IMAGE_WIDTH} />
+	<meta property="og:image:height" content={OG_IMAGE_HEIGHT} />
+	<meta name="twitter:image" content={og_image} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={SITE_TITLE} />
+	<meta name="twitter:description" content={SITE_DESCRIPTION} /></svelte:head
+>
 
 <div class="fade-in">
 	<!-- <PopupForm isOpen={isLandingPage} /> -->
