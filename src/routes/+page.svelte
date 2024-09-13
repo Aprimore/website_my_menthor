@@ -1,9 +1,9 @@
 <script lang="ts">
-	// import ogSquareImageSrc from '$lib/assets/home/home-open-graph-square.jpg';
-	// import ogImageSrc from '$lib/assets/home/home-open-graph.jpg';
-	// import twitterImageSrc from '$lib/assets/home/home-twitter.jpg';
-	// import featuredImageSrc from '$lib/assets/home/home.jpg';
-	// import og_image from '$lib/assets/images/og_image.webp';
+	import ogSquareImageSrc from '$lib/assets/home/home-open-graph-square.jpg';
+	import ogImageSrc from '$lib/assets/home/home-open-graph.jpg';
+	import twitterImageSrc from '$lib/assets/home/home-twitter.jpg';
+	import featuredImageSrc from '$lib/assets/home/home.jpg';
+	import og_image from '$lib/assets/images/og_image.webp';
 	import website from '$lib/config/website';
 	import FormLanding from '$lib/components/Home/FormLanding.svelte';
 	// import Formtest from '$lib/components/Home/formtest.svelte';
@@ -47,26 +47,26 @@
 	const featuredImageAlt = isPortuguese
 		? 'Imagem de uma pessoa vetorizada, o logo do site da My Menthor'
 		: 'picture of a vectorized person, the logo for My Menthor website';
-	// const featuredImage = {
-	// 	url: featuredImageSrc,
-	// 	alt: featuredImageAlt,
-	// 	width: 672,
-	// 	height: 448,
-	// 	caption: 'Home page'
-	// };
-	// const ogImage = {
-	// 	url: ogImageSrc,
-	// 	alt: featuredImageAlt
-	// };
-	// const ogSquareImage = {
-	// 	url: ogSquareImageSrc,
-	// 	alt: featuredImageAlt
-	// };
+	const featuredImage = {
+		url: featuredImageSrc,
+		alt: featuredImageAlt,
+		width: 672,
+		height: 448,
+		caption: 'Home page'
+	};
+	const ogImage = {
+		url: ogImageSrc,
+		alt: featuredImageAlt
+	};
+	const ogSquareImage = {
+		url: ogSquareImageSrc,
+		alt: featuredImageAlt
+	};
 
-	// const twitterImage = {
-	// 	url: twitterImageSrc,
-	// 	alt: featuredImageAlt
-	// };
+	const twitterImage = {
+		url: twitterImageSrc,
+		alt: featuredImageAlt
+	};
 	const entityMeta = {
 		url: `${siteUrl}/`,
 		faviconWidth: 512,
@@ -81,11 +81,11 @@
 		lastUpdated: '2024-09-05T14:19:33.000+0100',
 		breadcrumbs,
 		metadescription,
-		article: false
-		// featuredImage,
-		// ogImage,
-		// ogSquareImage,
-		// twitterImage
+		article: false,
+		featuredImage,
+		ogImage,
+		ogSquareImage,
+		twitterImage
 	};
 
 	// import {
@@ -96,6 +96,7 @@
 	// 	SITE_URL
 	// } from '$lib/siteConfig';
 	import { page } from '$app/stores';
+	import { getPageTitle } from '$lib/functions/pageTitle.js';
 	onMount(() => {
 		cookieConsentVisible.subscribe((value) => {
 			consentVisible = !value;
@@ -112,7 +113,44 @@
 	});
 </script>
 
-<SEO {...seoProps} />
+<!-- <SEO {...seoProps} /> -->
+
+<svelte:head>
+	<!-- Load Google Analytics script -->
+	<!-- <script
+		async
+		src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.VITE_GA_TRACKING_ID}`}
+	></script>
+	<script>
+		// Initialize Google Analytics
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', import.meta.env.VITE_GA_TRACKING_ID);
+	</script>
+	<title>{getPageTitle(pagePath)}</title> -->
+	<link rel="canonical" href="mymenthor.com" />
+	<meta property="og:site_name" content="Lorem" />
+	<meta property="og:url" content="lorem.com" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Lorem" />
+	<!-- <meta name="description" content={metadescription} />
+	<meta property="og:description" content={metadescription} />
+	<meta property="og:image" content={ogImageSrc} />
+	<meta property="og:image:width" content="672" />
+	<meta property="og:image:height" content="448" />
+	<meta name="twitter:image" content={twitterImageSrc} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Lorem" />
+	<meta name="twitter:description" content={metadescription} />
+	<meta
+		name="robots"
+		content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+	/> -->
+</svelte:head>
 
 <div in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}>
 	<!-- <PopupForm isOpen={isLandingPage} /> -->

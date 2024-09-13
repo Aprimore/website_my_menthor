@@ -1,4 +1,9 @@
 <script lang="ts">
+	import ogSquareImageSrc from '$lib/assets/home/home-open-graph-square.jpg';
+	import ogImageSrc from '$lib/assets/home/home-open-graph.jpg';
+	import twitterImageSrc from '$lib/assets/home/home-twitter.jpg';
+	import featuredImageSrc from '$lib/assets/home/home.jpg';
+	import og_image from '$lib/assets/images/og_image.webp';
 	import LoadingSkeleton from '$lib/components/LoadingSkeleton.svelte';
 	import { onMount } from 'svelte';
 	import type { PageData } from './$types';
@@ -77,7 +82,23 @@
 	};
 </script>
 
-<SEO {...seoProps} />
+<!--  <SEO {...seoProps} /> -->
+<!-- <svelte:head>
+	<link rel="canonical" href={siteUrl} />
+	<meta property="og:url" content={siteUrl} />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content={title} />
+	<meta name="description" content={metadescription} />
+	<meta property="og:description" content={metadescription} />
+	<meta property="og:image" content={ogImageSrc} />
+	<meta property="og:image:width" content="672" />
+	<meta property="og:image:height" content="448" />
+	<meta name="twitter:image" content={twitterImageSrc} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={metadescription} />
+</svelte:head> -->
+
 <section
 	in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}
 	class="blog-list sm:bg-[#F1F1F9] w-full relative rounded-lg max-sm:p-2 py-5 Exo"

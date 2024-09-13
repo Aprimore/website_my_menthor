@@ -21,7 +21,7 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: 'index.html',
+			fallback: 'error.html',
 			precompress: false,
 			strict: true
 		}),
@@ -29,10 +29,10 @@ const config = {
 		// files: {
 		// 	serviceWorker: 'src/service-worker.js'
 		// },
-		paths: {
-			base: '', // Set this to '' if your site is at the root of the domain
-			assets: '' // Set this if your assets are served from a different URL
-		},
+		// paths: {
+		// 	base: '', // Set this to '' if your site is at the root of the domain
+		// 	assets: '' // Set this if your assets are served from a different URL
+		// },
 
 		alias: {
 			//You can call this whatever you want
