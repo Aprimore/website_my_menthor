@@ -105,11 +105,11 @@
 		? ``
 		: ` ring-pink-500  ring-1 focus:outline-none focus:border-sky-500 focus:ring-sky-500`}"
 >
-	<div class="flex" use:clickOutsideAction={closeOnClickOutside}>
+	<div class="flex " use:clickOutsideAction={closeOnClickOutside} >
 		<button
 			id="states-button"
 			data-dropdown-toggle="dropdown-states"
-			class="bg-[#ABAEBC]
+			class="bg-[#ABAEBC] 
 				relative flex-shrink-0 overflow-hidden z-10 whitespace-nowrap inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500
 			  border border-gray-300 rounded-l-lg hover:bg-[#989aa7] focus:outline-none"
 			type="button"

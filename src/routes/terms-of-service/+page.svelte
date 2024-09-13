@@ -3,9 +3,14 @@
 	import { piramid_home_en_svg, piramid_home_pt_br_svg } from '$lib';
 	import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 	import * as m from '$lib/paraglide/messages';
+	import { fade } from 'svelte/transition';
+	import { cubicInOut } from 'svelte/easing';
 </script>
 
-<section class="sm:bg-[#F1F1F9] w-full items-center relative rounded-lg max-sm:p-2 py-5 Exo">
+<section
+	in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}
+	class="sm:bg-[#F1F1F9] w-full items-center relative rounded-lg max-sm:p-2 py-5 Exo"
+>
 	<div
 		class="max-sm:bg-[#F1F1F9] md:max-w-screen-2xl flex flex-col lg:flex-row mx-auto items-center rounded-lg"
 	>

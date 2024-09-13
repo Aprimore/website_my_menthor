@@ -1,4 +1,6 @@
 <script lang="ts">
+
+
 	import { linha_v_1_verde_svg } from '$lib';
 	import * as m from '$lib/paraglide/messages';
 
@@ -25,7 +27,9 @@
 	];
 </script>
 
-<section class="lg:max-w-[80rem] relative rounded-lg mx-auto my-2 max-sm:p-2 container">
+<section
+	class="lg:max-w-[80rem] relative rounded-lg mx-auto my-2 max-sm:p-2 container"
+>
 	<div class="md:py-5 lg:py-6 xl:py-16 relative flex flex-col sm:p-3">
 		<div class="flex flex-col lg:w-1/2 relative sm:items-center max-lg:order-1 mt-3">
 			<div

@@ -86,8 +86,8 @@ export const load = (async ({ fetch, url }) => {
 		.then(async (res) => {
 			if (!res.ok) throw new Error('Failed to fetch data');
 			const { data } = await res.json(); // Destructure `data` from the response
-			console.log(res);
-			console.log(data.posts.edges);
+			// console.log(res);
+			// console.log(data.posts.edges);
 			const sanitizedPosts = data.posts.edges.map((post) => sanitizePost(post));
 			return sanitizedPosts;
 		})

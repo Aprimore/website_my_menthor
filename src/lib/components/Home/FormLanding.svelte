@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fly } from 'svelte/transition';
 	// export let form;
 	import { page } from '$app/stores';
 	import { ebook_cover_en_3, ebook_cover_pt_3 } from '$lib';
@@ -10,6 +11,7 @@
 	import { selectedCountryStore } from '$lib/stores.js';
 	import { onMount } from 'svelte';
 	import { get } from 'svelte/store';
+	import { quintOut } from 'svelte/easing';
 	export let closePopup: () => void;
 
 	let selectedCountry: any;
@@ -107,15 +109,15 @@
 	const pathUrl = get(page).url.pathname;
 	const selectedImage = pathUrl === '/' ? ebook_cover_en_3 : ebook_cover_pt_3;
 
-	console.log(pathUrl);
+	// console.log(pathUrl);
 
 	// const browserLang = pathUrl ? 'pt-br' : 'en';
 	const isPtBr = pathUrl.startsWith('/pt-br/');
 </script>
 
-<section class="bg-[#F1F1F9] w-full items-center relative rounded-l-lg Exo">
-	<div class="flex flex-col-reverse sm:flex-row rounded-l-lg max-w-screen-md max-sm:max-w-sm">
-		<div class="sm:w-1/2 flex justify-end items-center rounded-l-lg bookbg2">
+<section class="bg-[#F1F1F9] w-full items-center relative rounded-3xl Exo">
+	<div class="flex flex-col-reverse sm:flex-row rounded-l-3xl max-w-screen-md max-sm:max-w-sm">
+		<div class="sm:w-1/2 flex justify-end items-center rounded-l-3xl bookbg2">
 			<div class=" m-auto sm:p-1">
 				<!-- <h1 class="text-transparent pointer-events-none">
 					Sustaining: Transformation through business architecture by My Menthor
@@ -126,9 +128,9 @@
 
 		<div
 			class="bookbg sm:w-1/2 w-full h-full
-         sm:rounded-r-lg"
+         sm:rounded-r-3xl"
 		>
-			<div class="w-full max-sm:hidden bg-[#ABAEBC] px-8">
+			<div class="w-full max-sm:hidden bg-[#ABAEBC] px-8 rounded-r-3xl">
 				<h1 class="text-xl font-bold leading-tight py-5 text-[#fff]">
 					{m.form_title_landing()}
 				</h1>
@@ -168,7 +170,7 @@
 							<input
 								id="Last_Name"
 								name="Last Name"
-								class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+								class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-3xl focus:ring-1"
 								type="text"
 								bind:value={fullName}
 								placeholder={m.ph_fullname()}
@@ -183,7 +185,7 @@
 							<input
 								id="email"
 								name="Email"
-								class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+								class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-3xl focus:ring-1"
 								type="email"
 								inputmode="email"
 								bind:value={email}
@@ -203,7 +205,7 @@
 								Country
 							</span>
 							<input
-								class="hidden text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 blockd w-full rounded-md focus:ring-1"
+								class="hidden text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 blockd w-full rounded-3xl focus:ring-1"
 								type="text"
 								placeholder="Country"
 								id="Country"
@@ -228,7 +230,7 @@
 							<input
 								id="Company"
 								name="Company"
-								class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+								class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-3xl focus:ring-1"
 								type="text"
 								bind:value={company}
 								placeholder={m.ph_company()}
@@ -241,7 +243,7 @@
 							<input
 								id="LEADCF3"
 								name="LEADCF3"
-								class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+								class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-3xl focus:ring-1"
 								type="text"
 								bind:value={position}
 								placeholder={m.ph_role()}
@@ -277,7 +279,7 @@
 							<input
 								id="LEADCF3"
 								name="LEADCF3"
-								class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+								class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-3xl focus:ring-1"
 								type="text"
 								bind:value={position}
 								placeholder={m.ph_role()}
@@ -299,7 +301,15 @@
 			<div class="w-full summary-details sm:hidden absolute">
 				<details class="sm:hidden">
 					<summary
-						class="flex rounded-t-lg text-white bg-[#ABAEBC] cursor-pointer hover:bg-[#8a8c97]"
+						transition:fly={{
+							delay: 250,
+							duration: 300,
+							x: 100,
+							y: 500,
+							opacity: 0.5,
+							easing: quintOut
+						}}
+						class="flex rounded-t-3xl text-white bg-[#ABAEBC] cursor-pointer hover:bg-[#8a8c97]"
 					>
 						<h1 class="text-md font-bold leading-tight p-6 m-0">
 							Click here to {m.form_title_landing()}
@@ -348,7 +358,7 @@
 									<input
 										id="Last_Name"
 										name="Last Name"
-										class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+										class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-3xl focus:ring-1"
 										type="text"
 										bind:value={fullName}
 										placeholder={m.ph_fullname()}
@@ -364,7 +374,7 @@
 									</span>
 									<input
 										name="Email"
-										class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+										class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-3xl focus:ring-1"
 										type="email"
 										inputmode="email"
 										bind:value={email}
@@ -385,7 +395,7 @@
 										Country
 									</span>
 									<input
-										class="hidden text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 blockd w-full rounded-md focus:ring-1"
+										class="hidden text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 blockd w-full rounded-3xl focus:ring-1"
 										type="text"
 										placeholder="Country"
 										id="Country"
@@ -412,7 +422,7 @@
 									<input
 										id="Company"
 										name="Company"
-										class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+										class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-3xl focus:ring-1"
 										type="text"
 										bind:value={company}
 										placeholder={m.ph_company()}
@@ -427,7 +437,7 @@
 									<input
 										id="LEADCF3"
 										name="LEADCF3"
-										class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+										class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-3xl focus:ring-1"
 										type="text"
 										bind:value={position}
 										placeholder={m.ph_role()}
@@ -464,7 +474,7 @@
 									<input
 										id="LEADCF3"
 										name="LEADCF3"
-										class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
+										class="text-sm p-3 bg-transparent border placeholder-white text-[#fff] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-3xl focus:ring-1"
 										type="text"
 										bind:value={position}
 										placeholder={m.ph_role()}
@@ -511,5 +521,45 @@
 		background-size: cover;
 		/* background-size: cover; */
 		/* opacity: 50%; */
+	}
+
+	details[open] summary ~ * {
+		animation: slide-down 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+		transform-origin: top;
+	}
+
+	@keyframes slide-down {
+		0% {
+			opacity: 0;
+			transform: translateY(-40%);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	details:not([open]) summary ~ * {
+		animation: slide-up 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+	}
+
+	@keyframes slide-up {
+		0% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		100% {
+			opacity: 0;
+			transform: translateY(-40%);
+		}
+	}
+
+	/* Accessibility: Disable animations for users who prefer reduced motion */
+	@media (prefers-reduced-motion: reduce) {
+		details[open] summary ~ *,
+		details:not([open]) summary ~ * {
+			animation: none; /* Disable animations */
+			transition: none; /* Disable transitions */
+		}
 	}
 </style>

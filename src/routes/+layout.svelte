@@ -13,7 +13,6 @@
 	import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 	import { getPageTitle } from '$lib/functions/pageTitle';
 
-	
 	import '@fontsource-variable/archivo';
 	import '@fontsource-variable/exo';
 
@@ -67,6 +66,21 @@
 </script>
 
 <svelte:head>
+	<!-- Load Google Analytics script -->
+	<script
+		async
+		src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.VITE_GA_TRACKING_ID}`}
+	></script>
+	<script>
+		// Initialize Google Analytics
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', import.meta.env.VITE_GA_TRACKING_ID);
+	</script>
 	<!-- <title>{$page.data.post?.title || 'My Menthor | Home'}</title> -->
 	<title>{getPageTitle(pagePath)}</title>
 	<!-- {#if pagePath && pagePath !== '/'}

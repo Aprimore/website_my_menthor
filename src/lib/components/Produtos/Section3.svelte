@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Section_Cards2 from './Section_Cards2.svelte';
 	import { page } from '$app/stores';
 	import { piramid_home_en_svg, piramid_home_pt_br_svg } from '$lib';
 	import * as m from '$lib/paraglide/messages';
@@ -56,7 +57,8 @@
 	</div>
 </section>
 <div class="caroussel">
-	<Section_Cards />
+	<!-- <Section_Cards /> -->
+	<Section_Cards2 />
 </div>
 
 <style>

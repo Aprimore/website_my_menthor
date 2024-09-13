@@ -11,9 +11,77 @@
 			posts = data.streamed.lazyCritical;
 		}
 	}
+	import { fade } from 'svelte/transition';
+	import { cubicInOut } from 'svelte/easing';
+
+	import SEO from '$lib/components/SEO/index.svelte';
+	import website from '$lib/config/website';
+	const { author, siteUrl } = website;
+	import { page } from '$app/stores';
+	let pagePath = $page.url.pathname;
+	$: pagePath = $page.url.pathname;
+	const isPortuguese = pagePath.startsWith('/pt-br/');
+	let title = 'Blog';
+	const breadcrumbs = [
+		{
+			name: 'Blog',
+			slug: pagePath.substring(1)
+		}
+	];
+
+	let metadescription = isPortuguese
+		? 'O Blog da My Menthor traz mais de 20 anos de experiência em consultoria de gestão organizacional, compartilhando insights e estratégias sobre Gestão de Arquitetura Empresarial. Explore artigos sobre melhores práticas, tendências do setor e como aproveitar plataformas SaaS para impulsionar o sucesso empresarial.'
+		: 'The My Menthor Blog brings over 20 years of expertise in organizational management consulting, sharing insights and strategies on Enterprise Architecture Management. Explore articles on best practices, industry trends, and how to leverage SaaS platforms to drive business success.';
+	const featuredImageAlt = isPortuguese
+		? 'Imagem de uma pessoa vetorizada, o logo do site da My Menthor'
+		: 'picture of a vectorized person, the logo for My Menthor website';
+	// const featuredImage = {
+	// 	url: featuredImageSrc,
+	// 	alt: featuredImageAlt,
+	// 	width: 672,
+	// 	height: 448,
+	// 	caption: 'Home page'
+	// };
+	// const ogImage = {
+	// 	url: ogImageSrc,
+	// 	alt: featuredImageAlt
+	// };
+	// const ogSquareImage = {
+	// 	url: ogSquareImageSrc,
+	// 	alt: featuredImageAlt
+	// };
+
+	// const twitterImage = {
+	// 	url: twitterImageSrc,
+	// 	alt: featuredImageAlt
+	// };
+	const entityMeta = {
+		url: `${siteUrl}/`,
+		faviconWidth: 512,
+		faviconHeight: 512,
+		caption: author
+	};
+	const seoProps = {
+		title,
+		slug: pagePath.substring(1),
+		entityMeta,
+		datePublished: '2024-05-07T14:19:33.000+0100',
+		lastUpdated: '2024-09-08T14:19:33.000+0100',
+		breadcrumbs,
+		metadescription,
+		article: false
+		// featuredImage,
+		// ogImage,
+		// ogSquareImage,
+		// twitterImage
+	};
 </script>
 
-<section class="blog-list sm:bg-[#F1F1F9] w-full relative rounded-lg max-sm:p-2 py-5 Exo">
+<SEO {...seoProps} />
+<section
+	in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}
+	class="blog-list sm:bg-[#F1F1F9] w-full relative rounded-lg max-sm:p-2 py-5 Exo"
+>
 	<div class="max-sm:bg-[#F1F1F9] max-w-screen-2xl mx-auto flex-col lg:flex-row rounded-lg p-4">
 		{#await data.streamed.lazyCritical}
 			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
