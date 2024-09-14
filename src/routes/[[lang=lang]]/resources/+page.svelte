@@ -4,11 +4,7 @@
 	import twitterImageSrc from '$lib/assets/home/home-twitter.jpg';
 	import featuredImageSrc from '$lib/assets/home/home.jpg';
 	import og_image from '$lib/assets/images/og_image.webp';
-	import Section1 from '$lib/components/Solucoes/Section1.svelte';
-	import Section2 from '$lib/components/Solucoes/Section2.svelte';
-	import Section3 from '$lib/components/Solucoes/Section3.svelte';
-	import Section4 from '$lib/components/Solucoes/Section4.svelte';
-	import Section5 from '$lib/components/Solucoes/Section5.svelte';
+	import Section1 from '$lib/components/Recursos/Section1.svelte';
 	import { fade } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
 	import SEO from '$lib/components/SEO/index.svelte';
@@ -17,19 +13,21 @@
 	import { page } from '$app/stores';
 	let pagePath = $page.url.pathname;
 	$: pagePath = $page.url.pathname;
-	const isPortuguese = pagePath.startsWith('/pt-br/');
-	let title = isPortuguese ? 'Soluções' : 'Solutions';
+	const isPortuguese = pagePath.startsWith('/pt-BR/');
+	let title = isPortuguese ? 'Recursos' : 'Resources';
 	const breadcrumbs = [
 		{
-			name: isPortuguese ? 'Soluções' : 'Solutions',
+			name: isPortuguese ? 'Recursos' : 'Resources',
 			slug: pagePath.substring(1)
 		}
 	];
 
 	let metadescription = isPortuguese
-		? 'Descubra o portfólio abrangente de serviços da My Menthor, projetado para garantir o sucesso do cliente em todas as etapas da implementação. Desde a configuração e a implantação da estratégia até a gestão de processos e maturidade organizacional, oferecemos consultoria personalizada, mentoria e suporte contínuo para ajudar as empresas a alcançar seus objetivos e maximizar o valor da plataforma.'
-		: 'Discover My Menthor’s comprehensive portfolio of services, designed to ensure customer success at every stage of implementation. From setup and strategy deployment to process management and organizational maturity, we provide tailored consulting, mentoring, and ongoing support to help businesses achieve their goals and maximize platform value.';
-	const featuredImageAlt = 'picture of a vectorized person, the logo for My Menthor website';
+		? 'Acesse uma variedade de recursos da My Menthor, incluindo insights do blog, webinars, eventos e treinamentos através da My Menthor Academy. Mantenha-se atualizado com os últimos artigos, base de conhecimento e ferramentas para ajudar a navegar pela Arquitetura Empresarial e soluções da plataforma.'
+		: 'Access a variety of resources from My Menthor, including blog insights, webinars, events, and training through the My Menthor Academy. Stay informed with the latest articles, knowledge base, and tools to help you navigate Business Architecture and platform solutions.';
+	const featuredImageAlt = isPortuguese
+		? 'Imagem de uma pessoa vetorizada, o logo do site da My Menthor'
+		: 'picture of a vectorized person, the logo for My Menthor website';
 	// const featuredImage = {
 	// 	url: featuredImageSrc,
 	// 	alt: featuredImageAlt,
@@ -60,11 +58,10 @@
 		title,
 		slug: pagePath.substring(1),
 		entityMeta,
-		datePublished: '2024-05-06T14:19:33.000+0100',
-		lastUpdated: '2024-09-09T14:19:33.000+0100',
+		datePublished: '2024-05-05T14:19:33.000+0100',
+		lastUpdated: '2024-09-08T14:19:33.000+0100',
 		breadcrumbs,
-		metadescription,
-		article: false
+		metadescription
 		// featuredImage,
 		// ogImage,
 		// ogSquareImage,
@@ -90,8 +87,4 @@
 </svelte:head> -->
 <div in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}>
 	<Section1 />
-	<Section2 />
-	<Section3 />
-	<Section4 />
-	<Section5 />
 </div>

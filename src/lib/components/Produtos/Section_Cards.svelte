@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import Carousel from 'svelte-carousel';
 
 	let activeDot = 'dot-1'; // Initialize active dot to 'dot-1'

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { checkmark_2_svg } from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 </script>
 
 <section class="w-full my-20 relative rounded-lg">

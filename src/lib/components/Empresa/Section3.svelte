@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { arrow_right_svg, clientes_parceiros_3_webp } from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import FormZoho from '../FormZoho.svelte';
 	// import { base } from '$app/paths';
 	import animationData from '$lib/assets/lotties/gif-7.json';

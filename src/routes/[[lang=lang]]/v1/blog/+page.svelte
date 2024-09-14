@@ -25,7 +25,7 @@
 	import { page } from '$app/stores';
 	let pagePath = $page.url.pathname;
 	$: pagePath = $page.url.pathname;
-	const isPortuguese = pagePath.startsWith('/pt-br/');
+	const isPortuguese = pagePath.startsWith('/pt-BR/');
 	let title = 'Blog';
 	const breadcrumbs = [
 		{

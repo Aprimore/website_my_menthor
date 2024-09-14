@@ -5,7 +5,7 @@
 		linha_v_amarela_svg,
 		products_frame_svg
 	} from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 </script>
 
 <section class="w-full bg-white md:mt-16 mt-4">
@@ -43,12 +43,7 @@
 					fetchpriority="high"
 				/>
 				<span class="absolute left-10 max-sm:hidden"
-					><img
-						src={linha_v_amarela_svg}
-						alt="linha"
-						loading="eager"
-						fetchpriority="high"
-					/></span
+					><img src={linha_v_amarela_svg} alt="linha" loading="eager" fetchpriority="high" /></span
 				>
 				<p class=" text-lg leading-tight text-[#F1F1F9] Archivo">
 					{@html m.produtos_DeploymentAndExecutionOfStrategy()}

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import FormLanding from './FormLanding.svelte';
 	export let isOpen;
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	let cookieConsent = false;
 	let doNotShowAgain = false;
 

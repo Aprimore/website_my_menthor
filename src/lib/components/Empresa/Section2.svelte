@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { clientes_parceiros_3_webp, linha_h_verde_1_svg } from '$lib';
 	import animationData from '$lib/assets/lotties/gif-5.json';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import { onMount } from 'svelte';
 
 	let LottiePlayer: any;

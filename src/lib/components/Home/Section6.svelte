@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { arrow_right_svg, linha_h_cinza_svg } from '$lib';
 	import animationData from '$lib/assets/lotties/gif-3.json';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import { onMount } from 'svelte';
 	import LoadingSpinner from '../LoadingSpinner.svelte';
 

@@ -2,7 +2,7 @@
 	import Section_Cards2 from './Section_Cards2.svelte';
 	import { page } from '$app/stores';
 	import { piramid_home_en_svg, piramid_home_pt_br_svg } from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import { get } from 'svelte/store';
 	import LoadingSpinner from '../LoadingSpinner.svelte';
 	import Section_Cards from './Section_Cards.svelte';

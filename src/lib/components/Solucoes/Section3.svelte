@@ -5,7 +5,7 @@
 		linha_h_laranja2_svg,
 		linha_h_verde2_svg
 	} from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 </script>
 
 <section class="w-full relative rounded-lg bg-[#D4D4ED]">

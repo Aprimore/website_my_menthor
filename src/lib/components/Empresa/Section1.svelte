@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { empresa_1_webp } from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 </script>
 
 <section class="mt-4 lg:my-16 pb-20 bg-white">

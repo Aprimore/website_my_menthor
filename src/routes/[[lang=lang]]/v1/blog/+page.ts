@@ -51,7 +51,7 @@ const sanitizePost = (post) => {
 // export const load: PageLoad = async ({ params, url }) => {
 // 	const endpoint = `${import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL}`;
 // 	let language;
-// 	language = url.pathname === '/pt-br/v1/blog/' ? 'PT' : 'EN';
+// 	language = url.pathname === '/pt-BR/v1/blog/' ? 'PT' : 'EN';
 
 // try {
 // const response = await fetch(endpoint, {
@@ -73,7 +73,7 @@ const sanitizePost = (post) => {
 
 export const load = (async ({ fetch, url }) => {
 	const endpoint = `${import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL}`;
-	const language = url.pathname === '/pt-br/v1/blog/' ? 'PT' : 'EN';
+	const language = url.pathname === '/pt-BR/v1/blog/' ? 'PT' : 'EN';
 
 	// Create a promise for the fetch request
 	const promise = fetch(endpoint, {

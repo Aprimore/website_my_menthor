@@ -5,7 +5,7 @@
 		clientes_parceiros_5_webp,
 		linha_h_azul_svg
 	} from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 </script>
 
 <section class="w-full rounded-lg bg-[#D4D4ED] lg:py-16" id="clients">

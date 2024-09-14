@@ -8,10 +8,10 @@
 		portfolio_services_ingles_svg,
 		portfolio_services_portugues_svg
 	} from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import { get } from 'svelte/store';
 
-	const pathUrl = get(page).url.pathname.startsWith('/pt-br');
+	const pathUrl = get(page).url.pathname.startsWith('/pt-BR');
 	const selectedImage = pathUrl ? portfolio_services_portugues_svg : portfolio_services_ingles_svg;
 </script>
 

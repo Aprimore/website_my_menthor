@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { empresa_1_webp } from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 
 	import animationData from '$lib/assets/lotties/gif-4.json';
 	import { onMount } from 'svelte';

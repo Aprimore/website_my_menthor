@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { piramid_home_en_svg, piramid_home_pt_br_svg } from '$lib';
 	import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import { fade } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
 </script>

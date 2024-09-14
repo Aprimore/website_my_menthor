@@ -7,7 +7,7 @@
 	import TelInputComponent from '$lib/components/TelInputComponentFormLanding.svelte';
 	import { isProfessionalEmail } from '$lib/functions/emailValidator.js';
 	// import { sendPdf } from '$lib/functions/sendPdf';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import { selectedCountryStore } from '$lib/stores.js';
 	import { onMount } from 'svelte';
 	import { get } from 'svelte/store';
@@ -111,8 +111,8 @@
 
 	// console.log(pathUrl);
 
-	// const browserLang = pathUrl ? 'pt-br' : 'en';
-	const isPtBr = pathUrl.startsWith('/pt-br/');
+	// const browserLang = pathUrl ? 'pt-BR' : 'en';
+	const isPtBr = pathUrl.startsWith('/pt-BR/');
 </script>
 
 <section class="bg-[#F1F1F9] w-full items-center relative rounded-3xl Exo">

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { logo_navbar_svg } from '$lib';
-	import * as m from '$lib/paraglide/messages';
-	import { languageTag, setLanguageTag } from '$lib/paraglide/runtime';
+	import * as m from '$paraglide/messages';
+	import { languageTag, setLanguageTag } from '$paraglide/runtime';
 	import { fade } from 'svelte/transition';
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
 	import LoadingSpinner from './LoadingSpinner.svelte';

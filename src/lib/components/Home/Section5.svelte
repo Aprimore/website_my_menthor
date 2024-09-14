@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { earth_2_webp, rocket_svg } from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 </script>
 
 <section class="w-full items-center relative rounded-lg">

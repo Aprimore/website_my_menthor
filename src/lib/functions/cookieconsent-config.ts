@@ -5,7 +5,7 @@ import { loadGTM } from './loadGTM';
 // 		return navigator.language || navigator.userLanguage || 'en';
 // 	}
 // 	const userLang = navigator.language;
-// 	return userLang.toLowerCase() === 'pt-br' ? 'pt-br' : 'en';
+// 	return userLang.toLowerCase() === 'pt-BR' ? 'pt-BR' : 'en';
 // }
 
 export function createConfig(language: string): CookieConsent.CookieConsentConfig {
@@ -42,7 +42,7 @@ export function createConfig(language: string): CookieConsent.CookieConsentConfi
 						},
 						onReject: () => {
 							console.log('rejected');
-							return
+							return;
 						}
 					}
 					// another: {
@@ -169,7 +169,7 @@ export function createConfig(language: string): CookieConsent.CookieConsentConfi
 						]
 					}
 				},
-				'pt-br': {
+				'pt-BR': {
 					consentModal: {
 						title: 'Usamos cookies',
 						description:
@@ -178,8 +178,8 @@ export function createConfig(language: string): CookieConsent.CookieConsentConfi
 						acceptNecessaryBtn: 'Rejeitar todos',
 						showPreferencesBtn: 'Gerenciar preferências individuais',
 						footer: `
-            <a href="/pt-br/terms-of-service" target="_blank">Termos de Uso</a>
-            <a href="/pt-br/privacy-policy" target="_blank">Política de Privacidade</a>
+            <a href="/pt-BR/terms-of-service" target="_blank">Termos de Uso</a>
+            <a href="/pt-BR/privacy-policy" target="_blank">Política de Privacidade</a>
           `
 					},
 					preferencesModal: {
@@ -236,7 +236,7 @@ export function createConfig(language: string): CookieConsent.CookieConsentConfi
 							{
 								title: 'Mais informações',
 								description:
-									'Para qualquer dúvida relacionada à minha política de cookies e suas escolhas, por favor <a href="/pt-br/company#contact" target="_blank">entre em contato conosco</a>'
+									'Para qualquer dúvida relacionada à minha política de cookies e suas escolhas, por favor <a href="/pt-BR/company#contact" target="_blank">entre em contato conosco</a>'
 							}
 						]
 					}

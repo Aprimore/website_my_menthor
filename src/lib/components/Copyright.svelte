@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { arrow_up_svg } from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import CookieConsent from './CookieConsent.svelte';
 	import LoadingSpinner from './LoadingSpinner.svelte';
 </script>

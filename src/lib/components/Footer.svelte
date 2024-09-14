@@ -8,7 +8,7 @@
 		mail_svg,
 		youtube_svg
 	} from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import Copyright from './Copyright.svelte';
 </script>
 

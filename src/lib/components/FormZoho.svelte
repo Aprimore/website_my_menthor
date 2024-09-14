@@ -1,7 +1,7 @@
 <script lang="ts">
 	import TelInputComponent from '$lib/components/TelInputComponent.svelte';
 	import { isProfessionalEmail } from '$lib/functions/emailValidator.js';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import { onMount } from 'svelte';
 	import { selectedCountryStore } from '$lib/stores.js';
 

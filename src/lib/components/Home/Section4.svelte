@@ -1,6 +1,6 @@
 <script lang="ts">
 	import animationData from '$lib/assets/lotties/gif-2.json';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import { onMount } from 'svelte';
 
 	let LottiePlayer: any;

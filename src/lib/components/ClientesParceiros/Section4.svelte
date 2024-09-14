@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { arrow_right_svg, clientes_parceiros_4_webp, fone_amarelo_svg } from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 </script>
 
 <section class="cap w-full items-center relative rounded-lg bg-white md:my-6 md:pb-12 sm:p-3">

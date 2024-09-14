@@ -41,7 +41,7 @@
     "format": "prettier --write .",
     "test:integration": "playwright test",
     "test:unit": "vitest",
-    "postinstall": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide",
+    "postinstall": "paraglide-js compile --project ./project.inlang",
     "httpsv": "bunx http-server ./build"
   },
   "dependencies": {

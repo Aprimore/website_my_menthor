@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { checkmark_2_svg, linha_h_azul_5_svg } from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 </script>
 
 <section class="w-full items-center relative rounded-lg bg-[#F1F1F9] py-20">

@@ -7,7 +7,7 @@
 		header_hero_3_webp,
 		header_hero_webp
 	} from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import { onMount } from 'svelte';
 	import { cubicInOut } from 'svelte/easing';
 </script>

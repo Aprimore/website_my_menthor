@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { piramid_home_en_svg, piramid_home_pt_br_svg } from '$lib';
-	import * as m from '$lib/paraglide/messages';
+	import * as m from '$paraglide/messages';
 	import { get } from 'svelte/store';
 	import LoadingSpinner from '../LoadingSpinner.svelte';
 
 	const pathUrl = get(page).url.pathname;
 	// console.log(pathUrl);
-	const selectedImage = pathUrl === '/pt-br/' ? piramid_home_pt_br_svg : piramid_home_en_svg;
+	const selectedImage = pathUrl === '/pt-BR/' ? piramid_home_pt_br_svg : piramid_home_en_svg;
 </script>
 
 <section class="sm:bg-[#F1F1F9] w-full items-center relative rounded-lg max-sm:p-2">

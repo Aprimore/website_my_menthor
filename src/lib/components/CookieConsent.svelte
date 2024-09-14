@@ -7,9 +7,9 @@
 	import { get } from 'svelte/store';
 	import * as CookieConsent from 'vanilla-cookieconsent';
 	import 'vanilla-cookieconsent/dist/cookieconsent.css';
-	const pathUrl = get(page).url.pathname.startsWith('/pt-br');
+	const pathUrl = get(page).url.pathname.startsWith('/pt-BR');
 	// console.log(pathUrl);
-	const browserLang = pathUrl ? 'pt-br' : 'en';
+	const browserLang = pathUrl ? 'pt-BR' : 'en';
 	// console.log(browserLang);
 	onMount(() => {
 		const config = createConfig(browserLang); // Generate config with the detected language

@@ -4,9 +4,12 @@
 	import twitterImageSrc from '$lib/assets/home/home-twitter.jpg';
 	import featuredImageSrc from '$lib/assets/home/home.jpg';
 	import og_image from '$lib/assets/images/og_image.webp';
-	import Section1 from '$lib/components/Empresa/Section1.svelte';
-	import Section2 from '$lib/components/Empresa/Section2.svelte';
-	import Section3 from '$lib/components/Empresa/Section3.svelte';
+	import Section1 from '$lib/components/ClientesParceiros/Section1.svelte';
+	import Section2 from '$lib/components/ClientesParceiros/Section2.svelte';
+	import Section3 from '$lib/components/ClientesParceiros/Section3.svelte';
+	import Section4 from '$lib/components/ClientesParceiros/Section4.svelte';
+	// import type { PageData } from './$types';
+	// export let data: PageData;
 	import { fade } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
 	import website from '$lib/config/website';
@@ -15,20 +18,18 @@
 	import { page } from '$app/stores';
 	let pagePath = $page.url.pathname;
 	$: pagePath = $page.url.pathname;
-
-	const isPortuguese = pagePath.startsWith('/pt-br/');
-	// const urlSlug = pagePath.substring(1);
-	let title = isPortuguese ? 'Empresa' : 'Company';
+	const isPortuguese = pagePath.startsWith('/pt-BR/');
+	let title = isPortuguese ? 'Clientes e Parceiros' : 'Customers and Partners';
 	const breadcrumbs = [
 		{
-			name: isPortuguese ? 'Empresa' : 'Company',
+			name: isPortuguese ? 'Clientes e Parceiros' : 'Customers and Partners',
 			slug: pagePath.substring(1)
 		}
 	];
 
 	let metadescription = isPortuguese
-		? 'A My Menthor é o resultado de mais de 20 anos de experiência em consultoria de gestão organizacional, transformados em uma Plataforma Tecnológica SaaS para a Gestão de Arquitetura Empresarial.'
-		: 'My Menthor is result of over 20 years of experience in organizational management consulting transformed into a SaaS Technological Platform for Enterprise Architecture Management.';
+		? 'Entre em contato para saber mais sobre nosso programa de parcerias e descubra como podemos alcançar resultados excepcionais juntos. Estamos comprometidos com o sucesso contínuo de nossos clientes e parceiros, cultivando relacionamentos de longo prazo focados em resultados.'
+		: 'Get in touch to learn about our partnership program and find out how we can achieve exceptional results together. We are committed to the ongoing success of our customers and partners, cultivating long-term relationships focused on results.';
 	const featuredImageAlt = isPortuguese
 		? 'Imagem de uma pessoa vetorizada, o logo do site da My Menthor'
 		: 'picture of a vectorized person, the logo for My Menthor website';
@@ -62,8 +63,8 @@
 		title,
 		slug: pagePath.substring(1),
 		entityMeta,
-		datePublished: '2024-05-02T14:19:33.000+0100',
-		lastUpdated: '2024-09-02T14:19:33.000+0100',
+		datePublished: '2024-05-07T03:19:33.000+0100',
+		lastUpdated: new Date(),
 		breadcrumbs,
 		metadescription,
 		article: false
@@ -93,5 +94,6 @@
 <div in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}>
 	<Section1 />
 	<Section2 />
-	<Section3 />
+	<!-- <Section3 /> -->
+	<Section4 />
 </div>
