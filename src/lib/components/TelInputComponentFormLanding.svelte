@@ -105,11 +105,11 @@
 		? ``
 		: ` ring-pink-500  ring-1 focus:outline-none focus:border-sky-500 focus:ring-sky-500`}"
 >
-	<div class="flex " use:clickOutsideAction={closeOnClickOutside} >
+	<div class="flex" use:clickOutsideAction={closeOnClickOutside}>
 		<button
 			id="states-button"
 			data-dropdown-toggle="dropdown-states"
-			class="bg-[#ABAEBC] 
+			class="bg-[#ABAEBC]
 				relative flex-shrink-0 overflow-hidden z-10 whitespace-nowrap inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500
 			  border border-gray-300 rounded-l-lg hover:bg-[#989aa7] focus:outline-none"
 			type="button"
@@ -122,7 +122,7 @@
 			{#if selectedCountry && selectedCountry !== null}
 				<!-- class="text-md p-4 bg-white border placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1" -->
 
-				<div class="inline-flex items-center text-left ">
+				<div class="inline-flex items-center text-left">
 					<span class="flag flag-{selectedCountry.toLowerCase()} flex-shrink-0 mr-3" />
 					<span
 						class=" 
@@ -178,9 +178,7 @@
 								type="button"
 								class="inline-flex py-2 px-4 w-full text-sm hover:bg-[#989aa7]
                              active:bg-gray-800 overflow-hidden
-                            {isActive
-									? 'bg-gray-600 '
-									: ' '} Exo-Semibold text-[#fff] after:ml-0.5"
+                            {isActive ? 'bg-gray-600 ' : ' '} Exo-Semibold text-[#fff] after:ml-0.5"
 								on:click={(e) => {
 									handleSelect(country.name, country.iso2, e);
 								}}

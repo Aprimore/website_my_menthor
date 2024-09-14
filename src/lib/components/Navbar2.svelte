@@ -4,12 +4,21 @@
 	import { logo_navbar_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 	import { fade } from 'svelte/transition';
+	import { availableLanguageTags, sourceLanguageTag, languageTag } from '$paraglide/runtime';
+	import { translatePath } from '$lib/i18n';
+	// let showMenu = false;
+	// console.log(availableLanguageTags, sourceLanguageTag);
+	let isOpen = false;
+	const toggleNavbar = () => (isOpen = !isOpen);
 
-	let showMenu = false;
+	const labels = {
+		en: 'EN',
+		'pt-BR': 'PT-BR'
+	};
 
-	function toggleNavbar() {
-		showMenu = !showMenu;
-	}
+	// function toggleNavbar() {
+	// 	showMenu = !showMenu;
+	// }
 
 	function generateDynamicId(pageName: any) {
 		return `${pageName}#top`;
@@ -32,8 +41,27 @@
 
 	const hrClass = 'max-sm:block ';
 
-	const navbarClasses =
-		' bg-opacity-0 text-base text-[#17193B] py-2 md:px-3 transition-transform transform hover:-translate-y-1 hover:bg-[#20C997] rounded-lg hover:text-[#F1F1F9] Exo bg-[#F1F1F9]';
+	// const navbarClasses =
+	// 	' bg-opacity-0 text-base text-[#17193B] py-2 md:px-3 transition-transform transform hover:-translate-y-1 hover:bg-[#20C997] rounded-lg hover:text-[#F1F1F9] Exo bg-[#F1F1F9]';
+
+	$: navbarClasses = `bg-opacity-0 text-base text-[#17193B] py-2 md:px-3 transition-transform transform hover:-translate-y-1 hover:bg-[#20C997] rounded-lg hover:text-[#F1F1F9] Exo bg-[#F1F1F9] `;
+
+	const navItems = [
+		{ href: '/', label: m.navbar_Home },
+		{ href: '/products', label: m.navbar_Products },
+		{ href: '/solutions', label: m.navbar_Solutions },
+		{ href: '/customers_and_partners', label: m.navbar_Clients_and_Partners },
+		{ href: '/resources', label: m.navbar_Resources },
+		{ href: '/v1/blog', label: m.navbar_Blog },
+		{ href: '/company', label: m.navbar_Company }
+	];
+
+	$: currentLanguage = languageTag();
+	$: isSourceLanguage = currentLanguage === sourceLanguageTag;
+
+	function getHref(basePath: string) {
+		return isSourceLanguage ? basePath : `/${currentLanguage}${basePath}`;
+	}
 </script>
 
 <svelte:head>
@@ -68,9 +96,11 @@
 					on:click={toggleNavbar}
 					type="button"
 					aria-label="Toggle Navigation"
-					aria-expanded={showMenu}
+					aria-expanded={isOpen}
 					aria-controls="nav-links"
-					class="text-white hover:text-slate-300 focus:outline-none focus:text-slate-100"
+					class="text-white hover:text-slate-300 focus:outline-none focus:text-slate-100 {!isOpen
+						? 'block'
+						: 'hidden lg:block'}"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -89,8 +119,25 @@
 				</button>
 			</div>
 		</div>
-
 		<div
+			id="nav-links"
+			class="w-full max-lg:bg-[#F1F1F9] max-md:py-2 nav-links whitespace-nowrap space-y-4 lg:flex lg:space-y-0 lg:flex-row lg:items-center lg:space-x-3 md:space-x-2 text-center md:mt-0 {isOpen
+				? 'flex'
+				: 'hidden '}"
+		>
+			{#each navItems as item}
+				<a
+					class={navbarClasses}
+					on:click={toggleNavbar}
+					href={getHref(item.href)}
+					hreflang={currentLanguage}
+				>
+					{@html item.label()}
+				</a>
+			{/each}
+			<button class={navbarClasses} on:click={resetPopupAndNavigate}>E-book</button>
+		</div>
+		<!-- <div
 			id="nav-links"
 			class="w-full max-lg:bg-[#F1F1F9] max-md:py-2 nav-links whitespace-nowrap space-y-4 lg:flex lg:space-y-0 lg:flex-row lg:items-center lg:space-x-3 md:space-x-2 text-center md:mt-0 {showMenu
 				? 'flex'
@@ -118,7 +165,7 @@
 			<a class={navbarClasses} on:click={toggleNavbar} href="/company">{@html m.navbar_Company()}</a
 			>
 			<button class={navbarClasses} on:click={resetPopupAndNavigate}>E-book</button>
-		</div>
+		</div> -->
 	</div>
 </nav>
 

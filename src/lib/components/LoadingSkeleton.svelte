@@ -1,6 +1,9 @@
-<div role="status" class="flex justify-center items-center w-full h-52 object-cover bg-gray-400 rounded-lg animate-pulse">
+<div
+	role="status"
+	class="flex justify-center items-center w-full h-52 object-cover bg-gray-400 rounded-lg animate-pulse"
+>
 	<svg
-		class="w-10 h-10 text-gray-200 "
+		class="w-10 h-10 text-gray-200"
 		aria-hidden="true"
 		xmlns="http://www.w3.org/2000/svg"
 		fill="currentColor"

@@ -5,7 +5,7 @@
 -->
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { availableLanguageTags, sourceLanguageTag, languageTag } from '$paraglide/runtime';
+	import { availableLanguageTags, sourceLanguageTag } from '$paraglide/runtime';
 	import { translatePath } from '$lib/i18n';
 	import * as m from '$paraglide/messages';
 	import { goto } from '$app/navigation';
@@ -19,6 +19,7 @@
 		en: `EN`, // 🇺🇸 EN
 		'pt-BR': ` PT-BR ` // 🇧🇷 pt-BR
 	};
+	// console.log(availableLanguageTags);
 </script>
 
 <div class="language-buttons">

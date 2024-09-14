@@ -1,12 +1,12 @@
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /eror.html [L]
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ /error.html [L]
 
-Options +Indexes
-AddType image/jpeg .jpg
-AddType image/png .png
-AddType image/webp .webp
+# Options +Indexes
+# AddType image/jpeg .jpg
+# AddType image/png .png
+# AddType image/webp .webp
 
 <IfModule mod_expires.c>
     ExpiresActive On
@@ -18,22 +18,21 @@ AddType image/webp .webp
     ExpiresByType application/javascript "access plus 0 seconds"
 </IfModule>
 
-<FilesMatch "\.(svelte|html|jpg|jpeg|png|webp)$">
-    Require all granted
-</FilesMatch>
+# <FilesMatch "\.(svelte|html|jpg|jpeg|png|webp)$">
+#    Require all granted
+# </FilesMatch>
 
 # Redirect www to non-www
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+# RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+# RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
 # Redirect HTTP to HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Set canonical URLs for SEO
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{HTTP_HOST} ^example\.com$ [NC]
-    RewriteRule ^(.*)$ http://www.example.com/$1 [R=301,L]
-</IfModule>
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteCond %{HTTP_HOST} ^mymenthor\.com$ [NC]
+#     RewriteRule ^(.*)$ http://www.mymenthor.com/$1 [R=301,L]
+# </IfModule>

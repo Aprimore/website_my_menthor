@@ -15,9 +15,9 @@ export default defineConfig({
 		// })
 	],
 	// for easier debugging, don't minify
-	build: {
-		minify: false
-	},
+	// build: {
+	// 	minify: false
+	// },
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	}

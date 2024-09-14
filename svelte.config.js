@@ -19,17 +19,16 @@ const config = {
 		// 	handleMissingId: 'warn', // or 'ignore' to completely suppress the error
 		// 	entries: ['*']
 		// },
-		adapter: adapter(),
+		adapter: adapter({
+			// 	pages: 'build',
+			// 	assets: 'build',
+			// 	fallback: 'error.html',
+			// 	precompress: false,
+			strict: false
+		}),
 		prerender: {
 			entries: ['/']
 		},
-		// adapter: adapter({
-		// 	pages: 'build',
-		// 	assets: 'build',
-		// 	fallback: 'error.html',
-		// 	precompress: false,
-		// 	strict: true
-		// }),
 
 		// files: {
 		// 	serviceWorker: 'src/service-worker.js'

@@ -4,7 +4,7 @@
 import { browser } from '$app/environment';
 import xss from 'xss';
 import type { PageLoad } from './$types';
-export const prerender = false;
+// export const prerender = false;
 
 const WPQL_QUERY = (language) => ({
 	query: `
