@@ -1,21 +1,23 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /index.html [L]
+RewriteRule ^(.*)$ /eror.html [L]
 
 Options +Indexes
 AddType image/jpeg .jpg
 AddType image/png .png
 AddType image/webp .webp
+
 <IfModule mod_expires.c>
     ExpiresActive On
-    ExpiresByType image/jpeg "access plus 1 year"
-    ExpiresByType image/png "access plus 1 year"
-    ExpiresByType image/webp "access plus 1 year"
-    ExpiresByType text/css "access plus 1 month"
-    ExpiresByType text/html "access plus 1 hour"
-    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 0 seconds"
+    ExpiresByType image/png "access plus 0 seconds"
+    ExpiresByType image/webp "access plus 0 seconds"
+    ExpiresByType text/css "access plus 0 seconds"
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType application/javascript "access plus 0 seconds"
 </IfModule>
+
 <FilesMatch "\.(svelte|html|jpg|jpeg|png|webp)$">
     Require all granted
 </FilesMatch>
@@ -35,4 +37,3 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
     RewriteCond %{HTTP_HOST} ^example\.com$ [NC]
     RewriteRule ^(.*)$ http://www.example.com/$1 [R=301,L]
 </IfModule>
-

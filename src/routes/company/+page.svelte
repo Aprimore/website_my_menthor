@@ -74,7 +74,7 @@
 	};
 </script>
 
-<!-- <SEO {...seoProps} /> -->
+<SEO {...seoProps} />
 <!-- <svelte:head>
 	<link rel="canonical" href={siteUrl} />
 	<meta property="og:url" content={siteUrl} />

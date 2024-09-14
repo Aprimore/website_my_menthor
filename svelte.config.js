@@ -16,7 +16,8 @@ const config = {
 		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		prerender: {
-			handleMissingId: 'warn' // or 'ignore' to completely suppress the error
+			handleMissingId: 'warn', // or 'ignore' to completely suppress the error
+			entries: ['*']
 		},
 		adapter: adapter({
 			pages: 'build',
@@ -29,10 +30,10 @@ const config = {
 		// files: {
 		// 	serviceWorker: 'src/service-worker.js'
 		// },
-		// paths: {
-		// 	base: '', // Set this to '' if your site is at the root of the domain
-		// 	assets: '' // Set this if your assets are served from a different URL
-		// },
+		paths: {
+			base: '', // Set this to '' if your site is at the root of the domain
+			assets: '' // Set this if your assets are served from a different URL
+		},
 
 		alias: {
 			//You can call this whatever you want
