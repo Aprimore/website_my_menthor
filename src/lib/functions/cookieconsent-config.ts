@@ -1,5 +1,5 @@
 import * as CookieConsent from 'vanilla-cookieconsent';
-import { loadGTM } from './loadGTM';
+import { loadGA, loadGTM } from './loadGTM';
 // function getUserLanguage() {
 // 	if (typeof navigator !== 'undefined') {
 // 		return navigator.language || navigator.userLanguage || 'en';
@@ -32,7 +32,14 @@ export function createConfig(language: string): CookieConsent.CookieConsentConfi
 					ga: {
 						label: 'Google Analytics',
 						onAccept: () => {
-							loadGTM();
+							console.log('.');
+							Promise.all([loadGTM(), loadGA()])
+								.then(() => {
+									console.log('GTM and GA loaded successfully.');
+								})
+								.catch((error) => {
+									console.error('Error loading GTM or GA:', error);
+								});
 							// .then(() => {
 							// 	console.log('GTM loaded and ready');
 							// })

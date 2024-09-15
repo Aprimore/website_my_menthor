@@ -73,7 +73,6 @@
 
 	function handleCookieConsent() {
 		cookieConsentAccepted = true;
-		// loadGTM();
 		showPopup = true;
 	}
 	const baseURL = 'https://www.mymenthor.com';
@@ -93,6 +92,22 @@
 	{/each}
 </svelte:head> -->
 <svelte:head>
+	<!-- Load Google Analytics script -->
+	<script
+		async
+		src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.VITE_GA_TRACKING_ID}`}
+	></script>
+	<script>
+		// Initialize Google Analytics
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', import.meta.env.VITE_GA_TRACKING_ID);
+	</script>
+
 	{#each hreflangs as { lang, url }}
 		<link rel="alternate" hreflang={lang} href={url} />
 	{/each}

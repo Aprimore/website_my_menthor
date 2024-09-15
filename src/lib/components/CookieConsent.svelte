@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { createConfig } from '$lib/functions/cookieconsent-config';
-	import { loadGTM } from '$lib/functions/loadGTM';
+	import { loadGA, loadGTM } from '$lib/functions/loadGTM';
 	import { cookieConsentAccepted, cookieConsentVisible } from '$lib/stores/cookieConsent';
 	import { onMount } from 'svelte';
 	import { get } from 'svelte/store';
@@ -18,7 +18,13 @@
 			onAccept: () => {
 				cookieConsentAccepted.set(true);
 				cookieConsentVisible.set(false);
-				loadGTM();
+				Promise.all([loadGTM(), loadGA()])
+					.then(() => {
+						console.log('GTM and GA loaded successfully.');
+					})
+					.catch((error) => {
+						console.error('Error loading GTM or GA:', error);
+					});
 			},
 			onReject: () => {
 				cookieConsentAccepted.set(false);

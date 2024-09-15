@@ -118,7 +118,7 @@
 </script>
 
 <SEO {...seoProps} />
-<svelte:head>
+<!-- <svelte:head> -->
 	<!-- Load Google Analytics script -->
 	<!-- <script
 		async
@@ -135,7 +135,7 @@
 		gtag('config', import.meta.env.VITE_GA_TRACKING_ID);
 	</script>
 	 <title>{getPageTitle(pagePath)}</title>-->
-</svelte:head>
+<!-- </svelte:head> -->
 
 <div in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}>
 	<!-- <PopupForm isOpen={isLandingPage} /> -->
