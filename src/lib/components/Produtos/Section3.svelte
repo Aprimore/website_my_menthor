@@ -5,7 +5,7 @@
 	import * as m from '$paraglide/messages';
 	import { get } from 'svelte/store';
 	import LoadingSpinner from '../LoadingSpinner.svelte';
-	import Section_Cards from './Section_Cards.svelte';
+	// import Section_Cards from './Section_Cards.svelte';
 
 	const pathUrl = get(page).url.pathname;
 	const selectedImage = pathUrl === '/' ? piramid_home_en_svg : piramid_home_pt_br_svg;

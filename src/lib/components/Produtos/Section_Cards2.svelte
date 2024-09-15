@@ -3,7 +3,7 @@
 	import { page } from '$app/stores';
 	import * as m from '$paraglide/messages';
 	import { onMount } from 'svelte';
-	import Carousel from 'svelte-carousel';
+	// import Carousel from 'svelte-carousel';
 	import { register } from 'swiper/element/bundle';
 	import 'swiper/swiper-bundle.css';
 	let loading = true;

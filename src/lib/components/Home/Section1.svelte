@@ -96,7 +96,7 @@
 
 <style>
 	.btn-learn::after {
-		background-color: #8abb3f;
+		background-color: #6f9733;
 		content: url('$lib/assets/svg/arrow_right_claro.svg');
 		display: inline-block;
 		/* vertical-align: middle; */

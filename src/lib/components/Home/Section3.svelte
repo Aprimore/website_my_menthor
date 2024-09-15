@@ -59,9 +59,9 @@
 		</div>
 	</div>
 	<div class="flex justify-center mt-8 pb-20">
-		<button class="border border-[#17193B] rounded-xl Exo px-2 py-1 max-sm:p-2 bg-[#F1F1F9]">
+		<button class="border border-[#17193B] rounded-xl Exo">
 			<a
-				class="Archivo btn-learn block w-full rounded-xl px-10 py-5 text-xl text-[#17193B] focus:ring sm:w-auto z-10 relative"
+				class="Archivo btn-learn block w-full rounded-xl px-10 py-4 text-lg sm:text-xl text-[#17193B] focus:ring bg-[#F1F1F9] md:w-auto"
 				href="/products#platform"
 				aria-label="Learn More about Products"
 				title="Learn More about Products"
