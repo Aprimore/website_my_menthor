@@ -1,6 +1,5 @@
-<!-- /blog/[id]/[slug]/+page.svelte -->
 <script lang="ts">
-	import { post } from '$app/stores';
+	// import { post } from '$app/stores';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';

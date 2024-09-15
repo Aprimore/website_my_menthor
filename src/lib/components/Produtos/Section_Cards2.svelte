@@ -133,7 +133,7 @@
 
 <style>
 	/* Zoom responsiveness */
-	@media only screen and (max-width: 1400px) {
+	/* @media only screen and (max-width: 1400px) {
 		.caroussel {
 			zoom: 127%;
 		}
@@ -143,7 +143,7 @@
 		.caroussel {
 			zoom: 100%;
 		}
-	}
+	} */
 
 	/* .swiper-button-next,
 	.swiper-button-prev {
@@ -180,19 +180,19 @@
 		content: url('$lib/assets/svg/cog.svg');
 	}
 
-	.arrow-right::before {
+	/* .arrow-right::before {
 		content: url('$lib/assets/svg/arrow_downward_alt.svg');
 		display: inline-block;
 		margin-top: 10px;
 		position: relative;
-		filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5)); /* Drop shadow */
-	}
+		filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5));
+	} */
 
-	.arrow-left::before {
+	/* .arrow-left::before {
 		content: url('$lib/assets/svg/arrow_downward_alt.svg');
 		display: inline-block;
-		transform: rotate(180deg); /* Rotate 180 degrees to the left */
+		transform: rotate(180deg); 
 		position: relative;
-		filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5)); /* Drop shadow */
-	}
+		filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5));
+	} */
 </style>

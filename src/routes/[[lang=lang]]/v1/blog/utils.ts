@@ -1,3 +1,4 @@
+// @ts-ignore
 import xss from 'xss';
 
 export const WPQL_QUERY = (language: string) => ({

@@ -2,8 +2,6 @@
 import type { PageLoad } from './$types';
 import { WPQL_QUERY, sanitizePost } from './utils';
 
-export const prerender = true;
-
 export const load: PageLoad = async ({ fetch, url }) => {
 	const endpoint = import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL;
 	const language = url.pathname.includes('/pt-BR/') ? 'PT' : 'EN';

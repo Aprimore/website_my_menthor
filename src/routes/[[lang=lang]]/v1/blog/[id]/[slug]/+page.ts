@@ -1,8 +1,6 @@
 import type { PageLoad } from './$types';
 import { sanitizeHtml } from '../../utils';
 
-export const prerender = true;
-
 export const load: PageLoad = async ({ fetch, params }) => {
 	const endpoint = import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL;
 	const { slug } = params;

@@ -13,7 +13,7 @@
 	export let value = '';
 	export let searchPlaceholder = 'Search';
 
-	export let isFormLanding;
+	// export let isFormLanding;
 
 	let searchText = '';
 	let isOpen = false;
