@@ -1,37 +1,29 @@
 <script lang="ts">
-	import ogSquareImageSrc from '$lib/assets/home/home-open-graph-square.jpg';
-	import ogImageSrc from '$lib/assets/home/home-open-graph.jpg';
-	import twitterImageSrc from '$lib/assets/home/home-twitter.jpg';
-	import featuredImageSrc from '$lib/assets/home/home.jpg';
-	import og_image from '$lib/assets/images/og_image.webp';
-	import LoadingSkeleton from '$lib/components/LoadingSkeleton.svelte';
 	import { onMount } from 'svelte';
-	import type { PageData } from './$types';
-	export let data: PageData;
-
-	let posts = [];
-
-	$: {
-		if (data.streamed.lazyCritical) {
-			posts = data.streamed.lazyCritical;
-		}
-	}
 	import { fade } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
-
 	import SEO from '$lib/components/SEO/index.svelte';
 	import website from '$lib/config/website';
-	const { author, siteUrl } = website;
 	import { page } from '$app/stores';
 	let pagePath = $page.url.pathname;
 	$: pagePath = $page.url.pathname;
 	const isPortuguese = pagePath.startsWith('/pt-BR/');
+
+	export let data;
+
+	onMount(() => {
+		if (data && data.post) {
+			document.title = `${data.post.title} | My Menthor` ?? 'Blog Post | My Menthor';
+		}
+	});
+
+	// console.log(data);
+
+	const { author, siteUrl } = website;
 	let title = 'Blog';
 	const breadcrumbs = [
-		{
-			name: 'Blog',
-			slug: pagePath.substring(1)
-		}
+		{ name: 'Home', slug: '' },
+		{ name: 'Blog', slug: 'blog' }
 	];
 
 	let metadescription = isPortuguese
@@ -74,7 +66,7 @@
 		lastUpdated: '2024-09-08T14:19:33.000+0100',
 		breadcrumbs,
 		metadescription,
-		article: false
+		article: true
 		// featuredImage,
 		// ogImage,
 		// ogSquareImage,
@@ -83,67 +75,56 @@
 </script>
 
 <SEO {...seoProps} />
-<!-- <svelte:head>
-	<link rel="canonical" href={siteUrl} />
-	<meta property="og:url" content={siteUrl} />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content={title} />
-	<meta name="description" content={metadescription} />
-	<meta property="og:description" content={metadescription} />
-	<meta property="og:image" content={ogImageSrc} />
-	<meta property="og:image:width" content="672" />
-	<meta property="og:image:height" content="448" />
-	<meta name="twitter:image" content={twitterImageSrc} />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content={title} />
-	<meta name="twitter:description" content={metadescription} />
-</svelte:head> -->
 
 <section
 	in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}
 	class="blog-list sm:bg-[#F1F1F9] w-full relative rounded-lg max-sm:p-2 py-5 Exo"
 >
 	<div class="max-sm:bg-[#F1F1F9] max-w-screen-2xl mx-auto flex-col lg:flex-row rounded-lg p-4">
-		{#await data.streamed.lazyCritical}
-			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
-				<LoadingSkeleton />
-				<LoadingSkeleton />
-				<LoadingSkeleton />
-				<LoadingSkeleton />
-			</div>
-		{:then posts}
-			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
-				{#each posts as post}
-					<a
-						href={`/v1/blog/${post.databaseId}/${post.slug}`}
-						class="border rounded-lg overflow-hidden hover:shadow-lg"
+		<h1 class="text-3xl font-bold mb-6">Blog Posts</h1>
+		{#if data.posts && data.posts.length > 0}
+			<ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+				{#each data.posts as post}
+					<li
+						class="group"
+						in:fade={{ delay: 100, duration: 500, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}
 					>
-						{#if post.featuredImage?.node?.sourceUrl}
-							<img
-								src={post.featuredImage.node.sourceUrl}
-								alt={post.title}
-								class="w-full h-52 object-cover"
-							/>
-						{:else}
-							<div class="h-52 bg-gray-200"></div>
-						{/if}
-						<div class="p-4 flex flex-col justify-between">
-							<div class="min-h-24">
-								<h2 class="text-xl font-semibold mb-2 line-clamp-3">
-									{post.title}
-								</h2>
-							</div>
-							<div class="mt-auto">
-								<p class="text-gray-600">
-									{new Date(post.date).toLocaleDateString()}
-								</p>
-							</div>
-						</div>
-					</a>
+						<a href="{post.databaseId}/{post.slug}" class="block h-full">
+							<article
+								class="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"
+							>
+								{#if post.featuredImage?.node?.sourceUrl}
+									<img
+										src={post.featuredImage.node.sourceUrl}
+										alt={post.title}
+										class="w-full h-52 object-cover"
+									/>
+								{/if}
+								<div class="p-4 flex-grow flex flex-col">
+									<h2 class="text-xl font-semibold mb-2 group-hover:underline">
+										{post.title}
+									</h2>
+									<p class="text-sm text-gray-600 mb-2">
+										{new Date(post.date).toLocaleDateString()}
+									</p>
+									<div class="text-sm text-gray-700 flex-grow">
+										{@html post.excerpt}
+									</div>
+								</div>
+							</article>
+						</a>
+					</li>
 				{/each}
-			</div>
-		{:catch error}
-			<p>Error: {error.message}</p>
-		{/await}
+			</ul>
+		{:else}
+			<p>No posts found.</p>
+		{/if}
 	</div>
 </section>
+
+<style>
+	.blog-list a {
+		text-decoration: none;
+		color: inherit;
+	}
+</style>

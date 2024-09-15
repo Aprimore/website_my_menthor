@@ -20,14 +20,14 @@ const config = {
 		// 	entries: ['*']
 		// },
 		adapter: adapter({
-			// 	pages: 'build',
-			// 	assets: 'build',
-			// 	fallback: 'error.html',
-			// 	precompress: false,
+			pages: 'build',
+			assets: 'build',
+			fallback: null,
+			precompress: false,
 			strict: false
 		}),
 		prerender: {
-			entries: ['/']
+			entries: ['*']
 		},
 
 		// files: {

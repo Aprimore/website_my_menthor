@@ -2,7 +2,7 @@
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"BUTTONS": "========================================== BUTTONS SECTION ==========================================",
 	"do_not_show_again": "Do not show this again",
-	"button_learn_more": "Learn More",
+	"button_learn_more": "Find Out More",
 	"button_portal": "Partner Portal",
 	"button_access": "Access",
 	"button_schedule_a_demo": "Schedule a demo",

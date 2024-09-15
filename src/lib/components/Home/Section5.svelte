@@ -26,7 +26,7 @@
 
 			<button class="border md:border-[#17193B] border-none rounded-xl mb-20 Exo">
 				<a
-					class="Archivo btn-learn bg-[#F1F1F9] block max-w-max rounded-xl px-10 py-4 text-xl text-[#17193B] focus:ring sm:w-auto z-10 relative"
+					class="Archivo btn-learn bg-[#F1F1F9] block max-w-max rounded-xl px-10 py-4 text-xl text-[#17193B] focus:ring sm:w-auto z-10 relative max-sm:px-12 max-sm:py-6 max-sm:mx-auto"
 					href="/products#platform"
 					aria-label="Learn More about the platform"
 					title="Learn more about the platform"

@@ -76,14 +76,25 @@
 		// loadGTM();
 		showPopup = true;
 	}
+	const baseURL = 'https://www.mymenthor.com';
+
+	const hreflangs = [
+		{ lang: 'en', url: `${baseURL}/` },
+		{ lang: 'pt-BR', url: `${baseURL}/pt-BR/` }
+	];
 </script>
 
 <!-- <svelte:head>
 	<title>{$page.data.post?.title}</title>
 </svelte:head> -->
-<svelte:head>
+<!-- <svelte:head>
 	{#each availableLanguageTags as lang}
 		<link rel="alternate" hreflang={lang} href={translatePath($page.url.pathname, lang)} />
+	{/each}
+</svelte:head> -->
+<svelte:head>
+	{#each hreflangs as { lang, url }}
+		<link rel="alternate" hreflang={lang} href={url} />
 	{/each}
 </svelte:head>
 {#key lang}

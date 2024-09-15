@@ -130,7 +130,6 @@
 					class={navbarClasses}
 					on:click={toggleNavbar}
 					href={getHref(item.href)}
-					hreflang={currentLanguage}
 				>
 					{@html item.label()}
 				</a>

@@ -1,11 +1,15 @@
-import type { PageLoad } from './$types';
-import { sanitizeHtml } from '../../utils';
+// <!-- /blog/[id]/[slug]/+page.svelte -->
+//@ts-nocheck
+// [postid]/+page.ts
+// Import the environment variable
+// export const prerender = false;
+import type { Load } from '@sveltejs/kit';
+import xss from 'xss';
 
-export const prerender = true;
-
-export const load: PageLoad = async ({ fetch, params }) => {
-	const endpoint = import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL;
-	const { slug } = params;
+export const load: Load = async ({ params }) => {
+	const endpoint = `${import.meta.env.VITE_PUBLIC_WORDPRESS_API_URL}`;
+	const slug = params.slug;
+	// const postId = params.postId as string;
 
 	const WPQL_QUERY = {
 		query: `{
@@ -16,19 +20,6 @@ export const load: PageLoad = async ({ fetch, params }) => {
                 slug
                 postId
                 date
-				modified
-				seo {
-					canonical
-					metaKeywords
-					opengraphAuthor
-					opengraphDescription
-					opengraphModifiedTime
-					opengraphPublishedTime
-					opengraphPublisher
-					opengraphTitle
-					readingTime
-					title
-					}
                 featuredImage {
                     node {
                         sourceUrl
@@ -46,15 +37,12 @@ export const load: PageLoad = async ({ fetch, params }) => {
 			},
 			body: JSON.stringify(WPQL_QUERY)
 		});
-		// console.log(response);
-		if (!response.ok) throw new Error('Failed to fetch post');
 
 		const { data } = await response.json();
 
-		// console.log(data);
-
+		// Sanitize HTML content using xss library
 		if (data.post && data.post.content) {
-			data.post.content = sanitizeHtml(data.post.content);
+			data.post.content = xss(data.post.content);
 		}
 
 		return {
@@ -63,7 +51,6 @@ export const load: PageLoad = async ({ fetch, params }) => {
 	} catch (error) {
 		console.error('Error loading post:', error);
 		return {
-			post: null,
 			error: 'Failed to load post'
 		};
 	}
