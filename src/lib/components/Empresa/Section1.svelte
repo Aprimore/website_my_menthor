@@ -1,54 +1,57 @@
-<script>
+<script lang="ts">
+	import { empresa_1_webp } from '$lib';
 	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
-	import { empresa_1_png, linha_h_azul_2_svg, linha_h_azul_svg } from '$lib';
 </script>
 
-<section class="my-20 pb-20 bg-white">
+<section class="mt-4 lg:my-16 pb-20 bg-white">
 	<div class="lg:h-[649px] lg:flex flex-row xl:max-w-screen-2xl mx-auto max-lg:p-5" id="about">
 		<div class="lg:w-1/2 flex flex-col justify-center">
-			<div class="lg:max-w-[600px] self-center space-y-8">
-				<h1 class="Exo text-3xl sm:text-4xl z-10 relative text-[#17193B] Exo font-extrabold">
+			<div class="lg:max-w-[600px] self-center space-y-12 mt-12">
+				<h1
+					class="blue-underline xl:text-4xl text-3xl max-sm:text-center z-10 relative text-[#17193B] Exo-Bold w-fit"
+				>
 					<!-- The company -->
-					{m.company_TheCompany()}
-					<span><img src={linha_h_azul_2_svg} class="z-10 right-0" alt="linha" /></span>
+					{@html m.company_TheCompany()}
 				</h1>
 				<p class="Archivo text-[#25285F] text-lg leading-snug">
-					<!-- My Menthor is a product developed by <strong>
-						APRIMORE Consultoria em Gestão Empresarial,</strong
-					>
-					based in
-					<strong>Brazil</strong>, and <strong> TOPTIER Business Group,</strong> based in the
-					<strong> USA </strong>. -->
-					{m.company_AMyMenthorIsTheResult()}
+					<!-- My Menthor is a product developed by APRIMORE Consultoria em Gestão Empresarial, based in Brazil, and TOPTIER Business Group, based in the USA . -->
+					{@html m.company_AMyMenthorIsTheResult()}
 				</p>
 				<p class="Archivo text-[#25285F] text-lg leading-snug">
-					<!-- It is the result of <strong
-						>more than 20 years' experience in organizational management</strong
-					>, with origins in <strong> consultancy specializing </strong> in
-					<strong>Management (BPM)</strong> and expanded to Business Architecture. -->
-					{m.company_ItIsAProductDeveloped()}
+					{@html m.company_ItIsAProductDeveloped()}
 				</p>
+
 				<p class="Archivo text-[#25285F] text-lg leading-snug">
-					<!-- On this journey, we identified a gap in the market: the architecture tools available on
-					the market were not simple enough to enable different areas of a company to work together
-					to organize the business components around the strategy. This required very technical
-					knowledge of notations and diagrams, which made it difficult to sharing with the business
-					areas. -->
-					{m.company_OnThisJourneyWeIdentified()}
-				</p>
-				<p class="Archivo text-[#25285F] text-lg leading-snug">
-					<!-- That's when <strong> we developed a solution capable of helping organizations </strong> in
-					the process of implementing, sustaining and evolving the Business Architecture. We believe
-					that our platform has the
-					<strong> real potential to take organizations to a new level of management </strong>,
-					providing effective <strong> value for customers and stakeholders </strong>. -->
-					{m.company_ThatsWhenWeDevelopedASolution()}
+					<!-- That's when  we developed a solution capable of helping organizations in the process of implementing, sustaining and evolving the Business Architecture. We believe that our platform has the real potential to take organizations to a new level of management, providing effective  value for customers and stakeholders. -->
+					{@html m.company_ThatsWhenWeDevelopedASolution()}
 				</p>
 			</div>
 		</div>
-		<div class="lg:w-1/2 p-4 relative lg:my-auto">
-			<img src={empresa_1_png} class=" mx-auto rounded-lg" alt="" />
+		<div class="lg:w-1/2 lg:p-4 mt-3 relative lg:my-auto">
+			<img
+				src={empresa_1_webp}
+				class=" mx-auto rounded-lg"
+				alt="Webp Vector"
+				loading="eager"
+				fetchpriority="high"
+			/>
 		</div>
 	</div>
 </section>
+
+<style>
+	h1.blue-underline {
+		content: '';
+		background-image: url('$lib/assets/svg/linha_h_azul_2.svg');
+		background-repeat: no-repeat;
+		background-position: bottom;
+		padding-bottom: 10px;
+		background-size: 100% auto; /* Adjust background size */
+	}
+
+	@media (max-width: 709px) {
+		h1.blue-underline {
+			background-size: 100% auto;
+		}
+	}
+</style>

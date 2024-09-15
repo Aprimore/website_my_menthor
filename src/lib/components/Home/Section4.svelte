@@ -1,89 +1,113 @@
 <script lang="ts">
-	import * as m from '$paraglide/messages';
-	import { checkmark_svg, linha_h_2_svg, the_platform_png } from '$lib';
-
 	import animationData from '$lib/assets/lotties/gif-2.json';
-
-	import lottie from 'lottie-web';
+	import * as m from '$paraglide/messages';
 	import { onMount } from 'svelte';
 
-	let animationContainer: HTMLElement;
-
-	onMount(() => {
-		lottie.loadAnimation({
-			container: animationContainer,
-			loop: true,
-			autoplay: true,
-			animationData
-		});
+	let LottiePlayer: any;
+	onMount(async () => {
+		const module = await import('@lottiefiles/svelte-lottie-player');
+		LottiePlayer = module.LottiePlayer;
 	});
+	let controlsLayout = [
+		'previousFrame',
+		'playpause',
+		'stop',
+		'nextFrame',
+		'progress',
+		'frame',
+		'loop',
+		'spacer',
+		'background',
+		'snapshot',
+		'zoom',
+		'info'
+	];
 </script>
 
-<section class="w-full items-center relative rounded-lg my-20">
-	<div class="flex max-lg:flex-col max-w-screen-2xl mx-auto">
-		<div class="column1 lg:w-2/3">
-			<div class="ml-14">
-				<h1 class="ml-10 max-w-lg text-2xl sm:text-4xl relative Exo font-extrabold text-[#17193B]">
-					{m.homepage_section4_Organizing()} <br />
-					{m.homepage_section4_simpler()}
-				</h1>
-				<span class="ml-2 absolute"><img src={linha_h_2_svg} alt="" /></span>
+<section class="w-full items-center relative rounded-lg sm:mt-16 max-md:p-2">
+	<div class="flex max-lg:flex-col max-w-[1400px] mx-auto relative">
+		<div class="lg:w-2/3 relative">
+			<div class="lg:ml-3 lg:pt-3">
+				<h2
+					class="max-md:text-center md:ml-10 md:max-w-lg xl:text-4xl text-3xl relative Exo-Bold text-[#17193B] blue-underline"
+				>
+					{@html m.homepage_section4_Organizing()}
+					{@html m.homepage_section4_simpler()}
+				</h2>
 			</div>
-			<div class="flex flex-row ml-6 xl:absolute">
-				<div class="mt-14 pl-10 p-10 text-lg relative space-y-5 max-w-screen-lg">
+			<div class="lg:ml-6 xl:absolute mt-10 relative">
+				<div
+					class="max-sm:mt-6 px-auto p-5 max-md:p-2 relative space-y-1 md:max-w-screen-md flex flex-col
+					"
+				>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 max-w-max"
 					>
-						<p class="Exo check text-base xl:text-xl">{m.homepage_section4_Profits()}</p>
+						<p class="Exo-Semibold check xl:text-xl">
+							{@html m.homepage_section4_Profits()}
+						</p>
+					</div>
+					<!-- <div
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 max-w-max "
+					>
+						<p class="Exo-Semibold check xl:text-xl">
+							.
+						</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 max-w-max "
 					>
-						<p class="Exo check text-base xl:text-xl">{m.homepage_section4_Quality()}</p>
+						<p class="Exo-Semibold check xl:text-xl">.</p>
+					</div> -->
+					<div
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 max-w-max"
+					>
+						<p class="Exo-Semibold check xl:text-xl">{@html m.homepage_section4_Process()}</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 max-w-max"
 					>
-						<p class="Exo check text-base xl:text-xl">{m.homepage_section4_Value()}</p>
+						<p class="Exo-Semibold check xl:text-xl">{@html m.homepage_section4_Maturity()}</p>
 					</div>
 					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
+						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-5 max-w-max"
 					>
-						<p class="Exo check text-base xl:text-xl">{m.homepage_section4_Process()}</p>
-					</div>
-					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
-					>
-						<p class="Exo check text-base xl:text-xl">{m.homepage_section4_Maturity()}</p>
-					</div>
-					<div
-						class="bg-[#F1F1F9] bg-opacity-50 rounded-lg border border-[#D4D4ED] sm:inline-block p-6 min-w-min"
-					>
-						<p class="Exo check text-base md:text-xl">{m.homepage_section4_Sustainability()}</p>
+						<p class="Exo-Semibold check xl:text-xl">
+							{@html m.homepage_section4_Sustainability()}
+						</p>
 					</div>
 				</div>
-
-				<div class="mt-28 pl-3 text-lg relative space-y-5"></div>
 			</div>
 		</div>
 
-		<div class="mx-16 lg:w-[45%] flex flex-col self-center">
-			<div class=" space-y-5">
+		<div class="md:mx-3 xl:mx-16 lg:w-[45%] flex flex-col self-center mb-auto pb-auto p-3">
+			<div class="space-y-5">
 				<p class="Archivo text-xl text-[#25285F]">
-					{m.homepage_section4_My_Menthor()}
-					<!-- My Menthor acts as a <strong> Digital Mentor </strong> with an
-					<strong> approach centered </strong> on <span class="text-[#43ACB5]">being</span> and not on
+					{@html m.homepage_section4_My_Menthor()}
+					<!-- My Menthor acts as a  Digital Mentor  with an
+					 approach centered  on <span class="text-[#43ACB5]">being</span> and not on
 					disruptive technologies. -->
 				</p>
 				<p class="Archivo text-xl text-[#25285F]">
-					{m.homepage_section4_It_acts_as()}
+					{@html m.homepage_section4_It_acts_as()}
 
-					<!-- It acts as an <strong> information </strong> <span class="text-[#43ACB5]"> hub </span>,
-					<strong> organizing knowledge </strong> in a single repository. -->
+					<!-- It acts as an  information  <span class="text-[#43ACB5]"> hub </span>,
+					 organizing knowledge  in a single repository. -->
 				</p>
 			</div>
 			<div class="col4 mt-5 max-lg:mt-10 md:px-40 lg:px-0">
-				<div bind:this={animationContainer} />
+				<div class="w-full mx-auto">
+					{#if LottiePlayer}
+						<LottiePlayer
+							src={animationData}
+							autoplay={true}
+							loop={true}
+							renderer="svg"
+							background="transparent"
+							{controlsLayout}
+						/>
+					{/if}
+				</div>
 			</div>
 		</div>
 	</div>
@@ -93,7 +117,22 @@
 	.check::before {
 		content: url('$lib/assets/svg/checkmark.svg');
 		display: inline-block;
-		margin-right: 10px; /* Adjust as needed */
+		margin-right: 10px;
+		margin-top: 5px;
 		vertical-align: middle;
+	}
+
+	h2.blue-underline {
+		content: '';
+		background-image: url('$lib/assets/svg/linha_h_azul_6.svg');
+		background-repeat: no-repeat;
+		background-position: bottom;
+		padding-bottom: 10px;
+	}
+	@media (max-width: 638px) {
+		h2.blue-underline {
+			background-position: bottom;
+			background-size: 100% auto;
+		}
 	}
 </style>

@@ -1,0 +1,1 @@
+    // "postinstall": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide",

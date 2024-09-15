@@ -1,119 +1,132 @@
 <script lang="ts">
-	import * as m from '$paraglide/messages';
-	// {m.xxxxxxxxxxxxxxxxxx()}
-	import { arrow_right_svg, linha_h_7_svg, the_platform_png } from '$lib';
-
+	import { arrow_right_svg, linha_h_cinza_svg } from '$lib';
 	import animationData from '$lib/assets/lotties/gif-3.json';
-
-	import lottie from 'lottie-web';
+	import * as m from '$paraglide/messages';
 	import { onMount } from 'svelte';
+	import LoadingSpinner from '../LoadingSpinner.svelte';
 
-	let animationContainer: HTMLElement;
-
-	onMount(() => {
-		lottie.loadAnimation({
-			container: animationContainer,
-			loop: true,
-			autoplay: true,
-			animationData
-		});
+	let LottiePlayer: any;
+	onMount(async () => {
+		const module = await import('@lottiefiles/svelte-lottie-player');
+		LottiePlayer = module.LottiePlayer;
 	});
+	let controlsLayout = [
+		'previousFrame',
+		'playpause',
+		'stop',
+		'nextFrame',
+		'progress',
+		'frame',
+		'loop',
+		'spacer',
+		'background',
+		'snapshot',
+		'zoom',
+		'info'
+	];
 </script>
 
 <section
-	class="w-full items-center relative rounded-lg lg:bg-[#F1F1F9] py-28 max-sm:mb-[82rem] max-md:mb-[55rem] max-lg:mb-[40rem]"
+	class="resources_section w-full relative sm:rounded-lg lg:bg-[#F1F1F9] sm:py-14 md:py-28 justify-center mx-auto"
+	id="bottom-page"
 >
-	<div class="lg:flex max-w-[1420px] h-[500px] mx-auto bg-white">
-		<div class="max-lg:space-x-10 lg:w-1/3 md:flex lg:flex-col justify-center p-12">
-			<img
-				class="absolute bottom-0 h-screen/2 max-w-xs h-full max-lg:hidden"
-				src={linha_h_7_svg}
-				alt=""
-			/>
-			<div class="space-y-5 py-5 relative max-lg:mt-6">
-				<h1 class="Exo text-2xl lg:text-3xl font-bold text-nowrap">
-					{m.homepage_section_6_My_menthor()}
+	<div
+		class="bg-white grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-w-7xl m-auto sm:rounded-lg lg:px-10 lg:py-6"
+	>
+		<div class=" lg:flex lg:flex-col max-md:flex-col p-3">
+			<div class="space-y-5 py-5 relative md:mt-6 lg:mt-0 sm:max-h-[188px]">
+				<h1 class="Exo-Bold text-3xl">
+					{@html m.homepage_section_6_My_menthor()}
 				</h1>
-				<p class="Archivo text-lg">{m.homepage_section_6_Explore()}</p>
+				<p class="Archivo text-lg">{@html m.homepage_section_6_Explore()}</p>
 
-				<button class="min-w-min">
+				<button class="min-w-min Exo">
 					<a
-						class="Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
-						href="/"
+						class=" Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
+						href="/v1/blog"
 					>
-						{m.button_access()}
+						{@html m.button_access()}
 					</a>
 				</button>
 			</div>
 
-			<div class="space-y-5 mt-6 py-5">
-				<h1 class="Exo text-2xl lg:text-3xl font-bold text-nowrap">
-					{m.homepage_section_6_Events()}
-				</h1>
-				<p class="Archivo text-lg max-w-96">
-					{m.homepage_section_6_Take_part()}
-				</p>
-				<button class="min-w-min">
-					<a
-						class="Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
-						href="/"
-					>
-						{m.button_access()}
-					</a>
-				</button>
-			</div>
-		</div>
-
-		<div class="max-lg:space-x-10 lg:w-1/3 md:flex lg:flex-col justify-center p-12">
-			<img
-				class="absolute bottom-0 h-screen/2 max-w-xs h-full max-lg:hidden"
-				src={linha_h_7_svg}
-				alt=""
-			/>
-			<div class="space-y-5 relative py-5 max-lg:mt-6" id="bottom-page">
-				<h1 class="Exo text-2xl lg:text-3xl font-bold text-nowrap">
-					{m.homepage_section_6_My_Menthor_Academy()}
-				</h1>
-				<p class="Archivo text-lg">{m.homepage_section_6_Develop()}</p>
-
-				<button class="min-w-min btn-invisible">
-					<a
-						class="Archivo bg-[#FFFFFF] block w-full rounded-xl px-6 py-4 text-[#FFFFFF] sm:w-auto z-10 relative btn-invisible"
-						href="#bottom-page"
-					>
-						{m.button_access()}
-					</a>
-				</button>
-			</div>
-			<div class="space-y-5 mt-6 py-5">
-				<h1 class="Exo text-2xl lg:text-3xl font-bold text-nowrap">
-					{m.homepage_section_6_Knowledge()}
+			<div class="space-y-5 md:mt-6 sm:py-5 max-sm:mt-5 sm:max-h-[188px]">
+				<h1 class="Exo-Bold text-3xl">
+					{@html m.homepage_section_6_Events()}
 				</h1>
 				<p class="Archivo text-lg">
-					{m.homepage_section_6_Access_our()}
+					{@html m.homepage_section_6_Take_part()}
 				</p>
-				<button class="min-w-min btn-invisible">
+				<button class="min-w-min">
 					<a
-						class="btn-invisible Archivo bg-[#FFFFFF] block w-full rounded-xl px-6 py-4 text-[#FFFFFF] sm:w-auto z-10 relative"
-						href="#bottom-page"
+						class=" Archivo btn-access bg-[#D4D4ED] block w-full rounded-xl px-6 py-4 text-[#17193B] focus:ring sm:w-auto z-10 relative"
+						href="/v1/blog"
+						target="_blank"
 					>
-						{m.button_access()}
+						{@html m.button_access()}
 					</a>
 				</button>
 			</div>
 		</div>
 
-		<div
-			class="bg-[#454AB0] lg:w-1/3 relative flex max-sm:flex-col lg:flex-col justify-center rounded-xl"
-		>
-			<div bind:this={animationContainer} class=" lg:absolute -top-14" />
-
-			<div class="bg-[#F1F1F9] flex flex-col justify-center p-10 px-10 z-30 relative lg:mt-auto">
-				<h1 class="Exo text-4xl font-bold bottom-0 text-nowrap">
-					{m.homepage_section_6_Resources()}
+		<div class="lg:flex lg:flex-col max-md:flex-col p-3 max-sm:mt-5">
+			<div class="space-y-5 relative sm:py-5 md:mt-6 lg:mt-0 max-md:mb-10 sm:max-h-[188px]">
+				<h1 class="Exo-Bold text-3xl">
+					{@html m.homepage_section_6_My_Menthor_Academy()}
 				</h1>
-				<p class="Archivo text-lg mt-6">
-					{m.homepage_section_6_Discover_the_resources()}
+				<p class="Archivo text-lg">{@html m.homepage_section_6_Develop()}</p>
+
+				<button class="min-w-min btn-invisible max-md:hidden">
+					<a
+						class="Archivo bg-transparent block w-full rounded-xl px-6 py-4 text-transparent sm:w-auto z-10 relative btn-invisible"
+						href="#"
+					>
+						{@html m.button_access()}
+					</a>
+				</button>
+			</div>
+			<div class="space-y-5 md:mt-6 sm:py-5 max-md:mb-10 sm:max-h-[188px]">
+				<h1 class="Exo-Bold text-3xl">
+					{@html m.homepage_section_6_Knowledge()}
+				</h1>
+				<p class="Archivo text-lg">
+					{@html m.homepage_section_6_Access_our()}
+				</p>
+				<button class="min-w-min btn-invisible max-md:hidden">
+					<a
+						class="btn-invisible Archivo bg-transparent block w-full rounded-xl px-6 py-4 text-transparent sm:w-auto z-10 relative"
+						href="#"
+					>
+						{@html m.button_access()}
+					</a>
+				</button>
+			</div>
+		</div>
+
+		<div class="lg:flex lg:flex-col sm:rounded-xl max-xs:px-0 relative top-0 -mb-10">
+			<div class="bg-[#454AB0] sm:max-h-[265px]">
+				<div class=" sm:px-1 sm:p-5 sm:h-1/2 relative sm:-top-12">
+					{#if LottiePlayer}
+						<LottiePlayer
+							src={animationData}
+							autoplay={true}
+							loop={true}
+							renderer="svg"
+							background="transparent"
+							{controlsLayout}
+						/>
+					{/if}
+				</div>
+			</div>
+
+			<!-- <div bind:this={animationContainer} class=" lg:absolute -top-14" /> -->
+			<!-- <div class="divider relative h-full"></div> -->
+			<div class="bg-[#F1F1F9] sm:py-8 sm:px-5 w-full sm:h-1/2 mt-auto max-sm:p-3 relative -top-12">
+				<h1 class="Exo-Bold xl:text-4xl text-3xl bottom-0 max-md:px-3 max-md:mt-3 max-md:mx-auto">
+					{@html m.homepage_section_6_Resources()}
+				</h1>
+				<p class="Archivo text-lg mt-6 max-md:px-3 max-md:mb-3 max-md:mx-auto">
+					{@html m.homepage_section_6_Discover_the_resources()}
 				</p>
 			</div>
 		</div>
@@ -127,4 +140,14 @@
 		/* vertical-align: middle; */
 		margin-left: 10px;
 	}
+
+	.btn-invisible {
+		cursor: default; /* Set cursor to default */
+	}
+
+	/* @media screen and (min-width: 760px) and (max-width: 1023px) {
+		.resources_section {
+			margin-bottom: 500px;
+		}
+	} */
 </style>
