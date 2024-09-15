@@ -73,21 +73,6 @@
 </script>
 
 <SEO {...seoProps} />
-<!-- <svelte:head>
-	<link rel="canonical" href={siteUrl} />
-	<meta property="og:url" content={siteUrl} />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content={title} />
-	<meta name="description" content={metadescription} />
-	<meta property="og:description" content={metadescription} />
-	<meta property="og:image" content={ogImageSrc} />
-	<meta property="og:image:width" content="672" />
-	<meta property="og:image:height" content="448" />
-	<meta name="twitter:image" content={twitterImageSrc} />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content={title} />
-	<meta name="twitter:description" content={metadescription} />
-</svelte:head> -->
 <div in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}>
 	<Section1 />
 	<Section2 />

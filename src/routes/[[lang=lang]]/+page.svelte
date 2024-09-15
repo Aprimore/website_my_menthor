@@ -1,6 +1,5 @@
 <script lang="ts">
 	import FormLanding from '$lib/components/Home/FormLanding.svelte';
-	// import Formtest from '$lib/components/Home/formtest.svelte';
 	import Hero from '$lib/components/Home/Hero.svelte';
 	import PopupForm from '$lib/components/Home/PopupForm.svelte';
 	import Section1 from '$lib/components/Home/Section1.svelte';
@@ -41,14 +40,10 @@
 		});
 	});
 
-	// let pagePath = $page.url.pathname;
-	// $: pagePath = $page.url.pathname;
-	// const isPortuguese = pagePath.startsWith('/pt-BR/');
 	let pagePath = $page.url.pathname;
 	$: pagePath = $page.url.pathname;
 
 	// ----=----=----=----=----= SEO ----=----=----=----=----=
-
 	import ogSquareImageSrc from '$lib/assets/home/home-open-graph-square.jpg';
 	import ogImageSrc from '$lib/assets/home/home-open-graph.jpg';
 	import twitterImageSrc from '$lib/assets/home/home-twitter.jpg';
@@ -59,7 +54,6 @@
 
 	const isPortuguese = pagePath.startsWith('/pt-BR/');
 	// console.log(isPortuguese);
-
 	const { author, siteUrl } = website;
 	let title = isPortuguese ? 'Início' : 'Home';
 	const breadcrumbs = [
@@ -68,7 +62,6 @@
 			slug: ''
 		}
 	];
-
 	let metadescription = isPortuguese
 		? 'My Menthor é uma plataforma SaaS de Arquitetura Empresarial que aprimora a visibilidade dos processos, integrando estratégia, pessoas e tecnologia para melhorar o desempenho e a maturidade organizacional'
 		: 'My Menthor is a Business Architecture SaaS platform that enhances process visibility by integrating strategy, people, and technology to improve organizational performance and maturity.';
@@ -118,28 +111,7 @@
 </script>
 
 <SEO {...seoProps} />
-<!-- <svelte:head> -->
-	<!-- Load Google Analytics script -->
-	<!-- <script
-		async
-		src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.VITE_GA_TRACKING_ID}`}
-	></script>
-	<script>
-		// Initialize Google Analytics
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', import.meta.env.VITE_GA_TRACKING_ID);
-	</script>
-	 <title>{getPageTitle(pagePath)}</title>-->
-<!-- </svelte:head> -->
-
 <div in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}>
-	<!-- <PopupForm isOpen={isLandingPage} /> -->
-	<!-- <Formtest /> -->
 	{#if isOpen && consentVisible}
 		<div in:fade={{ duration: 200, delay: 1000 }}>
 			<PopupForm {isOpen} {consentVisible} {form} />
