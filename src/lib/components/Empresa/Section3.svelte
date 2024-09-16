@@ -49,8 +49,10 @@
 
 				<!-- <div bind:this={animationContainer} class="" /> -->
 				<div class="p-1">
+					<!-- <LottiePlayer -->
 					{#if LottiePlayer}
-						<LottiePlayer
+						<svelte:component
+							this={LottiePlayer}
 							src={animationData}
 							autoplay={true}
 							loop={true}

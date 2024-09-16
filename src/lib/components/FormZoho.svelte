@@ -127,7 +127,7 @@
 		<input type="text" style="display:none;" name="returnURL" value="null" />
 		<!-- Convert form fields to use Svelte's reactive variables -->
 
-		<label class="block">
+		<label for="Last_Name" class="block">
 			<span class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block">
 				{m.form_fullname()}
 			</span>
@@ -167,11 +167,12 @@
 			</select>
 		</label>
 
-		<label class="block">
+		<label for="email" class="block">
 			<span class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block">
 				{m.form_email()}
 			</span>
 			<input
+				id="email"
 				class="text-md p-4 bg-white border placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md focus:ring-1"
 				type="email"
 				inputmode="email"
@@ -185,7 +186,7 @@
 			<p style="color: red;">{errorMessage}</p>
 		{/if}
 
-		<label class="hidden blockd">
+		<label for="Country" class="hidden blockd">
 			<span
 				class="hidden Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 blockd"
 			>
@@ -201,14 +202,14 @@
 			/>
 		</label>
 
-		<label class="block">
+		<label for="Mobile" class="block">
 			<span class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block">
 				{m.form_phone()}
 			</span>
 			<TelInputComponent bind:value={phone} id="Mobile" name="Mobile" />
 		</label>
 
-		<label class="block">
+		<label for="Company" class="block">
 			<span class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block">
 				{m.form_company()}
 			</span>
@@ -221,7 +222,7 @@
 				placeholder={m.ph_company()}
 			/>
 		</label>
-		<label class="block">
+		<label for="LEADCF3" class="block">
 			<span class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block">
 				{m.form_role()}
 			</span>
@@ -234,7 +235,7 @@
 				placeholder={m.ph_role()}
 			/>
 		</label>
-		<label class="block">
+		<label for="LEADCF5" class="block">
 			<span class="Exo-Semibold text-[#17193B] text-xl after:content-['*'] after:ml-0.5 block">
 				{m.form_message()}
 			</span>

@@ -40,8 +40,10 @@
 			</h1>
 
 			<div class=" relative max-w-[600px]">
+				<!-- <LottiePlayer -->
 				{#if LottiePlayer}
-					<LottiePlayer
+					<svelte:component
+						this={LottiePlayer}
 						src={animationData}
 						autoplay={true}
 						loop={true}

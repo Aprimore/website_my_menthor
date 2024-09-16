@@ -107,8 +107,10 @@
 		<div class="lg:flex lg:flex-col sm:rounded-xl max-xs:px-0 relative top-0 -mb-10">
 			<div class="bg-[#454AB0] max-h-[265px]">
 				<div class=" px-1 p-5 h-1/2 max-sm:px-10 relative -top-12 size-full">
+					<!-- <LottiePlayer -->
 					{#if LottiePlayer}
-						<LottiePlayer
+						<svelte:component
+							this={LottiePlayer}
 							src={animationData}
 							autoplay={true}
 							loop={true}

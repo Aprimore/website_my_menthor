@@ -29,8 +29,10 @@
 	<div class="lg:h-[570px] md:flex flex-row max-w-[1350px] mx-auto max-md:p-5" id="purpose">
 		<div class="md:w-1/2 md:flex flex-col justify-center sm:p-5 xl:mt-auto relative md:p-10 lg:p-0">
 			<!-- <div bind:this={animationContainer} /> -->
+			<!-- <LottiePlayer -->
 			{#if LottiePlayer}
-				<LottiePlayer
+				<svelte:component
+					this={LottiePlayer}
 					src={animationData}
 					autoplay={true}
 					loop={true}
@@ -58,7 +60,7 @@
 				<p class="Archivo text-[#25285F] text-lg">
 					<!-- We provide software, train and equip clients to transform and properly manage the
 					business, supporting cultural change and highlighting performance gains and results. -->
-					<!-- {@html m.company_WeProvideSoftware()} -->
+					<!-- {@html m. company_WeProvideSoftware()} -->
 				</p>
 			</div>
 		</div>

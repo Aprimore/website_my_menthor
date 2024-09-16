@@ -29,8 +29,10 @@
 		<div class="lg:w-1/2 flex justify-center items-center max-lg:order-2">
 			<div class="card relative">
 				<!-- <div bind:this={animationContainer} /> -->
+				<!-- <LottiePlayer -->
 				{#if LottiePlayer}
-					<LottiePlayer
+					<svelte:component
+						this={LottiePlayer}
 						src={animationData}
 						autoplay={true}
 						loop={true}

@@ -10,7 +10,15 @@ const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
+	onwarn: (warning, handler) => {
+		if (warning.filename.includes('@lottiefiles/svelte-lottie-player')) {
+			return;
+		}
 
+		if (warning.code === 'a11y-click-events-have-key-events') return;
+		if (warning.code === 'a11y-no-static-element-interactions') return;
+		handler(warning);
+	},
 	kit: {
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
 		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
@@ -27,7 +35,7 @@ const config = {
 			strict: false
 		}),
 		prerender: {
-			entries: ['*'],
+			entries: ['*']
 		},
 
 		// files: {

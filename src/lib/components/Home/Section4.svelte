@@ -97,8 +97,10 @@
 			</div>
 			<div class="col4 mt-5 max-lg:mt-10 md:px-40 lg:px-0">
 				<div class="w-full mx-auto">
+					<!-- <LottiePlayer -->
 					{#if LottiePlayer}
-						<LottiePlayer
+						<svelte:component
+							this={LottiePlayer}
 							src={animationData}
 							autoplay={true}
 							loop={true}

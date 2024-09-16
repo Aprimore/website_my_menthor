@@ -52,8 +52,10 @@
 					<div
 						class="relative w-full flex justify-center align-center max-w-xl sm:bottom-10 no-zoom"
 					>
+						<!-- <LottiePlayer -->
 						{#if LottiePlayer}
-							<LottiePlayer
+							<svelte:component
+								this={LottiePlayer}
 								src={animationData}
 								autoplay={true}
 								loop={true}
