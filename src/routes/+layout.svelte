@@ -55,8 +55,6 @@
 </script>
 
 <svelte:head>
-	<link rel="preconnect" href="https://www.mymenthor.com/" />
-	<link rel="preconnect" href="https://www.mymenthor.com/pt-BR/" />
 	{#each hreflangs as { lang, url }}
 		<link rel="alternate" hreflang={lang} href={url} />
 	{/each}
