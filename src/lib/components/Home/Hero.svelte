@@ -23,7 +23,7 @@
 	<link rel="preload" as="image" href={header_hero_webp} />
 </svelte:head> -->
 
-<header in:fade={{ delay: 0, duration: 150, easing: cubicInOut }} class="hero-section">
+<header in:fade={{ delay: 0, duration: 150, easing: cubicInOut }} class="hero-section bg-[#19182F]">
 	<div class="mx-auto px-4 flex h-[510px] max-sm:h-[600px] items-center relative">
 		<div
 			in:fade={{ delay: 200, duration: 150, easing: cubicInOut }}
@@ -50,7 +50,7 @@
 				</a>
 			</button>
 
-			<img
+			<!-- <img
 				srcset="
 				{header_hero_1_webp} 300w,
 				{header_hero_2_webp} 700w,
@@ -62,7 +62,7 @@
 				class="absolute inset-0 w-full h-full object-cover -z-10"
 				fetchpriority="high"
 				loading="eager"
-			/>
+			/> -->
 		</div>
 	</div>
 </header>
