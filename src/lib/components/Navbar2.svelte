@@ -63,9 +63,9 @@
 	}
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
 	<link rel="preload" as="image" href={logo_navbar_svg} />
-</svelte:head>
+</svelte:head> -->
 
 <nav
 	class=" bg-[#F1F1F9] bg-opacity-80 relative mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full max-h-[115px] nav-component"
@@ -81,13 +81,7 @@
 				aria-label="My Menthor"
 				href="/"
 			>
-				<img
-					src={logo_navbar_svg}
-					alt="Logo MyMenthor"
-					loading="eager"
-					fetchpriority="high"
-					class="aspect-video mr-48"
-				/>
+				<img src={logo_navbar_svg} alt="Logo MyMenthor" class="aspect-video sm:mr-48" />
 			</a>
 			<!-- Mobile menu button -->
 			<div class="hamb flex lg:hidden Exo">

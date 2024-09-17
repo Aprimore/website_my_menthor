@@ -3,7 +3,7 @@
 	// import { availableLanguageTags } from '$paraglide/runtime';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
-	import Navbar2 from '$lib/components/Navbar2.svelte';
+	// import Navbar2 from '$lib/components/Navbar2.svelte';
 	import ViewTransition from '$lib/components/navigation.svelte';
 	import CookieConsent from '$lib/components/CookieConsent.svelte';
 	import '@fontsource-variable/archivo';
@@ -66,7 +66,7 @@
 	<ViewTransition />
 	<!-- {#if !isLoading} -->
 	<Navbar />
-	<Navbar2 />
+	<!-- <Navbar2 /> -->
 	<main>
 		<slot />
 	</main>
