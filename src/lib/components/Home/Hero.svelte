@@ -3,16 +3,17 @@
 	// import header_hero_1_webp from '$lib/assets/images/header_hero_1.webp?enhanced';
 	// import header_hero_2_webp from '$lib/assets/images/header_hero_2.webp?enhanced';
 	// import header_hero_3_webp from '$lib/assets/images/header_hero_3.webp?enhanced';
-	import { onMount } from 'svelte';
+	// import { onMount } from 'svelte';
 	import { cubicInOut } from 'svelte/easing';
 	import * as m from '$paraglide/messages';
 	import { fade } from 'svelte/transition';
-	import {
-		header_hero_1_webp,
-		header_hero_2_webp,
-		header_hero_3_webp,
-		header_hero_webp
-	} from '$lib';
+	// import {
+	// 	header_hero_1_webp,
+	// 	header_hero_2_webp,
+	// 	header_hero_3_webp,
+	// 	header_hero_webp
+	// } from '$lib';
+	import { header_hero_webp } from '$lib';
 </script>
 
 <!-- <svelte:head>
@@ -49,19 +50,16 @@
 				</a>
 			</button>
 
-			<img
-				srcset="
+			<!-- srcset="
 				{header_hero_1_webp} 300w,
 				{header_hero_2_webp} 700w,
 				{header_hero_3_webp} 900w,
 				{header_hero_webp} 1200w,
-				"
+				" -->
+			<img
 				src={header_hero_webp}
-				sizes="(max-width: 500px) 100vw, 70vw"
 				alt="Hero Header"
 				class="absolute inset-0 w-full h-full object-cover -z-10"
-				fetchpriority="high"
-				loading="eager"
 			/>
 		</div>
 	</div>

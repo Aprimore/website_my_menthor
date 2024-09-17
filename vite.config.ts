@@ -17,22 +17,26 @@ export default defineConfig({
 		// })
 	],
 	build: {
-		cssCodeSplit: true,
-		rollupOptions: {
-			output: {
-				manualChunks: (id) => {
-					if (id.includes('node_modules')) {
-						if (id.includes('@inlang/paraglide')) {
-							return 'vendor-paraglide';
-						}
-						return 'vendor';
-					}
-				}
-			}
-		}
+		cssCodeSplit: true
+		// rollupOptions: {
+		// 	output: {
+		// 		manualChunks: (id) => {
+		// 			if (id.includes('node_modules')) {
+		// 				if (id.includes('@inlang/paraglide')) {
+		// 					return 'vendor-paraglide';
+		// 				}
+		// 				return 'vendor';
+		// 			}
+		// 		}
+		// 	}
+		// }
 	},
 	optimizeDeps: {
-		include: ['@inlang/paraglide-js', '@inlang/paraglide-sveltekit']
+		include: [
+			'@inlang/paraglide-js',
+			'@inlang/paraglide-sveltekit',
+			'@lottiefiles/svelte-lottie-player'
+		]
 	},
 
 	// for easier debugging, don't minify
