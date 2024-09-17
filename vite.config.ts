@@ -19,19 +19,19 @@ export default defineConfig({
 	build: {
 		target: 'esnext',
 		minify: 'esbuild',
-		cssMinify: 'lightningcss',
-		rollupOptions: {
-			output: {
-				manualChunks: (id) => {
-					if (id.includes('node_modules')) {
-						if (id.includes('@inlang/paraglide')) {
-							return 'vendor-paraglide';
-						}
-						return 'vendor';
-					}
-				}
-			}
-		}
+		cssMinify: 'lightningcss'
+		// rollupOptions: {
+		// 	output: {
+		// 		manualChunks: (id) => {
+		// 			if (id.includes('node_modules')) {
+		// 				if (id.includes('@inlang/paraglide')) {
+		// 					return 'vendor-paraglide';
+		// 				}
+		// 				return 'vendor';
+		// 			}
+		// 		}
+		// 	}
+		// }
 	},
 	optimizeDeps: {
 		include: ['@inlang/paraglide-js', '@inlang/paraglide-sveltekit']
