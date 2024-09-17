@@ -3,7 +3,7 @@
 	import { piramid_home_en_svg, piramid_home_pt_br_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 	import { get } from 'svelte/store';
-	import LoadingSpinner from '../LoadingSpinner.svelte';
+	// import LoadingSpinner from '../LoadingSpinner.svelte';
 
 	const pathUrl = get(page).url.pathname;
 	const selectedImage = pathUrl === '/pt-BR/' ? piramid_home_pt_br_svg : piramid_home_en_svg;

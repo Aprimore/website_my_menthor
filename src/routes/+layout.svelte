@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { translatePath } from '$lib/i18n';
-	import { availableLanguageTags } from '$paraglide/runtime';
+	// import { translatePath } from '$lib/i18n';
+	// import { availableLanguageTags } from '$paraglide/runtime';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Navbar2 from '$lib/components/Navbar2.svelte';
@@ -9,8 +9,8 @@
 	import '@fontsource-variable/archivo';
 	import '@fontsource-variable/exo';
 	import '../app.postcss';
-	import { fade } from 'svelte/transition';
-	import { getPageTitle } from '$lib/functions/pageTitle';
+	// import { fade } from 'svelte/transition';
+	// import { getPageTitle } from '$lib/functions/pageTitle';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';

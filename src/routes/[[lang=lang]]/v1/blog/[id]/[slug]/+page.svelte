@@ -1,12 +1,12 @@
 <script lang="ts">
 	// import { post } from '$app/stores';
-	import { onMount } from 'svelte';
+	// import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
 	import { page } from '$app/stores';
 	let pagePath = $page.url.pathname;
 	$: pagePath = $page.url.pathname;
-	const isPortuguese = pagePath.startsWith('/pt-BR/');
+	// const isPortuguese = pagePath.startsWith('/pt-BR/');
 
 	export let data;
 

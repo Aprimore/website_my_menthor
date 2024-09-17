@@ -3,13 +3,12 @@
 	// export let form;
 	import { page } from '$app/stores';
 	import { ebook_cover_en_3, ebook_cover_pt_3 } from '$lib';
-	import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
+	// import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 	import TelInputComponent from '$lib/components/TelInputComponentFormLanding.svelte';
-	import { isProfessionalEmail } from '$lib/functions/emailValidator.js';
-	// import { sendPdf } from '$lib/functions/sendPdf';
+	// import { isProfessionalEmail } from '$lib/functions/emailValidator.js';
 	import * as m from '$paraglide/messages';
 	import { selectedCountryStore } from '$lib/stores.js';
-	import { onMount } from 'svelte';
+	// import { onMount } from 'svelte';
 	import { get } from 'svelte/store';
 	import { quintOut } from 'svelte/easing';
 	export let closePopup: () => void;

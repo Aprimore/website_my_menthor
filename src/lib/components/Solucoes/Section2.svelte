@@ -1,9 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import {
-		linha_h_azul_2_svg,
 		linha_h_azul_3_svg,
-		linha_h_azul_svg,
 		linha_v_amarela_svg,
 		portfolio_services_ingles_svg,
 		portfolio_services_portugues_svg

@@ -4,16 +4,16 @@
 	import { logo_navbar_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 	import { fade } from 'svelte/transition';
-	import { availableLanguageTags, sourceLanguageTag, languageTag } from '$paraglide/runtime';
+	import { sourceLanguageTag, languageTag } from '$paraglide/runtime';
 	import { translatePath } from '$lib/i18n';
 	// let showMenu = false;
 	let isOpen = false;
 	const toggleNavbar = () => (isOpen = !isOpen);
 
-	const labels = {
-		en: 'EN',
-		'pt-BR': 'PT-BR'
-	};
+	// const labels = {
+	// 	en: 'EN',
+	// 	'pt-BR': 'PT-BR'
+	// };
 
 	// function toggleNavbar() {
 	// 	showMenu = !showMenu;
@@ -38,7 +38,7 @@
 		});
 	}
 
-	const hrClass = 'max-sm:block ';
+	// const hrClass = 'max-sm:block ';
 
 	// const navbarClasses =
 	// 	' bg-opacity-0 text-base text-[#17193B] py-2 md:px-3 transition-transform transform hover:-translate-y-1 hover:bg-[#20C997] rounded-lg hover:text-[#F1F1F9] Exo bg-[#F1F1F9]';
@@ -125,11 +125,7 @@
 				: 'hidden '}"
 		>
 			{#each navItems as item}
-				<a
-					class={navbarClasses}
-					on:click={toggleNavbar}
-					href={getHref(item.href)}
-				>
+				<a class={navbarClasses} on:click={toggleNavbar} href={getHref(item.href)}>
 					{@html item.label()}
 				</a>
 			{/each}

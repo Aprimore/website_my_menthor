@@ -2,7 +2,7 @@
 	import { arrow_up_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 	import CookieConsent from './CookieConsent.svelte';
-	import LoadingSpinner from './LoadingSpinner.svelte';
+	// import LoadingSpinner from './LoadingSpinner.svelte';
 	import { sourceLanguageTag, languageTag } from '$paraglide/runtime';
 
 	$: currentLanguage = languageTag();

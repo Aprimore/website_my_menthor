@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
-	import { page } from '$app/stores';
+	// import { page } from '$app/stores';
 	import * as m from '$paraglide/messages';
 	import { onMount } from 'svelte';
 	// import Carousel from 'svelte-carousel';

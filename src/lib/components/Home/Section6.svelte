@@ -3,7 +3,7 @@
 	import animationData from '$lib/assets/lotties/gif-3.json';
 	import * as m from '$paraglide/messages';
 	import { onMount } from 'svelte';
-	import LoadingSpinner from '../LoadingSpinner.svelte';
+	// import LoadingSpinner from '../LoadingSpinner.svelte';
 
 	let LottiePlayer: any;
 	onMount(async () => {

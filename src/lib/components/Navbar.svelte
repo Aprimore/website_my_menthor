@@ -1,20 +1,14 @@
 <script lang="ts">
-	import { logo_navbar_svg } from '$lib';
-	import * as m from '$paraglide/messages';
-	import { languageTag, setLanguageTag } from '$paraglide/runtime';
+	// import { logo_navbar_svg } from '$lib';
 	import { fade } from 'svelte/transition';
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
-	import LoadingSpinner from './LoadingSpinner.svelte';
+	// import LoadingSpinner from './LoadingSpinner.svelte';
 </script>
 
 <nav
 	class=" navbar bg-[#d4d4ed] relative w-full z-20 top-0 start-0 border-b"
 	in:fade={{ duration: 300, delay: 10 }}
 >
-	<!-- <button class="absolute text-transparent cursor-pointer max-md:hidden">
-		<a class="absolute text-transparent cursor-pointer max-md:hidden" href="/blog"></a>
-		dsa</button
-	> -->
 	<div
 		class=" nav1 bg-transparent max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:p-2.5 p-1"
 	>
@@ -22,14 +16,6 @@
 			<ul
 				class="flex p-3 md:p-0 font-medium space-x-3 md:space-x-2 rtl:space-x-reverse m-0 border-0"
 			>
-				<!-- <li>
-				<a
-				href="/"
-				class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent underline"
-				></a
-				>
-			</li> -->
-
 				<li class="bg-[#d4d4ed] rounded">
 					<a
 						class="login Archivo block py-4 px-3 text-[#17193B] rounded bg-[#F1F1F9]"
@@ -55,14 +41,6 @@
 </nav>
 
 <style>
-	/* .language::before {
-		content: url('$lib/assets/svg/globe.svg');
-		display: inline-block;
-		vertical-align: middle;
-		margin-bottom: -5px;
-		margin-right: 7px; 
-	} */
-
 	.login::before {
 		content: url('$lib/assets/svg/lock.svg');
 		display: inline-block;

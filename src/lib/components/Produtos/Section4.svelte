@@ -1,8 +1,5 @@
 <script lang="ts">
 	import {
-		arrow_right_svg,
-		clientes_parceiros_1_webp,
-		linha_h_amarela2_svg,
 		linha_v_azul_svg,
 		products_1_webp,
 		products_2_webp,

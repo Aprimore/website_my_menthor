@@ -1,9 +1,7 @@
 <script lang="ts">
 	import {
-		arrow_right_svg,
 		clientes_parceiros_3_webp,
 		clientes_parceiros_5_webp,
-		linha_h_azul_svg
 	} from '$lib';
 	import * as m from '$paraglide/messages';
 </script>

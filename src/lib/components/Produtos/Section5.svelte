@@ -1,7 +1,6 @@
 <script lang="ts">
 	import {
 		analytics_illustration_svg,
-		arrow_right_svg,
 		check_list_illustration_svg,
 		line_graph_illustration_svg
 	} from '$lib';

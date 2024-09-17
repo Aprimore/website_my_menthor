@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { phoneNumberStore, selectedCountryStore } from '$lib/stores';
+	import { selectedCountryStore } from '$lib/stores';
+	// phoneNumberStore
 	import { createEventDispatcher } from 'svelte';
 	import { TelInput, clickOutsideAction, isSelected, normalizedCountries } from 'svelte-tel-input';
 	import 'svelte-tel-input/styles/flags.css';
 
-	let phoneNumber = '';
+	// let phoneNumber = '';
 
 	export let clickOutside = true;
 	export let closeOnClick = true;

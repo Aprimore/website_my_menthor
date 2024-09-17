@@ -1,5 +1,5 @@
 <script lang="ts">
-	import FormLanding from '$lib/components/Home/FormLanding.svelte';
+	// import FormLanding from '$lib/components/Home/FormLanding.svelte';
 	import Hero from '$lib/components/Home/Hero.svelte';
 	import PopupForm from '$lib/components/Home/PopupForm.svelte';
 	import Section1 from '$lib/components/Home/Section1.svelte';
@@ -7,7 +7,7 @@
 	import Section3 from '$lib/components/Home/Section3.svelte';
 	import Section4 from '$lib/components/Home/Section4.svelte';
 	import Section5 from '$lib/components/Home/Section5.svelte';
-	import Section6 from '$lib/components/Home/Section6.svelte';
+	// import Section6 from '$lib/components/Home/Section6.svelte';
 	import { cookieConsentVisible } from '$lib/stores/cookieConsent.js';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
@@ -24,7 +24,7 @@
 	// 	SITE_URL
 	// } from '$lib/siteConfig';
 	import { page } from '$app/stores';
-	import { getPageTitle } from '$lib/functions/pageTitle.js';
+	// import { getPageTitle } from '$lib/functions/pageTitle.js';
 	onMount(() => {
 		cookieConsentVisible.subscribe((value) => {
 			consentVisible = !value;
@@ -48,7 +48,7 @@
 	import ogImageSrc from '$lib/assets/home/home-open-graph.jpg';
 	import twitterImageSrc from '$lib/assets/home/home-twitter.jpg';
 	import featuredImageSrc from '$lib/assets/home/home.jpg';
-	import og_image from '$lib/assets/images/og_image.webp';
+	// import og_image from '$lib/assets/images/og_image.webp';
 	import website from '$lib/config/website';
 	import SEO from '$lib/components/SEO/index.svelte';
 
