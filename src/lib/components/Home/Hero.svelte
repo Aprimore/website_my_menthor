@@ -1,20 +1,19 @@
 <script lang="ts">
-	import header_hero_webp from '$lib/assets/images/header_hero.webp?enhanced';
-	import header_hero_1_webp from '$lib/assets/images/header_hero_1.webp?enhanced';
-	import header_hero_2_webp from '$lib/assets/images/header_hero_2.webp?enhanced';
-	import header_hero_3_webp from '$lib/assets/images/header_hero_3.webp?enhanced';
+	// import header_hero_webp from '$lib/assets/images/header_hero.webp?enhanced';
+	// import header_hero_1_webp from '$lib/assets/images/header_hero_1.webp?enhanced';
+	// import header_hero_2_webp from '$lib/assets/images/header_hero_2.webp?enhanced';
+	// import header_hero_3_webp from '$lib/assets/images/header_hero_3.webp?enhanced';
 	import { onMount } from 'svelte';
 	import { cubicInOut } from 'svelte/easing';
 	import * as m from '$paraglide/messages';
 	import { fade } from 'svelte/transition';
 	// import { page } from '$app/stores';
-	// import {
-	// 	header_hero_1_webp,
-	// 	header_hero_2_webp,
-	// 	header_hero_3_webp,
-	// 	header_hero_webp
-	// } from '$lib';
-
+	import {
+		header_hero_1_webp,
+		header_hero_2_webp,
+		header_hero_3_webp,
+		header_hero_webp
+	} from '$lib';
 </script>
 
 <!-- <svelte:head>
@@ -51,7 +50,7 @@
 				</a>
 			</button>
 
-			<enhanced:img
+			<img
 				srcset="
 				{header_hero_1_webp} 300w,
 				{header_hero_2_webp} 700w,
