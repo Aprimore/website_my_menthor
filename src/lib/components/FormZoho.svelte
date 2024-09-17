@@ -68,7 +68,6 @@
 		formData.append('LEADCF3', position);
 		formData.append('LEADCF5', message);
 		// Add additional form fields as needed
-		// console.log(formData);
 
 		try {
 			const response = await fetch('https://crm.zoho.com/crm/WebToLeadForm', {
@@ -85,7 +84,6 @@
 				company = '';
 				position = '';
 				message = '';
-				// console.log('Form submitted successfully:', response);
 				alert(`${m.form_submit_success()}`);
 			} else {
 				// console.error('HTTP error:', response.status);

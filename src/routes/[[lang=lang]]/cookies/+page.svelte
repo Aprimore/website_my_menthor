@@ -5,10 +5,28 @@
 	import * as m from '$paraglide/messages';
 	import { fade } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
+
+	let pagePath = $page.url.pathname;
+	$: pagePath = $page.url.pathname;
+	const isPortuguese = pagePath.startsWith('/pt-BR/');
+
+	const ogLanguage = isPortuguese ? 'pt-BR' : 'en';
+	const pageTitle = 'Cookies';
+	const metadescription = isPortuguese
+		? 'Este documento descreve como os cookies são usados nos sites www.mymenthor.com e www.mymenthor.com.br, identificando os diferentes tipos de cookies usados, suas finalidades, como os usuários podem consentir ou optar por não usar os cookies e terceiros envolvidos na colocação de cookies.'
+		: 'This document describes how cookies are used on the websites www.mymenthor.com and www.mymenthor.com.br, identifying the different types of cookies used, their purposes, how users can consent to or opt out of using cookies, and the third parties involved in placing cookies.';
 </script>
 
+<svelte:head>
+	<title>{pageTitle}</title>
+	<meta property="og:title" content={pageTitle} />
+	<meta property="og:locale" content={ogLanguage} />
+	<meta property="og:type" content="article" />
+	<meta property="og:description" content={metadescription} />
+</svelte:head>
+
 <section
-	in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}
+	in:fade={{ delay: 0, duration: 150, easing: cubicInOut }}
 	class="sm:bg-[#F1F1F9] w-full items-center relative rounded-lg max-sm:p-2 py-5 Exo"
 >
 	<div

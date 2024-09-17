@@ -72,7 +72,6 @@
 	};
 
 	const handleSelect = (countryName: any, val: any, e?: any) => {
-		// console.log(val, e);
 		selectedCountryStore.set(countryName);
 
 		if (disabled) return;
@@ -97,7 +96,6 @@
 		dispatch('change', { option: selectedCountry as any });
 	};
 
-	// console.log(isFormLanding);
 </script>
 
 <div

@@ -94,7 +94,7 @@
 		siteTitle,
 		siteTitleAlt: siteShortTitle,
 		siteUrl,
-		title: pageTitle,
+		title,
 		url,
 		facebookPage,
 		githubPage,

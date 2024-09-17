@@ -73,8 +73,6 @@
 		// formData.append('LEADCF23', '-None-');
 		// formData.append('LEADCF23', 'Sustaining&#x20;Transformation&#x20;through&#x20;Business&#x20;Architecture');
 
-		console.log(formData);
-
 		try {
 			const response = await fetch('https://crm.zoho.com/crm/WebToLeadForm', {
 				method: 'POST',
@@ -94,7 +92,6 @@
 			// 	console.error('HTTP error:', response.status);
 			// 	alert(`${m.form_submit_error()}`);
 			// }
-			// console.log('Form submitted successfully:', response);
 		} catch (error) {
 			console.error('Form sent');
 			// alert(`${m.form_submit_error()}`);
@@ -108,8 +105,6 @@
 
 	const pathUrl = get(page).url.pathname;
 	const selectedImage = pathUrl === '/' ? ebook_cover_en_3 : ebook_cover_pt_3;
-
-	// console.log(pathUrl);
 
 	// const browserLang = pathUrl ? 'pt-BR' : 'en';
 	const isPtBr = pathUrl.startsWith('/pt-BR/');

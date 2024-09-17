@@ -6,7 +6,6 @@
 	import LoadingSpinner from '../LoadingSpinner.svelte';
 
 	const pathUrl = get(page).url.pathname;
-	// console.log(pathUrl);
 	const selectedImage = pathUrl === '/pt-BR/' ? piramid_home_pt_br_svg : piramid_home_en_svg;
 </script>
 

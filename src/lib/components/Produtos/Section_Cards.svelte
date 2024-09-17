@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import { browser } from '$app/environment';
 	import * as m from '$paraglide/messages';
 	import Carousel from 'svelte-carousel';
@@ -28,15 +28,6 @@
 				let:pagesCount
 				let:showPage
 			>
-				<!-- <button
-						symbol={pageIndex + 1}
-						active={currentPageIndex === pageIndex}
-						on:click={() => showPage(pageIndex)}
-					></button> -->
-				<!-- <div slot="dots" class="flex gap-3">
-					<button on:click={goToPrevPage} class="dot-1 size-3 bg-[#25285F] rounded-full"></button>
-					<button on:click={goToNextPage} class="dot-2 size-3 bg-[#25285F] rounded-full"></button>
-				</div> -->
 				<div slot="dots" class="flex gap-3">
 					<button
 						on:click={goToPrevPage}
@@ -54,9 +45,6 @@
 					></button>
 				</div>
 
-				<!-- -->
-				<!-- =========================== BUTTONS -->
-
 				<button on:click={goToPrevPage} slot="prev" class=" w-10 h-10 nav-button m-auto">
 					<i class="arrow-right"></i>
 				</button>
@@ -64,7 +52,6 @@
 					<i class="arrow-left"></i>
 				</button>
 
-				<!-- =========================== BUTTONS -->
 				<div class="w-full flex flex-col md:flex-row md:justify-center md:space-x-6 mb-6">
 					<div
 						class="max-sm:h-1/2 card1 bg-[#F1F1F9] bg-opacity-50 border border-gray-300 rounded-lg flex items-center"
@@ -74,9 +61,6 @@
 
 							<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 								{@html m.produtos_ItSupportsDifferentLevelsOfMaturity()}
-								<!-- It contains its own embedded methodology with an approach to corporate development,
-					which helps in diagnosis, defining the implementation strategy, and guiding the step-by-step
-					the evolution of organizational maturity. -->
 							</p>
 						</div>
 					</div>
@@ -88,8 +72,6 @@
 
 							<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 								{@html m.produtos_EmphasizesBusinessProcessManagement()}
-								<!-- It supports different levels of maturity and
-					  deployment strategies through its modular and flexible approach. -->
 							</p>
 						</div>
 					</div>
@@ -104,7 +86,6 @@
 
 							<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 								{@html m.produtos_ItContainsItsOwnEmbeddedMethodology()}
-								<!-- Emphasizes BPM as a Management Model, facilitating the structuring, instrumentation and implementation of the topic, highlighting the results of the various process mapping and improvement initiatives. -->
 							</p>
 						</div>
 					</div>
@@ -116,22 +97,16 @@
 
 							<p class=" mt-5 mb-2 Archivo text-base max-w-[420px] text-[#25285F]">
 								{@html m.produtos_DecompplicatesAndDecentralizesTheTopic()}
-								<!-- Decomplicates and decentralizes the topic, so that the business areas
-					   take responsibility for their processes and results, with the support of governance
-					   mechanisms and integrated into the organizational components and capabilities -->
 							</p>
 						</div>
 					</div>
 				</div>
 			</Carousel>
 		{/if}
-
-		<!-- <button on:click={handleNextClick}>Next</button> -->
 	</div>
 </section>
 
 <style>
-	/* Zoom responsiveness */
 	@media only screen and (max-width: 1400px) {
 		.caroussel {
 			zoom: 127%;
@@ -158,9 +133,6 @@
 		content: url('$lib/assets/svg/notes.svg');
 	}
 
-	/* .title-ms::before {
-		content: url('$lib/assets/svg/ads_click.svg');
-	} */
 	.title-sd::before {
 		content: url('$lib/assets/svg/map.svg');
 	}
@@ -183,24 +155,4 @@
 		position: relative;
 		filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5)); /* Drop shadow */
 	}
-
-	/* .sc-carousel-dot, .sc-carousel-dot__dot_active {
-		opacity: 0;
-		height: 500px;
-		width: 500px;
-	}
-	.sc-carousel-dot, .sc-carousel-dot__dot_active{
-		background-color: blue;
-		border-radius: 50%;
-		display: inline-block;
-		opacity: 0.5;
-		transition:
-			opacity 100ms ease,
-			height var(--sc-dot-size-animation-time) ease,
-			width var(--sc-dot-size-animation-time) ease;
-		cursor: pointer;
-		-webkit-tap-highlight-color: transparent;
-		height: var(--sc-dot-size);
-		width: var(--sc-dot-size);
-	} */
-</style>
+</style> -->

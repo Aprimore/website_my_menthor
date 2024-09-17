@@ -1,5 +1,29 @@
-// @ts-ignore
 import xss from 'xss';
+
+interface FeaturedImageNode {
+	url: string;
+	altText: string;
+}
+
+interface Language {
+	code: string;
+	locale: string;
+}
+
+interface PostNode {
+	id: string;
+	excerpt: string;
+	title: string;
+	slug: string;
+	date: string;
+	databaseId: number;
+	featuredImage: { node: FeaturedImageNode };
+	language: Language;
+}
+
+interface Post {
+	node: PostNode;
+}
 
 export const WPQL_QUERY = (language: string) => ({
 	query: `
@@ -36,7 +60,7 @@ export const WPQL_QUERY = (language: string) => ({
 	}
 });
 
-export const sanitizePost = (post) => {
+export const sanitizePost = (post: Post) => {
 	return {
 		...post.node,
 		title: xss(post.node.title),

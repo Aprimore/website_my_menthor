@@ -19,7 +19,6 @@
 		en: `EN`, // 🇺🇸 EN
 		'pt-BR': ` PT-BR ` // 🇧🇷 pt-BR
 	};
-	// console.log(availableLanguageTags);
 </script>
 
 <div class="language-buttons">

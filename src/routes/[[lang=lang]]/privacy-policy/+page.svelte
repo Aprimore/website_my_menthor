@@ -5,10 +5,28 @@
 	import * as m from '$paraglide/messages';
 	import { fade } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
+
+	let pagePath = $page.url.pathname;
+	$: pagePath = $page.url.pathname;
+	const isPortuguese = pagePath.startsWith('/pt-BR/');
+
+	const ogLanguage = isPortuguese ? 'pt-BR' : 'en';
+	const pageTitle = isPortuguese ? 'Política de Privacidade' : 'Privacy Policy';
+	const metadescription = isPortuguese
+		? 'Este documento descreve como coletamos, usamos, armazenamos e protegemos os dados pessoais de clientes e usuários da plataforma My Menthor. O cliente é a empresa com personalidade jurídica contratante e assinante do SaaS e responsável pela autorização e gestão dos usuários que têm acesso à plataforma em seu nome. Os usuários são os empregados ou representantes autorizados do cliente que possuem acesso à plataforma e que estão sujeitos às políticas e termos de uso estabelecidos entre prestador de serviço e cliente.'
+		: 'This document describes how we collect, use, store, and protect the personal data of customers and users of the My Menthor platform. The customer is the contracting and subscribing legal entity responsible for authorizing and managing the users who have access to the platform on its behalf. The users are the employees or authorized representatives of the customer who have access to the platform and are subject to the policies and terms of use established between the service provider and the customer.';
 </script>
 
+<svelte:head
+	><title>{pageTitle}</title>
+	<meta property="og:locale" content={ogLanguage} />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content={pageTitle} />
+	<meta property="og:description" content={metadescription} />
+</svelte:head>
+
 <section
-	in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}
+	in:fade={{ delay: 0, duration: 150, easing: cubicInOut }}
 	class="sm:bg-[#F1F1F9] w-full items-center relative rounded-lg max-sm:p-2 py-5"
 >
 	<div

@@ -3,6 +3,13 @@
 	import * as m from '$paraglide/messages';
 	import CookieConsent from './CookieConsent.svelte';
 	import LoadingSpinner from './LoadingSpinner.svelte';
+	import { sourceLanguageTag, languageTag } from '$paraglide/runtime';
+
+	$: currentLanguage = languageTag();
+	$: isSourceLanguage = currentLanguage === sourceLanguageTag;
+	function getHref(basePath: string) {
+		return isSourceLanguage ? basePath : `/${currentLanguage}${basePath}`;
+	}
 </script>
 
 <!-- <div class="div1"></div>
@@ -16,7 +23,7 @@
         "
 		>
 			<li class=" text-[#D4D4ED]">
-				<a href="/" class="">{@html m.footer_Copyright()}</a>
+				<a href={getHref('/')} class="">{@html m.footer_Copyright()}</a>
 			</li>
 		</ul>
 
@@ -26,7 +33,7 @@
 		>
 			<li>
 				<a
-					href="/terms-of-service"
+					href={getHref('/terms-of-service')}
 					target="_blank"
 					class="underline text-[#D4D4ED] hover:text-white"
 					style="min-width: 48px; min-height: 48px;">{@html m.footer_Terms()}</a
@@ -34,7 +41,7 @@
 			</li>
 			<li>
 				<a
-					href="/privacy-policy"
+					href={getHref('/privacy-policy')}
 					target="_blank"
 					class="underline text-[#D4D4ED] hover:text-white"
 					style="min-width: 48px; min-height: 48px;">{@html m.footer_Privacy()}</a
@@ -42,7 +49,7 @@
 			</li>
 			<li>
 				<a
-					href="/cookies"
+					href={getHref('/cookies')}
 					target="_blank"
 					class=" underline text-[#D4D4ED] hover:text-white"
 					style="min-width: 48px; min-height: 48px;">{@html m.footer_Cookies()}</a

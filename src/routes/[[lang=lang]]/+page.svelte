@@ -53,7 +53,6 @@
 	import SEO from '$lib/components/SEO/index.svelte';
 
 	const isPortuguese = pagePath.startsWith('/pt-BR/');
-	// console.log(isPortuguese);
 	const { author, siteUrl } = website;
 	let title = isPortuguese ? 'Início' : 'Home';
 	const breadcrumbs = [
@@ -111,7 +110,7 @@
 </script>
 
 <SEO {...seoProps} />
-<div in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}>
+<div in:fade={{ delay: 0, duration: 150, easing: cubicInOut }}>
 	{#if isOpen && consentVisible}
 		<div in:fade={{ duration: 200, delay: 1000 }}>
 			<PopupForm {isOpen} {consentVisible} {form} />

@@ -9,11 +9,6 @@
 	const isPortuguese = pagePath.startsWith('/pt-BR/');
 
 	export let data;
-	onMount(() => {
-		if (data && data.post) {
-			document.title = `${data.post.title} | My Menthor` ?? 'Blog Post | My Menthor';
-		}
-	});
 
 	function formatDateToISO(dateString) {
 		const date = new Date(dateString);
@@ -85,11 +80,11 @@
 
 <SEO {...seoProps} />
 <section
-	in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}
+	in:fade={{ delay: 0, duration: 150, easing: cubicInOut }}
 	class="sm:bg-[#F1F1F9] w-full items-center relative rounded-lg max-sm:p-2 py-5 Exo"
 >
 	<div
-		class="max-sm:bg-[#F1F1F9] md:max-w-screen-2xl flex flex-col lg:flex-row mx-auto pr-96 items-center rounded-lg"
+		class="max-sm:bg-[#F1F1F9] md:max-w-screen-2xl flex flex-col lg:flex-row mx-auto md:pr-96 items-center rounded-lg"
 	>
 		<div class="max-lg:p-5 space-y-6 mt-8 lg:mt-16 max-lg:order-1 mx-auto">
 			{#if data.post}

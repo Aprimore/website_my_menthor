@@ -5,10 +5,30 @@
 	import * as m from '$paraglide/messages';
 	import { fade } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
+
+	let pagePath = $page.url.pathname;
+	$: pagePath = $page.url.pathname;
+	const isPortuguese = pagePath.startsWith('/pt-BR/');
+
+	const ogLanguage = isPortuguese ? 'pt-BR' : 'en';
+	const pageTitle = isPortuguese
+		? 'TERMO DE USO/ TERMO DE SERVIÇOS'
+		: 'TERMS OF USE / TERMS OF SERVICE';
+	const metadescription = isPortuguese
+		? 'Este documento descreve os termos e condições de uso da plataforma My Menthor (mymenthor.com). Ao acessar ou utilizar nossos serviços, você concorda com estes Termos de Uso.'
+		: 'This document describes the terms and conditions of use for the My Menthor (mymenthor.com) platform. By accessing or using our services, you agree to these Terms of Use.';
 </script>
 
+<svelte:head>
+	<title>{pageTitle}</title>
+	<meta property="og:locale" content={ogLanguage} />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content={pageTitle} />
+	<meta property="og:description" content={metadescription} />
+</svelte:head>
+
 <section
-	in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}
+	in:fade={{ delay: 0, duration: 150, easing: cubicInOut }}
 	class="sm:bg-[#F1F1F9] w-full items-center relative rounded-lg max-sm:p-2 py-5 Exo"
 >
 	<div

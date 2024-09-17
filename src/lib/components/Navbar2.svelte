@@ -7,7 +7,6 @@
 	import { availableLanguageTags, sourceLanguageTag, languageTag } from '$paraglide/runtime';
 	import { translatePath } from '$lib/i18n';
 	// let showMenu = false;
-	// console.log(availableLanguageTags, sourceLanguageTag);
 	let isOpen = false;
 	const toggleNavbar = () => (isOpen = !isOpen);
 

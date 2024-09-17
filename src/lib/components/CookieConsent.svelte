@@ -8,9 +8,7 @@
 	import * as CookieConsent from 'vanilla-cookieconsent';
 	import 'vanilla-cookieconsent/dist/cookieconsent.css';
 	const pathUrl = get(page).url.pathname.startsWith('/pt-BR');
-	// console.log(pathUrl);
 	const browserLang = pathUrl ? 'pt-BR' : 'en';
-	// console.log(browserLang);
 	onMount(() => {
 		const config = createConfig(browserLang); // Generate config with the detected language
 		CookieConsent.run({
@@ -18,13 +16,13 @@
 			onAccept: () => {
 				cookieConsentAccepted.set(true);
 				cookieConsentVisible.set(false);
-				Promise.all([loadGTM(), loadGA()])
-					.then(() => {
-						console.log('GTM and GA loaded successfully.');
-					})
-					.catch((error) => {
-						console.error('Error loading GTM or GA:', error);
-					});
+				// Promise.all([loadGTM(), loadGA()]);
+				// .then(() => {
+				// 	console.log('GTM and GA loaded successfully.');
+				// })
+				// .catch((error) => {
+				// 	console.error('Error loading GTM or GA:', error);
+				// });
 			},
 			onReject: () => {
 				cookieConsentAccepted.set(false);

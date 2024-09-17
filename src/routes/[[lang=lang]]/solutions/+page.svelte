@@ -73,7 +73,7 @@
 </script>
 
 <SEO {...seoProps} />
-<div in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}>
+<div in:fade={{ delay: 0, duration: 150, easing: cubicInOut }}>
 	<Section1 />
 	<Section2 />
 	<Section3 />

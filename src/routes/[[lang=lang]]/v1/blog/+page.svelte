@@ -11,11 +11,6 @@
 
 	export let data;
 
-	onMount(() => {
-		if (data && data.post) {
-			document.title = `${data.post.title} | My Menthor` ?? 'Blog Post | My Menthor';
-		}
-	});
 
 	// console.log(data);
 
@@ -77,7 +72,7 @@
 <SEO {...seoProps} />
 
 <section
-	in:fade={{ delay: 0, duration: 150, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}
+	in:fade={{ delay: 0, duration: 150, easing: cubicInOut }}
 	class="blog-list sm:bg-[#F1F1F9] w-full relative rounded-lg max-sm:p-2 py-5 Exo"
 >
 	<div class="max-sm:bg-[#F1F1F9] max-w-screen-2xl mx-auto flex-col lg:flex-row rounded-lg p-4">
@@ -85,10 +80,7 @@
 		{#if data.posts && data.posts.length > 0}
 			<ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 				{#each data.posts as post}
-					<li
-						class="group"
-						in:fade={{ delay: 100, duration: 500, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}
-					>
+					<li class="group" in:fade={{ delay: 100, duration: 500, easing: cubicInOut }}>
 						<a href="{post.databaseId}/{post.slug}" class="block h-full">
 							<article
 								class="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full flex flex-col"

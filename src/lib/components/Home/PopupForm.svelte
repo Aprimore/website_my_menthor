@@ -5,7 +5,7 @@
 	let cookieConsent = false;
 	let doNotShowAgain = false;
 
-	import { cookieConsentVisible } from '$lib/stores/cookieConsent.ts';
+	import { cookieConsentVisible } from '$lib/stores/cookieConsent';
 	import { fade, fly } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
 	cookieConsentVisible.subscribe((value) => {
@@ -39,12 +39,12 @@
 
 <svelte:window on:click={handleClickOutside} />
 <div
-	in:fade={{ delay: 1000, duration: 800, x: 0, y: 0, opacity: 0.5, easing: cubicInOut }}
+	in:fade={{ delay: 1000, duration: 800, easing: cubicInOut }}
 	class=" fixed inset-0 z-50 flex items-center justify-center bg-gray-950 bg-opacity-50"
 	class:hidden={!isOpen}
 >
 	<div
-		in:fly={{ delay: 1200, duration: 1000, x: 0, y: 5000, opacity: 0.5, easing: cubicInOut }}
+		in:fly={{ delay: 1200, duration: 1000, x: 0, y: 5000, easing: cubicInOut }}
 		class="bg-white rounded-3xl shadow-md p-1 max-w-screen-xl flex flex-col relative popup-form"
 	>
 		<button

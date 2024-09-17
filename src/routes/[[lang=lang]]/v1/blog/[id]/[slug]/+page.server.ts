@@ -1,4 +1,3 @@
-//@ts-ignore
 import type { PageServerLoad } from './$types';
 import { sanitizeHtml } from '../../utils';
 
@@ -46,12 +45,9 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 		},
 		body: JSON.stringify(WPQL_QUERY)
 	});
-	// console.log(response);
 	if (!response.ok) throw new Error('Failed to fetch post');
 
 	const { data } = await response.json();
-
-	// console.log(data);
 
 	if (data.post && data.post.content) {
 		data.post.content = sanitizeHtml(data.post.content);

@@ -32,14 +32,13 @@ export function createConfig(language: string): CookieConsent.CookieConsentConfi
 					ga: {
 						label: 'Google Analytics',
 						onAccept: () => {
-							console.log('.');
-							Promise.all([loadGTM(), loadGA()])
-								.then(() => {
-									console.log('GTM and GA loaded successfully.');
-								})
-								.catch((error) => {
-									console.error('Error loading GTM or GA:', error);
-								});
+							Promise.all([loadGTM(), loadGA()]);
+							// .then(() => {
+							// 	console.log('.');
+							// })
+							// .catch((error) => {
+							// 	console.error('Error loading GTM or GA:', error);
+							// });
 							// .then(() => {
 							// 	console.log('GTM loaded and ready');
 							// })
