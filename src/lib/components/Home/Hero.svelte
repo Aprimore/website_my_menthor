@@ -24,7 +24,7 @@
 </svelte:head> -->
 
 <header in:fade={{ delay: 0, duration: 150, easing: cubicInOut }} class="hero-section bg-[#19182F]">
-	<div class="mx-auto px-4 flex h-[510px] max-sm:h-[600px] items-center relative">
+	<div class="mx-auto px-4 flex h-[510px] max-sm:h-[400px] items-center relative">
 		<div
 			in:fade={{ delay: 200, duration: 150, easing: cubicInOut }}
 			class="mx-auto max-w-5xl text-center z-20"
