@@ -9,6 +9,7 @@
 	import 'vanilla-cookieconsent/dist/cookieconsent.css';
 	const pathUrl = get(page).url.pathname.startsWith('/pt-BR');
 	const browserLang = pathUrl ? 'pt-BR' : 'en';
+	
 	onMount(() => {
 		const config = createConfig(browserLang); // Generate config with the detected language
 		CookieConsent.run({
