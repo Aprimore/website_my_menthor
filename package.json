@@ -60,6 +60,7 @@
     "install": "^0.13.0",
     "postcss-cli": "^11.0.0",
     "postcss-nested": "^6.2.0",
+    "postcss-preset-env": "^10.0.3",
     "svelte-preprocess": "^5.1.4",
     "svelte-tel-input": "^3.3.9",
     "swiper": "^11.1.14",

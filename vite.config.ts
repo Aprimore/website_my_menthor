@@ -17,9 +17,7 @@ export default defineConfig({
 		// })
 	],
 	build: {
-		target: 'esnext',
-		minify: 'esbuild',
-		cssMinify: 'lightningcss',
+		cssCodeSplit: true,
 		rollupOptions: {
 			output: {
 				manualChunks: (id) => {
