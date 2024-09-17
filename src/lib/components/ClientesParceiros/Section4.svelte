@@ -8,6 +8,8 @@
 		<div class="lg:w-2/3 flex max-lg:justify-start justify-start">
 			<div class="relative">
 				<img
+					width="695"
+					height="440"
 					src={clientes_parceiros_4_webp}
 					alt="Webp Vector"
 					loading="lazy"
@@ -15,6 +17,8 @@
 					fetchpriority="low"
 				/>
 				<img
+					width="61"
+					height="61"
 					src={fone_amarelo_svg}
 					class="absolute max-md:top-3 max-md:right-3 -top-5
 					-right-5"

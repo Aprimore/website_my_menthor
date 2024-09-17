@@ -20,6 +20,8 @@
 				{@html m.produtos_MyMenthorIs()}
 				<span
 					><img
+						width="224"
+						height="17"
 						src={linha_h_azul_4_svg}
 						class="z-10 max-sm:mx-auto w-56"
 						alt="linha"
@@ -36,6 +38,8 @@
 				  rounded-md bg-[#25285F] py-6 md:py-10 sm:px-16 p-3 relative sm:max-h-[200px]"
 			>
 				<img
+					width="61"
+					height="61"
 					src={estrela_verde_svg}
 					class="absolute -top-5 -right-5"
 					alt="star"
@@ -43,7 +47,14 @@
 					fetchpriority="high"
 				/>
 				<span class="absolute left-10 max-sm:hidden"
-					><img src={linha_v_amarela_svg} alt="linha" loading="eager" fetchpriority="high" /></span
+					><img
+						width="13"
+						height="70"
+						src={linha_v_amarela_svg}
+						alt="linha"
+						loading="eager"
+						fetchpriority="high"
+					/></span
 				>
 				<p class=" text-lg leading-tight text-[#F1F1F9] Archivo">
 					{@html m.produtos_DeploymentAndExecutionOfStrategy()}
@@ -54,6 +65,8 @@
 		</div>
 		<div class="lg:w-1/2 flex justify-center lg:ml-20 max-md:mt-10 w-full">
 			<img
+				width="712"
+				height="441"
 				src={products_frame_svg}
 				class="max-w-ull"
 				alt="Svg Icon"

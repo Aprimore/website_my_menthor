@@ -11,7 +11,6 @@
 
 	export let data;
 
-
 	// console.log(data);
 
 	const { author, siteUrl } = website;
@@ -87,6 +86,8 @@
 							>
 								{#if post.featuredImage?.node?.sourceUrl}
 									<img
+										width="356"
+										height="208"
 										src={post.featuredImage.node.sourceUrl}
 										alt={post.title}
 										class="w-full h-52 object-cover"

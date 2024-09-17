@@ -29,6 +29,8 @@
 		</div>
 		<div class="lg:w-1/2 lg:p-4 mt-3 relative lg:my-auto">
 			<img
+				width="964"
+				height="577"
 				src={empresa_1_webp}
 				class=" mx-auto rounded-lg"
 				alt="Webp Vector"

@@ -57,6 +57,8 @@
 				{header_hero_webp} 1200w,
 				" -->
 			<img
+				width="1910"
+				height="510"
 				src={header_hero_webp}
 				alt="My Menthor Header"
 				class="absolute inset-0 w-full h-full object-cover -z-10"

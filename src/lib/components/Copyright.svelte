@@ -68,6 +68,8 @@
 							src={arrow_up_svg}
 							alt="arrow top"
 							class="size-[14px]"
+							width="14"
+							height="14"
 							aria-label="top button"
 							decoding="sync"
 							fetchpriority="low"

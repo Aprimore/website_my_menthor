@@ -7,6 +7,8 @@
 	<div class="mx-auto px-4 md:flex md:h-[330px] md:items-center relative">
 		<div class="md:w-1/2 relative z-10 flex justify-center">
 			<img
+				width="277"
+				height="301"
 				src={rocket_svg}
 				class="z-20 mt-2 relative max-md:max-w-64"
 				alt="Rocket"
@@ -39,6 +41,8 @@
 	<div class="mt-8 flex">
 		<div class="bg-gradient-to-r from-[#000000] via-transparent to-transparent">
 			<img
+				width="1604"
+				height="362"
 				loading="lazy"
 				decoding="sync"
 				fetchpriority="low"

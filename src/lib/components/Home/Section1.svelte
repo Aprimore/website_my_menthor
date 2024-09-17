@@ -37,6 +37,8 @@
 				>
 					<span class="absolute max-md:hidden ml-5"
 						><img
+							width="12"
+							height="88"
 							src={linha_v_1_verde_svg}
 							alt="linha"
 							loading="eager"

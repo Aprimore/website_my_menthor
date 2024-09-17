@@ -29,12 +29,14 @@
 					<div class=" ">
 						<a href={getHref('/')} class="mb-6 inline-block max-w-[250px]">
 							<img
+								width="252"
+								height="115"
 								loading="lazy"
 								decoding="sync"
 								fetchpriority="low"
 								src={logo_footer_webp}
 								alt="logo"
-								class="aspect-video transition-transform transform hover:-translate-y-1"
+								class=" transition-transform transform hover:-translate-y-1"
 							/>
 						</a>
 
@@ -214,12 +216,14 @@
 								target="_blank"
 							>
 								<img
+									width="32"
+									height="32"
 									loading="lazy"
 									decoding="sync"
 									fetchpriority="low"
 									src={youtube_svg}
 									class="transition-transform duration-200 transform hover:scale-110"
-									alt=""
+									alt="youtube logo vector"
 								/>
 							</a>
 							<a
@@ -229,12 +233,14 @@
 								target="_blank"
 							>
 								<img
+									width="32"
+									height="32"
 									loading="lazy"
 									decoding="sync"
 									fetchpriority="low"
 									src={linkedin_svg}
 									class="transition-transform duration-200 transform hover:scale-110"
-									alt=""
+									alt="linkedin logo vector"
 								/>
 							</a>
 							<a
@@ -249,7 +255,9 @@
 									fetchpriority="low"
 									src={facebook_svg}
 									class="transition-transform duration-200 transform hover:scale-110"
-									alt=""
+									alt="facebook logo vector"
+									width="32"
+									height="32"
 								/>
 							</a>
 							<a
@@ -264,7 +272,9 @@
 									fetchpriority="low"
 									src={instagram_svg}
 									class="transition-transform duration-200 transform hover:scale-110"
-									alt=""
+									alt="instagram logo vector"
+									width="32"
+									height="32"
 								/>
 							</a>
 						</div>

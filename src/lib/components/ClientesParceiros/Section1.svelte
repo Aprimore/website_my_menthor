@@ -1,8 +1,5 @@
 <script lang="ts">
-	import {
-		clientes_parceiros_3_webp,
-		clientes_parceiros_5_webp,
-	} from '$lib';
+	import { clientes_parceiros_3_webp, clientes_parceiros_5_webp } from '$lib';
 	import * as m from '$paraglide/messages';
 </script>
 
@@ -46,6 +43,8 @@
 		<div class="lg:w-1/2 lg:flex max-lg:mt-20">
 			<div class="flex flex-row justify-center items-center">
 				<img
+					width="335"
+					height="340"
 					src={clientes_parceiros_3_webp}
 					class="w-full max-w-[338px] -mt-32 md:mb-16 mr-5"
 					alt="Webp Vector"
@@ -53,6 +52,8 @@
 					fetchpriority="high"
 				/>
 				<img
+					width="335"
+					height="340"
 					src={clientes_parceiros_5_webp}
 					class="w-full max-w-[338px] md:mt-16"
 					alt="Webp Vector"

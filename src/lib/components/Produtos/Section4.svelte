@@ -10,6 +10,8 @@
 
 <section class="relative w-full h-full">
 	<img
+		width="768"
+		height="550"
 		src={products_s3_bg_radial_svg}
 		class="absolute top-0 left-0 w-full h-full object-cover -z-20 bg-image3 border-yellow-500"
 		alt="radial effect"
@@ -44,6 +46,8 @@
 
 			<div class="lg:w-1/2 flex flex-col justify-center items-center">
 				<img
+					width="688"
+					height="387"
 					src={products_2_webp}
 					class="w-full"
 					alt="Webp Vector"

@@ -116,7 +116,8 @@
 				<!-- <h1 class="text-transparent pointer-events-none">
 					Sustaining: Transformation through business architecture by My Menthor
 				</h1> -->
-				<img src={selectedImage} alt="ebook cover " class="max-w-[23rem]" />
+				<img width="368"
+					height="587" src={selectedImage} alt="ebook cover " class="max-w-[23rem]" />
 			</div>
 		</div>
 

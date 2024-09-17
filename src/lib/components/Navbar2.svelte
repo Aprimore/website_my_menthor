@@ -81,7 +81,13 @@
 				aria-label="My Menthor"
 				href="/"
 			>
-				<img src={logo_navbar_svg} alt="Logo MyMenthor" class="aspect-video sm:mr-48" />
+				<img
+					width="235"
+					height="113"
+					src={logo_navbar_svg}
+					alt="Vectorized Logo of MyMenthor Website"
+					class="sm:mr-48"
+				/>
 			</a>
 			<!-- Mobile menu button -->
 			<div class="hamb flex lg:hidden Exo">

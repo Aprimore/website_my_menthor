@@ -15,6 +15,8 @@
 	<div class=" md:max-w-screen-2xl flex flex-col lg:flex-row mx-auto items-center rounded-lg">
 		<div class="flex xl:p-16 max-lg:order-2 px-5 mx-5">
 			<img
+				width="508"
+				height="444"
 				src={selectedImage}
 				class="w-full h-auto max-sm:mb-10 mt-14"
 				alt="Pyramid Chart"

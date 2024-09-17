@@ -33,6 +33,8 @@
 				class=" relative w-full h-full flex justify-center lg:p-5 max-md:p-3 max-w-2xl min-w-xl self-center"
 			>
 				<img
+					width="632"
+					height="615"
 					src={selectedImage}
 					class="px-3 w-full h-full max-lg:my-10"
 					alt="Pyramid Chart"

@@ -13,10 +13,12 @@
 	<div
 		class="max-sm:bg-[#F1F1F9] md:max-w-screen-2xl flex flex-col lg:flex-row mx-auto items-center rounded-lg"
 	>
-		<div class="flex xl:p-16 max-lg:order-2 px-5 mx-5">
+		<div class="flex xl:p-16 max-lg:order-2 sm:px-5 sm:mx-5">
 			<img
+				width="600"
+				height="500"
 				src={selectedImage}
-				class="w-full h-auto max-sm:mb-10 mt-14"
+				class=" w-full h-auto max-sm:mb-10 mt-14 max-sm:ml-5"
 				alt="Pyramid Chart"
 				loading="lazy"
 				decoding="sync"

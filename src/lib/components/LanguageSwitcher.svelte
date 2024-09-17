@@ -28,7 +28,7 @@
 			class="relative bg-[#F1F1F9] hover:bg-[#D4D4ED] rounded text-nowrap p-2 inline-flex flex-row justify-center align-middle"
 		>
 			<p class="inline-flex p-2">
-				<img src={flagsMap[lang]} alt={`${lang} flag`} class=" w-6 h-6 mr-2" />
+				<img width="24" height="24" src={flagsMap[lang]} alt={`${lang} flag`} class="  mr-2" />
 				{labels[lang]}
 			</p>
 		</a>

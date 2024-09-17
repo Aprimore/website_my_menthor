@@ -21,6 +21,8 @@
 			<div class="md:flex flex-row relative">
 				<div class="md:w-1/2 mx-auto p-5 lg:p-10 max-w-xl">
 					<img
+						width="461"
+						height="469"
 						src={line_graph_illustration_svg}
 						class="p-5 lg:p-10 w-full max-md:max-w-md max-md:mx-auto"
 						alt="Svg Icon"
@@ -75,6 +77,8 @@
 			<div class="md:flex flex-row relative">
 				<div class="md:w-1/2 mx-auto p-5 lg:p-10 md:order-2 w-full max-w-xl">
 					<img
+						width="461"
+						height="461"
 						src={analytics_illustration_svg}
 						class="p-5 lg:p-10 w-full max-md:max-w-md max-md:mx-auto xl:relative right-16"
 						alt="Svg Icon"
@@ -142,6 +146,8 @@
 			<div class="md:flex flex-row relative">
 				<div class="mdmd:w-1/2 mx-auto p-5 lg:p-10">
 					<img
+						width="448"
+						height="448"
 						src={check_list_illustration_svg}
 						class="p-5 lg:p-10 w-full max-w-md max-md:mx-auto"
 						alt="Svg Icon"
