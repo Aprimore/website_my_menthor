@@ -2,26 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-/* *,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-} */
+@layer base {
+	html {
+		@apply font-exo;
+	}
+
+	.Archivo {
+		@apply font-archivo;
+	}
+
+	.Exo {
+		@apply font-exo;
+	}
+
+	.Exo-Regular {
+		@apply font-exo font-normal;
+	}
+
+	.Exo-Semibold {
+		@apply font-exo font-semibold;
+	}
+
+	.Exo-Bold {
+		@apply font-exo font-bold;
+	}
+}
 
 .no-transition {
 	view-transition-name: none;
 }
 
-/* ::view-transition-old(root),
-::view-transition-new(root) {
-	animation-duration: 1s;
-} */
+.navbar {
+	view-transition-name: 'navbar';
+}
 
-/* 
-
-*/
 @media (prefers-reduced-motion) {
 	::view-transition-group(*),
 	::view-transition-old(*),
@@ -30,6 +44,7 @@
 	}
 }
 
-.navbar {
-	view-transition-name: 'navbar';
-}
+/* ::view-transition-old(root),
+::view-transition-new(root) {
+	animation-duration: 1s;
+} */

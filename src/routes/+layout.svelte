@@ -55,6 +55,8 @@
 </script>
 
 <svelte:head>
+	<!-- <link rel="preconnect" href="https://www.mymenthor.com/" /> -->
+	<!-- <link rel="preconnect" href="https://www.mymenthor.com/pt-BR/" /> -->
 	{#each hreflangs as { lang, url }}
 		<link rel="alternate" hreflang={lang} href={url} />
 	{/each}
@@ -93,7 +95,7 @@
 		}
 	}
 
-	:global(html) {
+	/* :global(html) {
 		font-family: 'Exo Variable, sans-serif;';
 	}
 
@@ -118,5 +120,5 @@
 	:global(.Exo-Bold) {
 		font-family: 'Exo Variable', sans-serif;
 		font-weight: 700;
-	}
+	} */
 </style>

@@ -7,7 +7,6 @@
 	import { cubicInOut } from 'svelte/easing';
 	import * as m from '$paraglide/messages';
 	import { fade } from 'svelte/transition';
-	// import { page } from '$app/stores';
 	import {
 		header_hero_1_webp,
 		header_hero_2_webp,
@@ -50,11 +49,12 @@
 				</a>
 			</button>
 
-			<!-- <img
+			<img
 				srcset="
 				{header_hero_1_webp} 300w,
 				{header_hero_2_webp} 700w,
 				{header_hero_3_webp} 900w,
+				{header_hero_webp} 1200w,
 				"
 				src={header_hero_webp}
 				sizes="(max-width: 500px) 100vw, 70vw"
@@ -62,7 +62,7 @@
 				class="absolute inset-0 w-full h-full object-cover -z-10"
 				fetchpriority="high"
 				loading="eager"
-			/> -->
+			/>
 		</div>
 	</div>
 </header>

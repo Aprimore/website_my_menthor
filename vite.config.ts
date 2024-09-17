@@ -16,6 +16,27 @@ export default defineConfig({
 		// 	dest: join(__dirname, 'static', '~partytown')
 		// })
 	],
+	build: {
+		target: 'esnext',
+		minify: 'esbuild',
+		cssMinify: 'lightningcss',
+		rollupOptions: {
+			output: {
+				manualChunks: (id) => {
+					if (id.includes('node_modules')) {
+						if (id.includes('@inlang/paraglide')) {
+							return 'vendor-paraglide';
+						}
+						return 'vendor';
+					}
+				}
+			}
+		}
+	},
+	optimizeDeps: {
+		include: ['@inlang/paraglide-js', '@inlang/paraglide-sveltekit']
+	},
+
 	// for easier debugging, don't minify
 	// build: {
 	// 	minify: false

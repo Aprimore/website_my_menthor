@@ -31,10 +31,10 @@ function getPathWithoutLang(path: string) {
  * You could use a Polyfill for `Intl.Locale.prototype.getTextInfo` instead.
  */
 export function getTextDirection(locale: AvailableLanguageTag) {
+	// return ['ar', 'he', 'fa'].includes(locale) ? 'rtl' : 'ltr';
 	const directions: Record<AvailableLanguageTag, 'ltr' | 'rtl'> = {
 		en: 'ltr',
 		'pt-BR': 'ltr'
 	};
-
 	return directions[locale];
 }
