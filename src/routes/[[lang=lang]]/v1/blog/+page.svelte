@@ -11,8 +11,6 @@
 
 	export let data;
 
-	// console.log(data);
-
 	const { author, siteUrl } = website;
 	let title = 'Blog';
 	const breadcrumbs = [

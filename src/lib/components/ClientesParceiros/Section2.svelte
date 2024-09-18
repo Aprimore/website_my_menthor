@@ -49,7 +49,7 @@
 					<!-- Your success -->
 					<span class="text-[#EB642A] relative Exo-Bold orange-underline">
 						{@html m.clientesP_YourSuccessIsOurSuccess()}
-						<!-- <img
+						<!-- <img 
 							src={linha_h_laranja_svg}
 							class="absolute
 							max-lg:top-9 max-lg:left-3

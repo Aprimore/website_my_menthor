@@ -6,37 +6,33 @@ import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
 	plugins: [
+		enhancedImages(),
 		sveltekit(),
 		paraglide({
 			project: './project.inlang',
 			outdir: './src/paraglide'
-		}),
-		enhancedImages()
+		})
 		// partytownVite({
 		// 	dest: join(__dirname, 'static', '~partytown')
 		// })
 	],
-	build: {
-		cssCodeSplit: true
-		// rollupOptions: {
-		// 	output: {
-		// 		manualChunks: (id) => {
-		// 			if (id.includes('node_modules')) {
-		// 				if (id.includes('@inlang/paraglide')) {
-		// 					return 'vendor-paraglide';
-		// 				}
-		// 				return 'vendor';
-		// 			}
-		// 		}
-		// 	}
-		// }
-	},
+	// build: {
+	// cssCodeSplit: true
+	// rollupOptions: {
+	// 	output: {
+	// 		manualChunks: (id) => {
+	// 			if (id.includes('node_modules')) {
+	// 				if (id.includes('@inlang/paraglide')) {
+	// 					return 'vendor-paraglide';
+	// 				}
+	// 				return 'vendor';
+	// 			}
+	// 		}
+	// 	}
+	// }
+	// },
 	optimizeDeps: {
-		include: [
-			'@inlang/paraglide-js',
-			'@inlang/paraglide-sveltekit',
-			'@lottiefiles/svelte-lottie-player'
-		]
+		include: ['@inlang/paraglide-js', '@inlang/paraglide-sveltekit']
 	},
 
 	// for easier debugging, don't minify

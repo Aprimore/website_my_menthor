@@ -85,7 +85,7 @@
 
 				<div class="mt-8 flex flex-wrap gap-4">
 					<a
-						class="Exo btn-learn block max-w-max rounded-xl px-8 py-4 text-lg bg-[#6f9733] text-[#fff] focus:ring sm:w-auto z-10 relative max-sm:mx-auto"
+						class="Exo btn-learn block max-w-max rounded-xl px-8 py-4 text-lg bg-[#5e812a] text-[#fff] focus:ring sm:w-auto z-10 relative max-sm:mx-auto"
 						href="/products#platform"
 						aria-label="Learn more about the platform"
 						title="Learn more about the platform"

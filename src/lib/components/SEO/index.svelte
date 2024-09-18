@@ -4,11 +4,13 @@
 	import defaultOgSquareImage from '$lib/assets/home/home-open-graph-square.jpg';
 	import defaultTwitterImage from '$lib/assets/home/home-twitter.jpg';
 	import website from '$lib/config/website';
+	import websiteBR from '$lib/config/websiteBR';
 	import { VERTICAL_LINE_ENTITY } from '$lib/constants/entities';
 	import OpenGraph from './OpenGraph.svelte';
 	import SchemaOrg from './SchemaOrg.svelte';
 	import Twitter from './Twitter.svelte';
 	import { page } from '$app/stores';
+
 	let pagePath = $page.url.pathname;
 	$: pagePath = $page.url.pathname;
 	const isPortuguese = pagePath.startsWith('/pt-BR/');
@@ -28,7 +30,7 @@
 		telegramUsername,
 		tiktokUsername,
 		twitterUsername
-	} = website;
+	} = isPortuguese ? websiteBR : website;
 
 	export let article = false;
 	export let breadcrumbs = [];
@@ -119,6 +121,7 @@
 		name="robots"
 		content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 	/>
+
 	<link rel="canonical" href={url} />
 </svelte:head>
 <Twitter {...twitterProps} />

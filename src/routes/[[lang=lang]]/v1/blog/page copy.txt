@@ -16,7 +16,7 @@
 					class="border rounded-lg overflow-hidden hover:shadow-lg"
 				>
 					{#if post.featuredImage?.node?.sourceUrl}
-						<img
+						<img 
 							src={post.featuredImage.node.sourceUrl}
 							alt={post.title}
 							class="w-full h-52 object-cover"

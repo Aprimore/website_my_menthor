@@ -22,9 +22,9 @@
 
 <div class="language-buttons">
 	{#each availableLanguageTags as lang}
+		<!-- hreflang={lang} -->
 		<a
 			href={translatePath('/', lang)}
-			hreflang={lang}
 			class="relative bg-[#F1F1F9] hover:bg-[#D4D4ED] rounded text-nowrap p-2 inline-flex flex-row justify-center align-middle"
 		>
 			<p class="inline-flex p-2">

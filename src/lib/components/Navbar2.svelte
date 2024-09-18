@@ -6,18 +6,9 @@
 	import { fade } from 'svelte/transition';
 	import { sourceLanguageTag, languageTag } from '$paraglide/runtime';
 	import { translatePath } from '$lib/i18n';
-	// let showMenu = false;
+
 	let isOpen = false;
 	const toggleNavbar = () => (isOpen = !isOpen);
-
-	// const labels = {
-	// 	en: 'EN',
-	// 	'pt-BR': 'PT-BR'
-	// };
-
-	// function toggleNavbar() {
-	// 	showMenu = !showMenu;
-	// }
 
 	function generateDynamicId(pageName: any) {
 		return `${pageName}#top`;
@@ -38,12 +29,7 @@
 		});
 	}
 
-	// const hrClass = 'max-sm:block ';
-
-	// const navbarClasses =
-	// 	' bg-opacity-0 text-base text-[#17193B] py-2 md:px-3 transition-transform transform hover:-translate-y-1 hover:bg-[#20C997] rounded-lg hover:text-[#F1F1F9] Exo bg-[#F1F1F9]';
-
-	$: navbarClasses = `bg-opacity-0 text-base text-[#17193B] py-2 md:px-3 transition-transform transform hover:-translate-y-1 hover:bg-[#20C997] rounded-lg hover:text-[#F1F1F9] Exo bg-[#F1F1F9] `;
+	$: navbarClasses = `bg-opacity-0 text-base text-[#17193B] p-3 transition-transform transform hover:-translate-y-1 hover:bg-[#20C997] rounded-lg hover:text-[#F1F1F9] Exo bg-[#F1F1F9] `;
 
 	const navItems = [
 		{ href: '/', label: m.navbar_Home },
@@ -63,12 +49,8 @@
 	}
 </script>
 
-<!-- <svelte:head>
-	<link rel="preload" as="image" href={logo_navbar_svg} />
-</svelte:head> -->
-
 <nav
-	class=" bg-[#F1F1F9] bg-opacity-80 relative mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full max-h-[115px] nav-component"
+	class="bg-[#F1F1F9] bg-opacity-80 relative mx-auto lg:flex md:justify-between md:items-center z-50 max-w-full max-h-[115px] nav-component"
 	in:fade={{ duration: 300, delay: 10 }}
 >
 	<div class="lg:flex items-center max-lg:justify-between m-auto max-xl:px-4">
@@ -97,9 +79,7 @@
 					aria-label="Toggle Navigation"
 					aria-expanded={isOpen}
 					aria-controls="nav-links"
-					class="text-white hover:text-slate-300 focus:outline-none focus:text-slate-100 {!isOpen
-						? 'block'
-						: 'hidden lg:block'}"
+					class="text-white hover:text-slate-300 focus:outline-none focus:text-slate-100"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -107,22 +87,27 @@
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="#17193B"
-						class="w-12 h-12"
+						width="48"
+						height="48"
 					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-						/>
+						{#if isOpen}
+							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						{:else}
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+							/>
+						{/if}
 					</svg>
 				</button>
 			</div>
 		</div>
 		<div
 			id="nav-links"
-			class="w-full max-lg:bg-[#F1F1F9] max-md:py-2 nav-links whitespace-nowrap space-y-4 lg:flex lg:space-y-0 lg:flex-row lg:items-center lg:space-x-3 md:space-x-2 text-center md:mt-0 {isOpen
-				? 'flex'
-				: 'hidden '}"
+			class="space-y-3 w-full max-lg:bg-[#F1F1F9] max-md:py-2 nav-links whitespace-nowrap lg:space-y-0 lg:flex-row lg:items-center lg:space-x-3 md:space-x-2 text-center md:mt-0 {isOpen
+				? 'flex flex-col lg:flex-row'
+				: 'hidden lg:flex lg:flex-row'}"
 		>
 			{#each navItems as item}
 				<a class={navbarClasses} on:click={toggleNavbar} href={getHref(item.href)}>
@@ -131,35 +116,6 @@
 			{/each}
 			<button class={navbarClasses} on:click={resetPopupAndNavigate}>E-book</button>
 		</div>
-		<!-- <div
-			id="nav-links"
-			class="w-full max-lg:bg-[#F1F1F9] max-md:py-2 nav-links whitespace-nowrap space-y-4 lg:flex lg:space-y-0 lg:flex-row lg:items-center lg:space-x-3 md:space-x-2 text-center md:mt-0 {showMenu
-				? 'flex'
-				: 'hidden'}"
-		>
-			<a class={navbarClasses} on:click={toggleNavbar} href="/">{@html m.navbar_Home()}</a>
-			<a class={navbarClasses} on:click={toggleNavbar} href="/products"
-				>{@html m.navbar_Products()}</a
-			>
-			<a class={navbarClasses} on:click={toggleNavbar} href="/solutions"
-				>{@html m.navbar_Solutions()}</a
-			>
-			<a class={navbarClasses} on:click={toggleNavbar} href="/customers_and_partners"
-				>{@html m.navbar_Clients_and_Partners()}</a
-			>
-			<a class={navbarClasses} on:click={toggleNavbar} href="/resources"
-				>{@html m.navbar_Resources()}</a
-			>
-			<a
-				class={navbarClasses}
-				on:click={toggleNavbar}
-				href="/v1/blog"
-				data-sveltekit-preload-data="tap">{@html m.navbar_Blog()}</a
-			>
-			<a class={navbarClasses} on:click={toggleNavbar} href="/company">{@html m.navbar_Company()}</a
-			>
-			<button class={navbarClasses} on:click={resetPopupAndNavigate}>E-book</button>
-		</div> -->
 	</div>
 </nav>
 
@@ -191,7 +147,6 @@
 		.nav-links {
 			font-size: 1.25rem;
 			line-height: 1.5rem;
-			flex-direction: column;
 		}
 	}
 </style>
