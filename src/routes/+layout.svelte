@@ -58,6 +58,14 @@
 	{#each hreflangs as { lang, url }}
 		<link rel="alternate" hreflang={lang} href={url} />
 	{/each}
+	<noscript>
+		<iframe
+			src="https://www.googletagmanager.com/ns.html?id=GTM-WSRLN9FV"
+			height="0"
+			width="0"
+			style="display:none;visibility:hidden"
+		></iframe>
+	</noscript>
 </svelte:head>
 
 {#key lang}

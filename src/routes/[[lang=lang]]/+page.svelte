@@ -62,8 +62,8 @@
 		}
 	];
 	let metadescription = isPortuguese
-		? 'My Menthor é uma plataforma SaaS de Arquitetura Empresarial que aprimora a visibilidade dos processos, integrando estratégia, pessoas e tecnologia para melhorar o desempenho e a maturidade organizacional'
-		: 'My Menthor is a Business Architecture SaaS platform that enhances process visibility by integrating strategy, people, and technology to improve organizational performance and maturity.';
+		? 'O My Menthor é uma plataforma SaaS que melhora a visibilidade de processos ao integrar estratégia, pessoas e tecnologia para aprimorar o desempenho organizacional.'
+		: 'My Menthor is a SaaS platform that enhances process visibility by integrating strategy, people, and technology to improve organizational performance.';
 	const featuredImageAlt = isPortuguese
 		? 'Imagem de uma pessoa vetorizada, o logo do site da My Menthor'
 		: 'picture of a vectorized person, the logo for My Menthor website';

@@ -58,7 +58,7 @@ export function createConfig(language: string): CookieConsent.CookieConsentConfi
 					// }
 				}
 			},
-			ads: {}
+			// ads: {}
 		},
 
 		// onFirstConsent: ({ cookie }) => {
