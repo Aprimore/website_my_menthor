@@ -36,7 +36,7 @@ const config = {
 		}),
 		prerender: {
 			entries: ['*'],
-			origin: 'https://mymenthor.com'
+			// origin: 'https://mymenthor.com'
 		},
 		version: {
 			name: Date.now().toString()
