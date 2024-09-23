@@ -12,19 +12,12 @@
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import { cubicInOut } from 'svelte/easing';
-
+	import { page } from '$app/stores';
 	export let form;
+
 	let isOpen = false;
 	let consentVisible = false;
-	// import {
-	// 	OG_IMAGE_HEIGHT,
-	// 	OG_IMAGE_WIDTH,
-	// 	SITE_DESCRIPTION,
-	// 	SITE_TITLE,
-	// 	SITE_URL
-	// } from '$lib/siteConfig';
-	import { page } from '$app/stores';
-	// import { getPageTitle } from '$lib/functions/pageTitle.js';
+
 	onMount(() => {
 		cookieConsentVisible.subscribe((value) => {
 			consentVisible = !value;
@@ -97,8 +90,8 @@
 		title,
 		slug: '',
 		entityMeta,
-		datePublished: '2024-05-01T14:19:33.000+0100',
-		lastUpdated: '2024-09-05T14:19:33.000+0100',
+		datePublished: '2024-01-01T14:19:33.000+0100',
+		lastUpdated: '2024-09-09T14:19:33.000+0100',
 		breadcrumbs,
 		metadescription,
 		article: false,

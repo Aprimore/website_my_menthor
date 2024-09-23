@@ -32,7 +32,13 @@ export function createConfig(language: string): CookieConsent.CookieConsentConfi
 					ga: {
 						label: 'Google Analytics',
 						onAccept: () => {
-							Promise.all([loadGTM(), loadGA()]);
+							Promise.all([loadGTM(), loadGA()])
+								.then(() => {
+									console.log('GTM and GA loaded with Partytown');
+								})
+								.catch((error) => {
+									console.error('Error loading GTM or GA with Partytown:', error);
+								});
 							// .then(() => {
 							// 	console.log('.');
 							// })
@@ -57,7 +63,7 @@ export function createConfig(language: string): CookieConsent.CookieConsentConfi
 					// 	onReject: () => {}
 					// }
 				}
-			},
+			}
 			// ads: {}
 		},
 
@@ -104,7 +110,7 @@ export function createConfig(language: string): CookieConsent.CookieConsentConfi
 			translations: {
 				en: {
 					consentModal: {
-						title: 'We use cookies',
+						// title: 'We use cookies',
 						description:
 							'We use cookies to enhance your browsing experience, remember your preferences, and provide personalized content.',
 						acceptAllBtn: 'Accept all',
@@ -177,7 +183,7 @@ export function createConfig(language: string): CookieConsent.CookieConsentConfi
 				},
 				'pt-BR': {
 					consentModal: {
-						title: 'Usamos cookies',
+						// title: 'Usamos cookies',
 						description:
 							'Usamos cookies para melhorar sua experiência de navegação, lembrar suas preferências e fornecer conteúdo personalizado.',
 						acceptAllBtn: 'Aceitar todos',

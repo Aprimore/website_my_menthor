@@ -38,22 +38,32 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
         }`
 	};
 
-	const response = await fetch(endpoint, {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json'
-		},
-		body: JSON.stringify(WPQL_QUERY)
-	});
-	if (!response.ok) throw new Error('Failed to fetch post');
+	try {
+		const response = await fetch(endpoint, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(WPQL_QUERY)
+		});
+		if (!response.ok) throw new Error('Failed to fetch post');
 
-	const { data } = await response.json();
+		const { data } = await response.json();
 
-	if (data.post && data.post.content) {
-		data.post.content = sanitizeHtml(data.post.content);
+		if (data.post && data.post.content) {
+			data.post.content = sanitizeHtml(data.post.content);
+		}
+
+		return {
+			post: data.post
+		};
+	} catch (error) {
+		console.error('Error fetching post:', error);
+
+		// Return a fallback in case of an error
+		return {
+			post: null,
+			error: 'Failed to load post. Please try again later.'
+		};
 	}
-
-	return {
-		post: data.post
-	};
 };

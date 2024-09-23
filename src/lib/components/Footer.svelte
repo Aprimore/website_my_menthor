@@ -1,11 +1,9 @@
 <script lang="ts">
 	import {
-		arrow_right_svg,
 		facebook_svg,
 		instagram_svg,
 		linkedin_svg,
 		logo_footer_webp,
-		mail_svg,
 		youtube_svg
 	} from '$lib';
 	import * as m from '$paraglide/messages';

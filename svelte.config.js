@@ -30,12 +30,16 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: null,
+			fallback: 'error.html',
 			precompress: false,
 			strict: false
 		}),
 		prerender: {
-			entries: ['*']
+			entries: ['*'],
+			origin: 'https://mymenthor.com'
+		},
+		version: {
+			name: Date.now().toString()
 		},
 
 		// files: {
