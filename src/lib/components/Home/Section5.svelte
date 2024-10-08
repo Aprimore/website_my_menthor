@@ -13,8 +13,7 @@
 				class="z-20 mt-2 relative max-md:max-w-64"
 				alt="Rocket"
 				loading="lazy"
-				decoding="sync"
-				fetchpriority="low"
+				fetchpriority="auto"
 			/>
 		</div>
 		<div class="md:w-1/2 relative z-20 space-y-6 md:max-w-screen-md flex flex-col justify-center">
@@ -44,8 +43,7 @@
 				width="1604"
 				height="362"
 				loading="lazy"
-				decoding="sync"
-				fetchpriority="low"
+				fetchpriority="auto"
 				src={earth_2_webp}
 				alt="Hero Header"
 				class="absolute inset-0 w-full h-full object-cover bg-gradient-to-r from-[#010101] via-transparent to-transparent"

@@ -24,8 +24,7 @@
 						class="max-md:max-w-[210px] mx-auto"
 						alt="linha"
 						loading="lazy"
-						decoding="sync"
-						fetchpriority="low"
+						fetchpriority="auto"
 					/>
 				</h1>
 			</div>
@@ -39,8 +38,7 @@
 					class="px-3 w-full h-full max-lg:my-10"
 					alt="Pyramid Chart"
 					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
+					fetchpriority="auto"
 				/>
 			</div>
 		</div>
@@ -78,8 +76,7 @@
 								src={linha_v_amarela_svg}
 								alt="linha"
 								loading="lazy"
-								decoding="sync"
-								fetchpriority="low"
+								fetchpriority="auto"
 							/></span
 						>
 						<p class="sm:ml-10 sm:mt-3 Archivo text-lg text-[#F1F1F9]">

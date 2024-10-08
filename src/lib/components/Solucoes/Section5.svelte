@@ -15,8 +15,7 @@
 				class="mx-auto"
 				alt="linha"
 				loading="lazy"
-				decoding="sync"
-				fetchpriority="low"
+				fetchpriority="auto"
 			/>
 		</div>
 
@@ -113,8 +112,7 @@
 				class="mx-auto max-w-80"
 				alt="linha"
 				loading="lazy"
-				decoding="sync"
-				fetchpriority="low"
+				fetchpriority="auto"
 			/>
 		</div>
 

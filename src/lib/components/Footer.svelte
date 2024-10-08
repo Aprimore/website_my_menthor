@@ -1,11 +1,5 @@
 <script lang="ts">
-	import {
-		facebook_svg,
-		instagram_svg,
-		linkedin_svg,
-		logo_footer_webp,
-		youtube_svg
-	} from '$lib';
+	import { facebook_svg, instagram_svg, linkedin_svg, logo_footer_webp, youtube_svg } from '$lib';
 	import * as m from '$paraglide/messages';
 	import Copyright from './Copyright.svelte';
 	import { sourceLanguageTag, languageTag } from '$paraglide/runtime';
@@ -29,9 +23,8 @@
 							<img
 								width="252"
 								height="115"
-								loading="lazy"
-								decoding="sync"
-								fetchpriority="low"
+								loading="auto"
+								fetchpriority="auto"
 								src={logo_footer_webp}
 								alt="logo"
 								class=" transition-transform transform hover:-translate-y-1"
@@ -217,8 +210,7 @@
 									width="32"
 									height="32"
 									loading="lazy"
-									decoding="sync"
-									fetchpriority="low"
+									fetchpriority="auto"
 									src={youtube_svg}
 									class="transition-transform duration-200 transform hover:scale-110"
 									alt="youtube logo vector"
@@ -234,8 +226,7 @@
 									width="32"
 									height="32"
 									loading="lazy"
-									decoding="sync"
-									fetchpriority="low"
+									fetchpriority="auto"
 									src={linkedin_svg}
 									class="transition-transform duration-200 transform hover:scale-110"
 									alt="linkedin logo vector"
@@ -249,8 +240,7 @@
 							>
 								<img
 									loading="lazy"
-									decoding="sync"
-									fetchpriority="low"
+									fetchpriority="auto"
 									src={facebook_svg}
 									class="transition-transform duration-200 transform hover:scale-110"
 									alt="facebook logo vector"
@@ -266,8 +256,7 @@
 							>
 								<img
 									loading="lazy"
-									decoding="sync"
-									fetchpriority="low"
+									fetchpriority="auto"
 									src={instagram_svg}
 									class="transition-transform duration-200 transform hover:scale-110"
 									alt="instagram logo vector"

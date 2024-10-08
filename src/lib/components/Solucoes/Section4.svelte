@@ -85,33 +85,15 @@
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F]">4 Tickets</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">6</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
@@ -119,19 +101,13 @@
 					src={checkmark_2_svg}
 					alt="Checkmark Icon"
 					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
+					
+					fetchpriority="auto"
 				/> -->
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<p class="text-xl Archivo text-[#25285F]">
@@ -155,33 +131,15 @@
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F]">8 Tickets</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">6</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
@@ -189,19 +147,13 @@
 					src={checkmark_2_svg}
 					alt="Checkmark Icon"
 					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
+					
+					fetchpriority="auto"
 				/> -->
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<p class="text-xl Archivo text-[#25285F]">
@@ -226,53 +178,23 @@
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F]">12 Tickets</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">6</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<p class="text-xl Archivo text-[#25285F]">
@@ -296,53 +218,23 @@
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F]">TBD</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">5</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">6</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">7</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-white flex justify-center items-center">
 				<!-- <p class="text-xl Archivo text-[#25285F] ">8</p> -->
-				<img
-					src={checkmark_2_svg}
-					alt="Checkmark Icon"
-					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
-				/>
+				<img src={checkmark_2_svg} alt="Checkmark Icon" loading="lazy" fetchpriority="auto" />
 			</div>
 			<div class=" h-[62px] bg-[#F1F1F9] flex justify-center items-center">
 				<p class="text-xl Archivo text-[#25285F]">

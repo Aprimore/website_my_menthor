@@ -16,8 +16,7 @@
 		class="absolute top-0 left-0 w-full h-full object-cover -z-20 bg-image3 border-yellow-500"
 		alt="radial effect"
 		loading="lazy"
-		decoding="sync"
-		fetchpriority="low"
+		fetchpriority="auto"
 	/>
 	<div class="w-full h-full relative">
 		<div class="lg:max-w-screen-2xl mx-auto lg:flex flex-row items-center lg:pt-20 max-lg:p-5">
@@ -52,8 +51,7 @@
 					class="w-full"
 					alt="Webp Vector"
 					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
+					fetchpriority="auto"
 				/>
 			</div>
 		</div>
@@ -68,13 +66,7 @@
 					{@html m.produtos_MyMenthorIsABusinessPartnerForCorporateAreas()}
 				</p>
 				<span class="absolute left-3 max-lg:hidden"
-					><img
-						src={linha_v_azul_svg}
-						alt="linha"
-						loading="lazy"
-						decoding="sync"
-						fetchpriority="low"
-					/></span
+					><img src={linha_v_azul_svg} alt="linha" loading="lazy" fetchpriority="auto" /></span
 				>
 				<p class="text-[#D4D4ED] Archivo text-lg">
 					<!-- My Menthor is also a strategic partner for management consultancies and independent
@@ -89,8 +81,7 @@
 					class="w-full"
 					alt="Webp Vector"
 					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
+					fetchpriority="auto"
 				/>
 			</div>
 		</div>

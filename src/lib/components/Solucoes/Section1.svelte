@@ -15,7 +15,6 @@
 				class="right-5 mx-auto max-sm:max-w-xs"
 				alt="linha"
 				loading="eager"
-				decoding="sync"
 				fetchpriority="high"
 			/>
 		</div>

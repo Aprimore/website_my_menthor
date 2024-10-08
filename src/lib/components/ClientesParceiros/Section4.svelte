@@ -13,8 +13,7 @@
 					src={clientes_parceiros_4_webp}
 					alt="Webp Vector"
 					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
+					fetchpriority="auto"
 				/>
 				<img
 					width="61"
@@ -24,8 +23,7 @@
 					-right-5"
 					alt="phone icon"
 					loading="lazy"
-					decoding="sync"
-					fetchpriority="low"
+					fetchpriority="auto"
 				/>
 			</div>
 		</div>

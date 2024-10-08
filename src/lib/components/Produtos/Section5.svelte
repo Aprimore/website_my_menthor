@@ -27,8 +27,7 @@
 						class="p-5 lg:p-10 w-full max-md:max-w-md max-md:mx-auto"
 						alt="Svg Icon"
 						loading="lazy"
-						decoding="sync"
-						fetchpriority="low"
+						fetchpriority="auto"
 					/>
 				</div>
 				<div class="md:w-1/2 relative my-auto">
@@ -83,8 +82,7 @@
 						class="p-5 lg:p-10 w-full max-md:max-w-md max-md:mx-auto xl:relative right-16"
 						alt="Svg Icon"
 						loading="lazy"
-						decoding="sync"
-						fetchpriority="low"
+						fetchpriority="auto"
 					/>
 				</div>
 				<div class="md:w-1/2 relative my-auto">
@@ -152,8 +150,7 @@
 						class="p-5 lg:p-10 w-full max-w-md max-md:mx-auto"
 						alt="Svg Icon"
 						loading="lazy"
-						decoding="sync"
-						fetchpriority="low"
+						fetchpriority="auto"
 					/>
 				</div>
 				<div class="mdmd:w-1/2 relative my-auto">

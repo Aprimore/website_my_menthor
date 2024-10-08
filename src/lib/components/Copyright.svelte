@@ -71,8 +71,7 @@
 							width="14"
 							height="14"
 							aria-label="top button"
-							decoding="sync"
-							fetchpriority="low"
+							fetchpriority="auto"
 						/></a
 					>
 				</button>

@@ -4,10 +4,41 @@
 	import { fade } from 'svelte/transition';
 </script>
 
-<header
-	in:fade={{ duration: 150, easing: cubicInOut }}
-	class="hero-section bg-[#19182F] banner-container"
->
+<svelte:head>
+	<!-- <link rel="preload" as="image" href="/header_hero_1.webp" />
+	<link rel="preload" as="image" href="/header_hero.webp" /> -->
+	<link
+		rel="preload"
+		as="image"
+		href="/header_hero.webp"
+		type="image/webp"
+		fetchpriority="high"
+		importance="high"
+		crossorigin="anonymous"
+	/>
+	<link
+		rel="preload"
+		as="image"
+		href="/header_hero_1.webp"
+		type="image/webp"
+		fetchpriority="high"
+		importance="high"
+		crossorigin="anonymous"
+	/>
+	<style>
+		.banner-container {
+			background-color: #19182f;
+			background: url('/header_hero.webp') no-repeat center / cover;
+		}
+		@media (max-width: 640px) {
+			.banner-container {
+				background-image: url('/header_hero_1.webp');
+			}
+		}
+	</style>
+</svelte:head>
+
+<header in:fade={{ duration: 150, easing: cubicInOut }} class="hero-section banner-container">
 	<div class="container mx-auto px-4 flex items-center h-[510px]">
 		<div
 			in:fade={{ delay: 200, duration: 150, easing: cubicInOut }}
@@ -33,15 +64,6 @@
 </header>
 
 <style>
-	.banner-container {
-		background: url('$lib/assets/images/header_hero.webp') no-repeat center / cover;
-	}
-
-	@media (max-width: 640px) {
-		.banner-container {
-			background-image: url('$lib/assets/images/header_hero_1.webp') no-repeat center / cover;
-		}
-	}
 	.btn-demo::after {
 		content: '';
 		display: inline-block;

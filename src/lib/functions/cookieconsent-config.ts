@@ -34,7 +34,7 @@ export function createConfig(language: string): CookieConsent.CookieConsentConfi
 						onAccept: () => {
 							Promise.all([loadGTM(), loadGA()])
 								.then(() => {
-									console.log('GTM and GA loaded with Partytown');
+									// console.log('GTM and GA loaded with Partytown');
 								})
 								.catch((error) => {
 									console.error('Error loading GTM or GA with Partytown:', error);

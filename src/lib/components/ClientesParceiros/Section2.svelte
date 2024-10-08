@@ -57,8 +57,8 @@
 							max-sm:w-52"
 							alt="linha"
 							loading="lazy"
-							decoding="sync"
-							fetchpriority="low"
+							
+							fetchpriority="auto"
 						/> -->
 					</span>
 					{@html m.clientesP_IsOurSuccess()}

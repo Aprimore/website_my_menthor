@@ -21,8 +21,7 @@
 				class=" w-full h-auto max-sm:mb-10 mt-14 max-sm:ml-5"
 				alt="Pyramid Chart"
 				loading="lazy"
-				decoding="sync"
-				fetchpriority="low"
+				fetchpriority="auto"
 			/>
 		</div>
 		<div class="max-lg:p-5 lg:w-1/2 space-y-6 mt-8 lg:mt-16 max-lg:order-1">
