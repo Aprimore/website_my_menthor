@@ -5,7 +5,7 @@
 	import { ebook_cover_en_3, ebook_cover_pt_3 } from '$lib';
 	// import LoadingSpinner from '$lib/components/LoadingSpinner.svelte';
 	import TelInputComponent from '$lib/components/TelInputComponentFormLanding.svelte';
-	// import { isProfessionalEmail } from '$lib/functions/emailValidator.js';
+	import { isProfessionalEmail } from '$lib/functions/emailValidator.js';
 	import * as m from '$paraglide/messages';
 	import { selectedCountryStore } from '$lib/stores.js';
 	// import { onMount } from 'svelte';
@@ -38,11 +38,10 @@
 			return;
 		}
 		// Por favor, use um endereço de e-mail profissional
-		// if (!isProfessionalEmail(email)) {
-		// alert(`${m.form_profissionalEmailAddress()}`);
-		// alert('Please use a professional email address.');
-		// return;
-		// }
+		if (!isProfessionalEmail(email)) {
+			alert(`${m.form_profissionalEmailAddress()}`);
+			return;
+		}
 		// validation
 		if (!fullName || !email) {
 			alert('Please fill in all required fields.');

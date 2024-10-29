@@ -96,7 +96,6 @@
 	const onChange = (selectedCountry: any) => {
 		dispatch('change', { option: selectedCountry as any });
 	};
-
 </script>
 
 <div
@@ -165,7 +164,7 @@
 					<input
 						aria-autocomplete="list"
 						type="text"
-						class="px-4 py-2 text-[#fff] focus:outline-none w-full sticky top-0 text-xl bg-[#ABAEBC] placeholder-white"
+						class="px-4 py-2 text-[#fff] focus:outline-none w-full sticky top-0 text-xl bg-[#ABAEBC] placeholder-white hover:bg-gray-400 focus:placeholder-gray-50"
 						bind:value={searchText}
 						placeholder={searchPlaceholder}
 					/>
