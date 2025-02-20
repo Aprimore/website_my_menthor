@@ -36,7 +36,7 @@
 		document.documentElement.lang = lang;
 	}
 
-	// Handling cookie consent
+	// Handling cookie consents
 	let cookieConsentAccepted = false;
 	let showPopup = false;
 	let isLoading = true;
